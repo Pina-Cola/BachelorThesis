@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  17 MAR 2020 11:21
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  16 MAR 2020 22:18
+>>>>>>> 0b64c3a53ff9ee0998a05a173f957765d1f9cb2c
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,7 +1463,11 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+<<<<<<< HEAD
 Output written on proposal.pdf (11 pages, 440781 bytes).
+=======
+Output written on proposal.pdf (11 pages, 440758 bytes).
+>>>>>>> 0b64c3a53ff9ee0998a05a173f957765d1f9cb2c
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
