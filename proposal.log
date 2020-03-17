@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  17 MAR 2020 11:21
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  16 MAR 2020 22:18
->>>>>>> 0b64c3a53ff9ee0998a05a173f957765d1f9cb2c
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  17 MAR 2020 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1361,43 +1357,45 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 184.
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--193
+<graphDepth.png, id=41, 963.6pt x 414.04688pt>
+File: graphDepth.png Graphic file (type png)
+ <use graphDepth.png>
+Package pdftex.def Info: graphDepth.png used on input line 190.
+(pdftex.def)             Requested size: 154.17915pt x 66.24884pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--193
-
- []
-
-[3 <./2x2foldedout.png>]
-Overfull \hbox (14.05612pt too wide) in paragraph at lines 200--200
+<graphDepthN.png, id=42, 963.6pt x 414.04688pt>
+File: graphDepthN.png Graphic file (type png)
+ <use graphDepthN.png>
+Package pdftex.def Info: graphDepthN.png used on input line 196.
+(pdftex.def)             Requested size: 192.71658pt x 82.80789pt.
+ [3 <./2x2foldedout.png> <./graphDepth.png>]
+Overfull \hbox (14.05612pt too wide) in paragraph at lines 207--207
 []            \OT1/cmtt/m/n/12 if (i < 2 || (i > 4 && i < 8) || (i > 12 && i < 
 17) || i > 21) {[] 
  []
 
-[4]
+[4 <./graphDepthN.png>]
 File: 2x2foldedout.png Graphic file (type png)
  <use 2x2foldedout.png>
-Package pdftex.def Info: 2x2foldedout.png used on input line 252.
+Package pdftex.def Info: 2x2foldedout.png used on input line 259.
 (pdftex.def)             Requested size: 180.6672pt x 205.23795pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--272
+Underfull \hbox (badness 10000) in paragraph at lines 251--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--272
+Underfull \hbox (badness 10000) in paragraph at lines 251--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--272
+Underfull \hbox (badness 10000) in paragraph at lines 251--279
 
  []
 
 [5] [6] [7]
-Overfull \hbox (10.04343pt too wide) in paragraph at lines 285--293
+Overfull \hbox (10.04343pt too wide) in paragraph at lines 292--300
 \OT1/cmr/m/n/10 Die Abl[]aufe und die ge-plan-ten Ar-bei-ten (wie Li-te-ra-tur-
 stu-di-um, Feld-ar-beit in-kl. Vor-be-rei-tun-gen, D[]unnschliff-
  []
@@ -1405,37 +1403,37 @@ stu-di-um, Feld-ar-beit in-kl. Vor-be-rei-tun-gen, D[]unnschliff-
 [8]
 File: 2x2scrambled.png Graphic file (type png)
  <use 2x2scrambled.png>
-Package pdftex.def Info: 2x2scrambled.png used on input line 301.
+Package pdftex.def Info: 2x2scrambled.png used on input line 308.
 (pdftex.def)             Requested size: 85.32527pt x 96.9295pt.
 File: 2x2solved.png Graphic file (type png)
  <use 2x2solved.png>
-Package pdftex.def Info: 2x2solved.png used on input line 302.
+Package pdftex.def Info: 2x2solved.png used on input line 309.
 (pdftex.def)             Requested size: 85.32527pt x 96.9295pt.
 File: 2x2seite.png Graphic file (type png)
  <use 2x2seite.png>
-Package pdftex.def Info: 2x2seite.png used on input line 303.
+Package pdftex.def Info: 2x2seite.png used on input line 310.
 (pdftex.def)             Requested size: 85.32527pt x 96.9295pt.
 File: 2x2farbflaeche.png Graphic file (type png)
 
 <use 2x2farbflaeche.png>
-Package pdftex.def Info: 2x2farbflaeche.png used on input line 304.
+Package pdftex.def Info: 2x2farbflaeche.png used on input line 311.
 (pdftex.def)             Requested size: 85.32527pt x 96.9295pt.
 File: 2x2stein.png Graphic file (type png)
  <use 2x2stein.png>
-Package pdftex.def Info: 2x2stein.png used on input line 305.
+Package pdftex.def Info: 2x2stein.png used on input line 312.
 (pdftex.def)             Requested size: 85.32527pt x 96.9295pt.
 File: 2x2foldedout.png Graphic file (type png)
  <use 2x2foldedout.png>
-Package pdftex.def Info: 2x2foldedout.png used on input line 306.
+Package pdftex.def Info: 2x2foldedout.png used on input line 313.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 File: 3x3scrambled.png Graphic file (type png)
 
 <use 3x3scrambled.png>
-Package pdftex.def Info: 3x3scrambled.png used on input line 307.
+Package pdftex.def Info: 3x3scrambled.png used on input line 314.
 (pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
 File: 3x3solved.png Graphic file (type png)
  <use 3x3solved.png>
-Package pdftex.def Info: 3x3solved.png used on input line 308.
+Package pdftex.def Info: 3x3solved.png used on input line 315.
 (pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
  [9] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
@@ -1444,10 +1442,10 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
  )
 (\end occurred when \iftrue on line 52 was incomplete) 
 Here is how much of TeX's memory you used:
- 22575 strings out of 493029
- 414996 string characters out of 6136234
+ 22585 strings out of 493029
+ 415179 string characters out of 6136234
  634870 words of memory out of 5000000
- 25703 multiletter control sequences out of 15000+600000
+ 25711 multiletter control sequences out of 15000+600000
  12096 words of font info for 45 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  64i,8n,60p,826b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1463,14 +1461,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-<<<<<<< HEAD
-Output written on proposal.pdf (11 pages, 440781 bytes).
-=======
-Output written on proposal.pdf (11 pages, 440758 bytes).
->>>>>>> 0b64c3a53ff9ee0998a05a173f957765d1f9cb2c
+Output written on proposal.pdf (11 pages, 495584 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

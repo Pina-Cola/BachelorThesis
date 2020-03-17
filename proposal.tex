@@ -185,9 +185,16 @@ Wenn der Würfel sich in einem Zustand der Tiefe $n$ befindet und ein Zug durchg
 	\item Die Tiefe der neuen Position ist die der alten, also $n+1$.
 	\item Die Tiefe der neuen Positionen ist $n-1$, die Würfelposition ist also näher an der Lösung.
 \end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.16]{graphDepth.png}
+\end{figure}
 Die Tiefe kann nicht negativ sein. Wenn man in einem Zustand der Tiefe $0$ einen Zug macht, hat der Würfel im Folgezustand immer die Tiefe 1. \\ \textcolor{orange}{Vorgang grafisch darstellen}
-Wenn man die maximale Tiefe $n_max$ erreicht hat, können die Folgezustände nur noch die Tiefe $n_{max}$ und $n_{max} -1$ haben. \\
-\\
+Wenn man die maximale Tiefe $n_max$ erreicht hat, können die Folgezustände nur noch die Tiefe $n_{max}$ und $n_{max} -1$ haben. 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.2]{graphDepthN.png}
+\end{figure}
 \\
 Die möglichen Züge werden als einzelne Methoden implementiert (z.B. die Vorderseite um $90^\circ$ nach rechts drehen:
 \begin{verbatim}
@@ -308,11 +315,6 @@ Alle bisher verwendeteten Grafiken und Abbildungen habe ich selbst mit GIMP erst
 \includegraphics[scale=0.09]{3x3solved.png}
 \end{figure}
 
-<<<<<<< HEAD
-GIT TEST
-
-=======
->>>>>>> 0b64c3a53ff9ee0998a05a173f957765d1f9cb2c
 \end{document}
 
 
