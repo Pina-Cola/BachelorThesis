@@ -88,8 +88,8 @@
 \section{Einleitung/Ausgangslage}
 
 Meine Bachelorarbeit soll sich mit dem 2x2x2 Zauberwürfel und dessen Algorithmen zur Lösung befassen. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
-Ich möchte sowohl die Algorithmen mithilfe der Gruppentheorie darstellen, als auch einen Code zur Berechnung der tiefsten Tiefe (Definition der Tiefe folgt) schreiben als auch die 3x3x3 Algorithmen auf den 2x2x2 Würfel übertragen. \\
-Im folgenden werde ich die Terminologie und des Aufbau des Würfels klären.\\
+Ich möchte sowohl die Algorithmen mithilfe der Gruppentheorie darstellen, als auch einen Code zur Berechnung der tiefsten Tiefe (Definition der Tiefe folgt) schreiben, als auch die 3x3x3 Algorithmen auf den 2x2x2 Würfel übertragen. \\
+Im Folgenden werde ich die Terminologie und den Aufbau des Würfels erklären.\\
 Terminologie:
 \begin{figure}[h]
 \centering
@@ -103,7 +103,7 @@ Der Zauberwürfel wird auch Würfel/Cube genannt.}
 \centering
 \includegraphics[scale=0.1]{2x2stein.png}
 \includegraphics[scale=0.1]{2x2farbflaeche.png}
-\caption{Ein 2x2x2 Würfel besteht aus 8 (Eck-)Steinen (links), die jeweils 3 Farbflächen (rechts) haben. Ein 2x2x2 Zauberwürfel hat also 24 Farbflächen.}
+\caption{Ein 2x2x2 Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein 2x2x2 Zauberwürfel hat also 24 Farbflächen.}
 \end{figure}
 
 \begin{figure}[h]
@@ -123,12 +123,12 @@ Der Zauberwürfel wird auch Würfel/Cube genannt.}
 \end{figure}
 
 \subsubsection*{Definition der Tiefe:}
-Anzahl der Züge, die der Würfel von dem gelösten Zustand entfernt ist, wenn man den optimalen Lösungsweg wählt. Beim gelösten Zustand haben alle Felder auf einer Seite die gleiche Farbe. Die Tiefe des tiefsten Falls: Wie viele Züge kann der Würfel maximal von der Lösung entfernt sein? \\
+Anzahl der Züge, die der Würfel von dem gelösten Zustand entfernt ist, wenn man den optimalen Lösungsweg wählt. Bei gelöstem Zustand haben alle Felder auf einer Seite die gleiche Farbe. Die Tiefe des tiefsten Falls: Wie viele Züge kann der Würfel maximal von der Lösung entfernt sein? \\
 Ein Zug ist das Drehen einer einzelnen Seite in eine beliebige Richtung, auch eine $180^\circ$ Drehung.
 
 \subsubsection*{Algorithmen}
-Am 2x2x2 Zauberwürfel gibt es an sich 6 verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus 2 Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts einer Drehung der unteren Ebene nach links. Somit betrachte ich nur die Drehseiten oben, rechts und vorne. \\
-Jede dieser Seiten kann nach im und gegen den Uhrzeigersinn gedreht werden, außerdem kann auch um $180^\circ$ gedreht werden. Die Abkürzungen für die Züge sind folgende: \\
+Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. Somit betrachte ich nur die Drehseiten oben, rechts und vorne. \\
+Jede dieser Seiten kann demnach im und gegen den Uhrzeigersinn gedreht werden, außerdem kann auch um $180^\circ$ gedreht werden. Die Abkürzungen für die Züge sind folgende: \\
 \\
 \begin{tabular}{|c|c|}
 \hline
@@ -166,7 +166,7 @@ $D$ ist analog zu $U$, aber untere statt obere Ebene, $L$ ist analog zu $R$ aber
 
 \subsection*{Code schreiben, der die Tiefe eines 2x2x2 Zauberwüfel berechnet}
 
-Ich werde die Tiefe eines Zauberwürfels mit einem Java-Programm berechnen. Dazu werde ich den Würfel als Array darstellen. Jeder Farbfläche ist ein fester Index des Array zugeordnet, der die Farbe der Fläche als String enthält. \\
+Ich werde die Tiefe eines Zauberwürfels mit einem Java-Programm berechnen. Dazu werde ich den Würfel als Array darstellen. Jeder Farbfläche ist ein fester Index des Arrays zugeordnet, der die Farbe der Fläche als String enthält. \\
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{2x2foldedout.png}
@@ -184,7 +184,7 @@ Von dem gelösten Würfel ausgehend wird nun die Tiefe des tiefsten Falls gesuch
 Wenn der Würfel sich in einem Zustand der Tiefe $n$ befindet und ein Zug durchgeführt wird, muss einer der folgenden drei Fälle eintreten:
 \begin{itemize}
 	\item Die Tiefe der neuen Position ist $n+1$, der Würfel ist also einen Zug mehr von der Lösung entfernt.
-	\item Die Tiefe der neuen Position ist die der alten, also $n+1$.
+	\item Die Tiefe der neuen Position ist die der alten, also $n$.
 	\item Die Tiefe der neuen Positionen ist $n-1$, die Würfelposition ist also näher an der Lösung.
 \end{itemize}
 \begin{figure}[h]
@@ -192,13 +192,13 @@ Wenn der Würfel sich in einem Zustand der Tiefe $n$ befindet und ein Zug durchg
 \includegraphics[scale=0.19]{graphDepth.png}
 \end{figure}
 Die Tiefe kann nicht negativ sein. Wenn man in einem Zustand der Tiefe $0$ einen Zug macht, hat der Würfel im Folgezustand immer die Tiefe 1. \\
-Wenn man die maximale Tiefe $n_max$ erreicht hat, können die Folgezustände nur noch die Tiefe $n_{max}$ und $n_{max} -1$ haben. 
+Wenn man die maximale Tiefe $n_{max}$ erreicht hat, können die Folgezustände nur noch die Tiefe $n_{max}$ und $n_{max} -1$ haben. 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.2]{graphDepthN.png}
 \end{figure}
 \\
-Die möglichen Züge werden als einzelne Methoden implementiert (z.B. die Vorderseite um $90^\circ$ nach rechts drehen:
+Die möglichen Züge werden als einzelne Methoden implementiert (z.B. die Vorderseite um $90^\circ$ nach rechts drehen):
 \begin{verbatim}
 private static final int AMOUNT_FIELDS = 24;
 
@@ -326,7 +326,7 @@ $\footnotesize
 \end{array}\right)$
 \\
 \\
-Außerdem ist für jeden Zug eine Permutation vorhanden. Die Menge aller Permutationen ist also $M_{perm} = \lbrace id, \sigma_U, \sigma_R, \sigma_F, \sigma_D, \sigma_L, \sigma_B \rbrace$
+Außerdem ist für jeden Zug eine Permutation vorhanden. Die Menge aller Permutationen ist somit $M_{perm} = \lbrace id, \sigma_U, \sigma_R, \sigma_F, \sigma_D, \sigma_L, \sigma_B \rbrace$
 
 
 %Definition einer Permutationsgruppe $(G, \cdot)$: \\
@@ -341,7 +341,7 @@ Außerdem ist für jeden Zug eine Permutation vorhanden. Die Menge aller Permuta
 
 \subsection*{Übertragung der 3x3x3 Algorithmen auf den 2x2x2 Zauberwüfel}
 
-Wird im Laufe der Arbeit noch erarbeitet. Zuerst muss aber die Darstellung in der Gruppentheorie (sowohl für den 3x3x3 Würfel als auch den 2x2x2 Qürfel fertig sein. Der Umfang dieses Teils steht in Abhängigkeit zu dem Umfang des Codes und der Darstellung in der Gruppentheorie. \\
+Dies wird im Laufe der Arbeit noch erarbeitet. Zuerst muss aber die Darstellung in der Gruppentheorie (sowohl für den 3x3x3 Würfel als auch den 2x2x2 Würfel) fertig sein. Der Umfang dieses Teils steht in Abhängigkeit zu dem Umfang des Codes und der Darstellung in der Gruppentheorie. \\
 
 \newpage
 
@@ -357,8 +357,8 @@ Die Darstellung des 2x2x2 Würfels mit der Gruppentheorie plane ich für drei Wo
 Um die 3x3x3 Algorithmen auf den 2x2x2 Würfel zu übertragen, muss sowohl die Darstellung des 2x2x2 als auch des 3x3x3 mit der Gruppentheorie oder in anderer (einheitlicher) Weise erfolgt sein - dafür plane ich weitere zwei Wochen ein. \\
 Das Übertragen der 3x3x3 Algorithmen auf den 2x2x2 Würfel dauert dann noch weitere drei Wochen. \\
 Dann plane ich für Quellenangaben, Formatierung, Grafiken und Schreiben noch zwei weitere Wochen ein. \\
-Somit habe ich (hoffentlich) nicht zu knapp geplant und meine Bearbeitungszeit würde sich auf 14 Wochen betragen. Mit Rücksprachen, Anmerkungen, Kritik und Gegenlesung sollte die Arbeit in dem 17 Wochen Zeitrahmen zu schaffen sein. \\ 
-Ich hoffe, es ist verständlich, dass ein Zeitplan im Vorraus nicht allzu genau werden kann. \\
+Somit habe ich (hoffentlich) nicht zu knapp geplant und meine Bearbeitungszeit würde sich auf 14 Wochen belaufen. Mit Rücksprachen, Anmerkungen, Kritik und Gegenlesung sollte die Arbeit in dem 17 Wochen Zeitrahmen zu schaffen sein. \\ 
+Ich hoffe, es ist verständlich, dass mein Zeitplan im Vorraus nicht allzu genau werden kann. \\
 
 
 \section{Abbildungen, Tabellen etc.}
