@@ -303,14 +303,35 @@ Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt 
 \item (Ausrichtung des Würfels) (\textbf{TODO})
 \end{itemize}
 
+\subsection*{Ausrichtung der Steine}
+Der 2x2x2-Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. \\
+Um die Ausrichtung der Steine zu erkennen, bekommen Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür habe ich die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern beziehe ich mich als $x_i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
+\\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.1]{foldedout_numbers.png}
+\end{figure}
+\ \\
+Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, nummeriere ich mit 0, 1 und 2. Ich beginne mit der weißen/gelben Fläche bei 0 und zähle dann im Uhrzeigersinn die Flächen. \\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.1]{foldedout_012.png}
+\includegraphics[scale=0.1]{foldedout_c_012.png}
+\end{figure}
+\ \\
+In der Startkonfiguration beispielsweise sind alle $x_i = 0$. \\
+\\
 
+
+
+\newpage
 
 \section{Quellen, Abbildungen, Tabellen etc.}
 Ich habe das Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen als Quelle verwendet.\\ 
 \\
 Alle bisher verwendeteten Grafiken, Abbildungen und Tabellen habe ich selbst (mit GIMP oder LateX) erstellt, um Markennennungen zu vermeiden und eine einheitliche Darstellung zu gewährleisten.
 Alle verwendeten Abbildungen: \\
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[scale=0.04]{2x2solved.png}
 \includegraphics[scale=0.04]{2x2seite.png}
 \includegraphics[scale=0.04]{2x2farbflaeche.png}
@@ -323,6 +344,8 @@ Alle verwendeten Abbildungen: \\
 \includegraphics[scale=0.15]{caged_positions.png} 
 \includegraphics[scale=0.13]{caged_spin.png}
 \includegraphics[scale=0.13]{foldedout_spin.png}
+\includegraphics[scale=0.1]{foldedout_012.png}
+\includegraphics[scale=0.1]{foldedout_c_012.png}
 \end{figure}
 
 \end{document}
