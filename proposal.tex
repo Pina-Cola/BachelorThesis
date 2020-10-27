@@ -265,6 +265,13 @@ Die Würfelpositionen habe ich wie folgt eingeteilt: \\
 Nun definiere ich $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn: \\
 Ich beschreibe $\sigma_U$ ausführlich und gebe verschiedene Schreibweisen an. Die weiteren Drehungen funktionieren dann analog. \\
 \\
+Die Drehung der oberen Ebene sieht grafisch dargestellt so aus: \\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.13]{caged_spin.png}
+\includegraphics[scale=0.13]{foldedout_spin.png}
+\end{figure}
+\ \\
 $\sigma_U(ulf)=ulb$ \ \ \ \ \ \ \ \ $\sigma_U(ulb)=urb$ \ \ \ \ \ \ \ \ $\sigma_U(urb)=urf$ \ \ \ \ \ \ \ \ $\sigma_U(urf)=ulf$ \\
 $\sigma_U(dlf)=dlf$ \ \ \ \ \ \ \ \ $\sigma_U(dlb)=dlb$ \ \ \ \ \ \ \ \ \ $\sigma_U(drb)=drb$ \ \ \ \ \ \ \ \ $\sigma_U(drf)=drf$ \\
 \\
@@ -279,13 +286,22 @@ Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt
 Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden: \\
 \begin{align*}
 \sigma_U & =\ (ulf \ ulb \ urb \ urf) \\
-\sigma_D & =\ (dlf \ drf \ dlf \ drf) \\
+\sigma_D & =\ (dlf \ drf \ dlb \ drb) \\
 \sigma_F & =\ (ulf \ urf \ dlf \ drf) \\
 \sigma_B & =\ (ulb \ urb \ dlb \ drb) \\
 \sigma_L & =\ (ulb \ ulf \ dlf \ dlb) \\
 \sigma_R & =\ (urb \ urf \ drf \ drb) \\
 \end{align*}
 
+\newpage
+
+\subsection*{Konfiguration des Würfels}
+Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus drei Parametern zusammen: \\
+\begin{itemize}
+\item Position der Ecksteine (angegeben durch \textit{ulf, ulb, urb, urf, dlf, drf, dlb, drb})
+\item Ausrichtung der Ecksteine
+\item (Ausrichtung des Würfels) (\textbf{TODO})
+\end{itemize}
 
 
 
@@ -302,6 +318,11 @@ Alle verwendeten Abbildungen: \\
 \includegraphics[scale=0.04]{2x2scrambled.png}
 \includegraphics[scale=0.04]{3x3scrambled.png}
 \includegraphics[scale=0.04]{3x3solved.png}
+\includegraphics[scale=0.15]{foldedout_cage.png}
+\includegraphics[scale=0.15]{foldedout_cage_color.png}
+\includegraphics[scale=0.15]{caged_positions.png} 
+\includegraphics[scale=0.13]{caged_spin.png}
+\includegraphics[scale=0.13]{foldedout_spin.png}
 \end{figure}
 
 \end{document}
