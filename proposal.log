@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  18 MAR 2020 19:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  27 OCT 2020 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,10 +871,18 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count128
+\float@exts=\toks35
+\float@box=\box40
+\@float@everytoks=\toks36
+\@floatcapt=\box41
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks35
-\verbatim@line=\toks36
+\every@verbatim=\toks37
+\verbatim@line=\toks38
 \verbatim@in@stream=\read2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
@@ -885,10 +893,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip57
 \subfigcapmargin=\dimen179
 \subfiglabelskip=\skip58
-\c@subfigure=\count128
-\c@lofdepth=\count129
-\c@subtable=\count130
-\c@lotdepth=\count131
+\c@subfigure=\count129
+\c@lofdepth=\count130
+\c@subtable=\count131
+\c@lotdepth=\count132
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -912,7 +920,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen186
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count132
+\c@ContinuedFloat=\count133
+Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -924,11 +933,11 @@ PK/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count133
+\etb@tempcnta=\count134
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count134
+\lrq@indent=\count135
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -940,41 +949,41 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count135
-\c@listtotal=\count136
-\c@listcount=\count137
-\c@liststart=\count138
-\c@liststop=\count139
-\c@citecount=\count140
-\c@citetotal=\count141
-\c@multicitecount=\count142
-\c@multicitetotal=\count143
-\c@instcount=\count144
-\c@maxnames=\count145
-\c@minnames=\count146
-\c@maxitems=\count147
-\c@minitems=\count148
-\c@citecounter=\count149
-\c@savedcitecounter=\count150
-\c@uniquelist=\count151
-\c@uniquename=\count152
-\c@refsection=\count153
-\c@refsegment=\count154
-\c@maxextrayear=\count155
-\c@maxextraalpha=\count156
-\c@abbrvpenalty=\count157
-\c@highnamepenalty=\count158
-\c@lownamepenalty=\count159
-\c@maxparens=\count160
-\c@parenlevel=\count161
-\blx@tempcnta=\count162
-\blx@tempcntb=\count163
-\blx@tempcntc=\count164
-\blx@maxsection=\count165
-\blx@maxsegment=\count166
-\blx@notetype=\count167
-\blx@parenlevel@text=\count168
-\blx@parenlevel@foot=\count169
+\c@tabx@nest=\count136
+\c@listtotal=\count137
+\c@listcount=\count138
+\c@liststart=\count139
+\c@liststop=\count140
+\c@citecount=\count141
+\c@citetotal=\count142
+\c@multicitecount=\count143
+\c@multicitetotal=\count144
+\c@instcount=\count145
+\c@maxnames=\count146
+\c@minnames=\count147
+\c@maxitems=\count148
+\c@minitems=\count149
+\c@citecounter=\count150
+\c@savedcitecounter=\count151
+\c@uniquelist=\count152
+\c@uniquename=\count153
+\c@refsection=\count154
+\c@refsegment=\count155
+\c@maxextrayear=\count156
+\c@maxextraalpha=\count157
+\c@abbrvpenalty=\count158
+\c@highnamepenalty=\count159
+\c@lownamepenalty=\count160
+\c@maxparens=\count161
+\c@parenlevel=\count162
+\blx@tempcnta=\count163
+\blx@tempcntb=\count164
+\blx@tempcntc=\count165
+\blx@maxsection=\count166
+\blx@maxsegment=\count167
+\blx@notetype=\count168
+\blx@parenlevel@text=\count169
+\blx@parenlevel@foot=\count170
 \labelnumberwidth=\skip61
 \labelalphawidth=\skip62
 \shorthandwidth=\skip63
@@ -986,75 +995,75 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip69
 \blx@auxin=\read3
 \blx@auxout=\write4
-\c@mincomprange=\count170
-\c@maxcomprange=\count171
-\c@mincompwidth=\count172
-\c@labelname=\count173
-\c@savedlabelname=\count174
-\c@author=\count175
-\c@savedauthor=\count176
-\c@shortauthor=\count177
-\c@savedshortauthor=\count178
-\c@editor=\count179
-\c@savededitor=\count180
-\c@editora=\count181
-\c@savededitora=\count182
-\c@editorb=\count183
-\c@savededitorb=\count184
-\c@editorc=\count185
-\c@savededitorc=\count186
-\c@shorteditor=\count187
-\c@savedshorteditor=\count188
-\c@bookauthor=\count189
-\c@savedbookauthor=\count190
-\c@translator=\count191
-\c@savedtranslator=\count192
-\c@annotator=\count193
-\c@savedannotator=\count194
-\c@commentator=\count195
-\c@savedcommentator=\count196
-\c@introduction=\count197
-\c@savedintroduction=\count198
-\c@foreword=\count199
-\c@savedforeword=\count266
-\c@afterword=\count267
-\c@savedafterword=\count268
-\c@holder=\count269
-\c@savedholder=\count270
-\c@namea=\count271
-\c@savednamea=\count272
-\c@nameb=\count273
-\c@savednameb=\count274
-\c@namec=\count275
-\c@savednamec=\count276
-\c@institution=\count277
-\c@savedinstitution=\count278
-\c@language=\count279
-\c@savedlanguage=\count280
-\c@location=\count281
-\c@savedlocation=\count282
-\c@organization=\count283
-\c@savedorganization=\count284
-\c@origlocation=\count285
-\c@savedoriglocation=\count286
-\c@origpublisher=\count287
-\c@savedorigpublisher=\count288
-\c@pageref=\count289
-\c@savedpageref=\count290
-\c@publisher=\count291
-\c@savedpublisher=\count292
-\c@lista=\count293
-\c@savedlista=\count294
-\c@listb=\count295
-\c@savedlistb=\count296
-\c@listc=\count297
-\c@savedlistc=\count298
-\c@listd=\count299
-\c@savedlistd=\count300
-\c@liste=\count301
-\c@savedliste=\count302
-\c@listf=\count303
-\c@savedlistf=\count304
+\c@mincomprange=\count171
+\c@maxcomprange=\count172
+\c@mincompwidth=\count173
+\c@labelname=\count174
+\c@savedlabelname=\count175
+\c@author=\count176
+\c@savedauthor=\count177
+\c@shortauthor=\count178
+\c@savedshortauthor=\count179
+\c@editor=\count180
+\c@savededitor=\count181
+\c@editora=\count182
+\c@savededitora=\count183
+\c@editorb=\count184
+\c@savededitorb=\count185
+\c@editorc=\count186
+\c@savededitorc=\count187
+\c@shorteditor=\count188
+\c@savedshorteditor=\count189
+\c@bookauthor=\count190
+\c@savedbookauthor=\count191
+\c@translator=\count192
+\c@savedtranslator=\count193
+\c@annotator=\count194
+\c@savedannotator=\count195
+\c@commentator=\count196
+\c@savedcommentator=\count197
+\c@introduction=\count198
+\c@savedintroduction=\count199
+\c@foreword=\count266
+\c@savedforeword=\count267
+\c@afterword=\count268
+\c@savedafterword=\count269
+\c@holder=\count270
+\c@savedholder=\count271
+\c@namea=\count272
+\c@savednamea=\count273
+\c@nameb=\count274
+\c@savednameb=\count275
+\c@namec=\count276
+\c@savednamec=\count277
+\c@institution=\count278
+\c@savedinstitution=\count279
+\c@language=\count280
+\c@savedlanguage=\count281
+\c@location=\count282
+\c@savedlocation=\count283
+\c@organization=\count284
+\c@savedorganization=\count285
+\c@origlocation=\count286
+\c@savedoriglocation=\count287
+\c@origpublisher=\count288
+\c@savedorigpublisher=\count289
+\c@pageref=\count290
+\c@savedpageref=\count291
+\c@publisher=\count292
+\c@savedpublisher=\count293
+\c@lista=\count294
+\c@savedlista=\count295
+\c@listb=\count296
+\c@savedlistb=\count297
+\c@listc=\count298
+\c@savedlistc=\count299
+\c@listd=\count300
+\c@savedlistd=\count301
+\c@liste=\count302
+\c@savedliste=\count303
+\c@listf=\count304
+\c@savedlistf=\count305
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1066,13 +1075,13 @@ Package biblatex Info: ... file 'biblatex_legacy.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.def
 File: biblatex_legacy.def 
-\c@textcitecount=\count305
-\c@textcitetotal=\count306
-\c@textcitemaxnames=\count307
-\c@biburlnumpenalty=\count308
-\c@biburlucpenalty=\count309
-\c@biburllcpenalty=\count310
-\c@smartand=\count311
+\c@textcitecount=\count306
+\c@textcitetotal=\count307
+\c@textcitemaxnames=\count308
+\c@biburlnumpenalty=\count309
+\c@biburlucpenalty=\count310
+\c@biburllcpenalty=\count311
+\c@smartand=\count312
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1084,8 +1093,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count312
-\c@bbx:relatedtotal=\count313
+\c@bbx:relatedcount=\count313
+\c@bbx:relatedtotal=\count314
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1112,13 +1121,13 @@ File: biblatex.cfg
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
-\csq@reset=\count314
-\csq@gtype=\count315
-\csq@glevel=\count316
-\csq@qlevel=\count317
-\csq@maxlvl=\count318
-\csq@tshold=\count319
-\csq@ltx@everypar=\toks37
+\csq@reset=\count315
+\csq@gtype=\count316
+\csq@glevel=\count317
+\csq@qlevel=\count318
+\csq@maxlvl=\count319
+\csq@tshold=\count320
+\csq@ltx@everypar=\toks39
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
@@ -1155,31 +1164,31 @@ LaTeX Warning: Unused global option(s):
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
+\scratchcounter=\count321
 \scratchdimen=\dimen187
-\scratchbox=\box40
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count323
+\scratchbox=\box42
+\nofMPsegments=\count322
+\nofMParguments=\count323
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count324
 \MPscratchDim=\dimen188
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks39
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1274,8 +1283,8 @@ Package biblatex Warning: Data encoding is 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'proposal.bbl' not found.
 No file proposal.bbl.
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./proposal.toc)
@@ -1306,276 +1315,294 @@ File: 2x2farbflaeche.png Graphic file (type png)
  <use 2x2farbflaeche.png>
 Package pdftex.def Info: 2x2farbflaeche.png used on input line 105.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-
-<2x2seite.png, id=22, 1003.75pt x 1140.26pt>
-File: 2x2seite.png Graphic file (type png)
- <use 2x2seite.png>
-Package pdftex.def Info: 2x2seite.png used on input line 111.
-(pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- [1 <./2x2scrambled.png> <./2x2solved.png> <./2x2stein.png> <./2x2farbflaeche.p
-ng> <./2x2seite.png>] <3x3scrambled.png, id=31, 1003.75pt x 1140.26pt>
-File: 3x3scrambled.png Graphic file (type png)
- <use 3x3scrambled.png>
-Package pdftex.def Info: 3x3scrambled.png used on input line 120.
-(pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
-
-<3x3solved.png, id=32, 1003.75pt x 1140.26pt>
-File: 3x3solved.png Graphic file (type png)
- <use 3x3solved.png>
-Package pdftex.def Info: 3x3solved.png used on input line 121.
-(pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+LaTeX Font Info:    Try loading font information for U+msa on input line 108.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 127.
+LaTeX Font Info:    Try loading font information for U+msb on input line 108.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 130--159
+Underfull \hbox (badness 10000) in paragraph at lines 108--113
+
+ []
+
+<2x2seite.png, id=22, 1003.75pt x 1140.26pt>
+File: 2x2seite.png Graphic file (type png)
+ <use 2x2seite.png>
+Package pdftex.def Info: 2x2seite.png used on input line 116.
+(pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<3x3scrambled.png, id=23, 1003.75pt x 1140.26pt>
+File: 3x3scrambled.png Graphic file (type png)
+ <use 3x3scrambled.png>
+Package pdftex.def Info: 3x3scrambled.png used on input line 123.
+(pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
+
+<3x3solved.png, id=24, 1003.75pt x 1140.26pt>
+File: 3x3solved.png Graphic file (type png)
+ <use 3x3solved.png>
+Package pdftex.def Info: 3x3solved.png used on input line 124.
+(pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1 <./2x2scrambled.png> <./2x2solved.png> <./2x2stein.png> <./2x2farbflaeche.pn
+g>]
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--159
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
 
  []
 
-[2 <./3x3scrambled.png> <./3x3solved.png>]
-<2x2foldedout.png, id=40, 1003.75pt x 1140.26pt>
-File: 2x2foldedout.png Graphic file (type png)
- <use 2x2foldedout.png>
-Package pdftex.def Info: 2x2foldedout.png used on input line 172.
-(pdftex.def)             Requested size: 150.556pt x 171.03162pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 186.
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+[2 <./2x2seite.png> <./3x3scrambled.png> <./3x3solved.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 153--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--175
+
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 185.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 186.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
 
-<graphDepth.png, id=41, 963.6pt x 414.04688pt>
-File: graphDepth.png Graphic file (type png)
- <use graphDepth.png>
-Package pdftex.def Info: graphDepth.png used on input line 192.
-(pdftex.def)             Requested size: 183.0859pt x 78.66971pt.
-
-<graphDepthN.png, id=42, 963.6pt x 414.04688pt>
-File: graphDepthN.png Graphic file (type png)
- <use graphDepthN.png>
-Package pdftex.def Info: graphDepthN.png used on input line 198.
-(pdftex.def)             Requested size: 192.71658pt x 82.80789pt.
- [3 <./2x2foldedout.png> <./graphDepth.png>]
-Overfull \hbox (14.05612pt too wide) in paragraph at lines 209--209
-[]            \OT1/cmtt/m/n/12 if (i < 2 || (i > 4 && i < 8) || (i > 12 && i < 
-17) || i > 21) {[] 
- []
-
-
-LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 229.
-
-[4 <./graphDepthN.png>]
-File: 2x2foldedout.png Graphic file (type png)
- <use 2x2foldedout.png>
-Package pdftex.def Info: 2x2foldedout.png used on input line 250.
-(pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-
-<UpAfterFront.png, id=55, 1003.75pt x 1140.26pt>
-File: UpAfterFront.png Graphic file (type png)
- <use UpAfterFront.png>
-Package pdftex.def Info: UpAfterFront.png used on input line 263.
-(pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-
-<FrontAfterUp.png, id=56, 1003.75pt x 1140.26pt>
-File: FrontAfterUp.png Graphic file (type png)
- <use FrontAfterUp.png>
-Package pdftex.def Info: FrontAfterUp.png used on input line 264.
-(pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-
-<inverses.png, id=57, 2748.2675pt x 867.24pt>
-File: inverses.png Graphic file (type png)
- <use inverses.png>
-Package pdftex.def Info: inverses.png used on input line 277.
-(pdftex.def)             Requested size: 192.39838pt x 60.713pt.
-File: 2x2foldedout.png Graphic file (type png)
-
-<use 2x2foldedout.png>
-Package pdftex.def Info: 2x2foldedout.png used on input line 290.
-(pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 31
-2.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 32
-1.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 190--201
 
  []
 
 
-Overfull \hbox (6.08902pt too wide) in paragraph at lines 244--330
-\OT1/cmr/m/n/12 Die sechs Ba-sisz[]uge sind $\OML/cmm/m/it/12 U; R; F; D; L; B$
-\OT1/cmr/m/n/12 . Die Z[]uge $\OML/cmm/m/it/12 D; L; B$ \OT1/cmr/m/n/12 las-sen
- sich durch Ver-kn[]upfungen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 190--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 190--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 190--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 190--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 202--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 207--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 207--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 207--215
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
  []
 
 
-Overfull \hbox (31.96681pt too wide) in paragraph at lines 244--330
-\OML/cmm/m/it/12 ^^[[] \OT1/cmr/m/n/12 = []$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
-
-Overfull \hbox (22.67459pt too wide) in paragraph at lines 244--330
-\OML/cmm/m/it/12 ^^[[] \OT1/cmr/m/n/12 = []$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--330
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
-[5 <./UpAfterFront.png> <./FrontAfterUp.png>] [6 <./inverses.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 350--362
+<caged_positions.png, id=53, 1003.75pt x 1140.26pt>
+File: caged_positions.png Graphic file (type png)
+ <use caged_positions.png>
+Package pdftex.def Info: caged_positions.png used on input line 254.
+(pdftex.def)             Requested size: 150.556pt x 171.03162pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--256
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--256
+
+ []
+
+<foldedout_cage.png, id=54, 1003.75pt x 1140.26pt>
+File: foldedout_cage.png Graphic file (type png)
+ <use foldedout_cage.png>
+Package pdftex.def Info: foldedout_cage.png used on input line 260.
+(pdftex.def)             Requested size: 150.556pt x 171.03162pt.
+
+<foldedout_cage_color.png, id=55, 1003.75pt x 1140.26pt>
+File: foldedout_cage_color.png Graphic file (type png)
+
+<use foldedout_cage_color.png>
+Package pdftex.def Info: foldedout_cage_color.png used on input line 261.
+(pdftex.def)             Requested size: 150.556pt x 171.03162pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--280
+
+ []
+
+[6 <./caged_positions.png> <./foldedout_cage.png> <./foldedout_cage_color.png>]
 File: 2x2solved.png Graphic file (type png)
 <use 2x2solved.png>
-Package pdftex.def Info: 2x2solved.png used on input line 369.
+Package pdftex.def Info: 2x2solved.png used on input line 298.
 (pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
 File: 2x2seite.png Graphic file (type png)
  <use 2x2seite.png>
-Package pdftex.def Info: 2x2seite.png used on input line 370.
+Package pdftex.def Info: 2x2seite.png used on input line 299.
 (pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
 File: 2x2farbflaeche.png Graphic file (type png)
  <use 2x2farbflaeche.png>
-Package pdftex.def Info: 2x2farbflaeche.png used on input line 371.
+Package pdftex.def Info: 2x2farbflaeche.png used on input line 300.
 (pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
 File: 2x2stein.png Graphic file (type png)
 
 <use 2x2stein.png>
-Package pdftex.def Info: 2x2stein.png used on input line 372.
+Package pdftex.def Info: 2x2stein.png used on input line 301.
 (pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
 File: 2x2scrambled.png Graphic file (type png)
  <use 2x2scrambled.png>
-Package pdftex.def Info: 2x2scrambled.png used on input line 373.
-(pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
-File: UpAfterFront.png Graphic file (type png)
- <use UpAfterFront.png>
-Package pdftex.def Info: UpAfterFront.png used on input line 374.
-(pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
-File: FrontAfterUp.png Graphic file (type png)
-
-<use FrontAfterUp.png>
-Package pdftex.def Info: FrontAfterUp.png used on input line 375.
-(pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
-File: 2x2foldedout.png Graphic file (type png)
- <use 2x2foldedout.png>
-Package pdftex.def Info: 2x2foldedout.png used on input line 376.
+Package pdftex.def Info: 2x2scrambled.png used on input line 302.
 (pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
 File: 3x3scrambled.png Graphic file (type png)
  <use 3x3scrambled.png>
-Package pdftex.def Info: 3x3scrambled.png used on input line 377.
+Package pdftex.def Info: 3x3scrambled.png used on input line 303.
 (pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
 File: 3x3solved.png Graphic file (type png)
 
 <use 3x3solved.png>
-Package pdftex.def Info: 3x3solved.png used on input line 378.
+Package pdftex.def Info: 3x3solved.png used on input line 304.
 (pdftex.def)             Requested size: 40.14316pt x 45.60263pt.
- [8] (./proposal.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--306
+
+ []
+
+[7] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
  )
-(\end occurred when \iftrue on line 52 was incomplete) 
+(\end occurred when \iftrue on line 53 was incomplete) 
 Here is how much of TeX's memory you used:
- 22610 strings out of 493029
- 415562 string characters out of 6136234
- 643870 words of memory out of 5000000
- 25731 multiletter control sequences out of 15000+600000
- 14102 words of font info for 54 fonts, out of 8000000 for 9000
+ 22640 strings out of 493029
+ 416036 string characters out of 6136234
+ 635063 words of memory out of 5000000
+ 25763 multiletter control sequences out of 15000+600000
+ 12581 words of font info for 46 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 64i,9n,60p,826b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,8n,60p,826b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on proposal.pdf (10 pages, 686344 bytes).
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on proposal.pdf (9 pages, 648343 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,8 +4,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Einleitung/Ausgangslage}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}(Geplante) Untersuchungen und Untersuchungsmethoden}{3}
+\contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Zeitplan}{8}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Abbildungen, Tabellen etc.}{8}
+\contentsline {section}{\numberline {3}Quellen, Abbildungen, Tabellen etc.}{7}
