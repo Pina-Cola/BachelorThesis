@@ -286,11 +286,11 @@ Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt
 Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden: \\
 \begin{align*}
 \sigma_U & =\ (ulf \ ulb \ urb \ urf) \\
-\sigma_D & =\ (dlf \ drf \ dlb \ drb) \\
-\sigma_F & =\ (ulf \ urf \ dlf \ drf) \\
-\sigma_B & =\ (ulb \ urb \ dlb \ drb) \\
+\sigma_D & =\ (dlf \ drf \ drb \ dlb) \\
+\sigma_F & =\ (ulf \ urf \ drf \ dlf) \\
+\sigma_B & =\ (ulb \ dlb \ drb \ urb) \\
 \sigma_L & =\ (ulb \ ulf \ dlf \ dlb) \\
-\sigma_R & =\ (urb \ urf \ drf \ drb) \\
+\sigma_R & =\ (urb \ drb \ drf \ urf) \\
 \end{align*}
 
 \newpage
@@ -300,7 +300,7 @@ Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt 
 \begin{itemize}
 \item Position der Ecksteine (angegeben durch \textit{ulf, ulb, urb, urf, dlf, drf, dlb, drb})
 \item Ausrichtung der Ecksteine
-\item (Ausrichtung des Würfels) (\textbf{TODO})
+\item (Ausrichtung des Würfels?)
 \end{itemize}
 
 \subsection*{Ausrichtung der Steine}
@@ -328,11 +328,12 @@ Die Nummerierungen der Position ($x$) bleiben an der gleichen Position, die Numm
 Die linke Seite der Würfels wird dabei nicht beeinträchtig, also sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0. \\
 Die anderen Positionen haben nun aber andere Farbflächen: \\
 $x_2 = 2$ \ \ \ \ $x_4 = 1$ \ \ \ \ $x_6 = 1$ \ \ \ \ $x_8 = 2$  \\
-Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$. \\
+Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{foldedout_012_white.png}
 \includegraphics[scale=0.1]{foldedout_012_spin.png}
+\caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
 
 
