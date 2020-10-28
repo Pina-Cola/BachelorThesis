@@ -95,9 +95,11 @@ Terminologie:
 \centering
 \includegraphics[scale=0.1]{2x2scrambled.png}
 \includegraphics[scale=0.1]{2x2solved.png}
-\caption{2x2x2 Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (auch Grundstellung/Startkonfiguration)) \\
+\caption{2x2x2 Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
 Der Zauberwürfel wird auch Würfel/Cube genannt.}
 \end{figure}
+\ \\
+Bei der Startkonfiguration (auch Grundposition, Grundstellung) des 2x2x2 Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
 
 \begin{figure}[h]
 \centering
@@ -109,7 +111,7 @@ $\ $ \\
 Die Ecksteine können sich in jeder Ecke befinden, also gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es also $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\
 Außerdem können die Ecksteine gedreht sein, also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sie durch Rotationen theoretisch 3 verschiedene Ausrichtungen annehmen. Es gibt also $3^8$ Wege, wie die Ecksteine ausgerichtet sein können. \\
 Somit ergibt es $3^8 \cdot 8!$ theoretisch mögliche Positionen für den Würfel. Das sind $264\, 539\, 520$ Positionen.\\
-Es sind aber nicht alle dieser Positionen valide. Eine Position ist valide, wenn sie durch drehen der Seiten erreicht werden kann. Eine valide Position kann durch Drehen der Seiten von der Startkonfiguration aus erreicht werden.\\
+Es sind aber nicht alle dieser Positionen valide. Eine Position ist valide, wenn sie durch drehen der Seiten erreicht werden kann, ausgehend von der Startkonfiguration aus. \\
 
 \begin{figure}[h]
 \centering
@@ -132,14 +134,13 @@ Im Gegensatz zum 3x3x3 Würfel hat der 2x2x2 Würfel weder Mittelsteine, noch Ka
 % Beim 2x2x2 muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
 % Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorgegeben, während sie beim 2x2x2 Würfel gedreht werden kann. \\
 \\
-Bei der Grundposition (auch Startkonfiguration) des 2x2x2 Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
 
 % Da der 2x2x2 Würfel keine Mittelsteine hat, so wie der 3x3x3, gibt es einige Positionen, die äquivalent zueinander sind (durch drehen des Würfels). \\
 % Beispielsweise beschreibt \textit{ulf $\rightarrow$ dlf $\rightarrow$ dlb $\rightarrow$ ulb $\rightarrow$ ulf} ein Rotieren des kompletten Würfels nach vorne, wenn keine Züge gemacht werden. Dabei werden natürlich auch alle anderen Positionen mit rotiert. Der Stein \textit{urf} bewegt sich dabei beispielsweise auch mit: \textit{urf $\rightarrow$ drf $\rightarrow$ drb $\rightarrow$ urb $\rightarrow$ urb}. \\
 % Im späteren Verlauf der Arbeit muss beachtet werden, dass dieser Würfel rotiert werden kann und es somit für die gleichen Steinpositionen verschiedene Optionen gibt, da der Würfel gedreht werden kann.
 
 \subsubsection*{Algorithmen}
-Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. Der Übersichtlichkeit halber werde ich aber trotzdem die einzelnen Ebendrehungen definieren und nicht eine Drehung im und eine gegen den Uhrzeigersinn der einzelnen Ebenen.  \\
+Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. Da ich aber nicht davon ausgehe, den Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene.  \\
 \\
 \begin{tabular}{|c|l|}
 \hline
@@ -227,7 +228,7 @@ Da $Z$ ein Zug ist, kann man diesen auch rückgängig machen. Man muss die einze
 \end{itemize}
 Somit ist $(G_{2x2x2}, \circ)$ eine Gruppe. \\
 Damit $(G_{2x2x2}, \circ)$ eine kommutaive Gruppe (oder Abelsche Gruppe) ist, muss zusätzlich noch die Kommutativität gelten. \\
-Die ist nicht der Fall, da beispielsweise eine Rotation der oberen Ebene nach rechts und eine Rotation der rechten Ebene nach unten in umgekehrter Reihenfolge ein anderes Ergebnis haben. Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
+Dies ist nicht der Fall, da beispielsweise eine Rotation der oberen Ebene nach rechts und eine Rotation der rechten Ebene nach unten in umgekehrter Reihenfolge ein anderes Ergebnis haben. Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
 \\
 
 \section{Konfiguration des Würfels}
@@ -236,7 +237,7 @@ Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt 
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x_i$)
 \end{itemize}
-Also kann die Konfiguration des Würfels als ein 3-Tupel geschrieben werden: $(\sigma), x$
+Also kann die Konfiguration des Würfels als ein 2-Tupel geschrieben werden: $(\sigma, x)$
 
 \subsection*{Positionen im Würfel und Zykel}
 
@@ -256,7 +257,7 @@ Die Würfelpositionen habe ich wie folgt eingeteilt: \\
 \end{figure}
 \ \\
 \\
-Ich ordne jeder Steinposition einen einzigartigen Namen zu, um mich darauf zu beziehen. Dabei gehe ich davon aus, dass die weiße Seite oben ist. Die Steinposition beschreibe ich mich 3 Buchstaben, die aus den Kürzeln \textit{u, d, l, r, f, b} bestehen. Diese Kürzel stehen für up, down, left, right, front, back. \\
+Ich ordne jeder Steinposition einen einzigartigen Namen zu, um mich darauf zu beziehen. Dabei gehe ich davon aus, dass die weiße Seite in der Startkonfiguration oben ist. Die Steinposition beschreibe ich mich 3 Buchstaben, die aus den Kürzeln \textit{u, d, l, r, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, left, right, front, back}. \\
 Somit heißt die Steinposition oben links also \textit{ulf} (für up, left und front). 
 \\
 \\
@@ -293,11 +294,9 @@ Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden
 Die Identitätspermutation schreibe ich als $\sigma = 1$.
 
 
-
 \subsection*{Ausrichtung der Steine}
 Der 2x2x2-Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. \\
 Um die Ausrichtung der Steine zu erkennen, bekommen Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür habe ich die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern beziehe ich mich als $x_i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
-\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{foldedout_numbers.png}
@@ -310,9 +309,7 @@ Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jede
 \includegraphics[scale=0.1]{foldedout_c_012.png}
 \end{figure}
 \ \\
-In der Startkonfiguration beispielsweise sind alle $x_i = 0$. \\
-\\
-\newpage
+In der Startkonfiguration sind alle $x_i = 0$, also $x=(0, 0, 0, 0, 0, 0, 0, 0)$. Das schreibe ich kurz als $x=0$.\\
 \ \\
 Nun stelle ich dar, wie sich die Nummerierung der Farbflächen verändert, wenn der Zug $R$ ausgeführt wird. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. \\
 Die Nummerierungen der Position ($x$) bleiben an der gleichen Position, die Nummerierungen ($0, 1, 2$) der Farbflächen ändern sich mit Rotation der Ebene und ermöglichen so eine Zuordnung der Ausrichtung der Ecksteine. \\
@@ -327,7 +324,7 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
 \ \\
-Wenn $x=(0, 0, 0, 0, 0, 0, 0, 0)$ schreibe ich es kurz als $x=0$.
+
 
 \section{Züge als Gruppenoperation}
 
@@ -343,11 +340,10 @@ Definition einer Gruppenoperation mit der Gruppe $(G_{2x2x2}, \circ)$ und der Me
 Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $M_1 \in G_{2x2x2}$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot M_1$. Wenn nun noch ein weiterer Zug $M_2 \in G_{2x2x2}$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot M_1) \cdot M_2$. \\
 Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration alsl auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. \\
 \\
-Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot = C$. \\
+Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. \\
 \\
 Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
-Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. \\
-\\
+Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. 
 
 \section{Valide Konfigurationen des Würfels}
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
