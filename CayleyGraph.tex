@@ -34,7 +34,7 @@
 
 \geometry{
   paper=a4paper, % Change to letterpaper for US letter
-  top=1.5cm, % Top margin
+  top=3cm, % Top margin
   left=2cm, % Left margin
   right=3cm, % Right margin
   %showframe, % Uncomment to show how the type block is set on the page
@@ -51,11 +51,32 @@
 
 
 \begin{document}
-
-{\huge Cayleygraph zum 2x2x2 Zauberwürfel} \\ \\
+{\huge Cayleygraph zum 2x2x2 Zauberwürfel} \\ \\ \\ \\
 \  \\
 Der Cayley Graph ist ein Graph, der Gruppen darstellt. \\
-Laut dem Paper \glqq Applications of Cayley Graphs\grqq \  hat der Cayleygraph des 2x2x2 Würfels $3\ 674\ 160$ Kmoten.
+Laut dem Paper \glqq Applications of Cayley Graphs\grqq \  hat der Cayleygraph des 2x2x2 Würfels $3\ 674\ 160$ Knoten. \\
+\\
+\\
+Meine Definition einer Gruppenoperation mit der Gruppe $(G_{2x2x2}, \circ)$ und der Menge $C$: \\ \\
+Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ ist, wird der Würfel durch das Ausführen eines Zuges $M \in G_{2x2x2}$ in eine neue Konfiguration gebracht. Diese Konfiguration schreibe ich als $C \cdot M$. \\
+\\
+Definition einer Gruppenoperation mit der Gruppe $(G_{2x2x2}, \circ)$ und der Menge $C$ (aus dem Proposal):
+\begin{itemize}
+\item $\cdot: C \times G_{2x2x2} \rightarrow C$ mit $(c, g) \rightarrow c \cdot g $
+\item $c \cdot N = x$ für alle $c \in C$ und das neutrale Element $N \in G_{2x2x2}$  
+\item $c \cdot (u \circ v) = (c \cdot h) \cdot v$ für alle $u, v \in G_{2x2x2}$ und $c \in C$
+\end{itemize}
+\ \\
+Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $M_1 \in G_{2x2x2}$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot M_1$. Wenn nun noch ein weiterer Zug $M_2 \in G_{2x2x2}$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot M_1) \cdot M_2$. \\
+Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration alsl auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. \\
+\\
+Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. \\
+\\
+Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
+Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. \\
+\\
+
+
 
 
 
