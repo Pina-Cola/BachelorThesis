@@ -4,12 +4,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Einleitung/Ausgangslage}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{4}
+\contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{6}
+\contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{10}
+\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{11}
+\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Quellen, Abbildungen, Tabellen etc.}{12}
+\contentsline {section}{\numberline {6}Quellen, Abbildungen, Tabellen etc.}{10}

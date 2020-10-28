@@ -128,20 +128,15 @@ Es sind aber nicht alle dieser Positionen valide. Eine Position ist valide, wenn
 \newpage
 $\ $\\
 Im Gegensatz zum 3x3x3 Würfel hat der 2x2x2 Würfel weder Mittelsteine, noch Kantsteine. \\
-Das besondere an den Mittelsteinen des 3x3x3 Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3 Würfel die obere Seite leichter fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
-Beim 2x2x2 muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
-Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorgegeben, während sie beim 2x2x2 Würfel gedreht werden kann. \\
+% Das besondere an den Mittelsteinen des 3x3x3 Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3 Würfel die obere Seite leichter fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
+% Beim 2x2x2 muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
+% Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorgegeben, während sie beim 2x2x2 Würfel gedreht werden kann. \\
 \\
-\\
-Bei der Grundposition (auch Startkonfiguration) des Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
-Ich ordne jeder Steinposition einen einzigartigen Namen zu, um mich darauf zu beziehen. Dabei gehe ich davon aus, dass die weiße Seite oben ist. Die Steinposition beschreibe ich mich 3 Buchstaben, die aus den Kürzeln \textit{u, d, l, r, f, b} bestehen. Diese Kürzel stehen für up, down, left, right, front, back. \\
-Somit heißt die Steinposition oben links also \textit{ulf} (für up, left und front). 
-\\
-Da der 2x2x2 Würfel keine Mittelsteine hat, so wie der 3x3x3, gibt es einige Positionen, die äquivalent zueinander sind (durch drehen des Würfels). \\
-Beispielsweise beschreibt \textit{ulf $\rightarrow$ dlf $\rightarrow$ dlb $\rightarrow$ ulb $\rightarrow$ ulf} ein Rotieren des kompletten Würfels nach vorne, wenn keine Züge gemacht werden. Dabei werden natürlich auch alle anderen Positionen mit rotiert. Der Stein \textit{urf} bewegt sich dabei beispielsweise auch mit: \textit{urf $\rightarrow$ drf $\rightarrow$ drb $\rightarrow$ urb $\rightarrow$ urb}. \\
-Im späteren Verlauf der Arbeit muss beachtet werden, dass dieser Würfel rotiert werden kann und es somit für die gleichen Steinpositionen verschiedene Optionen gibt, da der Würfel gedreht werden kann.
-\\
-\\
+Bei der Grundposition (auch Startkonfiguration) des 2x2x2 Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
+
+% Da der 2x2x2 Würfel keine Mittelsteine hat, so wie der 3x3x3, gibt es einige Positionen, die äquivalent zueinander sind (durch drehen des Würfels). \\
+% Beispielsweise beschreibt \textit{ulf $\rightarrow$ dlf $\rightarrow$ dlb $\rightarrow$ ulb $\rightarrow$ ulf} ein Rotieren des kompletten Würfels nach vorne, wenn keine Züge gemacht werden. Dabei werden natürlich auch alle anderen Positionen mit rotiert. Der Stein \textit{urf} bewegt sich dabei beispielsweise auch mit: \textit{urf $\rightarrow$ drf $\rightarrow$ drb $\rightarrow$ urb $\rightarrow$ urb}. \\
+% Im späteren Verlauf der Arbeit muss beachtet werden, dass dieser Würfel rotiert werden kann und es somit für die gleichen Steinpositionen verschiedene Optionen gibt, da der Würfel gedreht werden kann.
 
 \subsubsection*{Algorithmen}
 Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. Der Übersichtlichkeit halber werde ich aber trotzdem die einzelnen Ebendrehungen definieren und nicht eine Drehung im und eine gegen den Uhrzeigersinn der einzelnen Ebenen.  \\
@@ -190,7 +185,6 @@ Die Menge $G_{2x2x2}$ besteht aus allen möglichen Zügen des Würfels. Beispiel
 Wenn zwei Züge die gleiche Würfelposition hervorrufen, sind die beiden Züge "gleich". Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. \\
 \\
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in G_{2x2x2}$ und $Z_2 \in G_{2x2x2}$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in G_{2x2x2}$.) \\
-\\
 Im folgenden werde ich begründen, wieso $(G_{2x2x2}, \circ)$ eine Gruppe ist, indem ich $(G_{2x2x2}, \circ)$ bezüglich der Gruppenkriterien untersuche: \\
 \begin{itemize}
 \item Abgeschlossenheit: \\ 
@@ -231,9 +225,7 @@ $\forall \  Z_1 \in G_{2x2x2},\ \exists \  Z_1^\prime \in G_{2x2x2}.  \ \ Z_1 \c
 \\
 Da $Z$ ein Zug ist, kann man diesen auch rückgängig machen. Man muss die einzelnen Ebenenrotationen nur rückwärts und von hinten durchführen, um den Zug zu invertieren. Dann gilt $Z_1 \circ Z_1^\prime = Z_1^\prime \circ Z_1 = N$.
 \end{itemize}
-\ \\
 Somit ist $(G_{2x2x2}, \circ)$ eine Gruppe. \\
-\newpage
 Damit $(G_{2x2x2}, \circ)$ eine kommutaive Gruppe (oder Abelsche Gruppe) ist, muss zusätzlich noch die Kommutativität gelten. \\
 Die ist nicht der Fall, da beispielsweise eine Rotation der oberen Ebene nach rechts und eine Rotation der rechten Ebene nach unten in umgekehrter Reihenfolge ein anderes Ergebnis haben. Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
 \\
@@ -263,6 +255,10 @@ Die Würfelpositionen habe ich wie folgt eingeteilt: \\
 \includegraphics[scale=0.15]{foldedout_cage_color.png}
 \end{figure}
 \ \\
+\\
+Ich ordne jeder Steinposition einen einzigartigen Namen zu, um mich darauf zu beziehen. Dabei gehe ich davon aus, dass die weiße Seite oben ist. Die Steinposition beschreibe ich mich 3 Buchstaben, die aus den Kürzeln \textit{u, d, l, r, f, b} bestehen. Diese Kürzel stehen für up, down, left, right, front, back. \\
+Somit heißt die Steinposition oben links also \textit{ulf} (für up, left und front). 
+\\
 \\
 Nun definiere ich $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn: \\
 Ich beschreibe $\sigma_U$ ausführlich und gebe verschiedene Schreibweisen an. Die weiteren Drehungen funktionieren dann analog. \\
