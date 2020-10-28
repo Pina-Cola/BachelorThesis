@@ -142,12 +142,6 @@ Beispielsweise beschreibt \textit{ulf $\rightarrow$ dlf $\rightarrow$ dlb $\righ
 Im späteren Verlauf der Arbeit muss beachtet werden, dass dieser Würfel rotiert werden kann und es somit für die gleichen Steinpositionen verschiedene Optionen gibt, da der Würfel gedreht werden kann.
 \\
 \\
-\textbf{TODO \\}
-\\
-Rotation des Würfels \\
-\\
-Ausrichtung der Steine definieren \\
-
 
 \subsubsection*{Algorithmen}
 Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. Der Übersichtlichkeit halber werde ich aber trotzdem die einzelnen Ebendrehungen definieren und nicht eine Drehung im und eine gegen den Uhrzeigersinn der einzelnen Ebenen.  \\
@@ -244,6 +238,15 @@ Damit $(G_{2x2x2}, \circ)$ eine kommutaive Gruppe (oder Abelsche Gruppe) ist, mu
 Die ist nicht der Fall, da beispielsweise eine Rotation der oberen Ebene nach rechts und eine Rotation der rechten Ebene nach unten in umgekehrter Reihenfolge ein anderes Ergebnis haben. Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
 \\
 
+\section{Konfiguration des Würfels}
+Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus drei Parametern zusammen: \\
+\begin{itemize}
+\item Position der Ecksteine (angegeben als $\sigma$)
+\item Ausrichtung der Ecksteine (angegeben als $x_i$)
+\item (Ausrichtung des Würfels? als $\alpha$)
+\end{itemize}
+Also kann die Konfiguration des Würfels als ein 3-Tupel geschrieben werden: $(\sigma), x, \alpha$
+
 \subsection*{Positionen im Würfel und Zykel}
 
 Um die Übergänge der Würfelsteine als Funktion darzustellen, definiere ich eine bijektive Funktion $\sigma$ für jede Rotation. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. \\
@@ -293,15 +296,7 @@ Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden
 \sigma_R & =\ (urb \ drb \ drf \ urf) \\
 \end{align*}
 
-\newpage
 
-\subsection*{Konfiguration des Würfels}
-Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus drei Parametern zusammen: \\
-\begin{itemize}
-\item Position der Ecksteine (angegeben durch \textit{ulf, ulb, urb, urf, dlf, drf, dlb, drb})
-\item Ausrichtung der Ecksteine
-\item (Ausrichtung des Würfels?)
-\end{itemize}
 
 \subsection*{Ausrichtung der Steine}
 Der 2x2x2-Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. \\
@@ -335,7 +330,6 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \includegraphics[scale=0.1]{foldedout_012_spin.png}
 \caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
-
 
 
 \newpage
