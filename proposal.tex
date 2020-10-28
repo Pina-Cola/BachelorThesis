@@ -294,6 +294,7 @@ Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden
 \sigma_L & =\ (ulb \ ulf \ dlf \ dlb) \\
 \sigma_R & =\ (urb \ drb \ drf \ urf) \\
 \end{align*}
+Die Identitätspermutation schreibe ich als $\sigma = 1$.
 
 
 
@@ -329,6 +330,8 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \includegraphics[scale=0.1]{foldedout_012_spin.png}
 \caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
+\ \\
+Wenn $x=(0, 0, 0, 0, 0, 0, 0, 0)$ schreibe ich es kurz als $x=0$.
 
 \section{Züge als Gruppenoperation}
 
@@ -350,7 +353,36 @@ Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In die
 Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. \\
 \\
 
+\section{Valide Konfigurationen des Würfels}
+Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
+\\
+In diesem Abschnitt werde ich zeigen, dass bei einer validen Würfelkonfiguration $\Sigma \  x_i \equiv_3 0$ (modulo) gilt. \\
+Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  $(\sigma, x) \cdot M = (\sigma', x')$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann $\Sigma x_i' \equiv_3 \Sigma \  x_i $. \\
+In Abbildung 6 (s.o.) kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: \\
+\\
+\begin{tabular}{|c|l|l|c|c|}
+\hline
+Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \equiv_3 0$ \\
+\hline
+\hline
+\textit{D} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7)$ & 0 & 0 \\
+\hline
+\textit{U} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_3, x_1, x_4, x_2, x_5, x_6, x_7, x_8)$ & 0 & 0 \\
+\hline
+\textit{R} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, 2, x_3, 1, x_5, 1, x_7, 2)$ & 6 & 0 \\
+\hline
+\textit{L} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(1, x_2, 2, x_4, 2, x_6, 1, x_8)$ & 6 & 0 \\
+\hline
+\textit{F} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, 1, 2, x_5, x_6, 2, 1)$ & 6 & 0 \\
+\hline
+\textit{B} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(2, 1, x_3, x_4, 1, 2, x_7, x_8)$ & 6 & 0 \\
+\hline
 
+\end{tabular}
+\ \\ \\ \\ \\
+Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\Sigma x_i' \equiv_3 0$, dann gibt es einen Zug $M \in G_{2x2x2}$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
+\\
+Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in G_{2x2x2}$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Ecktsücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. \\
 
 
 

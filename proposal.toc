@@ -8,6 +8,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{9}
+\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Quellen, Abbildungen, Tabellen etc.}{11}
+\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Quellen, Abbildungen, Tabellen etc.}{12}
