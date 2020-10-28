@@ -243,9 +243,8 @@ Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt 
 \begin{itemize}
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x_i$)
-\item (Ausrichtung des Würfels? als $\alpha$)
 \end{itemize}
-Also kann die Konfiguration des Würfels als ein 3-Tupel geschrieben werden: $(\sigma), x, \alpha$
+Also kann die Konfiguration des Würfels als ein 3-Tupel geschrieben werden: $(\sigma), x$
 
 \subsection*{Positionen im Würfel und Zykel}
 
@@ -330,6 +329,29 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \includegraphics[scale=0.1]{foldedout_012_spin.png}
 \caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
+
+\section{Züge als Gruppenoperation}
+
+Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ ist, wird der Würfel durch das Ausführen eines Zuges $M \in G_{2x2x2}$ in eine neue Konfiguration gebracht. Diese Konfiguration schreibe ich als $C \cdot M$. \\
+\\
+Definition einer Gruppenoperation mit der Gruppe $(G_{2x2x2}, \circ)$ und der Menge $C$:
+\begin{itemize}
+\item $\cdot: C \times G_{2x2x2} \rightarrow C$ mit $(c, g) \rightarrow c \cdot g $
+\item $c \cdot N = x$ für alle $c \in C$ und das neutrale Element $N \in G_{2x2x2}$  
+\item $c \cdot (u \circ v) = (c \cdot h) \cdot v$ für alle $u, v \in G_{2x2x2}$ und $c \in C$
+\end{itemize}
+\ \\
+Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $M_1 \in G_{2x2x2}$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot M_1$. Wenn nun noch ein weiterer Zug $M_2 \in G_{2x2x2}$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot M_1) \cdot M_2$. \\
+Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration alsl auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. \\
+\\
+Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot = C$. \\
+\\
+Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
+Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. \\
+\\
+
+
+
 
 
 \newpage

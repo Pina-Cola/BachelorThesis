@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  28 OCT 2020 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  28 OCT 2020 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1470,84 +1470,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--243
 <caged_positions.png, id=53, 1003.75pt x 1140.26pt>
 File: caged_positions.png Graphic file (type png)
  <use caged_positions.png>
-Package pdftex.def Info: caged_positions.png used on input line 257.
+Package pdftex.def Info: caged_positions.png used on input line 256.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--259
+Underfull \hbox (badness 10000) in paragraph at lines 251--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--259
+Underfull \hbox (badness 10000) in paragraph at lines 251--258
 
  []
 
 <foldedout_cage.png, id=54, 1003.75pt x 1140.26pt>
 File: foldedout_cage.png Graphic file (type png)
  <use foldedout_cage.png>
-Package pdftex.def Info: foldedout_cage.png used on input line 263.
+Package pdftex.def Info: foldedout_cage.png used on input line 262.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
 <foldedout_cage_color.png, id=55, 1003.75pt x 1140.26pt>
 File: foldedout_cage_color.png Graphic file (type png)
 
 <use foldedout_cage_color.png>
-Package pdftex.def Info: foldedout_cage_color.png used on input line 264.
+Package pdftex.def Info: foldedout_cage_color.png used on input line 263.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
  [6 <./caged_positions.png>]
 <caged_spin.png, id=60, 1003.75pt x 1140.26pt>
 File: caged_spin.png Graphic file (type png)
  <use caged_spin.png>
-Package pdftex.def Info: caged_spin.png used on input line 274.
+Package pdftex.def Info: caged_spin.png used on input line 273.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
 <foldedout_spin.png, id=61, 1003.75pt x 1140.26pt>
 File: foldedout_spin.png Graphic file (type png)
  <use foldedout_spin.png>
-Package pdftex.def Info: foldedout_spin.png used on input line 275.
+Package pdftex.def Info: foldedout_spin.png used on input line 274.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--276
+Underfull \hbox (badness 10000) in paragraph at lines 265--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--276
+Underfull \hbox (badness 10000) in paragraph at lines 265--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--276
+Underfull \hbox (badness 10000) in paragraph at lines 265--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
 
  []
 
@@ -1556,36 +1556,36 @@ ldedout_spin.png>] <foldedout_numbers.png, id=69, 1003.75pt x 1140.26pt>
 File: foldedout_numbers.png Graphic file (type png)
 
 <use foldedout_numbers.png>
-Package pdftex.def Info: foldedout_numbers.png used on input line 307.
+Package pdftex.def Info: foldedout_numbers.png used on input line 306.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--308
+Underfull \hbox (badness 10000) in paragraph at lines 301--307
 
  []
 
 <foldedout_012.png, id=70, 1003.75pt x 1140.26pt>
 File: foldedout_012.png Graphic file (type png)
  <use foldedout_012.png>
-Package pdftex.def Info: foldedout_012.png used on input line 313.
+Package pdftex.def Info: foldedout_012.png used on input line 312.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 <foldedout_c_012.png, id=71, 1003.75pt x 1140.26pt>
 File: foldedout_c_012.png Graphic file (type png)
  <use foldedout_c_012.png>
-Package pdftex.def Info: foldedout_c_012.png used on input line 314.
+Package pdftex.def Info: foldedout_c_012.png used on input line 313.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--315
+Underfull \hbox (badness 10000) in paragraph at lines 308--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--319
+Underfull \hbox (badness 10000) in paragraph at lines 315--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--319
+Underfull \hbox (badness 10000) in paragraph at lines 315--318
 
  []
 
@@ -1594,26 +1594,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--319
 File: foldedout_012_white.png Graphic file (type png)
 
 <use foldedout_012_white.png>
-Package pdftex.def Info: foldedout_012_white.png used on input line 329.
+Package pdftex.def Info: foldedout_012_white.png used on input line 328.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 <foldedout_012_spin.png, id=79, 1003.75pt x 1140.26pt>
 File: foldedout_012_spin.png Graphic file (type png)
 
 <use foldedout_012_spin.png>
-Package pdftex.def Info: foldedout_012_spin.png used on input line 330.
+Package pdftex.def Info: foldedout_012_spin.png used on input line 329.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--332
+Underfull \hbox (badness 10000) in paragraph at lines 319--331
 
  []
 
-[9 <./foldedout_012_white.png> <./foldedout_012_spin.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 338--358
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--338
 
  []
 
-[10] (./proposal.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
+
+ []
+
+[9 <./foldedout_012_white.png> <./foldedout_012_spin.png>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 360--380
+
+ []
+
+[11] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
@@ -1637,10 +1662,10 @@ ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (12 pages, 1035166 bytes).
+Output written on proposal.pdf (13 pages, 1038229 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
