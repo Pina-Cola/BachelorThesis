@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  28 OCT 2020 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  29 OCT 2020 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1369,12 +1369,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--137
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--165
+Underfull \hbox (badness 10000) in paragraph at lines 143--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--165
+Underfull \hbox (badness 10000) in paragraph at lines 143--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--167
 
  []
 
@@ -1674,7 +1679,7 @@ ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (12 pages, 1038568 bytes).
+Output written on proposal.pdf (12 pages, 1038615 bytes).
 PDF statistics:
  121 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
