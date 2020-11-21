@@ -168,7 +168,6 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
 \\
 Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut. 
 
-\newpage
 
 \section{Würfel als Gruppe}
 
@@ -331,6 +330,16 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \end{figure}
 \ \\
 \subsection*{Rotation des Würfels}
+Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
+Allerdings hat der 2x2x2-Würfel im Gegensatz zum 3x3x3-Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
+Der 2x2x2-Würfel kann also gelöst sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen. \\
+Dafür nutze ich die Bezeichnungen der Steinpositionen, die ich bereits für die Positionen der Steine im Würfel verwendet habe: \\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.13]{caged_positions.png} \\
+\end{figure}
+\ \\
+Nun kann ich (genau wie bei den einzelnen Zügen des Würfels) für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festlegen. \\
 
 
 \section{Züge als Gruppenoperation}
@@ -345,7 +354,7 @@ Definition einer Gruppenoperation mit der Gruppe $(G_{2x2x2}, \circ)$ und der Me
 \end{itemize}
 \ \\
 Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $M_1 \in G_{2x2x2}$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot M_1$. Wenn nun noch ein weiterer Zug $M_2 \in G_{2x2x2}$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot M_1) \cdot M_2$. \\
-Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration alsl auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. \\
+Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. \\
 \\
 Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. \\
 \\
