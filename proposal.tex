@@ -130,17 +130,20 @@ Es sind aber nicht alle dieser Positionen valide. Eine Position ist valide, wenn
 \newpage
 $\ $\\
 Im Gegensatz zum 3x3x3 Würfel hat der 2x2x2 Würfel weder Mittelsteine, noch Kantsteine. \\
-% Das besondere an den Mittelsteinen des 3x3x3 Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3 Würfel die obere Seite leichter fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
-% Beim 2x2x2 muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
-% Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorgegeben, während sie beim 2x2x2 Würfel gedreht werden kann. \\
+Das besondere an den Mittelsteinen des 3x3x3 Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3 Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
+Beim 2x2x2 muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
+Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorgegeben, während sie beim 2x2x2 Würfel gedreht werden kann. \\
 \\
 
 % Da der 2x2x2 Würfel keine Mittelsteine hat, so wie der 3x3x3, gibt es einige Positionen, die äquivalent zueinander sind (durch drehen des Würfels). \\
 % Beispielsweise beschreibt \textit{ulf $\rightarrow$ dlf $\rightarrow$ dlb $\rightarrow$ ulb $\rightarrow$ ulf} ein Rotieren des kompletten Würfels nach vorne, wenn keine Züge gemacht werden. Dabei werden natürlich auch alle anderen Positionen mit rotiert. Der Stein \textit{urf} bewegt sich dabei beispielsweise auch mit: \textit{urf $\rightarrow$ drf $\rightarrow$ drb $\rightarrow$ urb $\rightarrow$ urb}. \\
 % Im späteren Verlauf der Arbeit muss beachtet werden, dass dieser Würfel rotiert werden kann und es somit für die gleichen Steinpositionen verschiedene Optionen gibt, da der Würfel gedreht werden kann.
 
+\newpage
+
 \subsubsection*{Algorithmen}
-Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. Da ich aber nicht davon ausgehe, den Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene.  \\
+Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
+Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug dar zu stellen. \\
 \\
 \begin{tabular}{|c|l|}
 \hline
@@ -165,6 +168,7 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
 \\
 Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut. 
 
+\newpage
 
 \section{Würfel als Gruppe}
 
@@ -179,7 +183,7 @@ Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für den folgenden Abschn
 \end{itemize}
 \ \\
 Im folgenden setze ich die Definition der Gruppe des 3x3x3 Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen als Gruppe des 2x2x2 Würfels um. Die Gruppe von Janet Chen bezeichne ich als $(G_{3x3x3}, \circ)$, auch wenn Janet Chen sie als $(G, *)$ bezeichnet hat. Den Namen der Gruppe ändere ich aber, um klar zwischen dem 2x2x2 und dem 3x3x3 Würfel zu differenzieren. Das Symbol des Operators verändere ich, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
-\\
+\\ 
 Die Gruppe des 2x2x2 Würfels nenne ich $(G_{2x2x2}, \circ)$. \\
 \\
 Die Menge $G_{2x2x2}$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. \\
@@ -232,12 +236,14 @@ Dies ist nicht der Fall, da beispielsweise eine Rotation der oberen Ebene nach r
 \\
 
 \section{Konfiguration des Würfels}
-Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus drei Parametern zusammen: \\
+Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus zwei Parametern zusammen: \\
 \begin{itemize}
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x_i$)
 \end{itemize}
-Also kann die Konfiguration des Würfels als ein 2-Tupel geschrieben werden: $(\sigma, x)$
+Also kann die Konfiguration des Würfels als ein 2-Tupel geschrieben werden: $(\sigma, x)$. \\
+\\
+Der Würfel kann aber auch komplett gedreht werden, ohne Züge auszuführen.
 
 \subsection*{Positionen im Würfel und Zykel}
 
@@ -324,6 +330,7 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
 \ \\
+\subsection*{Rotation des Würfels}
 
 
 \section{Züge als Gruppenoperation}
