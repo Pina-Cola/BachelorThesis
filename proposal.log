@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  29 OCT 2020 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  21 NOV 2020 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1651,11 +1651,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--378
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 384--404
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
 
  []
 
-[10] (./proposal.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 411--431
+
+ []
+
+[11] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
@@ -1679,10 +1689,10 @@ ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (12 pages, 1038762 bytes).
+Output written on proposal.pdf (13 pages, 1039194 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,4 +12,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Quellen, Abbildungen, Tabellen etc.}{10}
+\contentsline {section}{\numberline {6}Quellen, Abbildungen, Tabellen etc.}{11}
