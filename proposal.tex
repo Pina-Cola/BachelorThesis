@@ -352,21 +352,17 @@ Dazu benenne ich zuerst die einzelnen Rotationen des Würfels: \\
 Abkürzung & Beschreibung der Rotation \\
 \hline
 \hline
-$R_U$ & Rotation des Würfels nach oben \\
+$R_U$ & Rotation des Würfels nach hinten \\
 \hline
-$R_D$ & Rotation des Würfels nach unten  \\
+$R_D$ & Rotation des Würfels nach vorne  \\
 \hline
 $R_R$ & Rotation des Würfels nach rechts \\
 \hline
 $R_L$ & Rotation des Würfels nach links\\
 \hline
-$R_F$ & Rotation des Würfels nach vorne\\
-\hline
-$R_B$ & Rotation des Würfels nach hinten\\
-\hline
 \end{tabular} \\
 \\
-Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
+Die Kürzel stehen für \textit{Up, Down, Right, Left}.  \\
 Die Rotationen werden von der oberen Ebene ausgehend durchgeführt. \\
 \\
 Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. \\
@@ -389,15 +385,12 @@ $drf \mapsto dlf$ \ \ \ \ \ \ \ \ $dlf \mapsto dlb$ \ \ \ \ \ \ \ \ \ $dlb \maps
 In der Zykel-Schreibweise sieht die Veränderung der Steinnamen dann so aus: \\
 $\delta_{R_R}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ \\
 \\
-Die Rotationen sehen in Zykel-Schreibweise folgendermaßen aus: \\
-\\
+Die Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
 \delta_{R_U} & =(ulf \ ulb \ dlb \ dlf) \ (urf \ urb \ drb \ drf) \\
 \delta_{R_D} & =(ulb \ ulf \ dlf \ dlb) \ (urb \ urf \ drf \ drb) \\
 \delta_{R_R} & =(urf \ ulf \ ulb \ urb) \ (drf \ dlf \ dlb \ drb ) \\
 \delta_{R_L} & =(urb \ ulb \ ulf \ urf) \ (drb \ dlb \ dlf \ drf) \\
-\delta_{R_F} & =()() \\
-\delta_{R_B} & =()() \\
 \end{align*}
 
 \section{Züge als Gruppenoperation}
