@@ -263,8 +263,11 @@ Die Würfelpositionen habe ich wie folgt eingeteilt: \\
 \ \\
 \\
 Ich ordne jeder Steinposition einen einzigartigen Namen zu, um mich darauf zu beziehen. Dabei gehe ich davon aus, dass die weiße Seite in der Startkonfiguration oben ist. Die Steinposition beschreibe ich mich 3 Buchstaben, die aus den Kürzeln \textit{u, d, l, r, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, left, right, front, back}. \\
-Somit heißt die Steinposition oben links also \textit{ulf} (für up, left und front). 
+Somit heißt die Steinposition oben links also $ulf$ (für up, left und front). 
 \\
+\\
+Jeder Stein bekommt auch einen einzigartigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein $ulf$ im gelösten Zustand an der Steinposition $ulf$.
+\\ 
 \\
 Nun definiere ich $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn: \\
 Ich beschreibe $\sigma_U$ ausführlich und gebe verschiedene Schreibweisen an. Die weiteren Drehungen funktionieren dann analog. \\
@@ -333,7 +336,7 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \subsection*{Rotation des Würfels}
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 Allerdings hat der 2x2x2-Würfel im Gegensatz zum 3x3x3-Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
-Der 2x2x2-Würfel kann also gelöst sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen. \\
+Der 2x2x2-Würfel kann also im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen. \\
 Dafür nutze ich die Bezeichnungen der Steinpositionen, die ich bereits für die Positionen der Steine im Würfel verwendet habe: \\
 \begin{figure}[H]
 \centering
@@ -364,15 +367,38 @@ $R_B$ & Rotation des Würfels nach hinten\\
 \end{tabular} \\
 \\
 Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
+Die Rotationen werden von der oberen Ebene ausgehend durchgeführt. \\
 \\
-Der komplette Würfel wird gedreht. Das vorher definierte Gitter, das die Steinpositionen als Element der Menge $ \{ ulf, ulb, urb, urf, dlf, dlb, drb, drf \}$ definiert, wird hier aber nicht gedreht. Die Bezeichnung $ulf$ beispielsweise beschreibt also immernoch den Stein oben links vorne, auch wenn der Würfel rotiert wurde. \\
+Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. \\
 \\
-Die Steine werden allerdings durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Rotation der Ebenen, wo nur einige Steine diePosition ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. \\
+Anhand des Zuges $R_R$, also einer Rotation des kompletten Würfels nach rechts, zeige ich nun die Veränderung der Würfelkonfiguration. 
 \\
-Anhand des Zuges $R_R$, also einer Rotation des kompletten Würfelsnach rechts, zeige ich nun die Veränderung der Würfelkonfiguration: \\
-
-
-
+Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$: \\
+\\
+$
+\delta_{R_R}(urf) = ulf \ \ \ \ \ \ \delta_{R_U}(ulf) = ulb \ \ \ \ \ \ \delta_{R_U}(ulb) = urb \ \ \ \ \ \ \delta_{R_R}(urb) = urf \\
+\delta_{R_R}(drf) = dlf \ \ \ \ \ \ \delta_{R_U}(dlf) = dlb \ \ \ \ \ \ \delta_{R_U}(dlb) = drb \ \ \ \ \ \ \delta_{R_R}(drb) = drf
+$
+\\
+\\
+Wenn man das nun in der Form $i \mapsto j$ schreibt, erhält man: \\
+\\
+$urf \mapsto ulf$ \ \ \ \ \ \ \ \ $ulf \mapsto ulb$ \ \ \ \ \ \ \ \ $ulb \mapsto urb$ \ \ \ \ \ \ \ \ $urb \mapsto urf$ \\
+$drf \mapsto dlf$ \ \ \ \ \ \ \ \ $dlf \mapsto dlb$ \ \ \ \ \ \ \ \ \ $dlb \mapsto drb$ \ \ \ \ \ \ \ \ $drb \mapsto drf$ \\
+\\
+In der Zykel-Schreibweise sieht die Veränderung der Steinnamen dann so aus: \\
+$\delta_{R_R}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ \\
+\\
+Die Rotationen sehen in Zykel-Schreibweise folgendermaßen aus: \\
+\\
+\begin{align*}
+\delta_{R_U} & =(ulf \ ulb \ dlb \ dlf) \ (urf \ urb \ drb \ drf) \\
+\delta_{R_D} & =(ulb \ ulf \ dlf \ dlb) \ (urb \ urf \ drf \ drb) \\
+\delta_{R_R} & =(urf \ ulf \ ulb \ urb) \ (drf \ dlf \ dlb \ drb ) \\
+\delta_{R_L} & =(urb \ ulb \ ulf \ urf) \ (drb \ dlb \ dlf \ drf) \\
+\delta_{R_F} & =()() \\
+\delta_{R_B} & =()() \\
+\end{align*}
 
 \section{Züge als Gruppenoperation}
 
