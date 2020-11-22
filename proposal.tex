@@ -328,7 +328,8 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \includegraphics[scale=0.1]{foldedout_012_spin.png}
 \caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
-\ \\
+
+
 \subsection*{Rotation des Würfels}
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 Allerdings hat der 2x2x2-Würfel im Gegensatz zum 3x3x3-Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
@@ -336,10 +337,41 @@ Der 2x2x2-Würfel kann also gelöst sein, ohne dass die obere Seite weiß ist. D
 Dafür nutze ich die Bezeichnungen der Steinpositionen, die ich bereits für die Positionen der Steine im Würfel verwendet habe: \\
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.13]{caged_positions.png} \\
+\includegraphics[scale=0.13]{caged_positions.png}
 \end{figure}
 \ \\
 Nun kann ich (genau wie bei den einzelnen Zügen des Würfels) für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festlegen. \\
+\\
+Dazu benenne ich zuerst die einzelnen Rotationen des Würfels: \\
+\\
+\begin{tabular}{|c|l|}
+\hline
+Abkürzung & Beschreibung der Rotation \\
+\hline
+\hline
+$R_U$ & Rotation des Würfels nach oben \\
+\hline
+$R_D$ & Rotation des Würfels nach unten  \\
+\hline
+$R_R$ & Rotation des Würfels nach rechts \\
+\hline
+$R_L$ & Rotation des Würfels nach links\\
+\hline
+$R_F$ & Rotation des Würfels nach vorne\\
+\hline
+$R_B$ & Rotation des Würfels nach hinten\\
+\hline
+\end{tabular} \\
+\\
+Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
+\\
+Der komplette Würfel wird gedreht. Das vorher definierte Gitter, das die Steinpositionen als Element der Menge $ \{ ulf, ulb, urb, urf, dlf, dlb, drb, drf \}$ definiert, wird hier aber nicht gedreht. Die Bezeichnung $ulf$ beispielsweise beschreibt also immernoch den Stein oben links vorne, auch wenn der Würfel rotiert wurde. \\
+\\
+Die Steine werden allerdings durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Rotation der Ebenen, wo nur einige Steine diePosition ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. \\
+\\
+Anhand des Zuges $R_R$, also einer Rotation des kompletten Würfelsnach rechts, zeige ich nun die Veränderung der Würfelkonfiguration: \\
+
+
 
 
 \section{Züge als Gruppenoperation}

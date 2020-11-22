@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{9}
+\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{10}
 \defcounter {refsection}{0}\relax 
