@@ -167,7 +167,7 @@ $B$ & Drehung der hinteren Ebene im Uhrzeigersinn \\
 Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
 \\
 Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut. 
-
+\newpage
 
 \section{Würfel als Gruppe}
 
@@ -341,8 +341,9 @@ Dafür nutze ich die Bezeichnungen der Steinpositionen, die ich bereits für die
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{caged_positions.png}
-\end{figure}
-\ \\
+\end{figure} 
+\ \\ 
+\\
 Nun kann ich (genau wie bei den einzelnen Zügen des Würfels) für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festlegen. \\
 \\
 Dazu benenne ich zuerst die einzelnen Rotationen des Würfels: \\
@@ -368,7 +369,11 @@ Die Rotationen werden von der oberen Ebene ausgehend durchgeführt. \\
 Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. \\
 \\
 Anhand des Zuges $R_R$, also einer Rotation des kompletten Würfels nach rechts, zeige ich nun die Veränderung der Würfelkonfiguration. 
-\\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.13]{auf_ulf.png}
+\end{figure}
+\ \\
 Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$: \\
 \\
 $
@@ -393,6 +398,8 @@ Die Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{R_L} & =(urb \ ulb \ ulf \ urf) \ (drb \ dlb \ dlf \ drf) \\
 \end{align*}
 
+
+\newpage
 \section{Züge als Gruppenoperation}
 
 Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ ist, wird der Würfel durch das Ausführen eines Zuges $M \in G_{2x2x2}$ in eine neue Konfiguration gebracht. Diese Konfiguration schreibe ich als $C \cdot M$. \\
@@ -411,6 +418,9 @@ Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nich
 \\
 Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
 Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. 
+
+
+\newpage
 
 \section{Valide Konfigurationen des Würfels}
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
@@ -453,22 +463,12 @@ Die Bachelorarbeit ist auf 4 Monate ausgelegt, das sind circa 16 Wochen. \\
 Der Zeitplan wird etwa wie folgt aussehen: \\
 \\
 \begin{itemize}
-\item[Woche 1]
-\item[Woche 2]
-\item[Woche 3]
-\item[Woche 4]
-\item[Woche 5]
-\item[Woche 6]
-\item[Woche 7]
-\item[Woche 8]
-\item[Woche 9]
-\item[Woche 10]
-\item[Woche 11]
-\item[Woche 12]
-\item[Woche 13]
-\item[Woche 14]
-\item[Woche 15]
-\item[Woche 16]
+\item Woche 1-4: Aufarbeitung und weitere Ausführung des Proposals
+\item Woche 4-8: Übertragen von Tom Davis' Paper auf 2x2x2 Würfel
+\item Woche 8-10: Cayley-Graph einarbeiten
+\item Woche 10-12: Cayley-Graph (eventuell) in Arbeit aufnehmen
+\item Woche 12-14: Korrekturlesen bzw Schreiben
+\item Woche 14-16: Puffer
 \end{itemize}
 
 

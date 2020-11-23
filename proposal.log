@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  22 NOV 2020 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  23 NOV 2020 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1383,9 +1383,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--170
 
  []
 
+[3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 178.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -1410,7 +1411,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--193
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 194--198
 
  []
@@ -1455,12 +1456,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
-<caged_positions.png, id=49, 1003.75pt x 1140.26pt>
+<caged_positions.png, id=53, 1003.75pt x 1140.26pt>
 File: caged_positions.png Graphic file (type png)
  <use caged_positions.png>
 Package pdftex.def Info: caged_positions.png used on input line 254.
@@ -1475,10 +1476,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--256
 
  []
 
-[5] <foldedout_cage.png, id=54, 1003.75pt x 1140.26pt>
+<foldedout_cage.png, id=54, 1003.75pt x 1140.26pt>
 File: foldedout_cage.png Graphic file (type png)
-
-<use foldedout_cage.png>
+ <use foldedout_cage.png>
 Package pdftex.def Info: foldedout_cage.png used on input line 260.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
@@ -1556,22 +1556,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--294
 
  []
 
-<foldedout_numbers.png, id=64, 1003.75pt x 1140.26pt>
+[7 <./caged_spin.png> <./foldedout_spin.png>]
+<foldedout_numbers.png, id=69, 1003.75pt x 1140.26pt>
 File: foldedout_numbers.png Graphic file (type png)
 
 <use foldedout_numbers.png>
 Package pdftex.def Info: foldedout_numbers.png used on input line 310.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- [7 <./caged_spin.png> <./foldedout_spin.png>]
-<foldedout_012.png, id=70, 1003.75pt x 1140.26pt>
+ <foldedout_012.png, id=70, 1003.75pt x 1140.26pt>
 File: foldedout_012.png Graphic file (type png)
- <use foldedout_012.png>
+
+<use foldedout_012.png>
 Package pdftex.def Info: foldedout_012.png used on input line 316.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-
-<foldedout_c_012.png, id=71, 1003.75pt x 1140.26pt>
+ <foldedout_c_012.png, id=71, 1003.75pt x 1140.26pt>
 File: foldedout_c_012.png Graphic file (type png)
- <use foldedout_c_012.png>
+
+<use foldedout_c_012.png>
 Package pdftex.def Info: foldedout_c_012.png used on input line 317.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
@@ -1613,132 +1614,142 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--344
 
  []
 
+<auf_ulf.png, id=80, 1003.75pt x 1140.26pt>
+File: auf_ulf.png Graphic file (type png)
+ <use auf_ulf.png>
+Package pdftex.def Info: auf_ulf.png used on input line 374.
+(pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
+Underfull \hbox (badness 10000) in paragraph at lines 345--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
+Underfull \hbox (badness 10000) in paragraph at lines 345--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
+Underfull \hbox (badness 10000) in paragraph at lines 345--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
+Underfull \hbox (badness 10000) in paragraph at lines 345--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
+Underfull \hbox (badness 10000) in paragraph at lines 345--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--389
+Underfull \hbox (badness 10000) in paragraph at lines 345--375
 
  []
 
 [9 <./foldedout_012_white.png> <./foldedout_012_spin.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 398--401
+Underfull \hbox (badness 10000) in paragraph at lines 376--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--414
+Underfull \hbox (badness 10000) in paragraph at lines 376--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--414
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 416--445
+Underfull \hbox (badness 10000) in paragraph at lines 376--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--445
+Underfull \hbox (badness 10000) in paragraph at lines 376--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--445
+Underfull \hbox (badness 10000) in paragraph at lines 376--394
+
+ []
+
+[10 <./auf_ulf.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 405--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--445
+Underfull \hbox (badness 10000) in paragraph at lines 413--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--445
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--445
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--445
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 452--455
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--455
+Underfull \hbox (badness 10000) in paragraph at lines 413--421
 
  []
 
 [12]
+Underfull \hbox (badness 10000) in paragraph at lines 426--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--455
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 462--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--465
+
+ []
+
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 478--498
 
  []
 
-[13] (./proposal.aux)
+[15] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
  )
 (\end occurred when \iftrue on line 53 was incomplete) 
 Here is how much of TeX's memory you used:
- 22674 strings out of 493029
- 416824 string characters out of 6136234
+ 22679 strings out of 493029
+ 416898 string characters out of 6136234
  635063 words of memory out of 5000000
- 25790 multiletter control sequences out of 15000+600000
+ 25794 multiletter control sequences out of 15000+600000
  12274 words of font info for 45 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  64i,8n,60p,826b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1753,10 +1764,10 @@ mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (15 pages, 1052118 bytes).
+Output written on proposal.pdf (17 pages, 1234032 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 143 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
