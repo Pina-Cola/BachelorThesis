@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  23 NOV 2020 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  27 NOV 2020 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1604,138 +1604,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 319--333
  []
 
 [8 <./foldedout_numbers.png> <./foldedout_012.png> <./foldedout_c_012.png>]
-File: caged_positions.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
+
+ []
+
+File: caged_positions.png Graphic file (type png)
 <use caged_positions.png>
-Package pdftex.def Info: caged_positions.png used on input line 343.
+Package pdftex.def Info: caged_positions.png used on input line 346.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--344
+Underfull \hbox (badness 10000) in paragraph at lines 340--347
 
  []
 
 <auf_ulf.png, id=80, 1003.75pt x 1140.26pt>
 File: auf_ulf.png Graphic file (type png)
  <use auf_ulf.png>
-Package pdftex.def Info: auf_ulf.png used on input line 374.
+Package pdftex.def Info: auf_ulf.png used on input line 377.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--375
+Underfull \hbox (badness 10000) in paragraph at lines 348--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--375
+Underfull \hbox (badness 10000) in paragraph at lines 348--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--375
+Underfull \hbox (badness 10000) in paragraph at lines 348--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--375
+Underfull \hbox (badness 10000) in paragraph at lines 348--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--375
+Underfull \hbox (badness 10000) in paragraph at lines 348--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--375
+Underfull \hbox (badness 10000) in paragraph at lines 348--378
 
  []
 
 [9 <./foldedout_012_white.png> <./foldedout_012_spin.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 376--394
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--394
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--394
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--394
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--394
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 [10 <./auf_ulf.png>] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 405--408
+Underfull \hbox (badness 10000) in paragraph at lines 408--411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--421
+Underfull \hbox (badness 10000) in paragraph at lines 416--424
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--421
+Underfull \hbox (badness 10000) in paragraph at lines 416--424
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 426--455
+Underfull \hbox (badness 10000) in paragraph at lines 429--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--455
+Underfull \hbox (badness 10000) in paragraph at lines 429--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--455
+Underfull \hbox (badness 10000) in paragraph at lines 429--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--455
+Underfull \hbox (badness 10000) in paragraph at lines 429--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--455
+Underfull \hbox (badness 10000) in paragraph at lines 429--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--455
+Underfull \hbox (badness 10000) in paragraph at lines 429--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--455
+Underfull \hbox (badness 10000) in paragraph at lines 429--458
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 462--465
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--465
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 478--498
+Underfull \hbox (badness 10000) in paragraph at lines 481--501
 
  []
 
@@ -1764,7 +1772,7 @@ mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (17 pages, 1234032 bytes).
+Output written on proposal.pdf (17 pages, 1234400 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
