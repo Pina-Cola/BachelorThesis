@@ -464,14 +464,14 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 Allerdings hat der 2x2x2-Würfel im Gegensatz zum 3x3x3-Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
 Der 2x2x2-Würfel kann also im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen. \\
-Dafür nutze ich die Bezeichnungen der Steinpositionen, die ich bereits für die Positionen der Steine im Würfel verwendet habe: \\
+Um die Drehungen zu benennen, benenne ich die Achsen den Würfels wie folgt:
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.13]{caged_positions.png}
+\includegraphics[scale=0.13]{Pfeile.png}
 \end{figure} 
 \ \\ 
 \\
-Nun kann ich (genau wie bei den einzelnen Zügen des Würfels) für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festlegen. \\
+Nun kann ich für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festlegen. \\
 \\
 Dazu benenne ich zuerst die einzelnen Rotationen des Würfels: \\
 \\
@@ -480,22 +480,23 @@ Dazu benenne ich zuerst die einzelnen Rotationen des Würfels: \\
 Abkürzung & Beschreibung der Rotation \\
 \hline
 \hline
-$R_U$ & Rotation des Würfels nach hinten \\
+$R_{Z_l}$ & Rotation des Würfels um die $z$-Achse nach links (gegen den Uhrzeigersinn)\\
 \hline
-$R_D$ & Rotation des Würfels nach vorne  \\
+$R_{Z_r}$ & Rotation des Würfels um die $z$-Achse nach rechts (im Uhrzeigersinn)  \\
 \hline
-$R_R$ & Rotation des Würfels nach rechts \\
+$R_{Y_l}$ & Rotation des Würfels um die $y$-Achse nach links (gegen den Uhrzeigersinn)\\
 \hline
-$R_L$ & Rotation des Würfels nach links\\
+$R_{Y_r}$ & Rotation des Würfels um die $y$-Achse nach rechts (im Uhrzeigersinn)  \\
+\hline
+$R_{X_l}$ & Rotation des Würfels um die $x$-Achse nach links (gegen den Uhrzeigersinn)\\
+\hline
+$R_{X_r}$ & Rotation des Würfels um die $x$-Achse nach rechts (im Uhrzeigersinn) \\
 \hline
 \end{tabular} \\
 \\
-Die Kürzel stehen für \textit{Up, Down, Right, Left}.  \\
-Die Rotationen werden von der oberen Ebene ausgehend durchgeführt. \\
-\\
 Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. \\
 \\
-Anhand des Zuges $R_R$, also einer Rotation des kompletten Würfels nach rechts, zeige ich nun die Veränderung der Würfelkonfiguration. 
+Anhand des Zuges $R_{Z_r}$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, zeige ich nun die Veränderung der Würfelkonfiguration. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{auf_ulf.png}
