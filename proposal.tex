@@ -86,6 +86,25 @@
 
 \setcounter{page}{1} 
 
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
 \section{Einleitung/Ausgangslage}
 
 Meine Bachelorarbeit soll sich mit dem 2x2x2 Zauberwürfel und dessen Algorithmen zur Lösung befassen. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
@@ -141,7 +160,26 @@ Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorg
 
 \newpage
 
-\subsubsection*{Algorithmen}
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+\subsubsection*{Züge des Würfels}
 Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
 Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug dar zu stellen. \\
 \\
@@ -168,6 +206,25 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
 \\
 Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut. 
 \newpage
+
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
 
 \section{Würfel als Gruppe}
 
@@ -234,6 +291,25 @@ Damit $(G_{2x2x2}, \circ)$ eine kommutaive Gruppe (oder Abelsche Gruppe) ist, mu
 Dies ist nicht der Fall, da beispielsweise eine Rotation der oberen Ebene nach rechts und eine Rotation der rechten Ebene nach unten in umgekehrter Reihenfolge ein anderes Ergebnis haben. Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
 \\
 
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
 \section{Konfiguration des Würfels}
 Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus zwei Parametern zusammen: \\
 \begin{itemize}
@@ -243,6 +319,25 @@ Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt 
 Also kann die Konfiguration des Würfels als ein 2-Tupel geschrieben werden: $(\sigma, x)$. \\
 \\
 Der Würfel kann aber auch komplett gedreht werden, ohne Züge auszuführen.
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
 
 \subsection*{Positionen im Würfel und Zykel}
 
@@ -302,6 +397,24 @@ Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden
 Die Identitätspermutation schreibe ich als $\sigma = 1$.
 
 
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
 \subsection*{Ausrichtung der Steine}
 Der 2x2x2-Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. \\
 Um die Ausrichtung der Steine zu erkennen, bekommen Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür habe ich die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern beziehe ich mich als $x_i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
@@ -333,9 +446,20 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \end{figure}
 
 
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
 \subsection*{Rotation des Würfels}
-2 RICHTUNGEN HABE ICH VERGESSEN!!!! \\
-\\
 
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 Allerdings hat der 2x2x2-Würfel im Gegensatz zum 3x3x3-Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
@@ -402,6 +526,18 @@ Die Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \end{align*}
 
 
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
 \newpage
 \section{Züge als Gruppenoperation}
 
@@ -424,6 +560,24 @@ Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts 
 
 
 \newpage
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
 
 \section{Valide Konfigurationen des Würfels}
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
@@ -460,6 +614,20 @@ Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in G_{2x2x2}$, 
 
 \newpage
 
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
 \subsection*{Zeitplan}
 
 Die Bachelorarbeit ist auf 4 Monate ausgelegt, das sind circa 16 Wochen. \\
@@ -476,6 +644,23 @@ Der Zeitplan wird etwa wie folgt aussehen: \\
 
 
 \newpage
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
 
 \section{Quellen, Abbildungen, Tabellen etc.}
 Ich habe das Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen als Quelle verwendet.\\ 
