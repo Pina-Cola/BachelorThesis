@@ -505,8 +505,8 @@ Anhand des Zuges $R_{Z_r}$, also einer Rotation des kompletten Würfels um die $
 Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$: \\
 \\
 $
-\delta_{R_R}(urf) = ulf \ \ \ \ \ \ \delta_{R_U}(ulf) = ulb \ \ \ \ \ \ \delta_{R_U}(ulb) = urb \ \ \ \ \ \ \delta_{R_R}(urb) = urf \\
-\delta_{R_R}(drf) = dlf \ \ \ \ \ \ \delta_{R_U}(dlf) = dlb \ \ \ \ \ \ \delta_{R_U}(dlb) = drb \ \ \ \ \ \ \delta_{R_R}(drb) = drf
+\delta_{R_{Z_r}}(urf) = ulf \ \ \ \ \ \ \delta_{R_{Z_r}}(ulf) = ulb \ \ \ \ \ \ \delta_{R_{Z_r}}(ulb) = urb \ \ \ \ \ \ \delta_{R_{Z_r}}(urb) = urf \\
+\delta_{R_{Z_r}}(drf) = dlf \ \ \ \ \ \ \delta_{R_{Z_r}}(dlf) = dlb \ \ \ \ \ \ \ \delta_{R_{Z_r}}(dlb) = drb \ \ \ \ \ \ \delta_{R_{Z_r}}(drb) = drf
 $
 \\
 \\
@@ -516,14 +516,16 @@ $urf \mapsto ulf$ \ \ \ \ \ \ \ \ $ulf \mapsto ulb$ \ \ \ \ \ \ \ \ $ulb \mapsto
 $drf \mapsto dlf$ \ \ \ \ \ \ \ \ $dlf \mapsto dlb$ \ \ \ \ \ \ \ \ \ $dlb \mapsto drb$ \ \ \ \ \ \ \ \ $drb \mapsto drf$ \\
 \\
 In der Zykel-Schreibweise sieht die Veränderung der Steinnamen dann so aus: \\
-$\delta_{R_R}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ \\
+$\delta_{R_{Z_r}}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ \\
 \\
-Die Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
+Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
-\delta_{R_U} & =(ulf \ ulb \ dlb \ dlf) \ (urf \ urb \ drb \ drf) \\
-\delta_{R_D} & =(ulb \ ulf \ dlf \ dlb) \ (urb \ urf \ drf \ drb) \\
-\delta_{R_R} & =(urf \ ulf \ ulb \ urb) \ (drf \ dlf \ dlb \ drb ) \\
-\delta_{R_L} & =(urb \ ulb \ ulf \ urf) \ (drb \ dlb \ dlf \ drf) \\
+\delta_{R_{Z_r}} & = (ulf \ ulb \ urb \ urb) \ (dlf \ dlb \ drb \ drf)\\
+\delta_{R_{Z_l}} & = (ulf \ urf \ urb \ ulb) \ (dlf \ drf \ drb \ dlb)\\
+\delta_{R_{Y_r}} & = (ulf \ ulb \ dlb \ dlf) \ (urf \ urb \ drb \ drf)\\
+\delta_{R_{Y_l}} & = (ulf \ dlf \ dlb \ ulb) \ (urf \ drf \ drb \ urb)\\
+\delta_{R_{X_r}} & = (ulf \ urf \ drf \ dlf) \ (urb \ ulb \ dlb \ drb)\\
+\delta_{R_{X_l}} & = (ulf \ dlf \ drf \ urf) \ (urb \ ulb \ dlb \ drb)\\
 \end{align*}
 
 

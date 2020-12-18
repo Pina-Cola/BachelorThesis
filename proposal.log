@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  18 DEC 2020 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  18 DEC 2020 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1671,67 +1671,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--522
  []
 
 [10 <./auf_ulf.png>] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 545--548
+Underfull \hbox (badness 10000) in paragraph at lines 547--550
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--561
+Underfull \hbox (badness 10000) in paragraph at lines 555--563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--561
+Underfull \hbox (badness 10000) in paragraph at lines 555--563
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 584--613
+Underfull \hbox (badness 10000) in paragraph at lines 586--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--613
+Underfull \hbox (badness 10000) in paragraph at lines 586--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--613
+Underfull \hbox (badness 10000) in paragraph at lines 586--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--613
+Underfull \hbox (badness 10000) in paragraph at lines 586--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--613
+Underfull \hbox (badness 10000) in paragraph at lines 586--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--613
+Underfull \hbox (badness 10000) in paragraph at lines 586--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--613
+Underfull \hbox (badness 10000) in paragraph at lines 586--615
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 634--637
+Underfull \hbox (badness 10000) in paragraph at lines 636--639
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--637
+Underfull \hbox (badness 10000) in paragraph at lines 636--639
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 667--687
+Underfull \hbox (badness 10000) in paragraph at lines 669--689
 
  []
 
@@ -1748,7 +1748,7 @@ Here is how much of TeX's memory you used:
  25798 multiletter control sequences out of 15000+600000
  12274 words of font info for 45 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 64i,8n,60p,826b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,9n,60p,826b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts
@@ -1760,7 +1760,7 @@ mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (17 pages, 1274036 bytes).
+Output written on proposal.pdf (17 pages, 1273984 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
