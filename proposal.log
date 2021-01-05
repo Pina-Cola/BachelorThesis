@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  5 JAN 2021 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  5 JAN 2021 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,105 +6,30 @@ entering extended mode
 (./proposal.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
-Document Class: scrartcl 2015/10/03 v3.19a KOMA-Script document class (article)
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
-basics and keyval usage)
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
-
-Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
-                  Copyright (C) Markus Kohm
-
-))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
-)
-Package tocbasic Info: omitting babel extension for `toc'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 123.
-Package tocbasic Info: omitting babel extension for `lof'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 124.
-Package tocbasic Info: omitting babel extension for `lot'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 125.
-Package scrartcl Info: You've used standard option `12pt'.
-(scrartcl)             This is correct!
-(scrartcl)             Internally I'm using `fontsize=12pt'.
-(scrartcl)             If you'd like to set the option with \KOMAoptions,
-(scrartcl)             you'd have to use `fontsize=12pt' there
-(scrartcl)             instead of `12pt', too.
-Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input l
-ine 2033.
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
-File: scrsize12pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (12p
-t)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
-
-Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
-                  Copyright (C) Frank Neukam, 1992-1994
-                  Copyright (C) Markus Kohm, 1994-
-
-\ta@bcor=\skip41
-\ta@div=\count79
-Package typearea Info: You've used standard option `a4paper'.
-(typearea)             This is correct!
-(typearea)             Internally I'm using `paper=a4'.
-(typearea)             If you'd like to set the option with \KOMAoptions,
-(typearea)             you'd have to use `paper=a4' there
-(typearea)             instead of `a4paper', too.
-\ta@hblk=\skip42
-\ta@vblk=\skip43
-\ta@temp=\skip44
-\footheight=\skip45
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 12
-(typearea)             BCOR = 0.0pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 448.13095pt
-(typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 2.4185pt
-(typearea)              \oddsidemargin  = 2.4185pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 635.5pt
-(typearea)              \topmargin      = -41.72441pt
-(typearea)              \headheight     = 18.125pt
-(typearea)              \headsep        = 21.75pt
-(typearea)              \topskip        = 12.0pt
-(typearea)              \footskip       = 50.75pt
-(typearea)              \baselineskip   = 14.5pt
-(typearea)              on input line 1509.
-)
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-LaTeX Info: Redefining \textsubscript on input line 3906.
-\abovecaptionskip=\skip46
-\belowcaptionskip=\skip47
-\c@pti@nb@sid@b@x=\box26
-\c@figure=\count86
-\c@table=\count87
-\bibindent=\dimen102
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
@@ -125,7 +50,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -161,7 +86,7 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
-\babel@savecnt=\count89
+\babel@savecnt=\count88
 \U@D=\dimen105
 )
 \l@naustrian = a dialect from \language\l@ngerman 
@@ -483,23 +408,23 @@ Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count90
-\calc@Bcount=\count91
+\calc@Acount=\count89
+\calc@Bcount=\count90
 \calc@Adimen=\dimen106
 \calc@Bdimen=\dimen107
-\calc@Askip=\skip48
-\calc@Bskip=\skip49
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count92
-\calc@Cskip=\skip50
+\calc@Ccount=\count91
+\calc@Cskip=\skip45
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
-\@mathmargin=\skip51
+\@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -517,30 +442,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count93
+\inf@bad=\count92
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count94
-\leftroot@=\count95
+\uproot@=\count93
+\leftroot@=\count94
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count96
-\DOTSCASE@=\count97
+\classnum@=\count95
+\DOTSCASE@=\count96
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
+\Mathstrutbox@=\box26
+\strutbox@=\box27
 \big@size=\dimen110
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
 \tag@help=\toks18
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
 \andhelp@=\toks19
 \eqnshift@=\dimen111
 \alignsep@=\dimen112
@@ -549,8 +474,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \totwidth@=\dimen115
 \lineht@=\dimen116
 \@envbody=\toks20
-\multlinegap=\skip52
-\multlinetaggap=\skip53
+\multlinegap=\skip47
+\multlinetaggap=\skip48
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
@@ -559,9 +484,9 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count105
+\g_MT_multlinerow_int=\count104
 \l_MT_multwidth_dim=\dimen117
-\origjot=\skip54
+\origjot=\skip49
 \l_MT_shortvdotswithinadjustabove_dim=\dimen118
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen119
 \l_MT_above_intertext_sep=\dimen120
@@ -593,9 +518,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count106
-\Gm@cntv=\count107
-\c@Gm@tempcnt=\count108
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
 \Gm@bindingoffset=\dimen124
 \Gm@wd@mp=\dimen125
 \Gm@odd@mp=\dimen126
@@ -608,7 +533,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrpage2.sty
 Package: scrpage2 2015/10/03 v3.19a KOMA-Script package (page head and foot)
-LaTeX Info: Redefining \pagemark on input line 174.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -620,7 +544,7 @@ LaTeX Info: Redefining \pagemark on input line 174.
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box29
+\pgfutil@abb=\box28
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -652,10 +576,10 @@ ex
 \pgf@yc=\dimen141
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count109
-\c@pgf@countb=\count110
-\c@pgf@countc=\count111
-\c@pgf@countd=\count112
+\c@pgf@counta=\count108
+\c@pgf@countb=\count109
+\c@pgf@countc=\count110
+\c@pgf@countd=\count111
 \t@pgf@toka=\toks27
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
@@ -674,8 +598,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count113
-\pgfsyssoftpath@bigbuffer@items=\count114
+\pgfsyssoftpath@smallbuffer@items=\count112
+\pgfsyssoftpath@bigbuffer@items=\count113
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -689,8 +613,8 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen142
-\pgfmath@count=\count115
-\pgfmath@box=\box30
+\pgfmath@count=\count114
+\pgfmath@box=\box29
 \pgfmath@toks=\toks30
 \pgfmath@stack@operand=\toks31
 \pgfmath@stack@operation=\toks32
@@ -713,7 +637,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count116
+\c@pgfmathroundto@lastzeros=\count115
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -748,10 +672,10 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box31
-\pgf@hbox=\box32
-\pgf@layerbox@main=\box33
-\pgf@picture@serial@count=\count117
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count116
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -784,7 +708,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen166
-\pgf@sys@shading@range@num=\count118
+\pgf@sys@shading@range@num=\count117
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -792,7 +716,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box34
+\pgfexternal@startupbox=\box33
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -808,7 +732,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box35
+\pgfnodeparttextbox=\box34
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
@@ -841,7 +765,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count119
+\pgf@plot@mark@count=\count118
 \pgfplotmarksize=\dimen171
 )
 \tikz@lastx=\dimen172
@@ -850,22 +774,22 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen175
 \tikzleveldistance=\dimen176
 \tikzsiblingdistance=\dimen177
-\tikz@figbox=\box36
-\tikz@figbox@bg=\box37
-\tikz@tempbox=\box38
-\tikz@tempbox@bg=\box39
-\tikztreelevel=\count120
-\tikznumberofchildren=\count121
-\tikznumberofcurrentchild=\count122
-\tikz@fig@count=\count123
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count119
+\tikznumberofchildren=\count120
+\tikznumberofcurrentchild=\count121
+\tikz@fig@count=\count122
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count124
-\pgfmatrixcurrentcolumn=\count125
-\pgf@matrix@numberofcolumns=\count126
+\pgfmatrixcurrentrow=\count123
+\pgfmatrixcurrentcolumn=\count124
+\pgf@matrix@numberofcolumns=\count125
 )
-\tikz@expandcount=\count127
+\tikz@expandcount=\count126
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -873,11 +797,11 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count128
+\c@float@type=\count127
 \float@exts=\toks35
-\float@box=\box40
+\float@box=\box39
 \@float@everytoks=\toks36
-\@floatcapt=\box41
+\@floatcapt=\box40
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
@@ -887,23 +811,23 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip55
-\subfigcapskip=\skip56
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
 \subfigcaptopadj=\dimen178
-\subfigbottomskip=\skip57
+\subfigbottomskip=\skip52
 \subfigcapmargin=\dimen179
-\subfiglabelskip=\skip58
-\c@subfigure=\count129
-\c@lofdepth=\count130
-\c@subtable=\count131
-\c@lotdepth=\count132
+\subfiglabelskip=\skip53
+\c@subfigure=\count128
+\c@lofdepth=\count129
+\c@subtable=\count130
+\c@lotdepth=\count131
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip59
-\subfig@bottom=\skip60
+\subfig@top=\skip54
+\subfig@bottom=\skip55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -919,8 +843,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen185
 \caption@hangindent=\dimen186
 )
-Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count133
+\c@ContinuedFloat=\count132
 Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
 )
@@ -933,11 +856,11 @@ PK/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count134
+\etb@tempcnta=\count133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count135
+\lrq@indent=\count134
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -949,121 +872,121 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count136
-\c@listtotal=\count137
-\c@listcount=\count138
-\c@liststart=\count139
-\c@liststop=\count140
-\c@citecount=\count141
-\c@citetotal=\count142
-\c@multicitecount=\count143
-\c@multicitetotal=\count144
-\c@instcount=\count145
-\c@maxnames=\count146
-\c@minnames=\count147
-\c@maxitems=\count148
-\c@minitems=\count149
-\c@citecounter=\count150
-\c@savedcitecounter=\count151
-\c@uniquelist=\count152
-\c@uniquename=\count153
-\c@refsection=\count154
-\c@refsegment=\count155
-\c@maxextrayear=\count156
-\c@maxextraalpha=\count157
-\c@abbrvpenalty=\count158
-\c@highnamepenalty=\count159
-\c@lownamepenalty=\count160
-\c@maxparens=\count161
-\c@parenlevel=\count162
-\blx@tempcnta=\count163
-\blx@tempcntb=\count164
-\blx@tempcntc=\count165
-\blx@maxsection=\count166
-\blx@maxsegment=\count167
-\blx@notetype=\count168
-\blx@parenlevel@text=\count169
-\blx@parenlevel@foot=\count170
-\labelnumberwidth=\skip61
-\labelalphawidth=\skip62
-\shorthandwidth=\skip63
-\biblabelsep=\skip64
-\bibitemsep=\skip65
-\bibnamesep=\skip66
-\bibinitsep=\skip67
-\bibparsep=\skip68
-\bibhang=\skip69
+\c@tabx@nest=\count135
+\c@listtotal=\count136
+\c@listcount=\count137
+\c@liststart=\count138
+\c@liststop=\count139
+\c@citecount=\count140
+\c@citetotal=\count141
+\c@multicitecount=\count142
+\c@multicitetotal=\count143
+\c@instcount=\count144
+\c@maxnames=\count145
+\c@minnames=\count146
+\c@maxitems=\count147
+\c@minitems=\count148
+\c@citecounter=\count149
+\c@savedcitecounter=\count150
+\c@uniquelist=\count151
+\c@uniquename=\count152
+\c@refsection=\count153
+\c@refsegment=\count154
+\c@maxextrayear=\count155
+\c@maxextraalpha=\count156
+\c@abbrvpenalty=\count157
+\c@highnamepenalty=\count158
+\c@lownamepenalty=\count159
+\c@maxparens=\count160
+\c@parenlevel=\count161
+\blx@tempcnta=\count162
+\blx@tempcntb=\count163
+\blx@tempcntc=\count164
+\blx@maxsection=\count165
+\blx@maxsegment=\count166
+\blx@notetype=\count167
+\blx@parenlevel@text=\count168
+\blx@parenlevel@foot=\count169
+\labelnumberwidth=\skip56
+\labelalphawidth=\skip57
+\shorthandwidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
 \blx@auxin=\read3
 \blx@auxout=\write4
-\c@mincomprange=\count171
-\c@maxcomprange=\count172
-\c@mincompwidth=\count173
-\c@labelname=\count174
-\c@savedlabelname=\count175
-\c@author=\count176
-\c@savedauthor=\count177
-\c@shortauthor=\count178
-\c@savedshortauthor=\count179
-\c@editor=\count180
-\c@savededitor=\count181
-\c@editora=\count182
-\c@savededitora=\count183
-\c@editorb=\count184
-\c@savededitorb=\count185
-\c@editorc=\count186
-\c@savededitorc=\count187
-\c@shorteditor=\count188
-\c@savedshorteditor=\count189
-\c@bookauthor=\count190
-\c@savedbookauthor=\count191
-\c@translator=\count192
-\c@savedtranslator=\count193
-\c@annotator=\count194
-\c@savedannotator=\count195
-\c@commentator=\count196
-\c@savedcommentator=\count197
-\c@introduction=\count198
-\c@savedintroduction=\count199
-\c@foreword=\count266
-\c@savedforeword=\count267
-\c@afterword=\count268
-\c@savedafterword=\count269
-\c@holder=\count270
-\c@savedholder=\count271
-\c@namea=\count272
-\c@savednamea=\count273
-\c@nameb=\count274
-\c@savednameb=\count275
-\c@namec=\count276
-\c@savednamec=\count277
-\c@institution=\count278
-\c@savedinstitution=\count279
-\c@language=\count280
-\c@savedlanguage=\count281
-\c@location=\count282
-\c@savedlocation=\count283
-\c@organization=\count284
-\c@savedorganization=\count285
-\c@origlocation=\count286
-\c@savedoriglocation=\count287
-\c@origpublisher=\count288
-\c@savedorigpublisher=\count289
-\c@pageref=\count290
-\c@savedpageref=\count291
-\c@publisher=\count292
-\c@savedpublisher=\count293
-\c@lista=\count294
-\c@savedlista=\count295
-\c@listb=\count296
-\c@savedlistb=\count297
-\c@listc=\count298
-\c@savedlistc=\count299
-\c@listd=\count300
-\c@savedlistd=\count301
-\c@liste=\count302
-\c@savedliste=\count303
-\c@listf=\count304
-\c@savedlistf=\count305
+\c@mincomprange=\count170
+\c@maxcomprange=\count171
+\c@mincompwidth=\count172
+\c@labelname=\count173
+\c@savedlabelname=\count174
+\c@author=\count175
+\c@savedauthor=\count176
+\c@shortauthor=\count177
+\c@savedshortauthor=\count178
+\c@editor=\count179
+\c@savededitor=\count180
+\c@editora=\count181
+\c@savededitora=\count182
+\c@editorb=\count183
+\c@savededitorb=\count184
+\c@editorc=\count185
+\c@savededitorc=\count186
+\c@shorteditor=\count187
+\c@savedshorteditor=\count188
+\c@bookauthor=\count189
+\c@savedbookauthor=\count190
+\c@translator=\count191
+\c@savedtranslator=\count192
+\c@annotator=\count193
+\c@savedannotator=\count194
+\c@commentator=\count195
+\c@savedcommentator=\count196
+\c@introduction=\count197
+\c@savedintroduction=\count198
+\c@foreword=\count199
+\c@savedforeword=\count266
+\c@afterword=\count267
+\c@savedafterword=\count268
+\c@holder=\count269
+\c@savedholder=\count270
+\c@namea=\count271
+\c@savednamea=\count272
+\c@nameb=\count273
+\c@savednameb=\count274
+\c@namec=\count275
+\c@savednamec=\count276
+\c@institution=\count277
+\c@savedinstitution=\count278
+\c@language=\count279
+\c@savedlanguage=\count280
+\c@location=\count281
+\c@savedlocation=\count282
+\c@organization=\count283
+\c@savedorganization=\count284
+\c@origlocation=\count285
+\c@savedoriglocation=\count286
+\c@origpublisher=\count287
+\c@savedorigpublisher=\count288
+\c@pageref=\count289
+\c@savedpageref=\count290
+\c@publisher=\count291
+\c@savedpublisher=\count292
+\c@lista=\count293
+\c@savedlista=\count294
+\c@listb=\count295
+\c@savedlistb=\count296
+\c@listc=\count297
+\c@savedlistc=\count298
+\c@listd=\count299
+\c@savedlistd=\count300
+\c@liste=\count301
+\c@savedliste=\count302
+\c@listf=\count303
+\c@savedlistf=\count304
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1075,13 +998,13 @@ Package biblatex Info: ... file 'biblatex_legacy.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.def
 File: biblatex_legacy.def 
-\c@textcitecount=\count306
-\c@textcitetotal=\count307
-\c@textcitemaxnames=\count308
-\c@biburlnumpenalty=\count309
-\c@biburlucpenalty=\count310
-\c@biburllcpenalty=\count311
-\c@smartand=\count312
+\c@textcitecount=\count305
+\c@textcitetotal=\count306
+\c@textcitemaxnames=\count307
+\c@biburlnumpenalty=\count308
+\c@biburlucpenalty=\count309
+\c@biburllcpenalty=\count310
+\c@smartand=\count311
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1093,8 +1016,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count313
-\c@bbx:relatedtotal=\count314
+\c@bbx:relatedcount=\count312
+\c@bbx:relatedtotal=\count313
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1119,30 +1042,6 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
-\csq@reset=\count315
-\csq@gtype=\count316
-\csq@glevel=\count317
-\csq@qlevel=\count318
-\csq@maxlvl=\count319
-\csq@tshold=\count320
-\csq@ltx@everypar=\toks39
-
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
-
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
-File: csquotes.cfg 
-)
-Package csquotes Info: Option 'babel' depreciated.
-(csquotes)             Using 'autostyle'.
-Package csquotes Info: Enabling multilingual quotes.
-Package csquotes Info: Redefining alias 'german' -> 'german/guillemets'.
-)
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
 
@@ -1154,9 +1053,12 @@ Package biblatex Info: ... file 'german.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 ))
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... found 'babel' package.
 
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count314
+\@quotereset=\count315
 
 LaTeX Warning: Unused global option(s):
     [usenames].
@@ -1164,31 +1066,31 @@ LaTeX Warning: Unused global option(s):
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
+\scratchcounter=\count316
 \scratchdimen=\dimen187
-\scratchbox=\box42
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count324
+\scratchbox=\box41
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count319
 \MPscratchDim=\dimen188
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks41
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks40
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1249,13 +1151,13 @@ e
 * \textheight=700.96107pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-69.46587pt
-* \headheight=18.125pt
-* \headsep=21.75pt
+* \topmargin=-66.59087pt
+* \headheight=12.0pt
+* \headsep=25.0pt
 * \topskip=12.0pt
-* \footskip=50.75pt
-* \marginparwidth=49.79233pt
-* \marginparsep=12.8401pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -1266,6 +1168,14 @@ e
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package scrpage2 Warning: seems you are using a constant headheight.
+(scrpage2)                If you get overfull \vbox warnings at almost every
+(scrpage2)                page, you should increase headheight e.g. writing
+(scrpage2)                 \setlength{\headheight}{1.1\baselineskip}
+(scrpage2)                into the preamble of your document.
+(scrpage2)                A better solution would be to use typearea package.
 
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
@@ -1283,8 +1193,8 @@ Package biblatex Warning: Data encoding is 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'proposal.bbl' found.
 (./proposal.bbl)
-Package biblatex Info: Reference section=0 on input line 53.
-Package biblatex Info: Reference segment=0 on input line 53.
+Package biblatex Info: Reference section=0 on input line 52.
+Package biblatex Info: Reference segment=0 on input line 52.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1292,67 +1202,67 @@ Package biblatex Info: Reference segment=0 on input line 53.
 \tf@toc=\write5
 \openout5 = `proposal.toc'.
 
- [2] <2x2scrambled.png, id=17, 1003.75pt x 1140.26pt>
+ [1] <2x2scrambled.png, id=16, 1003.75pt x 1140.26pt>
 File: 2x2scrambled.png Graphic file (type png)
 
 <use 2x2scrambled.png>
-Package pdftex.def Info: 2x2scrambled.png used on input line 115.
+Package pdftex.def Info: 2x2scrambled.png used on input line 114.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- <2x2solved.png, id=19, 1003.75pt x 1140.26pt>
+ <2x2solved.png, id=18, 1003.75pt x 1140.26pt>
 File: 2x2solved.png Graphic file (type png)
 
 <use 2x2solved.png>
-Package pdftex.def Info: 2x2solved.png used on input line 116.
+Package pdftex.def Info: 2x2solved.png used on input line 115.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--122
+Underfull \hbox (badness 10000) in paragraph at lines 109--121
 
  []
 
-<2x2stein.png, id=20, 1003.75pt x 1140.26pt>
+<2x2stein.png, id=19, 1003.75pt x 1140.26pt>
 File: 2x2stein.png Graphic file (type png)
  <use 2x2stein.png>
-Package pdftex.def Info: 2x2stein.png used on input line 125.
+Package pdftex.def Info: 2x2stein.png used on input line 124.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-<2x2farbflaeche.png, id=21, 1003.75pt x 1140.26pt>
+<2x2farbflaeche.png, id=20, 1003.75pt x 1140.26pt>
 File: 2x2farbflaeche.png Graphic file (type png)
  <use 2x2farbflaeche.png>
-Package pdftex.def Info: 2x2farbflaeche.png used on input line 126.
+Package pdftex.def Info: 2x2farbflaeche.png used on input line 125.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 129.
+LaTeX Font Info:    Try loading font information for U+msa on input line 128.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 129.
+LaTeX Font Info:    Try loading font information for U+msb on input line 128.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
 
  []
 
-<2x2seite.png, id=22, 1003.75pt x 1140.26pt>
+<2x2seite.png, id=21, 1003.75pt x 1140.26pt>
 File: 2x2seite.png Graphic file (type png)
  <use 2x2seite.png>
-Package pdftex.def Info: 2x2seite.png used on input line 137.
+Package pdftex.def Info: 2x2seite.png used on input line 136.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<3x3scrambled.png, id=23, 1003.75pt x 1140.26pt>
+<3x3scrambled.png, id=22, 1003.75pt x 1140.26pt>
 File: 3x3scrambled.png Graphic file (type png)
  <use 3x3scrambled.png>
-Package pdftex.def Info: 3x3scrambled.png used on input line 144.
+Package pdftex.def Info: 3x3scrambled.png used on input line 143.
 (pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
 
-<3x3solved.png, id=24, 1003.75pt x 1140.26pt>
+<3x3solved.png, id=23, 1003.75pt x 1140.26pt>
 File: 3x3solved.png Graphic file (type png)
  <use 3x3solved.png>
-Package pdftex.def Info: 3x3solved.png used on input line 145.
+Package pdftex.def Info: 3x3solved.png used on input line 144.
 (pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
 
 
@@ -1360,106 +1270,111 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1 <./2x2scrambled.png> <./2x2solved.png> <./2x2stein.png> <./2x2farbflaeche.pn
 g>]
-Underfull \hbox (badness 10000) in paragraph at lines 150--156
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--156
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
 
  []
 
 [2 <./2x2seite.png> <./3x3scrambled.png> <./3x3solved.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 183--208
+Underfull \hbox (badness 10000) in paragraph at lines 182--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--208
+Underfull \hbox (badness 10000) in paragraph at lines 182--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--208
+Underfull \hbox (badness 10000) in paragraph at lines 182--207
 
  []
 
 [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 235.
+Overfull \hbox (6.21544pt too wide) in paragraph at lines 230--230
+[]\OT1/cmr/bx/n/14.4 Darstellung des 2x2x2 Zau-berw[]ufels mit dem ma-them-ti-s
+chen Kon-
+ []
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 234.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 235.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 234.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
+Underfull \hbox (badness 10000) in paragraph at lines 239--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
+Underfull \hbox (badness 10000) in paragraph at lines 239--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
+Underfull \hbox (badness 10000) in paragraph at lines 239--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--255
+Underfull \hbox (badness 10000) in paragraph at lines 239--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--264
+Underfull \hbox (badness 10000) in paragraph at lines 250--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--264
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--264
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 278--282
+Underfull \hbox (badness 10000) in paragraph at lines 277--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--288
+Underfull \hbox (badness 10000) in paragraph at lines 283--287
 
  []
 
-<RF.png, id=49, 1003.75pt x 1140.26pt>
+<RF.png, id=48, 1003.75pt x 1140.26pt>
 File: RF.png Graphic file (type png)
  <use RF.png>
-Package pdftex.def Info: RF.png used on input line 295.
+Package pdftex.def Info: RF.png used on input line 294.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-<FR.png, id=50, 1003.75pt x 1140.26pt>
+<FR.png, id=49, 1003.75pt x 1140.26pt>
 File: FR.png Graphic file (type png)
  <use FR.png>
-Package pdftex.def Info: FR.png used on input line 296.
+Package pdftex.def Info: FR.png used on input line 295.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--301
+Underfull \hbox (badness 10000) in paragraph at lines 288--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--301
+Underfull \hbox (badness 10000) in paragraph at lines 288--300
 
  []
 
@@ -1467,296 +1382,296 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--301
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6 <./RF.png> <./FR.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--331
+Underfull \hbox (badness 10000) in paragraph at lines 327--330
 
  []
 
-<caged_positions.png, id=60, 1003.75pt x 1140.26pt>
+<caged_positions.png, id=59, 1003.75pt x 1140.26pt>
 File: caged_positions.png Graphic file (type png)
  <use caged_positions.png>
-Package pdftex.def Info: caged_positions.png used on input line 358.
+Package pdftex.def Info: caged_positions.png used on input line 357.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--360
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--360
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
-<foldedout_cage.png, id=61, 1003.75pt x 1140.26pt>
+<foldedout_cage.png, id=60, 1003.75pt x 1140.26pt>
 File: foldedout_cage.png Graphic file (type png)
  <use foldedout_cage.png>
-Package pdftex.def Info: foldedout_cage.png used on input line 364.
+Package pdftex.def Info: foldedout_cage.png used on input line 363.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
-<foldedout_cage_color.png, id=62, 1003.75pt x 1140.26pt>
+<foldedout_cage_color.png, id=61, 1003.75pt x 1140.26pt>
 File: foldedout_cage_color.png Graphic file (type png)
 
 <use foldedout_cage_color.png>
-Package pdftex.def Info: foldedout_cage_color.png used on input line 365.
+Package pdftex.def Info: foldedout_cage_color.png used on input line 364.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
- <caged_spin.png, id=63, 1003.75pt x 1140.26pt>
+ <caged_spin.png, id=62, 1003.75pt x 1140.26pt>
 File: caged_spin.png Graphic file (type png)
 
 <use caged_spin.png>
-Package pdftex.def Info: caged_spin.png used on input line 382.
+Package pdftex.def Info: caged_spin.png used on input line 381.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
- <foldedout_spin.png, id=64, 1003.75pt x 1140.26pt>
+ <foldedout_spin.png, id=63, 1003.75pt x 1140.26pt>
 File: foldedout_spin.png Graphic file (type png)
 
 <use foldedout_spin.png>
-Package pdftex.def Info: foldedout_spin.png used on input line 383.
+Package pdftex.def Info: foldedout_spin.png used on input line 382.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--384
+Underfull \hbox (badness 10000) in paragraph at lines 366--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--384
+Underfull \hbox (badness 10000) in paragraph at lines 366--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--384
+Underfull \hbox (badness 10000) in paragraph at lines 366--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--384
+Underfull \hbox (badness 10000) in paragraph at lines 366--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--384
+Underfull \hbox (badness 10000) in paragraph at lines 366--383
 
  []
 
 [7 <./caged_positions.png> <./foldedout_cage.png> <./foldedout_cage_color.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--398
+Underfull \hbox (badness 10000) in paragraph at lines 384--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--398
+Underfull \hbox (badness 10000) in paragraph at lines 384--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--398
+Underfull \hbox (badness 10000) in paragraph at lines 384--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--398
+Underfull \hbox (badness 10000) in paragraph at lines 384--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--398
+Underfull \hbox (badness 10000) in paragraph at lines 384--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--398
+Underfull \hbox (badness 10000) in paragraph at lines 384--397
 
  []
 
 [8 <./caged_spin.png> <./foldedout_spin.png>]
-<foldedout_numbers.png, id=76, 1003.75pt x 1140.26pt>
+<foldedout_numbers.png, id=75, 1003.75pt x 1140.26pt>
 File: foldedout_numbers.png Graphic file (type png)
 
 <use foldedout_numbers.png>
-Package pdftex.def Info: foldedout_numbers.png used on input line 432.
+Package pdftex.def Info: foldedout_numbers.png used on input line 431.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- <foldedout_012.png, id=77, 1003.75pt x 1140.26pt>
+ <foldedout_012.png, id=76, 1003.75pt x 1140.26pt>
 File: foldedout_012.png Graphic file (type png)
 
 <use foldedout_012.png>
-Package pdftex.def Info: foldedout_012.png used on input line 438.
+Package pdftex.def Info: foldedout_012.png used on input line 437.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- <foldedout_c_012.png, id=78, 1003.75pt x 1140.26pt>
+ <foldedout_c_012.png, id=77, 1003.75pt x 1140.26pt>
 File: foldedout_c_012.png Graphic file (type png)
 
 <use foldedout_c_012.png>
-Package pdftex.def Info: foldedout_c_012.png used on input line 439.
+Package pdftex.def Info: foldedout_c_012.png used on input line 438.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--440
+Underfull \hbox (badness 10000) in paragraph at lines 433--439
 
  []
 
-<foldedout_012_white.png, id=79, 1003.75pt x 1140.26pt>
+<foldedout_012_white.png, id=78, 1003.75pt x 1140.26pt>
 File: foldedout_012_white.png Graphic file (type png)
 
 <use foldedout_012_white.png>
-Package pdftex.def Info: foldedout_012_white.png used on input line 452.
+Package pdftex.def Info: foldedout_012_white.png used on input line 451.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-<foldedout_012_spin.png, id=80, 1003.75pt x 1140.26pt>
+<foldedout_012_spin.png, id=79, 1003.75pt x 1140.26pt>
 File: foldedout_012_spin.png Graphic file (type png)
 
 <use foldedout_012_spin.png>
-Package pdftex.def Info: foldedout_012_spin.png used on input line 453.
+Package pdftex.def Info: foldedout_012_spin.png used on input line 452.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--455
+Underfull \hbox (badness 10000) in paragraph at lines 440--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--455
+Underfull \hbox (badness 10000) in paragraph at lines 440--454
 
  []
 
 [9 <./foldedout_numbers.png> <./foldedout_012.png> <./foldedout_c_012.png>]
-<Pfeile.png, id=87, 1003.75pt x 1140.26pt>
+<Pfeile.png, id=86, 1003.75pt x 1140.26pt>
 File: Pfeile.png Graphic file (type png)
  <use Pfeile.png>
-Package pdftex.def Info: Pfeile.png used on input line 479.
+Package pdftex.def Info: Pfeile.png used on input line 478.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-<auf_ulf.png, id=88, 1003.75pt x 1140.26pt>
+<auf_ulf.png, id=87, 1003.75pt x 1140.26pt>
 File: auf_ulf.png Graphic file (type png)
  <use auf_ulf.png>
-Package pdftex.def Info: auf_ulf.png used on input line 511.
+Package pdftex.def Info: auf_ulf.png used on input line 510.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--512
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--512
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--512
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
 
  []
 
 
-Overfull \hbox (12.28119pt too wide) in paragraph at lines 481--512
+Overfull \hbox (12.28119pt too wide) in paragraph at lines 480--511
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--512
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--512
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
 
  []
 
 [10 <./foldedout_012_white.png> <./foldedout_012_spin.png> <./Pfeile.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 513--531
+Underfull \hbox (badness 10000) in paragraph at lines 512--530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--531
+Underfull \hbox (badness 10000) in paragraph at lines 512--530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--531
+Underfull \hbox (badness 10000) in paragraph at lines 512--530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--531
+Underfull \hbox (badness 10000) in paragraph at lines 512--530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--531
+Underfull \hbox (badness 10000) in paragraph at lines 512--530
 
  []
 
 [11 <./auf_ulf.png>] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 556--559
+Underfull \hbox (badness 10000) in paragraph at lines 555--558
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--572
+Underfull \hbox (badness 10000) in paragraph at lines 563--571
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--572
+Underfull \hbox (badness 10000) in paragraph at lines 563--571
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 595--624
+Underfull \hbox (badness 10000) in paragraph at lines 594--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--624
+Underfull \hbox (badness 10000) in paragraph at lines 594--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--624
+Underfull \hbox (badness 10000) in paragraph at lines 594--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--624
+Underfull \hbox (badness 10000) in paragraph at lines 594--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--624
+Underfull \hbox (badness 10000) in paragraph at lines 594--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--624
+Underfull \hbox (badness 10000) in paragraph at lines 594--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--624
+Underfull \hbox (badness 10000) in paragraph at lines 594--623
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 645--648
+Underfull \hbox (badness 10000) in paragraph at lines 644--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--648
+Underfull \hbox (badness 10000) in paragraph at lines 644--647
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 678--700
+Underfull \hbox (badness 10000) in paragraph at lines 677--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--700
+Underfull \hbox (badness 10000) in paragraph at lines 677--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--700
+Underfull \hbox (badness 10000) in paragraph at lines 677--699
 
  []
 
@@ -1765,15 +1680,15 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
  )
-(\end occurred when \iftrue on line 53 was incomplete) 
+(\end occurred when \iftrue on line 52 was incomplete) 
 Here is how much of TeX's memory you used:
- 22698 strings out of 493029
- 417130 string characters out of 6136234
- 635063 words of memory out of 5000000
- 25808 multiletter control sequences out of 15000+600000
- 12274 words of font info for 45 fonts, out of 8000000 for 9000
+ 20490 strings out of 493029
+ 376976 string characters out of 6136234
+ 527170 words of memory out of 5000000
+ 23623 multiletter control sequences out of 15000+600000
+ 12006 words of font info for 44 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 64i,9n,60p,826b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,54p,798b,1381s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts
@@ -1781,14 +1696,13 @@ fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (18 pages, 1331242 bytes).
+mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on proposal.pdf (18 pages, 1321862 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

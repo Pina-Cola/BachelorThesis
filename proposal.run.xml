@@ -82,7 +82,6 @@
       <file>proposal-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>quellen.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>
