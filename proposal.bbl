@@ -16,22 +16,22 @@
   {}
 \endgroup
 
-\entry{Buch}{book}{}
+\entry{JC}{misc}{}
   \name{author}{1}{}{%
     {{}%
-     {Celikates}{C.}%
-     {Robin}{R.}%
+     {Chen}{C.}%
+     {Janet}{J.}%
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {Suhrkamp}%
-  }
-  \strng{namehash}{CR1}
-  \strng{fullhash}{CR1}
+  \strng{namehash}{CJ1}
+  \strng{fullhash}{CJ1}
   \field{sortinit}{C}
-  \field{title}{Philosophie der Moral: Texte von der Antike bis zur Gegenwart}
-  \field{year}{2009}
+  \field{howpublished}{Website}
+  \field{note}{Online erhältlich unter
+  \url{http://people.math.harvard.edu/~jjchen/docs/Group/20Theory20and20the/20Rubik/27s/20Cube.pdf};
+  abgerufen am 05.01.2020.}
+  \field{title}{Group Theory and the Rubik's Cube}
 \endentry
 
 \lossort
