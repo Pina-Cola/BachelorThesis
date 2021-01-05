@@ -313,7 +313,19 @@ DDDD & =D^4 =N \\
 FFFF & =F^4 =N \\
 BBBB & =B^4 =N \\
 \end{align*}
-
+Somit gilt dann auch $Z^0=N$, mit $Z$ als beliebigen Zug und $N$ als neutrales Element. \\
+In der mathematischen Schreibweise sieht das so aus: $\forall Z \in G_{2x2x2} \ . \ Z^0=N$. \\
+Es gilt also für alle Züge $Z \in G_{2x2x2}$: 
+\begin{align*}
+Z^0 & =N \\
+Z & =Z^1 \\
+ZZ & =Z^2 \\
+ZZZ & =Z^3 \\
+ZZZZ & =Z^4=N=Z^0 \\
+\end{align*}
+Man kann denn Exponenten also $modulo \ 4$ rechnen, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. \\
+Es gilt also:
+$\forall Z \in G_{2x2x2}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$.
 \newpage
 
 
@@ -550,6 +562,9 @@ Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{R_{X_r}} & = (ulf \ urf \ drf \ dlf) \ (urb \ ulb \ dlb \ drb)\\
 \delta_{R_{X_l}} & = (ulf \ dlf \ drf \ urf) \ (urb \ ulb \ dlb \ drb)\\
 \end{align*}
+Bei den Rotationen schreibe (analog zu den Zügen) die mehrfache Ausführung einer Roatation mit der Exponentenschreibweise. \\
+Somit gilt dann auch hier $RRRR=R^4=N$ und $R^0=N$ für alle Rotationen. ($N$ ist das neutrale Element, also der leere Zug und $R$ eine beliebige Rotation des Würfels.) \\
+Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: $\forall R, n \in \mathbb{N} \ . \ R^n=R^{n \mod 4}$.
 
 
 
