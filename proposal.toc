@@ -6,10 +6,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{6}
+\contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{12}
+\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{13}
+\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Quellen, Abbildungen, Tabellen etc.}{15}
+\contentsline {section}{\numberline {6}Quellen, Abbildungen, Tabellen etc.}{16}

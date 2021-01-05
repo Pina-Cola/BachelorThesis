@@ -286,12 +286,21 @@ $\forall \  Z_1 \in G_{2x2x2},\ \exists \  Z_1^\prime \in G_{2x2x2}.  \ \ Z_1 \c
 \\
 Da $Z$ ein Zug ist, kann man diesen auch rückgängig machen. Man muss die einzelnen Ebenenrotationen nur rückwärts und von hinten durchführen, um den Zug zu invertieren. Dann gilt $Z_1 \circ Z_1^\prime = Z_1^\prime \circ Z_1 = N$.
 \end{itemize}
-Somit ist $(G_{2x2x2}, \circ)$ eine Gruppe. \\
-Damit $(G_{2x2x2}, \circ)$ eine kommutaive Gruppe (oder Abelsche Gruppe) ist, muss zusätzlich noch die Kommutativität gelten. \\
-Dies ist nicht der Fall, da beispielsweise eine Rotation der oberen Ebene nach rechts und eine Rotation der rechten Ebene nach unten in umgekehrter Reihenfolge ein anderes Ergebnis haben. Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
+Somit ist $(G_{2x2x2}, \circ)$ eine Gruppe. \\ 
 \\
+Damit $(G_{2x2x2}, \circ)$ eine kommutaive Gruppe (oder Abelsche Gruppe) ist, muss zusätzlich noch die Kommutativität gelten. \\
+Dies ist nicht der Fall, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das sieht grafisch dargestellt so aus: \\
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{RF.png}
+\includegraphics[scale=0.1]{FR.png}
+\caption{rechts: Würfel nach Zug $RF$, links: Würfel nach Zug $FR$, \\ ausgehend von Startkonfiguration}
+\end{figure} \ \\
+Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\\
+Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
 
 
+\newpage
 
 
 
@@ -668,6 +677,8 @@ Der Zeitplan wird etwa wie folgt aussehen: \\
 \section{Quellen, Abbildungen, Tabellen etc.}
 Ich habe das Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen als Quelle verwendet.\\ 
 \\
+TODO: andere Paper aufführen.
+\\ \\ \\
 Alle bisher verwendeteten Grafiken, Abbildungen und Tabellen habe ich selbst (mit GIMP, Photoshop oder LateX) erstellt, um Markennennungen zu vermeiden und eine einheitliche Darstellung zu gewährleisten.
 % Alle verwendeten Abbildungen: \\
 % \begin{figure}[H]
@@ -686,6 +697,13 @@ Alle bisher verwendeteten Grafiken, Abbildungen und Tabellen habe ich selbst (mi
 % \includegraphics[scale=0.1]{foldedout_012.png}
 % \includegraphics[scale=0.1]{foldedout_c_012.png}
 %\end{figure}
+
+\newpage
+
+
+
+% \bibliographystyle{plain}
+% \bibliography{quellen.bib}
 
 \end{document}
 
