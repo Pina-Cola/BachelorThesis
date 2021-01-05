@@ -599,11 +599,22 @@ Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nich
 \\
 Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
 Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. 
+
+
+
+
+
+
+
+
+
+\subsection*{Ordnung der Züge}
+Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$ für alle einelementigen Züge (und Rotationen), da der Würfel in seiner vorherigen Position bleibt, wenn ein Zug oder eine Rotation vier mal hintereinander ausgeführt wird. Deshalb bezeichne ich die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4. \\
 \\
+Die Exponentenschreibweise kann man für alle Züge aus $G_{2x2x2}$ anwenden, auch wenn sie mehr als eine Ebene rotieren. Beispielsweise mit $Z_1=LLFF$. $(LLFF)^2$ ist dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ist. \\
 \\
-\\
-\\
-Wie bereits beschrieben, gilt $\forall Z \in G_{2x2x2}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$ für alle einelementigen Züge (und Rotationen), da der Würfel in seiner vorherigen Position bleibt, wenn ein Zug oder eine Rotation vier mal hintereinander ausgeführt wird.
+Nicht nur die Züge $U, D, F, B, L, R$ kommen nach Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat dann beispielsweise die Ordnung 3. \\
+So gilt zum Beispiel: $R^4= N$ (Ordnung 4), $(RF)^3 = N$ (Ordnung 3) oder auch $(LF)^{15}=N$ (Ordnung 15).
 
 
 
