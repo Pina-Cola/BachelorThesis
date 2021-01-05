@@ -321,11 +321,11 @@ Z^0 & =N \\
 Z & =Z^1 \\
 ZZ & =Z^2 \\
 ZZZ & =Z^3 \\
-ZZZZ & =Z^4=N=Z^0 \\
 \end{align*}
-Man kann denn Exponenten also $modulo \ 4$ rechnen, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. \\
-Es gilt also:
-$\forall Z \in G_{2x2x2}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$.
+Für \glqq einelementige Züge\grqq \  (also $U, D, F, B, L$ oder $R$) gilt auch $YYYY =Y^4=N=Y^0$.
+Man kann den Exponenten in diesem Fall also $modulo \ 4$ rechnen, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. \\
+Es gilt dann also: \\
+$\forall \  Y \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Y^n=Y^{n \mod 4}$.
 \newpage
 
 
@@ -563,8 +563,9 @@ Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{R_{X_l}} & = (ulf \ dlf \ drf \ urf) \ (urb \ ulb \ dlb \ drb)\\
 \end{align*}
 Bei den Rotationen schreibe (analog zu den Zügen) die mehrfache Ausführung einer Roatation mit der Exponentenschreibweise. \\
-Somit gilt dann auch hier $RRRR=R^4=N$ und $R^0=N$ für alle Rotationen. ($N$ ist das neutrale Element, also der leere Zug und $R$ eine beliebige Rotation des Würfels.) \\
-Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: $\forall R, n \in \mathbb{N} \ . \ R^n=R^{n \mod 4}$.
+Somit gilt dann auch hier $RRRR=R^4=N$ (wenn R nur eine Rotationsbewegung enthält) und $R^0=N$ (für alle Rotationen). ($N$ ist das neutrale Element, also der leere Zug und $R$ eine beliebige Rotation des Würfels.) \\
+Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: \\
+ $\forall R \in \{ R_{Z_r}, R_{Z_l}, R_{Y_r}, R_{Y_l}, R_{X_r}, R_{X_l} \}, n \in \mathbb{N} \ . \ R^n=R^{n \mod 4}$.
 
 
 
@@ -598,6 +599,12 @@ Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nich
 \\
 Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
 Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. 
+\\
+\\
+\\
+\\
+Wie bereits beschrieben, gilt $\forall Z \in G_{2x2x2}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$ für alle einelementigen Züge (und Rotationen), da der Würfel in seiner vorherigen Position bleibt, wenn ein Zug oder eine Rotation vier mal hintereinander ausgeführt wird.
+
 
 
 \newpage
