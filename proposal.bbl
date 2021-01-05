@@ -34,6 +34,23 @@
   \field{title}{Group Theory and the Rubik's Cube}
 \endentry
 
+\entry{TD}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Davis}{D.}%
+     {Tom}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DT1}
+  \strng{fullhash}{DT1}
+  \field{sortinit}{D}
+  \field{howpublished}{Website}
+  \field{note}{Online erhältlich unter
+  \url{http://www.geometer.org/rubik/group.pdf}; abgerufen am 05.01.2020.}
+  \field{title}{Group Theory via Rubik's Cube}
+\endentry
+
 \lossort
 \endlossort
 
