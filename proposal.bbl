@@ -16,6 +16,24 @@
   {}
 \endgroup
 
+\entry{Buch}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Celikates}{C.}%
+     {Robin}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Suhrkamp}%
+  }
+  \strng{namehash}{CR1}
+  \strng{fullhash}{CR1}
+  \field{sortinit}{C}
+  \field{title}{Philosophie der Moral: Texte von der Antike bis zur Gegenwart}
+  \field{year}{2009}
+\endentry
+
 \lossort
 \endlossort
 
