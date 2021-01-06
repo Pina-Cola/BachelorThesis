@@ -181,7 +181,7 @@ Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorg
 
 
 
-\subsubsection*{Züge des Würfels}
+\subsection*{Züge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Züge des Würfels}
 Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
 Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug dar zu stellen. \\
 \\
@@ -230,7 +230,7 @@ Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene 
 
 \section{Würfel als Gruppe}
 
-\subsection*{Darstellung des 2x2x2 Zauberwüfels mit dem mathemtischen Konstrukt der Gruppe}
+\subsection*{Darstellung des 2x2x2 Zauberwüfels mit dem mathematischen Konstrukt der Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Darstellung des 2x2x2 Wüfels mit dem Konstrukt der Gruppe}
 
 Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für den folgenden Abschnitt:
 \begin{itemize}
@@ -374,7 +374,7 @@ Der Würfel kann aber auch komplett gedreht werden, ohne Züge auszuführen.
 
 
 
-\subsection*{Positionen im Würfel und Zykel}
+\subsection*{Positionen im Würfel und Zykel} \addcontentsline{toc}{subsection}{\protect\numberline{}Positionen im Würfel und Zykel}
 
 Um die Übergänge der Würfelsteine als Funktion darzustellen, definiere ich eine bijektive Funktion $\sigma$ für jede Rotation. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. \\
 \\
@@ -450,7 +450,7 @@ Die Identitätspermutation schreibe ich als $\sigma = 1$.
 
 
 
-\subsection*{Ausrichtung der Steine}
+\subsection*{Ausrichtung der Steine} \addcontentsline{toc}{subsection}{\protect\numberline{}Ausrichtung der Steine}
 Der 2x2x2-Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. \\
 Um die Ausrichtung der Steine zu erkennen, bekommen Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür habe ich die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern beziehe ich mich als $x_i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
 \begin{figure}[H]
@@ -494,7 +494,7 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 
 
 
-\subsection*{Rotation des Würfels}
+\subsection*{Rotation des Würfels}\addcontentsline{toc}{subsection}{\protect\numberline{}Rotation des Würfels}
 
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 Allerdings hat der 2x2x2-Würfel im Gegensatz zum 3x3x3-Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
@@ -608,7 +608,7 @@ Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts 
 
 
 
-\subsection*{Ordnung der Züge}
+\subsection*{Ordnung der Züge}\addcontentsline{toc}{subsection}{\protect\numberline{}Ordnung der Züge}
 Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$ für alle einelementigen Züge (und Rotationen), da der Würfel in seiner vorherigen Position bleibt, wenn ein Zug oder eine Rotation vier mal hintereinander ausgeführt wird. Deshalb bezeichne ich die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4. \\
 \\
 Die Exponentenschreibweise kann man für alle Züge aus $G_{2x2x2}$ anwenden, auch wenn sie mehr als eine Ebene rotieren. Beispielsweise mit $Z_1=LLFF$. $(LLFF)^2$ ist dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ist. \\
@@ -692,7 +692,9 @@ Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in G_{2x2x2}$, 
 
 
 
-\newpage
+
+
+
 
 
 
@@ -708,22 +710,25 @@ Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in G_{2x2x2}$, 
 
 
 
-\subsection*{Zeitplan}
 
-Die Bachelorarbeit ist auf 4 Monate ausgelegt, das sind circa 16 Wochen. \\
-Der Zeitplan wird etwa wie folgt aussehen: \\
+
+\newpage
+
+
+\section{Lösung des Würfels}
+
+Die \glqq übliche\grqq \  Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern den Würfel dann sehr spezifisch. \\
+Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. \\
 \\
-\begin{itemize}
-\item Woche 1-4: Aufarbeitung und weitere Ausführung des Proposals
-\item Woche 4-8: Übertragen von Tom Davis' Paper auf 2x2x2 Würfel
-\item Woche 8-10: Cayley-Graph einarbeiten
-\item Woche 10-12: Cayley-Graph (eventuell) in Arbeit aufnehmen
-\item Woche 12-14: Korrekturlesen bzw Schreiben
-\item Woche 14-16: Puffer
-\end{itemize}
 
 
-\newpage
+
+
+
+
+
+
+
 
 
 
@@ -739,6 +744,12 @@ Der Zeitplan wird etwa wie folgt aussehen: \\
 
 
 
+
+
+
+
+
+\newpage
 
 
 
