@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Positionen im W\IeC {\"u}rfel und Zykel}{8}
+\contentsline {subsection}{\numberline {}Positionen der Steine im W\IeC {\"u}rfel}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine}{10}
 \defcounter {refsection}{0}\relax 
