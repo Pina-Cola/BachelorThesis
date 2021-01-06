@@ -10,6 +10,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{15}
+\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Abbildungen und Tabellen}{17}
+\contentsline {section}{\numberline {6}Abbildungen und Tabellen}{18}

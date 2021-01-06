@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  6 JAN 2021 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  6 JAN 2021 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1626,34 +1626,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 594--602
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--618
+Underfull \hbox (badness 10000) in paragraph at lines 612--625
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--618
+Underfull \hbox (badness 10000) in paragraph at lines 612--625
 
  []
 
 
-Overfull \hbox (1.10284pt too wide) in paragraph at lines 612--618
+Overfull \hbox (1.10284pt too wide) in paragraph at lines 612--625
 \OT1/cmr/m/n/12 So gilt zum Bei-spiel: $[]$ (Ord-nung 4), $[]$ (Ord-nung 3) ode
 r auch $[]$
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--625
+
+ []
+
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
 
-Overfull \hbox (33.94673pt too wide) in paragraph at lines 642--671
+Overfull \hbox (33.94673pt too wide) in paragraph at lines 649--678
 \OT1/cmr/m/n/12 In die-sem Ab-schnitt wer-de ich zei-gen, dass bei ei-ner va-li
 -den W[]urfelkonfiguration $[]$
  []
 
 
-Overfull \hbox (28.10432pt too wide) in paragraph at lines 642--671
+Overfull \hbox (28.10432pt too wide) in paragraph at lines 649--678
 \OT1/cmr/m/n/12 Wenn $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 
 ^^[[]; x[]\OT1/cmr/m/n/12 )$ ei-ne Nach-fol-ge-kon-fi-gu-ra-ti-on von $\OML/cmm
 /m/it/12 C \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ^^[; x\OT1/cmr/m/n/12 )$ ist, da
@@ -1661,56 +1666,56 @@ nn gilt $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
 
-Overfull \hbox (22.70398pt too wide) in paragraph at lines 642--671
+Overfull \hbox (22.70398pt too wide) in paragraph at lines 649--678
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--671
+Underfull \hbox (badness 10000) in paragraph at lines 649--678
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 692--695
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 699--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--695
+Underfull \hbox (badness 10000) in paragraph at lines 699--702
 
  []
 
-[16] [17] (./proposal.aux)
+[17] [18] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
@@ -1736,10 +1741,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (19 pages, 1338947 bytes).
+Output written on proposal.pdf (20 pages, 1340975 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 163 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
