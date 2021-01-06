@@ -614,7 +614,7 @@ Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \math
 Die Exponentenschreibweise kann man für alle Züge aus $G_{2x2x2}$ anwenden, auch wenn sie mehr als eine Ebene rotieren. Beispielsweise mit $Z_1=LLFF$. $(LLFF)^2$ ist dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ist. \\
 \\
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat dann beispielsweise die Ordnung 3. \\
-So gilt zum Beispiel: $R^4= N$ (Ordnung 4), $(RF)^3 = N$ (Ordnung 3) oder auch $(LF)^{15}=N$ (Ordnung 15).
+So gilt zum Beispiel: ${R^4= N}$ (Ordnung 4), ${(RF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15).
 
 
 
@@ -641,13 +641,13 @@ So gilt zum Beispiel: $R^4= N$ (Ordnung 4), $(RF)^3 = N$ (Ordnung 3) oder auch $
 \section{Valide Konfigurationen des Würfels}
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 \\
-In diesem Abschnitt werde ich zeigen, dass bei einer validen Würfelkonfiguration $\Sigma \  x_i \equiv_3 0$ (modulo) gilt. \\
-Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  $(\sigma, x) \cdot M = (\sigma', x')$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann $\Sigma x_i' \equiv_3 \Sigma \  x_i $. \\
+In diesem Abschnitt werde ich zeigen, dass bei einer validen Würfelkonfiguration ${\Sigma \ x_i \mod 3 = 0}$ (modulo) gilt. \\
+Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\Sigma \ x_i' \mod 3 = \Sigma \  x_i \mod 3 }$. \\
 In Abbildung 6 (s.o.) kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: \\
 \\
 \begin{tabular}{|c|l|l|c|c|}
 \hline
-Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \equiv_3 0$ \\
+Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \mod 3 = 0$ \\
 \hline
 \hline
 \textit{D} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7)$ & 0 & 0 \\
@@ -665,7 +665,7 @@ Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \equiv_3 0$ \\
 
 \end{tabular}
 \ \\ \\ \\ \\
-Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\Sigma x_i' \equiv_3 0$, dann gibt es einen Zug $M \in G_{2x2x2}$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
+Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\Sigma x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in G_{2x2x2}$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
 \\
 Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in G_{2x2x2}$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Ecktsücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. \\ 
 
