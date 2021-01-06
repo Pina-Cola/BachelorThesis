@@ -616,12 +616,24 @@ Die Exponentenschreibweise kann man für alle Züge aus $G_{2x2x2}$ anwenden, au
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat dann beispielsweise die Ordnung 3. \\
 So gilt zum Beispiel: ${R^4= N}$ (Ordnung 4), ${(RF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15). \\
 \\
+Im folgenden Beweis habe ich mich an dem Beweis aus dem Paper \glqq Group Theory via Rubik's Cube\grqq \ von Tom Davis \cite{TD} orientiert: \\
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet. \\ 
 Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelposition wiederholt werden, wenn man den Zug oft genug durchführt. \\
 Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich. Also muss eine Position wiederholt werden, wenn man den Zug öfter ausführt, als es mögliche Würfelpositionen gibt. \\
-Bei einem beliebigen Zug $Z \in G_{2x2x2}$ gelangen wir also irgendwann in eine Würfelposition, die sich wiederholt. Die wiederholende Würfelposition tritt zuerst nach $n \in \mathbb{N}$ Wiederholungen auf und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen. Das sieht dann so aus: $Z^n=Z^m$ mit $n < m$. \\
-Also gilt $Z^{n-1} \neq Z^{m-1}$, da $m$ das zweite Vorkommen der Position repräsentiert. \\
-Wenn $n=0$ ist, haben wir $Z^0=N$, was den leeren Zug (bzw. das neutrale Element) repräsentiert. Der Würfel wird dabei nicht verändert und somit wird die Würfelposition bei jedem Zug $Z \in G_{2x2x2}$ mit $Z^0$ \glqq wiederholt \grqq .
+\\
+Bei einem beliebigen Zug $Z \in G_{2x2x2}$ gelangt man also irgendwann in eine Würfelposition, die sich wiederholt. Die wiederholende Würfelposition tritt zuerst nach $n \in \mathbb{N}$ Wiederholungen auf und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen. Das sieht dann so aus: $Z^n=Z^m$ mit $n < m$. \\
+\\
+Also gilt $Z^{n-1} \neq Z^{m-1}$, da $m$ das zweite Vorkommen der gleichen Position repräsentiert. \\
+Wenn $n=0$ ist, hat man $Z^0=N$, was den leeren Zug (bzw. das neutrale Element) repräsentiert. Der Würfel wird dabei nicht verändert und somit wird die Würfelposition bei jedem Zug $Z \in G_{2x2x2}$ mit $Z^0$ \glqq wiederholt\grqq . \\
+\\
+Es gilt $Z^n = Z^m$. Wenn man nun auf die gleiche Ausgangsposition $n$-mal oder $m$-mal $Z$ anwendet, kommt man in der gleichen Endposition an. \\
+Wenn man nun $Z^{-1}$ anwendet, kommt man wieder in die gleiche Endposition. Dabei ist es egal, ob man vorher $n$-mal oder $m$-mal $Z$ ausgeführt hat, da man von der gleichen Startposition ausgehend in die gleiche Endposition kommt, wenn man den gleichen Zug ausführt. \\
+\\
+Beim Anwenden von $Z^{-1}$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn man $Z$ also $n$-mal ausführt und dann $Z^{-1}$ ausführt, ist es das gleiche wie $n-1$-mal $Z$ ausführen, also $Z^nZ^{-1}=Z^{n-1}$. Das gilt natürlich auch für $m$, also $Z^mZ^{-1}=Z^{m-1}$. \\
+\\
+Demnach gilt dann $Z^{n-1}=Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. \\
+ 
+
 
 
 
