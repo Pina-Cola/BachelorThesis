@@ -374,9 +374,9 @@ Der Würfel kann aber auch komplett gedreht werden, ohne Züge auszuführen.
 
 
 
-\subsection*{Positionen der Steine im Würfel} \addcontentsline{toc}{subsection}{\protect\numberline{}Positionen der Steine im Würfel}
+\subsection*{Positionen der Steine im Würfel} \addcontentsline{toc}{subsection}{\protect\numberline{}Positionen der Steine ges im Würfel}
 
-Um die Übergänge der Würfelsteine als Funktion darzustellen, definiere ich eine bijektive Funktion $\sigma$ für jede Rotation. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. \\
+Um die Übergänge der Würfelsteine als Funktion darzustellen, definiere ich eine bijektive Funktion $\sigma$ für jede Ebenenrotation. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. \\
 \\
 Die Würfelpositionen habe ich wie folgt eingeteilt: \\
 \begin{figure}[H]
@@ -608,6 +608,23 @@ Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts 
 
 
 
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection*{Ordnung der Züge}\addcontentsline{toc}{subsection}{\protect\numberline{}Ordnung der Züge}
 Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$ für alle einelementigen Züge (und Rotationen), da der Würfel in seiner vorherigen Position bleibt, wenn ein Zug oder eine Rotation vier mal hintereinander ausgeführt wird. Deshalb bezeichne ich die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4. \\
 \\
@@ -635,6 +652,50 @@ Demnach gilt dann $Z^{n-1}=Z^{m-1}$. Das widerspricht dann aber der Annahme, das
 \\
 Daraus folgt: Wenn man einen beliebigen Zug $Z \in G_{2x2x2}$ wiederholt auf den gelösten Würfel anwendet, kommt man wieder in die Startkonfiguration.
  
+
+
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Äquivalenz von Zügen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenz von Zügen}
+
+
+Es kann schwierig sein, die Äquivalenz von Zügen oder Roatationen anhand der Funktionen ($\sigma$ und $\delta$) in der Zykelschreibweise zu erkennen. \\
+Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann. So ist beispielsweise $ (ulf \ ulb \ urb \ urf)$ das gleiche wie $(urb \ urf \ ulf \ ulb)$. \\
+Um das zu vereinfachen, priorisiere ich die Würfelpositionen, so dass die Position mit der höchsten Priorität immer vorne steht und zwei Äquivalente Zykel somit gleich aussehen. \\
+\\
+Die Positionen sind wie folgt priorisiert: \\
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Positionen der Steine im W\IeC {\"u}rfel}{8}
+\contentsline {subsection}{\numberline {}Positionen der Steine ges im W\IeC {\"u}rfel}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine}{10}
 \defcounter {refsection}{0}\relax 
@@ -21,6 +21,8 @@
 \contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{16}
 \defcounter {refsection}{0}\relax 
