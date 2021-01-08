@@ -631,7 +631,7 @@ Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \math
 Die Exponentenschreibweise kann man für alle Züge aus $G_{2x2x2}$ anwenden, auch wenn sie mehr als eine Ebene rotieren. Beispielsweise mit $Z_1=LLFF$. $(LLFF)^2$ ist dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ist. \\
 \\
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat dann beispielsweise die Ordnung 3. \\
-So gilt zum Beispiel: ${R^4= N}$ (Ordnung 4), ${(RF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15). \\
+So gilt zum Beispiel: ${R^4= N}$ (Ordnung 4), ${(RRFF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15). \\
 \\
 Im folgenden Beweis habe ich mich an dem Beweis aus dem Paper \glqq Group Theory via Rubik's Cube\grqq \ von Tom Davis \cite{TD} orientiert: \\
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet. \\ 
@@ -678,6 +678,36 @@ Daraus folgt: Wenn man einen beliebigen Zug $Z \in G_{2x2x2}$ wiederholt auf den
 
 
 \subsection*{Zykelstruktur}\addcontentsline{toc}{subsection}{\protect\numberline{}Zykelstruktur}
+
+
+Anhand der Zykelstruktur lässt sich die Ordnung des jeweiligen Zuges bestimmen. \\
+\\
+Der Zug $U$ als $\sigma_U =\ (ulf \ ulb \ urb \ urf) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel. \\
+Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: \\
+\begin{tabular}{|c||c|c|c|c|}
+\hline
+Ausführung & ulf & ulb & urb & urf \\
+\hline
+\hline
+1 & ulb & urb & urf & ulf \\
+\hline
+2 & urb & urf & ulf & ulb \\
+\hline
+3 & urf & ulf & ulb & urb \\
+\hline
+4 & ulf & ulb & urb & urf \\
+\hline
+
+\end{tabular}
+\ \\
+\\
+Somit hat die beschriebene Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).\\
+\\
+Es gilt also für einen Zug $Z$, der aus nur einem $n$-elementigen Zykel besteht: \\ 
+${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  Z^n=1 }$. \\
+\\
+Wenn man $Z$ mehrfach ausführt, kommt man nach jeder $n$-ten Wiederholung in den Ausgangszustand. Es gilt also auch 
+${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N} \ . \  Z^{k*n}=1 }$.
 
 
 

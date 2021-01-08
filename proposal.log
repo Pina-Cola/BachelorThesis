@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  8 JAN 2021 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  8 JAN 2021 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1631,7 +1631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 629--654
  []
 
 
-Overfull \hbox (1.10284pt too wide) in paragraph at lines 629--654
+Overfull \hbox (19.38327pt too wide) in paragraph at lines 629--654
 \OT1/cmr/m/n/12 So gilt zum Bei-spiel: $[]$ (Ord-nung 4), $[]$ (Ord-nung 3) ode
 r auch $[]$
  []
@@ -1672,28 +1672,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 629--654
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 710--725
+Underfull \hbox (badness 10000) in paragraph at lines 683--711
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--725
-
- []
-
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 683--711
 
  []
 
 
-Overfull \hbox (33.94673pt too wide) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 683--711
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--711
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 740--755
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--755
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
+
+ []
+
+
+Overfull \hbox (33.94673pt too wide) in paragraph at lines 791--820
 \OT1/cmr/m/n/12 In die-sem Ab-schnitt wer-de ich zei-gen, dass bei ei-ner va-li
 -den W[]urfelkonfiguration $[]$
  []
 
 
-Overfull \hbox (28.10432pt too wide) in paragraph at lines 761--790
+Overfull \hbox (28.10432pt too wide) in paragraph at lines 791--820
 \OT1/cmr/m/n/12 Wenn $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 
 ^^[[]; x[]\OT1/cmr/m/n/12 )$ ei-ne Nach-fol-ge-kon-fi-gu-ra-ti-on von $\OML/cmm
 /m/it/12 C \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ^^[; x\OT1/cmr/m/n/12 )$ ist, da
@@ -1701,52 +1721,52 @@ nn gilt $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
 
  []
 
 
-Overfull \hbox (22.70398pt too wide) in paragraph at lines 761--790
+Overfull \hbox (22.70398pt too wide) in paragraph at lines 791--820
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--790
+Underfull \hbox (badness 10000) in paragraph at lines 791--820
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 818--821
+Underfull \hbox (badness 10000) in paragraph at lines 848--851
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--821
+Underfull \hbox (badness 10000) in paragraph at lines 848--851
 
  []
 
@@ -1776,7 +1796,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (21 pages, 1344856 bytes).
+Output written on proposal.pdf (21 pages, 1347312 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
