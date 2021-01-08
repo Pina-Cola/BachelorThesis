@@ -679,12 +679,20 @@ Daraus folgt: Wenn man einen beliebigen Zug $Z \in G_{2x2x2}$ wiederholt auf den
 
 
 Es kann schwierig sein, die Äquivalenz von Zügen oder Roatationen anhand der Funktionen ($\sigma$ und $\delta$) in der Zykelschreibweise zu erkennen. \\
-Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann. So ist beispielsweise $ (ulf \ ulb \ urb \ urf)$ das gleiche wie $(urb \ urf \ ulf \ ulb)$. \\
+Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann. So ist der Zug $U$ beispielsweise $ (ulf \ ulb \ urb \ urf)$, aber auch $(urb \ urf \ ulf \ ulb)$.
+\\
 Um das zu vereinfachen, priorisiere ich die Würfelpositionen, so dass die Position mit der höchsten Priorität immer vorne steht und zwei Äquivalente Zykel somit gleich aussehen. \\
 \\
-Die Positionen sind wie folgt priorisiert: \\
-
-
+Die Positionen priorisiere ich wie folgt: \\
+\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+\hline
+Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\hline
+Position  & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
+\hline
+\end{tabular}
+\ \\ \\
+Somit ist die angepasste Schreibweise für den Zug $U$ dann $(ulb \ urb \ urf \ ulf)$.
 
 
 
