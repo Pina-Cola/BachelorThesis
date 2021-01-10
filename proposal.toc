@@ -4,7 +4,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Einleitung/Ausgangslage}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Z\IeC {\"u}ge des W\IeC {\"u}rfels}{3}
+\contentsline {subsection}{\numberline {}Grundz\IeC {\"u}ge des W\IeC {\"u}rfels}{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{4}
 \defcounter {refsection}{0}\relax 
@@ -16,7 +16,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Rotation des W\IeC {\"u}rfels}{11}
+\contentsline {subsection}{\numberline {}Rotation des W\IeC {\"u}rfels}{12}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{14}
 \defcounter {refsection}{0}\relax 

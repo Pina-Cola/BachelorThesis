@@ -13,6 +13,7 @@
 \usepackage{tikz}
 \usepackage{float}
 \usepackage{verbatim}
+\usepackage{FLaAL}
 
 \usepackage{subfigure}
 
@@ -181,9 +182,9 @@ Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorg
 
 
 
-\subsection*{Züge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Züge des Würfels}
+\subsection*{Grundzüge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Grundzüge des Würfels}
 Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
-Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug dar zu stellen. \\
+Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. \\
 \\
 \begin{tabular}{|c|l|}
 \hline
@@ -430,7 +431,15 @@ Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden
 \sigma_R & =\ (urb \ drb \ drf \ urf) \\
 \end{align*}
 Die Identitätspermutation schreibe ich als $\sigma = 1$.
+\\
+\\
+Der besseren Übersichtlichkeit halber, habe ich die Zykel aller Züge auch grafisch dargestellt: \\
 
+\begin{figure}[H]
+\includegraphics[scale=0.3]{graph_zug.png}
+\end{figure}
+\ \\
+Dieser Graph vereinfach das Ablesen der Zykel, vorallem wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
 
 
 
@@ -713,6 +722,9 @@ ${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N}
 \\
 \\
 Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das $KGV$ (kleinstes gemeinsames Vielfaches) aller Zykelgrößen bestimmt werden.
+\\
+\\
+
 
 
 
