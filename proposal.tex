@@ -723,7 +723,7 @@ Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt w
 \\
 \\
 \newpage 
-Der besseren Übersichtlichkeit halber, habe ich die Zykel aller Züge auch grafisch dargestellt: \\
+Der besseren Übersichtlichkeit halber, habe ich die Zykel aller Züge auch grafisch dargestellt:
 
 \begin{figure}[H]
 \includegraphics[scale=0.3]{graph_zug.png}
@@ -731,8 +731,38 @@ Der besseren Übersichtlichkeit halber, habe ich die Zykel aller Züge auch graf
 \ \\
 Dieser Graph vereinfach das Ablesen der Zykel, vorallem wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden. \\
 \\
-So kann ich nun anhand eines Beispielzuges die Zykelstruktur darstellen. \\
+So kann ich nun anhand des Beispielzuges $LLFF$ die Zykelstruktur darstellen. \\
 \\
+Zuerst erstelle ich eine Tabelle, die jede Position auf ihre neue Position abbildet. \\
+\\
+\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+\hline
+ & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
+\hline
+\hline
+L & ulf & \textcolor{gray}{urb} & dlf & \textcolor{gray}{urf} & ulb & \textcolor{gray}{drb} & dlb & \textcolor{gray}{drf} \\
+\hline
+L & dlf & \textcolor{gray}{urb} & dlb & \textcolor{gray}{urf} & ulf & \textcolor{gray}{drb} & ulb & \textcolor{gray}{drf} \\
+\hline
+F & ulf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & drf & urf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & dlf \\
+\hline
+F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & ulf \\
+\hline
+
+\end{tabular}
+\ \\ \\ \\
+Die ausgegrauten Positionen bleiben bei dem jeweiligen Zug unverändert. \\
+\\ \\
+\\
+Grafisch dargestellt sehen die Zykel des Zuges $LLFF$ so aus: \\
+\begin{figure}[H]
+\includegraphics[scale=0.3]{zykel_LLFF.png}
+\end{figure}
+
+In Zykelschreibeweise also $\sigma_{LLFF}=(dlf \ ulb \ urf)(ulf \ dlb \ drf)$. \\
+Da es also zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. \\
+In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. \\
+
 
 
 
@@ -769,7 +799,7 @@ Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann.
 \\
 Um das zu vereinfachen, priorisiere ich die Würfelpositionen, so dass die Position mit der höchsten Priorität immer vorne steht und zwei Äquivalente Zykel somit gleich aussehen. \\
 \\
-Die Positionen priorisiere ich wie folgt: \\
+Die Positionen priorisiere ich wie folgt: \\ \\
 \begin{tabular}{|c||c|c|c|c|c|c|c|c|}
 \hline
 Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
@@ -777,7 +807,7 @@ Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
 Position  & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
 \hline
 \end{tabular}
-\ \\ \\
+\ \\ \\ \\
 Somit ist die angepasste Schreibweise für den Zug $U$ dann $(ulb \ urb \ urf \ ulf)$, da $ulb$ (falls vorhanden) ganz vorne stehen muss.
 
 

@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{18}
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{19}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{20}
 \defcounter {refsection}{0}\relax 
