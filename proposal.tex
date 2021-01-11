@@ -16,6 +16,8 @@
 
 \usepackage{subfigure}
 
+\usepackage[compact]{titlesec}     
+
 
 \usepackage[center]{caption}
 
@@ -33,7 +35,7 @@
 
 \geometry{
   paper=a4paper, % Change to letterpaper for US letter
-  top=1.5cm, % Top margin
+  top=3cm, % Top margin
   left=2cm, % Left margin
   right=3cm, % Right margin
   %showframe, % Uncomment to show how the type block is set on the page
@@ -41,8 +43,7 @@
 
 \pagenumbering {arabic} 
 
-
-
+\titlespacing*{\section}{0pt}{10ex plus 1ex minus .2ex}{4.3ex plus .2ex}
 
 
 
@@ -53,6 +54,7 @@
 
 
 \begin{document}
+
 
 
 
@@ -433,15 +435,7 @@ Die Drehungen der anderen Ebenen können durch folgende Zykel beschrieben werden
 \sigma_R & =\ (urb \ drb \ drf \ urf) \\
 \end{align*}
 Die Identitätspermutation schreibe ich als $\sigma = 1$.
-\\
-\\
-Der besseren Übersichtlichkeit halber, habe ich die Zykel aller Züge auch grafisch dargestellt: \\
 
-\begin{figure}[H]
-\includegraphics[scale=0.3]{graph_zug.png}
-\end{figure}
-\ \\
-Dieser Graph vereinfach das Ablesen der Zykel, vorallem wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
 
 
 
@@ -726,6 +720,17 @@ ${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N}
 Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das $KGV$ (kleinstes gemeinsames Vielfaches) aller Zykelgrößen bestimmt werden.
 \\
 \\
+Der besseren Übersichtlichkeit halber, habe ich die Zykel aller Züge auch grafisch dargestellt: \\
+
+\begin{figure}[H]
+\includegraphics[scale=0.3]{graph_zug.png}
+\end{figure}
+\ \\
+Dieser Graph vereinfach das Ablesen der Zykel, vorallem wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden. \\
+\\
+So kann ich nun anhand eines Beispielzuges die Zykelstruktur darstellen. \\
+\\
+
 
 
 

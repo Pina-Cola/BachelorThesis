@@ -4,30 +4,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Einleitung/Ausgangslage}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Grundz\IeC {\"u}ge des W\IeC {\"u}rfels}{3}
+\contentsline {subsection}{\numberline {}Grundz\IeC {\"u}ge des W\IeC {\"u}rfels}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{4}
+\contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Darstellung des 2x2x2 W\IeC {\"u}fels mit dem Konstrukt der Gruppe}{4}
+\contentsline {subsection}{\numberline {}Darstellung des 2x2x2 W\IeC {\"u}fels mit dem Konstrukt der Gruppe}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{8}
+\contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Positionen der Steine ges im W\IeC {\"u}rfel}{8}
+\contentsline {subsection}{\numberline {}Positionen der Steine ges im W\IeC {\"u}rfel}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{10}
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{11}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Rotation des W\IeC {\"u}rfels}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{14}
+\contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{14}
+\contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zykelstruktur}{15}
+\contentsline {subsection}{\numberline {}Zykelstruktur}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{16}
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{17}
+\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}L\IeC {\"o}sung des W\IeC {\"u}rfels}{18}
+\contentsline {section}{\numberline {6}L\IeC {\"o}sung des W\IeC {\"u}rfels}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Abbildungen und Tabellen}{19}
+\contentsline {section}{\numberline {7}Abbildungen und Tabellen}{21}
