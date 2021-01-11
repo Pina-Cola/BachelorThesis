@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  11 JAN 2021 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  11 JAN 2021 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1672,94 +1672,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 634--659
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--724
+Underfull \hbox (badness 10000) in paragraph at lines 688--723
 
- []
-
-[16] <graph_zug.png, id=116, 1927.2pt x 1084.05pt>
-File: graph_zug.png Graphic file (type png)
- <use graph_zug.png>
-Package pdftex.def Info: graph_zug.png used on input line 726.
-(pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
-
-Overfull \hbox (122.92036pt too wide) in paragraph at lines 726--727
-[][] 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 728--733
+Underfull \hbox (badness 10000) in paragraph at lines 723--725
+
+ []
+
+<graph_zug.png, id=120, 1927.2pt x 1084.05pt>
+File: graph_zug.png Graphic file (type png)
+ <use graph_zug.png>
+Package pdftex.def Info: graph_zug.png used on input line 727.
+(pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
+
+Overfull \hbox (122.92036pt too wide) in paragraph at lines 727--728
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 729--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 728--733
+Underfull \hbox (badness 10000) in paragraph at lines 729--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 728--733
+Underfull \hbox (badness 10000) in paragraph at lines 729--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 764--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--780
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 764--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--780
 
  []
 
-[18 <./graph_zug.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+[18 <./graph_zug.png>] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
 
-Overfull \hbox (33.94673pt too wide) in paragraph at lines 815--844
+Overfull \hbox (33.94673pt too wide) in paragraph at lines 816--845
 \OT1/cmr/m/n/12 In die-sem Ab-schnitt wer-de ich zei-gen, dass bei ei-ner va-li
 -den W[]urfelkonfiguration $[]$
  []
 
 
-Overfull \hbox (28.10432pt too wide) in paragraph at lines 815--844
+Overfull \hbox (28.10432pt too wide) in paragraph at lines 816--845
 \OT1/cmr/m/n/12 Wenn $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 
 ^^[[]; x[]\OT1/cmr/m/n/12 )$ ei-ne Nach-fol-ge-kon-fi-gu-ra-ti-on von $\OML/cmm
 /m/it/12 C \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ^^[; x\OT1/cmr/m/n/12 )$ ist, da
@@ -1767,56 +1772,56 @@ nn gilt $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
 
-Overfull \hbox (22.70398pt too wide) in paragraph at lines 815--844
+Overfull \hbox (22.70398pt too wide) in paragraph at lines 816--845
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--844
+Underfull \hbox (badness 10000) in paragraph at lines 816--845
 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 872--875
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 873--876
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 872--875
+Underfull \hbox (badness 10000) in paragraph at lines 873--876
 
  []
 
-[20] [21] (./proposal.aux)
+[21] [22] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
@@ -1842,10 +1847,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (23 pages, 1489791 bytes).
+Output written on proposal.pdf (24 pages, 1490076 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 177 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
