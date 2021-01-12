@@ -23,12 +23,13 @@
 
 
 \pagestyle{plain}
-% \clearscrheadfoot
-\pagenumbering {arabic} 
+
 
 \usepackage[backend=bibtex,style=numeric, citestyle = numeric]{biblatex}
 
 \bibliography{references.bib}
+
+
 
 
 
@@ -155,7 +156,6 @@ Es sind aber nicht alle dieser Positionen valide. Eine Position ist valide, wenn
 \caption{3x3x3 Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (auch Grundstellung))}
 \end{figure}
 
-\newpage
 $\ $\\
 Im Gegensatz zum 3x3x3 Würfel hat der 2x2x2 Würfel weder Mittelsteine, noch Kantsteine. \\
 Das besondere an den Mittelsteinen des 3x3x3 Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3 Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
@@ -715,11 +715,11 @@ Somit hat die beschriebene Ebenenrotation $U$ die Ordnung 4. Das gilt auch für 
 Es gilt also für einen Zug $Z$, der aus nur einem $n$-elementigen Zykel besteht: \\ 
 ${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  Z^n=1 }$. \\
 \\
-Wenn man $Z$ mehrfach ausführt, kommt man nach jeder $n$-ten Wiederholung in den Ausgangszustand. Es gilt also auch 
+Wenn man $Z$ mehrfach ausführt, kommt man nach jeder $n$-ten Wiederholung in den Ausgangszustand. \cite{TD} Es gilt also auch 
 ${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N} \ . \  Z^{k*n}=1 }$.
 \\
 \\
-Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das $KGV$ (kleinstes gemeinsames Vielfaches) aller Zykelgrößen bestimmt werden.
+Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das $KGV$ (kleinstes gemeinsames Vielfaches) aller Zykelgrößen bestimmt werden. \cite{TD}
 \\
 \\
 \newpage 
