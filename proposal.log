@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  13 JAN 2021 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  13 JAN 2021 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,6 +809,12 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks38
 \verbatim@in@stream=\read2
 )
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip50
@@ -1078,18 +1084,18 @@ LaTeX Warning: Unused global option(s):
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
@@ -1205,8 +1211,8 @@ Package biblatex Warning: Data encoding is 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'proposal.bbl' found.
 (./proposal.bbl)
-Package biblatex Info: Reference section=0 on input line 59.
-Package biblatex Info: Reference segment=0 on input line 59.
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1219,7 +1225,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+LaTeX Font Info:    Try loading font information for U+stmry on input line 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd))
 \tf@toc=\write5
 \openout5 = `proposal.toc'.
 
@@ -1227,32 +1236,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <2x2scrambled.png, id=16, 1003.75pt x 1140.26pt>
 File: 2x2scrambled.png Graphic file (type png)
  <use 2x2scrambled.png>
-Package pdftex.def Info: 2x2scrambled.png used on input line 126.
+Package pdftex.def Info: 2x2scrambled.png used on input line 128.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 <2x2solved.png, id=18, 1003.75pt x 1140.26pt>
 File: 2x2solved.png Graphic file (type png)
  <use 2x2solved.png>
-Package pdftex.def Info: 2x2solved.png used on input line 127.
+Package pdftex.def Info: 2x2solved.png used on input line 129.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--133
+Underfull \hbox (badness 10000) in paragraph at lines 123--135
 
  []
 
 <2x2stein.png, id=19, 1003.75pt x 1140.26pt>
 File: 2x2stein.png Graphic file (type png)
  <use 2x2stein.png>
-Package pdftex.def Info: 2x2stein.png used on input line 136.
+Package pdftex.def Info: 2x2stein.png used on input line 138.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 <2x2farbflaeche.png, id=20, 1003.75pt x 1140.26pt>
 File: 2x2farbflaeche.png Graphic file (type png)
  <use 2x2farbflaeche.png>
-Package pdftex.def Info: 2x2farbflaeche.png used on input line 137.
+Package pdftex.def Info: 2x2farbflaeche.png used on input line 139.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--145
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
 
  []
 
@@ -1260,230 +1269,230 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--145
 g>] <2x2seite.png, id=30, 1003.75pt x 1140.26pt>
 File: 2x2seite.png Graphic file (type png)
  <use 2x2seite.png>
-Package pdftex.def Info: 2x2seite.png used on input line 148.
+Package pdftex.def Info: 2x2seite.png used on input line 150.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 <3x3scrambled.png, id=31, 1003.75pt x 1140.26pt>
 File: 3x3scrambled.png Graphic file (type png)
  <use 3x3scrambled.png>
-Package pdftex.def Info: 3x3scrambled.png used on input line 155.
+Package pdftex.def Info: 3x3scrambled.png used on input line 157.
 (pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
 
 <3x3solved.png, id=32, 1003.75pt x 1140.26pt>
 File: 3x3solved.png Graphic file (type png)
  <use 3x3solved.png>
-Package pdftex.def Info: 3x3solved.png used on input line 156.
+Package pdftex.def Info: 3x3solved.png used on input line 158.
 (pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--166
+Underfull \hbox (badness 10000) in paragraph at lines 162--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--166
+Underfull \hbox (badness 10000) in paragraph at lines 162--168
 
  []
 
 [2 <./2x2seite.png> <./3x3scrambled.png> <./3x3solved.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 193--218
+Underfull \hbox (badness 10000) in paragraph at lines 195--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--218
+Underfull \hbox (badness 10000) in paragraph at lines 195--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--218
+Underfull \hbox (badness 10000) in paragraph at lines 195--220
 
  []
 
 [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 245.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 247.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 245.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 247.
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--260
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--260
+Underfull \hbox (badness 10000) in paragraph at lines 252--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--260
+Underfull \hbox (badness 10000) in paragraph at lines 252--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--260
+Underfull \hbox (badness 10000) in paragraph at lines 252--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--265
+Underfull \hbox (badness 10000) in paragraph at lines 252--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--274
+Underfull \hbox (badness 10000) in paragraph at lines 263--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--274
+Underfull \hbox (badness 10000) in paragraph at lines 268--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--274
+Underfull \hbox (badness 10000) in paragraph at lines 268--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--276
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 288--292
+Underfull \hbox (badness 10000) in paragraph at lines 290--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
+Underfull \hbox (badness 10000) in paragraph at lines 296--300
 
  []
 
 <RF.png, id=48, 1003.75pt x 1140.26pt>
 File: RF.png Graphic file (type png)
  <use RF.png>
-Package pdftex.def Info: RF.png used on input line 305.
+Package pdftex.def Info: RF.png used on input line 307.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 <FR.png, id=49, 1003.75pt x 1140.26pt>
 File: FR.png Graphic file (type png)
  <use FR.png>
-Package pdftex.def Info: FR.png used on input line 306.
+Package pdftex.def Info: FR.png used on input line 308.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--316
+Underfull \hbox (badness 10000) in paragraph at lines 301--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--316
+Underfull \hbox (badness 10000) in paragraph at lines 301--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--316
+Underfull \hbox (badness 10000) in paragraph at lines 301--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--316
+Underfull \hbox (badness 10000) in paragraph at lines 301--318
 
  []
 
 [5] [6 <./RF.png> <./FR.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 362--365
+Underfull \hbox (badness 10000) in paragraph at lines 364--367
 
  []
 
 <caged_positions.png, id=63, 1003.75pt x 1140.26pt>
 File: caged_positions.png Graphic file (type png)
  <use caged_positions.png>
-Package pdftex.def Info: caged_positions.png used on input line 392.
+Package pdftex.def Info: caged_positions.png used on input line 394.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--394
+Underfull \hbox (badness 10000) in paragraph at lines 389--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--394
+Underfull \hbox (badness 10000) in paragraph at lines 389--396
 
  []
 
 <foldedout_cage.png, id=64, 1003.75pt x 1140.26pt>
 File: foldedout_cage.png Graphic file (type png)
  <use foldedout_cage.png>
-Package pdftex.def Info: foldedout_cage.png used on input line 398.
+Package pdftex.def Info: foldedout_cage.png used on input line 400.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
 <foldedout_cage_color.png, id=65, 1003.75pt x 1140.26pt>
 File: foldedout_cage_color.png Graphic file (type png)
 
 <use foldedout_cage_color.png>
-Package pdftex.def Info: foldedout_cage_color.png used on input line 399.
+Package pdftex.def Info: foldedout_cage_color.png used on input line 401.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
  [8 <./caged_positions.png>]
 <caged_spin.png, id=70, 1003.75pt x 1140.26pt>
 File: caged_spin.png Graphic file (type png)
  <use caged_spin.png>
-Package pdftex.def Info: caged_spin.png used on input line 416.
+Package pdftex.def Info: caged_spin.png used on input line 418.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
 <foldedout_spin.png, id=71, 1003.75pt x 1140.26pt>
 File: foldedout_spin.png Graphic file (type png)
  <use foldedout_spin.png>
-Package pdftex.def Info: foldedout_spin.png used on input line 417.
+Package pdftex.def Info: foldedout_spin.png used on input line 419.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--418
+Underfull \hbox (badness 10000) in paragraph at lines 403--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--418
+Underfull \hbox (badness 10000) in paragraph at lines 403--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--418
+Underfull \hbox (badness 10000) in paragraph at lines 403--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--418
+Underfull \hbox (badness 10000) in paragraph at lines 403--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--418
+Underfull \hbox (badness 10000) in paragraph at lines 403--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--432
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--432
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--432
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--432
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--432
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--432
+Underfull \hbox (badness 10000) in paragraph at lines 421--434
 
  []
 
@@ -1492,22 +1501,22 @@ ldedout_spin.png>] <foldedout_numbers.png, id=79, 1003.75pt x 1140.26pt>
 File: foldedout_numbers.png Graphic file (type png)
 
 <use foldedout_numbers.png>
-Package pdftex.def Info: foldedout_numbers.png used on input line 466.
+Package pdftex.def Info: foldedout_numbers.png used on input line 468.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
  <foldedout_012.png, id=80, 1003.75pt x 1140.26pt>
 File: foldedout_012.png Graphic file (type png)
 
 <use foldedout_012.png>
-Package pdftex.def Info: foldedout_012.png used on input line 472.
+Package pdftex.def Info: foldedout_012.png used on input line 474.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
  <foldedout_c_012.png, id=81, 1003.75pt x 1140.26pt>
 File: foldedout_c_012.png Graphic file (type png)
 
 <use foldedout_c_012.png>
-Package pdftex.def Info: foldedout_c_012.png used on input line 473.
+Package pdftex.def Info: foldedout_c_012.png used on input line 475.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--474
+Underfull \hbox (badness 10000) in paragraph at lines 470--476
 
  []
 
@@ -1516,336 +1525,342 @@ Underfull \hbox (badness 10000) in paragraph at lines 468--474
 File: foldedout_012_white.png Graphic file (type png)
 
 <use foldedout_012_white.png>
-Package pdftex.def Info: foldedout_012_white.png used on input line 486.
+Package pdftex.def Info: foldedout_012_white.png used on input line 488.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 <foldedout_012_spin.png, id=87, 1003.75pt x 1140.26pt>
 File: foldedout_012_spin.png Graphic file (type png)
 
 <use foldedout_012_spin.png>
-Package pdftex.def Info: foldedout_012_spin.png used on input line 487.
+Package pdftex.def Info: foldedout_012_spin.png used on input line 489.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--489
+Underfull \hbox (badness 10000) in paragraph at lines 477--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--489
+Underfull \hbox (badness 10000) in paragraph at lines 477--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--517
+Underfull \hbox (badness 10000) in paragraph at lines 516--519
 
  []
 
 [11 <./foldedout_012.png> <./foldedout_c_012.png> <./foldedout_012_white.png> <
 ./foldedout_012_spin.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 522--530
+Underfull \hbox (badness 10000) in paragraph at lines 524--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--530
+Underfull \hbox (badness 10000) in paragraph at lines 524--532
 
  []
 
 <Pfeile.png, id=96, 1003.75pt x 1140.26pt>
 File: Pfeile.png Graphic file (type png)
  <use Pfeile.png>
-Package pdftex.def Info: Pfeile.png used on input line 561.
+Package pdftex.def Info: Pfeile.png used on input line 563.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
 <auf_ulf.png, id=97, 1003.75pt x 1140.26pt>
 File: auf_ulf.png Graphic file (type png)
  <use auf_ulf.png>
-Package pdftex.def Info: auf_ulf.png used on input line 593.
+Package pdftex.def Info: auf_ulf.png used on input line 595.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--594
+Underfull \hbox (badness 10000) in paragraph at lines 565--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--594
+Underfull \hbox (badness 10000) in paragraph at lines 565--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--594
+Underfull \hbox (badness 10000) in paragraph at lines 565--596
 
  []
 
 
-Overfull \hbox (12.28119pt too wide) in paragraph at lines 563--594
+Overfull \hbox (12.28119pt too wide) in paragraph at lines 565--596
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--594
+Underfull \hbox (badness 10000) in paragraph at lines 565--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--594
+Underfull \hbox (badness 10000) in paragraph at lines 565--596
 
  []
 
 [12 <./Pfeile.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 595--613
+Underfull \hbox (badness 10000) in paragraph at lines 597--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--613
+Underfull \hbox (badness 10000) in paragraph at lines 597--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--613
+Underfull \hbox (badness 10000) in paragraph at lines 597--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--613
+Underfull \hbox (badness 10000) in paragraph at lines 597--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--613
+Underfull \hbox (badness 10000) in paragraph at lines 597--615
 
  []
 
 [13 <./auf_ulf.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 669--674
+Underfull \hbox (badness 10000) in paragraph at lines 672--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 669--674
+Underfull \hbox (badness 10000) in paragraph at lines 672--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--685
+Underfull \hbox (badness 10000) in paragraph at lines 679--688
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--700
+Underfull \hbox (badness 10000) in paragraph at lines 689--703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--700
+Underfull \hbox (badness 10000) in paragraph at lines 689--703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--700
+Underfull \hbox (badness 10000) in paragraph at lines 689--703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--700
+Underfull \hbox (badness 10000) in paragraph at lines 689--703
 
  []
 
 [14]
-Overfull \hbox (15.01614pt too wide) in paragraph at lines 712--712
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 715--722
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Overfull \hbox (47.66873pt too wide) in paragraph at lines 715--722
+\OT1/cmr/m/n/12 Man m[]usste dann in der De-fi-ni-ti-on der []Aquivalenzrelatio
+nen die an-de-ren []Aquivalenzrelationen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 
-Overfull \hbox (19.38327pt too wide) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
+
+ []
+
+
+Overfull \hbox (19.38327pt too wide) in paragraph at lines 765--790
 \OT1/cmr/m/n/12 So gilt zum Bei-spiel: $[]$ (Ord-nung 4), $[]$ (Ord-nung 3) ode
 r auch $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--779
+Underfull \hbox (badness 10000) in paragraph at lines 765--790
 
  []
 
 [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--843
+Underfull \hbox (badness 10000) in paragraph at lines 819--854
 
  []
 
-[17] <graph_zug.png, id=120, 1927.2pt x 1084.05pt>
+[17] <graph_zug.png, id=121, 1927.2pt x 1084.05pt>
 File: graph_zug.png Graphic file (type png)
  <use graph_zug.png>
-Package pdftex.def Info: graph_zug.png used on input line 847.
+Package pdftex.def Info: graph_zug.png used on input line 858.
 (pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
 
-Overfull \hbox (122.92036pt too wide) in paragraph at lines 847--848
+Overfull \hbox (122.92036pt too wide) in paragraph at lines 858--859
 [][] 
  []
 
-<zykel_LLFF.png, id=121, 1366.10374pt x 593.21625pt>
+<zykel_LLFF.png, id=122, 1366.10374pt x 593.21625pt>
 File: zykel_LLFF.png Graphic file (type png)
  <use zykel_LLFF.png>
-Package pdftex.def Info: zykel_LLFF.png used on input line 877.
+Package pdftex.def Info: zykel_LLFF.png used on input line 888.
 (pdftex.def)             Requested size: 409.83429pt x 177.96625pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--878
+Underfull \hbox (badness 10000) in paragraph at lines 860--889
 
  []
 
 [18 <./graph_zug.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 880--883
+Underfull \hbox (badness 10000) in paragraph at lines 891--894
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 915--930
+Underfull \hbox (badness 10000) in paragraph at lines 926--941
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 915--930
+Underfull \hbox (badness 10000) in paragraph at lines 926--941
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 915--930
+Underfull \hbox (badness 10000) in paragraph at lines 926--941
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 915--930
+Underfull \hbox (badness 10000) in paragraph at lines 926--941
 
  []
 
 [19 <./zykel_LLFF.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 
-Overfull \hbox (33.94673pt too wide) in paragraph at lines 966--995
+Overfull \hbox (33.94673pt too wide) in paragraph at lines 977--1006
 \OT1/cmr/m/n/12 In die-sem Ab-schnitt wer-de ich zei-gen, dass bei ei-ner va-li
 -den W[]urfelkonfiguration $[]$
  []
 
 
-Overfull \hbox (28.10432pt too wide) in paragraph at lines 966--995
+Overfull \hbox (28.10432pt too wide) in paragraph at lines 977--1006
 \OT1/cmr/m/n/12 Wenn $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 
 ^^[[]; x[]\OT1/cmr/m/n/12 )$ ei-ne Nach-fol-ge-kon-fi-gu-ra-ti-on von $\OML/cmm
 /m/it/12 C \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ^^[; x\OT1/cmr/m/n/12 )$ ist, da
@@ -1853,52 +1868,52 @@ nn gilt $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 
-Overfull \hbox (22.70398pt too wide) in paragraph at lines 966--995
+Overfull \hbox (22.70398pt too wide) in paragraph at lines 977--1006
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--995
+Underfull \hbox (badness 10000) in paragraph at lines 977--1006
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1026
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1037
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1026
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1037
 
  []
 
@@ -1907,13 +1922,13 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
  )
-(\end occurred when \iftrue on line 59 was incomplete) 
+(\end occurred when \iftrue on line 61 was incomplete) 
 Here is how much of TeX's memory you used:
- 20870 strings out of 493029
- 382540 string characters out of 6136234
- 535129 words of memory out of 5000000
- 23996 multiletter control sequences out of 15000+600000
- 12175 words of font info for 45 fonts, out of 8000000 for 9000
+ 21021 strings out of 493029
+ 384358 string characters out of 6136234
+ 535352 words of memory out of 5000000
+ 24136 multiletter control sequences out of 15000+600000
+ 12787 words of font info for 48 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  55i,9n,54p,798b,1432s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf
@@ -1927,11 +1942,12 @@ mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (24 pages, 1527102 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on proposal.pdf (24 pages, 1529817 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 183 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

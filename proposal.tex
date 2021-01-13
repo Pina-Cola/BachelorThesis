@@ -14,6 +14,8 @@
 \usepackage{float}
 \usepackage{verbatim}
 
+\usepackage{ stmaryrd }
+
 \usepackage{subfigure}
 
 \usepackage[compact]{titlesec}     
@@ -666,6 +668,7 @@ Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: \\
 
 \subsection*{Äquivalenzrelationen der Rotationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen}
 
+
 Um die Rotationen des Würfels umzusetzen, führe ich Äquivalenzrelationen ein. \\
 Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
 \\
@@ -675,21 +678,21 @@ Ich führe für jede Rotationsrichtung eine Relation ein. Es gibt dann also $\si
 
 \begin{tabular}{l l}
 
-$C(Z_1) \sim_{Z_r} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_rZ_2$  ergeben die gleiche Würfelkonfiguration\\
+$Z_1 \sim_{Z_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_rZ_2$  ergeben die gleiche Würfelkonfiguration\\
 
 \end{tabular}
 \\
-$Z_rZ_2$ steht für den Zug $Z_2$, der nach einer Rechtsrotation des Würfels ausgeführt wird. $C$ steht für die Würfelkonfiguration.\\
+$Z_rZ_2$ steht für den Zug $Z_2$, der nach einer Rechtsrotation des Würfels ausgeführt wird. \\
 \\
 Die anderen Rotationsrelationen definiere ich wie folgt: 
 
 \begin{tabular}{l l l}
 
-$C(Z_1) \sim_{Z_l} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_lZ_2$ & ergeben die gleiche Würfelkonfiguration \\
-$C(Z_1) \sim_{Y_r} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-$C(Z_1) \sim_{Y_l} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-$C(Z_1) \sim_{X_r} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-$C(Z_1) \sim_{X_l} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+$Z_1 \sim_{Z_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_lZ_2$ & ergeben die gleiche Würfelkonfiguration \\
+$Z_1 \sim_{Y_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+$Z_1 \sim_{Y_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+$Z_1 \sim_{X_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+$Z_1 \sim_{X_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
 
 \end{tabular}
 \\
@@ -707,17 +710,25 @@ Für die Reflexivität muss $x \sim x$ gelten. \\
 Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind, gilt:
 \begin{align*}
 Z_1 \sim_W Z_2 : & \Leftrightarrow \ \ \  Z_1 \ und  \ WZ_2 \ ergeben \ die \ gleiche \ W"urfelkonfiguration\\
-& \Leftrightarrow \ \ \ C(Z_1)=C(WZ_2) 
-& \Leftrightarrow \ \ \ Z_1=WZ_2 
+& \Leftrightarrow \ \ \ C \cdot Z_1=C \cdot WZ_2 \\
+& \Leftrightarrow \ \ \ Z_1=WZ_2
 \end{align*}
+$\lightning$ Das gilt aber leider nicht, wenn $Z_1=Z_2$ gilt. Denn identische Züge ergeben nicht das gleiche, wenn der Würfel vor einem Zug rotiert wird und vor dem anderen nicht. \\
+\\
+\textcolor{gray}{Lösungsidee: \\
+Die Bedingungen würden wieder gelten, wenn man zwei Äquivalenzoperatoren verschachtelt und somit vor beiden Zügen den Würfel rotiert. \\
+Man müsste dann in der Definition der Äquivalenzrelationen die anderen Äquivalenzrelationen der Rotationen bereits nutzen. \\
+Das scheint mir mathematisch aber nicht korrekt. (?) }
 
-\item Symmetrie: \\
-Für die Symmetrie muss gelten: Aus $x \sim y \ folgt \ y \sim x$. \\
-Auch das gilt, da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind. Wenn 
+\item Symmetrie $\lightning$%:  \\
+%Für die Symmetrie muss gelten: Aus $x \sim y \ folgt \ y \sim x$. \\
+%Auch das gilt, da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind.  
 
-\item Transitivität
+\item Transitivität $\lightning$
 
 \end{itemize}
+
+Diese Ansatz dieser Äquivalenzrelationen funktioniert so nicht, da die Reflexivität, Symmetrie und Transitivität nicht erfüült sind.
 
 
 
