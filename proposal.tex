@@ -382,7 +382,7 @@ Der Würfel kann aber auch komplett gedreht werden, ohne Züge auszuführen.
 
 
 
-\subsection*{Positionen der Steine im Würfel} \addcontentsline{toc}{subsection}{\protect\numberline{}Positionen der Steine ges im Würfel}
+\subsection*{Positionen der Steine im Würfel} \addcontentsline{toc}{subsection}{\protect\numberline{}Positionen der Steine im Würfel}
 
 Um die Übergänge der Würfelsteine als Funktion darzustellen, definiere ich eine bijektive Funktion $\sigma$ für jede Ebenenrotation. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. \\
 \\
@@ -493,6 +493,54 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 
 
 
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Züge als Gruppenoperation}\addcontentsline{toc}{subsection}{\protect\numberline{}Züge als Gruppenoperation}
+
+Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ ist, wird der Würfel durch das Ausführen eines Zuges $M \in G_{2x2x2}$ in eine neue Konfiguration gebracht. Diese Konfiguration schreibe ich als $C \cdot M$. \\
+\\
+Definition einer Gruppenoperation mit der Gruppe $(G_{2x2x2}, \circ)$ und der Menge $C$:
+\begin{itemize}
+\item $\cdot: C \times G_{2x2x2} \rightarrow C$ mit $(c, g) \rightarrow c \cdot g $
+\item $c \cdot N = x$ für alle $c \in C$ und das neutrale Element $N \in G_{2x2x2}$  
+\item $c \cdot (u \circ v) = (c \cdot h) \cdot v$ für alle $u, v \in G_{2x2x2}$ und $c \in C$
+\end{itemize}
+\ \\
+Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $M_1 \in G_{2x2x2}$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot M_1$. Wenn nun noch ein weiterer Zug $M_2 \in G_{2x2x2}$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot M_1) \cdot M_2$. \\
+Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. \\
+\\
+Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. \\
+\\
+Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
+Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 %=======================================================================================================
 
 
@@ -587,7 +635,18 @@ Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: \\
 
 
 
+
+
+
+
+
+
+
+
+
 %=======================================================================================================
+
+
 
 
 
@@ -616,34 +675,48 @@ Ich führe für jede Rotationsrichtung eine Relation ein. Es gibt dann also $\si
 
 \begin{tabular}{l l}
 
-$Z_1 \sim_{Z_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das gleiche wie $Z_rZ_2$ \\
+$C(Z_1) \sim_{Z_r} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_rZ_2$  ergeben die gleiche Würfelkonfiguration\\
 
 \end{tabular}
 \\
-$Z_rZ_2$ steht für den Zug $Z_2$, der nach einer Rechtsrotation des Würfels ausgeführt wird. \\
+$Z_rZ_2$ steht für den Zug $Z_2$, der nach einer Rechtsrotation des Würfels ausgeführt wird. $C$ steht für die Würfelkonfiguration.\\
 \\
 Die anderen Rotationsrelationen definiere ich wie folgt: 
 
-\begin{tabular}{l l}
+\begin{tabular}{l l l}
 
-$Z_1 \sim_{Z_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $Z_lZ_2$ \\
-$Z_1 \sim_{Y_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $Y_rZ_2$ \\
-$Z_1 \sim_{Y_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $Y_lZ_2$ \\
-$Z_1 \sim_{X_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $X_rZ_2$ \\
-$Z_1 \sim_{X_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $X_lZ_2$ \\
+$C(Z_1) \sim_{Z_l} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_lZ_2$ & ergeben die gleiche Würfelkonfiguration \\
+$C(Z_1) \sim_{Y_r} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+$C(Z_1) \sim_{Y_l} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+$C(Z_1) \sim_{X_r} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+$C(Z_1) \sim_{X_l} C(Z_2)$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
 
 \end{tabular}
 \\
 \\
 \\
 \\
-Damit $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}$ und $\sim_{X_l}$ Äquivalenzrelationen sind, müssen Reflexivität, Symmetrie und Transitivität gelten, was ich im folgenden Abschnitt beweise. Ich nutze das Symbol $\sim$ für alle Elemente aus  $\{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$.
+Damit $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}$ und $\sim_{X_l}$ Äquivalenzrelationen sind, müssen Reflexivität, Symmetrie und Transitivität gelten, was ich im folgenden Abschnitt beweise. Ich nutze das Symbol $\sim$ für alle Elemente aus  $\{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ und $W$ als beliebige Würfelrotation (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}$ oder ${X_l}$).\\
+
+
+
 \begin{itemize}
+
 \item Reflexivität: \\
-Es muss $x \sim x$ gelten. \\
-Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind, gilt $x \sim x$. (Da \glqq $x \sim x \ :\Leftrightarrow \  x$ ist das Gleiche wie $x$\grqq \ (also $x \sim x \ :\Leftrightarrow x=x$) laut Definition gilt.)
-\item Symmetrie
+Für die Reflexivität muss $x \sim x$ gelten. \\
+Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind, gilt:
+\begin{align*}
+Z_1 \sim_W Z_2 : & \Leftrightarrow \ \ \  Z_1 \ und  \ WZ_2 \ ergeben \ die \ gleiche \ W"urfelkonfiguration\\
+& \Leftrightarrow \ \ \ C(Z_1)=C(WZ_2) 
+& \Leftrightarrow \ \ \ Z_1=WZ_2 
+\end{align*}
+
+\item Symmetrie: \\
+Für die Symmetrie muss gelten: Aus $x \sim y \ folgt \ y \sim x$. \\
+Auch das gilt, da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind. Wenn 
+
 \item Transitivität
+
 \end{itemize}
 
 
@@ -651,53 +724,6 @@ Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r},
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%=======================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
-\section{Züge als Gruppenoperation}
-
-Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ ist, wird der Würfel durch das Ausführen eines Zuges $M \in G_{2x2x2}$ in eine neue Konfiguration gebracht. Diese Konfiguration schreibe ich als $C \cdot M$. \\
-\\
-Definition einer Gruppenoperation mit der Gruppe $(G_{2x2x2}, \circ)$ und der Menge $C$:
-\begin{itemize}
-\item $\cdot: C \times G_{2x2x2} \rightarrow C$ mit $(c, g) \rightarrow c \cdot g $
-\item $c \cdot N = x$ für alle $c \in C$ und das neutrale Element $N \in G_{2x2x2}$  
-\item $c \cdot (u \circ v) = (c \cdot h) \cdot v$ für alle $u, v \in G_{2x2x2}$ und $c \in C$
-\end{itemize}
-\ \\
-Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $M_1 \in G_{2x2x2}$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot M_1$. Wenn nun noch ein weiterer Zug $M_2 \in G_{2x2x2}$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot M_1) \cdot M_2$. \\
-Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. \\
-\\
-Wenn wir den leeren Zug $N$ ausführen, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. \\
-\\
-Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. \\
-Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. 
 
 
 
