@@ -63,8 +63,9 @@
 
 \begin{titlepage}
 	\centering
-	\vspace*{3cm}
 	{\scshape\LARGE Technische Universität Dortmund \par}
+	Fakultät für Informatik \par
+	Lehrstuhl 14 für Software Engineering \par
 	\vspace{1cm}
 	{\scshape\Large Bachelorarbeit \par }
 	\vspace{1.5cm}
@@ -72,7 +73,7 @@
 	\vspace{2cm}
 	{\Large\itshape Pina Kolling\par}
 	\vspace{0.5cm}
-	{Mai 2021 \par }
+	{Abgabe: Mai 2021 \par }
 	\vfill
 	betreut von\par
 	Dr. Lukasz \textsc{Czajka} \par 
@@ -353,7 +354,7 @@ $\forall \  Y \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Y^n=Y^{n \mod 4}$
 
 
 \section{Konfiguration des Würfels}
-Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus zwei Parametern zusammen: \\
+Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus zwei Parametern zusammen: 
 \begin{itemize}
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x_i$)
@@ -625,13 +626,26 @@ Die anderen Rotationsrelationen definiere ich wie folgt:
 
 \begin{tabular}{l l}
 
-$Z_1 \sim_{Z_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das gleiche wie $Z_lZ_2$ \\
-$Z_1 \sim_{Y_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das gleiche wie $Y_rZ_2$ \\
-$Z_1 \sim_{Y_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das gleiche wie $Y_lZ_2$ \\
-$Z_1 \sim_{X_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das gleiche wie $X_rZ_2$ \\
-$Z_1 \sim_{X_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das gleiche wie $X_lZ_2$ \\
+$Z_1 \sim_{Z_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $Z_lZ_2$ \\
+$Z_1 \sim_{Y_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $Y_rZ_2$ \\
+$Z_1 \sim_{Y_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $Y_lZ_2$ \\
+$Z_1 \sim_{X_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $X_rZ_2$ \\
+$Z_1 \sim_{X_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ ist das Gleiche wie $X_lZ_2$ \\
 
 \end{tabular}
+\\
+\\
+\\
+\\
+Damit $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}$ und $\sim_{X_l}$ Äquivalenzrelationen sind, müssen Reflexivität, Symmetrie und Transitivität gelten, was ich im folgenden Abschnitt beweise. Ich nutze das Symbol $\sim$ für alle Elemente aus  $\{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$.
+\begin{itemize}
+\item Reflexivität: \\
+Es muss $x \sim x$ gelten. \\
+Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind, gilt $x \sim x$. (Da \glqq $x \sim x \ :\Leftrightarrow \  x$ ist das Gleiche wie $x$\grqq \ (also $x \sim x \ :\Leftrightarrow x=x$) laut Definition gilt.)
+\item Symmetrie
+\item Transitivität
+\end{itemize}
+
 
 
 
