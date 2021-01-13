@@ -18,6 +18,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Rotation des W\IeC {\"u}rfels}{11}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenzklassen der Rotationen}{13}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Z\IeC {\"u}ge als Gruppenoperation}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{14}
