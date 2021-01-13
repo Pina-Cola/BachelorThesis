@@ -51,6 +51,27 @@
   \field{title}{Group Theory via Rubik's Cube}
 \endentry
 
+\entry{Buch}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Glosauer}{G.}%
+     {Tobias}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer Spektrum}%
+  }
+  \strng{namehash}{GT1}
+  \strng{fullhash}{GT1}
+  \field{sortinit}{G}
+  \field{title}{Elementar(st)e Gruppentheorie}
+  \list{location}{1}{%
+    {Wiesbaden}%
+  }
+  \field{year}{2016}
+\endentry
+
 \lossort
 \endlossort
 
