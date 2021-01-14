@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}\IeC {\"A}quivalenzrelationen der Rotationen}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{16}
+\contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{17}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{19}
 \defcounter {refsection}{0}\relax 
