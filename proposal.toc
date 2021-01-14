@@ -26,12 +26,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zykelstruktur}{18}
+\contentsline {subsection}{\numberline {}Zykelstruktur}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{20}
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Valide Konfigurationen des W\IeC {\"u}rfels}{21}
+\contentsline {section}{\numberline {4}Valide Konfigurationen des W\IeC {\"u}rfels}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}L\IeC {\"o}sung des W\IeC {\"u}rfels}{22}
+\contentsline {section}{\numberline {5}L\IeC {\"o}sung des W\IeC {\"u}rfels}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Abbildungen und Tabellen}{23}
+\contentsline {section}{\numberline {6}Abbildungen und Tabellen}{24}
