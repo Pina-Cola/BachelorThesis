@@ -24,14 +24,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}\IeC {\"A}quivalenzrelationen der Rotationen}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{15}
+\contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zykelstruktur}{17}
+\contentsline {subsection}{\numberline {}Zykelstruktur}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{19}
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Valide Konfigurationen des W\IeC {\"u}rfels}{20}
+\contentsline {section}{\numberline {4}Valide Konfigurationen des W\IeC {\"u}rfels}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}L\IeC {\"o}sung des W\IeC {\"u}rfels}{21}
+\contentsline {section}{\numberline {5}L\IeC {\"o}sung des W\IeC {\"u}rfels}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Abbildungen und Tabellen}{22}
+\contentsline {section}{\numberline {6}Abbildungen und Tabellen}{23}
