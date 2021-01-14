@@ -666,14 +666,17 @@ Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: \\
 
 \hspace*{2cm}
 
-\subsection*{Äquivalenzrelationen der Rotationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen}
+\color{gray}
+
+
+\subsection*{Äquivalenzrelationen der Rotationen (Fehlversuch)}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen (Fehlversuch)}
 
 
 Um die Rotationen des Würfels umzusetzen, führe ich Äquivalenzrelationen ein. \\
 Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
 \\
 In dem Fall der Gruppe $(G_{2x2x2}, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in G_{2x2x2}$. \\ 
-Ich führe für jede Rotationsrichtung eine Relation ein. Es gibt dann also $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}$. \\
+Ich führe für jede Rotationsrichtung eine Relation ein. Es gibt dann also $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}$. \\ 
 
 
 \begin{tabular}{l l}
@@ -715,10 +718,7 @@ Z_1 \sim_W Z_2 : & \Leftrightarrow \ \ \  Z_1 \ und  \ WZ_2 \ ergeben \ die \ gl
 \end{align*}
 $\lightning$ Das gilt aber leider nicht, wenn $Z_1=Z_2$ gilt. Denn identische Züge ergeben nicht das gleiche, wenn der Würfel vor einem Zug rotiert wird und vor dem anderen nicht. \\
 \\
-\textcolor{gray}{Lösungsidee: \\
-Die Bedingungen würden wieder gelten, wenn man zwei Äquivalenzoperatoren verschachtelt und somit vor beiden Zügen den Würfel rotiert. \\
-Man müsste dann in der Definition der Äquivalenzrelationen die anderen Äquivalenzrelationen der Rotationen bereits nutzen. \\
-Das scheint mir mathematisch aber nicht korrekt. (?) }
+
 
 \item Symmetrie $\lightning$%:  \\
 %Für die Symmetrie muss gelten: Aus $x \sim y \ folgt \ y \sim x$. \\
@@ -728,9 +728,51 @@ Das scheint mir mathematisch aber nicht korrekt. (?) }
 
 \end{itemize}
 
-Diese Ansatz dieser Äquivalenzrelationen funktioniert so nicht, da die Reflexivität, Symmetrie und Transitivität nicht erfüült sind.
+Diese Ansatz dieser Äquivalenzrelationen funktioniert so nicht, da die Reflexivität, Symmetrie und Transitivität nicht erfüllt sind. \\ 
+
+%falsch
 
 
+
+
+
+
+
+
+
+
+
+
+
+% Versuch 2
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\color{black}
+
+\subsection*{Äquivalenzrelationen der Rotationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen}
+
+Um die Rotationen des Würfels umzusetzen, führe ich Äquivalenzrelationen ein. \\
+Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
+\\
+In dem Fall der Gruppe $(G_{2x2x2}, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in G_{2x2x2}$. \\ 
+\\
+Ich definiere: \\ 
+\begin{tabular}{l l}
+$Z_1 \sim Z_2 :\Leftrightarrow \ $  & $Z_1 \ und \ Z_2 \ ergeben \ (mit \ optionaler \ Rotation) \ die \ gleiche \ W"urfelkonfiguration$ \\
+\end{tabular}
 
 
 

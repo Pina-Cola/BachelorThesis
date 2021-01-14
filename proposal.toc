@@ -20,7 +20,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Rotation des W\IeC {\"u}rfels}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenzrelationen der Rotationen}{14}
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenzrelationen der Rotationen (Fehlversuch)}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenzrelationen der Rotationen}{15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{15}
 \defcounter {refsection}{0}\relax 
