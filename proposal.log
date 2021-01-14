@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  14 JAN 2021 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  14 JAN 2021 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1702,15 +1702,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 755--775
  []
 
 
-Overfull \hbox (1.65176pt too wide) in paragraph at lines 755--775
-\OT1/cmr/m/n/12 Daraus er-gibt sich $\OML/cmm/m/it/12 Z[] \OMS/cmsy/m/n/12 ^^X 
-\OML/cmm/m/it/12 Z[] \OT1/cmr/m/n/12 :\OMS/cmsy/m/n/12 ,  \OML/cmm/m/it/12 Z[] 
-\OT1/cmr/m/n/12 = \OML/cmm/m/it/12 WZ[]$ \OT1/cmr/m/n/12 mit $\OML/cmm/m/it/12 
-W$ \OT1/cmr/m/n/12 als Ele-ment aus $\OMS/cmsy/m/n/12 f[]\OML/cmm/m/it/12 ; [];
- []; []; []; []; ^^O\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 755--775
 
  []
@@ -1721,194 +1712,209 @@ Underfull \hbox (badness 10000) in paragraph at lines 755--775
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 802--805
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 806--807
 
  []
 
 
-Overfull \hbox (19.38327pt too wide) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 808--817
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
+
+ []
+
+
+Overfull \hbox (19.38327pt too wide) in paragraph at lines 850--875
 \OT1/cmr/m/n/12 So gilt zum Bei-spiel: $[]$ (Ord-nung 4), $[]$ (Ord-nung 3) ode
 r auch $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--863
+Underfull \hbox (badness 10000) in paragraph at lines 850--875
 
  []
 
 [16 <./3_wuerfel.png>] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--927
+Underfull \hbox (badness 10000) in paragraph at lines 904--939
 
  []
 
 [19] <graph_zug.png, id=129, 1927.2pt x 1084.05pt>
 File: graph_zug.png Graphic file (type png)
  <use graph_zug.png>
-Package pdftex.def Info: graph_zug.png used on input line 931.
+Package pdftex.def Info: graph_zug.png used on input line 943.
 (pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
 
-Overfull \hbox (122.92036pt too wide) in paragraph at lines 931--932
+Overfull \hbox (122.92036pt too wide) in paragraph at lines 943--944
 [][] 
  []
 
 <zykel_LLFF.png, id=130, 1366.10374pt x 593.21625pt>
 File: zykel_LLFF.png Graphic file (type png)
  <use zykel_LLFF.png>
-Package pdftex.def Info: zykel_LLFF.png used on input line 961.
+Package pdftex.def Info: zykel_LLFF.png used on input line 973.
 (pdftex.def)             Requested size: 409.83429pt x 177.96625pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--962
+Underfull \hbox (badness 10000) in paragraph at lines 945--974
 
  []
 
 [20 <./graph_zug.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 964--967
+Underfull \hbox (badness 10000) in paragraph at lines 976--979
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 999--1014
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1026
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 999--1014
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1026
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 999--1014
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1026
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 999--1014
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1026
 
  []
 
 [21 <./zykel_LLFF.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 
-Overfull \hbox (33.94673pt too wide) in paragraph at lines 1050--1079
+Overfull \hbox (33.94673pt too wide) in paragraph at lines 1062--1091
 \OT1/cmr/m/n/12 In die-sem Ab-schnitt wer-de ich zei-gen, dass bei ei-ner va-li
 -den W[]urfelkonfiguration $[]$
  []
 
 
-Overfull \hbox (28.10432pt too wide) in paragraph at lines 1050--1079
+Overfull \hbox (28.10432pt too wide) in paragraph at lines 1062--1091
 \OT1/cmr/m/n/12 Wenn $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 
 ^^[[]; x[]\OT1/cmr/m/n/12 )$ ei-ne Nach-fol-ge-kon-fi-gu-ra-ti-on von $\OML/cmm
 /m/it/12 C \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ^^[; x\OT1/cmr/m/n/12 )$ ist, da
@@ -1916,52 +1922,52 @@ nn gilt $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 
-Overfull \hbox (22.70398pt too wide) in paragraph at lines 1050--1079
+Overfull \hbox (22.70398pt too wide) in paragraph at lines 1062--1091
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1091
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1110
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1110
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1122
 
  []
 
@@ -1974,7 +1980,7 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 Here is how much of TeX's memory you used:
  21026 strings out of 493029
  384442 string characters out of 6136234
- 536352 words of memory out of 5000000
+ 538352 words of memory out of 5000000
  24140 multiletter control sequences out of 15000+600000
  12787 words of font info for 48 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -1992,7 +1998,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on proposal.pdf (26 pages, 1627496 bytes).
+Output written on proposal.pdf (26 pages, 1627918 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  102 compressed objects within 2 object streams
