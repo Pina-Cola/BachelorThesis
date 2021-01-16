@@ -184,11 +184,12 @@ Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorg
 
 
 
-
+\newpage
 
 \subsection*{Grundzüge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Grundzüge des Würfels}
-Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
-Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. \\
+Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. 
+%Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
+%Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. \\
 \\
 \begin{tabular}{|c|l|}
 \hline
@@ -211,7 +212,9 @@ $B$ & Drehung der hinteren Ebene im Uhrzeigersinn \\
 \\
 Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
 \\
-Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut. 
+Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  \\
+\\
+Auf die Rotationsmöglichkeiten des kompletten Würfels gehe ich im Verlauf dieser Arbeit noch ein.
 \newpage
 
 
@@ -245,7 +248,7 @@ Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für den folgenden Abschn
 \item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G, \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
 \ \\
-Im folgenden setze ich die Definition der Gruppe des 3x3x3 Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen \cite{JC} als Gruppe des 2x2x2 Würfels um. Die Gruppe von Janet Chen bezeichne ich als $(G_{3x3x3}, \circ)$, auch wenn Janet Chen sie als $(G, *)$ bezeichnet hat. Den Namen der Gruppe ändere ich aber, um klar zwischen dem 2x2x2 und dem 3x3x3 Würfel zu differenzieren. Das Symbol des Operators verändere ich, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
+Im folgenden setze ich die Definition der Gruppe des 3x3x3 Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen \cite{JC} als Gruppe des 2x2x2 Würfels um. Die Gruppe von Janet Chen bezeichne ich als $(G_{3x3x3}, \circ)$, auch wenn er sie als $(G, *)$ bezeichnet hat. Den Namen der Gruppe ändere ich aber, um klar zwischen dem 2x2x2 und dem 3x3x3 Würfel zu differenzieren. Das Symbol des Operators verändere ich, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
 \\ 
 Die Gruppe des 2x2x2 Würfels nenne ich $(G_{2x2x2}, \circ)$. \\
 \\
@@ -647,71 +650,71 @@ Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: \\
 
 
 
-\hspace*{2cm}
+%\hspace*{2cm}
 
-\color{gray}
-
-
-\subsection*{Äquivalenzrelationen der Rotationen (Fehlversuch)}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen (Fehlversuch)}
+%\color{gray}
 
 
-Um die Rotationen des Würfels umzusetzen, führe ich Äquivalenzrelationen ein. \\
-Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
-\\
-In dem Fall der Gruppe $(G_{2x2x2}, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in G_{2x2x2}$. \\ 
-Ich führe für jede Rotationsrichtung eine Relation ein. Es gibt dann also $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}$. \\ 
+%\subsection*{Äquivalenzrelationen der Rotationen (Fehlversuch)}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen (Fehlversuch)}
 
 
-\begin{tabular}{l l}
-
-$Z_1 \sim_{Z_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_rZ_2$  ergeben die gleiche Würfelkonfiguration\\
-
-\end{tabular}
-\\
-$Z_rZ_2$ steht für den Zug $Z_2$, der nach einer Rechtsrotation des Würfels ausgeführt wird. \\
-\\
-Die anderen Rotationsrelationen definiere ich wie folgt: 
-
-\begin{tabular}{l l l}
-
-$Z_1 \sim_{Z_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_lZ_2$ & ergeben die gleiche Würfelkonfiguration \\
-$Z_1 \sim_{Y_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-$Z_1 \sim_{Y_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-$Z_1 \sim_{X_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-$Z_1 \sim_{X_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-
-\end{tabular}
-\\
-\\
-\\
-\\
-Damit $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}$ und $\sim_{X_l}$ Äquivalenzrelationen sind, müssen Reflexivität, Symmetrie und Transitivität gelten, was ich im folgenden Abschnitt beweise. Ich nutze das Symbol $\sim$ für alle Elemente aus  $\{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ und $W$ als beliebige Würfelrotation (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}$ oder ${X_l}$).\\
+%Um die Rotationen des Würfels umzusetzen, führe ich Äquivalenzrelationen ein. \\
+%Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
+%\\
+%In dem Fall der Gruppe $(G_{2x2x2}, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in G_{2x2x2}$. \\ 
+%Ich führe für jede Rotationsrichtung eine Relation ein. Es gibt dann also $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}$. \\ 
 
 
+%\begin{tabular}{l l}
 
-\begin{itemize}
+%$Z_1 \sim_{Z_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_rZ_2$  ergeben die gleiche Würfelkonfiguration\\
 
-\item Reflexivität: \\
-Für die Reflexivität muss $x \sim x$ gelten. \\
-Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind, gilt:
-\begin{align*}
-Z_1 \sim_W Z_2 : & \Leftrightarrow \ \ \  Z_1 \ und  \ WZ_2 \ ergeben \ die \ gleiche \ W"urfelkonfiguration\\
-& \Leftrightarrow \ \ \ C \cdot Z_1=C \cdot WZ_2 \\
-& \Leftrightarrow \ \ \ Z_1=WZ_2
-\end{align*}
-$\lightning$ Das gilt aber leider nicht, wenn $Z_1=Z_2$ gilt. Denn identische Züge ergeben nicht das gleiche, wenn der Würfel vor einem Zug rotiert wird und vor dem anderen nicht. \\
-\\
+%\end{tabular}
+%\\
+%$Z_rZ_2$ steht für den Zug $Z_2$, der nach einer Rechtsrotation des Würfels ausgeführt wird. \\
+%\\
+%Die anderen Rotationsrelationen definiere ich wie folgt: 
+
+%\begin{tabular}{l l l}
+
+%$Z_1 \sim_{Z_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_lZ_2$ & ergeben die gleiche Würfelkonfiguration \\
+%$Z_1 \sim_{Y_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+%$Z_1 \sim_{Y_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+%$Z_1 \sim_{X_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+%$Z_1 \sim_{X_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
+
+%\end{tabular}
+%\\
+%\\
+%\\
+%\\
+%Damit $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}$ und $\sim_{X_l}$ Äquivalenzrelationen sind, müssen Reflexivität, Symmetrie und Transitivität gelten, was ich im folgenden Abschnitt beweise. Ich nutze das Symbol $\sim$ für alle Elemente aus  $\{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ und $W$ als beliebige Würfelrotation (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}$ oder ${X_l}$).\\
 
 
-\item Symmetrie $\lightning$%:  \\
+
+%\begin{itemize}
+
+%\item Reflexivität: \\
+%Für die Reflexivität muss $x \sim x$ gelten. \\
+%Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind, gilt:
+%\begin{align*}
+%Z_1 \sim_W Z_2 : & \Leftrightarrow \ \ \  Z_1 \ und  \ WZ_2 \ ergeben \ die \ gleiche \ W"urfelkonfiguration\\
+%& \Leftrightarrow \ \ \ C \cdot Z_1=C \cdot WZ_2 \\
+%& \Leftrightarrow \ \ \ Z_1=WZ_2
+%\end{align*}
+%$\lightning$ Das gilt aber leider nicht, wenn $Z_1=Z_2$ gilt. Denn identische Züge ergeben nicht das gleiche, wenn der Würfel vor einem Zug rotiert wird und vor dem anderen nicht. \\
+%\\
+
+
+%\item Symmetrie $\lightning$%:  \\
 %Für die Symmetrie muss gelten: Aus $x \sim y \ folgt \ y \sim x$. \\
 %Auch das gilt, da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind.  
 
-\item Transitivität $\lightning$
+%\item Transitivität $\lightning$
 
-\end{itemize}
+%\end{itemize}
 
-Diese Ansatz dieser Äquivalenzrelationen funktioniert so nicht, da die Reflexivität, Symmetrie und Transitivität nicht erfüllt sind. \\ 
+%Diese Ansatz dieser Äquivalenzrelationen funktioniert so nicht, da die Reflexivität, Symmetrie und Transitivität nicht erfüllt sind. \\ 
 
 %falsch
 
