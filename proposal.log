@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  16 JAN 2021 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  16 JAN 2021 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1233,13 +1233,13 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 7.
 \openout5 = `proposal.toc'.
 
  [1]
-<2x2scrambled.png, id=16, 1003.75pt x 1140.26pt>
+<2x2scrambled.png, id=18, 1003.75pt x 1140.26pt>
 File: 2x2scrambled.png Graphic file (type png)
  <use 2x2scrambled.png>
 Package pdftex.def Info: 2x2scrambled.png used on input line 128.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-<2x2solved.png, id=18, 1003.75pt x 1140.26pt>
+<2x2solved.png, id=20, 1003.75pt x 1140.26pt>
 File: 2x2solved.png Graphic file (type png)
  <use 2x2solved.png>
 Package pdftex.def Info: 2x2solved.png used on input line 129.
@@ -1249,13 +1249,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--135
 
  []
 
-<2x2stein.png, id=19, 1003.75pt x 1140.26pt>
+<2x2stein.png, id=21, 1003.75pt x 1140.26pt>
 File: 2x2stein.png Graphic file (type png)
  <use 2x2stein.png>
 Package pdftex.def Info: 2x2stein.png used on input line 138.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-<2x2farbflaeche.png, id=20, 1003.75pt x 1140.26pt>
+<2x2farbflaeche.png, id=22, 1003.75pt x 1140.26pt>
 File: 2x2farbflaeche.png Graphic file (type png)
  <use 2x2farbflaeche.png>
 Package pdftex.def Info: 2x2farbflaeche.png used on input line 139.
@@ -1266,19 +1266,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--147
  []
 
 [1 <./2x2scrambled.png> <./2x2solved.png> <./2x2stein.png> <./2x2farbflaeche.pn
-g>] <2x2seite.png, id=30, 1003.75pt x 1140.26pt>
+g>] <2x2seite.png, id=31, 1003.75pt x 1140.26pt>
 File: 2x2seite.png Graphic file (type png)
  <use 2x2seite.png>
 Package pdftex.def Info: 2x2seite.png used on input line 150.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
-<3x3scrambled.png, id=31, 1003.75pt x 1140.26pt>
+<3x3scrambled.png, id=32, 1003.75pt x 1140.26pt>
 File: 3x3scrambled.png Graphic file (type png)
  <use 3x3scrambled.png>
 Package pdftex.def Info: 3x3scrambled.png used on input line 157.
 (pdftex.def)             Requested size: 90.3336pt x 102.61897pt.
 
-<3x3solved.png, id=32, 1003.75pt x 1140.26pt>
+<3x3solved.png, id=33, 1003.75pt x 1140.26pt>
 File: 3x3solved.png Graphic file (type png)
  <use 3x3solved.png>
 Package pdftex.def Info: 3x3solved.png used on input line 158.
@@ -1294,7 +1294,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--168
  []
 
 [2 <./2x2seite.png> <./3x3scrambled.png> <./3x3solved.png>]
-<ebene.png, id=39, 1003.75pt x 1140.26pt>
+<ebene.png, id=40, 1003.75pt x 1140.26pt>
 File: ebene.png Graphic file (type png)
  <use ebene.png>
 Package pdftex.def Info: ebene.png used on input line 195.
@@ -1850,38 +1850,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 989--995
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1040
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1040
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1040
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1040
 
  []
 
 [20 <./zykel_LLFF.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 
-Overfull \hbox (33.94673pt too wide) in paragraph at lines 1079--1108
+Overfull \hbox (33.94673pt too wide) in paragraph at lines 1098--1127
 \OT1/cmr/m/n/12 In die-sem Ab-schnitt wer-de ich zei-gen, dass bei ei-ner va-li
 -den W[]urfelkonfiguration $[]$
  []
 
 
-Overfull \hbox (28.10432pt too wide) in paragraph at lines 1079--1108
+Overfull \hbox (28.10432pt too wide) in paragraph at lines 1098--1127
 \OT1/cmr/m/n/12 Wenn $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 
 ^^[[]; x[]\OT1/cmr/m/n/12 )$ ei-ne Nach-fol-ge-kon-fi-gu-ra-ti-on von $\OML/cmm
 /m/it/12 C \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ^^[; x\OT1/cmr/m/n/12 )$ ist, da
@@ -1889,52 +1889,52 @@ nn gilt $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 
-Overfull \hbox (22.70398pt too wide) in paragraph at lines 1079--1108
+Overfull \hbox (22.70398pt too wide) in paragraph at lines 1098--1127
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1127
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1139
+Underfull \hbox (badness 10000) in paragraph at lines 1155--1158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1139
+Underfull \hbox (badness 10000) in paragraph at lines 1155--1158
 
  []
 
@@ -1945,11 +1945,11 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
  )
 (\end occurred when \iftrue on line 61 was incomplete) 
 Here is how much of TeX's memory you used:
- 21031 strings out of 493029
- 384506 string characters out of 6136234
+ 21040 strings out of 493029
+ 384645 string characters out of 6136234
  535352 words of memory out of 5000000
- 24144 multiletter control sequences out of 15000+600000
- 12787 words of font info for 48 fonts, out of 8000000 for 9000
+ 24153 multiletter control sequences out of 15000+600000
+ 14850 words of font info for 57 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  55i,9n,54p,798b,1432s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf
@@ -1964,7 +1964,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (25 pages, 1688540 bytes).
+Output written on proposal.pdf (25 pages, 1651922 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
