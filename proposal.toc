@@ -32,6 +32,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{22}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{22}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}L\IeC {\"o}sung des W\IeC {\"u}rfels}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Parit\IeC {\"a}t}{23}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Abbildungen und Tabellen}{24}

@@ -1069,11 +1069,15 @@ Eine Gruppe $(H, \circ)$, ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $
 Dann schreibt man auch $H \leqslant G$. \\
 Das Symbol $\leqslant$ ist zu lesen als \glqq ist Untergruppe von\grqq. \\
 \\
-Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_1 = \{N\}}$ und $H_2=G$ (hier: $H_2=G_{2x2x2}$). Also sind $H_1$ und $H_2$ die trivialen Untergruppen von $G_{2x2x2}$. ($H_1 \leqslant G_{2x2x2}$ und $H_1 \leqslant G_{2x2x2}$)\\
+Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G_2=G_{2x2x2}$). Also sind $H_N$ und $H_G$ die trivialen Untergruppen von $G_{2x2x2}$. ($H_N \leqslant G_{2x2x2}$ und $H_G \leqslant G_{2x2x2}$)\\
+Die Gruppe $G_{2x2x2}$ hat viele Untergruppen, deshalb kann ich nur auf einen Teil davon eingehen. \\
 \\
-Da die trivialen Untergruppen nicht sonderlich interessant sind, gehe ich im folgenden Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Die Gruppe $G_{2x2x2}$ hat viele Untergruppen, deshalb kann ich nur auf einen Teil davon eingehen. \\
+Da die trivialen Untergruppen nicht sonderlich interessant sind, gehe ich im folgenden Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Diese Gruppen hat Tom Davis (in seinem Paper \glqq Group Theory via Rubik's Cube\grqq) \cite{TD} für den 3x3x3-Würfel genannt. Ich übertrage zwei seiner Untergruppen hier auf den 2x2x2: \\ 
 \\
-Die Untergruppe $H_3$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen \cite{TD}. Das kann man auch gut an einem \textit{Cube} nachvollziehen, da man durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielen kann. \\
+Die Untergruppe $H_{E1}$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann man auch gut an einem \textit{Cube} nachvollziehen, da man durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielen kann. \\
+\\
+Eine weitere Untergruppe von $G_{2x2x2}$ ist $H_{E2}$. Hier dürfen zwei gegenüberliegende Ebenen gedreht werden. \\
+Bei der Gruppe des 3x3x3-Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem 2x2x2-\textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und man nicht anhand der Mittelsteine oben und unten unterscheiden kann. \\
 \\
 
 
@@ -1107,6 +1111,36 @@ Die Untergruppe $H_3$, die nur die Rotation einer Ebene zulässt, hat nur vier e
 \newpage
 
 \section{Valide Konfigurationen des Würfels}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Ausrichtung der Steine (modulo 3)}\addcontentsline{toc}{subsection}{\protect\numberline{}Ausrichtung der Steine (modulo 3)}
+
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 \\
 In diesem Abschnitt werde ich zeigen, dass bei einer validen Würfelkonfiguration ${\Sigma \ x_i \mod 3 = 0}$ (modulo) gilt. \\
@@ -1132,10 +1166,13 @@ Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \mod 3 = 0$ \\
 \hline
 
 \end{tabular}
-\ \\ \\ \\ \\
+\ \\ 
+Für jede valide Würfelposition gilt also ${\Sigma \ x_i' \mod 3 = \Sigma \  x_i \mod 3 }$. \\
+\\
 Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\Sigma x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in G_{2x2x2}$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
 \\
 Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in G_{2x2x2}$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. \\ 
+
 
 
 
@@ -1168,6 +1205,34 @@ Die \glqq übliche\grqq \  Methode zum Lösen eines Zauberwürfels ist das Kombi
 Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. \\
 \\
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Parität}\addcontentsline{toc}{subsection}{\protect\numberline{}Parität}
 
 
 
