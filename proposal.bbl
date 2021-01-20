@@ -16,6 +16,25 @@
   {}
 \endgroup
 
+\entry{MMFAA}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Al~Arsyad}{A.~A.}%
+     {Muhammad Mirza~Fathan}{M.~M.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AAMMF1}
+  \strng{fullhash}{AAMMF1}
+  \field{sortinit}{A}
+  \field{howpublished}{Website}
+  \field{note}{Online erhältlich unter
+  \url{https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518111.pdf};
+  abgerufen am 20.01.2020.}
+  \field{title}{God's Algorithm in The 2x2x2 Rubik's Cube}
+  \field{year}{2019}
+\endentry
+
 \entry{JC}{misc}{}
   \name{author}{1}{}{%
     {{}%
