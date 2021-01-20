@@ -120,39 +120,37 @@
 
 \section{Einleitung/Ausgangslage}
 
-Meine Bachelorarbeit befasst sich mit dem 2x2x2 Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
-Im Folgenden werde ich die Terminologie und den Aufbau des Würfels erklären.\\
+Meine Bachelorarbeit befasst sich mit dem 2x2x2-Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
+Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.\\
 Terminologie:
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2scrambled.png}
 \includegraphics[scale=0.1]{2x2solved.png}
-\caption{2x2x2 Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
+\caption{2x2x2-Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
 Der Zauberwürfel wird hier auch Würfel oder Cube genannt.}
 \end{figure}
 \ \\
-Bei der Startkonfiguration (auch Grundposition, Grundstellung) des 2x2x2 Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
+Bei der Startkonfiguration (auch Grundposition, Grundstellung) des 2x2x2-Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2stein.png}
 \includegraphics[scale=0.1]{2x2farbflaeche.png}
-\caption{Ein 2x2x2 Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein 2x2x2 Zauberwürfel hat also 24 Farbflächen.}
+\caption{Ein 2x2x2-Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein 2x2x2-Zauberwürfel hat also 24 Farbflächen.}
 \end{figure} 
 $\ $ \\
-Die Ecksteine können sich in jeder Ecke befinden, also gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es also $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\
-Außerdem können die Ecksteine gedreht sein, also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sie durch Rotationen theoretisch 3 verschiedene Ausrichtungen annehmen. Es gibt also $3^8$ Wege, wie die Ecksteine ausgerichtet sein können. \\
-Somit ergibt es $3^8 \cdot 8!$ theoretisch mögliche Positionen für den Würfel. Das sind $264\, 539\, 520$ Positionen.\\
-Es sind aber nicht alle dieser Positionen valide. Eine Position ist valide, wenn sie durch drehen der Seiten erreicht werden kann, von der Startkonfiguration ausgehend. \\
+Der 2x2x2-\textit{Cube} hat theoretisch $3\, 674\, 160$ mögliche Würfelkonfigurationen. Davin sind aber nicht alle durch Ebenenrotationen erreichbar.
 
-\begin{figure}[h]
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{2x2seite.png}
 \caption{Der 2x2x2 und der 3x3x3 Zauberwürfel haben jeweils 6 Seiten.}
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.09]{3x3scrambled.png}
 \includegraphics[scale=0.09]{3x3solved.png}
@@ -160,10 +158,10 @@ Es sind aber nicht alle dieser Positionen valide. Eine Position ist valide, wenn
 \end{figure}
 
 $\ $\\
-Im Gegensatz zum 3x3x3 Würfel hat der 2x2x2 Würfel weder Mittelsteine, noch Kantsteine. \\
-Das besondere an den Mittelsteinen des 3x3x3 Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3 Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
-Beim 2x2x2 muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
-Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorgegeben, während sie beim 2x2x2 Würfel gedreht werden kann. \\
+Im Gegensatz zum 3x3x3-Würfel hat der 2x2x2-Würfel weder Mittelsteine, noch Kantsteine. \\
+Das besondere an den Mittelsteinen des 3x3x3-Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3-Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
+Beim 2x2x2-\textit{Cube} muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
+Die Rotation des gesamten Würfels ist bei dem 3x3x3-Würfel also eindeutig vorgegeben, während sie beim 2x2x2-Würfel gedreht werden kann. \\
 \\
 
 
@@ -187,7 +185,7 @@ Die Rotation des gesamten Würfels ist bei dem 3x3x3 Würfel also eindeutig vorg
 \newpage
 
 \subsection*{Grundzüge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Grundzüge des Würfels}
-Am 2x2x2 Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. 
+Am 2x2x2-Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. 
 %Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
 %Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. \\
 \begin{figure}[h]
@@ -219,7 +217,7 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
 \\
 Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  \\
 \\
-Auf die Rotationsmöglichkeiten des kompletten Würfels gehe ich im Verlauf dieser Arbeit noch ein.
+Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen.
 \newpage
 
 
@@ -243,7 +241,7 @@ Auf die Rotationsmöglichkeiten des kompletten Würfels gehe ich im Verlauf dies
 
 \section{Würfel als Gruppe}
 
-\subsection*{Darstellung des 2x2x2 Zauberwüfels mit dem mathematischen Konstrukt der Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Darstellung des 2x2x2 Wüfels mit dem Konstrukt der Gruppe}
+\subsection*{Darstellung des 2x2x2-Zauberwüfels mit dem mathematischen Konstrukt der Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Darstellung des 2x2x2-Wüfels mit dem Konstrukt der Gruppe}
 
 Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für den folgenden Abschnitt:
 \begin{itemize}
@@ -253,15 +251,15 @@ Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für den folgenden Abschn
 \item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G, \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
 \ \\
-Im folgenden setze ich die Definition der Gruppe des 3x3x3 Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen \cite{JC} als Gruppe des 2x2x2 Würfels um. Die Gruppe von Janet Chen bezeichne ich als $(G_{3x3x3}, \circ)$, auch wenn er sie als $(G, *)$ bezeichnet hat. Den Namen der Gruppe ändere ich aber, um klar zwischen dem 2x2x2 und dem 3x3x3 Würfel zu differenzieren. Das Symbol des Operators verändere ich, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
+Im Folgenden wird die Definition der Gruppe des 3x3x3-Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen \cite{JC} als Gruppe des 2x2x2-Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(G_{3x3x3}, \circ)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem 2x2x2- und dem 3x3x3-Würfel zu differenzieren. Das Symbol des Operators wird verändert, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
 \\ 
-Die Gruppe des 2x2x2 Würfels nenne ich $(G_{2x2x2}, \circ)$. \\
+Die Gruppe des 2x2x2-Würfels heißt $(G_{2x2x2}, \circ)$. \\
 \\
 Die Menge $G_{2x2x2}$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. \\
 Wenn zwei Züge die gleiche Würfelposition hervorrufen, sind die beiden Züge "gleich". Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. \\
 \\
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in G_{2x2x2}$ und $Z_2 \in G_{2x2x2}$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in G_{2x2x2}$.) \\
-Im folgenden werde ich begründen, wieso $(G_{2x2x2}, \circ)$ eine Gruppe ist, indem ich $(G_{2x2x2}, \circ)$ bezüglich der Gruppenkriterien untersuche: \\
+Im Folgenden wird gezeigt, wieso $(G_{2x2x2}, \circ)$ eine Gruppe ist, indem $(G_{2x2x2}, \circ)$ bezüglich der Gruppenkriterien untersucht wird: \\
 \begin{itemize}
 \item Abgeschlossenheit: \\ 
 $\forall Z_1,Z_2 \in G_{2x2x2} .  (Z_1 \circ Z_2) \in G_{2x2x2} $ \\
@@ -272,10 +270,10 @@ Die Gruppe $G_{2x2x2}$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $
 $\forall Z_1,Z_2,Z_3 \in G_{2x2x2}.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ \\
 \\
 Die Züge $Z_i \in G_{2x2x2}$ können gruppiert werden und somit gilt die Assoziativität. \\
-Um die Assoziativität zu zeigen, werde ich eine Schreibweise für das Ausführen der Züge einführen. Ich nenne einen bestimmten Stein im Würfel nun $s$. Beim Ausführen eines Zuges $Z$ schreibe ich nun $Z(s)$, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, l, r, t, b$. \\
-Wenn wir nun $Z_1 \circ Z_2 $ haben, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Also gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. \\
+Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird $s$ genannt. Beim Ausführen eines Zuges $Z$ schreibt man nun $Z(s)$, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, l, r, t, b$. \\
+Wenn man nun $Z_1 \circ Z_2 $ betrachtet, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Also gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. \\
 \\
-Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Ich zeige also, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: \\
+Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Man zeige also, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: \\
 \begin{align*}
 & (Z_1 \circ Z_2) \circ Z_3  \\
 \Rightarrow (&(Z_1 \circ Z_2) \circ Z_3)(s) \\
@@ -1112,7 +1110,19 @@ Bei der Gruppe des 3x3x3-Würfels ergeben sich daraus 16 mögliche Würfelkonfig
 
 \section{Valide Konfigurationen des Würfels}
 
+Zuerst berechne ich die Anzahl der theoretisch möglichen Würfelkonfigurationen: \\ 
+\\
+Die Ecksteine können sich in jeder Ecke befinden, also gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es also $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\ 
+\\
+Außerdem können die Ecksteine gedreht sein, also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt also $3^7$ Wege, wie die Ecksteine ausgerichtet sein können. \\
+\\
+Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24. \\
+Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ theoretisch mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.\\
+\\
+Davon sind aber nicht alle Konfigurationen durch Ebenendrehungen erreichbar - für einige braucht man einen Schraubendreher oder Superkleber. Diese Konfigurationen bezeichne ich als ungültige Konfigurationen. \\
+\\
 
+ 
 
 
 
@@ -1248,6 +1258,8 @@ Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel defin
 \end{align*}
 Jeder Zug ist also als ein $4$-Zykel definiert. Den $4$-Zykel kann man als Produkt aus drei $2$-Zykeln schreiben. \\
 Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z.B. $LF$) ist somit gerade.
+
+% to do prüfen! 
 
 
 

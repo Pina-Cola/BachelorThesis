@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Darstellung des 2x2x2 W\IeC {\"u}fels mit dem Konstrukt der Gruppe}{4}
+\contentsline {subsection}{\numberline {}Darstellung des 2x2x2-W\IeC {\"u}fels mit dem Konstrukt der Gruppe}{4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{8}
 \defcounter {refsection}{0}\relax 
@@ -34,8 +34,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}L\IeC {\"o}sung des W\IeC {\"u}rfels}{23}
+\contentsline {section}{\numberline {6}L\IeC {\"o}sung des W\IeC {\"u}rfels}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parit\IeC {\"a}t}{23}
+\contentsline {subsection}{\numberline {}Parit\IeC {\"a}t}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Abbildungen und Tabellen}{24}
+\contentsline {section}{\numberline {7}Abbildungen und Tabellen}{25}
