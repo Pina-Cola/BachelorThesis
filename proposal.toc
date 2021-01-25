@@ -37,5 +37,3 @@
 \contentsline {section}{\numberline {6}L\IeC {\"o}sung des W\IeC {\"u}rfels}{24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Parit\IeC {\"a}t}{24}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Abbildungen und Tabellen}{25}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  20 JAN 2021 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.12)  25 JAN 2021 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1908,38 +1908,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 1066--1080
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1113--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1113--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1113--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1126
 
  []
 
 
-Overfull \hbox (10.7496pt too wide) in paragraph at lines 1113--1125
+Overfull \hbox (10.7496pt too wide) in paragraph at lines 1113--1126
 \OT1/cmr/m/n/12 Da es kei-ne Mit-tel-stei-ne im W[]urfel gibt, re-du-ziert die 
 Ro-ta-ti-on des W[]urfels die M[]oglichkeiten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1113--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1113--1125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1113--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1126
 
  []
 
@@ -2002,15 +1997,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1215--1218
 
  []
 
-[24] [25] (./proposal.aux)
+[24] (./proposal.lof)
+\tf@lof=\write6
+\openout6 = `proposal.lof'.
+
+ (./proposal.lot)
+\tf@lot=\write7
+\openout7 = `proposal.lot'.
+
+ [25] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
  )
 (\end occurred when \iftrue on line 61 was incomplete) 
 Here is how much of TeX's memory you used:
- 21041 strings out of 493029
- 384661 string characters out of 6136234
+ 21047 strings out of 493029
+ 384721 string characters out of 6136234
  535352 words of memory out of 5000000
  24154 multiletter control sequences out of 15000+600000
  14850 words of font info for 57 fonts, out of 8000000 for 9000
@@ -2029,7 +2032,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (27 pages, 1667436 bytes).
+Output written on proposal.pdf (27 pages, 1667541 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
