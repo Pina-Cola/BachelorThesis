@@ -14,6 +14,8 @@
 \usepackage{float}
 \usepackage{verbatim}
 
+\usepackage[nottoc]{tocbibind}
+
 \usepackage{ stmaryrd }
 
 
@@ -196,7 +198,7 @@ Am 2x2x2-Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links
 \end{figure}
 
 \begin{table}[H]
-
+\centering
 \begin{tabular}{|c|l|}
 \hline
 Abkürzung & Beschreibung des Zugs \\
@@ -579,6 +581,8 @@ Nun kann man für die möglichen Rotationen des Würfels Nachfolgekonfiguratione
 \\
 Dazu werden zuerst die einzelnen Rotationen des Würfels benannt: \\
 \\
+\begin{table}[H]
+
 \begin{tabular}{|c|l|}
 \hline
 Abkürzung & Beschreibung der Rotation \\
@@ -596,8 +600,10 @@ $X_l$ & Rotation des Würfels um die $x$-Achse nach links (gegen den Uhrzeigersi
 \hline
 $X_r$ & Rotation des Würfels um die $x$-Achse nach rechts (im Uhrzeigersinn) \\
 \hline
-\end{tabular} \\
-\\
+\end{tabular} 
+\caption[Rotationen des Würfels]{}
+\end{table}
+
 Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. \\
 \\
 Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen gezeigt. 
@@ -818,14 +824,18 @@ Das Inverse von $W$ wird als $W^{-1}$ geschrieben. \\
 
 Das sind die Rotationen mit den dazugehörigen Inversen: \\
 
+\begin{table}[H]
+\centering
 \begin{tabular}{|l||c|c|c|c|c|c|c|}
 \hline
 Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $\epsilon$ \\
 \hline
 Inverses $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $\epsilon$ \\
 \hline
-\end{tabular} \\
-\\
+\end{tabular} 
+\caption[Inverse der Rotationen]{}
+\end{table}
+
 Dann gilt: 
 \begin{align*}
 Z_1 = W Z_2 & \Rightarrow Z_2 = W^{-1} Z_1
@@ -928,7 +938,10 @@ Anhand der Zykelstruktur lässt sich die Ordnung des jeweiligen Zuges bestimmen.
 Der Würfel kann also alle Steine an der richtigen Position haben und trotzdem ungelöst sein, da die Steine verdreht sein können. \\
 \\
 Der Zug $U$ als $\sigma_U =\ (ulf \ ulb \ urb \ urf) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel. \\
-Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: \\ \\
+Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
+
+\begin{table}[H]
+\centering
 \begin{tabular}{|c||c|c|c|c|}
 \hline
 Ausführung & ulf & ulb & urb & urf \\
@@ -944,8 +957,10 @@ Ausführung & ulf & ulb & urb & urf \\
 \hline
 
 \end{tabular}
-\ \\
-\\
+\caption[Permutationen des Zuges $U$]{}
+\end{table}
+
+
 Die vierte Zeile der Tabelle hat die selbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). \\
 Somit hat die beschriebene Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).\\
 \\
@@ -971,8 +986,10 @@ Dieser Graph vereinfach das Ablesen der Zykel, vorallem wenn bei einem Zug mehre
 \\
 So kann man nun anhand des Beispielzuges $LLFF$ die Zykelstruktur darstellen. \\
 \\
-Zuerst wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbildet. \\
-\\
+Zuerst wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbildet. 
+
+\begin{table}[H]
+\centering
 \begin{tabular}{|c||c|c|c|c|c|c|c|c|}
 \hline
  & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
@@ -988,7 +1005,9 @@ F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor
 \hline
 
 \end{tabular}
-\ \\ \\ \\
+\caption[Permutationen des Zuges $LLFF$]{}
+\end{table}
+
 Die ausgegrauten Positionen bleiben bei dem jeweiligen Zug unverändert. \\
 \\ \\
 \\
@@ -1039,7 +1058,9 @@ Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann.
 \\
 Um das zu vereinfachen, werden die Würfelpositionen priorisiert, so dass die Position mit der höchsten Priorität immer vorne steht und zwei Äquivalente Zykel somit gleich aussehen. \\
 \\
-Die Positionen werden wie folgt priorisiert: \\ \\
+Die Positionen werden wie folgt priorisiert:
+\begin{table}[H]
+\centering
 \begin{tabular}{|c||c|c|c|c|c|c|c|c|}
 \hline
 Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
@@ -1047,7 +1068,8 @@ Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
 Position  & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
 \hline
 \end{tabular}
-\ \\ \\ \\
+\caption[Priorität der Positionen (für Zykelschreibweise)]{}
+\end{table}
 Somit ist die angepasste Schreibweise für den Zug $U$ dann $(ulb \ urb \ urf \ ulf)$, da $ulb$ (falls vorhanden) ganz vorne stehen muss.
 
 
@@ -1170,8 +1192,10 @@ Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 \\
 In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration ${\Sigma \ x_i \mod 3 = 0}$ (modulo) gilt. \\
 Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\Sigma \ x_i' \mod 3 = \Sigma \  x_i \mod 3 }$. \\
-In Abbildung 6 (s.o.) kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: \\
-\\
+In Abbildung 6 (s.o.) kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: 
+
+\begin{table}[H]
+
 \begin{tabular}{|c|l|l|c|c|}
 \hline
 Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \mod 3 = 0$ \\
@@ -1191,7 +1215,10 @@ Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \mod 3 = 0$ \\
 \hline
 
 \end{tabular}
-\ \\ 
+\caption[Ausrichtung der Steine (modulo 3)]{}
+
+\end{table}
+
 Für jede valide Würfelposition gilt also ${\Sigma \ x_i' \mod 3 = \Sigma \  x_i \mod 3 }$. \\
 \\
 Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\Sigma x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in G_{2x2x2}$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
@@ -1308,10 +1335,12 @@ Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines
 
 \listoffigures
 
+\newpage
+
 
 \listoftables
 
-
+\newpage
 
 
 \printbibliography
