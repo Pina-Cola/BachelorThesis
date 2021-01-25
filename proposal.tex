@@ -307,7 +307,7 @@ Dies ist nicht der Fall, da beispielsweise eine Rotation der rechten Ebene im Uh
 \centering
 \includegraphics[scale=0.1]{RF.png}
 \includegraphics[scale=0.1]{FR.png}
-\caption{links: Würfel nach Zug $RF$, rechts: Würfel nach Zug $FR$, \\ ausgehend von Startkonfiguration}
+\caption[Würfel nach Zügen $FR$ und $RF$]{links: Würfel nach Zug $RF$, rechts: Würfel nach Zug $FR$, \\ ausgehend von Startkonfiguration}
 \end{figure} \ \\
 Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} \\
 Es gilt also nicht $\forall \  Z_1, Z_2 \in G_{2x2x2}. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
@@ -393,13 +393,14 @@ Die Würfelpositionen sind wie folgt eingeteilt: \\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.15]{caged_positions.png} \\
-\caption{Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die \textit{up, down, left, right, front und back} beschreiben.}
+\caption[Namen der Steinpositionen im Würfel]{Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die \textit{up, down, left, right, front und back} beschreiben.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.15]{foldedout_cage.png}
 \includegraphics[scale=0.15]{foldedout_cage_color.png}
+\caption[aufgeklappter Würfel mit Namen der Steinpositionen]{}
 \end{figure}
 \ \\
 \\
@@ -418,6 +419,7 @@ Die Drehung der oberen Ebene sieht grafisch dargestellt so aus: \\
 \centering
 \includegraphics[scale=0.13]{caged_spin.png}
 \includegraphics[scale=0.13]{foldedout_spin.png}
+\caption[Steinpositionen nach Zug $U$]{}
 \end{figure}
 \ \\
 $\sigma_U(ulf)=ulb$ \ \ \ \ \ \ \ \ $\sigma_U(ulb)=urb$ \ \ \ \ \ \ \ \ $\sigma_U(urb)=urf$ \ \ \ \ \ \ \ \ $\sigma_U(urf)=ulf$ \\
@@ -467,6 +469,7 @@ Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an ein
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{foldedout_numbers.png}
+\caption{ausgeklappter Würfel mit Markierungen für $x_i$}
 \end{figure}
 \ \\
 Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, wird mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen/gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. \\
@@ -474,6 +477,7 @@ Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jede
 \centering
 \includegraphics[scale=0.1]{foldedout_012.png}
 \includegraphics[scale=0.1]{foldedout_c_012.png}
+\caption{ausgeklappter Würfel mit Farbflächennummerierungen}
 \end{figure}
 \ \\
 In der Startkonfiguration sind alle $x_i = 0$, also $x=(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.\\
@@ -488,7 +492,7 @@ Also $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \centering
 \includegraphics[scale=0.1]{foldedout_012_white.png}
 \includegraphics[scale=0.1]{foldedout_012_spin.png}
-\caption{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
+\caption[ausgeklappter Würfel nach Zug $R$ (Farbflächenummerierungen)]{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \end{figure}
 
 
@@ -562,6 +566,7 @@ Um die Drehungen zu benennen, werden die Achsen den Würfels wie folgt benannt:
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Pfeile.png}
+\caption[Würfel mit $x, y$ und $z$-Achsen]{}
 \end{figure} 
 \ \\ 
 \\
@@ -594,6 +599,7 @@ Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{auf_ulf.png}
+\caption{Würfel nach Rotation um $z$-Achse}
 \end{figure}
 \ \\
 Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$: \\
@@ -773,6 +779,7 @@ In der folgenden Abbildung sieht man dieses Beispiel nochmal grafisch: Links bef
 Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
 \begin{figure}[H]
 \includegraphics[scale=0.15]{3_wuerfel.png}
+\caption[Würfel gelöst, nach Zug $F$ und nach $Z_rL$]{}
 \end{figure}
 
 Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und Transitivität gelten, was im folgenden Abschnitt bewiesen wird.
@@ -952,6 +959,7 @@ Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge hier auch gra
 
 \begin{figure}[H]
 \includegraphics[scale=0.3]{graph_zug.png}
+\caption[Graph aller Zugpermutationen]{}
 \end{figure}
 \ \\
 Dieser Graph vereinfach das Ablesen der Zykel, vorallem wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden. \\
@@ -982,6 +990,7 @@ Die ausgegrauten Positionen bleiben bei dem jeweiligen Zug unverändert. \\
 Grafisch dargestellt sehen die Zykel des Zuges $LLFF$ so aus: \\
 \begin{figure}[H]
 \includegraphics[scale=0.3]{zykel_LLFF.png}
+\caption[Zykel des Zuges $LLFF$]{}
 \end{figure}
 
 In Zykelschreibeweise also $\sigma_{LLFF}=(dlf \ ulb \ urf)(ulf \ dlb \ drf)$. \\
