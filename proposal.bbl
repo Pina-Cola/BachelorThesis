@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.6 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,82 +16,97 @@
   {}
 \endgroup
 
-\entry{MMFAA}{misc}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Al~Arsyad}{A.~A.}%
-     {Muhammad Mirza~Fathan}{M.~M.~F.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AAMMF1}
-  \strng{fullhash}{AAMMF1}
-  \field{sortinit}{A}
-  \field{howpublished}{Website}
-  \field{note}{Online erhältlich unter
+\datalist[entry]{nty/global//global/global}
+  \entry{MMFAA}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AAMMF}{%
+         family={Al\bibnamedelima Arsyad},
+         familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+         given={Muhammad Mirza\bibnamedelima Fathan},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAMMF1}
+    \strng{fullhash}{AAMMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{howpublished}{Website}
+    \field{note}{Online erhältlich unter
   \url{https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518111.pdf};
   abgerufen am 20.01.2020.}
-  \field{title}{God's Algorithm in The 2x2x2 Rubik's Cube}
-  \field{year}{2019}
-\endentry
+    \field{title}{God's Algorithm in The 2x2x2 Rubik's Cube}
+    \field{year}{2019}
+  \endentry
 
-\entry{JC}{misc}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Chen}{C.}%
-     {Janet}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CJ1}
-  \strng{fullhash}{CJ1}
-  \field{sortinit}{C}
-  \field{howpublished}{Website}
-  \field{note}{Online erhältlich unter
+  \entry{JC}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Janet},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJ1}
+    \strng{fullhash}{CJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{howpublished}{Website}
+    \field{note}{Online erhältlich unter
   \url{http://people.math.harvard.edu/~jjchen/docs/Group_Theory_and_the_Rubik's_Cube.pdf};
   abgerufen am 05.01.2020.}
-  \field{title}{Group Theory and the Rubik's Cube}
-\endentry
+    \field{title}{Group Theory and the Rubik's Cube}
+  \endentry
 
-\entry{TD}{misc}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Davis}{D.}%
-     {Tom}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DT1}
-  \strng{fullhash}{DT1}
-  \field{sortinit}{D}
-  \field{howpublished}{Website}
-  \field{note}{Online erhältlich unter
+  \entry{TD}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DT}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DT1}
+    \strng{fullhash}{DT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{howpublished}{Website}
+    \field{note}{Online erhältlich unter
   \url{http://www.geometer.org/rubik/group.pdf}; abgerufen am 05.01.2020.}
-  \field{title}{Group Theory via Rubik's Cube}
-\endentry
+    \field{title}{Group Theory via Rubik's Cube}
+  \endentry
 
-\entry{Buch}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Glosauer}{G.}%
-     {Tobias}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Springer Spektrum}%
-  }
-  \strng{namehash}{GT1}
-  \strng{fullhash}{GT1}
-  \field{sortinit}{G}
-  \field{title}{Elementar(st)e Gruppentheorie}
-  \list{location}{1}{%
-    {Wiesbaden}%
-  }
-  \field{year}{2016}
-\endentry
-
-\lossort
-\endlossort
-
+  \entry{Buch}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GT}{%
+         family={Glosauer},
+         familyi={G\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Spektrum}%
+    }
+    \strng{namehash}{GT1}
+    \strng{fullhash}{GT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Elementar(st)e Gruppentheorie}
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \field{year}{2016}
+  \endentry
+\enddatalist
 \endinput

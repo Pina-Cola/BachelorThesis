@@ -1,17 +1,16 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\select@language {ngerman}
+\contentsline {table}{\numberline {1}{\ignorespaces Ebenenrotationen}}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Ebenenrotationen}}{3}
+\contentsline {table}{\numberline {2}{\ignorespaces Rotationen des Würfels}}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Rotationen des W\IeC {\"u}rfels}}{13}
+\contentsline {table}{\numberline {3}{\ignorespaces Inverse der Rotationen}}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Inverse der Rotationen}}{16}
+\contentsline {table}{\numberline {4}{\ignorespaces Permutationen des Zuges $U$}}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Permutationen des Zuges $U$}}{19}
+\contentsline {table}{\numberline {5}{\ignorespaces Permutationen des Zuges $LLFF$}}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Permutationen des Zuges $LLFF$}}{20}
+\contentsline {table}{\numberline {6}{\ignorespaces Priorität der Positionen (für Zykelschreibweise)}}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6}{\ignorespaces Priorit\IeC {\"a}t der Positionen (f\IeC {\"u}r Zykelschreibweise)}}{21}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7}{\ignorespaces Ausrichtung der Steine (modulo 3)}}{25}
+\contentsline {table}{\numberline {7}{\ignorespaces Ausrichtung der Steine (modulo 3)}}{25}%

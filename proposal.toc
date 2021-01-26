@@ -1,45 +1,44 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung/Ausgangslage}{1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Einleitung/Ausgangslage}{1}
+\contentsline {subsection}{\numberline {}Grundzüge des Würfels}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Grundz\IeC {\"u}ge des W\IeC {\"u}rfels}{3}
+\contentsline {section}{\numberline {2}Würfel als Gruppe}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}W\IeC {\"u}rfel als Gruppe}{4}
+\contentsline {subsection}{\numberline {}Darstellung des 2x2x2-Wüfels mit dem Konstrukt der Gruppe}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Darstellung des 2x2x2-W\IeC {\"u}fels mit dem Konstrukt der Gruppe}{4}
+\contentsline {section}{\numberline {3}Konfiguration des Würfels}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Konfiguration des W\IeC {\"u}rfels}{8}
+\contentsline {subsection}{\numberline {}Positionen der Steine im Würfel}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Positionen der Steine im W\IeC {\"u}rfel}{8}
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{10}
+\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Z\IeC {\"u}ge als Gruppenoperation}{12}
+\contentsline {subsection}{\numberline {}Rotation des Würfels}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Rotation des W\IeC {\"u}rfels}{12}
+\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenzrelationen der Rotationen}{15}
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Z\IeC {\"u}ge}{17}
+\contentsline {subsection}{\numberline {}Zykelstruktur}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zykelstruktur}{19}
+\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}\IeC {\"A}quivalenz von Z\IeC {\"u}gen}{21}
+\contentsline {section}{\numberline {4}Untergruppen von G$_{2x2x2}$}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Untergruppen von G$_{2x2x2}$}{23}
+\contentsline {section}{\numberline {5}Valide Konfigurationen des Würfels}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Valide Konfigurationen des W\IeC {\"u}rfels}{24}
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{24}
+\contentsline {section}{\numberline {6}Lösung des Würfels}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}L\IeC {\"o}sung des W\IeC {\"u}rfels}{26}
+\contentsline {subsection}{\numberline {}Parität}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parit\IeC {\"a}t}{26}
+\contentsline {subsection}{\numberline {}Kommutatoren}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{26}
+\contentsline {section}{Abbildungsverzeichnis}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{28}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{29}
+\contentsline {section}{Tabellenverzeichnis}{29}%
