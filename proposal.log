@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  26 JAN 2021 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  29 JAN 2021 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1724,24 +1724,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 1334--1355
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1375--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1375--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1390
 
  []
 
-[27] (./proposal.lof)
+
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1390
+
+ []
+
+[27] [28] (./proposal.lof)
 \tf@lof=\write6
 \openout6 = `proposal.lof'.
 
- [28] (./proposal.lot)
+ [29] (./proposal.lot)
 \tf@lot=\write7
 \openout7 = `proposal.lot'.
 
- [29] [30] (./proposal.aux)
+ [30] [31] (./proposal.aux)
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
@@ -1768,10 +1788,10 @@ s/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on proposal.pdf (32 pages, 1613115 bytes).
+Output written on proposal.pdf (33 pages, 1614302 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 222 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
