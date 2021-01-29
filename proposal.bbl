@@ -36,7 +36,7 @@
     \field{howpublished}{Website}
     \field{note}{Online erhältlich unter
   \url{https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518111.pdf};
-  abgerufen am 20.01.2020.}
+  abgerufen am 20.01.2021.}
     \field{title}{God's Algorithm in The 2x2x2 Rubik's Cube}
     \field{year}{2019}
   \endentry
@@ -59,7 +59,7 @@
     \field{howpublished}{Website}
     \field{note}{Online erhältlich unter
   \url{http://people.math.harvard.edu/~jjchen/docs/Group_Theory_and_the_Rubik's_Cube.pdf};
-  abgerufen am 05.01.2020.}
+  abgerufen am 05.01.2021.}
     \field{title}{Group Theory and the Rubik's Cube}
   \endentry
 
@@ -80,8 +80,31 @@
     \field{sortinithash}{D}
     \field{howpublished}{Website}
     \field{note}{Online erhältlich unter
-  \url{http://www.geometer.org/rubik/group.pdf}; abgerufen am 05.01.2020.}
+  \url{http://www.geometer.org/rubik/group.pdf}; abgerufen am 05.01.2021.}
     \field{title}{Group Theory via Rubik's Cube}
+  \endentry
+
+  \entry{RF}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FR}{%
+         family={Frisch},
+         familyi={F\bibinitperiod},
+         given={Roland},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FR1}
+    \strng{fullhash}{FR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{howpublished}{Website}
+    \field{note}{Online erhältlich unter
+  \url{https://freshcuber.de/zauberwuerfel-loesung-teil1/}; abgerufen am
+  29.01.2021.}
+    \field{title}{Zauberwürfel-Anfängerlösung Teil 1: Erste Ebene (weiß)}
+    \field{year}{Publiziert am 11. Dezember 2017}
   \endentry
 
   \entry{Buch}{book}{}

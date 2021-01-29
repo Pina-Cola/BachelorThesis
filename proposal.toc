@@ -39,6 +39,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Kommutatoren}{26}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Lösungsalgorithmus}{27}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Abbildungsverzeichnis}{29}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Tabellenverzeichnis}{30}%
