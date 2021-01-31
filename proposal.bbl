@@ -153,5 +153,33 @@
     }
     \field{year}{2016}
   \endentry
+
+  \entry{DJ}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JD}{%
+         family={Joyner},
+         familyi={J\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Johns Hopkins University Press}%
+    }
+    \strng{namehash}{JD1}
+    \strng{fullhash}{JD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{note}{Online erhältlich unter
+  \url{https://mike.verdone.ca/media/rubiks.pdf}; abgerufen am 12.01.2021.}
+    \field{title}{Adventures in Group Theory: Rubik's Cube, Merlin's Machine,
+  and Other Mathematical Toys}
+    \list{location}{1}{%
+      {Baltimore, USA}%
+    }
+    \field{year}{2008}
+  \endentry
 \enddatalist
 \endinput
