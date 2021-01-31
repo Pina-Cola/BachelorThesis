@@ -84,6 +84,28 @@
     \field{title}{Group Theory via Rubik's Cube}
   \endentry
 
+  \entry{RF2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FR}{%
+         family={Frisch},
+         familyi={F\bibinitperiod},
+         given={Roland},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FR1}
+    \strng{fullhash}{FR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{howpublished}{Website}
+    \field{note}{Online erhältlich unter
+  \url{https://freshcuber.de/loesung-2x2x2-ortega/}}
+    \field{title}{Schnelle Lösung für den 2x2x2 Pocket Cube (Ortega Methode)}
+    \field{year}{Publiziert am 19. April 2018}
+  \endentry
+
   \entry{RF}{misc}{}
     \name{author}{1}{}{%
       {{hash=FR}{%

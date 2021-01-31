@@ -1414,7 +1414,7 @@ Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es w
 Eine gängige Lösungsmethode geht so vor, dass bei der letzten Ebene zuerst alle Steine richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. \\
 Dafür dreht man den Würfel üblicherweise, damit die gelbe Seite oben ist. \\
 \\
-Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. 
+Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
 
 \begin{figure}[H]
 \centering
@@ -1452,7 +1452,7 @@ In diesem Beispiel wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gel
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{LURFL1.png}
-\caption[Cube nach Zug $FUBRF^{-1}$]{Der Würfel sieht nach $FUBRF^{-1}$ so aus. Er wurde bei dieser Ansicht noch um die $z$-Achse rotiert.}
+\caption[Cube nach Zug $FUBRF^{-1}$]{Der Würfel sieht nach $FUBRF^{-1}$ so aus. Er wurde bei dieser Ansicht noch um $180^\circ$ um die $z$-Achse rotiert.}
 \end{figure}
 
 
@@ -1482,7 +1482,24 @@ Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$
 \end{figure}
 Die obere ebene ist nun fertig. Es gilt $x_{1-4} = (0,0,0,0)$ und durch die Äquivalenzklassen $\delta_{Z_r}$ oder $\delta_{Z_l}$ kann man sehen, dass die Steine der oberen Ebene richtig zueinander angeordnet sind. Sie sind aber um $180^\circ$ gedreht zur Startkonfiguration. \\
 \\
+Für den nächsten Schritt rotiert der Mensch den Würfel, hier um die $y$-Achse. 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.12]{menschSchritt4.png}
+\caption[Lösung von Mensch: Schritt 4]{}
+\end{figure}
+Dann führt er den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2} und erhält einen gelösten Würfel. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.12]{menschSchritt5.png}
+\caption[Lösung von Mensch: Schritt 5]{Der \textit{Cube} ist gelöst, die weiße Seite ist unten.}
+\end{figure}
+
+Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die man in verschiedenen Situtionen anwenden kann. \\
+In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat also nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. \\
+\\
+Wenn man die Verdrehung des Würfels invertiert, also $(FUBRF^{-1})^{-1}$ erhält man $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 
 
 

@@ -43,6 +43,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{31}%
+\contentsline {section}{Abbildungsverzeichnis}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{32}%
+\contentsline {section}{Tabellenverzeichnis}{33}%
