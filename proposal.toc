@@ -41,6 +41,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Lösungsansätze}{27}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{28}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Abbildungsverzeichnis}{29}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Tabellenverzeichnis}{30}%
