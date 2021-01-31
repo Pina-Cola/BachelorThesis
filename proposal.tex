@@ -1412,6 +1412,7 @@ Es gibt verschiedene Vorgehensweisen um den Würfel zu lösen. Üblicherweise f�
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da man sich die Anordnung der Farben so leichter merken und und schneller sieht, in welche Ebene ein Stein gehört \cite{RF}. \\
 \\
 Eine gängige Lösungsmethode geht so vor, dass bei der letzten Ebene zuerst alle Steine richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. \\
+Dafür dreht man den Würfel üblicherweise, damit die gelbe Seite oben ist. \\
 \\
 Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. 
 
@@ -1422,7 +1423,7 @@ Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \l
 
 \end{figure}
 
-Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreiben: $(ulb \ ulf \ urb)$. 
+Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreiben: $(ulb \ ulf \ urb)$. \\
 
 
 
