@@ -329,17 +329,19 @@ Im Folgenden wird die Definition der Gruppe des 3x3x3-Würfels aus dem Paper \gl
 Die Gruppe des 2x2x2-Würfels heißt $(G_{2x2x2}, \circ)$. \\
 \\
 Die Menge $G_{2x2x2}$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. \\
-Wenn zwei Züge die gleiche Würfelposition hervorrufen, sind die beiden Züge "gleich". Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. \\
+Wenn zwei Züge die gleiche Würfelposition hervorrufen, sind die beiden Züge gleich. Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. \\
 \\
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in G_{2x2x2}$ und $Z_2 \in G_{2x2x2}$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in G_{2x2x2}$.) \\
-Im Folgenden wird gezeigt, wieso $(G_{2x2x2}, \circ)$ eine Gruppe ist, indem $(G_{2x2x2}, \circ)$ bezüglich der Gruppenkriterien untersucht wird: \\
-\begin{itemize}
-\item Abgeschlossenheit: \\ 
+Im Folgenden wird gezeigt, dass $(G_{2x2x2}, \circ)$ eine Gruppe ist, indem $(G_{2x2x2}, \circ)$ bezüglich der Gruppenkriterien untersucht wird: \\
+\begin{description}
+\item [Abgeschlossenheit] 
 $\forall Z_1,Z_2 \in G_{2x2x2} .  (Z_1 \circ Z_2) \in G_{2x2x2} $ \\
 \\
 Die Gruppe $G_{2x2x2}$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $G_{2x2x2}$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge in $G_{2x2x2}$ enthalten sind. 
 
-\item Assoziativität:\\ 
+
+
+\item [Assoziativität] 
 $\forall Z_1,Z_2,Z_3 \in G_{2x2x2}.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ \\
 \\
 Die Züge $Z_i \in G_{2x2x2}$ können gruppiert werden und somit gilt die Assoziativität. \\
@@ -361,17 +363,17 @@ Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt we
 \end{align*}
 Somit ist $(G_{2x2x2}, \circ)$ assoziativ.
 
-\item Existenz eines neutralen Elements $N$:  \\
+\item [Existenz eines neutralen Elements $N$]
 $\forall Z_1 \in G_{2x2x2}, \exists N \in G_{2x2x2}.N \circ Z_1 = Z_1 \circ N = Z_1$ \\
 \\
 Das neutrale Element $N$ muss aus der Menge $G_{2x2x2}$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(G_{2x2x2}, \circ)$ der \glqq leere \grqq \ Zug. Es werden also keine der Ebenen des Würfels gedreht. Wenn man also einen Zug $Z$ ausführt und dann den Zug $N$, bedeutet das so viel wie \glqq erst $Z$ ausführen und dann nichts \grqq , was das gleiche ist wie $Z$ auszuführen.
 
 
-\item Existenz eines inversen Elements $Z_1^\prime$: \\ 
+\item [Existenz eines inversen Elements $Z_1^\prime$] 
 $\forall \  Z_1 \in G_{2x2x2},\ \exists \  Z_1^\prime \in G_{2x2x2}.  \ \ Z_1 \circ Z_1^\prime = Z_1^\prime \circ Z_1 = N$  \\
 \\
 Da $Z$ ein Zug ist, kann man diesen auch rückgängig machen. Man muss die einzelnen Ebenenrotationen nur rückwärts und von hinten durchführen, um den Zug zu invertieren. Dann gilt $Z_1 \circ Z_1^\prime = Z_1^\prime \circ Z_1 = N$.
-\end{itemize}
+\end{description}
 Somit ist $(G_{2x2x2}, \circ)$ eine Gruppe. \\ 
 \\
 Damit $(G_{2x2x2}, \circ)$ eine kommutaive Gruppe (oder abelsche Gruppe) ist, muss zusätzlich noch die Kommutativität gelten. \\
