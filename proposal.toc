@@ -31,7 +31,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Untergruppen von G$_{2x2x2}$}{24}%
+\contentsline {section}{\numberline {4}Untergruppen von G$_{2\times 2\times 2}$}{24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Valide Konfigurationen des Würfels}{25}%
 \defcounter {refsection}{0}\relax 
