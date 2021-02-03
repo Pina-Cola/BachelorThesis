@@ -130,31 +130,72 @@
 \section{Einleitung}
 
 Diese Arbeit befasst sich mit dem \Ttwo Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
-Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.\\
-Terminologie:
-\begin{figure}[h]
+Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
+\begin{description}
+
+
+
+\item[\Ttwo Würfel] (auch Zauberwürfel oder \textit{Cube}) 
+
+Der Würfel ist in Abbildung \ref{3} links verdreht und rechts im gelösten Zustand zu sehen. Der gelöste Zustand wird auch als Startkonfiguration bezeichnet.
+
+Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst.  
+
+Bei dem verdrehten Würfel sind die Steine des Würfels an anderen Positionen und anders ausgerichtet.
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{2x2scrambled.png}
 \includegraphics[scale=0.1]{2x2solved.png}
-\caption[ungelöster und gelöster \Ttwo Würfel]{\Ttwo Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
-Der Zauberwürfel wird hier auch Würfel oder Cube genannt.}
+\caption[ungelöster und gelöster \Ttwo Würfel]{ungelöster und gelöster \Ttwo Würfel}
+\label{3}
 \end{figure}
-\ \\
-Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
 
-\begin{figure}[h]
+
+\item[Eckstein und Farbfläche] \ \\
+Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links in abbildung \ref{4}), die jeweils drei Farbflächen (rechts in Abbildung \ref{4}) haben. Ein \Ttwo Zauberwürfel hat also 24 Farbflächen.
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{2x2stein.png}
 \includegraphics[scale=0.1]{2x2farbflaeche.png}
-\caption[Eckstein und Farbfläche des Würfels]{Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein \Ttwo Zauberwürfel hat also 24 Farbflächen.}
+\caption[Eckstein und Farbfläche des Würfels]{Eckstein und Farbfläche des Würfels}
+\label{4}
 \end{figure} 
 
 
+\item[Seite] \ \\
+Der \Ttwo und der \Tthree Würfel haben sechs Seiten (bestehend aus jeweils vier Farbflächen) und somit sechs Farben. \\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{2x2seite.png}
-\caption[Seite des Würfels]{Der \Ttwo und der \Tthree Zauberwürfel haben jeweils 6 Seiten.}
+\caption[Seite des Würfels]{Seite des Würfels}
 \end{figure}
+
+\end{description}
+
+%Terminologie:
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=0.1]{2x2scrambled.png}
+%\includegraphics[scale=0.1]{2x2solved.png}
+%\caption[ungelöster und gelöster \Ttwo Würfel]{\Ttwo Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
+%Der Zauberwürfel wird hier auch Würfel oder Cube genannt.}
+%\end{figure}
+%\ \\
+%Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=0.1]{2x2stein.png}
+%\includegraphics[scale=0.1]{2x2farbflaeche.png}
+%\caption[Eckstein und Farbfläche des Würfels]{Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein \Ttwo Zauberwürfel hat also 24 Farbflächen.}
+%\end{figure} 
+
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.1]{2x2seite.png}
+%\caption[Seite des Würfels]{Der \Ttwo und der \Tthree Zauberwürfel haben jeweils 6 Seiten.}
+%\end{figure}
 
 
 \begin{figure}[H]
