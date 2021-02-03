@@ -34,7 +34,13 @@
 
 \bibliography{references.bib}
 
+\newcommand{\Gtwo}{\ensuremath{G_{2\times 2\times 2}}}
 
+\newcommand{\Gthree}{\ensuremath{G_{3\times 3\times 3}}}
+
+\newcommand{\Ttwo}{2$\times$2$\times$2-}
+
+\newcommand{\Tthree}{3$\times$3$\times$3-}
 
 
 
@@ -74,7 +80,7 @@
 	\vspace{1cm}
 	{\scshape\Large Bachelorarbeit \par }
 	\vspace{1.5cm}
-	{\huge\bfseries  Gruppentheorie des 2x2x2 Zauberwürfels und dessen Lösungsalgorithmen \par}
+	{\huge\bfseries  Gruppentheorie des \\ 2$\times$2$\times$2-Zauberwürfels und dessen Lösungsalgorithmen \par}
 	\vspace{2cm}
 	{\Large\itshape Pina Kolling\par}
 	\vspace{0.5cm}
@@ -123,31 +129,31 @@
 
 \section{Einleitung}
 
-Diese Arbeit befasst sich mit dem 2x2x2-Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
+Diese Arbeit befasst sich mit dem \Ttwo Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
 Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.\\
 Terminologie:
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2scrambled.png}
 \includegraphics[scale=0.1]{2x2solved.png}
-\caption[ungelöster und gelöster 2x2x2-Würfel]{2x2x2-Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
+\caption[ungelöster und gelöster \Ttwo Würfel]{\Ttwo Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
 Der Zauberwürfel wird hier auch Würfel oder Cube genannt.}
 \end{figure}
 \ \\
-Bei der Startkonfiguration (auch Grundposition, Grundstellung) des 2x2x2-Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
+Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2stein.png}
 \includegraphics[scale=0.1]{2x2farbflaeche.png}
-\caption[Eckstein und Farbfläche des Würfels]{Ein 2x2x2-Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein 2x2x2-Zauberwürfel hat also 24 Farbflächen.}
+\caption[Eckstein und Farbfläche des Würfels]{Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein \Ttwo Zauberwürfel hat also 24 Farbflächen.}
 \end{figure} 
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{2x2seite.png}
-\caption[Seite des Würfels]{Der 2x2x2 und der 3x3x3 Zauberwürfel haben jeweils 6 Seiten.}
+\caption[Seite des Würfels]{Der \Ttwo und der \Tthree Zauberwürfel haben jeweils 6 Seiten.}
 \end{figure}
 
 
@@ -159,10 +165,10 @@ Bei der Startkonfiguration (auch Grundposition, Grundstellung) des 2x2x2-Würfel
 \end{figure}
 
 $\ $\\
-Im Gegensatz zum 3x3x3-Würfel hat der 2x2x2-Würfel weder Mittelsteine, noch Kantsteine. \\
-Das besondere an den Mittelsteinen des 3x3x3-Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim 3x3x3-Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
-Beim 2x2x2-\textit{Cube} muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
-Die Rotation des gesamten Würfels ist bei dem 3x3x3-Würfel also eindeutig vorgegeben, während sie beim 2x2x2-Würfel gedreht werden kann. \\
+Im Gegensatz zum \Tthree Würfel hat der \Ttwo Würfel weder Mittelsteine, noch Kantsteine. \\
+Das besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
+Beim \Ttwo \textit{Cube} muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
+Die Rotation des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann. \\
 \\
 
 
@@ -186,7 +192,7 @@ Die Rotation des gesamten Würfels ist bei dem 3x3x3-Würfel also eindeutig vorg
 \newpage
 
 \subsection*{Grundzüge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Grundzüge des Würfels}
-Am 2x2x2-Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. 
+Am \Ttwo Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. 
 %Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
 %Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. \\
 \begin{figure}[h]
@@ -321,14 +327,14 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 
 
 
-\subsection*{2x2x2-Zauberwüfel als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}2x2x2-Zauberwüfel als Gruppe}
+\subsection*{\Ttwo Zauberwüfel als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}\Ttwo Zauberwüfel als Gruppe}
 
 
-Im Folgenden wird die Definition der Gruppe des 3x3x3-Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen \cite{JC} als Gruppe des 2x2x2-Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(G_{3x3x3}, \circ)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem 2x2x2- und dem 3x3x3-Würfel zu differenzieren. Das Symbol des Operators wird verändert, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
+Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen \cite{JC} als Gruppe des 2x2x2-Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, \circ)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Das Symbol des Operators wird verändert, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
 \\ 
-Die Gruppe des 2x2x2-Würfels heißt $(G_{2x2x2}, \circ)$. \\
+Die Gruppe des \Ttwo Würfels heißt $(\Gtwo, \circ)$. \\
 \\
-Die Menge $G_{2x2x2}$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. \\
+Die Menge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. \\
 Wenn zwei Züge die gleiche Würfelposition hervorrufen, sind die beiden Züge gleich. Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. \\
 \\
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in G_{2x2x2}$ und $Z_2 \in G_{2x2x2}$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in G_{2x2x2}$.) \\
@@ -430,7 +436,9 @@ $\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$
 
 
 \section{Konfiguration des Würfels}
-Die Konfiguration des Würfels, also die Position/Verdrehung des Würfels setzt sich aus zwei Parametern zusammen: 
+Um mit dem Würfel zu arbeiten, muss man wissen, in welcher Position er sich befindet.
+
+Dafür wird die Konfiguration des Würfels definiert, sie setzt sich aus zwei Parametern zusammen: 
 \begin{itemize}
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x$)
@@ -552,7 +560,7 @@ Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jede
 \caption{ausgeklappter Würfel mit Farbflächennummerierungen}
 \end{figure}
 \ \\
-In der Startkonfiguration sind alle $x_i = 0$, also $x=(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.\\
+In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.\\
 \ \\
 Nun wird der Zug $R$ als Beispiel ausgeführt und die Veränderung der Nummerierung der Farbflächen dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. \\
 Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position, die Nummerierungen  der Farbflächen ändern sich mit Rotation der Ebene und ermöglichen so eine Zuordnung der Ausrichtung der Ecksteine. \\
@@ -633,8 +641,8 @@ Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In die
 
 \subsection*{Rotation des Würfels}\addcontentsline{toc}{subsection}{\protect\numberline{}Rotation des Würfels}
 
-Der 2x2x2-Würfel hat im Gegensatz zum 3x3x3-Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
-Der 2x2x2-Würfel kann also im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen. \\
+Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. \\
+Der \Ttwo Würfel kann also im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen. \\
 Um die Drehungen zu benennen, werden die Achsen den Würfels wie folgt benannt:
 \begin{figure}[H]
 \centering
@@ -1041,14 +1049,15 @@ Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt w
 \\
 \\
 \newpage 
-Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge hier auch grafisch dargestellt:
+Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge in Abbildung \ref{2} grafisch dargestellt:
 
 \begin{figure}[H]
 \includegraphics[scale=0.3]{graph_zug.png}
-\caption[Graph aller Zugpermutationen]{}
+\caption[Graph aller Zugpermutationen]{Graph aller Zugpermutationen}
+\label{2}
 \end{figure}
 \ \\
-Dieser Graph vereinfach das Ablesen der Zykel, vorallem wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden. \\
+Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden. \\
 \\
 So kann man nun anhand des Beispielzuges $LLFF$ die Zykelstruktur darstellen. \\
 \\
@@ -1074,7 +1083,7 @@ F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor
 \caption[Permutationen des Zuges $LLFF$]{}
 \end{table}
 
-Die ausgegrauten Positionen bleiben bei dem jeweiligen Zug unverändert. \\
+Die grauen Positionen bleiben bei dem jeweiligen Zug unverändert. \\
 \\ \\
 \\
 Grafisch dargestellt sehen die Zykel des Zuges $LLFF$ so aus: \\
@@ -1169,7 +1178,7 @@ Eine Gruppe $(H, \circ)$, ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $
 Dann schreibt man auch $H \leqslant G$. \\
 Das Symbol $\leqslant$ ist zu lesen als \glqq ist Untergruppe von\grqq. \\
 \\
-Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G_2=G_{2x2x2}$). Also sind $H_N$ und $H_G$ die trivialen Untergruppen von $G_{2x2x2}$. ($H_N \leqslant G_{2x2x2}$ und $H_G \leqslant G_{2x2x2}$)\\
+Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G=G_{2x2x2}$). Also sind $H_N$ und $H_G$ die trivialen Untergruppen von $G_{2x2x2}$. ($H_N \leqslant G_{2x2x2}$ und $H_G \leqslant G_{2x2x2}$)\\
 Die Gruppe $G_{2x2x2}$ hat viele Untergruppen, deshalb kann hier nur auf einen Teil davon erwähnt werden. \\
 \\
 Da die trivialen Untergruppen nicht sonderlich interessant sind, geht der folgende Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Diese Gruppen hat Tom Davis (in seinem Paper \glqq Group Theory via Rubik's Cube\grqq) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: \\ 
@@ -1177,7 +1186,7 @@ Da die trivialen Untergruppen nicht sonderlich interessant sind, geht der folgen
 Die Untergruppe $H_{E1}$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann man auch gut an einem \textit{Cube} nachvollziehen, da man durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielen kann. \\
 \\
 Eine weitere Untergruppe von $G_{2x2x2}$ ist $H_{E2}$. Hier dürfen zwei gegenüberliegende Ebenen gedreht werden. \\
-Bei der Gruppe des 3x3x3-Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem 2x2x2-\textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und man nicht anhand der Mittelsteine oben und unten unterscheiden kann. \\
+Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und man nicht anhand der Mittelsteine oben und unten unterscheiden kann. \\
 \\
 
 
@@ -1222,7 +1231,7 @@ Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels di
 Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.\\
 \\
 Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Wenn man nun die Rotation des Würfels berücksichtig kommt man auf $11 \, 022 \, 480$ theoretische Würfelkonfigurationen. \\
-Davon sind aber nicht alle Konfigurationen durch Ebenendrehungen erreichbar - für einige braucht man einen Schraubendreher oder Superkleber. Diese Konfigurationen werden hier als ungültige Konfigurationen bezeichnet. \\
+Davon sind aber nicht alle Konfigurationen durch Ebenendrehungen erreichbar -- für einige braucht man einen Schraubendreher oder Superkleber. Diese Konfigurationen werden hier als ungültige Konfigurationen bezeichnet. \\
 \\
 Es ist also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
  
@@ -1568,7 +1577,7 @@ In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5
 Wenn man die Verdrehung des Würfels invertiert, also $(FUBRF^{-1})^{-1}$ erhält man $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 \\
 \\
-Es stellt sich die Frage, wie viele Ebenendrehungen der 2x2x2-Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\
+Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\
 Wenn man davon ausgeht, dass jede $90^\circ$-Drehung einer Ebene als Drehung gezählt wird (und $180^\circ$-Drehungen als zwei Drehungen), ist die \textit{God's Number} des Würfels $14$. \cite{DJ} 
 
 

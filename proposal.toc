@@ -11,7 +11,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Beispielgruppen}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}2x2x2-Zauberwüfel als Gruppe}{5}%
+\contentsline {subsection}{\numberline {}2$\times $2$\times $2-Zauberwüfel als Gruppe}{5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Konfiguration des Würfels}{9}%
 \defcounter {refsection}{0}\relax 
