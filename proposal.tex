@@ -344,20 +344,19 @@ Die Gruppe $G_{2x2x2}$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $
 \item [Assoziativität] 
 $\forall Z_1,Z_2,Z_3 \in G_{2x2x2}.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ \\
 \\
-Die Züge $Z_i \in G_{2x2x2}$ können gruppiert werden und somit gilt die Assoziativität. \\
 Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird $s$ genannt. Beim Ausführen eines Zuges $Z$ schreibt man nun $Z(s)$, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, l, r, t, b$. \\
 Wenn man nun $Z_1 \circ Z_2 $ betrachtet, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Also gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. \\
 \\
 Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Man zeige also, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: \\
 \begin{align*}
 & (Z_1 \circ Z_2) \circ Z_3  \\
-\Rightarrow (&(Z_1 \circ Z_2) \circ Z_3)(s) \\
+\Leftrightarrow (&(Z_1 \circ Z_2) \circ Z_3)(s) \\
 = & Z_3(Z_1 \circ Z_2)(s)) \\
 = & Z_3(Z_2(Z_1(s)))  
 \end{align*}
 \begin{align*}
 &Z_1 \circ (Z_2 \circ Z_3) \\
-\Rightarrow (&Z_1 \circ (Z_2 \circ Z_3))(s) \\
+\Leftrightarrow (&Z_1 \circ (Z_2 \circ Z_3))(s) \\
 = (&Z_2 \circ Z_3)(Z_1(s)) \\
 = \ \ & Z_3(Z_2(Z_1(s)))  
 \end{align*}
