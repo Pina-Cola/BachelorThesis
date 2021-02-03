@@ -851,7 +851,7 @@ Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Elem
 \\ 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow F = Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. \\
 \\
-In der Abbildung \ref{1} sieht man dieses Beispiel nochmal grafisch: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. \\
+In Abbildung \ref{1} sieht man dieses Beispiel nochmal grafisch: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. \\
 Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
 \begin{figure}[H]
 \includegraphics[scale=0.15]{3_wuerfel.png}
@@ -946,9 +946,9 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 
 
 \subsection*{Ordnung der Züge}\addcontentsline{toc}{subsection}{\protect\numberline{}Ordnung der Züge}
-Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$ für alle einelementigen Züge (und Rotationen), da alle Steine des Würfels in ihrer vorherigen Position bleiben, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werdeb die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4 bezeichnet. \\
+Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$, da alle Steine des Würfels in ihrer vorherigen Position bleiben, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werdeb die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4 bezeichnet. \\
 \\
-Die Exponentenschreibweise kann man für alle Züge aus $G_{2x2x2}$ anwenden, auch wenn sie mehr als eine Ebene rotieren. Beispielsweise mit $Z_1=LLFF$. $(LLFF)^2$ ist dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ergibt. \\
+Die Exponentenschreibweise kann man für alle Züge aus $G_{2x2x2}$ anwenden, auch wenn sie mehr als eine Ebene rotieren. Beispielsweise mit $LLFF$. $(LLFF)^2$ ist dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ergibt. \\
 \\
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat dann beispielsweise die Ordnung 3. \\
 So gilt zum Beispiel: ${R^4= N}$ (Ordnung 4), ${(RRFF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15).\\ Dabei muss beachtet werden, dass die Ordnung die Anzahl der Durchführungen beschreibt, die benötigt wird, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. \\
@@ -1030,14 +1030,14 @@ Ausführung & ulf & ulb & urb & urf \\
 Die vierte Zeile der Tabelle hat die selbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). \\
 Somit hat die beschriebene Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).\\
 \\
-Es gilt also für einen Zug $Z$, der aus nur einem $n$-elementigen Zykel besteht: \\ 
-${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  Z^n=1 }$. \\
+Es gilt also für jeden Zug $Z$, der aus nur einem $n$-elementigen Zykel besteht: \\ 
+${\forall \ Z \in G_{2x2x2}\ mit \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  Z^n=1 }$. \\
 \\
 Wenn man $Z$ mehrfach ausführt, kommt man nach jeder $n$-ten Wiederholung in den Ausgangszustand. \cite{TD} Es gilt also auch 
 ${\forall \ Z \in G_{2x2x2}\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N} \ . \  Z^{k*n}=1 }$.
 \\
 \\
-Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das $KGV$ (kleinstes gemeinsames Vielfaches) aller Zykelgrößen bestimmt werden. \cite{TD}
+Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache aller Zykelgrößen bestimmt werden. \cite{TD}
 \\
 \\
 \newpage 
