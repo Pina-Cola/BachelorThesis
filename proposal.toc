@@ -13,40 +13,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}2x2x2-Zauberwüfel als Gruppe}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Konfiguration des Würfels}{8}%
+\contentsline {section}{\numberline {3}Konfiguration des Würfels}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Positionen der Steine im Würfel}{8}%
+\contentsline {subsection}{\numberline {}Positionen der Steine im Würfel}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{10}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{12}%
+\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Rotation des Würfels}{12}%
+\contentsline {subsection}{\numberline {}Rotation des Würfels}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{15}%
+\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Züge}{17}%
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zykelstruktur}{19}%
+\contentsline {subsection}{\numberline {}Zykelstruktur}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{21}%
+\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Untergruppen von G$_{2x2x2}$}{23}%
+\contentsline {section}{\numberline {4}Untergruppen von G$_{2x2x2}$}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Valide Konfigurationen des Würfels}{24}%
+\contentsline {section}{\numberline {5}Valide Konfigurationen des Würfels}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{24}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Lösung des Würfels}{26}%
+\contentsline {section}{\numberline {6}Lösung des Würfels}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{26}%
+\contentsline {subsection}{\numberline {}Parität}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{26}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{27}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{28}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{32}%
+\contentsline {section}{Abbildungsverzeichnis}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{33}%
+\contentsline {section}{Tabellenverzeichnis}{34}%
