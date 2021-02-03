@@ -121,7 +121,7 @@
 
 
 
-\section{Einleitung/Ausgangslage}
+\section{Einleitung}
 
 Meine Bachelorarbeit befasst sich mit dem 2x2x2-Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
 Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.\\
@@ -142,8 +142,6 @@ Bei der Startkonfiguration (auch Grundposition, Grundstellung) des 2x2x2-Würfel
 \includegraphics[scale=0.1]{2x2farbflaeche.png}
 \caption[Eckstein und Farbfläche des Würfels]{Ein 2x2x2-Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein 2x2x2-Zauberwürfel hat also 24 Farbflächen.}
 \end{figure} 
-$\ $ \\
-Der 2x2x2-\textit{Cube} hat theoretisch $3\, 674\, 160$ mögliche Würfelkonfigurationen. Davon sind aber nicht alle durch Ebenenrotationen erreichbar.
 
 
 \begin{figure}[H]
@@ -1155,7 +1153,7 @@ Außerdem können die Ecksteine gedreht sein, also verschiedene Farbflächen obe
 Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24. \\
 Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.\\
 \\
-Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 = 264 \, 539 \ 520$ Millionen \cite{MMFAA}. Wenn man nun die Rotation des Würfels berücksichtig kommt man auf $11 \, 022 \, 480$ theoretische Würfelkonfigurationen. \\
+Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Wenn man nun die Rotation des Würfels berücksichtig kommt man auf $11 \, 022 \, 480$ theoretische Würfelkonfigurationen. \\
 Davon sind aber nicht alle Konfigurationen durch Ebenendrehungen erreichbar - für einige braucht man einen Schraubendreher oder Superkleber. Diese Konfigurationen werden hier als ungültige Konfigurationen bezeichnet. \\
 \\
 Es ist also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.

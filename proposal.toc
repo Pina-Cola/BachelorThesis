@@ -1,7 +1,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Einleitung/Ausgangslage}{1}%
+\contentsline {section}{\numberline {1}Einleitung}{1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Grundzüge des Würfels}{3}%
 \defcounter {refsection}{0}\relax 
