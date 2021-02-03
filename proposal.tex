@@ -123,7 +123,7 @@
 
 \section{Einleitung}
 
-Meine Bachelorarbeit befasst sich mit dem 2x2x2-Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
+Diese Arbeit befasst sich mit dem 2x2x2-Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt. \\ 
 Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.\\
 Terminologie:
 \begin{figure}[h]
@@ -244,9 +244,13 @@ Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser A
 
 
 
+
+
+
 \section{Würfel als Gruppe}
 
-\subsection*{Darstellung des 2x2x2-Zauberwüfels mit dem mathematischen Konstrukt der Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Darstellung des 2x2x2-Wüfels mit dem Konstrukt der Gruppe}
+\subsection*{Definition einer Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Definition einer Gruppe}
+
 
 Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für den folgenden Abschnitt:
 \begin{itemize}
@@ -255,7 +259,29 @@ Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für den folgenden Abschn
 \item Existenz eines neutralen Elements $n$: $\forall a \in G, \exists n \in G.n \circ a = a \circ n = a$ 
 \item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G, \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
-\ \\
+
+
+
+
+
+
+
+
+
+%=======================================================================================================
+
+
+
+
+
+
+
+
+
+
+\subsection*{2x2x2-Zauberwüfels als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}2x2x2-Zauberwüfels als Gruppe}
+
+
 Im Folgenden wird die Definition der Gruppe des 3x3x3-Würfels aus dem Paper \glqq Group Theory and the Rubik's Cube\grqq \  von Janet Chen \cite{JC} als Gruppe des 2x2x2-Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(G_{3x3x3}, \circ)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem 2x2x2- und dem 3x3x3-Würfel zu differenzieren. Das Symbol des Operators wird verändert, um Verwechslungen mit dem Multiplikationsoperator zu vermeiden. \\
 \\ 
 Die Gruppe des 2x2x2-Würfels heißt $(G_{2x2x2}, \circ)$. \\
