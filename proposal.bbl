@@ -41,6 +41,28 @@
     \field{year}{2019}
   \endentry
 
+  \entry{RC}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BR}{%
+         family={Brand},
+         familyi={B\bibinitperiod},
+         given={Rubik's},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BR1}
+    \strng{fullhash}{BR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{howpublished}{Website}
+    \field{note}{Online erhältlich unter
+  \url{https://www.rubiks.com/en-eu/about}; abgerufen am 04.02.2021.}
+    \field{title}{Our heritage}
+    \field{year}{Publiziert am 19.04.2018}
+  \endentry
+
   \entry{JC}{misc}{}
     \name{author}{1}{}{%
       {{hash=CJ}{%
