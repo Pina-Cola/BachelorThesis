@@ -17,6 +17,15 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{patent}{misc}{}
+    \list{organization}{1}{%
+      {Rubik}%
+    }
+    \field{number}{US4378117A}
+    \field{type}{Schutzrecht}
+    \field{year}{1980}
+  \endentry
+
   \entry{MMFAA}{misc}{}
     \name{author}{1}{}{%
       {{hash=AAMMF}{%
