@@ -19,6 +19,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Beispielgruppen}{5}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}2$\times $2$\times $2-Zauberwüfel als Gruppe}{7}%
