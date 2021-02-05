@@ -454,7 +454,31 @@ f = (1 \ 5 \ 2)\ (3 \ 4)
 \end{align*}
 Das liest man so: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3.
 
+Man sagt, dass $f$ aus zwei Zykeln besteht: ein Zykel hat die Länge drei und der andere die Länge zwei.
 
+Die Zykel kann man auch in Abbildung \ref{10} sehen.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.13]{Zykel_152.png}
+\caption{Zykel $f = (1 \ 5 \ 2)\ (3 \ 4)$}
+\label{10}
+\end{figure}
+
+
+Wichtig bei der Zykelschreibweise ist die Reihenfolge der Elemente. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. 
+
+Wenn die Reihenfolge bestehen bleibt, können die Zykel aber bei jedem beliebigen Element beginnen. Es gilt in dem Beispiel $(1 \ 2 \ 3)$ also $(1 \ 2 \ 3) = (2 \ 3 \ 1) = (3\ 1 \ 2 \ )$.
+
+{\begin{description}
+\item[Permutation] (Definition)
+
+Sei M eine $n$-elementige Menge. Eine ($n$-stellige) Permutation ist eine bijektive Abbildung $f: M \rightarrow M$.
+
+\item[Zykelschreibweise] \ 
+
+Die Zykelschreibweise ist eine kurze Schreibweise für eine Permutation.
+
+\end{description}}
 %
 %
 %
