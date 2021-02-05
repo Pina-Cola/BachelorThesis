@@ -1744,12 +1744,15 @@ $ulb \mapsto ulf$ \hspace*{2.5cm }$ulf  \mapsto ulb$ \hspace*{2.5cm } $dlf \maps
 %
 %
 \subsection*{Lösungsansätze}\addcontentsline{toc}{subsection}{\protect\numberline{}Lösungsansätze}
-Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine bewegen. So kann man dann gezielt bestimmte Steine drehen oder tauschen. \\
+Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine bewegen. So kann man dann gezielt bestimmte Steine drehen oder tauschen. 
 \\
-Es gibt verschiedene Vorgehensweisen um den Würfel zu lösen. Üblicherweise fängt man mit der weißen Seite an, deshalb werden auch die folgenden Beispiele so vorgehen. Die gelbe Seite gehört dann zur letzten Ebene, die gelöst wird. \\
-Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da man sich die Anordnung der Farben so leichter merken und und schneller sieht, in welche Ebene ein Stein gehört \cite{RF}. \\
 \\
-Eine gängige Lösungsmethode geht so vor, dass bei der letzten Ebene zuerst alle Steine richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. \\
+Es gibt verschiedene Vorgehensweisen um den Würfel zu lösen. Üblicherweise fängt man mit der weißen Seite an, deshalb werden auch die folgenden Beispiele so vorgehen. Die gelbe Seite gehört dann zur letzten Ebene, die gelöst wird. 
+
+Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da man sich die Anordnung der Farben so leichter merken und und schneller sieht, in welche Ebene ein Stein gehört \cite{RF}. 
+
+Eine gängige Lösungsmethode geht so vor, dass bei der letzten Ebene zuerst alle Steine richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. 
+
 Dafür dreht man den Würfel üblicherweise, damit die gelbe Seite oben ist. \\
 \\
 Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
@@ -1761,7 +1764,7 @@ Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \l
 
 \end{figure}
 
-Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreiben: $(ulb \ ulf \ urb)$. \\
+Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreiben: $(ulb \ ulf \ urb)$. 
 %
 %
 %
@@ -1785,58 +1788,75 @@ Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreib
 %
 \subsection*{Lösung des Würfels anhand eines Beispiels}\addcontentsline{toc}{subsection}{\protect\numberline{}Lösung des Würfels anhand eines Beispiels}
 
-In diesem Beispiel wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde. \\
-\\
-\begin{figure}[H]
+In diesem Beispiel (Abbildung \ref{18}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde. \\ \\
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.12]{LURFL1.png}
 \caption[Cube nach Zug $FUBRF^{-1}$]{Der Würfel sieht nach $FUBRF^{-1}$ so aus. Er wurde bei dieser Ansicht noch um $180^\circ$ um die $z$-Achse rotiert.}
+\label{18}
 \end{figure}
 
+Der erste Schritt für einen menschlichen Ansatz der Lösung des Würfels ist (meistens), die Steine der oberen Ebene so anzuordnen, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
 
 
-Der erste Schritt für einen menschlichen Ansatz der Lösung des Würfels ist (meistens), die Steine der oberen Ebene so anzuordnen, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. \\
 Es muss also $x_{1-4} = (0,0,0,0)$ gelten und $\sigma_{ulb}=ulb, \sigma_{urb} = urb, \sigma_{ulf} = ulf, \sigma_{urf}=urf$ bzw. die Äquivalenzklassen $\delta_{Z_r}$ und $\delta_{Z_l}$ davon. \\
 \\
-Der Lösende sucht nun also Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position $urf$. \\
-Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. \\
-Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus:
-\begin{figure}[H]
+Der Lösende sucht nun also Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position $urf$. 
+
+Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. 
+
+Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{19} dargestellt.
+
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.12]{0201.png}
 \caption[Lösung von Mensch: Schritt 1]{Lösung von Mensch: Schritt 1}
+\label{19}
 \end{figure}
-Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. Er wird durch den Zug $R^{-1}$ in Position gebracht. 
-\begin{figure}[H]
+
+Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. Er wird durch den Zug $R^{-1}$ in Position gebracht (s. Abbildung \ref{20}).
+ 
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.12]{menschSchritt2.png}
 \caption[Lösung von Mensch: Schritt 2]{Lösung von Mensch: Schritt 2}
+\label{20}
 \end{figure}
-Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere ebene ist nun gelöst.
+
+Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere ebene ist nun gelöst (s. Abbildung \ref{21}).
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt3.png}
 \caption[Lösung von Mensch: Schritt 3]{Lösung von Mensch: Schritt 3}
-\end{figure}
-Die obere ebene ist nun fertig. Es gilt $x_{1-4} = (0,0,0,0)$ und durch die Äquivalenzklassen $\delta_{Z_r}$ oder $\delta_{Z_l}$ kann man sehen, dass die Steine der oberen Ebene richtig zueinander angeordnet sind. Sie sind aber um $180^\circ$ gedreht zur Startkonfiguration. \\
-\\
-Für den nächsten Schritt rotiert der Mensch den Würfel, hier um die $y$-Achse. 
+\label{21}
+\end{figure} 
+
+Die obere Ebene ist nun fertig. Es gilt $x_{1-4} = (0,0,0,0)$ und durch die Äquivalenzklassen $\delta_{Z_r}$ oder $\delta_{Z_l}$ kann man sehen, dass die Steine der oberen Ebene richtig zueinander angeordnet sind. Sie sind aber um $180^\circ$ gedreht zur Startkonfiguration. 
+
+
+Für den nächsten Schritt rotiert der Mensch den Würfel, hier um die $y$-Achse (s. Abbildung \ref{22}). 
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt4.png}
 \caption[Lösung von Mensch: Schritt 4]{Lösung von Mensch: Schritt 4}
-\end{figure}
-Dann führt er den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2} und erhält einen gelösten Würfel. 
+\label{22}
+\end{figure} 
+
+Dann führt er den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2} und erhält einen gelösten Würfel (s. Abbildung \ref{23}). 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt5.png}
 \caption[Lösung von Mensch: Schritt 5]{Der \textit{Cube} ist gelöst, die weiße Seite ist unten.}
+\label{23}
 \end{figure}
 
-Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die man in verschiedenen Situtionen anwenden kann. \\
-In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat also nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. \\
-\\
+Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die man in verschiedenen Situtionen anwenden kann.  
+
+In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat also nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
+
 Wenn man die Verdrehung des Würfels invertiert, also $(FUBRF^{-1})^{-1}$ erhält man die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 \\
 \\
