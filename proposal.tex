@@ -728,6 +728,7 @@ Also gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. \\
 \includegraphics[scale=0.1]{foldedout_012_white.png}
 \includegraphics[scale=0.1]{foldedout_012_spin.png}
 \caption[ausgeklappter Würfel nach Zug $R$ (Farbflächenummerierungen)]{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
+\label{7}
 \end{figure}
 
 %
@@ -984,7 +985,7 @@ Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: \\
 
 \subsection*{Äquivalenzrelationen der Rotationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen}
 
-Um die Rotationen des Würfels umzusetzen, werden Äquivalenzrelationen eingeführt. \\
+Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen. \\
 Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
 \\
 In dem Fall der Gruppe $(\Gtwo, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in \Gtwo$. \\ 
@@ -1385,15 +1386,18 @@ Es ist also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
 
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
 \\
-In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration ${\Sigma \ x_i \mod 3 = 0}$ (modulo) gilt. \\
-Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\Sigma \ x_i' \mod 3 = \Sigma \  x_i \mod 3 }$. \\
-In Abbildung 6 (s.o.) kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: 
+In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration \begin{displaymath}
+\sum_{i= 1}^{8} \ x_i \mod 3 = 0 
+\end{displaymath}  (modulo) gilt. \\
+Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\sum_{i= 1}^{8} \ x_i' \mod 3 = \sum_{i= 1}^{8} \  x_i \mod 3 }$. \\
+In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: 
 
 \begin{table}[H]
 
+\begin{small}
 \begin{tabular}{|c|l|l|c|c|}
 \hline
-Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \mod 3 = 0$ \\
+{\footnotesize Zug $M$} & $x$ & $x'$ & {\footnotesize $\sum_{i= 1}^{8} x_i'$} & {\footnotesize $\sum_{i= 1}^{8}x_i'\mod 3$} \\
 \hline
 \hline
 \textit{D} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7)$ & 0 & 0 \\
@@ -1410,13 +1414,14 @@ Zug $M$ & $x$ & $x'$ & $\Sigma \  x_i'$ & $\Sigma \  x_i' \mod 3 = 0$ \\
 \hline
 
 \end{tabular}
+\end{small}
 \caption[Ausrichtung der Steine (modulo 3)]{Ausrichtung der Steine (modulo 3)}
 
 \end{table}
 
-Für jede valide Würfelposition gilt also ${\Sigma \ x_i' \mod 3 = \Sigma \  x_i \mod 3 }$. \\
+Für jede valide Würfelposition gilt also ${\sum_{i = 1}^{8} \ x_i' \mod 3 = \sum_{i = 1}^{8} \  x_i \mod 3 }$. \\
 \\
-Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\Sigma x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
+Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
 \\
 Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. \\ 
 %
