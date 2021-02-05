@@ -463,16 +463,18 @@ Wenn zwei Züge die gleiche Würfelposition hervorrufen, sind die beiden Züge g
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.) \\
 Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird: \\
 \begin{description}
-\item [Abgeschlossenheit] 
-$\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ \\
-\\
+\item [Abgeschlossenheit] \ \\
+$\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ 
+
+
 Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge in $\Gtwo$ enthalten sind. 
 
 
 
-\item [Assoziativität] 
-$\forall Z_1,Z_2,Z_3 \in \Gtwo.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ \\
-\\
+\item [Assoziativität] \ \\
+$\forall Z_1,Z_2,Z_3 \in \Gtwo.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ 
+
+
 Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird $s$ genannt. Beim Ausführen eines Zuges $Z$ schreibt man nun $Z(s)$, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, l, r, t, b$. \\
 Wenn man nun $Z_1 \circ Z_2 $ betrachtet, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Also gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. \\
 \\
@@ -492,29 +494,11 @@ Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt we
 Somit ist $(\Gtwo, \circ)$ assoziativ.
 
 \item [Existenz eines neutralen Elements $N$] \ \\
-$\forall Z_1 \in \Gtwo, \exists N \in \Gtwo.N \circ Z_1 = Z_1 \circ N = Z_1$ \\
-\\
+$\forall Z_1 \in \Gtwo, \exists N \in \Gtwo.N \circ Z_1 = Z_1 \circ N = Z_1$ 
+
+
 Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden also keine der Ebenen des Würfels gedreht. Wenn man also einen Zug $Z$ ausführt und dann den Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie $Z$ auszuführen.
 
-
-\item [Existenz eines inversen Elements $Z_1^{-1}$] \ \\
-$\forall \  Z_1 \in \Gtwo,\ \exists \  Z_1^{-1} \in \Gtwo.  \ \ Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$  \\
-\\
-Da $Z$ ein physisch ausführbarer Zug ist, kann man diesen auch rückgängig machen. Man muss die einzelnen Ebenenrotationen nur rückwärts und von hinten durchführen, um den Zug zu invertieren. Dann gilt $Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$.
-\end{description}
-Somit ist $(\Gtwo, \circ)$ eine Gruppe. \\ 
-\\
-$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das sieht grafisch dargestellt so aus: \\
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.1]{RF.png}
-\includegraphics[scale=0.1]{FR.png}
-\caption[Würfel nach Zügen $FR$ und $RF$]{links: Würfel nach Zug $RF$, rechts: Würfel nach Zug $FR$, \\ ausgehend von Startkonfiguration}
-\end{figure} \ \\
-Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann egal und man müsste nur die Anzahl beachten. \\
-Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
-\\
-\\
 Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann man mit der Exponentenschreibweise darstellen. So schreibt man beispielsweise $RR$ (also zwei mal eine Drehung der rechten Ebene im Uhrzeigersinn) auch als $R^2$. \\
 Wenn man eine Ebene vier mal dreht, ist der Würfel wieder in der vorherigen Position. Somit gilt also beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (also den leeren Zug) steht. Das gilt für alle Züge des Würfels:
 \\
@@ -539,7 +523,31 @@ Für \textit{einelementige} Züge $Z$ (also $U, D, F, B, L$ oder $R$) gilt auch 
 Man kann den Exponenten in diesem Fall also $modulo \ 4$ rechnen, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. \\
 Es gilt dann also: \\
 $\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$.
-\newpage
+
+Somit gilt für $n \mod 4 = 0$ dann $Z^n = Z^{n \mod 4} = Z^0 = N$.
+
+
+\item [Existenz eines inversen Elements $Z_1^{-1}$] \ \\
+$\forall \  Z_1 \in \Gtwo,\ \exists \  Z_1^{-1} \in \Gtwo.  \ \ Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$  
+
+
+Da $Z$ ein physisch ausführbarer Zug ist, kann man diesen auch rückgängig machen. Man muss die einzelnen Ebenenrotationen nur rückwärts und von hinten durchführen, um den Zug zu invertieren. Dann gilt $Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$.
+\end{description}
+Somit ist $(\Gtwo, \circ)$ eine Gruppe. \\ 
+\\
+$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das sieht grafisch dargestellt so aus: \\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.1]{RF.png}
+\includegraphics[scale=0.1]{FR.png}
+\caption[Würfel nach Zügen $FR$ und $RF$]{links: Würfel nach Zug $RF$, rechts: Würfel nach Zug $FR$, \\ ausgehend von Startkonfiguration}
+\end{figure} \ \\
+Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann egal und man müsste nur die Anzahl beachten. \\
+Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. \\
+\\
+\\
+
+
 
 
 
