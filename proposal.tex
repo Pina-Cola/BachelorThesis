@@ -992,7 +992,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 \end{tabular}
 \\
 \\
-Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, \epsilon\}$, wobei $\epsilon$ die \textit{leere} Rotation darstellt, also keine Rotation des Würfels. \\
+Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$, wobei $N$ die \textit{leere} Rotation darstellt, also keine Rotation des Würfels. \\
 \\ 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow F = Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. \\
 \\
@@ -1015,13 +1015,13 @@ Für die Reflexivität muss $Z \sim Z$ für alle $Z \in \Gtwo$ gelten.
 \begin{align*}
 Z_1 \sim Z_2 : & \Leftrightarrow  Z_1 = WZ_2
 \end{align*}
-Es wird $W$ als $\epsilon$ gewählt, so dass keine Rotation ausgeführt wird.
+Es wird $W$ als $N$ gewählt, so dass keine Rotation ausgeführt wird.
 \begin{align*}
 Z_1 \sim Z_2 : & \Leftrightarrow  Z_1 = WZ_2 \\
-\ & \Leftrightarrow Z_1=\epsilon Z_2 \\
+\ & \Leftrightarrow Z_1=N Z_2 \\
 \ & \Leftrightarrow Z_1 = Z_2
 \end{align*}
-Also gilt die Reflexivität für $\sim$, da für $Z_1 \sim Z_2$ mit $W=\epsilon$ immer $Z_1 = Z_2$ gilt.
+Also gilt die Reflexivität für $\sim$, da für $Z_1 \sim Z_2$ mit $W=N$ immer $Z_1 = Z_2$ gilt.
 
 \item Symmetrie: \\
 Für die Symmetrie muss gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.
@@ -1039,9 +1039,9 @@ Das sind die Rotationen mit den dazugehörigen Inversen: \\
 \centering
 \begin{tabular}{|l||c|c|c|c|c|c|c|}
 \hline
-Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $\epsilon$ \\
+Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $N$ \\
 \hline
-Inverses $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $\epsilon$ \\
+Inverses $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $N$ \\
 \hline
 \end{tabular} 
 \caption[Inverse der Rotationen]{Inverse der Rotationen}
@@ -1671,7 +1671,7 @@ Dann führt er den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2} und erh�
 Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die man in verschiedenen Situtionen anwenden kann. \\
 In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat also nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. \\
 \\
-Wenn man die Verdrehung des Würfels invertiert, also $(FUBRF^{-1})^{-1}$ erhält man $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
+Wenn man die Verdrehung des Würfels invertiert, also $(FUBRF^{-1})^{-1}$ erhält man die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 \\
 \\
 Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\
