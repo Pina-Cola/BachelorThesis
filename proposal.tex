@@ -197,6 +197,7 @@ Am Ende werden die validen Konfigurationen des Würfels behandelt und danach fin
 Diese Arbeit befasst sich mit dem \Ttwo Zauberwürfel und dessen Algorithmen zur Lösung. Dabei handelt es sich um ein Drehpuzzle, das ein mathematisches Problem darstellt.
  
 Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
+
 \begin{description}
 
 
@@ -208,7 +209,7 @@ Der Würfel ist in Abbildung \ref{3} links verdreht und rechts im gelösten Zust
 Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst.  
 
 Bei dem verdrehten Würfel sind die Steine des Würfels an anderen Positionen und anders ausgerichtet.
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2scrambled.png}
 \includegraphics[scale=0.1]{2x2solved.png}
@@ -218,8 +219,8 @@ Bei dem verdrehten Würfel sind die Steine des Würfels an anderen Positionen un
 
 
 \item[Eckstein und Farbfläche] \ \\
-Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links in abbildung \ref{4}), die jeweils drei Farbflächen (rechts in Abbildung \ref{4}) haben. Ein \Ttwo Zauberwürfel hat also 24 Farbflächen.
-\begin{figure}[H]
+Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links in abbildung \ref{4}), die jeweils drei Farbflächen (rechts in Abbildung \ref{4}) haben. Ein \Ttwo Zauberwürfel hat also 24 Farbflächen. Die verschiedenen Farbpaare, die jeweile gegenüberliegen, sind weiß und gelb, rot und orange, grün und blau.
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2stein.png}
 \includegraphics[scale=0.1]{2x2farbflaeche.png}
@@ -232,7 +233,7 @@ Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links in abbildung \ref{4}), d
 
 \item[Seite] \ \\
 Der \Ttwo und der \Tthree Würfel haben sechs Seiten (bestehend aus jeweils vier Farbflächen) und somit sechs Farben. \\
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2seite.png}
 \caption[Seite des Würfels]{Seite des Würfels}
@@ -242,7 +243,7 @@ Der \Ttwo und der \Tthree Würfel haben sechs Seiten (bestehend aus jeweils vier
 \item[\Tthree Würfel] \ \\
 Wesentlich bekannter als der \Ttwo \textit{Cube} ist der \Tthree \textit{Cube}. Er besteht aus 26 Steinen. In Abbildung \ref{5} sieht man ihn links ungelöst und rechts in der Startkonfiguration.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.11]{3x3_sc_so.png}
 \caption[ungelöster und gelöster \Tthree Würfel]{ungelöster und gelöster \Tthree Würfel}
@@ -252,7 +253,7 @@ Wesentlich bekannter als der \Ttwo \textit{Cube} ist der \Tthree \textit{Cube}. 
 
 \item[Eck- und Kantsteine] \ \\
 Im Gegensatz zum \Ttwo hat der \Tthree Würfel Kantsteine und Mittelsteine (s. Abbildung \ref{6}).
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.11]{mittelkant.png}
 \caption[Kant- und Mittelsteine]{Kant- und Mittelsteine}
@@ -321,10 +322,12 @@ $B$ & Drehung der hinteren Ebene im Uhrzeigersinn \\
 \caption[Ebenenrotationen]{Ebenenrotationen}
 \end{table}
 
-Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  \\
-\\
-Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  \\
-\\
+Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  
+
+
+Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  
+
+
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen.
 
 %
@@ -349,6 +352,12 @@ Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser A
 
 \newpage
 \section{Mathematische Grundlagen}
+
+In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind.
+
+Es wir die Definition einer Gruppe (auch anhand von Beispielen) erklärt. Außerdem wird die Zykelschreibweise eingeführt und erklärt.
+
+Die Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort kann man auch detailliertere Informationen, Beispiele und weitere Definitionen nachlesen.
 %
 %
 %
@@ -1107,7 +1116,6 @@ Daraus folgt: Wenn man einen beliebigen Zug $Z \in \Gtwo$ wiederholt auf den gel
 %
 %
 %
-\newpage
 
 
 \subsection*{Zykelstruktur}\addcontentsline{toc}{subsection}{\protect\numberline{}Zykelstruktur}
