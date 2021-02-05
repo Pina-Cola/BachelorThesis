@@ -1442,7 +1442,6 @@ Da die trivialen Untergruppen nicht sonderlich interessant sind, geht der folgen
 \item Die Untergruppe $H_{E1}$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann man auch gut an einem \textit{Cube} nachvollziehen, da man durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielen kann.
 \item Eine weitere Untergruppe von $\Gtwo$ ist $H_{E2}$. Hier dürfen zwei gegenüberliegende Ebenen gedreht werden. 
 
-
 Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und man nicht anhand der Mittelsteine oben und unten unterscheiden kann.
 \end{itemize}
 
@@ -1472,18 +1471,27 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 
 \section{Valide Konfigurationen des Würfels}
 
-Zuerst wird die Anzahl der theoretisch möglichen Würfelkonfigurationen berechnet: \\ 
-\\
-Die Ecksteine können sich in jeder Ecke befinden, also gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es also $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\ 
-\\
-Außerdem können die Ecksteine gedreht sein, also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt also $3^7$ Wege, wie die Ecksteine ausgerichtet sein können. \\
-\\
-Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24. \\
-Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.\\
-\\
-Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Wenn man nun die Rotation des Würfels berücksichtig kommt man auf $11 \, 022 \, 480$ theoretische Würfelkonfigurationen. \\
-Davon sind aber nicht alle Konfigurationen durch Ebenendrehungen erreichbar -- für einige braucht man einen Schraubendreher oder Superkleber. Diese Konfigurationen werden hier als ungültige Konfigurationen bezeichnet. \\
-\\
+Zuerst wird die Anzahl der theoretisch möglichen Würfelkonfigurationen berechnet:
+
+
+Die Ecksteine können sich in jeder Ecke befinden, also gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es also $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine.
+
+
+Außerdem können die Ecksteine gedreht sein, also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt also $3^7$ Wege, wie die Ecksteine ausgerichtet sein können.
+
+
+Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24. 
+
+
+Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.
+
+
+Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Wenn man nun die Rotation des Würfels berücksichtig kommt man auf $11 \, 022 \, 480$ theoretische Würfelkonfigurationen.
+
+
+Davon sind aber nicht alle Konfigurationen durch Ebenendrehungen erreichbar -- für einige braucht man einen Schraubendreher oder Superkleber. Diese Konfigurationen werden hier als ungültige Konfigurationen bezeichnet. 
+
+
 Es ist also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
 %
 %
@@ -1508,12 +1516,16 @@ Es ist also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
 %
 \subsection*{Ausrichtung der Steine (modulo 3)}\addcontentsline{toc}{subsection}{\protect\numberline{}Ausrichtung der Steine (modulo 3)}
 
-Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. \\
-\\
+Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. 
+
+
 In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration \begin{displaymath}
 \sum_{i= 1}^{8} \ x_i \mod 3 = 0 
-\end{displaymath}  (modulo) gilt. \\
-Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\sum_{i= 1}^{8} \ x_i' \mod 3 = \sum_{i= 1}^{8} \  x_i \mod 3 }$. \\
+\end{displaymath}  (modulo) gilt. 
+
+
+Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\sum_{i= 1}^{8} \ x_i' \mod 3 = \sum_{i= 1}^{8} \  x_i \mod 3 }$.
+
 In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: 
 
 \begin{table}[H]
@@ -1543,11 +1555,11 @@ In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das 
 
 \end{table}
 
-Für jede valide Würfelposition gilt also ${\sum_{i = 1}^{8} \ x_i' \mod 3 = \sum_{i = 1}^{8} \  x_i \mod 3 }$. \\
-\\
-Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. \\
-\\
-Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. \\ 
+Für jede valide Würfelposition gilt also ${\sum_{i = 1}^{8} \ x_i' \mod 3 = \sum_{i = 1}^{8} \  x_i \mod 3 }$. 
+
+Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. 
+
+Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. 
 %
 %
 %
@@ -1574,9 +1586,10 @@ Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so d
 
 \section{Lösung des Würfels}
 
-Die übliche, händische Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern den Würfel dann sehr spezifisch. \\
-Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. \\
-\\
+Die übliche, händische Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern den Würfel dann sehr spezifisch. 
+
+
+Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 %
 %
@@ -1602,8 +1615,11 @@ Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene unte
 \subsection*{Parität}\addcontentsline{toc}{subsection}{\protect\numberline{}Parität}
 
 Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
-\\
-Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. \\
+
+
+Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. 
+
+
 Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel definiert:
 \begin{align*}
 \sigma_U & =\ (ulf \ ulb \ urb \ urf) \\
@@ -1613,7 +1629,9 @@ Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel defin
 \sigma_L & =\ (ulb \ ulf \ dlf \ dlb) \\
 \sigma_R & =\ (urb \ drb \ drf \ urf) \\
 \end{align*}
-Jeder Zug ist also als ein $4$-Zykel definiert. Den $4$-Zykel kann man als Produkt aus drei $2$-Zykeln schreiben. \\
+Jeder Zug ist also als ein $4$-Zykel definiert. Den $4$-Zykel kann man als Produkt aus drei $2$-Zykeln schreiben. 
+
+
 Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z.B. $LF$) ist somit gerade.
 
 % to do prüfen! 
@@ -1641,26 +1659,41 @@ Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines
 %
 \subsection*{Kommutatoren}\addcontentsline{toc}{subsection}{\protect\numberline{}Kommutatoren}
 
-Der Kommutator von zwei Elementen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist definiert als $YZY^{-1}Z^{-1}$. Das schreibt man auch als $[Y,Z]$. \\
-\\
-Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe. \cite{TD} Man sagt dann, dass die beiden Elemente kommutieren. \\
-\\
-Obwohl $(\Gtwo, \circ)$ keine kommutative Gruppe ist, gibt es kommutierende Elemente. \\
-\\
-Wenn $Y = Z$ mit $Y, Z \in \Gtwo$ gilt, kommutieren $Y$ und $Z$ beispielsweise. \\
-Zur Veranschaulichung des Beweises wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1}$. \\ 
-Geklammert sieht das so aus: $Z(ZZ^{-1})Z^{-1}$. $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. \\
-Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. \\
+Der Kommutator von zwei Elementen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist definiert als $YZY^{-1}Z^{-1}$. Das schreibt man auch als $[Y,Z]$. 
+
+
+Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe. \cite{TD} Man sagt dann, dass die beiden Elemente kommutieren. 
+
+
+Obwohl $(\Gtwo, \circ)$ keine kommutative Gruppe ist, gibt es kommutierende Elemente. 
+
+
+Wenn $Y = Z$ mit $Y, Z \in \Gtwo$ gilt, kommutieren $Y$ und $Z$ beispielsweise. 
+
+
+Zur Veranschaulichung des Beweises wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1}$. 
+
+
+Geklammert sieht das so aus: $Z(ZZ^{-1})Z^{-1}$. $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. 
+
+Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. 
+
+
 Somit kommutieren alle $Y, Z \in \Gtwo$ mit $X=Y$.
 \\
 \\
-Es kommutieren auch Züge, die nur gegenüberliegende Ebenen beeinflussen und somit nicht dieselben Steine bewegen. \\
-Das sind dann die Kommutatoren der Form $[U^n, D^n]$, $[F^n, B^n]$ und $[L^n, R^n]$ mit $n \in \mathbb{N}_0$. \\
+Es kommutieren auch Züge, die nur gegenüberliegende Ebenen beeinflussen und somit nicht dieselben Steine bewegen. 
+
+Das sind dann die Kommutatoren der Form $[U^n, D^n]$, $[F^n, B^n]$ und $[L^n, R^n]$ mit $n \in \mathbb{N}_0$. 
+
 Da die beiden Züge nicht dieselben Steine beeinflussen, ist es nicht relevant, dass die Gruppe nicht kommutativ ist und durch $YZY^{-1}Z^{-1}$ werden beide Züge wieder invertiert. \\
 \\
-\\
-Auch wenn zwei Züge $Y, Z \in \Gtwo$ nicht kommutieren, kann anhand der Komplexität des Kommutators festgestellt werden, wie groß die Veränderung der Würfelkonfiguration nach $[Y, Z]$ ist. \\
-Als Beispiel zur Veranschaulichung: Die Züge $Y=L$ und $Z=F$ verändern durch $[Y, Z]$ vier Steine im Würfel. Die anderen vier behalten ihre Position und Ausrichtung. \\
+Auch wenn zwei Züge $Y, Z \in \Gtwo$ nicht kommutieren, kann anhand der Komplexität des Kommutators festgestellt werden, wie groß die Veränderung der Würfelkonfiguration nach $[Y, Z]$ ist. 
+
+
+Als Beispiel zur Veranschaulichung: Die Züge $Y=L$ und $Z=F$ verändern durch $[Y, Z]$ vier Steine im Würfel. Die anderen vier behalten ihre Position und Ausrichtung. 
+
+
 Es wird also $LFL^{-1}F^{-1}$ ausgeführt. Das führt zu folgenden Permutationen:
 
 \begin{table}[H]
