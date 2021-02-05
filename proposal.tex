@@ -110,21 +110,12 @@
 
 \setcounter{page}{1} 
 %
-%
-%
-%
-%
-%
+
 %
 %
 %
 %
 %=======================================================================================================
-%
-%
-%
-%
-%
 %
 %
 %
@@ -135,19 +126,7 @@
 %
 %
 %
-%
-%
-%
-%
-%
-%
 %=======================================================================================================
-%
-%
-%
-%
-%
-%
 %
 %
 %
@@ -167,10 +146,26 @@ Die Berechnung der \textit{God's Number} des \Tthree Cubes ist wesentlich anspru
 
 Der \Tthree Würfel wurde schon mehrfach als Gruppe dargestellt, während der \Ttwo Würfel
 noch nicht umfangreich als Gruppe untersucht wurde.
+
 %
 %
 %
 %
+%=======================================================================================================
+%
+%
+%
+%
+\subsection*{Ausblick} \addcontentsline{toc}{subsection}{\protect\numberline{}Ausblick}
+
+Im Folgenden wird zuerst der Aufbau des \Ttwo \textit{Cubes} beschrieben und danach werden die mathematischen Grundlagen der Gruppentheorie erklärt, auf denen diese Arbeit aufbaut.
+
+In Kapitel \ref{8} wird die Gruppe des \Ttwo Würfels definiert und bewiesen.
+
+Darauf folgt dann eine Beschreibung der Würfelkonfiguration und der Untergruppen des \textit{Cubes}.
+
+Am Ende werden die validen Konfigurationen des Würfels behandelt und danach findet sich ein Kapitel über die Lösungsalgorithmen.
+
 %
 %
 %
@@ -184,6 +179,15 @@ noch nicht umfangreich als Gruppe untersucht wurde.
 %
 %
 %
+\newpage
+\section{Der \Ttwo Würfel}
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
 %
 %
 %
@@ -267,46 +271,7 @@ Es wird sich dabei vorallem den Papern \textit{Group Theory an the Rubik's Cube}
 
 \end{description}
 
-%Terminologie:
-%\begin{figure}[h]
-%\centering
-%\includegraphics[scale=0.1]{2x2scrambled.png}
-%\includegraphics[scale=0.1]{2x2solved.png}
-%\caption[ungelöster und gelöster \Ttwo Würfel]{\Ttwo Zauberwürfel \\ (links in ungelöstem und rechts in gelöstem Zustand (Startkonfiguration)) \\
-%Der Zauberwürfel wird hier auch Würfel oder Cube genannt.}
-%\end{figure}
-%\ \\
-%Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst. \\
 
-%\begin{figure}[h]
-%\centering
-%\includegraphics[scale=0.1]{2x2stein.png}
-%\includegraphics[scale=0.1]{2x2farbflaeche.png}
-%\caption[Eckstein und Farbfläche des Würfels]{Ein \Ttwo Würfel besteht aus acht (Eck-)Steinen (links), die jeweils drei Farbflächen (rechts) haben. Ein \Ttwo Zauberwürfel hat also 24 Farbflächen.}
-%\end{figure} 
-
-
-%\begin{figure}[H]
-%\centering
-%\includegraphics[scale=0.1]{2x2seite.png}
-%\caption[Seite des Würfels]{Der \Ttwo und der \Tthree Zauberwürfel haben jeweils 6 Seiten.}
-%\end{figure}
-
-
-
-
-
-
-%$\ $\\
-%Im Gegensatz zum \Tthree Würfel hat der \Ttwo Würfel weder Mittelsteine, noch Kantsteine. \\
-%Das besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei der Rotation der Seiten (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. \\
-%Beim \Ttwo \textit{Cube} muss auch noch geprüft werden, ob die aktuelle Konfiguration nicht einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird. \\
-%Die Rotation des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann. \\
-%\\
-
-%
-%
-%
 %
 %
 %
@@ -321,11 +286,7 @@ Es wird sich dabei vorallem den Papern \textit{Group Theory an the Rubik's Cube}
 %
 %
 %
-%
-%
-%
-%
-\newpage
+
 
 \subsection*{Grundzüge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Grundzüge des Würfels}
 Am \Ttwo Zauberwürfel gibt es sechs verschiedene Drehseiten: oben, unten, links, rechts, vorne und hinten. 
@@ -366,9 +327,6 @@ Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene 
 \\
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen.
 
-
-%
-%
 %
 %
 %
@@ -387,11 +345,17 @@ Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser A
 %
 %
 %
-%
+
 
 \newpage
-\section{Würfel als Gruppe}
-
+\section{Mathematische Grundlagen}
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
 \subsection*{Definition einer Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Definition einer Gruppe}
 
 
@@ -406,10 +370,6 @@ Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\foo
 \begin{itemize}
 \item $\forall a,b \in G.(a \circ b) = (b \circ a) $
 \end{itemize}
-
-%
-%
-%
 %
 %
 %
@@ -418,11 +378,6 @@ Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\foo
 %
 %
 %=======================================================================================================
-%
-%
-%
-%
-%
 %
 %
 %
@@ -451,6 +406,17 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 %
 %
 %
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+\newpage
+\section{Würfel als Gruppe}
+
 %
 %
 %
@@ -462,12 +428,9 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 %
 %
 %
-%
-%
-%
-%
-\subsection*{\Ttwo Zauberwüfel als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}\Ttwo Zauberwüfel als Gruppe}
 
+\subsection*{\Ttwo Zauberwüfel als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}\Ttwo Zauberwüfel als Gruppe}
+\label{8}
 
 Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus dem Paper \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des 2x2x2-Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. \\
 \\ 
@@ -584,6 +547,8 @@ Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1
 %
 %
 %
+\newpage
+
 \section{Konfiguration des Würfels}
 Um mit dem Würfel zu arbeiten, muss man wissen, in welcher Position er sich befindet.
 
