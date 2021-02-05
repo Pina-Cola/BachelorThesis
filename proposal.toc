@@ -41,24 +41,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{23}%
+\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{25}%
+\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{26}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{26}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{28}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{28}%
+\contentsline {subsection}{\numberline {}Parität}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{28}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{29}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{30}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{34}%
+\contentsline {section}{Abbildungsverzeichnis}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{35}%
+\contentsline {section}{Tabellenverzeichnis}{33}%
