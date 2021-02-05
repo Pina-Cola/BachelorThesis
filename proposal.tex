@@ -656,9 +656,10 @@ Dafür wird die Konfiguration des Würfels definiert, sie setzt sich aus zwei Pa
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x$)
 \end{itemize}
-Also kann die Konfiguration des Würfels als ein 2-Tupel geschrieben werden: $(\sigma, x)$. \\
-\\
-Der Würfel kann aber auch komplett gedreht werden, ohne Züge auszuführen.
+Also kann die Konfiguration des Würfels als ein 2-Tupel geschrieben werden: $(\sigma, x)$.
+
+
+In diesem Kapitel wird die Position derEcksteine als $\sigma$ und die Ausrichtung der Ecktsteine als Vaktor $x$ erklärt. 
 
 %
 %
@@ -683,54 +684,59 @@ Der Würfel kann aber auch komplett gedreht werden, ohne Züge auszuführen.
 %
 \subsection*{Positionen der Steine im Würfel} \addcontentsline{toc}{subsection}{\protect\numberline{}Positionen der Steine im Würfel}
 
-Die bijektive Funktion $\sigma$ (für jede Ebenenrotation) stellt Übergänge der Würfelsteine als Funktion dar. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. \\
-\\
-Die Würfelpositionen sind wie folgt eingeteilt: \\
-\begin{figure}[H]
+Die bijektive Funktion $\sigma$ (für jede Ebenenrotation) stellt Übergänge der Würfelsteine als Funktion dar. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Kapitel \ref{11} erklärt. 
+
+Die Einteilung der Würfelpositionen sieht man in den Abbildung \ref{13} und \ref{14}. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die \textit{up, down, left, right, front und back} beschreiben.
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{caged_positions.png} \\
-\caption[Namen der Steinpositionen im Würfel]{Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die \textit{up, down, left, right, front und back} beschreiben.}
+\caption[Namen der Steinpositionen im Würfel]{Namen der Steinpositionen im Würfel}
+\label{13}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{foldedout_cage.png}
 \includegraphics[scale=0.15]{foldedout_cage_color.png}
 \caption[aufgeklappter Würfel mit Namen der Steinpositionen]{aufgeklappter Würfel mit Namen der Steinpositionen}
+\label{14}
 \end{figure}
-\ \\
-\\
+
 Jeder Steinposition wird ein einzigartiger Name zugeordnet, um sich darauf zu beziehen. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinposition werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, l, r, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, left, right, front, back}. \\
 Somit heißt die Steinposition oben links beispielsweise \textit{ulf} (für \textit{up}, \textit{left} und \textit{front}). 
-\\
-\\
-Jeder Stein bekommt auch einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
-\\ 
-\\
-Nun wird die Permutation $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn definiert. Grundlagen zu Permutationen und der Zykelschreibeweise wurden in Kapitel \ref{11} erklärt.
 
-Hier wird $\sigma_U$ ausführlich beschrieben und verschiedene Schreibweisen angegeben. Die weiteren Drehungen sind analog definiert. \\
+
+Jeder Stein bekommt auch einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
 \\
-Die Drehung der oberen Ebene sieht grafisch dargestellt so aus: \\
-\begin{figure}[H]
+Nun wird zur Veranschaulichung die Permutation $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn definiert. Grundlagen zu Permutationen und der Zykelschreibeweise wurden in Kapitel \ref{11} erklärt.
+
+Hier wird $\sigma_U$ ausführlich beschrieben und verschiedene Schreibweisen angegeben. Die weiteren Drehungen sind analog definiert. 
+
+Die Drehung der oberen Ebene sieht man grafisch dargestellt in Abbildung \ref{15}.
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.13]{caged_spin.png}
 \includegraphics[scale=0.13]{foldedout_spin.png}
 \caption[Steinpositionen nach Zug $U$]{Steinpositionen nach Zug $U$}
+\label{15}
 \end{figure}
-\ \\
+
+{Die Funktion $\sigma_U$ sieht dann so aus: \\
+
 $\sigma_U(ulf)=ulb$ \ \ \ \ \ \ \ \ $\sigma_U(ulb)=urb$ \ \ \ \ \ \ \ \ $\sigma_U(urb)=urf$ \ \ \ \ \ \ \ \ $\sigma_U(urf)=ulf$ \\
-$\sigma_U(dlf)=dlf$ \ \ \ \ \ \ \ \ $\sigma_U(dlb)=dlb$ \ \ \ \ \ \ \ \ \ $\sigma_U(drb)=drb$ \ \ \ \ \ \ \ \ $\sigma_U(drf)=drf$ \\
+$\sigma_U(dlf)=dlf$ \ \ \ \ \ \ \ \ $\sigma_U(dlb)=dlb$ \ \ \ \ \ \ \ \ \ $\sigma_U(drb)=drb$ \ \ \ \ \ \ \ \ $\sigma_U(drf)=drf$} 
 \\
+
 Das kann man auch in der Form $i \mapsto j$ schreiben: \\
 \\
 $ulf \mapsto ulb$ \ \ \ \ \ \ \ \ $ulb \mapsto urb$ \ \ \ \ \ \ \ \ $urb \mapsto urf$ \ \ \ \ \ \ \ \ $urf \mapsto ulf$ \\
 $dlf \mapsto dlf$ \ \ \ \ \ \ \ \ $dlb \mapsto dlb$ \ \ \ \ \ \ \ \ \ $drb \mapsto drb$ \ \ \ \ \ \ \ \ $drf \mapsto drf$ \\
 \\
 Daraus entstehen folgende Zykel: $\sigma_U = \ (ulf \ ulb \ urb \ urf)\ (dlf)\ (dlb)\ (drb)\ (drf)$ \\ \\
-Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt sich $\sigma_U = \ (ulf \ ulb \ urb \ urf)$, was den Zykel beschreibt, in dem die Steine rotiert werden, wenn die obere Ebene gedreht wird. \\
-\\
-Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden: \\
+Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt sich $\sigma_U = \ (ulf \ ulb \ urb \ urf)$, was den Zykel beschreibt, in dem die Steine rotiert werden, wenn die obere Ebene gedreht wird. 
+
+
+Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden: 
 \begin{align*}
 \sigma_U & =\ (ulf \ ulb \ urb \ urf) \\
 \sigma_D & =\ (dlf \ drf \ drb \ dlb) \\
