@@ -1343,8 +1343,10 @@ F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor
 
 Die grauen Positionen bleiben bei dem jeweiligen Zug unverändert. \\
 
-Grafisch dargestellt sieht man die Zykel des Zuges $LLFF$ in Abbildung \ref{17}: \\
-\begin{figure}[H]
+Grafisch dargestellt sieht man die Zykel des Zuges $LLFF$ in Abbildung \ref{17}. 
+
+
+\begin{figure}[h]
 \includegraphics[scale=0.3]{zykel_LLFF.png}
 \caption[Zykel des Zuges $LLFF$]{Zykel des Zuges $LLFF$}
 \label{17}
@@ -1766,11 +1768,13 @@ Dafür dreht man den Würfel üblicherweise, damit die gelbe Seite oben ist. \\
 \\
 Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
 
-\begin{figure}[H]
+In Abbildung \ref{25} sieht man, wie der Würfel bei der Ausgangsposition (links) durch den Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ verändert wird. Die Steine der oberen Ebene werden dabei ausgerichtet.
+
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.12]{isiakanm.png}
-\caption[Würfelposition für Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ (links) und danach (rechts)]{Bei der Ausgangsposition (links) wird durch den Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ die obere Seite komplett gelb (rechts).}
-
+\caption{Ausrichtung der zweiten Ebene (Beispiel)}
+\label{25}
 \end{figure}
 
 Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreiben: $(ulb \ ulf \ urb)$. 
@@ -1797,11 +1801,13 @@ Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreib
 %
 \subsection*{Lösung des Würfels anhand eines Beispiels}\addcontentsline{toc}{subsection}{\protect\numberline{}Lösung des Würfels anhand eines Beispiels}
 
-In diesem Beispiel (Abbildung \ref{18}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde. \\ \\
+In diesem Beispiel (Abbildung \ref{18}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde.
+In der Abbildung wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert.
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.12]{LURFL1.png}
-\caption[Cube nach Zug $FUBRF^{-1}$]{Der Würfel sieht nach $FUBRF^{-1}$ so aus. Er wurde bei dieser Ansicht noch um $180^\circ$ um die $z$-Achse rotiert.}
+\caption{\textit{Cube} nach Zug $FUBRF^{-1}$ }
 \label{18}
 \end{figure}
 
