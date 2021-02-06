@@ -108,7 +108,7 @@
 
 \newpage
 
-\setcounter{page}{1} 
+\setcounter{page}{3} 
 %
 
 %
@@ -294,8 +294,7 @@ Es wird sich dabei vorallem den Papern \textit{Group Theory an the Rubik's Cube}
 Am \Ttwo Zauberwürfel gibt es sechs verschiedene Drehseiten (auch Ebenen): oben, unten, links, rechts, vorne und hinten. 
 
 In Abbildung \ref{24} ist die obere Ebene markiert.
-%Da der Würfel aber nur aus zwei Ebenen besteht, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. \\
-%Obwohl ich aber davon ausgehe, den kompletten Würfel beliebig zu rotieren, definiere ich die Drehungen der Ebenen für jede Ebene, damit die Algorithmen anschaulicher sind. Sonst entspräche ja eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels im Uhrzeigersinn. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. \\
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{ebene.png}
@@ -332,7 +331,12 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.
 Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  
 
 
-Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen.
+Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
+
+Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
+
+Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen.
+
 
 %
 %
@@ -616,7 +620,7 @@ Da $Z$ ein physisch ausführbarer Zug ist, kann man diesen auch rückgängig mac
 \end{description}
 Somit ist $(\Gtwo, \circ)$ eine Gruppe. \\ 
 \\
-$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das sieht man grafisch dargestellt in Abbildung \ref{12}.
+$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das sieht man grafisch dargestellt in Abbildung \ref{12} oder wenn man es einfach händisch an einem Würfel ausprobiert.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{RF.png}
@@ -1102,8 +1106,9 @@ Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow F = Z_rL$, da eine Dr
 In Abbildung \ref{1} sieht man dieses Beispiel nochmal grafisch: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. \\
 Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
 \begin{figure}[h]
+\centering
 \includegraphics[scale=0.15]{3_wuerfel.png}
-\caption[Würfel gelöst, nach Zug $F$ und nach $Z_rL$]{Würfel gelöst, nach Zug $F$ und nach $Z_rL$}
+\caption[Würfel gelöst, nach Zug $F$ und nach $Z_rL$]{Würfel gelöst (links), nach Zug $F$ (mitte) und nach $Z_rL$(rechts)}
 \label{1}
 \end{figure}
 

@@ -1,64 +1,64 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{1}%
+\contentsline {section}{\numberline {1}Einleitung}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Motivation}{1}%
+\contentsline {subsection}{\numberline {}Motivation}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausblick}{1}%
+\contentsline {subsection}{\numberline {}Ausblick}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Der 2$\times $2$\times $2-Würfel}{2}%
+\contentsline {section}{\numberline {2}Der 2$\times $2$\times $2-Würfel}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Terminologie}{2}%
+\contentsline {subsection}{\numberline {}Terminologie}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Grundzüge des Würfels}{4}%
+\contentsline {subsection}{\numberline {}Grundzüge des Würfels}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Mathematische Grundlagen}{6}%
+\contentsline {section}{\numberline {3}Mathematische Grundlagen}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Definition einer Gruppe}{6}%
+\contentsline {subsection}{\numberline {}Definition einer Gruppe}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Beispielgruppen}{6}%
+\contentsline {subsection}{\numberline {}Beispielgruppen}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{7}%
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Würfel als Gruppe}{9}%
+\contentsline {section}{\numberline {4}Würfel als Gruppe}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}2$\times $2$\times $2-Zauberwüfel als Gruppe}{9}%
+\contentsline {subsection}{\numberline {}2$\times $2$\times $2-Zauberwüfel als Gruppe}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Konfiguration des Würfels}{12}%
+\contentsline {section}{\numberline {5}Konfiguration des Würfels}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Positionen der Steine im Würfel}{12}%
+\contentsline {subsection}{\numberline {}Positionen der Steine im Würfel}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{14}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{15}%
+\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Rotation des Würfels}{16}%
+\contentsline {subsection}{\numberline {}Rotation des Würfels}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{18}%
+\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Züge}{20}%
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zykelstruktur}{21}%
+\contentsline {subsection}{\numberline {}Zykelstruktur}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{23}%
+\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{24}%
+\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{25}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{25}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{27}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{27}%
+\contentsline {subsection}{\numberline {}Parität}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{27}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{28}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{29}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{33}%
+\contentsline {section}{Abbildungsverzeichnis}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{34}%
+\contentsline {section}{Tabellenverzeichnis}{36}%
