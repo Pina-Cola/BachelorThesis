@@ -184,7 +184,7 @@ Am Ende werden die validen Konfigurationen des Würfels behandelt und danach fin
 
 In diesem Kapitel werden die Grundlagen des \Ttwo \textit{Cubes} erklärt. Zuerst wird der Aufbau und die Terminologie des Würfels erläutert. Dann wird kurz auf die Unterschiede zwischen dem \Ttwo und dem \Tthree Würfel eingegangen.
 
-Außerdem werden die Grundzüge des Würfels definiert und erklärt. Darauf basieren alle späteren Algorithmen.
+Außerdem werden die Grundzüge des Würfels definiert und erklärt. Darauf basieren alle späteren Algorithmen. 
 
 
 %
@@ -369,7 +369,7 @@ Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn 
 
 In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind.
 
-Es wir die Definition einer Gruppe (auch anhand von Beispielen) erklärt. Außerdem wird die Zykelschreibweise eingeführt und erklärt.
+Es wir die Definition einer Gruppe (auch anhand von Beispielen) und die der Untergruppen erklärt. Außerdem wird die Zykelschreibweise eingeführt und erklärt.
 
 Die Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort kann man auch detailliertere Informationen, Beispiele und weitere Definitionen nachlesen.
 %
@@ -423,7 +423,31 @@ Es ist aber zu beachten, dass es sich hierbei nicht um formelle Beweise, sondern
 \\
 Nun kann man $(\mathbb{Z},+)$ noch auf die Kommutativität untersuchen, um zu prüfen, ob es sich um eine abelsche Gruppe handelt. \\
 Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abelsche Gruppe.
+
 %
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+\subsection*{Untergruppen} \addcontentsline{toc}{subsection}{\protect\numberline{}Untergruppen}
+Eine Gruppe $(H, \circ)$, ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. 
+
+
+
+Dann schreibt man auch $H \leqslant G$. 
+
+
+
+Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. 
+
+
+Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
 %
 %
 %
@@ -1438,16 +1462,33 @@ Somit ist die angepasste Schreibweise für den Zug $U$ dann $(ulb \ urb \ urf \ 
 
 \section{Untergruppen von G$_{2\times 2\times 2}$}
 
+Dieses Kapitel behandelt die Untergruppen von $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen. Außerdem werden noch zwei weitere Untergruppen beschrieben.
 
-Eine Gruppe $(H, \circ)$, ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. 
+Die Definition und Erklärung der Untergruppe findet sich in Kapitel \ref{11}.
 
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection*{Untergruppen Beispiele}\addcontentsline{toc}{subsection}{\protect\numberline{}Untergruppen Beispiele}
 
-
-Dann schreibt man auch $H \leqslant G$. 
-
-
-
-Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. 
 
 
 Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G=\Gtwo$). Also sind $H_N$ und $H_G$ die trivialen Untergruppen von $\Gtwo$. ($H_N \leqslant \Gtwo$ und $H_G \leqslant \Gtwo$)\\

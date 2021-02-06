@@ -19,6 +19,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Beispielgruppen}{8}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Untergruppen}{9}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{11}%
@@ -44,6 +46,8 @@
 \contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{25}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Untergruppen Beispiele}{26}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{27}%
 \defcounter {refsection}{0}\relax 
