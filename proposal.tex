@@ -1166,12 +1166,11 @@ Das sind die Rotationen mit den dazugehörigen Inversen: \\
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l||c|c|c|c|c|c|c|}
-\hline
+\begin{tabular}{lccccccc}
 Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $N$ \\
 \hline
-Inverses $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $N$ \\
-\hline
+Inverses \hspace*{0.1em} $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $N$ \\
+
 \end{tabular} 
 \caption[Inverse der Rotationen]{Inverse der Rotationen}
 \end{table}
@@ -1290,19 +1289,17 @@ Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|c||c|c|c|c|}
-\hline
+\begin{tabular}{ccccc}
 Ausführung & ulf & ulb & urb & urf \\
 \hline
-\hline
 1 & ulb & urb & urf & ulf \\
-\hline
+
 2 & urb & urf & ulf & ulb \\
-\hline
+
 3 & urf & ulf & ulb & urb \\
-\hline
+
 4 & ulf & ulb & urb & urf \\
-\hline
+
 
 \end{tabular}
 \caption[Permutationen des Zuges $U$]{Permutationen des Zuges $U$}
@@ -1343,19 +1340,19 @@ Zuerst wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbi
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+\begin{tabular}{ccccccccc}
+
+\qquad \qquad & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
 \hline
- & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
-\hline
-\hline
+
 L & ulf & \textcolor{gray}{urb} & dlf & \textcolor{gray}{urf} & ulb & \textcolor{gray}{drb} & dlb & \textcolor{gray}{drf} \\
-\hline
+
 L & dlf & \textcolor{gray}{urb} & dlb & \textcolor{gray}{urf} & ulf & \textcolor{gray}{drb} & ulb & \textcolor{gray}{drf} \\
-\hline
+
 F & ulf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & drf & urf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & dlf \\
-\hline
+
 F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & ulf \\
-\hline
+
 
 \end{tabular}
 \caption[Permutationen des Zuges $LLFF$]{Permutationen des Zuges $LLFF$}
@@ -1416,12 +1413,10 @@ Um das zu vereinfachen, werden die Würfelpositionen priorisiert, so dass die Po
 Die Positionen werden wie folgt priorisiert:
 \begin{table}[H]
 \centering
-\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
-\hline
+\begin{tabular}{ccccccccc}
 Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
 \hline
 Position  & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
-\hline
 \end{tabular}
 \caption[Priorität der Positionen (für Zykelschreibweise)]{Priorität der Positionen (für Zykelschreibweise)}
 \end{table}
@@ -1582,23 +1577,21 @@ In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das 
 \begin{table}[H]
 
 \begin{small}
-\begin{tabular}{|c|l|l|c|c|}
-\hline
+\begin{tabular}{cllcc}
 {\footnotesize Zug $M$} & $x$ & $x'$ & {\footnotesize $\sum_{i= 1}^{8} x_i'$} & {\footnotesize $\sum_{i= 1}^{8}x_i'\mod 3$} \\
 \hline
-\hline
 \textit{D} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7)$ & 0 & 0 \\
-\hline
+
 \textit{U} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_3, x_1, x_4, x_2, x_5, x_6, x_7, x_8)$ & 0 & 0 \\
-\hline
+
 \textit{R} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, 2, x_3, 1, x_5, 1, x_7, 2)$ & 6 & 0 \\
-\hline
+
 \textit{L} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(1, x_2, 2, x_4, 2, x_6, 1, x_8)$ & 6 & 0 \\
-\hline
+
 \textit{F} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, 1, 2, x_5, x_6, 2, 1)$ & 6 & 0 \\
-\hline
+
 \textit{B} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(2, 1, x_3, x_4, 1, 2, x_7, x_8)$ & 6 & 0 \\
-\hline
+
 
 \end{tabular}
 \end{small}
