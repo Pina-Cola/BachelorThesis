@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  6 FEB 2021 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  6 FEB 2021 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1320,13 +1320,18 @@ gliche W[]urfelkonfigurationen
  []
 
 [26]
-Overfull \hbox (10.7496pt too wide) in paragraph at lines 1494--1495
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1486
+
+ []
+
+
+Overfull \hbox (10.7496pt too wide) in paragraph at lines 1497--1498
 []\OT1/cmr/m/n/12 Da es kei-ne Mit-tel-stei-ne im W[]urfel gibt, re-du-ziert di
 e Ro-ta-ti-on des W[]urfels die M[]oglichkeiten
  []
 
 
-Overfull \hbox (28.10432pt too wide) in paragraph at lines 1538--1539
+Overfull \hbox (28.10432pt too wide) in paragraph at lines 1541--1542
 []\OT1/cmr/m/n/12 Wenn $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/1
 2 ^^[[]; x[]\OT1/cmr/m/n/12 )$ ei-ne Nach-fol-ge-kon-fi-gu-ra-ti-on von $\OML/c
 mm/m/it/12 C \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 ^^[; x\OT1/cmr/m/n/12 )$ ist, 
@@ -1334,50 +1339,50 @@ dann gilt $[]$.
  []
 
 
-Overfull \hbox (29.99298pt too wide) in paragraph at lines 1538--1539
+Overfull \hbox (29.99298pt too wide) in paragraph at lines 1541--1542
 \OT1/cmr/m/n/12 Da-bei ist $\OML/cmm/m/it/12 M$ \OT1/cmr/m/n/12 ei-ne der Z[]ug
 e aus $\OML/cmm/m/it/12 U; D; R; L; F; B$\OT1/cmr/m/n/12 . Es gilt dann $[]$. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1545--1565
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1568
 
  []
 
 [27] [28]
-Overfull \hbox (19.6102pt too wide) in paragraph at lines 1673--1674
+Overfull \hbox (19.6102pt too wide) in paragraph at lines 1676--1677
 \OT1/cmr/m/n/12 Der Kom-mu-ta-tor von zwei Ele-men-ten $\OML/cmm/m/it/12 Y; Z$ 
 \OT1/cmr/m/n/12 der Grup-pe $(\OML/cmm/m/it/12 G[]; \OMS/cmsy/m/n/12 ^^N\OT1/cm
 r/m/n/12 )$ ist de-fi-niert als $\OML/cmm/m/it/12 YZY[]Z[]$\OT1/cmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1693--1697
+Underfull \hbox (badness 10000) in paragraph at lines 1696--1700
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1700--1703
+Underfull \hbox (badness 10000) in paragraph at lines 1703--1706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1729--1735
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1738
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1729--1735
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1738
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1758--1762
+Underfull \hbox (badness 10000) in paragraph at lines 1761--1765
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1770
+Underfull \hbox (badness 10000) in paragraph at lines 1770--1773
 
  []
 
@@ -1385,15 +1390,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1767--1770
 <isiakanm.png, id=173, 2688.0425pt x 1140.26pt>
 File: isiakanm.png Graphic file (type png)
 <use isiakanm.png>
-Package pdftex.def Info: isiakanm.png  used on input line 1775.
+Package pdftex.def Info: isiakanm.png  used on input line 1778.
 (pdftex.def)             Requested size: 322.55118pt x 136.82529pt.
 <LURFL1.png, id=174, 1003.75pt x 1140.26pt>
 File: LURFL1.png Graphic file (type png)
 <use LURFL1.png>
-Package pdftex.def Info: LURFL1.png  used on input line 1809.
+Package pdftex.def Info: LURFL1.png  used on input line 1812.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1817--1820
+Underfull \hbox (badness 10000) in paragraph at lines 1820--1823
 
  []
 
@@ -1401,44 +1406,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 1817--1820
 <0201.png, id=181, 1003.75pt x 1140.26pt>
 File: 0201.png Graphic file (type png)
 <use 0201.png>
-Package pdftex.def Info: 0201.png  used on input line 1827.
+Package pdftex.def Info: 0201.png  used on input line 1830.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
 <menschSchritt2.png, id=182, 1003.75pt x 1140.26pt>
 File: menschSchritt2.png Graphic file (type png)
 <use menschSchritt2.png>
-Package pdftex.def Info: menschSchritt2.png  used on input line 1836.
+Package pdftex.def Info: menschSchritt2.png  used on input line 1839.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
 <menschSchritt3.png, id=183, 1003.75pt x 1140.26pt>
 File: menschSchritt3.png Graphic file (type png)
 <use menschSchritt3.png>
-Package pdftex.def Info: menschSchritt3.png  used on input line 1845.
+Package pdftex.def Info: menschSchritt3.png  used on input line 1850.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
- [32 <./0201.png> <./menschSchritt2.png> <./menschSchritt3.png>]
-<menschSchritt4.png, id=190, 1003.75pt x 1140.26pt>
+ [32 <./0201.png> <./menschSchritt2.png>]
+<menschSchritt4.png, id=189, 1003.75pt x 1140.26pt>
 File: menschSchritt4.png Graphic file (type png)
 <use menschSchritt4.png>
-Package pdftex.def Info: menschSchritt4.png  used on input line 1857.
+Package pdftex.def Info: menschSchritt4.png  used on input line 1860.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
-<menschSchritt5.png, id=191, 1003.75pt x 1140.26pt>
+<menschSchritt5.png, id=190, 1003.75pt x 1140.26pt>
 File: menschSchritt5.png Graphic file (type png)
 <use menschSchritt5.png>
-Package pdftex.def Info: menschSchritt5.png  used on input line 1866.
+Package pdftex.def Info: menschSchritt5.png  used on input line 1869.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1875--1880
+[33 <./menschSchritt3.png> <./menschSchritt4.png> <./menschSchritt5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1878--1883
 
  []
 
-[33 <./menschSchritt4.png> <./menschSchritt5.png>] (./proposal.lof)
+[34] (./proposal.lof)
 \tf@lof=\write6
 \openout6 = `proposal.lof'.
 
- [34]
-(./proposal.lot)
+ [35] (./proposal.lot)
 \tf@lot=\write7
 \openout7 = `proposal.lot'.
 
- [35] [36] (./proposal.aux)
+ [36] [37] (./proposal.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1474,10 +1479,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (36 pages, 2098813 bytes).
+Output written on proposal.pdf (37 pages, 2099739 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
+ 281 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
