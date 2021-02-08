@@ -210,5 +210,28 @@
     }
     \field{year}{2008}
   \endentry
+
+  \entry{AT}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=TA}{%
+         family={Tripi},
+         familyi={T\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TA1}
+    \strng{fullhash}{TA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Cayley Graphs of Groups and Their Applications}
+    \list{institution}{1}{%
+      {Missouri State University}%
+    }
+    \field{type}{mathesis}
+    \field{year}{2017}
+  \endentry
 \enddatalist
 \endinput
