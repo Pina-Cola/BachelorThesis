@@ -53,6 +53,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Erzeuger}{27}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{28}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{29}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{29}%
