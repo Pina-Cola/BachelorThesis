@@ -452,7 +452,7 @@ Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${
 %
 %
 
-\subsection*{Erzeuger} \addcontentsline{toc}{subsection}{\protect\numberline{}Erzeuger}
+\subsection*{Erzeuger und zyklische Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Erzeuger und zyklische Gruppe}
 
 Sei $M \subseteq G$ eine nicht leere Teilmenge einer Gruppe $(G, \circ)$. 
 
@@ -469,8 +469,10 @@ Ein Beispiel für Erzeuger findet man anhand der Gruppe der ganzen Zahlen $(\mat
 
 Die Operationen sind hier die Addition und der Übergang von einer Zahl $z$ zu der negativen Zahl $-z$.
 
-Ein Erzeuger dieser Gruppe ist die einelementige Menge $M = \{ 1 \}$. Jede positive Zahl $n$ lässt sich durch die $n$-fache Addition von $1$ erzeugen und jede negative Zahl durch  die Addition von $(-1)+(-1)...$.
-
+Ein Erzeuger dieser Gruppe ist die einelementige Menge $M = \{ 1 \}$. Jede positive Zahl $n$ lässt sich durch die $n$-fache Addition von $1$ erzeugen und jede negative Zahl durch  die Addition von $((-1)+(-1)...)$.
+\\
+\\
+Eine \textbf{zyklische Gruppe} ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht also nur aus Potenzen dieses Elementes.
 
 %
 %
@@ -1547,11 +1549,14 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory viaRubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen.
 
+
 Ein Beispiel eines Erzeugers einer Untergruppe $F$ von $(\Gtwo, \circ)$ wird von $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die $F$ enthält somit nur die Elemente ${F, FF, FFF, FFFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. $FFFF$ ist das gleiche wie das neutrale Element $N$ und der Würfel bleibt in der Ausgangsposition.
 
-Ein weitere Beispiel ist die Untergruppe, die von ${FF}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält also nur $FF$ und $FFFF$.
+
+Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält also nur $FF$ und $FFFF$.
 
 
+Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
 
 %
 %
