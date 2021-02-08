@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Erzeuger und zyklische Gruppe}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{9}%
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{12}%
 \defcounter {refsection}{0}\relax 
@@ -53,20 +53,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Erzeuger}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{28}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{28}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{30}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{30}%
+\contentsline {subsection}{\numberline {}Parität}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{30}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{31}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{32}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{36}%
+\contentsline {section}{Abbildungsverzeichnis}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{37}%
+\contentsline {section}{Tabellenverzeichnis}{38}%

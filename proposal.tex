@@ -361,7 +361,7 @@ Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn 
 
 In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind.
 
-Es wir die Definition einer Gruppe (auch anhand von Beispielen) und die der Untergruppen erklärt. Dazu werden auch Erzeuger (die Untergruppen erzeugen) definiert. Außerdem werden Permutationen und die Zykelschreibweise eingeführt und erklärt.
+Es wir die Definition einer Gruppe (auch anhand von Beispielen) und die der Untergruppen erklärt. Dazu werden auch Erzeuger (die Untergruppen erzeugen) und zyklische Gruppen definiert. Außerdem werden Permutationen und die Zykelschreibweise eingeführt und erklärt.
 
 Die Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort kann man auch detailliertere Informationen, Beispiele und weitere Definitionen nachlesen.
 %
@@ -472,8 +472,11 @@ Die Operationen sind hier die Addition und der Übergang von einer Zahl $z$ zu d
 Ein Erzeuger dieser Gruppe ist die einelementige Menge $M = \{ 1 \}$. Jede positive Zahl $n$ lässt sich durch die $n$-fache Addition von $1$ erzeugen und jede negative Zahl durch  die Addition von $((-1)+(-1)...)$.
 \\
 \\
-Eine \textbf{zyklische Gruppe} ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht also nur aus Potenzen dieses Elementes.
-
+Eine \textbf{zyklische Gruppe} ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht also nur aus Potenzen dieses Elementes: 
+\begin{align*}
+\langle a \rangle := \{ a^n \mid n \in \mathbb{Z} \}
+\end{align*}
+Bei dem Beispiel der Gruppe $(\mathbb{Z},+)$ entspricht die Verknüpfung der Addition und $\{ 1 \}$ erzeugt eine zyklische additive Gruppe der ganzen Zahlen.
 %
 %
 %
@@ -485,6 +488,7 @@ Eine \textbf{zyklische Gruppe} ist eine Gruppe, die von nur einem Element erzeug
 %
 %
 %
+\newpage
 \subsection*{Permutationen und Zykelschreibweise} \addcontentsline{toc}{subsection}{\protect\numberline{}Permutationen und Zykelschreibweise}
 \label{11}
 Unter einer Permutation versteht man die Reihenfolge von Objekte.
@@ -1550,13 +1554,22 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory viaRubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen.
 
 
-Ein Beispiel eines Erzeugers einer Untergruppe $F$ von $(\Gtwo, \circ)$ wird von $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die $F$ enthält somit nur die Elemente ${F, FF, FFF, FFFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. $FFFF$ ist das gleiche wie das neutrale Element $N$ und der Würfel bleibt in der Ausgangsposition.
+Ein Beispiel eines Erzeugers einer Untergruppe $F$ von $(\Gtwo, \circ)$ wird von $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die $F$ enthält somit nur die Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. $FFFF$ ist das gleiche wie das neutrale Element $N$ und der Würfel bleibt in der Ausgangsposition.
 
 
 Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält also nur $FF$ und $FFFF$.
 
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
+\\
+\\
+Die Gruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $F$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Gruppe.
+
+Die Gruppe $F$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlisch, da $N = FFFF$. Die Züge werden also (wie bereits in Kapitel \ref{8} beschrieben) modulo $4$ gerechnet.
+
+Das gilt für jeden Ezeuger, der nur aus einer einzelnen Ebenendrehung besteht.
+
+ 
 
 %
 %
