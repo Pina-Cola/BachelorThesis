@@ -717,6 +717,8 @@ Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1
 \newpage
 
 \section{Konfiguration des Würfels}
+
+\label{26}
 Um mit dem Würfel zu arbeiten, muss man wissen, in welcher Position er sich befindet.
 
 Dafür wird die Konfiguration des Würfels definiert, sie setzt sich aus zwei Parametern zusammen: 
@@ -1563,13 +1565,18 @@ Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei k
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
 \\
 \\
-Die Gruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $F$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Gruppe.
+Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $F$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
 
-Die Gruppe $F$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlisch, da $N = FFFF$. Die Züge werden also (wie bereits in Kapitel \ref{8} beschrieben) modulo $4$ gerechnet.
+Die Untergruppe $F$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden also (wie bereits in Kapitel \ref{8} beschrieben) modulo $4$ gerechnet.
 
-Das gilt für jeden Ezeuger, der nur aus einer einzelnen Ebenendrehung besteht.
+Das gilt für jeden Erzeuger, der nur aus einer einzelnen Ebenendrehung besteht.
 
- 
+
+Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Kapitel \ref{26} beschrieben.
+
+Die Ordnung des Zuges $FR$ ist 15 -- wenn man $FR$ 15-mal auf dem \Ttwo Würfel ausführt, ist er wieder in der Ausgangsposition. Bei dem \Tthree Würfel ist die Ordnung des Zuges allerdings 105.
+
+Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat also 15 Elemente.
 
 %
 %
