@@ -55,20 +55,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{29}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{29}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{31}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{31}%
+\contentsline {subsection}{\numberline {}Parität}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{31}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{32}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{33}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{37}%
+\contentsline {section}{Abbildungsverzeichnis}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{38}%
+\contentsline {section}{Tabellenverzeichnis}{39}%
