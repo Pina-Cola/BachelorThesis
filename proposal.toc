@@ -25,6 +25,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{10}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {} Cayleygraph}{11}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}2$\times $2$\times $2-Zauberwüfel als Gruppe}{12}%
