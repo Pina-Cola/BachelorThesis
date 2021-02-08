@@ -15,6 +15,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7}{\ignorespaces Priorität der Positionen (für Zykelschreibweise)}}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8}{\ignorespaces Ausrichtung der Steine (modulo 3)}}{30}%
+\contentsline {table}{\numberline {8}{\ignorespaces Mitglieder der durch $\{ FF, RR \}$ erzeugten Untergruppe\relax }}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9}{\ignorespaces Permutationen von $[L, F ]$}}{32}%
+\contentsline {table}{\numberline {9}{\ignorespaces Ausrichtung der Steine (modulo 3)}}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10}{\ignorespaces Permutationen von $[L, F ]$}}{32}%
