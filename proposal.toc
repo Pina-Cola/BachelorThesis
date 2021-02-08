@@ -21,6 +21,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Untergruppen}{9}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Erzeuger}{9}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{11}%
