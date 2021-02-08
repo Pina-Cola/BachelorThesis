@@ -51,6 +51,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Untergruppen Beispiele}{26}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Erzeuger}{26}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{27}%
