@@ -73,6 +73,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{34}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Hübsche Muster}{37}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Abbildungsverzeichnis}{38}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Tabellenverzeichnis}{39}%
