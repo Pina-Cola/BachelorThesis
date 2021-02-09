@@ -59,22 +59,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Cayleygraph}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{30}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{30}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{32}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{32}%
+\contentsline {subsection}{\numberline {}Parität}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{32}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{33}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{34}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Hübsche Muster}{37}%
+\contentsline {subsection}{\numberline {}Hübsche Muster}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{38}%
+\contentsline {section}{Abbildungsverzeichnis}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{39}%
+\contentsline {section}{Tabellenverzeichnis}{40}%

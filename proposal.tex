@@ -1692,6 +1692,19 @@ Der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe ist etwas komplex
 \label{28}
 \end{figure}
 
+Die roten Pfeile repräsentieren den Erzeuger $\{FF\}$ (da es sich dabei in der Startkonfiguration um die rote Seite des Würfels handelt) und die blauen Pfeile repräsentieren den Erzeuger $\{RR\}$ (da es sich dabei um die blaue Würfelseite handelt).
+
+Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entstehen können, sind durch einen Pfeil (Erzeuger) miteinander verbunden.
+
+Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphens. 
+
+Anhand des Cayleygraphens kann man sehen, dass $FFFF$ und $RRRR$ das neutrale Element $N$ ergeben.
+
+Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ (Abbildung \ref{27}), stellt er eine sehr kleine erzeugte Untergruppe dar, wenn man es mit der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$ vergleicht. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
+
+
+
+
 
 
 %
@@ -2139,20 +2152,22 @@ Dieser Abschnitt ist inspiriert von dem Part \textit{Pretty Patterns} in Tom Dav
 
 Dort zeigt er einige \textit{hübsche} Muster des \Tthree Würfels und hier werden nun einige Muster des \Ttwo Würfels gezeigt.
 
-In Tabelle \ref{29} werden vier Muster des \textit{Cubes} gezeigt und die dazugehörigen Algorithmen von der Startkonfiguration ausgehend beschrieben.
+In Abbildung \ref{29} werden vier Muster des \textit{Cubes} gezeigt und die dazugehörigen Algorithmen von der Startkonfiguration ausgehend beschrieben.
 
-\begin{table}[h]
+\begin{figure}[h]
 \centering
 \begin{tabular}{cc}
 \includegraphics[scale=0.1]{RRFFRRUU.png} &  \includegraphics[scale=0.1]{CubeInCube.png} \\
+Muster 1 & Muster 2 \\
 $RR \ FF \, RR \ UU$ &  $R \ F \, U^{-1} \, RR \ U \, F^{-1} \, R \ U \, FF \, RR$ \\
 \includegraphics[scale=0.1]{UUFFRRUU.png} &  \includegraphics[scale=0.1]{UFFUURRU.png} \\
+Muster 3 & Muster 4 \\
 $UU \, FF \, RR \ UU$ &  $U \, FF \, UU \, RR \ U$ \\
 \end{tabular}
 
 \caption{\textit{Hübsche} Muster des \Ttwo Würfels}
 \label{29}
-\end{table}
+\end{figure}
 
 %
 %
