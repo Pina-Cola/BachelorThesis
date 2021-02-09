@@ -1628,13 +1628,14 @@ Es wurde in Kapitel \ref{8} bereits gezeigt, dass $(FF)^2 = N$ und $(RR)^2 = N$ 
 
 Wenn man einen gelösten \Ttwo Würfel in die Hand nimmt, und $FFRR$ ausführt, befindet sich der Würfel nach 3 Wiederholungen wieder in der Startkonfiguration. Das gilt auch für den Zug $RRFF$. Die Ordnung von $FFRR$ und $RRFF$ ist also 3. Bei dem \Tthree \textit{Cube} ist die Ordnung dieser Züge 6 \cite{TD}.
 
-Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit auch mehr Elemente als die des \Ttwo Würfels. Theoretisch sind das alle Mitglieder der Untergruppe des \Ttwo \textit{Cubes}, wenn man dabei berücksichtigt, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. 
+Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit auch mehr Elemente als die des \Ttwo Würfels. Theoretisch sind das alle Mitglieder der Untergruppe des \Ttwo \textit{Cubes}, wenn man dabei berücksichtigt, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $FFRRFF$, $FFRRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. 
 
 Wenn man die Züge an seinem Würfel ausprobiert, stellt man aber fest, dass beispielsweise $(RRFF)^2RR$ die gleiche Würfelkonfiguration wie $FF$ ergibt. Wenn man diese Doppelungen aussortiert, erhält man folgende fünf Gruppenelemente:
 \begin{table}[H]
 \centering
-\begin{tabular}{c c c c c}
-$N$ & $FF$ & $RR$ & $FFRR$ & $RRFF$ \\
+\begin{tabular}{c c c c}
+$N$ & $RR$ & $FFRR$ &  $RRFFRR$ \\
+& $FF$ & $RRFF$ & $FFRRFF$   \\
 \end{tabular}
 \caption{Mitglieder der durch $\{ FF, RR \}$ erzeugten Untergruppe}
 \end{table}
@@ -1666,7 +1667,17 @@ Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 5 bzw. 12 Elementen 
 \subsection*{Cayleygraph}\addcontentsline{toc}{subsection}{\protect\numberline{}Cayleygraph}
 Cayleygraphen wurden in Kapitel \ref{11} eingeführt. Sie dienen der Visualisierung von Untergruppen und deren Erzeugern.
 
-Ein anschauliches Beispiel ist der Cayleygraph der Untergruppe $F$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
+Ein simples Beispiel ist der Cayleygraph der Untergruppe $F$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
+
+BILD EINFÜGEN
+
+Dieser Cayleygraph ist anschaulich, der er nicht sonderlich komplex ist.
+
+Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt, daraus ergibt sich durch hinzufügen einer weiteren Drehung der vorderen Ebene um $90^\circ$ dann $FF$, dann $FFF$ und dann $FFFF$, was dem neutralen Element $F$ entspricht.
+\\
+\\
+Der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe ist etwas komplexer.
+
 
 
 %
