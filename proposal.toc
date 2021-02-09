@@ -25,7 +25,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {} Cayleygraph}{11}%
+\contentsline {subsection}{\numberline {}Cayleygraph}{11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{12}%
 \defcounter {refsection}{0}\relax 
