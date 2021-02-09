@@ -75,7 +75,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Hübsche Muster}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Schraubendrehermethode}{39}%
+\contentsline {subsection}{\numberline {}Schraubendrehermethode}{40}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Abbildungsverzeichnis}{41}%
 \defcounter {refsection}{0}\relax 
