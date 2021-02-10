@@ -956,17 +956,17 @@ Also gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 \subsection*{Züge als Gruppenoperation}\addcontentsline{toc}{subsection}{\protect\numberline{}Züge als Gruppenoperation}
 
 Im Folgenden wird eine Gruppenoperation beschrieben, die eine Würfelkonfiguration durch das Ausführen eines Zuges auf eine neue Würfelkonfiguration abbildet.Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. Es handelt sich um eine Rechtsoperation, die im Kapitel \ref{11} beschrieben wurde.
-
+\\ \\
 Der Punktoperator ist definiert als $\cdot: M_C \times \Gtwo \rightarrow M_C$. Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ aus der Menge der Konfigurationen $M_C$ ist, wird er durch das Ausführen eines Zuges $Z \in \Gtwo$ in eine neue Konfiguration gebracht. Diese Konfiguration wird als $(C \cdot Z) \in M_C$ geschrieben.
 
 Die folgenden beiden Eigenschaften müssen bei der Rechtsoperation gelten:
 
 \begin{description}
-\item [$C \cdot N = x$ für alle $C \in M_C$ und das neutrale Element $N \in \Gtwo$] 
+\item [$\boldsymbol{C \cdot N = x}$ für alle $\boldsymbol{C \in M_C}$ und das neutrale Element $\boldsymbol{N \in \Gtwo}$] 
 \ \\
 Wenn der leeren Zug $N$ ausgeführt wird, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. 
 
-\item [$C \cdot (Z_1 \circ Z_2) = (c \cdot Z_1) \cdot Z_2$ für alle $Z_1, Z_2 \in \Gtwo$ und $c \in M_C$]
+\item [$\boldsymbol{C \cdot (Z_1 \circ Z_2) = (c \cdot Z_1) \cdot Z_2}$ für alle $\boldsymbol{Z_1, Z_2 \in \Gtwo}$ und $\boldsymbol{c \in M_C}$]
 \ \\
 Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $Z_1 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot Z_1$. Wenn nun noch ein weiterer Zug $Z_2 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $(C \cdot Z_1) \cdot Z_2$. 
 
