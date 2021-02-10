@@ -147,6 +147,8 @@ Die Berechnung der \textit{God's Number} des \Tthree Cubes ist wesentlich anspru
 Der \Tthree Würfel wurde schon mehrfach als Gruppe dargestellt, während der \Ttwo Würfel
 noch nicht umfangreich als Gruppe untersucht wurde.
 
+Wer die Lösungsalgorithmen der \Ttwo Würfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
+
 %
 %
 %
@@ -922,7 +924,7 @@ Also gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 %
 \subsection*{Züge als Gruppenoperation}\addcontentsline{toc}{subsection}{\protect\numberline{}Züge als Gruppenoperation}
 
-Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ ist, wird er durch das Ausführen eines Zuges $M \in \Gtwo$ in eine neue Konfiguration gebracht. Diese Konfiguration wird als $C \cdot M$ geschrieben. 
+Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ aus der Menge der Konfigurationen $M_C$ ist, wird er durch das Ausführen eines Zuges $Z \in \Gtwo$ in eine neue Konfiguration gebracht. Diese Konfiguration wird als $(C \cdot Z) \in M_C$ geschrieben. 
 
 
 Definition einer Gruppenoperation mit der Gruppe $(\Gtwo, \circ)$ und der Konfiguration $C$:
@@ -933,16 +935,18 @@ Definition einer Gruppenoperation mit der Gruppe $(\Gtwo, \circ)$ und der Konfig
 \end{itemize}
 
 
-Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $M_1 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot M_1$. Wenn nun noch ein weiterer Zug $M_2 \in \Gtwo$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot M_1) \cdot M_2$. 
+Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $Z_1 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot Z_1$. Wenn nun noch ein weiterer Zug $Z_2 \in \Gtwo$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot Z_1) \cdot Z_2$. 
 
 
-Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $M_1 M_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (M_1 M_2)$ schreiben und somit gilt $(C \cdot M_1) \cdot M_2 = C \cdot (M_1 M_2)$. 
+Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (Z_1 Z_2)$ schreiben und somit gilt $(C \cdot Z_1) \cdot Z_2 = C \cdot (Z_1 Z_2)$. 
 
 
 Wenn der leeren Zug $N$ ausgeführt wird, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. 
 
 
 Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. 
+
+
 % Es handelt sich hier um eine Rechtsoperation, da die Elemente der Gruppe rechts stehen. 
 
 %
