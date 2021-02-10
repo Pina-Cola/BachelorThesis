@@ -81,6 +81,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{42}%
+\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{43}%
+\contentsline {section}{Abbildungsverzeichnis}{43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Tabellenverzeichnis}{44}%

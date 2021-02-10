@@ -2317,7 +2317,7 @@ Da hier aber Algorithmen des \Tthree Würfels übertragen werden, und man bei di
 
 Die Farbfläche des zweiten Steins befindet sich für diesen Algorithmus seitlich an der unteren Ebene. (Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.)
 
-Dann führt man $D$ aus, bis der Stein sich unter seiner Zielposition befindet und dreht ihn mit $L$ oder $R$ neben den bereits vorhandenen, ersten Eckstein. Das kann man auch in Abbildung \ref{31} sehen.
+Dann führt man $D$ aus, bis der Stein sich unter seiner Zielposition befindet und dreht ihn mit $L, R, F$ oder $R$ neben den bereits vorhandenen, ersten Eckstein. Das kann man auch in Abbildung \ref{31} sehen.
 
 \begin{figure}[h]
 \centering
@@ -2328,6 +2328,54 @@ Dann führt man $D$ aus, bis der Stein sich unter seiner Zielposition befindet u
 \end{figure}
 
 Man sieht dort auch orange und grüne Farbflächen. Das gilt analog für die anderen benachbarten Farbflächen. Wichtig ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
+
+Sollte die Farbfläche der Ecke unten am Würfel sein, so kann man sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{31} an die Position setzen. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann man den Stein mit einem der Züge $L, R, F$ oder $B$ herausdrehen und mit $U$ in die untere Ebene schieben. Diesen Vorgang sieht man auch in Abbildung \ref{32}. Von dort kann man ihn mit der oben beschriebenen Technik richtig ausgerichtet und positioniert einfügen (s. Abbildung \ref{31}). 
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{e1_s2_s1.png}
+\includegraphics[scale=0.1]{e1_s2_s2.png}
+\includegraphics[scale=0.1]{e1_s2_s1.png}
+\includegraphics[scale=0.1]{e1_s2_s2.png}
+\caption{zweiter Eckstein: Sonderfall}
+\label{32}
+\end{figure}
+
+Die anderen zwei Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst.
+
+Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hälfte des Würfels.
+
+
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection*{Algorithmen für die zweite Ebene}\addcontentsline{toc}{subsection}{\protect\numberline{}Algorithmen für die zweite Ebene}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{ebene.png}
+\caption{Würfel mit gelöster oberer Ebene}
+\end{figure}
+
+Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
 
 
 
