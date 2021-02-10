@@ -79,6 +79,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Schraubendrehermethode}{40}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{40}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Abbildungsverzeichnis}{41}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Tabellenverzeichnis}{42}%
