@@ -492,6 +492,50 @@ Bei dem Beispiel der Gruppe $(\mathbb{Z},+)$ entspricht die Verknüpfung der Add
 %
 %
 %
+\subsection*{Cayleygraph} \addcontentsline{toc}{subsection}{\protect\numberline{}Cayleygraph}
+Ein Cayleygraph ist ein Graph, der die Struktur einer Gruppe beschreibt. Er hängt von der Menge der Erzeuger ab und dient dazu, Gruppen bildlich darzustellen.
+
+Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppenelemente darstellen. Pfeile zeigen von einem Element zum nächsten, wenn dies durch einen der Erzeuger erreicht werden kann. \cite{AT}
+
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+
+\subsection*{Gruppenoperation} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppenoperation}
+
+Es gibt Links- und Rechtsoperationen. Da im Folgenden nur Rechtsoperationen genutzt werden, werden auch nur diese hier definiert.
+
+Eine Rechtsoperation einer Gruppe $(G, *)$ auf einer Menge M ist eine Verknüpfung (hier der Punktoperator). Dabei ist $m \in M$, $e$ das neutrales Element von $G$ und $g,h \in G$:
+\begin{align*}
+\cdot: G \times M \rightarrow M \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+(g,m) \mapsto g \cdot m 
+\end{align*}
+
+
+
+
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
 \newpage
 \subsection*{Permutationen und Zykelschreibweise} \addcontentsline{toc}{subsection}{\protect\numberline{}Permutationen und Zykelschreibweise}
 \label{11}
@@ -565,25 +609,7 @@ Die Zykelschreibweise ist eine kurze Schreibweise für eine Permutation.
 %
 %
 
-\subsection*{Cayleygraph} \addcontentsline{toc}{subsection}{\protect\numberline{}Cayleygraph}
-Ein Cayleygraph ist ein Graph, der die Struktur einer Gruppe beschreibt. Er hängt von der Menge der Erzeuger ab und dient dazu, Gruppen bildlich darzustellen.
 
-Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppenelemente darstellen. Pfeile zeigen von einem Element zum nächsten, wenn dies durch einen der Erzeuger erreicht werden kann. \cite{AT}
-
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
 \newpage
 \section{Würfel als Gruppe}
 
@@ -929,13 +955,13 @@ Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ aus der Menge der 
 
 Definition einer Gruppenoperation mit der Gruppe $(\Gtwo, \circ)$ und der Konfiguration $C$:
 \begin{itemize}
-\item $\cdot: C \times \Gtwo \rightarrow C$ mit $(c, g) \rightarrow c \cdot g $
+\item $\cdot: M_C \times \Gtwo \rightarrow M_C$ mit $(c, g) \rightarrow c \cdot g $
 \item $c \cdot N = x$ für alle $c \in C$ und das neutrale Element $N \in \Gtwo$  
-\item $c \cdot (u \circ v) = (c \cdot h) \cdot v$ für alle $u, v \in \Gtwo$ und $c \in C$
+\item $c \cdot (u \circ v) = (c \cdot h) \cdot v$ für alle $u, v \in \Gtwo$ und $c \in M_C$
 \end{itemize}
 
 
-Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $Z_1 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot Z_1$. Wenn nun noch ein weiterer Zug $Z_2 \in \Gtwo$ ausgeführt wird,ist die neue Konfiguration des Würfels $(C \cdot Z_1) \cdot Z_2$. 
+Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $Z_1 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot Z_1$. Wenn nun noch ein weiterer Zug $Z_2 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $(C \cdot Z_1) \cdot Z_2$. 
 
 
 Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (Z_1 Z_2)$ schreiben und somit gilt $(C \cdot Z_1) \cdot Z_2 = C \cdot (Z_1 Z_2)$. 
