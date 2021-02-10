@@ -1321,14 +1321,19 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$, da alle Steine des Würfels in ihrer vorherigen Position bleiben, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werden die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4 bezeichnet. 
 
 
-Die Exponentenschreibweise kann man für alle Züge aus $\Gtwo$ anwenden, auch wenn sie mehr als eine Ebene rotieren. Beispielsweise mit $LLFF$. $(LLFF)^2$ ist dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ergibt. 
+Die Exponentenschreibweise kann man für alle Züge aus $\Gtwo$ anwenden, auch wenn sie mehr als eine Ebene rotieren, beispielsweise bei $LLFF$. $(LLFF)^2$ entspricht dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ergibt. 
 
 
-Nicht nur die Züge $U, D, F, B, L, R$ kommen nach Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat dann beispielsweise die Ordnung 3.
+Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
 
 
-So gilt zum Beispiel: ${R^4= N}$ (Ordnung 4), ${(RRFF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15).\\ Dabei muss beachtet werden, dass die Ordnung die Anzahl der Durchführungen beschreibt, die benötigt wird, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. \\
+Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4), ${(RRFF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15). 
+Dabei muss beachtet werden, dass die Ordnung die Anzahl der Durchführungen beschreibt, die benötigt wird, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. 
+
+Die genannten Beispiele kann man an einem \Ttwo Würfel einfach ausprobieren.
 \\
+\\
+Im folgenden Abschnitt wird bewiesen, dass die Würfelsteine wieder in die Ausgangspositionen gelangen, wenn man einen beliebigen Zug $Z \in \Gtwo$ wiederholt auf den Würfel anwendet.
 Der folgende Beweis orientiert sich an dem Beweis aus dem Paper \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD}: \\
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet. \\ 
 Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelposition wiederholt werden, wenn man den Zug oft genug durchführt. \\
@@ -1352,7 +1357,7 @@ Beim Anwenden von $Z^{-1}$ wird die letzte Ausführung von $Z$ wieder rückgäng
 Demnach gilt dann $Z^{n-1}=Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. Also muss $n=0$ sein, damit $m$ die erste Wiederholung einer Position repräsentiert. 
 
 
-Daraus folgt: Wenn man einen beliebigen Zug $Z \in \Gtwo$ wiederholt auf den gelösten Würfel anwendet, kommt man wieder in die Startkonfiguration.
+Daraus folgt: Wenn man den Zug wiederholt auf einen Würfel anwendet, kommen die Steine wieder in die Ausgangsposition.
  
 %
 %
