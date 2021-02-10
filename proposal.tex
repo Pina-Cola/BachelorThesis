@@ -2300,12 +2300,35 @@ In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen S
 
 Den \Tthree \textit{Cube} muss man entsprechend der Mittelsteine ausrichten und so ist vorbestimmt, welche Seite die weiße Seite wird. Bei dem \Ttwo \textit{Cube} kann man mit jeder beliebigen Seite beginnen. Möchte man aber unbedingt mit einer bestimmten Seite beginnen, die noch keine weiße Farbfläche hat, so kann man die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite bringen.
 
-BEISPIELFOTO
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{e1_s1_s1.png}
+\includegraphics[scale=0.1]{e1_s1_s2.png}
+\caption{ersten Eckstein positionieren}
+\label{30}
+\end{figure}
+
+In Abbildung \ref{30} wird der erste Eckstein der oberen Ebene positioniert. Das kann dort entweder durch den Zug $R$ oder einer Rotation um die $y$-Achse passieren.
 
 
 Der zweite Stein kann dann hinzugefügt werden. Es gibt für den \Ttwo Würfel Lösungsmethoden, bei denen man zuerst alle weißen Farbflächen ausrichten und dann die Steinposition anpasst.
 
 Da hier aber Algorithmen des \Tthree Würfels übertragen werden, und man bei diesem die Steine der oberen Ebene üblicherweise direkt richtig ausrichtet und positioniert, wird hier auch so vorgegangen.
+
+Die Farbfläche des zweiten Steins befindet sich für diesen Algorithmus seitlich an der unteren Ebene. (Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.)
+
+Dann führt man $D$ aus, bis der Stein sich unter seiner Zielposition befindet und dreht ihn mit $L$ oder $R$ neben den bereits vorhandenen, ersten Eckstein. Das kann man auch in Abbildung \ref{31} sehen.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{e1_s2_s1.png}
+\includegraphics[scale=0.1]{e1_s2_s2.png}
+\caption{zweiten Eckstein positionieren}
+\label{31}
+\end{figure}
+
+Man sieht dort auch orange und grüne Farbflächen. Das gilt analog für die anderen benachbarten Farbflächen. Wichtig ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
+
 
 
 %
