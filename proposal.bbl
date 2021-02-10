@@ -233,6 +233,36 @@
     \field{year}{2008}
   \endentry
 
+  \entry{TR}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RT}{%
+         family={Rokicki},
+         familyi={R\bibinitperiod},
+         given={Tomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor & Francis}%
+    }
+    \strng{namehash}{RT1}
+    \strng{fullhash}{RT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.4169/college.math.j.45.4.242
+    \endverb
+    \field{number}{4}
+    \field{pages}{242\bibrangedash 253}
+    \field{title}{Towards God's Number for Rubik's Cube in the Quarter-Turn
+  Metric}
+    \field{volume}{45}
+    \field{journaltitle}{The College Mathematics Journal}
+    \field{year}{2014}
+  \endentry
+
   \entry{AT}{thesis}{}
     \name{author}{1}{}{%
       {{hash=TA}{%

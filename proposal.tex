@@ -328,7 +328,7 @@ $B$ & Drehung der \textbf{hinteren} Ebene im Uhrzeigersinn \\
 Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  
 
 
-Die entsprechende Ebene wird im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  
+Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  
 
 
 Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
@@ -336,6 +336,10 @@ Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht 
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
 
 Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen.
+\\ \\
+Die Ebenen werden bei einer Ebenendrehung um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das nennt man \textit{Quarter-Turn} Metrik. 
+
+Es gibt noch andere Metriken, wie z.B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden. \cite{TR}
 
 
 %
@@ -1340,10 +1344,10 @@ Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelposi
 Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich. Also muss eine Position wiederholt werden, wenn man den Zug öfter ausführt, als es mögliche Würfelpositionen gibt. 
 
 
-Bei einem beliebigen Zug $Z \in \Gtwo$ gelangt man also irgendwann in eine Würfelposition, die sich wiederholt. Die wiederholende Würfelposition tritt zuerst nach $n \in \mathbb{N}$ Wiederholungen auf und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen. Das sieht dann so aus: $Z^n=Z^m$ mit $n < m$. 
+Bei einem beliebigen Zug $Z \in \Gtwo$ gelangt man also irgendwann in eine Würfelposition, die sich wiederholt. Die wiederholende Würfelposition tritt zuerst nach $n \in \mathbb{N}$ Wiederholungen auf und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen. Das sieht dann so aus: $Z^n=Z^m$ mit $0 < n < m$. 
 
 
-Also gilt $Z^{n-1} \neq Z^{m-1}$, da $m$ das zweite Vorkommen der gleichen Position repräsentiert. \\
+Also gilt mit der Würfelkonfiguration $Z^{n-1} \neq Z^{m-1}$, da $m$ das zweite Vorkommen der gleichen Position repräsentiert. \\
 Wenn $n=0$ ist, hat man $Z^0=N$, was den leeren Zug (bzw. das neutrale Element) repräsentiert. Der Würfel wird dabei nicht verändert und somit wird die Würfelposition bei jedem Zug $Z \in \Gtwo$ mit $Z^0$ wiederholt. 
 
 
