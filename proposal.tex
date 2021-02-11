@@ -207,7 +207,7 @@ Diese Arbeit befasst sich mit dem \Ttwo Zauberwürfel, deshalb sind Terminologie
 Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
 
 
-%\begin{singlespacing}
+
 \begin{description}
 
 
@@ -215,9 +215,7 @@ Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
 
 Der Würfel setzt sich auch acht kleinen Würfeln zusammen.
 In Abbildung \ref{3} ist er links verdreht und rechts im gelösten Zustand zu sehen. Der gelöste Zustand wird auch als Startkonfiguration bezeichnet.
-
 Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst.  
-
 Bei dem verdrehten Würfel sind die Steine des Würfels an anderen Positionen und anders ausgerichtet.
 \begin{figure}[h]
 \centering
@@ -271,18 +269,12 @@ Im Gegensatz zum \Ttwo hat der \Tthree Würfel Kantsteine und Mittelsteine (s. A
 \end{figure}
 Das besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei einer Drehung der Ebenen (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. 
 
-Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist also möglich, dass die aktuelle Konfiguration einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird.
-
-Die Ausrichtung des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann.  
-
-Das ist interessant, da in dieser Arbeit die Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen werden soll.
-
-Es wird sich dabei vorallem den Papern \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
-
 
 \end{description}
-%\end{singlespacing}
 
+Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist also möglich, dass die aktuelle Konfiguration einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird.
+Die Ausrichtung des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann.  
+Das muss beachtet werden, da in dieser Arbeit die Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen wird. Es wird sich dabei vorallem den Papern \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
 
 %
 %
@@ -302,7 +294,6 @@ Es wird sich dabei vorallem den Papern \textit{Group Theory an the Rubik's Cube}
 
 \subsection*{Grundzüge des Würfels} \addcontentsline{toc}{subsection}{\protect\numberline{}Grundzüge des Würfels}
 Am \Ttwo Zauberwürfel gibt es sechs verschiedene Drehseiten (auch Ebenen): oben, unten, links, rechts, vorne und hinten. 
-
 In Abbildung \ref{24} ist die obere Ebene markiert.
 
 \begin{figure}[h]
@@ -312,8 +303,7 @@ In Abbildung \ref{24} ist die obere Ebene markiert.
 \label{24}
 \end{figure}
 
-\begin{table}[H]
-\centering
+\begin{center}
 \begin{tabular}{cl}
 \toprule
 \textbf{Abkürzung} & \textbf{Beschreibung des Zugs} \\
@@ -326,24 +316,17 @@ $F$ & Drehung der \textbf{vorderen} Ebene im Uhrzeigersinn \\
 $B$ & Drehung der \textbf{hinteren} Ebene im Uhrzeigersinn \\
 \bottomrule
 \end{tabular} 
-\caption[Ebenenrotationen]{Ebenenrotationen}
-\end{table}
+\end{center}
 
-Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.  
-
-
+Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}. 
 Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  
 
 
 Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
-
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
-
 Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen.
-\\ \\
-Die Ebenen werden bei einer Ebenendrehung um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das nennt man \textit{Quarter-Turn} Metrik. 
 
-Es gibt noch andere Metriken, wie z.B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden. \cite{TR}
+Die Ebenen werden bei einer Ebenendrehung um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das nennt man \textit{Quarter-Turn} Metrik. Es gibt noch andere Metriken, wie z.B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden. \cite{TR}
 
 
 %
