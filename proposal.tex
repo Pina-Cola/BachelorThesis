@@ -29,10 +29,10 @@
 
 \pagestyle{plain}
 
+%\usepackage[backend=biber,style=numeric, citestyle = numeric]{biblatex}
+\usepackage[backend=biber]{biblatex}
 
-\usepackage[backend=bibtex,style=numeric, citestyle = numeric]{biblatex}
-
-\bibliography{references.bib}
+\addbibresource{references.bib}
 
 \newcommand{\Gtwo}{\ensuremath{G_{2\times 2\times 2}}}
 
@@ -642,7 +642,7 @@ Die Gruppe des \Ttwo Würfels wird auf die vier Gruppenaxiome (Abgeschlossenheit
 \subsection*{\Ttwo Zauberwüfel als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}\Ttwo Zauberwüfel als Gruppe}
 \label{8}
 
-Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus dem Paper \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des 2x2x2-Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Die Gruppe des \Ttwo Würfels heißt $(\Gtwo, \circ)$. 
+Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus dem Paper \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des \Ttwo Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Die Gruppe des \Ttwo Würfels heißt $(\Gtwo, \circ)$. 
 
 Die Grundlagen und Definition der Gruppe wurden in Kapitel \ref{11} erklärt.
  \\
@@ -2376,6 +2376,7 @@ Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hä
 \end{figure}
 
 Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
+\cite{TEST}
 
 
 

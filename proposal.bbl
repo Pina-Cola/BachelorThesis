@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,274 +16,334 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}
-  \entry{patent}{misc}{}
-    \list{organization}{1}{%
-      {Rubik}%
-    }
-    \field{note}{US4378117A}
-    \field{number}{US4378117A}
-    \field{type}{Schutzrecht}
-    \field{year}{1980}
-  \endentry
 
-  \entry{MMFAA}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=AAMMF}{%
-         family={Al\bibnamedelima Arsyad},
-         familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
-         given={Muhammad Mirza\bibnamedelima Fathan},
-         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AAMMF1}
-    \strng{fullhash}{AAMMF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{note}{Online erhältlich unter
-  \url{https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518111.pdf};
-  abgerufen am 20.01.2021.}
-    \field{title}{God's Algorithm in The 2x2x2 Rubik's Cube}
-    \field{year}{2019}
-  \endentry
-
-  \entry{rekord}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=AWC}{%
-         family={Association},
-         familyi={A\bibinitperiod},
-         given={World\bibnamedelima Cube},
-         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AWC1}
-    \strng{fullhash}{AWC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{note}{Weltrekord des \Ttwo von Maciej Czapiewski mit 0,49 Sekunden
-  in 2016. Online erhätlich unter
-  \url{https://www.worldcubeassociation.org/results/records}; abgerufen am
-  09.02.2021.}
-    \field{title}{Rekorde}
-  \endentry
-
-  \entry{RC}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=BR}{%
-         family={Brand},
-         familyi={B\bibinitperiod},
-         given={Rubik's},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BR1}
-    \strng{fullhash}{BR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{howpublished}{Website}
-    \field{note}{Online erhältlich unter
-  \url{https://www.rubiks.com/en-eu/about}; abgerufen am 04.02.2021.}
-    \field{title}{Our heritage}
-    \field{year}{2020 aktualisiert}
-  \endentry
-
-  \entry{JC}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=CJ}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={Janet},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CJ1}
-    \strng{fullhash}{CJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{note}{Online erhältlich unter
-  \url{http://people.math.harvard.edu/~jjchen/docs/Group_Theory_and_the_Rubik's_Cube.pdf};
-  abgerufen am 05.01.2021.}
-    \field{title}{Group Theory and the Rubik's Cube}
-  \endentry
-
-  \entry{TD}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=DT}{%
-         family={Davis},
-         familyi={D\bibinitperiod},
-         given={Tom},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DT1}
-    \strng{fullhash}{DT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{note}{Online erhältlich unter
-  \url{http://www.geometer.org/rubik/group.pdf}; abgerufen am 05.01.2021.}
-    \field{title}{Group Theory via Rubik's Cube}
-  \endentry
-
-  \entry{RF2}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=FR}{%
-         family={Frisch},
-         familyi={F\bibinitperiod},
-         given={Roland},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FR1}
-    \strng{fullhash}{FR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{howpublished}{Website}
-    \field{note}{Online erhältlich unter
-  \url{https://freshcuber.de/loesung-2x2x2-ortega/}; abgerufen am 31.01.2021.}
-    \field{title}{Schnelle Lösung für den 2x2x2 Pocket Cube (Ortega Methode)}
-    \field{year}{Publiziert am 19.04.2018}
-  \endentry
-
-  \entry{RF}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=FR}{%
-         family={Frisch},
-         familyi={F\bibinitperiod},
-         given={Roland},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FR1}
-    \strng{fullhash}{FR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{howpublished}{Website}
-    \field{note}{Online erhältlich unter
-  \url{https://freshcuber.de/zauberwuerfel-loesung-teil1/}; abgerufen am
-  29.01.2021.}
-    \field{title}{Zauberwürfel-Anfängerlösung Teil 1: Erste Ebene (weiß)}
-    \field{year}{Publiziert am 11.12.2017}
-  \endentry
-
-  \entry{Buch}{book}{}
-    \name{author}{1}{}{%
-      {{hash=GT}{%
-         family={Glosauer},
-         familyi={G\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer Spektrum}%
-    }
-    \strng{namehash}{GT1}
-    \strng{fullhash}{GT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{title}{Elementar(st)e Gruppentheorie}
-    \list{location}{1}{%
-      {Wiesbaden}%
-    }
-    \field{year}{2016}
-  \endentry
-
-  \entry{DJ}{book}{}
-    \name{author}{1}{}{%
-      {{hash=JD}{%
-         family={Joyner},
-         familyi={J\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Johns Hopkins University Press}%
-    }
-    \strng{namehash}{JD1}
-    \strng{fullhash}{JD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \field{note}{Online erhältlich unter
-  \url{https://mike.verdone.ca/media/rubiks.pdf}; abgerufen am 12.01.2021.}
-    \field{title}{Adventures in Group Theory: Rubik's Cube, Merlin's Machine,
-  and Other Mathematical Toys}
-    \list{location}{1}{%
-      {Baltimore, USA}%
-    }
-    \field{year}{2008}
-  \endentry
-
-  \entry{TR}{article}{}
-    \name{author}{1}{}{%
-      {{hash=RT}{%
-         family={Rokicki},
-         familyi={R\bibinitperiod},
-         given={Tomas},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Taylor & Francis}%
-    }
-    \strng{namehash}{RT1}
-    \strng{fullhash}{RT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.4169/college.math.j.45.4.242
-    \endverb
-    \field{number}{4}
-    \field{pages}{242\bibrangedash 253}
-    \field{title}{Towards God's Number for Rubik's Cube in the Quarter-Turn
-  Metric}
-    \field{volume}{45}
-    \field{journaltitle}{The College Mathematics Journal}
-    \field{year}{2014}
-  \endentry
-
-  \entry{AT}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=TA}{%
-         family={Tripi},
-         familyi={T\bibinitperiod},
-         given={Anna},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TA1}
-    \strng{fullhash}{TA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{title}{Cayley Graphs of Groups and Their Applications}
-    \list{institution}{1}{%
-      {Missouri State University}%
-    }
-    \field{type}{mathesis}
-    \field{year}{2017}
-  \endentry
-\enddatalist
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{patent}{misc}{}
+      \list{organization}{1}{%
+        {Rubik}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{note}{US4378117A}
+      \field{number}{US4378117A}
+      \field{type}{Schutzrecht}
+      \field{year}{1980}
+    \endentry
+    \entry{MMFAA}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7c7ce3aaba416f282940a709f77d4b5d}{%
+           family={Al\bibnamedelima Arsyad},
+           familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Muhammad\bibnamedelimb Mirza\bibnamedelima Fathan},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c7ce3aaba416f282940a709f77d4b5d}
+      \strng{fullhash}{7c7ce3aaba416f282940a709f77d4b5d}
+      \strng{bibnamehash}{7c7ce3aaba416f282940a709f77d4b5d}
+      \strng{authorbibnamehash}{7c7ce3aaba416f282940a709f77d4b5d}
+      \strng{authornamehash}{7c7ce3aaba416f282940a709f77d4b5d}
+      \strng{authorfullhash}{7c7ce3aaba416f282940a709f77d4b5d}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online erhältlich unter \url{https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518111.pdf}; abgerufen am 20.01.2021.}
+      \field{title}{God's Algorithm in The 2x2x2 Rubik's Cube}
+      \field{year}{2019}
+    \endentry
+    \entry{TEST}{patent}{}
+      \name{author}{4}{}{%
+        {{hash=ab2a6410f8ad5b70130889ab7ee8b5e2}{%
+           family={Almendro},
+           familyi={A\bibinitperiod},
+           given={Jos{é}\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=667663fe82c3b8b1b6d5769259249d07}{%
+           family={Mart{í}n},
+           familyi={M\bibinitperiod},
+           given={Jacinto},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5e969ffc8577cc59b21e1bb9b75b7dfa}{%
+           family={S{á}nchez},
+           familyi={S\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0b3e4f40fa82e058b41b5fe539d12994}{%
+           family={Nozal},
+           familyi={N\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{3}{%
+        {countryfr}%
+        {countryuk}%
+        {countryde}%
+      }
+      \strng{namehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
+      \strng{fullhash}{27b0c1d548d1af42d310074e3de48be1}
+      \strng{bibnamehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
+      \strng{authorbibnamehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
+      \strng{authornamehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
+      \strng{authorfullhash}{27b0c1d548d1af42d310074e3de48be1}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{This is a \texttt{patent} entry with a \texttt{location} field. The number is given in the \texttt{number} field. Note the format of the \texttt{location} field in the database file. Compare \texttt{laufenberg}, \texttt{sorace}, and \texttt{kowalik}}
+      \field{langid}{german}
+      \field{number}{EU-29702195U}
+      \field{title}{Elektromagnetisches Signalhorn}
+      \field{year}{1998}
+      \field{dateera}{ce}
+    \endentry
+    \entry{rekord}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8705871643b2f11b3883531d3a286d13}{%
+           family={Association},
+           familyi={A\bibinitperiod},
+           given={World\bibnamedelima Cube},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8705871643b2f11b3883531d3a286d13}
+      \strng{fullhash}{8705871643b2f11b3883531d3a286d13}
+      \strng{bibnamehash}{8705871643b2f11b3883531d3a286d13}
+      \strng{authorbibnamehash}{8705871643b2f11b3883531d3a286d13}
+      \strng{authornamehash}{8705871643b2f11b3883531d3a286d13}
+      \strng{authorfullhash}{8705871643b2f11b3883531d3a286d13}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Weltrekord des \Ttwo von Maciej Czapiewski mit 0,49 Sekunden in 2016. Online erhätlich unter \url{https://www.worldcubeassociation.org/results/records}; abgerufen am 09.02.2021.}
+      \field{title}{Rekorde}
+    \endentry
+    \entry{RC}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b0bbd20d84adc29590aa3dcae05be159}{%
+           family={Brand},
+           familyi={B\bibinitperiod},
+           given={Rubik's},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0bbd20d84adc29590aa3dcae05be159}
+      \strng{fullhash}{b0bbd20d84adc29590aa3dcae05be159}
+      \strng{bibnamehash}{b0bbd20d84adc29590aa3dcae05be159}
+      \strng{authorbibnamehash}{b0bbd20d84adc29590aa3dcae05be159}
+      \strng{authornamehash}{b0bbd20d84adc29590aa3dcae05be159}
+      \strng{authorfullhash}{b0bbd20d84adc29590aa3dcae05be159}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{note}{Online erhältlich unter \url{https://www.rubiks.com/en-eu/about}; abgerufen am 04.02.2021.}
+      \field{title}{Our heritage}
+      \field{year}{2020 aktualisiert}
+    \endentry
+    \entry{JC}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5595fc46ec4ea38c645aba54de1bf598}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5595fc46ec4ea38c645aba54de1bf598}
+      \strng{fullhash}{5595fc46ec4ea38c645aba54de1bf598}
+      \strng{bibnamehash}{5595fc46ec4ea38c645aba54de1bf598}
+      \strng{authorbibnamehash}{5595fc46ec4ea38c645aba54de1bf598}
+      \strng{authornamehash}{5595fc46ec4ea38c645aba54de1bf598}
+      \strng{authorfullhash}{5595fc46ec4ea38c645aba54de1bf598}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online erhältlich unter \url{http://people.math.harvard.edu/~jjchen/docs/Group_Theory_and_the_Rubik's_Cube.pdf}; abgerufen am 05.01.2021.}
+      \field{title}{Group Theory and the Rubik's Cube}
+    \endentry
+    \entry{TD}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8219e6a78841f04aefdca7b9e1e3bef8}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{8219e6a78841f04aefdca7b9e1e3bef8}
+      \strng{fullhash}{8219e6a78841f04aefdca7b9e1e3bef8}
+      \strng{bibnamehash}{8219e6a78841f04aefdca7b9e1e3bef8}
+      \strng{authorbibnamehash}{8219e6a78841f04aefdca7b9e1e3bef8}
+      \strng{authornamehash}{8219e6a78841f04aefdca7b9e1e3bef8}
+      \strng{authorfullhash}{8219e6a78841f04aefdca7b9e1e3bef8}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online erhältlich unter \url{http://www.geometer.org/rubik/group.pdf}; abgerufen am 05.01.2021.}
+      \field{title}{Group Theory via Rubik's Cube}
+    \endentry
+    \entry{RF2}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=346f0b48527b994b6e7e2aabaff00e28}{%
+           family={Frisch},
+           familyi={F\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{fullhash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{bibnamehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{authorbibnamehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{authornamehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{authorfullhash}{346f0b48527b994b6e7e2aabaff00e28}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{note}{Online erhältlich unter \url{https://freshcuber.de/loesung-2x2x2-ortega/}; abgerufen am 31.01.2021.}
+      \field{title}{Schnelle Lösung für den 2x2x2 Pocket Cube (Ortega Methode)}
+      \field{year}{Publiziert am 19.04.2018}
+    \endentry
+    \entry{RF}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=346f0b48527b994b6e7e2aabaff00e28}{%
+           family={Frisch},
+           familyi={F\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{fullhash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{bibnamehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{authorbibnamehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{authornamehash}{346f0b48527b994b6e7e2aabaff00e28}
+      \strng{authorfullhash}{346f0b48527b994b6e7e2aabaff00e28}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{note}{Online erhältlich unter \url{https://freshcuber.de/zauberwuerfel-loesung-teil1/}; abgerufen am 29.01.2021.}
+      \field{title}{Zauberwürfel-Anfängerlösung Teil 1: Erste Ebene (weiß)}
+      \field{year}{Publiziert am 11.12.2017}
+    \endentry
+    \entry{Buch}{book}{}
+      \name{author}{1}{}{%
+        {{hash=450dc4e53995dfbb1bad237b766f5532}{%
+           family={Glosauer},
+           familyi={G\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Springer Spektrum}%
+      }
+      \strng{namehash}{450dc4e53995dfbb1bad237b766f5532}
+      \strng{fullhash}{450dc4e53995dfbb1bad237b766f5532}
+      \strng{bibnamehash}{450dc4e53995dfbb1bad237b766f5532}
+      \strng{authorbibnamehash}{450dc4e53995dfbb1bad237b766f5532}
+      \strng{authornamehash}{450dc4e53995dfbb1bad237b766f5532}
+      \strng{authorfullhash}{450dc4e53995dfbb1bad237b766f5532}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elementar(st)e Gruppentheorie}
+      \field{year}{2016}
+    \endentry
+    \entry{DJ}{book}{}
+      \name{author}{1}{}{%
+        {{hash=08964ade862b0be7aaa8c919b8073bd1}{%
+           family={Joyner},
+           familyi={J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Baltimore, USA}%
+      }
+      \list{publisher}{1}{%
+        {Johns Hopkins University Press}%
+      }
+      \strng{namehash}{08964ade862b0be7aaa8c919b8073bd1}
+      \strng{fullhash}{08964ade862b0be7aaa8c919b8073bd1}
+      \strng{bibnamehash}{08964ade862b0be7aaa8c919b8073bd1}
+      \strng{authorbibnamehash}{08964ade862b0be7aaa8c919b8073bd1}
+      \strng{authornamehash}{08964ade862b0be7aaa8c919b8073bd1}
+      \strng{authorfullhash}{08964ade862b0be7aaa8c919b8073bd1}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online erhältlich unter \url{https://mike.verdone.ca/media/rubiks.pdf}; abgerufen am 12.01.2021.}
+      \field{title}{Adventures in Group Theory: Rubik's Cube, Merlin's Machine, and Other Mathematical Toys}
+      \field{year}{2008}
+    \endentry
+    \entry{TR}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f76321ccd6d13fea50f79f499eae3630}{%
+           family={Rokicki},
+           familyi={R\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{f76321ccd6d13fea50f79f499eae3630}
+      \strng{fullhash}{f76321ccd6d13fea50f79f499eae3630}
+      \strng{bibnamehash}{f76321ccd6d13fea50f79f499eae3630}
+      \strng{authorbibnamehash}{f76321ccd6d13fea50f79f499eae3630}
+      \strng{authornamehash}{f76321ccd6d13fea50f79f499eae3630}
+      \strng{authorfullhash}{f76321ccd6d13fea50f79f499eae3630}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The College Mathematics Journal}
+      \field{number}{4}
+      \field{title}{Towards God's Number for Rubik's Cube in the Quarter-Turn Metric}
+      \field{volume}{45}
+      \field{year}{2014}
+      \field{pages}{242\bibrangedash 253}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.4169/college.math.j.45.4.242
+      \endverb
+    \endentry
+    \entry{AT}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=50a6562fc22024e4ae04aa6515a79f5b}{%
+           family={Tripi},
+           familyi={T\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Missouri State University}%
+      }
+      \strng{namehash}{50a6562fc22024e4ae04aa6515a79f5b}
+      \strng{fullhash}{50a6562fc22024e4ae04aa6515a79f5b}
+      \strng{bibnamehash}{50a6562fc22024e4ae04aa6515a79f5b}
+      \strng{authorbibnamehash}{50a6562fc22024e4ae04aa6515a79f5b}
+      \strng{authornamehash}{50a6562fc22024e4ae04aa6515a79f5b}
+      \strng{authorfullhash}{50a6562fc22024e4ae04aa6515a79f5b}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cayley Graphs of Groups and Their Applications}
+      \field{type}{mathesis}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
+

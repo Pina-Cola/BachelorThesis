@@ -1,65 +1,21 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: proposal.aux
-The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: proposal-blx.bib
-Database file #2: references.bib
-Biblatex version: 3.13
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 13 entries,
-            6365 wiz_defined-function locations,
-            1266 strings with 10829 characters,
-and the built_in function-call counts, 49662 in all, are:
-= -- 2972
-> -- 1060
-< -- 400
-+ -- 822
-- -- 296
-* -- 3060
-:= -- 4219
-add.period$ -- 0
-call.type$ -- 13
-change.case$ -- 220
-chr.to.int$ -- 42
-cite$ -- 24
-duplicate$ -- 5296
-empty$ -- 5033
-format.name$ -- 530
-if$ -- 11002
-int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 0
-newline$ -- 273
-num.names$ -- 592
-pop$ -- 4005
-preamble$ -- 1
-purify$ -- 241
-quote$ -- 0
-skip$ -- 2232
-stack$ -- 0
-substring$ -- 4255
-swap$ -- 1477
-text.length$ -- 304
-text.prefix$ -- 12
-top$ -- 1
-type$ -- 425
-warning$ -- 0
-while$ -- 562
-width$ -- 0
-write$ -- 261
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[1] Config.pm:307> INFO - Logfile is 'proposal.blg'
+[135] biber:322> INFO - === Do Feb 11, 2021, 12:33:30
+[153] Biber.pm:415> INFO - Reading 'proposal.bcf'
+[312] Biber.pm:943> INFO - Found 13 citekeys in bib section 0
+[348] Biber.pm:4256> INFO - Processing section 0
+[349] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[349] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[372] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[374] bibtex.pm:1653> INFO - LaTeX decoding ...
+[416] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[471] Utils.pm:293> WARN - year field '2020 aktualisiert' in entry 'RC' is not an integer - this will probably not sort properly.
+[521] Utils.pm:293> WARN - year field 'Publiziert am 11.12.2017' in entry 'RF' is not an integer - this will probably not sort properly.
+[528] Utils.pm:293> WARN - year field 'Publiziert am 19.04.2018' in entry 'RF2' is not an integer - this will probably not sort properly.
+[619] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[620] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[620] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[620] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[635] bbl.pm:652> INFO - Writing 'proposal.bbl' with encoding 'UTF-8'
+[660] bbl.pm:755> INFO - Output to proposal.bbl
+[661] Biber.pm:128> INFO - WARNINGS: 3
