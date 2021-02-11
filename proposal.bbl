@@ -19,17 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{patent}{misc}{}
-      \list{organization}{1}{%
-        {Rubik}%
-      }
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{note}{US4378117A}
-      \field{number}{US4378117A}
-      \field{type}{Schutzrecht}
-      \field{year}{1980}
-    \endentry
     \entry{MMFAA}{misc}{}
       \name{author}{1}{}{%
         {{hash=7c7ce3aaba416f282940a709f77d4b5d}{%
@@ -51,51 +40,6 @@
       \field{note}{Online erhältlich unter \url{https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2019-2020/Makalah2019/13518111.pdf}; abgerufen am 20.01.2021.}
       \field{title}{God's Algorithm in The 2x2x2 Rubik's Cube}
       \field{year}{2019}
-    \endentry
-    \entry{TEST}{patent}{}
-      \name{author}{4}{}{%
-        {{hash=ab2a6410f8ad5b70130889ab7ee8b5e2}{%
-           family={Almendro},
-           familyi={A\bibinitperiod},
-           given={Jos{é}\bibnamedelima L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=667663fe82c3b8b1b6d5769259249d07}{%
-           family={Mart{í}n},
-           familyi={M\bibinitperiod},
-           given={Jacinto},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5e969ffc8577cc59b21e1bb9b75b7dfa}{%
-           family={S{á}nchez},
-           familyi={S\bibinitperiod},
-           given={Alberto},
-           giveni={A\bibinitperiod}}}%
-        {{hash=0b3e4f40fa82e058b41b5fe539d12994}{%
-           family={Nozal},
-           familyi={N\bibinitperiod},
-           given={Fernando},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{location}{3}{%
-        {countryfr}%
-        {countryuk}%
-        {countryde}%
-      }
-      \strng{namehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
-      \strng{fullhash}{27b0c1d548d1af42d310074e3de48be1}
-      \strng{bibnamehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
-      \strng{authorbibnamehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
-      \strng{authornamehash}{afc52ce715ef9d5d4b4f17ab8d0f8f4b}
-      \strng{authorfullhash}{27b0c1d548d1af42d310074e3de48be1}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{This is a \texttt{patent} entry with a \texttt{location} field. The number is given in the \texttt{number} field. Note the format of the \texttt{location} field in the database file. Compare \texttt{laufenberg}, \texttt{sorace}, and \texttt{kowalik}}
-      \field{langid}{german}
-      \field{number}{EU-29702195U}
-      \field{title}{Elektromagnetisches Signalhorn}
-      \field{year}{1998}
-      \field{dateera}{ce}
     \endentry
     \entry{rekord}{misc}{}
       \name{author}{1}{}{%
@@ -318,6 +262,29 @@
       \verb 10.4169/college.math.j.45.4.242
       \endverb
     \endentry
+    \entry{patent}{patent}{}
+      \name{author}{1}{}{%
+        {{hash=1501862d556e48a872fe129ffc069b54}{%
+           family={Rubik},
+           familyi={R\bibinitperiod},
+           given={Erño},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Rubik}%
+      }
+      \strng{namehash}{1501862d556e48a872fe129ffc069b54}
+      \strng{fullhash}{1501862d556e48a872fe129ffc069b54}
+      \strng{bibnamehash}{1501862d556e48a872fe129ffc069b54}
+      \strng{authorbibnamehash}{1501862d556e48a872fe129ffc069b54}
+      \strng{authornamehash}{1501862d556e48a872fe129ffc069b54}
+      \strng{authorfullhash}{1501862d556e48a872fe129ffc069b54}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{number}{US4378117A}
+      \field{year}{1983}
+    \endentry
     \entry{AT}{thesis}{}
       \name{author}{1}{}{%
         {{hash=50a6562fc22024e4ae04aa6515a79f5b}{%
@@ -344,6 +311,7 @@
       \field{year}{2017}
     \endentry
   \enddatalist
+  \missing{TEST}
 \endrefsection
 \endinput
 
