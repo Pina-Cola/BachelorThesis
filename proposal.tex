@@ -1366,13 +1366,8 @@ Außerdem kann man erkennen, dass sechs der acht Steine bei dem Zug $LLFF$ beweg
 
 
 Es kann schwierig sein, die Äquivalenz von Zügen oder Roatationen anhand der Funktionen ($\sigma$ und $\delta$) in der Zykelschreibweise zu erkennen. 
-
-
 Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann. So ist der Zug $U$ beispielsweise $ (ulf \ ulb \ urb \ urf)$, aber auch $(urb \ urf \ ulf \ ulb)$.
-
-
 Um das zu vereinfachen, werden die Würfelpositionen priorisiert, so dass die Position mit der höchsten Priorität immer vorne steht und zwei Äquivalente Zykel somit gleich aussehen. 
-
 Die Positionen werden wie folgt priorisiert:
 \begin{table}[H]
 \centering
@@ -1411,9 +1406,7 @@ Somit ist die angepasste Schreibweise für den Zug $U$ dann $(ulb \ urb \ urf \ 
 \section{Untergruppen von G$_{2\times 2\times 2}$}
 
 Dieses Kapitel behandelt die Untergruppen von $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen. Außerdem werden noch weitere Untergruppen beschrieben und erzeugt.
-
 Die Definition und Erklärung der Untergruppe und des Erzeugers findet sich in Kapitel \ref{11}.
-
 Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt.
 
 %
@@ -1441,15 +1434,14 @@ Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt
 
 
 
-Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G=\Gtwo$). Also sind $H_N$ und $H_G$ die trivialen Untergruppen von $\Gtwo$. ($H_N \leqslant \Gtwo$ und $H_G \leqslant \Gtwo$)\\
+Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G=\Gtwo$). Also sind $H_N$ und $H_G$ die trivialen Untergruppen von $\Gtwo$ ($H_N \leqslant \Gtwo$ und $H_G \leqslant \Gtwo$).
 Die Gruppe $\Gtwo$ hat viele Untergruppen, deshalb kann hier nur auf einen Teil davon erwähnt werden. 
 
 
-Da die trivialen Untergruppen nicht sonderlich interessant sind, geht der folgende Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Diese Gruppen hat Tom Davis (in seinem Paper \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
+Da die trivialen Untergruppen nicht sonderlich aussagekräftig sind, geht der folgende Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Diese Gruppen hat Tom Davis (in seinem Paper \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
 \begin{itemize}
 \item Die Untergruppe $H_{E1}$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann man auch gut an einem \textit{Cube} nachvollziehen, da man durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielen kann.
 \item Eine weitere Untergruppe von $\Gtwo$ ist $H_{E2}$. Hier dürfen zwei gegenüberliegende Ebenen gedreht werden. 
-
 Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und man nicht anhand der Mittelsteine oben und unten unterscheiden kann.
 \end{itemize}
 
@@ -1488,19 +1480,14 @@ Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei k
 
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
-\\
-\\
+
 Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $F$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
-
 Die Untergruppe $F$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden also (wie bereits in Kapitel \ref{8} beschrieben) modulo $4$ gerechnet.
-
 Das gilt für jeden Erzeuger, der nur aus einer einzelnen Ebenendrehung besteht.
 
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Kapitel \ref{26} beschrieben.
-
 Die Ordnung des Zuges $FR$ ist 15 -- wenn man $FR$ 15-mal auf dem \Ttwo Würfel ausführt, ist er wieder in der Ausgangsposition. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ allerdings 105 \cite{TD}.
-
 Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat also 15 Elemente.
 %
 %
@@ -1526,32 +1513,26 @@ Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat also 15 Elemente.
 \subsection*{Durch \textit{FF} und \textit{RR} erzeugte Untergruppe}\addcontentsline{toc}{subsection}{\protect\numberline{}Durch $FF$ und $RR$ erzeugte Untergruppe}
 
 Das Beispiel der durch $\{ FF, RR \}$ erzeugten Untergruppe hat Tom Davis auch gewählt \cite{TD} und hier wird es von dem \Tthree \ auf den \Ttwo Würfel übertragen.
-
 Da die beiden Züge als Einheiten gesehen werden, muss jede der Ebenendrehungen eine halbe Drehung sein.
-
 Es wurde in Kapitel \ref{8} bereits gezeigt, dass $(FF)^2 = N$ und $(RR)^2 = N$ gilt, da der Würfel dann wieder in der Ausgangsposition ist.
 
 Wenn man einen gelösten \Ttwo Würfel in die Hand nimmt, und $FFRR$ ausführt, befindet sich der Würfel nach 3 Wiederholungen wieder in der Startkonfiguration. Das gilt auch für den Zug $RRFF$. Die Ordnung von $FFRR$ und $RRFF$ ist also 3. Bei dem \Tthree \textit{Cube} ist die Ordnung dieser Züge 6 \cite{TD}.
 
 Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit auch mehr Elemente als die des \Ttwo Würfels. Theoretisch sind das alle Mitglieder der Untergruppe des \Ttwo \textit{Cubes}, wenn man dabei berücksichtigt, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $FFRRFF$, $FFRRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. 
-
-Wenn man die Züge an seinem Würfel ausprobiert, stellt man aber fest, dass beispielsweise $(RRFF)^2RR$ die gleiche Würfelkonfiguration wie $FF$ ergibt. Wenn man diese Doppelungen aussortiert, erhält man folgende sieben Gruppenelemente:
-\begin{table}[H]
+Wenn man diese Züge an einem Würfel ausprobiert, stellt man aber fest, dass beispielsweise $(RRFF)^2RR$ bei gleichem Startzustand die gleiche Würfelkonfiguration wie $FF$ ergibt. Wenn man diese Doppelungen aussortiert, erhält man folgende sieben Gruppenelemente:
+\begin{center}
 \centering
 \begin{tabular}{c c c c}
 $N$ & $RR$ & $FFRR$ &  $RRFFRR$ \\
 & $FF$ & $RRFF$ & $FFRRFF$   \\
 \end{tabular}
-\caption{Mitglieder der durch $\{ FF, RR \}$ erzeugten Untergruppe}
-\end{table}
+\end{center}
 Zum Vergleich: Tom Davis kommt bei dem  \Tthree Würfel auf $12$ Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
 
 Man kann die Doppelten Elemente natürlich auch mathematisch erkennen und muss dafür nicht an seinem Würfel jede Option ausprobieren.
-
-Das wird im folgenden beispielhaft mit $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daher weiß man, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass man, da es sich um halbe Drehungen handelt, die Position die man durch $RRFFRRFFRR$ erreicht auch durch $FF$ erreichen kann.
+Das wird im Folgenden beispielhaft mit $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daher weiß man, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass man, da es sich um halbe Drehungen handelt, die Position die man durch $RRFFRRFFRR$ erreicht auch durch $FF$ erreichen kann.
 
 Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders interessant, wenn man bedenkt, dass $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
-
 Bei dem \Ttwo \textit{Cube} kommt man mit $120 \cdot 3^5$ auf $29 \, 160$ Mitglieder der Untergruppe, aber auch das ist deutlich größer als $7$.
 
 %
@@ -1574,8 +1555,6 @@ Bei dem \Ttwo \textit{Cube} kommt man mit $120 \cdot 3^5$ auf $29 \, 160$ Mitgli
 \subsection*{Cayleygraph}\addcontentsline{toc}{subsection}{\protect\numberline{}Cayleygraph}
 Cayleygraphen wurden in Kapitel \ref{11} eingeführt. Sie dienen der Visualisierung von Untergruppen und deren Erzeugern.
 
-Ein simples Beispiel sieht man in Abbildung \ref{27}: Der Cayleygraph der Untergruppe $F$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
-
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.7]{Cayleygraph1.png}
@@ -1583,13 +1562,17 @@ Ein simples Beispiel sieht man in Abbildung \ref{27}: Der Cayleygraph der Unterg
 \label{27}
 \end{figure}
 
+Ein simples Beispiel sieht man in Abbildung \ref{27}: Der Cayleygraph der Untergruppe $F$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
 Dieser Cayleygraph ist anschaulich, der er nicht sonderlich komplex ist.
-
 Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt, daraus ergibt sich durch hinzufügen einer weiteren Drehung der vorderen Ebene um $90^\circ$ dann $FF$, dann $FFF$ und dann $FFFF$, was dem neutralen Element $F$ entspricht.
-\\
-\\
-Der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe ist etwas komplexer (s. Abbildung \ref{28}. 
 
+
+Der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe ist etwas komplexer (s. Abbildung \ref{28}). 
+Die roten Pfeile repräsentieren den Erzeuger $\{FF\}$ (da es sich dabei in der Startkonfiguration um die rote Seite des Würfels handelt) und die blauen Pfeile repräsentieren den Erzeuger $\{RR\}$ (da es sich dabei um die blaue Würfelseite handelt).
+Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entstehen können, sind durch einen Pfeil (Erzeuger) miteinander verbunden.
+Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphens. 
+Anhand des Cayleygraphens kann man sehen, dass $FFFF$ und $RRRR$ das neutrale Element $N$ ergeben.
+Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ (Abbildung \ref{27}), stellt er eine sehr kleine erzeugte Untergruppe dar, wenn man es mit der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$ vergleicht. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{Cayleygraph2.png}
@@ -1597,15 +1580,6 @@ Der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe ist etwas komplex
 \label{28}
 \end{figure}
 
-Die roten Pfeile repräsentieren den Erzeuger $\{FF\}$ (da es sich dabei in der Startkonfiguration um die rote Seite des Würfels handelt) und die blauen Pfeile repräsentieren den Erzeuger $\{RR\}$ (da es sich dabei um die blaue Würfelseite handelt).
-
-Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entstehen können, sind durch einen Pfeil (Erzeuger) miteinander verbunden.
-
-Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphens. 
-
-Anhand des Cayleygraphens kann man sehen, dass $FFFF$ und $RRRR$ das neutrale Element $N$ ergeben.
-
-Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ (Abbildung \ref{27}), stellt er eine sehr kleine erzeugte Untergruppe dar, wenn man es mit der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$ vergleicht. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
 
 
 
