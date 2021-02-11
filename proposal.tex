@@ -16,7 +16,11 @@
 
 \usepackage[nottoc]{tocbibind}
 
+\usepackage[onehalfspacing]{setspace}
+
 \usepackage{stmaryrd}
+
+\usepackage{booktabs}
 
 
 \usepackage{subfigure}
@@ -55,6 +59,8 @@
 }
 
 \setlength{\parindent}{0em}
+
+\setlength{\parskip}{1.3ex}
 
 \pagenumbering {arabic} 
 
@@ -98,8 +104,10 @@
 	{\large \today\par}
 \end{titlepage}
 
-
+\begin{singlespace}
 \tableofcontents
+\end{singlespace}
+
 
 \thispagestyle{empty} 
 
@@ -133,14 +141,12 @@
 \subsection*{Motivation} \addcontentsline{toc}{subsection}{\protect\numberline{}Motivation}
 
 Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem ungarischen Professor Er\~{n}o Rubik erfunden wurde. Er wollte damit seinen Studenten helfen, dreidimensionale Probleme zu verstehen. 
-
 Der sogenannte \textit{Rubik's Cube} wurde dann weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. \cite{RC}
-
 Im Jahr 1981 hat \textit{Rubik} dann das Patent für den \Ttwo Würfel angemeldet \cite{patent}.
 
-\vspace{0.15cm}
-Der \Tthree Würfel wurde mathematisch schon viel untersucht. Die \textit{God's Number} -- das ist die maximal mögliche Anzahl der nötigen Drehungen zur Lösung -- wurde oft berechnet und durch neue Algorithmen verbessert. 
 
+Der \Tthree Würfel wurde mathematisch schon viel untersucht. 
+Die \textit{God's Number} -- das ist die maximal mögliche Anzahl der nötigen Drehungen zur Lösung -- wurde oft berechnet und durch neue Algorithmen verbessert. 
 Die Berechnung der \textit{God's Number} des \Tthree Cubes ist wesentlich anspruchsvoller und dadurch auch interessanter als die des \Ttwo Würfels. 
 
 Der \Tthree Würfel wurde schon mehrfach als Gruppe dargestellt, während der \Ttwo Würfel
@@ -159,12 +165,9 @@ Wer die Lösungsalgorithmen der \Ttwo Würfels selber herleiten möchte, sollte 
 %
 \subsection*{Ausblick} \addcontentsline{toc}{subsection}{\protect\numberline{}Ausblick}
 
-Im Folgenden wird zuerst der Aufbau des \Ttwo \textit{Cubes} beschrieben und danach werden die mathematischen Grundlagen der Gruppentheorie erklärt, auf denen diese Arbeit aufbaut.
-
-In Kapitel \ref{8} wird die Gruppe des \Ttwo Würfels definiert und bewiesen.
-
-Darauf folgt dann eine Beschreibung der Würfelkonfiguration und der Untergruppen des \textit{Cubes}.
-
+Im Folgenden wird zuerst der Aufbau des \Ttwo \textit{Cubes} beschrieben und danach werden die mathematischen Grundlagen der Gruppentheorie erklärt, auf denen diese Arbeit aufbaut. 
+In Kapitel \ref{8} wird die Gruppe des \Ttwo Würfels definiert und bewiesen. 
+Darauf folgt dann eine Beschreibung der Würfelkonfiguration und der Untergruppen des \textit{Cubes}. 
 Am Ende werden die validen Konfigurationen des Würfels behandelt und danach findet sich ein Kapitel über die Lösungsalgorithmen.
 
 %
@@ -183,8 +186,7 @@ Am Ende werden die validen Konfigurationen des Würfels behandelt und danach fin
 \newpage
 \section{Der \Ttwo Würfel}
 
-In diesem Kapitel werden die Grundlagen des \Ttwo \textit{Cubes} erklärt. Zuerst wird der Aufbau und die Terminologie des Würfels erläutert. Dann wird kurz auf die Unterschiede zwischen dem \Ttwo und dem \Tthree Würfel eingegangen.
-
+In diesem Kapitel werden die Grundlagen des \Ttwo \textit{Cubes} erklärt. Zuerst wird der Aufbau und die Terminologie des Würfels erläutert. Dann wird kurz auf die Unterschiede zwischen dem \Ttwo und dem \Tthree Würfel eingegangen. 
 Außerdem werden die Grundzüge des Würfels definiert und erklärt. Darauf basieren alle späteren Algorithmen. 
 
 
@@ -202,11 +204,11 @@ Außerdem werden die Grundzüge des Würfels definiert und erklärt. Darauf basi
 \subsection*{Terminologie} \addcontentsline{toc}{subsection}{\protect\numberline{}Terminologie}
 
 Diese Arbeit befasst sich mit dem \Ttwo Zauberwürfel, deshalb sind Terminologie und Aufbau des \textit{Cubes} eine Grundlage für die weiteren Kapitel.
- 
 Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
 
-\begin{description}
 
+%\begin{singlespacing}
+\begin{description}
 
 
 \item[\Ttwo Würfel] (auch Zauberwürfel oder \textit{Cube}) 
@@ -279,6 +281,7 @@ Es wird sich dabei vorallem den Papern \textit{Group Theory an the Rubik's Cube}
 
 
 \end{description}
+%\end{singlespacing}
 
 
 %
@@ -312,14 +315,16 @@ In Abbildung \ref{24} ist die obere Ebene markiert.
 \begin{table}[H]
 \centering
 \begin{tabular}{cl}
-Abkürzung & Beschreibung des Zugs \\
-\hline
+\toprule
+\textbf{Abkürzung} & \textbf{Beschreibung des Zugs} \\
+\midrule
 $U$ & Drehung der \textbf{oberen} Ebene im Uhrzeigersinn \\
 $D$ & Drehung der \textbf{unteren} Ebene im Uhrzeigersinn \\
 $R$ & Drehung der \textbf{rechten} Ebene im Uhrzeigersinn \\
-$L$ & Drehung der \textbf{linken} Ebene im Uhrzeigersinn \\%
+$L$ & Drehung der \textbf{linken} Ebene im Uhrzeigersinn \\
 $F$ & Drehung der \textbf{vorderen} Ebene im Uhrzeigersinn \\
 $B$ & Drehung der \textbf{hinteren} Ebene im Uhrzeigersinn \\
+\bottomrule
 \end{tabular} 
 \caption[Ebenenrotationen]{Ebenenrotationen}
 \end{table}
@@ -1027,11 +1032,11 @@ Nun kann man für die möglichen Rotationen des Würfels Nachfolgekonfiguratione
 
 Dazu werden zuerst die einzelnen Rotationen des Würfels benannt. 
 
-\begin{table}[H]
 
 \begin{tabular}{cl}
+\toprule
 Abkürzung & Beschreibung der Rotation \\
-\hline
+\midrule
 $Z_l$ & Rotation des Würfels um die $z$-Achse nach links (gegen den Uhrzeigersinn)\\
 
 $Z_r$ & Rotation des Würfels um die $z$-Achse nach rechts (im Uhrzeigersinn)  \\
@@ -1043,16 +1048,15 @@ $Y_r$ & Rotation des Würfels um die $y$-Achse nach rechts (im Uhrzeigersinn)  \
 $X_l$ & Rotation des Würfels um die $x$-Achse nach links (gegen den Uhrzeigersinn)\\
 
 $X_r$ & Rotation des Würfels um die $x$-Achse nach rechts (im Uhrzeigersinn) \\
-
+\bottomrule
 \end{tabular} 
-\caption[Rotationen des Würfels]{Rotationen des Würfels}
-\end{table}
+
 
 Die Rotationen sind nicht minimal definiert, da beispielsweise $Z_l$ das gleiche wie ${Z_r}^3$ ist. Dies dient der Anschaulichkeit. 
 
 Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. 
 
-Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen gezeigt. Die Rotation $Z_r$ sieht man in abbildung \ref{16}.
+Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen gezeigt. Die Rotation $Z_r$ sieht man in Abbildung \ref{16}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.13]{auf_ulf.png}
