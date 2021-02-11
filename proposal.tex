@@ -1115,13 +1115,14 @@ Analog zu den Zügen gilt bei den Rotationen also für jede Rotation:
 
 \subsection*{Äquivalenzrelationen der Rotationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen}
 
-Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen. \\
-Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
-\\
+Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen.
+Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} 
+
 In dem Fall der Gruppe $(\Gtwo, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in \Gtwo$. 
 
-Die Äquivalenzrelation ist folgendermaßen definiert: 
-\\ \\
+Die Äquivalenzrelation der Rotation wird hier so definiert: 
+
+
 \begin{tabular}{l l}
 $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler Rotation) die gleiche }\\
 \  & \textit{Würfelkonfiguration} \\
@@ -1129,12 +1130,8 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 \\
 
 Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$, wobei $N$ die \textit{leere} Rotation darstellt, also keine Rotation des Würfels. 
-
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow F = Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
-
-
-In Abbildung \ref{1} sieht man dieses Beispiel nochmal grafisch: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. \\
-Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
+In Abbildung \ref{1} sieht man dieses Beispiel nochmal grafisch: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{3_wuerfel.png}
@@ -1144,9 +1141,7 @@ Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders ged
 
 Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und Transitivität gelten, was im folgenden Abschnitt bewiesen wird.
 
-
 \begin{description}
-
 
 
 \item [Reflexivität] \ \\
@@ -1169,27 +1164,22 @@ Z_1 \sim Z_2 & \Rightarrow Z_2 \sim Z_1 \\
 mit \ Z_1 \sim Z_2 : & \Leftrightarrow  Z_1 = WZ_2 \\
 \Leftrightarrow Z_1 = W_1 Z_2 & \Rightarrow Z_2 = W_2 Z_1
 \end{align*}
-Das gilt, wenn $W_2$ das Inverse von $W_1$ ist. Das Inverse ist die Rotation um die gleiche Achse, aber in die andere Richtung. \\
-Das Inverse von $W$ wird als $W^{-1}$ geschrieben. \\
+Das gilt, wenn $W_2$ das Inverse von $W_1$ ist. Das Inverse ist die Rotation um die gleiche Achse, aber in die andere Richtung. 
+Das Inverse von $W$ wird als $W^{-1}$ geschrieben.
+Das sind die Rotationen mit den dazugehörigen Inversen:
 
-Das sind die Rotationen mit den dazugehörigen Inversen: \\
-
-\begin{table}[H]
-\centering
+\begin{center}
 \begin{tabular}{lccccccc}
 Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $N$ \\
 \hline
 Inverses \hspace*{0.1em} $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $N$ \\
-
 \end{tabular} 
-\caption[Inverse der Rotationen]{Inverse der Rotationen}
-\end{table}
-
+\end{center}
 Dann gilt: 
 \begin{align*}
 Z_1 = W Z_2 & \Rightarrow Z_2 = W^{-1} Z_1
 \end{align*}
-Das gilt, da durch $W^{-1}$ der Würfel in die entgegengesetzte Richtung rotiert wird und die Züge somit wieder die gleiche Würfelkonfiguration ergeben. \\
+Das gilt, da durch $W^{-1}$ der Würfel in die entgegengesetzte Richtung rotiert wird und die Züge somit wieder die gleiche Würfelkonfiguration ergeben.
 Also gilt die Symmetrie für $\sim$.
 
 
@@ -1229,43 +1219,26 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 %
 \subsection*{Ordnung der Züge}\addcontentsline{toc}{subsection}{\protect\numberline{}Ordnung der Züge}
 Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$, da alle Steine des Würfels in ihrer vorherigen Position bleiben, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werden die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4 bezeichnet. 
-
-
 Die Exponentenschreibweise kann man für alle Züge aus $\Gtwo$ anwenden, auch wenn sie mehr als eine Ebene rotieren, beispielsweise bei $LLFF$. $(LLFF)^2$ entspricht dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ergibt. 
 
-
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
-
-
 Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4), ${(RRFF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15). 
+Die genannten Beispiele kann man an einem \Ttwo Würfel einfach ausprobieren.
 Dabei muss beachtet werden, dass die Ordnung die Anzahl der Durchführungen beschreibt, die benötigt wird, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. 
 
-Die genannten Beispiele kann man an einem \Ttwo Würfel einfach ausprobieren.
-\\
-\\
+
 Im folgenden Abschnitt wird bewiesen, dass die Würfelsteine wieder in die Ausgangspositionen gelangen, wenn man einen beliebigen Zug $Z \in \Gtwo$ wiederholt auf den Würfel anwendet.
 Der folgende Beweis orientiert sich an dem Beweis aus dem Paper \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD}: \\
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet. \\ 
 Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelposition wiederholt werden, wenn man den Zug oft genug durchführt. \\
-Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich. Also muss eine Position wiederholt werden, wenn man den Zug öfter ausführt, als es mögliche Würfelpositionen gibt. 
-
-
-Bei einem beliebigen Zug $Z \in \Gtwo$ gelangt man also irgendwann in eine Würfelposition, die sich wiederholt. Die wiederholende Würfelposition tritt zuerst nach $n \in \mathbb{N}$ Wiederholungen auf und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen. Das sieht dann so aus: $Z^n=Z^m$ mit $0 < n < m$. 
-
-
+Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich. Also muss eine Position wiederholt werden, wenn man den Zug öfter ausführt, als es mögliche Würfelpositionen gibt. \\
+Bei einem beliebigen Zug $Z \in \Gtwo$ gelangt man also irgendwann in eine Würfelposition, die sich wiederholt. Die wiederholende Würfelposition tritt zuerst nach $n \in \mathbb{N}$ Wiederholungen auf und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen. Das sieht dann so aus: $Z^n=Z^m$ mit $0 < n < m$. \\
 Also gilt mit der Würfelkonfiguration $Z^{n-1} \neq Z^{m-1}$, da $m$ das zweite Vorkommen der gleichen Position repräsentiert. \\
-Wenn $n=0$ ist, hat man $Z^0=N$, was den leeren Zug (bzw. das neutrale Element) repräsentiert. Der Würfel wird dabei nicht verändert und somit wird die Würfelposition bei jedem Zug $Z \in \Gtwo$ mit $Z^0$ wiederholt. 
-
-
+Wenn $n=0$ ist, hat man $Z^0=N$, was den leeren Zug (bzw. das neutrale Element) repräsentiert. Der Würfel wird dabei nicht verändert und somit wird die Würfelposition bei jedem Zug $Z \in \Gtwo$ mit $Z^0$ wiederholt. \\
 Es gilt $Z^n = Z^m$. Wenn man nun auf die gleiche Ausgangsposition $n$-mal oder $m$-mal $Z$ anwendet, kommt man in der gleichen Endposition an. \\
-Wenn man nun $Z^{-1}$ anwendet, kommt man wieder in die gleiche Endposition. Dabei ist es egal, ob man vorher $n$-mal oder $m$-mal $Z$ ausgeführt hat, da man von der gleichen Startposition ausgehend in die gleiche Endposition kommt, wenn man den gleichen Zug ausführt. 
-
-
-Beim Anwenden von $Z^{-1}$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn man $Z$ also $n$-mal ausführt und dann $Z^{-1}$ ausführt, ist es das gleiche wie $n-1$-mal $Z$ ausführen, also $Z^nZ^{-1}=Z^{n-1}$. Das gilt natürlich auch für $m$, also $Z^mZ^{-1}=Z^{m-1}$.
-
-
+Wenn man nun $Z^{-1}$ anwendet, kommt man wieder in die gleiche Endposition. Dabei ist es egal, ob man vorher $n$-mal oder $m$-mal $Z$ ausgeführt hat, da man von der gleichen Startposition ausgehend in die gleiche Endposition kommt, wenn man den gleichen Zug ausführt. \\
+Beim Anwenden von $Z^{-1}$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn man $Z$ also $n$-mal ausführt und dann $Z^{-1}$ ausführt, ist es das gleiche wie $n-1$-mal $Z$ ausführen, also $Z^nZ^{-1}=Z^{n-1}$. Das gilt natürlich auch für $m$, also $Z^mZ^{-1}=Z^{m-1}$.\\
 Demnach gilt dann $Z^{n-1}=Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. Also muss $n=0$ sein, damit $m$ die erste Wiederholung einer Position repräsentiert. 
-
 
 Daraus folgt: Wenn man den Zug wiederholt auf einen Würfel anwendet, kommen die Steine wieder in die Ausgangsposition.
  
@@ -1296,17 +1269,16 @@ Daraus folgt: Wenn man den Zug wiederholt auf einen Würfel anwendet, kommen die
 
 
 Anhand der Zykelstruktur lässt sich die Ordnung des jeweiligen Zuges bestimmen. Die Ordnung beschreibt die Anzahl der Wiederholungen, die ein Zug durchgeführt werden muss, damit die Steine die gleiche Anordnung wie zu Beginn des Zuges haben. Dabei geht es um die Steinpositionen und nicht um die Steinausrichtungen.
+Der Würfel kann also alle Steine an der richtigen Position haben und trotzdem ungelöst sein, da die Steine verdreht sein können. 
 
-Der Würfel kann also alle Steine an der richtigen Position haben und trotzdem ungelöst sein, da die Steine verdreht sein können. \\
-\\
-Der Zug $U$ als $\sigma_U =\ (ulf \ ulb \ urb \ urf) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel. \\
+Der Zug $U$ als $\sigma_U =\ (ulf \ ulb \ urb \ urf) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel.
 Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
-
-\begin{table}[H]
+\begin{center}
 \centering
 \begin{tabular}{ccccc}
-Ausführung & ulf & ulb & urb & urf \\
-\hline
+\toprule
+\textbf{Ausführung} & \textbf{ulf} & \textbf{ulb} & \textbf{urb} & \textbf{urf} \\
+\midrule
 1 & ulb & urb & urf & ulf \\
 
 2 & urb & urf & ulf & ulb \\
@@ -1314,26 +1286,17 @@ Ausführung & ulf & ulb & urb & urf \\
 3 & urf & ulf & ulb & urb \\
 
 4 & ulf & ulb & urb & urf \\
-
-
+\bottomrule
 \end{tabular}
-\caption[Permutationen des Zuges $U$]{Permutationen des Zuges $U$}
-\end{table}
-
+\end{center}
 
 Die vierte Zeile der Tabelle hat die selbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). 
-
 Somit hat die beschriebene Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).
-
-
 Es gilt also für jeden Zug $Z$, der aus nur einem $n$-elementigen Zykel besteht: \\ 
-${\forall \ Z \in \Gtwo\ mit \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  Z^n=1 }$. 
-
-
-Wenn man $Z$ mehrfach ausführt, kommt man nach jeder $n$-ten Wiederholung in den Ausgangszustand. \cite{TD} Es gilt also auch 
+${\forall \ Z \in \Gtwo\ mit \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  Z^n=N }$. 
+Wenn man $Z$ mehrfach ausführt, kommt man nach jeder $n$-ten Wiederholung in den Ausgangszustand. \cite{TD} 
+Es gilt also auch 
 ${\forall \ Z \in \Gtwo\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N} \ . \  Z^{k*n}=1 }$.
-
-
 Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache aller Zykelgrößen bestimmt werden. \cite{TD}
 
  
@@ -1347,36 +1310,28 @@ Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge in Abbildung 
 
 Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden. 
 
-
 So kann man nun anhand des Beispielzuges $LLFF$ die Zykelstruktur darstellen. 
-
-
 Zuerst wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbildet. 
 
-\begin{table}[H]
-\centering
+\begin{center}
 \begin{tabular}{ccccccccc}
+\toprule
+\qquad \qquad & \textbf{ulb} & \textbf{urb} & \textbf{ulf} & \textbf{urf} & \textbf{dlb} & \textbf{drb} & \textbf{dlf} & \textbf{drf} \\
+\midrule
 
-\qquad \qquad & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
-\hline
+\textbf{L} & ulf & \textcolor{gray}{urb} & dlf & \textcolor{gray}{urf} & ulb & \textcolor{gray}{drb} & dlb & \textcolor{gray}{drf} \\
 
-L & ulf & \textcolor{gray}{urb} & dlf & \textcolor{gray}{urf} & ulb & \textcolor{gray}{drb} & dlb & \textcolor{gray}{drf} \\
+\textbf{L} & dlf & \textcolor{gray}{urb} & dlb & \textcolor{gray}{urf} & ulf & \textcolor{gray}{drb} & ulb & \textcolor{gray}{drf} \\
 
-L & dlf & \textcolor{gray}{urb} & dlb & \textcolor{gray}{urf} & ulf & \textcolor{gray}{drb} & ulb & \textcolor{gray}{drf} \\
+\textbf{F} & ulf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & drf & urf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & dlf \\
 
-F & ulf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & drf & urf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & dlf \\
-
-F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & ulf \\
-
-
+\textbf{F} & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor{gray}{drb} & \textcolor{gray}{ulb} & ulf \\
+\bottomrule
 \end{tabular}
-\caption[Permutationen des Zuges $LLFF$]{Permutationen des Zuges $LLFF$}
-\end{table}
+\end{center}
 
-Die grauen Positionen bleiben bei dem jeweiligen Zug unverändert. \\
-
+Die grauen Positionen bleiben bei dem jeweiligen Zug unverändert. 
 Grafisch dargestellt sieht man die Zykel des Zuges $LLFF$ in Abbildung \ref{17}. 
-
 
 \begin{figure}[h]
 \includegraphics[scale=0.3]{zykel_LLFF.png}
@@ -1385,12 +1340,8 @@ Grafisch dargestellt sieht man die Zykel des Zuges $LLFF$ in Abbildung \ref{17}.
 \end{figure}
 
 In Zykelschreibeweise also $\sigma_{LLFF}=(dlf \ ulb \ urf)(ulf \ dlb \ drf)$.
-
 Da es also zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. 
-
 In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. 
-
-
 Außerdem kann man erkennen, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt werden. Die anderen beiden ($urb$ und $drb$) bleiben unverändert. 
 
 %

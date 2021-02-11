@@ -1,16 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Inverse der Rotationen}}{26}%
+\contentsline {table}{\numberline {1}{\ignorespaces Priorität der Positionen (für Zykelschreibweise)}}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Permutationen des Zuges $U$}}{29}%
+\contentsline {table}{\numberline {2}{\ignorespaces Mitglieder der durch $\{ FF, RR \}$ erzeugten Untergruppe\relax }}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Permutationen des Zuges $LLFF$}}{30}%
+\contentsline {table}{\numberline {3}{\ignorespaces Ausrichtung der Steine (modulo 3)}}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Priorität der Positionen (für Zykelschreibweise)}}{32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Mitglieder der durch $\{ FF, RR \}$ erzeugten Untergruppe\relax }}{35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6}{\ignorespaces Ausrichtung der Steine (modulo 3)}}{39}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7}{\ignorespaces Permutationen von $[L, F ]$}}{42}%
+\contentsline {table}{\numberline {4}{\ignorespaces Permutationen von $[L, F ]$}}{41}%
