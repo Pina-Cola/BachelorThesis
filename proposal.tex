@@ -715,17 +715,13 @@ Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1
 
 \label{26}
 Um mit dem Würfel zu arbeiten, muss man wissen, in welcher Position er sich befindet.
-
 Dafür wird die Konfiguration des Würfels definiert, sie setzt sich aus zwei Parametern zusammen: 
 \begin{itemize}
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x$)
 \end{itemize}
 Also kann die Konfiguration des Würfels als ein 2-Tupel geschrieben werden: $(\sigma, x)$.
-
-
 In diesem Kapitel wird die Position derEcksteine als $\sigma$ und die Ausrichtung der Ecktsteine als Vaktor $x$ erklärt. 
-
 Außerdem werden Äquivalenzrelationen definiert, um die Ausrichtung des Würfels zu berücksichtigen.
 
 %
@@ -768,17 +764,12 @@ Die Einteilung der Würfelpositionen sieht man in den Abbildung \ref{13} und \re
 \caption[aufgeklappter Würfel mit Namen der Steinpositionen]{aufgeklappter Würfel mit Namen der Steinpositionen}
 \label{14}
 \end{figure}
-
 Jeder Steinposition wird ein einzigartiger Name zugeordnet, um sich darauf zu beziehen. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinposition werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, l, r, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, left, right, front, back}. \\
 Somit heißt die Steinposition oben links beispielsweise \textit{ulf} (für \textit{up}, \textit{left} und \textit{front}). 
-
-
 Jeder Stein bekommt auch einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
-\\
+
 Nun wird zur Veranschaulichung die Permutation $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn definiert. Grundlagen zu Permutationen und der Zykelschreibeweise wurden in Kapitel \ref{11} erklärt.
-
 Hier wird $\sigma_U$ ausführlich beschrieben und verschiedene Schreibweisen angegeben. Die weiteren Drehungen sind analog definiert. 
-
 Die Drehung der oberen Ebene sieht man grafisch dargestellt in Abbildung \ref{15}.
 \begin{figure}[h]
 \centering
@@ -788,18 +779,20 @@ Die Drehung der oberen Ebene sieht man grafisch dargestellt in Abbildung \ref{15
 \label{15}
 \end{figure}
 
-{Die Funktion $\sigma_U$ sieht dann so aus: \\
+Die Funktion $\sigma_U$ sieht dann so aus:
+\begin{align*}
+\sigma_U(ulf)=ulb \ \ \ \ \ \ \ \ \sigma_U(ulb)=urb \ \ \ \ \ \ \ \ \sigma_U(urb)=urf \ \ \ \ \ \ \ \ \sigma_U(urf)=ulf \\
+\sigma_U(dlf)=dlf \ \ \ \ \ \ \ \ \sigma_U(dlb)=dlb \ \ \ \ \ \ \ \ \ \sigma_U(drb)=drb \ \ \ \ \ \ \ \ \sigma_U(drf)=drf 
+\end{align*}
 
-$\sigma_U(ulf)=ulb$ \ \ \ \ \ \ \ \ $\sigma_U(ulb)=urb$ \ \ \ \ \ \ \ \ $\sigma_U(urb)=urf$ \ \ \ \ \ \ \ \ $\sigma_U(urf)=ulf$ \\
-$\sigma_U(dlf)=dlf$ \ \ \ \ \ \ \ \ $\sigma_U(dlb)=dlb$ \ \ \ \ \ \ \ \ \ $\sigma_U(drb)=drb$ \ \ \ \ \ \ \ \ $\sigma_U(drf)=drf$} 
-\\
+Das kann man auch in der Form $i \mapsto j$ schreiben: 
+\begin{align*}
+ulf \mapsto ulb \ \ \ \ \ \ \ \ ulb \mapsto urb \ \ \ \ \ \ \ \ urb \mapsto urf \ \ \ \ \ \ \ \ urf \mapsto ulf \\
+dlf \mapsto dlf \ \ \ \ \ \ \ \ dlb \mapsto dlb \ \ \ \ \ \ \ \ \ drb \mapsto drb \ \ \ \ \ \ \ \ drf \mapsto drf 
+\end{align*}
 
-Das kann man auch in der Form $i \mapsto j$ schreiben: \\
-\\
-$ulf \mapsto ulb$ \ \ \ \ \ \ \ \ $ulb \mapsto urb$ \ \ \ \ \ \ \ \ $urb \mapsto urf$ \ \ \ \ \ \ \ \ $urf \mapsto ulf$ \\
-$dlf \mapsto dlf$ \ \ \ \ \ \ \ \ $dlb \mapsto dlb$ \ \ \ \ \ \ \ \ \ $drb \mapsto drb$ \ \ \ \ \ \ \ \ $drf \mapsto drf$ \\
-\\
-Daraus entstehen folgende Zykel: $\sigma_U = \ (ulf \ ulb \ urb \ urf)\ (dlf)\ (dlb)\ (drb)\ (drf)$ \\ \\
+Daraus entstehen folgende Zykel: $\sigma_U = \ (ulf \ ulb \ urb \ urf)\ (dlf)\ (dlb)\ (drb)\ (drf)$
+
 Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt sich $\sigma_U = \ (ulf \ ulb \ urb \ urf)$, was den Zykel beschreibt, in dem die Steine rotiert werden, wenn die obere Ebene gedreht wird. 
 
 
@@ -836,31 +829,19 @@ Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden:
 %
 \subsection*{Ausrichtung der Steine} \addcontentsline{toc}{subsection}{\protect\numberline{}Ausrichtung der Steine}
 Der $2\times 2\times 2$-Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. 
-
 Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{foldedout_numbers.png}
-\caption{ausgeklappter Würfel mit Markierungen für $x_i$}
-\end{figure}
-
-Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, wird mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen/gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
-\begin{figure}[h]
-\centering
 \includegraphics[scale=0.1]{foldedout_012.png}
-\includegraphics[scale=0.1]{foldedout_c_012.png}
-\caption{ausgeklappter Würfel mit Farbflächennummerierungen}
+\caption[Markierungen $x_i$ (links), Farbflächennummern (rechts)]{ausgeklappter Würfel mit Markierungen für $x_i$ (links) und Farbflächennummerierungen (rechts) }
 \end{figure}
+Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, wird mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen/gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
+In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.
 
-
-In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.\\
-\\
-Nun wird der Zug $R$ als Beispiel ausgeführt und die Veränderung der Nummerierung der Farbflächen dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
-
+Nun wird der Zug $R$ als Beispiel ausgeführt (s. Abbildung \ref{7}) und die Veränderung der Nummerierung der Farbflächen dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
 Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position, die Nummerierungen  der Farbflächen ändern sich mit Rotation der Ebene und ermöglichen so eine Zuordnung der Ausrichtung der Ecksteine. 
-
 Die linke Seite der Würfels wird dabei nicht beeinflusst, also sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0. 
-
 Die anderen Positionen haben nun aber andere Farbflächen: 
 \begin{align*}
 x_2 = 2 \ \ \ \ x_4 = 1 \ \ \ \ x_6 = 1 \ \ \ \ x_8 = 2  
@@ -897,10 +878,9 @@ Also gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 %
 \subsection*{Züge als Gruppenoperation}\addcontentsline{toc}{subsection}{\protect\numberline{}Züge als Gruppenoperation}
 
-Im Folgenden wird eine Gruppenoperation beschrieben, die eine Würfelkonfiguration durch das Ausführen eines Zuges auf eine neue Würfelkonfiguration abbildet.Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. Es handelt sich um eine Rechtsoperation, die im Kapitel \ref{11} beschrieben wurde.
-\\ \\
-Der Punktoperator ist definiert als $\cdot: M_C \times \Gtwo \rightarrow M_C$. Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ aus der Menge der Konfigurationen $M_C$ ist, wird er durch das Ausführen eines Zuges $Z \in \Gtwo$ in eine neue Konfiguration gebracht. Diese Konfiguration wird als $(C \cdot Z) \in M_C$ geschrieben.
+Im Folgenden wird eine Gruppenoperation beschrieben, die eine Würfelkonfiguration durch das Ausführen eines Zuges auf eine neue Würfelkonfiguration abbildet. Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. Es handelt sich um eine Rechtsoperation, die im Kapitel \ref{11} beschrieben wurde.
 
+Der Punktoperator ist definiert als $\cdot: M_C \times \Gtwo \rightarrow M_C$. Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ aus der Menge der Konfigurationen $M_C$ ist, wird er durch das Ausführen eines Zuges $Z \in \Gtwo$ in eine neue Konfiguration gebracht. Diese Konfiguration wird als $(C \cdot Z) \in M_C$ geschrieben.
 Die folgenden beiden Eigenschaften müssen bei der Rechtsoperation gelten:
 
 \begin{description}
@@ -911,8 +891,6 @@ Wenn der leeren Zug $N$ ausgeführt wird, wird die Konfiguration des Würfels ni
 \item [$\boldsymbol{C \cdot (Z_1 \circ Z_2) = (c \cdot Z_1) \cdot Z_2}$ für alle $\boldsymbol{Z_1, Z_2 \in \Gtwo}$ und $\boldsymbol{c \in M_C}$]
 \ \\
 Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug $Z_1 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $C \cdot Z_1$. Wenn nun noch ein weiterer Zug $Z_2 \in \Gtwo$ ausgeführt wird, ist die neue Konfiguration des Würfels $(C \cdot Z_1) \cdot Z_2$. 
-
-
 Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (Z_1 Z_2)$ schreiben und somit gilt $(C \cdot Z_1) \cdot Z_2 = C \cdot (Z_1 Z_2)$. 
 \end{description}
 
@@ -951,9 +929,7 @@ Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z
 \subsection*{Rotation des Würfels}\addcontentsline{toc}{subsection}{\protect\numberline{}Rotation des Würfels}
 
 Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. 
-
 Der \Ttwo Würfel kann also im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen.
-
 Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ definiert. Das kann man in Abbildung \ref{15} sehen.
 \begin{figure}[h]
 \centering
@@ -963,9 +939,7 @@ Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ 
 \end{figure} 
 
 Nun kann man für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festlegen. 
-
 Dazu werden zuerst die einzelnen Rotationen des Würfels benannt. 
-
 
 \begin{tabular}{cl}
 \toprule
@@ -997,23 +971,20 @@ Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z
 \caption{Würfel nach Rotation um $z$-Achse}
 \label{16}
 \end{figure}
-
-{Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$: \\
-\\
-$
+Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$:
+\begin{align*}
 \delta_{Z_r}(urf) = ulf \ \ \ \ \ \ \delta_{Z_r}(ulf) = ulb \ \ \ \ \ \ \delta_{Z_r}(ulb) = urb \ \ \ \ \ \ \delta_{Z_r}(urb) = urf \\
 \delta_{Z_r}(drf) = dlf \ \ \ \ \ \ \delta_{Z_r}(dlf) = dlb \ \ \ \ \ \ \ \delta_{Z_r}(dlb) = drb \ \ \ \ \ \ \delta_{Z_r}(drb) = drf
-$}
-\\
-\\
-Wenn man das nun in der Form $i \mapsto j$ schreibt, erhält man: \\
-\\
-$urf \mapsto ulf$ \ \ \ \ \ \ \ \ $ulf \mapsto ulb$ \ \ \ \ \ \ \ \ $ulb \mapsto urb$ \ \ \ \ \ \ \ \ $urb \mapsto urf$ \\
-$drf \mapsto dlf$ \ \ \ \ \ \ \ \ $dlf \mapsto dlb$ \ \ \ \ \ \ \ \ \ $dlb \mapsto drb$ \ \ \ \ \ \ \ \ $drb \mapsto drf$ \\
-\\
+\end{align*}
+
+Wenn man das nun in der Form $i \mapsto j$ schreibt, erhält man: 
+\begin{align*}
+urf \mapsto ulf \ \ \ \ \ \ \ \ ulf \mapsto ulb \ \ \ \ \ \ \ \ ulb \mapsto urb \ \ \ \ \ \ \ \ urb \mapsto urf \\
+drf \mapsto dlf \ \ \ \ \ \ \ \ dlf \mapsto dlb \ \ \ \ \ \ \ \ \ dlb \mapsto drb \ \ \ \ \ \ \ \ drb \mapsto drf
+\end{align*}
+
 In der Zykel-Schreibweise sieht die Veränderung der Steinnamen dann so aus: \\
-$\delta_{Z_r}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ \\
-\\
+$\delta_{Z_r}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ 
 Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
 \delta_{Z_r} & = (ulf \ ulb \ urb \ urb) \ (dlf \ dlb \ drb \ drf)\\
@@ -1021,12 +992,10 @@ Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{Y_r} & = (ulf \ ulb \ dlb \ dlf) \ (urf \ urb \ drb \ drf)\\
 \delta_{Y_l} & = (ulf \ dlf \ dlb \ ulb) \ (urf \ drf \ drb \ urb)\\
 \delta_{X_r} & = (ulf \ urf \ drf \ dlf) \ (urb \ ulb \ dlb \ drb)\\
-\delta_{X_l} & = (ulf \ dlf \ drf \ urf) \ (urb \ ulb \ dlb \ drb)\\
+\delta_{X_l} & = (ulf \ dlf \ drf \ urf) \ (urb \ ulb \ dlb \ drb)
 \end{align*}
 Bei den Rotationen wird (analog zu den Zügen) die mehrfache Ausführung einer Roatation mit der Exponentenschreibweise geschrieben. 
-
 Somit gilt dann auch hier $RRRR=R^4=N$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}$) und $R^0=N$ (für alle Rotationen). ($N$ ist das neutrale Element, also der leere Zug und $R$ eine beliebige Rotation des Würfels.) 
-
 Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: 
 \begin{align*}
 \forall R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}, n \in \mathbb{N} \ . \ R^n=R^{n \mod 4}

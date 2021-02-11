@@ -39,17 +39,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{22}%
+\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Rotation des Würfels}{23}%
+\contentsline {subsection}{\numberline {}Rotation des Würfels}{22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Züge}{28}%
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{32}%
+\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{31}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{33}%
 \defcounter {refsection}{0}\relax 
