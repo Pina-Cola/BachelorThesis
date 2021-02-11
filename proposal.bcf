@@ -2215,7 +2215,6 @@
     <bcf:citekey order="31">DJ</bcf:citekey>
     <bcf:citekey order="32">TD</bcf:citekey>
     <bcf:citekey order="33">rekord</bcf:citekey>
-    <bcf:citekey order="34">TEST</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

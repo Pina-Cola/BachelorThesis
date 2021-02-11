@@ -73,16 +73,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Lösungsansätze}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{41}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{40}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Hübsche Muster}{44}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Schraubendrehermethode}{45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{46}%
+\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{48}%
+\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{49}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Tabellenverzeichnis}{51}%
+\contentsline {section}{Abbildungsverzeichnis}{48}%

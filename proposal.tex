@@ -1369,15 +1369,13 @@ Es kann schwierig sein, die Äquivalenz von Zügen oder Roatationen anhand der F
 Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann. So ist der Zug $U$ beispielsweise $ (ulf \ ulb \ urb \ urf)$, aber auch $(urb \ urf \ ulf \ ulb)$.
 Um das zu vereinfachen, werden die Würfelpositionen priorisiert, so dass die Position mit der höchsten Priorität immer vorne steht und zwei Äquivalente Zykel somit gleich aussehen. 
 Die Positionen werden wie folgt priorisiert:
-\begin{table}[H]
-\centering
+\begin{center}
 \begin{tabular}{ccccccccc}
 Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
 \hline
 Position  & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
 \end{tabular}
-\caption[Priorität der Positionen (für Zykelschreibweise)]{Priorität der Positionen (für Zykelschreibweise)}
-\end{table}
+\end{center}
 Somit ist die angepasste Schreibweise für den Zug $U$ dann $(ulb \ urb \ urf \ ulf)$, da $ulb$ (falls vorhanden) ganz vorne stehen muss.
 
 %
@@ -1608,30 +1606,15 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ 
 
 \section{Valide Konfigurationen des Würfels}
 
-Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon man wirklich erreichen kann, wird im Folgenden berechnet. \\
-
-
-Zuerst wird die Anzahl der theoretisch möglichen Würfelkonfigurationen berechnet:
-
-
+Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon man wirklich erreichen kann, wird im Folgenden berechnet. 
+Dazu wird zuerst die Anzahl der theoretisch möglichen Würfelkonfigurationen berechnet:
 Die Ecksteine können sich in jeder Ecke befinden, also gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es also $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine.
-
-
 Außerdem können die Ecksteine gedreht sein, also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt also $3^7$ Wege, wie die Ecksteine ausgerichtet sein können.
-
-
 Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24. 
-
-
 Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.
 
-
 Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Wenn man nun die Rotation des Würfels berücksichtig kommt man auf $11 \, 022 \, 480$ theoretische Würfelkonfigurationen.
-
-
 Davon sind aber nicht alle Konfigurationen durch Ebenendrehungen erreichbar -- für einige braucht man einen Schraubendreher oder Superkleber. Diese Konfigurationen werden hier als ungültige Konfigurationen bezeichnet. 
-
-
 Es sind also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
 %
 %
@@ -1656,24 +1639,19 @@ Es sind also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
 %
 \subsection*{Ausrichtung der Steine (modulo 3)}\addcontentsline{toc}{subsection}{\protect\numberline{}Ausrichtung der Steine (modulo 3)}
 
-Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. 
-
-
-In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration \begin{displaymath}
+Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration \begin{displaymath}
 \sum_{i= 1}^{8} \ x_i \mod 3 = 0 
 \end{displaymath}  (modulo) gilt. 
 
-
-Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\sum_{i= 1}^{8} \ x_i' \mod 3 = \sum_{i= 1}^{8} \  x_i \mod 3 }$.
+Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von der Konfiguration $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\sum_{i= 1}^{8} \ x_i' \mod 3 = \sum_{i= 1}^{8} \  x_i \mod 3 }$.
 
 In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: 
-
-\begin{table}[H]
-
+\begin{center}
 \begin{small}
 \begin{tabular}{cllcc}
+\toprule
 {\footnotesize Zug $M$} & $x$ & $x'$ & {\footnotesize $\sum_{i= 1}^{8} x_i'$} & {\footnotesize $\sum_{i= 1}^{8}x_i'\mod 3$} \\
-\hline
+\midrule
 \textit{D} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7)$ & 0 & 0 \\
 
 \textit{U} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_3, x_1, x_4, x_2, x_5, x_6, x_7, x_8)$ & 0 & 0 \\
@@ -1685,18 +1663,14 @@ In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das 
 \textit{F} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, 1, 2, x_5, x_6, 2, 1)$ & 6 & 0 \\
 
 \textit{B} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(2, 1, x_3, x_4, 1, 2, x_7, x_8)$ & 6 & 0 \\
-
+\bottomrule
 
 \end{tabular}
 \end{small}
-\caption[Ausrichtung der Steine (modulo 3)]{Ausrichtung der Steine (modulo 3)}
 
-\end{table}
-
+\end{center}
 Für jede valide Würfelposition gilt also ${\sum_{i = 1}^{8} \ x_i' \mod 3 = \sum_{i = 1}^{8} \  x_i \mod 3 }$. 
-
 Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. 
-
 Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. 
 %
 %
@@ -1725,16 +1699,11 @@ Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so d
 \section{Lösung des Würfels}
 
 Die übliche, händische Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern den Würfel dann sehr spezifisch. 
-
-
 Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 In diesem Kapitel wird die Parität der Züge beschrieben und Kommutatoren erklärt.
-
 Dann wird beispielhaft ein Lösungsvorgang eines Menschens schrittweise beschrieben und erklärt.
-
 Außerdem werden \textit{hübsche} Muster des Würfels algorithmisch beschrieben und gezeigt.
-
 Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen.
 
 %
@@ -1761,11 +1730,7 @@ Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf de
 \subsection*{Parität}\addcontentsline{toc}{subsection}{\protect\numberline{}Parität}
 
 Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
-
-
 Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. 
-
-
 Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel definiert:
 \begin{align*}
 \sigma_U & =\ (ulf \ ulb \ urb \ urf) \\
@@ -1776,8 +1741,6 @@ Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel defin
 \sigma_R & =\ (urb \ drb \ drf \ urf) \\
 \end{align*}
 Jeder Zug ist also als ein $4$-Zykel definiert. Den $4$-Zykel kann man als Produkt aus drei $2$-Zykeln schreiben. 
-
-
 Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z.B. $LF$) ist somit gerade.
 
 % to do prüfen! 
@@ -1806,49 +1769,30 @@ Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines
 \subsection*{Kommutatoren}\addcontentsline{toc}{subsection}{\protect\numberline{}Kommutatoren}
 
 Der Kommutator von zwei Elementen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist definiert als $YZY^{-1}Z^{-1}$. Das schreibt man auch als $[Y,Z]$. 
-
-
 Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe. \cite{TD} Man sagt dann, dass die beiden Elemente kommutieren. 
-
-
-Obwohl $(\Gtwo, \circ)$ keine kommutative Gruppe ist, gibt es kommutierende Elemente. 
-
-
+%Obwohl $(\Gtwo, \circ)$ keine kommutative Gruppe ist, gibt es kommutierende Elemente. 
 Wenn $Y = Z$ mit $Y, Z \in \Gtwo$ gilt, kommutieren $Y$ und $Z$ beispielsweise. 
 
-
 Zur Veranschaulichung des Beweises wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1}$. 
-
-
-Geklammert sieht das so aus: $Z(ZZ^{-1})Z^{-1}$. $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. 
-
-Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. 
-
-
+Geklammert sieht das so aus: $Z(ZZ^{-1})Z^{-1}$. $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. 
 Somit kommutieren alle $Y, Z \in \Gtwo$ mit $X=Y$.
-\\
-\\
+
+
 Es kommutieren auch Züge, die nur gegenüberliegende Ebenen beeinflussen und somit nicht dieselben Steine bewegen. 
-
 Das sind dann die Kommutatoren der Form $[U^n, D^n]$, $[F^n, B^n]$ und $[L^n, R^n]$ mit $n \in \mathbb{N}_0$. 
+Da die beiden Züge nicht dieselben Steine beeinflussen, ist es nicht relevant, dass die Gruppe nicht kommutativ ist und durch $YZY^{-1}Z^{-1}$ werden beide Züge wieder invertiert. 
 
-Da die beiden Züge nicht dieselben Steine beeinflussen, ist es nicht relevant, dass die Gruppe nicht kommutativ ist und durch $YZY^{-1}Z^{-1}$ werden beide Züge wieder invertiert. \\
-\\
+
 Auch wenn zwei Züge $Y, Z \in \Gtwo$ nicht kommutieren, kann anhand der Komplexität des Kommutators festgestellt werden, wie groß die Veränderung der Würfelkonfiguration nach $[Y, Z]$ ist. 
-
-
 Als Beispiel zur Veranschaulichung: Die Züge $Y=L$ und $Z=F$ verändern durch $[Y, Z]$ vier Steine im Würfel. Die anderen vier behalten ihre Position und Ausrichtung. 
-
-
 Es wird also $LFL^{-1}F^{-1}$ ausgeführt. Das führt zu folgenden Permutationen:
 
-\begin{table}[H]
-\centering
+\begin{center}
 \begin{tabular}{lcccccccc}
+\toprule
+ & \textbf{ulb} & \textbf{urb} & \textbf{ulf} & \textbf{urf} & \textbf{dlb} & \textbf{drb} & \textbf{dlf} & \textbf{drf} \\
 
- & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
-
-\hline
+\midrule
 $L$ & ulf & \textcolor{gray}{urb} & dlf & \textcolor{gray}{urf} & ulb & \textcolor{gray}{drb} & dlb & \textcolor{gray}{drf} \\
 
 $F$ & urf & \textcolor{gray}{urb} & ulf &  drf & \textcolor{gray}{ulb} & \textcolor{gray}{drb} & \textcolor{gray}{dlb} & dlf \\
@@ -1856,10 +1800,9 @@ $F$ & urf & \textcolor{gray}{urb} & ulf &  drf & \textcolor{gray}{ulb} & \textco
 $L^{-1}$ & \textcolor{gray}{urf} & \textcolor{gray}{urb} & ulb & \textcolor{gray}{drf} & dlb & \textcolor{gray}{drb} & dlf & ulf \\
 
 $F^{-1}$ \: & ulf & \textcolor{gray}{urb} & \textcolor{gray}{ulb} & urf & \textcolor{gray}{dlb} & \textcolor{gray}{drb} & drf & dlf\\
-
+\bottomrule
 \end{tabular}
-\caption[Permutationen von $\lbrack L, F \rbrack $]{Permutationen von $\lbrack L, F \rbrack $ }
-\end{table}
+\end{center}
 
 Wenn man nun die Kopfzeile der Tabelle und die unterste Zeile vergleicht, sieht man, dass $urb, urf, dlb$ und $drb$ wieder an ihrer Ausgangsposition sind. Die anderen vier Steine ($ulf, ulb, urf$ und $ulf$) haben die Positionen gewechselt: \\
 \\
@@ -1891,18 +1834,13 @@ $ulb \mapsto ulf$ \hspace*{2.5cm }$ulf  \mapsto ulb$ \hspace*{2.5cm } $dlf \maps
 %
 \subsection*{Lösungsansätze}\addcontentsline{toc}{subsection}{\protect\numberline{}Lösungsansätze}
 Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine bewegen. So kann man dann gezielt bestimmte Steine drehen oder tauschen. 
-\\
-\\
-Es gibt verschiedene Vorgehensweisen um den Würfel zu lösen. Üblicherweise fängt man mit der weißen Seite an, deshalb werden auch die folgenden Beispiele so vorgehen. Die gelbe Seite gehört dann zur letzten Ebene, die gelöst wird. 
 
+Es gibt verschiedene Vorgehensweisen um den Würfel zu lösen. Üblicherweise fängt man mit der weißen Seite an, deshalb werden auch die folgenden Beispiele so vorgehen. Die gelbe Seite gehört dann zur letzten Ebene, die gelöst wird. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da man sich die Anordnung der Farben so leichter merken und und schneller sieht, in welche Ebene ein Stein gehört \cite{RF}. 
 
 Eine gängige Lösungsmethode geht so vor, dass bei der letzten Ebene zuerst alle Steine richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. 
-
-Dafür dreht man den Würfel üblicherweise, damit die gelbe Seite oben ist. \\
-\\
+Dafür dreht man den Würfel üblicherweise, damit die gelbe Seite oben ist. 
 Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
-
 In Abbildung \ref{25} sieht man, wie der Würfel bei der Ausgangsposition (links) durch den Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ verändert wird. Die Steine der oberen Ebene werden dabei ausgerichtet.
 
 \begin{figure}[h]
@@ -1947,14 +1885,10 @@ In der Abbildung wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert.
 \end{figure}
 
 Der erste Schritt für einen menschlichen Ansatz der Lösung des Würfels ist (meistens), die Steine der oberen Ebene so anzuordnen, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
+Es muss also $x_{1-4} = (0,0,0,0)$ gelten und $\sigma_{ulb}=ulb, \sigma_{urb} = urb, \sigma_{ulf} = ulf, \sigma_{urf}=urf$ bzw. die Äquivalenzklassen $\delta_{Z_r}$ und $\delta_{Z_l}$ davon. 
 
-
-Es muss also $x_{1-4} = (0,0,0,0)$ gelten und $\sigma_{ulb}=ulb, \sigma_{urb} = urb, \sigma_{ulf} = ulf, \sigma_{urf}=urf$ bzw. die Äquivalenzklassen $\delta_{Z_r}$ und $\delta_{Z_l}$ davon. \\
-\\
 Der Lösende sucht nun also Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position $urf$. 
-
 Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. 
-
 Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{19} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein.
 
 \begin{figure}[h]
@@ -1974,7 +1908,6 @@ Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. 
 \end{figure}
 
 Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere Ebene ist nun gelöst und alle Steine mit weißen Farbflächen sind wie in der Startkonfiguration zueinander ausgerichtet. (s. Abbildung \ref{21}).
-
 Also gilt $x_{1-4} = (0,0,0,0)$ und durch die Äquivalenzklassen $\delta_{Z_r}$ oder $\delta_{Z_l}$ kann man sehen, dass die Steine der oberen Ebene richtig zueinander angeordnet sind. Sie sind aber um $180^\circ$ gedreht zur Startkonfiguration. 
 
 \begin{figure}[H]
@@ -1983,7 +1916,6 @@ Also gilt $x_{1-4} = (0,0,0,0)$ und durch die Äquivalenzklassen $\delta_{Z_r}$ 
 \caption[Lösung von Mensch: Schritt 3]{Lösung von Mensch: Schritt 3}
 \label{21}
 \end{figure} 
-
 
 Für den nächsten Schritt rotiert der Mensch den Würfel, hier um die $y$-Achse (s. Abbildung \ref{22}). Die weiße Seite ist nun unten und zwei der vier gelben Farbflächen sind nach oben ausgerichtet.
 
@@ -2004,12 +1936,10 @@ Dann führt der Lösende den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2
 \end{figure}
 
 Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die man in verschiedenen Situtionen anwenden kann.  
-
 In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat also nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
-
 Wenn man die Verdrehung des Würfels invertiert, also $(FUBRF^{-1})^{-1}$ erhält man die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
-\\
-\\
+
+
 Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\
 Wenn man davon ausgeht, dass jede $90^\circ$-Drehung einer Ebene als Drehung gezählt wird (und $180^\circ$-Drehungen als zwei Drehungen), ist die \textit{God's Number} des Würfels $14$. \cite{DJ} 
 
@@ -2036,9 +1966,7 @@ Wenn man davon ausgeht, dass jede $90^\circ$-Drehung einer Ebene als Drehung gez
 %
 \subsection*{Hübsche Muster}\addcontentsline{toc}{subsection}{\protect\numberline{}Hübsche Muster}
 Dieser Abschnitt ist inspiriert von dem Part \textit{Pretty Patterns} in Tom Davis Paper \textit{Group Theory via Rubik's Cube} \cite{TD}.
-
 Dort zeigt er einige \textit{hübsche} Muster des \Tthree Würfels und hier werden nun einige Muster des \Ttwo Würfels gezeigt.
-
 In Abbildung \ref{29} werden vier Muster des \textit{Cubes} gezeigt und die dazugehörigen Algorithmen von der Startkonfiguration ausgehend beschrieben.
 
 \begin{figure}[h]
@@ -2090,11 +2018,8 @@ Diese Muster sind in den meisten Fällen zwar keine üblichen Lösungsalgorithme
 \subsection*{Schraubendrehermethode}\addcontentsline{toc}{subsection}{\protect\numberline{}Schraubendrehermethode}
 
 Die Methode, die oft als einfachste Methode zum Lösen von Zauberwürfeln beschrieben wird, ist die Schraubendrehermethode.
-
 Bei den üblichen \Ttwo Würfel kann man auf einer oder mehreren Seiten in der Mitte zwischen den Steinen eine Schraube sehen.
-
 Um den Würfel auseinander zu bauen, muss man diese Schrauben lockern. Daraufhin kann man die Ebene ohne Probleme abnehmen. 
-
 Dann kann man die Steine neu arrangieren und den Würfel in der gelösten Konfiguration wieder zusammen bauen.
 
 Ob das wirklich die einfachste Methode ist, liegt wohl im Auge des Betrachters und wenn man die Tatsache berücksichtigt, dass der Weltrekord des \Ttwo Würfels mit der Methode des algorithmischen, händischen Lösens bei $0,49$ Sekunden liegt \cite{rekord}, ist die Schraubendrehermethode wohl kaum die schnellste Methode.
@@ -2123,9 +2048,7 @@ Ob das wirklich die einfachste Methode ist, liegt wohl im Auge des Betrachters u
 
 
 Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann der erste Eckstein als richtig angenommen werden, da man dazu den Würfel nur drehen muss, um eine weiße Farbfläche zu finden.
-
 In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite oben zu beginnen. Man kann aber natürlich mit jeder anderen Seite des Würfels auch beginnen.
-
 Den \Tthree \textit{Cube} muss man entsprechend der Mittelsteine ausrichten und so ist vorbestimmt, welche Seite die weiße Seite wird. Bei dem \Ttwo \textit{Cube} kann man mit jeder beliebigen Seite beginnen. Möchte man aber unbedingt mit einer bestimmten Seite beginnen, die noch keine weiße Farbfläche hat, so kann man die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite bringen.
 
 \begin{figure}[h]
@@ -2138,13 +2061,9 @@ Den \Tthree \textit{Cube} muss man entsprechend der Mittelsteine ausrichten und 
 
 In Abbildung \ref{30} wird der erste Eckstein der oberen Ebene positioniert. Das kann dort entweder durch den Zug $R$ oder einer Rotation um die $y$-Achse passieren.
 
-
 Der zweite Stein kann dann hinzugefügt werden. Es gibt für den \Ttwo Würfel Lösungsmethoden, bei denen man zuerst alle weißen Farbflächen ausrichten und dann die Steinposition anpasst.
-
 Da hier aber Algorithmen des \Tthree Würfels übertragen werden, und man bei diesem die Steine der oberen Ebene üblicherweise direkt richtig ausrichtet und positioniert, wird hier auch so vorgegangen.
-
 Die Farbfläche des zweiten Steins befindet sich für diesen Algorithmus seitlich an der unteren Ebene. (Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.)
-
 Dann führt man $D$ aus, bis der Stein sich unter seiner Zielposition befindet und dreht ihn mit $L, R, F$ oder $R$ neben den bereits vorhandenen, ersten Eckstein. Das kann man auch in Abbildung \ref{31} sehen.
 
 \begin{figure}[h]
@@ -2170,7 +2089,6 @@ Sollte die Farbfläche der Ecke unten am Würfel sein, so kann man sie falsch he
 \end{figure}
 
 Die anderen zwei Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst.
-
 Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hälfte des Würfels.
 
 
@@ -2204,7 +2122,6 @@ Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hä
 \end{figure}
 
 Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
-\cite{TEST}
 
 
 
@@ -2231,13 +2148,11 @@ Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder
 \newpage
 
 
-
+\begin{singlespacing}
 \listoffigures
+\end{singlespacing}
 
-\newpage
 
-
-\listoftables
 
 \newpage
 
