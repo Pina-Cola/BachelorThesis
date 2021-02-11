@@ -1301,14 +1301,12 @@ Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt w
 
  
 Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge in Abbildung \ref{2} grafisch dargestellt.
-
-\begin{figure}[h]
+Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
+\begin{figure}[H]
 \includegraphics[scale=0.3]{graph_zug.png}
 \caption[Graph aller Zugpermutationen]{Graph aller Zugpermutationen}
 \label{2}
 \end{figure}
-
-Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden. 
 
 So kann man nun anhand des Beispielzuges $LLFF$ die Zykelstruktur darstellen. 
 Zuerst wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbildet. 
@@ -1332,13 +1330,12 @@ Zuerst wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbi
 
 Die grauen Positionen bleiben bei dem jeweiligen Zug unverändert. 
 Grafisch dargestellt sieht man die Zykel des Zuges $LLFF$ in Abbildung \ref{17}. 
-
 \begin{figure}[h]
-\includegraphics[scale=0.3]{zykel_LLFF.png}
+\centering
+\includegraphics[scale=0.25]{zykel_LLFF.png}
 \caption[Zykel des Zuges $LLFF$]{Zykel des Zuges $LLFF$}
 \label{17}
 \end{figure}
-
 In Zykelschreibeweise also $\sigma_{LLFF}=(dlf \ ulb \ urf)(ulf \ dlb \ drf)$.
 Da es also zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. 
 In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. 
