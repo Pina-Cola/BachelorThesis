@@ -25,7 +25,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Gruppenoperation}{11}{definition.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{12}{definition.5}%
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{12}{definition.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{14}{section.4}%
 \defcounter {refsection}{0}\relax 
