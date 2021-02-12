@@ -6,37 +6,36 @@
 \BOOKMARK [2][-]{figure.caption.7}{Grundz\374ge des W\374rfels}{section.2}% 6
 \BOOKMARK [1][-]{section.3}{Mathematische Grundlagen}{}% 7
 \BOOKMARK [2][-]{section*.9}{Definition einer Gruppe}{section.3}% 8
-\BOOKMARK [2][-]{definition.1}{Beispielgruppen}{section.3}% 9
-\BOOKMARK [2][-]{definition.1}{Untergruppen}{section.3}% 10
-\BOOKMARK [2][-]{definition.1}{Erzeuger und zyklische Gruppe}{section.3}% 11
-\BOOKMARK [2][-]{definition.1}{Cayleygraph}{section.3}% 12
-\BOOKMARK [2][-]{definition.1}{Gruppenoperation}{section.3}% 13
-\BOOKMARK [2][-]{definition.1}{Permutationen und Zykelschreibweise}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{W\374rfel als Gruppe}{}% 15
-\BOOKMARK [2][-]{section*.11}{222-Zauberw\374fel als Gruppe}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Konfiguration des W\374rfels}{}% 17
-\BOOKMARK [2][-]{section*.13}{Positionen der Steine im W\374rfel}{section.5}% 18
-\BOOKMARK [2][-]{figure.caption.16}{Ausrichtung der Steine}{section.5}% 19
-\BOOKMARK [2][-]{figure.caption.18}{Z\374ge als Gruppenoperation}{section.5}% 20
-\BOOKMARK [2][-]{figure.caption.18}{Rotation des W\374rfels}{section.5}% 21
-\BOOKMARK [2][-]{figure.caption.20}{\304quivalenzrelationen der Rotationen}{section.5}% 22
-\BOOKMARK [2][-]{figure.caption.21}{Ordnung der Z\374ge}{section.5}% 23
-\BOOKMARK [2][-]{figure.caption.21}{Zykelstruktur}{section.5}% 24
-\BOOKMARK [2][-]{figure.caption.23}{\304quivalenz von Z\374gen}{section.5}% 25
-\BOOKMARK [1][-]{section.6}{Untergruppen von G222}{}% 26
-\BOOKMARK [2][-]{section*.24}{Untergruppen Beispiele}{section.6}% 27
-\BOOKMARK [2][-]{section*.24}{Erzeuger}{section.6}% 28
-\BOOKMARK [2][-]{section*.24}{Durch FF und RR erzeugte Untergruppe}{section.6}% 29
-\BOOKMARK [2][-]{section*.24}{Cayleygraph}{section.6}% 30
-\BOOKMARK [1][-]{section.7}{Valide Konfigurationen des W\374rfels}{}% 31
-\BOOKMARK [2][-]{section*.27}{Ausrichtung der Steine \(modulo 3\)}{section.7}% 32
-\BOOKMARK [1][-]{section.8}{L\366sung des W\374rfels}{}% 33
-\BOOKMARK [2][-]{section*.28}{Parit\344t}{section.8}% 34
-\BOOKMARK [2][-]{section*.28}{Kommutatoren}{section.8}% 35
-\BOOKMARK [2][-]{section*.28}{L\366sungsans\344tze}{section.8}% 36
-\BOOKMARK [2][-]{figure.caption.29}{L\366sung des W\374rfels anhand eines Beispiels}{section.8}% 37
-\BOOKMARK [2][-]{figure.caption.35}{H\374bsche Muster}{section.8}% 38
-\BOOKMARK [2][-]{figure.caption.36}{Schraubendrehermethode}{section.8}% 39
-\BOOKMARK [2][-]{figure.caption.36}{Algorithmen f\374r die erste Ebene}{section.8}% 40
-\BOOKMARK [2][-]{figure.caption.39}{Algorithmen f\374r die zweite Ebene}{section.8}% 41
-\BOOKMARK [1][-]{figure.caption.40}{Abbildungsverzeichnis}{}% 42
+\BOOKMARK [2][-]{definition.2}{Untergruppen}{section.3}% 9
+\BOOKMARK [2][-]{definition.3}{Erzeuger und zyklische Gruppe}{section.3}% 10
+\BOOKMARK [2][-]{definition.5}{Cayleygraph}{section.3}% 11
+\BOOKMARK [2][-]{definition.5}{Gruppenoperation}{section.3}% 12
+\BOOKMARK [2][-]{definition.5}{Permutationen und Zykelschreibweise}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{W\374rfel als Gruppe}{}% 14
+\BOOKMARK [2][-]{section*.11}{222-Zauberw\374fel als Gruppe}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{Konfiguration des W\374rfels}{}% 16
+\BOOKMARK [2][-]{section*.13}{Positionen der Steine im W\374rfel}{section.5}% 17
+\BOOKMARK [2][-]{figure.caption.16}{Ausrichtung der Steine}{section.5}% 18
+\BOOKMARK [2][-]{figure.caption.18}{Z\374ge als Gruppenoperation}{section.5}% 19
+\BOOKMARK [2][-]{figure.caption.18}{Rotation des W\374rfels}{section.5}% 20
+\BOOKMARK [2][-]{figure.caption.20}{\304quivalenzrelationen der Rotationen}{section.5}% 21
+\BOOKMARK [2][-]{figure.caption.21}{Ordnung der Z\374ge}{section.5}% 22
+\BOOKMARK [2][-]{figure.caption.21}{Zykelstruktur}{section.5}% 23
+\BOOKMARK [2][-]{figure.caption.23}{\304quivalenz von Z\374gen}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{Untergruppen von G222}{}% 25
+\BOOKMARK [2][-]{section*.24}{Untergruppen Beispiele}{section.6}% 26
+\BOOKMARK [2][-]{section*.24}{Erzeuger}{section.6}% 27
+\BOOKMARK [2][-]{section*.24}{Durch FF und RR erzeugte Untergruppe}{section.6}% 28
+\BOOKMARK [2][-]{section*.24}{Cayleygraph}{section.6}% 29
+\BOOKMARK [1][-]{section.7}{Valide Konfigurationen des W\374rfels}{}% 30
+\BOOKMARK [2][-]{section*.27}{Ausrichtung der Steine \(modulo 3\)}{section.7}% 31
+\BOOKMARK [1][-]{section.8}{L\366sung des W\374rfels}{}% 32
+\BOOKMARK [2][-]{section*.28}{Parit\344t}{section.8}% 33
+\BOOKMARK [2][-]{section*.28}{Kommutatoren}{section.8}% 34
+\BOOKMARK [2][-]{section*.28}{L\366sungsans\344tze}{section.8}% 35
+\BOOKMARK [2][-]{figure.caption.29}{L\366sung des W\374rfels anhand eines Beispiels}{section.8}% 36
+\BOOKMARK [2][-]{figure.caption.35}{H\374bsche Muster}{section.8}% 37
+\BOOKMARK [2][-]{figure.caption.36}{Schraubendrehermethode}{section.8}% 38
+\BOOKMARK [2][-]{figure.caption.36}{Algorithmen f\374r die erste Ebene}{section.8}% 39
+\BOOKMARK [2][-]{figure.caption.39}{Algorithmen f\374r die zweite Ebene}{section.8}% 40
+\BOOKMARK [1][-]{figure.caption.40}{Abbildungsverzeichnis}{}% 41
