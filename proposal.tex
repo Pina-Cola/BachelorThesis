@@ -9,7 +9,6 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{geometry}
-\usepackage{scrpage2}
 \usepackage{tikz}
 \usepackage{float}
 \usepackage{verbatim}
@@ -22,6 +21,8 @@
 \usepackage[onehalfspacing]{setspace}
 
 \usepackage{stmaryrd}
+
+\usepackage{microtype}
 
 \usepackage{booktabs}
 
@@ -534,6 +535,29 @@ Dann operiert $G$ von rechts auf $M$.
 
 \end{definition}
 \end{singlespacing}
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+
+\subsection*{Kommutator} \addcontentsline{toc}{subsection}{\protect\numberline{}Kommutator
+}
+Ein Kommutator misst, wie sehr eine Gruppe das Kommutativgesetz verletzt. 
+\begin{singlespacing}
+\begin{definition}[Kommutator]
+Als Kommutator von zwei Elementen $a, b$ einer Gruppe $(G, \circ)$  bezeichnet man $aba^{-1}b^{-1}$. Das schreibt man auch als $[a,b]$. 
+\end{definition}
+\end{singlespacing}
+Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe \cite{TD}. Man sagt dann, dass die beiden Elemente kommutieren. 
 
 
 %
@@ -1804,13 +1828,13 @@ Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines
 %
 \subsection*{Kommutatoren}\addcontentsline{toc}{subsection}{\protect\numberline{}Kommutatoren}
 
-Der Kommutator von zwei Elementen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist definiert als $YZY^{-1}Z^{-1}$. Das schreibt man auch als $[Y,Z]$. 
-Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe. \cite{TD} Man sagt dann, dass die beiden Elemente kommutieren. 
-%Obwohl $(\Gtwo, \circ)$ keine kommutative Gruppe ist, gibt es kommutierende Elemente. 
-Wenn $Y = Z$ mit $Y, Z \in \Gtwo$ gilt, kommutieren $Y$ und $Z$ beispielsweise. 
+Der Kommutator von zwei Elementen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist definiert als $[Y,Z]=YZY^{-1}Z^{-1}$ (s. Kapitel \ref{11}).
+Kommutierende Elemente ergeben das neutrale Element einer Gruppe. 
+Wenn $Y = Z$ mit $Y, Z \in \Gtwo$ gilt, kommutieren $Y$ und $Z$. 
+Dazu folgt nun der Beweis. 
 
-Zur Veranschaulichung des Beweises wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1}$. 
-Geklammert sieht das so aus: $Z(ZZ^{-1})Z^{-1}$. $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. 
+Zur Veranschaulichung wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1} = Z(ZZ^{-1})Z^{-1}$. 
+$(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. 
 Somit kommutieren alle $Y, Z \in \Gtwo$ mit $X=Y$.
 
 
@@ -2194,9 +2218,6 @@ Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder
 
 
 \printbibliography
-
-
-
 
 
 

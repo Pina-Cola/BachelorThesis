@@ -25,7 +25,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Gruppenoperation}{11}{definition.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{12}{definition.6}%
+\contentsline {subsection}{\numberline {}Kommutator }{12}{definition.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{12}{definition.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Würfel als Gruppe}{14}{section.4}%
 \defcounter {refsection}{0}\relax 
@@ -73,12 +75,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{40}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Hübsche Muster}{44}{figure.caption.35}%
+\contentsline {subsection}{\numberline {}Hübsche Muster}{43}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Schraubendrehermethode}{45}{figure.caption.36}%
+\contentsline {subsection}{\numberline {}Schraubendrehermethode}{44}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{45}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{47}{figure.caption.39}%
+\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{46}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{48}{figure.caption.40}%
+\contentsline {section}{Abbildungsverzeichnis}{47}{figure.caption.40}%
