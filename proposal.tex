@@ -14,6 +14,9 @@
 \usepackage{float}
 \usepackage{verbatim}
 
+\usepackage{amsthm}
+\newtheorem{definition}{Definition}
+
 \usepackage[nottoc]{tocbibind}
 
 \usepackage[onehalfspacing]{setspace}
@@ -22,6 +25,14 @@
 
 \usepackage{booktabs}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    citecolor=black
+}
 
 \usepackage{subfigure}
 
@@ -130,6 +141,11 @@
 %
 %
 \section{Einleitung}
+
+Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem ungarischen Professor Er\~{n}o Rubik erfunden wurde. Er wollte damit seinen Studenten helfen, dreidimensionale Probleme zu verstehen. 
+Der sogenannte \textit{Rubik's Cube} wurde dann weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. \cite{RC}
+Im Jahr 1981 hat \textit{Rubik} dann das Patent für den \Ttwo Würfel angemeldet \cite{patent}.
+
 %
 %
 %
@@ -141,9 +157,7 @@
 %
 \subsection*{Motivation} \addcontentsline{toc}{subsection}{\protect\numberline{}Motivation}
 
-Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem ungarischen Professor Er\~{n}o Rubik erfunden wurde. Er wollte damit seinen Studenten helfen, dreidimensionale Probleme zu verstehen. 
-Der sogenannte \textit{Rubik's Cube} wurde dann weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. \cite{RC}
-Im Jahr 1981 hat \textit{Rubik} dann das Patent für den \Ttwo Würfel angemeldet \cite{patent}.
+
 
 
 Der \Tthree Würfel wurde mathematisch schon viel untersucht. 
@@ -366,13 +380,20 @@ Des weiteren wird der Cayleygraph erklärt.
 \subsection*{Definition einer Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Definition einer Gruppe}
 
 
-Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für die folgenden Abschnitte. Eine Menge $G$ mit einer Verknüpfung $\circ$ nennt man Gruppe, wenn diese Bedingungen gelten: 
+Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für die folgenden Kapitel. 
+
+\begin{singlespacing}
+\begin{definition}
+Eine Menge $G$ mit einer Verknüpfung $\circ$ nennt man Gruppe, wenn diese Bedingungen gelten: 
 \begin{itemize}
 \item Abgeschlossenheit: $\forall a,b \in G.(a \circ b) \in G $
 \item Assoziativität: $\forall a,b,c \in G.(a \circ b) \circ c = a \circ (b \circ c)$
 \item Existenz eines neutralen Elements $n$: $\forall a \in G, \exists n \in G.n \circ a = a \circ n = a$ 
 \item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G, \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
+\end{definition}
+\end{singlespacing}
+
 Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\footnote{\glqq Zu Ehren von Niels Henrik \textsc{Abel} (1802-1829); norwegischer Mathematiker und einer der Begründer der Gruppentheorie. Starb leider verarmt und deprimiert im Alter von 26 Jahren an Tuberkulose, kurz bevor er als Anerkennung für seine genialen Arbeiten  eine Dozentenstelle in Berlin angeboten bekam.\grqq \  \cite[S.21, Z.23]{Buch}}) handelt, muss zusätzlich noch die Eigenschaft der Kommutativität gelten: 
 \begin{itemize}
 \item $\forall a,b \in G.(a \circ b) = (b \circ a) $
