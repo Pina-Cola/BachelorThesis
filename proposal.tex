@@ -395,8 +395,8 @@ Eine Menge $G$ mit einer Verknüpfung $\circ$ nennt man Gruppe, wenn diese Bedin
 \end{singlespacing}
 Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\footnote{\glqq Zu Ehren von Niels Henrik \textsc{Abel} (1802-1829); norwegischer Mathematiker und einer der Begründer der Gruppentheorie. Starb leider verarmt und deprimiert im Alter von 26 Jahren an Tuberkulose, kurz bevor er als Anerkennung für seine genialen Arbeiten  eine Dozentenstelle in Berlin angeboten bekam.\grqq \  \cite[S.21, Z.23]{Buch}}) handelt, muss zusätzlich noch die Eigenschaft der Kommutativität gelten: 
 \begin{singlespacing}
-\begin{definition}
-Eine Gruppe $(G, \circ)$ ist eine kommutative/abelsche Gruppe, wenn gilt:
+\begin{definition}[Kommutative Gruppe]
+Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
 \begin{itemize}
 \item Kommutativität: $\forall a,b \in G.(a \circ b) = (b \circ a) $
 \end{itemize}
@@ -436,7 +436,7 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 Im Folgenden werden Untergruppen definiert.
 
 \begin{singlespacing}
-\begin{definition}
+\begin{definition}[Untergruppe]
 Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann schreibt man auch $H \leqslant G$. 
 \end{definition}
 \end{singlespacing}
@@ -462,33 +462,31 @@ Nicht jede Teilmenge $H \subseteq G$ muss auch eine Gruppe sein. Bei dem oben ge
 
 
 \begin{singlespacing}
-\begin{definition}
+\begin{definition}[Erzeuger]
 Sei die Menge $M \subseteq G$ eine nicht leere Teilmenge der Menge einer Gruppe $(G, \circ)$. 
 Dann wird die Untergruppe $(M, \circ)$ von $M$ erzeugt und ist die kleinste Untergruppe von $(G, \circ)$, für die $M \subseteq G$ gilt.
+Man nennt $(M, \circ)$ dann das Erzeugnis von $M$ und die Elemente aus $M$ sind die Erzeuger der Untergruppe $(M, \circ)$.
 \end{definition}
 \end{singlespacing}
+Wenn $(M, \circ)$ durch $M$ erzeugt wird, ist dann eine $M$ enthaltende Untergruppe.
 
-Das bedeutet, $(M, \circ)$ ist eine $M$ enthaltende Untergruppe.
-Man nennt $(M, \circ)$ dann das Erzeugnis von $M$ und die Elemente aus $M$ sind die Erzeuger der Untergruppe.
-
+Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht also nur aus Potenzen dieses Elementes
 \begin{singlespacing}
-\begin{definition}
-Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht also nur aus Potenzen dieses Elementes: 
+\begin{definition}[Zyklische Gruppe]
+Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ nennt man eine zyklische Gruppe, wenn sie ein Element $a \in G$ gibt, das jedes Element in $G$ erzeugt. Dann schreibt man auch:
 \begin{align*}
 \langle a \rangle := \{ a^n \mid n \in \mathbb{Z} \}
 \end{align*}
+
 \end{definition}
 \end{singlespacing}
 
-
-Bei dem Beispiel der Gruppe $(\mathbb{Z},+)$ entspricht die Verknüpfung der Addition und $\{ 1 \}$ erzeugt eine zyklische additive Gruppe der ganzen Zahlen.
 
 Ein Beispiel für Erzeuger findet man anhand der Gruppe der ganzen Zahlen $(\mathbb{Z},+)$ und der Addition als Verknüpfung, die bereits als Beispiel der Gruppe beschrieben wurde.
 
 Die Operationen sind hier die Addition und der Übergang von einer Zahl $z$ zu der negativen Zahl $-z$.
 
-Ein Erzeuger dieser Gruppe ist die einelementige Menge $M = \{ 1 \}$. Jede positive Zahl $n$ lässt sich durch die $n$-fache Addition von $1$ erzeugen und jede negative Zahl durch  die Addition von $((-1)+(-1)...)$.
-%
+Ein Erzeuger dieser Gruppe ist die einelementige Menge $M = \{ 1 \}$. Jede positive Zahl $n$ lässt sich durch die $n$-fache Addition von $1$ erzeugen und jede negative Zahl durch  die Addition von $((-1)+(-1)...)$. Man kann den Erzeuger der zyklischen Gruppe auch als $\langle 1 \rangle$ schreiben.
 %
 %
 %
