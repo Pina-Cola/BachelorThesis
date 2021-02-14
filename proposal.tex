@@ -128,7 +128,7 @@
 
 \newpage
 
-\setcounter{page}{4} 
+\setcounter{page}{1} 
 %
 
 %
@@ -626,156 +626,13 @@ Wichtig bei der Zykelschreibweise ist die Reihenfolge der Elemente. Beispielswei
 %
 %
 %
-
-
-\newpage
-\section{Würfel als Gruppe}
-
-In diesem Kapitel wird die Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Die Gruppe des \Ttwo Würfels wird auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht und auf Kommutativität untersucht.
-
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-
-\subsection*{\Ttwo Zauberwüfel als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}\Ttwo Zauberwüfel als Gruppe}
-\label{8}
-
-Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus dem Paper \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des \Ttwo Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Die Gruppe des \Ttwo Würfels heißt $(\Gtwo, \circ)$. 
-Die Grundlagen und Definition der Gruppe wurden in Kapitel \ref{11} erklärt.
-
-
-Die Menge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
-Wenn zwei Züge mit nach gleicher Ausgangsposition die gleiche Würfelposition hervorrufen, sind die beiden Züge gleich. Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. 
-
-
-Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.)
-
-Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird:
-\begin{description}
-\item [Abgeschlossenheit] \ \\
-$\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ 
-
-
-Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge in $\Gtwo$ enthalten sind. 
-
-
-
-\item [Assoziativität] \ \\
-$\forall Z_1,Z_2,Z_3 \in \Gtwo.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ 
-
-
-Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird $s$ genannt. Beim Ausführen eines Zuges $Z$ schreibt man nun $Z(s)$, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, l, r, t, b$. 
-
-Wenn man nun $Z_1 \circ Z_2 $ betrachtet, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Also gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
-
-
-Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Man zeige also, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: 
-\begin{align*}
-& (Z_1 \circ Z_2) \circ Z_3  \\
-\Leftrightarrow (&(Z_1 \circ Z_2) \circ Z_3)(s) \\
-= & Z_3(Z_1 \circ Z_2)(s)) \\
-= & Z_3(Z_2(Z_1(s)))  
-\end{align*}
-\begin{align*}
-&Z_1 \circ (Z_2 \circ Z_3) \\
-\Leftrightarrow (&Z_1 \circ (Z_2 \circ Z_3))(s) \\
-= (&Z_2 \circ Z_3)(Z_1(s)) \\
-= \ \ & Z_3(Z_2(Z_1(s)))  
-\end{align*}
-Somit ist $(\Gtwo, \circ)$ assoziativ.
-
-\item [Existenz eines neutralen Elements $N$] \ \\
-$\forall Z_1 \in \Gtwo, \exists N \in \Gtwo.N \circ Z_1 = Z_1 \circ N = Z_1$ 
-
-
-Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden also keine der Ebenen des Würfels gedreht. Wenn man also einen Zug $Z$ ausführt und dann den Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie $Z$ auszuführen.
-
-Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann man mit der Exponentenschreibweise darstellen. So schreibt man beispielsweise $RR$ (also zwei mal eine Drehung der rechten Ebene im Uhrzeigersinn) auch als $R^2$.
-
-Wenn man eine Ebene vier mal dreht, ist der Würfel wieder in der vorherigen Position. Somit gilt also beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (also den leeren Zug) steht. Das gilt für alle Züge des Würfels:
-
-\begin{align*}
-RRRR & =R^4 =N \\
-LLLL & =L^4 =N \\
-UUUU & =U^4 =N \\
-DDDD & =D^4 =N \\
-FFFF & =F^4 =N \\
-BBBB & =B^4 =N \\
-\end{align*}
-Somit gilt dann auch $Z^0=N$, mit $Z$ als beliebigen Zug und $N$ als neutrales Element. 
-In der mathematischen Schreibweise sieht das so aus: $\forall Z \in \Gtwo \ . \ Z^0=N$. 
-Es gilt also für alle Züge $Z \in \Gtwo$: 
-\begin{align*}
-Z^0 & =N \\
-Z & =Z^1 \\
-ZZ & =Z^2 \\
-ZZZ & =Z^3 \\
-\end{align*}
-Für \textit{einelementige} Züge $Z$ (also $U, D, F, B, L$ oder $R$) gilt auch $ZZZZ =Z^4=N=Z^0$.
-Man kann den Exponenten in diesem Fall also $modulo \ 4$ rechnen, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
-Es gilt dann also:
-
-$\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$.
-
-Somit gilt für $n \mod 4 = 0$ dann $Z^n = Z^{n \mod 4} = Z^0 = N$.
-
-
-\item [Existenz eines inversen Elements $Z_1^{-1}$] \ \\
-$\forall \  Z_1 \in \Gtwo,\ \exists \  Z_1^{-1} \in \Gtwo.  \ \ Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$  
-
-
-Da $Z$ ein physisch ausführbarer Zug ist, kann man diesen auch rückgängig machen. Man muss die einzelnen Ebenenrotationen nur rückwärts und von hinten durchführen, um den Zug zu invertieren. Dann gilt $Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$.
-\end{description}
-Somit ist $(\Gtwo, \circ)$ eine Gruppe. 
-
-
-$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das sieht man grafisch dargestellt in Abbildung \ref{12} oder wenn man es einfach händisch an einem Würfel ausprobiert.
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.1]{RF.png}
-\includegraphics[scale=0.1]{FR.png}
-\caption[Würfel nach Zügen $FR$ (links) und $RF$ (rechts)]{Würfel nach Zügen $FR$(links) und $RF$(rechts)}
-\label{12}
-\end{figure}
-Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann egal und man müsste nur die Anzahl beachten. 
-Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. 
-
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
 \newpage
 
 \section{Konfiguration des Würfels}
 
 \label{26}
 Um mit dem Würfel zu arbeiten, muss man wissen, in welcher Position er sich befindet.
-Dafür wird die Konfiguration des Würfels definiert, sie setzt sich aus zwei Parametern zusammen: 
+Deshalb wird die Konfiguration des Würfels definiert, bevor der Würfel als Gruppe dargestellt wird. Die Würfelkonfiguration setzt sich aus zwei Parametern zusammen: 
 \begin{itemize}
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x$)
@@ -919,6 +776,137 @@ Also gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 %
 %
 %
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+\newpage
+\section{Würfel als Gruppe}
+
+In diesem Kapitel wird die Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Die Gruppe des \Ttwo Würfels wird auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht und auf Kommutativität untersucht.
+
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+
+\subsection*{\Ttwo Zauberwüfel als Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}\Ttwo Zauberwüfel als Gruppe}
+\label{8}
+
+Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus dem Paper \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des \Ttwo Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Namen der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Die Gruppe des \Ttwo Würfels heißt $(\Gtwo, \circ)$. 
+Die Grundlagen und Definition der Gruppe wurden in Kapitel \ref{11} erklärt.
+
+
+Die Menge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
+Wenn zwei Züge mit nach gleicher Ausgangsposition die gleiche Würfelposition hervorrufen, sind die beiden Züge gleich. Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. 
+
+
+Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.)
+
+Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird:
+\begin{description}
+\item [Abgeschlossenheit] \ \\
+$\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ 
+
+
+Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge in $\Gtwo$ enthalten sind. 
+
+
+
+\item [Assoziativität] \ \\
+$\forall Z_1,Z_2,Z_3 \in \Gtwo.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ 
+
+
+Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird $s$ genannt. Beim Ausführen eines Zuges $Z$ schreibt man nun $Z(s)$, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, l, r, t, b$. 
+
+Wenn man nun $Z_1 \circ Z_2 $ betrachtet, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Also gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
+
+
+Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Man zeige also, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: 
+\begin{align*}
+& (Z_1 \circ Z_2) \circ Z_3  \\
+\Leftrightarrow (&(Z_1 \circ Z_2) \circ Z_3)(s) \\
+= & Z_3(Z_1 \circ Z_2)(s)) \\
+= & Z_3(Z_2(Z_1(s)))  
+\end{align*}
+\begin{align*}
+&Z_1 \circ (Z_2 \circ Z_3) \\
+\Leftrightarrow (&Z_1 \circ (Z_2 \circ Z_3))(s) \\
+= (&Z_2 \circ Z_3)(Z_1(s)) \\
+= \ \ & Z_3(Z_2(Z_1(s)))  
+\end{align*}
+Somit ist $(\Gtwo, \circ)$ assoziativ.
+
+\item [Existenz eines neutralen Elements $N$] \ \\
+$\forall Z_1 \in \Gtwo, \exists N \in \Gtwo.N \circ Z_1 = Z_1 \circ N = Z_1$ 
+
+
+Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden also keine der Ebenen des Würfels gedreht. Wenn man also einen Zug $Z$ ausführt und dann den Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie $Z$ auszuführen.
+
+Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann man mit der Exponentenschreibweise darstellen. So schreibt man beispielsweise $RR$ (also zwei mal eine Drehung der rechten Ebene im Uhrzeigersinn) auch als $R^2$.
+
+Wenn man eine Ebene vier mal dreht, ist der Würfel wieder in der vorherigen Position. Somit gilt also beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (also den leeren Zug) steht. Das gilt für alle Züge des Würfels:
+
+\begin{align*}
+RRRR & =R^4 =N \\
+LLLL & =L^4 =N \\
+UUUU & =U^4 =N \\
+DDDD & =D^4 =N \\
+FFFF & =F^4 =N \\
+BBBB & =B^4 =N \\
+\end{align*}
+Somit gilt dann auch $Z^0=N$, mit $Z$ als beliebigen Zug und $N$ als neutrales Element. 
+In der mathematischen Schreibweise sieht das so aus: $\forall Z \in \Gtwo \ . \ Z^0=N$. 
+Es gilt also für alle Züge $Z \in \Gtwo$: 
+\begin{align*}
+Z^0 & =N \\
+Z & =Z^1 \\
+ZZ & =Z^2 \\
+ZZZ & =Z^3 \\
+\end{align*}
+Für \textit{einelementige} Züge $Z$ (also $U, D, F, B, L$ oder $R$) gilt auch $ZZZZ =Z^4=N=Z^0$.
+Man kann den Exponenten in diesem Fall also $modulo \ 4$ rechnen, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
+Es gilt dann also:
+
+$\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$.
+
+Somit gilt für $n \mod 4 = 0$ dann $Z^n = Z^{n \mod 4} = Z^0 = N$.
+
+
+\item [Existenz eines inversen Elements $Z_1^{-1}$] \ \\
+$\forall \  Z_1 \in \Gtwo,\ \exists \  Z_1^{-1} \in \Gtwo.  \ \ Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$  
+
+
+Da $Z$ ein physisch ausführbarer Zug ist, kann man diesen auch rückgängig machen. Man muss die einzelnen Ebenenrotationen nur rückwärts und von hinten durchführen, um den Zug zu invertieren. Dann gilt $Z_1 \circ Z_1^{-1} = Z_1^{-1} \circ Z_1 = N$.
+\end{description}
+Somit ist $(\Gtwo, \circ)$ eine Gruppe. 
+
+
+$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das sieht man grafisch dargestellt in Abbildung \ref{12} oder wenn man es einfach händisch an einem Würfel ausprobiert.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{RF.png}
+\includegraphics[scale=0.1]{FR.png}
+\caption[Würfel nach Zügen $FR$ (links) und $RF$ (rechts)]{Würfel nach Zügen $FR$(links) und $RF$(rechts)}
+\label{12}
+\end{figure}
+Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann egal und man müsste nur die Anzahl beachten. 
+Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. 
+
+%
+%
+%
+%
 %
 %
 %
@@ -954,18 +942,6 @@ Angenommen der Würfel befindet sich in der Konfiguration $C$. Wenn nun der Zug 
 Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z_2$ wurde ausgeführt. Man kann die neue Konfiguration auch als $C \cdot (Z_1 Z_2)$ schreiben und somit gilt $(C \cdot Z_1) \cdot Z_2 = C \cdot (Z_1 Z_2)$. 
 \end{description}
 
-
-
-
-
-
-
-
-
-
-
-
-%
 %
 %
 %
@@ -981,6 +957,22 @@ Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z
 %
 %
 %
+%
+%
+%
+%
+%
+\newpage
+
+\section{Kapitel benennen!}
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
 %
 %
 %
@@ -1045,6 +1037,7 @@ drf \mapsto dlf \ \ \ \ \ \ \ \ dlf \mapsto dlb \ \ \ \ \ \ \ \ \ dlb \mapsto dr
 
 In der Zykel-Schreibweise sieht die Veränderung der Steinnamen dann so aus: \\
 $\delta_{Z_r}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ 
+
 Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
 \delta_{Z_r} & = (ulf \ ulb \ urb \ urb) \ (dlf \ dlb \ drb \ drf)\\
