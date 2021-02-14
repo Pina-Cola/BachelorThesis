@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  12 FEB 2021 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  14 FEB 2021 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1268,7 +1268,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 381.
 
-[9] [10] [11] [12]
+[9]
+Overfull \hbox (4.70659pt too wide) in paragraph at lines 467--470
+[][]\OT1/cmr/bx/n/12 Definition 4 \OT1/cmr/m/n/12 (-20) (Er-zeu-ger)\OT1/cmr/bx
+/n/12 . []\OT1/cmr/m/it/12 (-20) Sei die Men-ge $\OML/cmm/m/it/12 M \OMS/cmsy/m
+/n/12 ^^R \OML/cmm/m/it/12 G$ \OT1/cmr/m/it/12 (-20) ei-ne nicht lee-re Teil-me
+n-ge der Tr[]agermenge
+ []
+
+[10] [11] [12]
 <Zykel_152.png, id=323, 1783.66376pt x 888.31876pt>
 File: Zykel_152.png Graphic file (type png)
 <use Zykel_152.png>
@@ -1722,7 +1730,7 @@ public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 nts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb>
-Output written on proposal.pdf (49 pages, 2554197 bytes).
+Output written on proposal.pdf (49 pages, 2554409 bytes).
 PDF statistics:
  824 PDF objects out of 1000 (max. 8388607)
  645 compressed objects within 7 object streams
