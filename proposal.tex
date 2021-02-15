@@ -584,7 +584,30 @@ Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn 
 \end{definition}
 \end{singlespacing}
 
-Hier liest man $x \sim y$ als \textit{x ist äquivalent zu y}.
+Hier liest man $x \sim y$ als \textit{x ist äquivalent zu y}. Im Folgenden werden noch die Bedeutungen von Reflexivität, Symmetrie und Transitivität aufgelistet:
+
+\begin{center}
+\begin{tabular}{ll}
+$x \sim x$ & (Reflexivität) \\
+Aus $(x \sim y)$ folgt $(y \sim x)$. & (Symmetrie) \\
+Aus $(x \sim y)$ und $(y \sim z)$ folgt $(x \sim y)$. & (Transitivität) \\
+\end{tabular}
+\end{center}
+
+
+\textbf{Beispieläquivalenzrelation:}
+
+Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ werden nun zwei verschiedene Relationen betrachtet:
+
+\begin{itemize}
+\item $x \sim_< y :\Leftrightarrow x < y$
+
+Bei der Relation $\sim_< $ handelt es sich nicht um eine Äquivalenrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Auch die Symmetrie gilt nicht.
+\item $x \sim_= y :\Leftrightarrow x = y$
+
+Bei der Relation $\sim_=$ gilt die Reflexivität für alle Elemente, da die Gleichheit reflexiv ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit und $\sim_=$ ist ja als Gleichheit definiert. 
+\end{itemize}
+
 
 %
 %
