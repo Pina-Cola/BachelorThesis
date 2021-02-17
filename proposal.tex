@@ -26,6 +26,8 @@
 
 \usepackage{booktabs}
 
+\usepackage{array}
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -2216,13 +2218,16 @@ Ein Mensch dreht zum Lösen der zweiten Ebene meistens den Würfel um. Der Ansch
 
 Zuerst werden nun alle Steine richtig ausgerichtet, so dass die obere Seite des Würfels nur noch gelbe Farbflächen zeigt. Dann werden die Steine getauscht, bis sie richtig angeordnet sind.
 
-Da es auch nach Lösung der ersten Ebene noch viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite nur gelbe Farbflächen zeigt. 
+Da es auch nach Lösung der ersten Ebene noch viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite nur gelbe Farbflächen zeigt.
+Viele dieser Algorithmen enthalten $(R U R^{-1} U^{-1})$, was als Kommutator geschrieben $[ R,U ]$ ist.
 
 \begin{center}
-\begin{tabular}{c l}
+\begin{tabular}{m{4cm} m{6cm}}
 \toprule
-Ausgangsposiition & Algorithmus \\
+Ausgangsposition & Algorithmus  \\
 \midrule
+\includegraphics[scale=0.1]{TOPVIEW1.png} & $F [ R,U ] [ R,U ] [ R,U ] F^{-1}$ \\
+\includegraphics[scale=0.1]{TOPVIEW2.png} & $F [ R,U ] [ R,U ] F^{-1}$ \\
 \bottomrule
 \end{tabular}
 \end{center}
