@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Cayleygraph}{8}{definition.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Gruppenoperation}{8}{definition.5}%
+\contentsline {subsection}{\numberline {}Gruppenoperation}{9}{definition.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Kommutator }{9}{definition.6}%
 \defcounter {refsection}{0}\relax 
