@@ -1362,7 +1362,6 @@ Der Würfel kann also alle Steine an der richtigen Position haben und trotzdem u
 Der Zug $U$ als $\sigma_U =\ (ulf \ ulb \ urb \ urf) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel.
 Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
 \begin{center}
-\centering
 \begin{tabular}{ccccc}
 \toprule
 \textbf{Ausführung} & \textbf{ulf} & \textbf{ulb} & \textbf{urb} & \textbf{urf} \\
@@ -1390,7 +1389,7 @@ Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt w
  
 Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge in Abbildung \ref{2} grafisch dargestellt.
 Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
-\begin{figure}[H]
+\begin{figure}[h]
 \includegraphics[scale=0.3]{graph_zug.png}
 \caption[Graph aller Zugpermutationen]{Graph aller Zugpermutationen}
 \label{2}
@@ -2207,11 +2206,26 @@ Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hä
 \centering
 \includegraphics[scale=0.1]{ebene.png}
 \caption{Würfel mit gelöster oberer Ebene}
+\label{33}
 \end{figure}
 
 Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
+In Abbildung \ref{33} ist die obere Ebene des Würfels gelöst.
 
+Ein Mensch dreht zum Lösen der zweiten Ebene meistens den Würfel um. Der Anschaulichkeit halber wird das hier auch gemacht.
 
+Zuerst werden nun alle Steine richtig ausgerichtet, so dass die obere Seite des Würfels nur noch gelbe Farbflächen zeigt. Dann werden die Steine getauscht, bis sie richtig angeordnet sind.
+
+Da es auch nach Lösung der ersten Ebene noch viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite nur gelbe Farbflächen zeigt. 
+
+\begin{center}
+\begin{tabular}{c l}
+\toprule
+Ausgangsposiition & Algorithmus \\
+\midrule
+\bottomrule
+\end{tabular}
+\end{center}
 
 %
 %
