@@ -51,7 +51,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{26}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{28}{figure.caption.23}%
+\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{29}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{30}{section.6}%
 \defcounter {refsection}{0}\relax 
