@@ -413,10 +413,10 @@ Beispielsweise sind $1+2=3$ und es gilt $1,2,3 \in \mathbb{N}$.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
 \item Das neutrale Element von $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ ist $0$. Es gilt also $\forall n \in N. \ n + 0 = 0 + n = n$ (und mit $\mathbb{Z}$ analog). \\
 Ein Beispiel zur Veranschaulichung: $3+0=0+3=3$
-\item Die letzte erfordleriche Eigenschaft einer Gruppe ist die Existenz eines Inversen Elements. Für die Gruppe $(\mathbb{Z},+)$ ist $-z$ das Inverse Element für jedes $z \in \mathbb{Z}$. Für $(\mathbb{N},+)$ gibt es kein Inverses Element.
+\item Die letzte erfordleriche Eigenschaft einer Gruppe ist die Existenz eines inversen Elements. Für die Gruppe $(\mathbb{Z},+)$ ist $-z$ das inverse Element für jedes $z \in \mathbb{Z}$. Für $(\mathbb{N},+)$ gibt es kein inverses Element.
 \end{itemize}
 Anhand der oberen Axiome kann man nun feststellen, dass $(\mathbb{Z},+)$ die Gruppeneigenschaften erfüllt, $(\mathbb{N},+)$ aber nicht. 
-$(\mathbb{Z},+)$ ist also eine Gruppe und $(\mathbb{N},+)$ nicht, da kein Inverses Element existiert. 
+$(\mathbb{Z},+)$ ist also eine Gruppe und $(\mathbb{N},+)$ nicht, da kein inverses Element existiert. 
 Es ist aber zu beachten, dass es sich hierbei nicht um formelle Beweise, sondern um anschauliche Beschreibungen handelt.
 Nun kann man $(\mathbb{Z},+)$ noch auf die Kommutativität untersuchen, um zu prüfen, ob es sich um eine abelsche Gruppe handelt. \\
 Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abelsche Gruppe.
@@ -441,12 +441,15 @@ Im Folgenden werden Untergruppen definiert.
 Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann schreibt man auch $H \leqslant G$. 
 \end{definition}
 \end{singlespacing}
-Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. 
+Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. Nicht jede Teilmenge $H \subseteq G$ muss auch eine Gruppe sein.
 
 Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, so nennt man $(G, \circ)$ auch eine Obergruppe von $(H, \circ)$.
 Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
 
-Nicht jede Teilmenge $H \subseteq G$ muss auch eine Gruppe sein. Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellte sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaften nicht erfüllt sind.
+
+\textbf{Beispieluntergruppe}
+
+Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellte sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
 %
 %
 %
