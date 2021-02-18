@@ -17,11 +17,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Definition einer Gruppe}{6}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Untergruppen}{7}{definition.2}%
+\contentsline {subsection}{\numberline {}Untergruppen}{8}{bsp.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Erzeuger und zyklische Gruppe}{8}{definition.3}%
+\contentsline {subsection}{\numberline {}Erzeuger und zyklische Gruppe}{8}{bsp.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Cayleygraph}{9}{definition.5}%
+\contentsline {subsection}{\numberline {}Cayleygraph}{9}{bsp.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Gruppenoperation}{9}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 

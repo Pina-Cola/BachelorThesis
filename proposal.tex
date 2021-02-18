@@ -15,7 +15,21 @@
 
 \usepackage{amsthm}
 \newtheorem{definition}{Definition}
-\newtheorem*{bsp}{Beispiel}
+
+
+\newtheoremstyle{definition}% name
+{15pt}% Space above
+{5pt}% Space below 
+{}% Body font
+{}% Indent amount: Indent amount: empty = no indent, \parindent = normal paragraph indent
+{\bf}% Theorem head font
+{}% Punctuation after theorem head
+{\newline }% Space after theorem head: Space after theorem head: { } = normal interword space; \newline = linebreak
+{}% Theorem head spec (can be left empty, meaning `normal')
+
+\theoremstyle{definition}
+
+\newtheorem{bsp}{Beispiel}[definition]
 
 \usepackage[nottoc]{tocbibind}
 
@@ -407,7 +421,8 @@ Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
 \end{definition}
 \end{singlespacing}
 
-\textbf{Beispielgruppen}
+
+\begin{bsp}[Gruppe]
 
 Zur Veranschaulichung der Gruppendefinition werden hier die natürlichen Zahlen $\mathbb{N}$ und die ganzen Zahlen $\mathbb{Z}$ mit dem Operator $+$ auf die Gruppenaxiome untersucht.
 \begin{itemize}
@@ -424,6 +439,10 @@ Es ist aber zu beachten, dass es sich hierbei nicht um formelle Beweise, sondern
 Nun kann man $(\mathbb{Z},+)$ noch auf die Kommutativität untersuchen, um zu prüfen, ob es sich um eine abelsche Gruppe handelt. \\
 Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abelsche Gruppe.
 
+\end{bsp}
+
+\begin{bsp}[Gruppe]
+
 Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}/n\mathbb{Z}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind dann alle ganzen Zahlen modulo 6, also $\mathbb{Z}/6\mathbb{Z}=\{0,1,2,3,4,5\}$
 \begin{itemize}
 \item Die Abgeschlossenheit gilt für $(\mathbb{Z}/6\mathbb{Z}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
@@ -433,6 +452,8 @@ Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}
 \end{itemize}
 
 $(\mathbb{Z}/6\mathbb{Z}, +)$ ist also eine endliche Gruppe.
+
+\end{bsp}
 
 %
 %
@@ -460,13 +481,16 @@ Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, so nennt man $(G
 Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
 
 
-\textbf{Beispieluntergruppe}
+\begin{bsp}[Untergruppe]
 
 Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellt sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
 
+\end{bsp}
+\begin{bsp}[Untergruppe]
+
 Es gilt aber auch $\mathbb{Z}/6\mathbb{Z} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}/6\mathbb{Z}, +)$ Gruppen sind, ist $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Untergruppe von $(\mathbb{Z},+)$.
 
-
+\end{bsp}
 %
 %
 %
@@ -502,13 +526,15 @@ Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ nennt man eine zyklische Gruppe, wenn
 \end{definition}
 \end{singlespacing}
 
-\textbf{Beispielerzeuger}
+\begin{bsp}[Erzeuger und zyklische Gruppe]
 
 Ein Beispiel für Erzeuger findet man anhand der Gruppe der ganzen Zahlen $(\mathbb{Z},+)$ und der Addition als Verknüpfung, die bereits als Beispiel der Gruppe beschrieben wurde.
 
 Die Operationen sind hier die Addition und der Übergang von einer Zahl $z$ zu der negativen Zahl $-z$.
 
 Ein Erzeuger dieser Gruppe ist die einelementige Menge $M = \{ 1 \}$. Jede positive Zahl $n$ lässt sich durch die $n$-fache Addition von $1$ erzeugen und jede negative Zahl durch  die Addition von $((-1)+(-1)...)$. 
+
+\end{bsp}
 %
 %
 %

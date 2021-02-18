@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  18 FEB 2021 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  18 FEB 2021 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -520,6 +520,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \dth@everypar=\toks44
 )
 \c@definition=\count284
+\c@bsp=\count285
 
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -540,11 +541,11 @@ LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 \MT@toks=\toks45
-\MT@count=\count285
+\MT@count=\count286
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen270
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count286
+\MT@listname@count=\count287
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
@@ -570,12 +571,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen278
 \cmidrulekern=\dimen279
 \defaultaddspace=\dimen280
-\@cmidla=\count287
-\@cmidlb=\count288
+\@cmidla=\count288
+\@cmidlb=\count289
 \@aboverulesep=\dimen281
 \@belowrulesep=\dimen282
-\@thisruleclass=\count289
-\@lastruleclass=\count290
+\@thisruleclass=\count290
+\@lastruleclass=\count291
 \@thisrulewidth=\dimen283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
@@ -627,8 +628,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen286
-\Hy@linkcounter=\count291
-\Hy@pagecounter=\count292
+\Hy@linkcounter=\count292
+\Hy@pagecounter=\count293
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -641,8 +642,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count293
-\pdfmajorversion=\count294
+\Hy@SavedSpaceFactor=\count294
+\pdfmajorversion=\count295
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -650,7 +651,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count295
+\c@Hy@tempcnt=\count296
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -666,7 +667,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count296
+\Fld@menulength=\count297
 \Field@Width=\dimen288
 \Fld@charsize=\dimen289
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -682,9 +683,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count297
-\c@Item=\count298
-\c@Hfootnote=\count299
+\Hy@abspage=\count298
+\c@Item=\count299
+\c@Hfootnote=\count300
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -695,8 +696,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count300
-\c@bookmark@seq@number=\count301
+\Fld@listcount=\count301
+\c@bookmark@seq@number=\count302
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -709,7 +710,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 39.
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
@@ -719,10 +720,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip65
 \subfigcapmargin=\dimen291
 \subfiglabelskip=\skip66
-\c@subfigure=\count302
-\c@lofdepth=\count303
-\c@subtable=\count304
-\c@lotdepth=\count305
+\c@subfigure=\count303
+\c@lofdepth=\count304
+\c@subtable=\count305
+\c@lotdepth=\count306
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -758,8 +759,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen303
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count306
-\c@continuedfloat=\count307
+\c@caption@flags=\count307
+\c@continuedfloat=\count308
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
@@ -769,11 +770,11 @@ Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count308
+\etb@tempcnta=\count309
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count309
+\lrq@indent=\count310
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -781,47 +782,47 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count310
-\c@listtotal=\count311
-\c@listcount=\count312
-\c@liststart=\count313
-\c@liststop=\count314
-\c@citecount=\count315
-\c@citetotal=\count316
-\c@multicitecount=\count317
-\c@multicitetotal=\count318
-\c@instcount=\count319
-\c@maxnames=\count320
-\c@minnames=\count321
-\c@maxitems=\count322
-\c@minitems=\count323
-\c@citecounter=\count324
-\c@maxcitecounter=\count325
-\c@savedcitecounter=\count326
-\c@uniquelist=\count327
-\c@uniquename=\count328
-\c@refsection=\count329
-\c@refsegment=\count330
-\c@maxextratitle=\count331
-\c@maxextratitleyear=\count332
-\c@maxextraname=\count333
-\c@maxextradate=\count334
-\c@maxextraalpha=\count335
-\c@abbrvpenalty=\count336
-\c@highnamepenalty=\count337
-\c@lownamepenalty=\count338
-\c@maxparens=\count339
-\c@parenlevel=\count340
-\blx@tempcnta=\count341
-\blx@tempcntb=\count342
-\blx@tempcntc=\count343
-\blx@maxsection=\count344
-\blx@maxsegment@0=\count345
-\blx@notetype=\count346
-\blx@parenlevel@text=\count347
-\blx@parenlevel@foot=\count348
-\blx@sectionciteorder@0=\count349
-\blx@entrysetcounter=\count350
+\c@tabx@nest=\count311
+\c@listtotal=\count312
+\c@listcount=\count313
+\c@liststart=\count314
+\c@liststop=\count315
+\c@citecount=\count316
+\c@citetotal=\count317
+\c@multicitecount=\count318
+\c@multicitetotal=\count319
+\c@instcount=\count320
+\c@maxnames=\count321
+\c@minnames=\count322
+\c@maxitems=\count323
+\c@minitems=\count324
+\c@citecounter=\count325
+\c@maxcitecounter=\count326
+\c@savedcitecounter=\count327
+\c@uniquelist=\count328
+\c@uniquename=\count329
+\c@refsection=\count330
+\c@refsegment=\count331
+\c@maxextratitle=\count332
+\c@maxextratitleyear=\count333
+\c@maxextraname=\count334
+\c@maxextradate=\count335
+\c@maxextraalpha=\count336
+\c@abbrvpenalty=\count337
+\c@highnamepenalty=\count338
+\c@lownamepenalty=\count339
+\c@maxparens=\count340
+\c@parenlevel=\count341
+\blx@tempcnta=\count342
+\blx@tempcntb=\count343
+\blx@tempcntc=\count344
+\blx@maxsection=\count345
+\blx@maxsegment@0=\count346
+\blx@notetype=\count347
+\blx@parenlevel@text=\count348
+\blx@parenlevel@foot=\count349
+\blx@sectionciteorder@0=\count350
+\blx@entrysetcounter=\count351
 \labelnumberwidth=\skip71
 \labelalphawidth=\skip72
 \biblabelsep=\skip73
@@ -833,9 +834,9 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read5
 \blx@bcfout=\write4
 \blx@langwohyphens=\language14
-\c@mincomprange=\count351
-\c@maxcomprange=\count352
-\c@mincompwidth=\count353
+\c@mincomprange=\count352
+\c@maxcomprange=\count353
+\c@mincompwidth=\count354
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -844,74 +845,74 @@ File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count354
-\c@savedafterword=\count355
-\c@annotator=\count356
-\c@savedannotator=\count357
-\c@author=\count358
-\c@savedauthor=\count359
-\c@bookauthor=\count360
-\c@savedbookauthor=\count361
-\c@commentator=\count362
-\c@savedcommentator=\count363
-\c@editor=\count364
-\c@savededitor=\count365
-\c@editora=\count366
-\c@savededitora=\count367
-\c@editorb=\count368
-\c@savededitorb=\count369
-\c@editorc=\count370
-\c@savededitorc=\count371
-\c@foreword=\count372
-\c@savedforeword=\count373
-\c@holder=\count374
-\c@savedholder=\count375
-\c@introduction=\count376
-\c@savedintroduction=\count377
-\c@namea=\count378
-\c@savednamea=\count379
-\c@nameb=\count380
-\c@savednameb=\count381
-\c@namec=\count382
-\c@savednamec=\count383
-\c@translator=\count384
-\c@savedtranslator=\count385
-\c@shortauthor=\count386
-\c@savedshortauthor=\count387
-\c@shorteditor=\count388
-\c@savedshorteditor=\count389
-\c@labelname=\count390
-\c@savedlabelname=\count391
-\c@institution=\count392
-\c@savedinstitution=\count393
-\c@lista=\count394
-\c@savedlista=\count395
-\c@listb=\count396
-\c@savedlistb=\count397
-\c@listc=\count398
-\c@savedlistc=\count399
-\c@listd=\count400
-\c@savedlistd=\count401
-\c@liste=\count402
-\c@savedliste=\count403
-\c@listf=\count404
-\c@savedlistf=\count405
-\c@location=\count406
-\c@savedlocation=\count407
-\c@organization=\count408
-\c@savedorganization=\count409
-\c@origlocation=\count410
-\c@savedoriglocation=\count411
-\c@origpublisher=\count412
-\c@savedorigpublisher=\count413
-\c@publisher=\count414
-\c@savedpublisher=\count415
-\c@language=\count416
-\c@savedlanguage=\count417
-\c@origlanguage=\count418
-\c@savedoriglanguage=\count419
-\c@pageref=\count420
-\c@savedpageref=\count421
+\c@afterword=\count355
+\c@savedafterword=\count356
+\c@annotator=\count357
+\c@savedannotator=\count358
+\c@author=\count359
+\c@savedauthor=\count360
+\c@bookauthor=\count361
+\c@savedbookauthor=\count362
+\c@commentator=\count363
+\c@savedcommentator=\count364
+\c@editor=\count365
+\c@savededitor=\count366
+\c@editora=\count367
+\c@savededitora=\count368
+\c@editorb=\count369
+\c@savededitorb=\count370
+\c@editorc=\count371
+\c@savededitorc=\count372
+\c@foreword=\count373
+\c@savedforeword=\count374
+\c@holder=\count375
+\c@savedholder=\count376
+\c@introduction=\count377
+\c@savedintroduction=\count378
+\c@namea=\count379
+\c@savednamea=\count380
+\c@nameb=\count381
+\c@savednameb=\count382
+\c@namec=\count383
+\c@savednamec=\count384
+\c@translator=\count385
+\c@savedtranslator=\count386
+\c@shortauthor=\count387
+\c@savedshortauthor=\count388
+\c@shorteditor=\count389
+\c@savedshorteditor=\count390
+\c@labelname=\count391
+\c@savedlabelname=\count392
+\c@institution=\count393
+\c@savedinstitution=\count394
+\c@lista=\count395
+\c@savedlista=\count396
+\c@listb=\count397
+\c@savedlistb=\count398
+\c@listc=\count399
+\c@savedlistc=\count400
+\c@listd=\count401
+\c@savedlistd=\count402
+\c@liste=\count403
+\c@savedliste=\count404
+\c@listf=\count405
+\c@savedlistf=\count406
+\c@location=\count407
+\c@savedlocation=\count408
+\c@organization=\count409
+\c@savedorganization=\count410
+\c@origlocation=\count411
+\c@savedoriglocation=\count412
+\c@origpublisher=\count413
+\c@savedorigpublisher=\count414
+\c@publisher=\count415
+\c@savedpublisher=\count416
+\c@language=\count417
+\c@savedlanguage=\count418
+\c@origlanguage=\count419
+\c@savedoriglanguage=\count420
+\c@pageref=\count421
+\c@savedpageref=\count422
 \shorthandwidth=\skip79
 \shortjournalwidth=\skip80
 \shortserieswidth=\skip81
@@ -937,19 +938,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count422
-\c@textcitetotal=\count423
-\c@textcitemaxnames=\count424
-\c@biburlbigbreakpenalty=\count425
-\c@biburlbreakpenalty=\count426
-\c@biburlnumpenalty=\count427
-\c@biburlucpenalty=\count428
-\c@biburllcpenalty=\count429
+\c@textcitecount=\count423
+\c@textcitetotal=\count424
+\c@textcitemaxnames=\count425
+\c@biburlbigbreakpenalty=\count426
+\c@biburlbreakpenalty=\count427
+\c@biburlnumpenalty=\count428
+\c@biburlucpenalty=\count429
+\c@biburllcpenalty=\count430
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count430
+\c@smartand=\count431
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -961,8 +962,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count431
-\c@bbx:relatedtotal=\count432
+\c@bbx:relatedcount=\count432
+\c@bbx:relatedtotal=\count433
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -991,11 +992,11 @@ File: biblatex.cfg
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count433
-\@quotereset=\count434
+\@quotelevel=\count434
+\@quotereset=\count435
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count435
+\l__kernel_color_stack_int=\count436
 \l__pdf_internal_box=\box63
 )
 
@@ -1009,34 +1010,34 @@ LaTeX Warning: Label `15' multiply defined.
 )
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count436
+\scratchcounter=\count437
 \scratchdimen=\dimen304
 \scratchbox=\box64
-\nofMPsegments=\count437
-\nofMParguments=\count438
+\nofMPsegments=\count438
+\nofMParguments=\count439
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count439
+\MPscratchCnt=\count440
 \MPscratchDim=\dimen305
-\MPnumerator=\count440
-\makeMPintoPDFobject=\count441
+\MPnumerator=\count441
+\makeMPintoPDFobject=\count442
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1090,14 +1091,14 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 92.
+LaTeX Info: Redefining \microtypecontext on input line 106.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 92.
+LaTeX Info: Redefining \showhyphens on input line 106.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1107,7 +1108,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box65
-Package hyperref Info: Link coloring ON on input line 92.
+Package hyperref Info: Link coloring ON on input line 106.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1118,11 +1119,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count442
+\c@section@level=\count443
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 
 (./proposal.out) (./proposal.out)
 \@outlinefile=\write5
@@ -1156,9 +1157,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'proposal.bbl' found.
 
 (./proposal.bbl)
-Package biblatex Info: Reference section=0 on input line 92.
-Package biblatex Info: Reference segment=0 on input line 92.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105
+Package biblatex Info: Reference section=0 on input line 106.
+Package biblatex Info: Reference segment=0 on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 119
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1166,7 +1167,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105
+LaTeX Font Info:    Trying to load font information for U+msb on input line 119
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1176,7 +1177,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
-05.
+19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
@@ -1193,61 +1194,61 @@ l.58 ...{}Untergruppen Beispiele}{30}{section*.25}
  [2]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 162.
+(hyperref)                be the same. Added a new anchor on input line 176.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.205 \newpage
+l.219 \newpage
                [1]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 206.
+(hyperref)                removing `\times' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 206.
+(hyperref)                removing `\times' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 220.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 223.
+(hyperref)                be the same. Added a new anchor on input line 237.
 
 <2x2scrambled.png, id=243, 1003.75pt x 1140.26pt>
 File: 2x2scrambled.png Graphic file (type png)
 <use 2x2scrambled.png>
-Package pdftex.def Info: 2x2scrambled.png  used on input line 241.
+Package pdftex.def Info: 2x2scrambled.png  used on input line 255.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 <2x2solved.png, id=245, 1003.75pt x 1140.26pt>
 File: 2x2solved.png Graphic file (type png)
 <use 2x2solved.png>
-Package pdftex.def Info: 2x2solved.png  used on input line 242.
+Package pdftex.def Info: 2x2solved.png  used on input line 256.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 <2x2stein.png, id=248, 1003.75pt x 1140.26pt>
 File: 2x2stein.png Graphic file (type png)
 <use 2x2stein.png>
-Package pdftex.def Info: 2x2stein.png  used on input line 252.
+Package pdftex.def Info: 2x2stein.png  used on input line 266.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 <2x2farbflaeche.png, id=249, 1003.75pt x 1140.26pt>
 File: 2x2farbflaeche.png Graphic file (type png)
 <use 2x2farbflaeche.png>
-Package pdftex.def Info: 2x2farbflaeche.png  used on input line 253.
+Package pdftex.def Info: 2x2farbflaeche.png  used on input line 267.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1256,28 +1257,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.259 \newpage
+l.273 \newpage
                [2 <./2x2scrambled.png> <./2x2solved.png>]
 <2x2seite.png, id=257, 1003.75pt x 1140.26pt>
 File: 2x2seite.png Graphic file (type png)
 <use 2x2seite.png>
-Package pdftex.def Info: 2x2seite.png  used on input line 265.
+Package pdftex.def Info: 2x2seite.png  used on input line 279.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 <3x3_sc_so.png, id=259, 1796.7125pt x 946.53625pt>
 File: 3x3_sc_so.png Graphic file (type png)
 <use 3x3_sc_so.png>
-Package pdftex.def Info: 3x3_sc_so.png  used on input line 275.
+Package pdftex.def Info: 3x3_sc_so.png  used on input line 289.
 (pdftex.def)             Requested size: 197.63898pt x 104.11931pt.
  [3 <./2x2stein.png> <./2x2farbflaeche.png> <./2x2seite.png> <./3x3_sc_so.png>]
 <mittelkant.png, id=271, 1796.7125pt x 946.53625pt>
 File: mittelkant.png Graphic file (type png)
 <use mittelkant.png>
-Package pdftex.def Info: mittelkant.png  used on input line 285.
+Package pdftex.def Info: mittelkant.png  used on input line 299.
 (pdftex.def)             Requested size: 197.63898pt x 104.11931pt.
 <ebene.png, id=275, 1003.75pt x 1140.26pt>
 File: ebene.png Graphic file (type png)
 <use ebene.png>
-Package pdftex.def Info: ebene.png  used on input line 320.
+Package pdftex.def Info: ebene.png  used on input line 334.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 
@@ -1286,10 +1287,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [4 <./mittelkant.png>] [5 <./ebene.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 384.
+(hyperref)                be the same. Added a new anchor on input line 398.
 
 [6] [7]
-Overfull \hbox (4.70659pt too wide) in paragraph at lines 487--490
+Overfull \hbox (4.70659pt too wide) in paragraph at lines 511--514
 [][]\OT1/cmr/bx/n/12 Definition 4 \OT1/cmr/m/n/12 (-20) (Er-zeu-ger)\OT1/cmr/bx
 /n/12 . []\OT1/cmr/m/it/12 (-20) Sei die Men-ge $\OML/cmm/m/it/12 M \OMS/cmsy/m
 /n/12 ^^R \OML/cmm/m/it/12 G$ \OT1/cmr/m/it/12 (-20) ei-ne nicht lee-re Teil-me
@@ -1297,170 +1298,170 @@ n-ge der Tr[]agermenge
  []
 
 [8]
-<Cayleygraph3.png, id=319, 226.446pt x 226.446pt>
+<Cayleygraph3.png, id=324, 226.446pt x 226.446pt>
 File: Cayleygraph3.png Graphic file (type png)
 <use Cayleygraph3.png>
-Package pdftex.def Info: Cayleygraph3.png  used on input line 532.
+Package pdftex.def Info: Cayleygraph3.png  used on input line 558.
 (pdftex.def)             Requested size: 158.51111pt x 158.51111pt.
  [9 <./Cayleygraph3.png>] [10] [11]
-<Zykel_152.png, id=340, 1783.66376pt x 888.31876pt>
+<Zykel_152.png, id=345, 1783.66376pt x 888.31876pt>
 File: Zykel_152.png Graphic file (type png)
 <use Zykel_152.png>
-Package pdftex.def Info: Zykel_152.png  used on input line 705.
+Package pdftex.def Info: Zykel_152.png  used on input line 731.
 (pdftex.def)             Requested size: 231.88443pt x 115.48549pt.
  [12 <./Zykel_152.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 759.
+(hyperref)                be the same. Added a new anchor on input line 785.
 
-<caged_positions.png, id=350, 1003.75pt x 1140.26pt>
+<caged_positions.png, id=355, 1003.75pt x 1140.26pt>
 File: caged_positions.png Graphic file (type png)
 <use caged_positions.png>
-Package pdftex.def Info: caged_positions.png  used on input line 766.
+Package pdftex.def Info: caged_positions.png  used on input line 792.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
-<foldedout_cage.png, id=351, 1003.75pt x 1140.26pt>
+<foldedout_cage.png, id=356, 1003.75pt x 1140.26pt>
 File: foldedout_cage.png Graphic file (type png)
 <use foldedout_cage.png>
-Package pdftex.def Info: foldedout_cage.png  used on input line 773.
+Package pdftex.def Info: foldedout_cage.png  used on input line 799.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
-<foldedout_cage_color.png, id=352, 1003.75pt x 1140.26pt>
+<foldedout_cage_color.png, id=357, 1003.75pt x 1140.26pt>
 File: foldedout_cage_color.png Graphic file (type png)
 <use foldedout_cage_color.png>
-Package pdftex.def Info: foldedout_cage_color.png  used on input line 774.
+Package pdftex.def Info: foldedout_cage_color.png  used on input line 800.
 (pdftex.def)             Requested size: 150.556pt x 171.03162pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13 <./caged_positions.png>]
-<caged_spin.png, id=362, 1003.75pt x 1140.26pt>
+<caged_spin.png, id=367, 1003.75pt x 1140.26pt>
 File: caged_spin.png Graphic file (type png)
 <use caged_spin.png>
-Package pdftex.def Info: caged_spin.png  used on input line 787.
+Package pdftex.def Info: caged_spin.png  used on input line 813.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
-<foldedout_spin.png, id=363, 1003.75pt x 1140.26pt>
+<foldedout_spin.png, id=368, 1003.75pt x 1140.26pt>
 File: foldedout_spin.png Graphic file (type png)
 <use foldedout_spin.png>
-Package pdftex.def Info: foldedout_spin.png  used on input line 788.
+Package pdftex.def Info: foldedout_spin.png  used on input line 814.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
  [14 <./foldedout_cage.png> <./foldedout_cage_color.png> <./caged_spin.png> <./
 foldedout_spin.png>]
-<foldedout_numbers.png, id=373, 1003.75pt x 1140.26pt>
+<foldedout_numbers.png, id=378, 1003.75pt x 1140.26pt>
 File: foldedout_numbers.png Graphic file (type png)
 <use foldedout_numbers.png>
-Package pdftex.def Info: foldedout_numbers.png  used on input line 846.
+Package pdftex.def Info: foldedout_numbers.png  used on input line 872.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<foldedout_012.png, id=374, 1003.75pt x 1140.26pt>
+<foldedout_012.png, id=379, 1003.75pt x 1140.26pt>
 File: foldedout_012.png Graphic file (type png)
 <use foldedout_012.png>
-Package pdftex.def Info: foldedout_012.png  used on input line 847.
+Package pdftex.def Info: foldedout_012.png  used on input line 873.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15]
-<foldedout_012_white.png, id=380, 1003.75pt x 1140.26pt>
+<foldedout_012_white.png, id=385, 1003.75pt x 1140.26pt>
 File: foldedout_012_white.png Graphic file (type png)
 <use foldedout_012_white.png>
-Package pdftex.def Info: foldedout_012_white.png  used on input line 863.
+Package pdftex.def Info: foldedout_012_white.png  used on input line 889.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<foldedout_012_spin.png, id=381, 1003.75pt x 1140.26pt>
+<foldedout_012_spin.png, id=386, 1003.75pt x 1140.26pt>
 File: foldedout_012_spin.png Graphic file (type png)
 <use foldedout_012_spin.png>
-Package pdftex.def Info: foldedout_012_spin.png  used on input line 864.
+Package pdftex.def Info: foldedout_012_spin.png  used on input line 890.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
  [16 <./foldedout_numbers.png> <./foldedout_012.png> <./foldedout_012_white.png
 > <./foldedout_012_spin.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 897.
+(hyperref)                be the same. Added a new anchor on input line 923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 897.
+(hyperref)                removing `math shift' on input line 923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 897.
+(hyperref)                removing `\times' on input line 923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 897.
+(hyperref)                removing `math shift' on input line 923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 897.
+(hyperref)                removing `math shift' on input line 923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 897.
+(hyperref)                removing `\times' on input line 923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 897.
+(hyperref)                removing `math shift' on input line 923.
 
 [17] [18] [19]
-<RF.png, id=408, 1003.75pt x 1140.26pt>
+<RF.png, id=413, 1003.75pt x 1140.26pt>
 File: RF.png Graphic file (type png)
 <use RF.png>
-Package pdftex.def Info: RF.png  used on input line 992.
+Package pdftex.def Info: RF.png  used on input line 1018.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<FR.png, id=409, 1003.75pt x 1140.26pt>
+<FR.png, id=414, 1003.75pt x 1140.26pt>
 File: FR.png Graphic file (type png)
 <use FR.png>
-Package pdftex.def Info: FR.png  used on input line 993.
+Package pdftex.def Info: FR.png  used on input line 1019.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 1029.
+(Font)              using `U/stmry/m/n' instead on input line 1055.
 
 [20 <./RF.png> <./FR.png>]
-<Pfeile.png, id=424, 1003.75pt x 1140.26pt>
+<Pfeile.png, id=429, 1003.75pt x 1140.26pt>
 File: Pfeile.png Graphic file (type png)
 <use Pfeile.png>
-Package pdftex.def Info: Pfeile.png  used on input line 1060.
+Package pdftex.def Info: Pfeile.png  used on input line 1086.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
 
-Overfull \hbox (21.26514pt too wide) in paragraph at lines 1068--1085
+Overfull \hbox (21.26514pt too wide) in paragraph at lines 1094--1111
 [][] 
  []
 
 [21 <./Pfeile.png>]
-<auf_ulf.png, id=431, 1003.75pt x 1140.26pt>
+<auf_ulf.png, id=436, 1003.75pt x 1140.26pt>
 File: auf_ulf.png Graphic file (type png)
 <use auf_ulf.png>
-Package pdftex.def Info: auf_ulf.png  used on input line 1094.
+Package pdftex.def Info: auf_ulf.png  used on input line 1120.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
  [22 <./auf_ulf.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1251--1256
+Underfull \hbox (badness 10000) in paragraph at lines 1277--1282
 
  []
 
 [23]
-<3_wuerfel.png, id=445, 2748.2675pt x 867.24pt>
+<3_wuerfel.png, id=450, 2748.2675pt x 867.24pt>
 File: 3_wuerfel.png Graphic file (type png)
 <use 3_wuerfel.png>
-Package pdftex.def Info: 3_wuerfel.png  used on input line 1262.
+Package pdftex.def Info: 3_wuerfel.png  used on input line 1288.
 (pdftex.def)             Requested size: 412.22234pt x 130.08038pt.
  [24 <./3_wuerfel.png>] [25] [26] [27]
-<graph_zug.png, id=468, 1927.2pt x 1084.05pt>
+<graph_zug.png, id=473, 1927.2pt x 1084.05pt>
 File: graph_zug.png Graphic file (type png)
 <use graph_zug.png>
-Package pdftex.def Info: graph_zug.png  used on input line 1436.
+Package pdftex.def Info: graph_zug.png  used on input line 1462.
 (pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
 
-Overfull \hbox (122.92036pt too wide) in paragraph at lines 1436--1437
+Overfull \hbox (122.92036pt too wide) in paragraph at lines 1462--1463
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<zykel_LLFF.png, id=470, 1366.10374pt x 593.21625pt>
+<zykel_LLFF.png, id=475, 1366.10374pt x 593.21625pt>
 File: zykel_LLFF.png Graphic file (type png)
 <use zykel_LLFF.png>
-Package pdftex.def Info: zykel_LLFF.png  used on input line 1465.
+Package pdftex.def Info: zykel_LLFF.png  used on input line 1491.
 (pdftex.def)             Requested size: 341.5251pt x 148.3037pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1468,56 +1469,56 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [28] [29 <./graph_zug.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1534.
+(hyperref)                removing `math shift' on input line 1560.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1534.
+(hyperref)                removing `subscript' on input line 1560.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 1534.
+(hyperref)                removing `\times' on input line 1560.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 1534.
+(hyperref)                removing `\times' on input line 1560.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1534.
+(hyperref)                removing `math shift' on input line 1560.
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1561.
+(hyperref)                be the same. Added a new anchor on input line 1587.
 
 [30 <./zykel_LLFF.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1641.
+(hyperref)                removing `math shift' on input line 1667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1641.
+(hyperref)                removing `math shift' on input line 1667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1641.
+(hyperref)                removing `math shift' on input line 1667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1641.
+(hyperref)                removing `math shift' on input line 1667.
 
 [31]
-<Cayleygraph1.png, id=506, 178.7478pt x 189.3474pt>
+<Cayleygraph1.png, id=511, 178.7478pt x 189.3474pt>
 File: Cayleygraph1.png Graphic file (type png)
 <use Cayleygraph1.png>
-Package pdftex.def Info: Cayleygraph1.png  used on input line 1688.
+Package pdftex.def Info: Cayleygraph1.png  used on input line 1714.
 (pdftex.def)             Requested size: 125.12259pt x 132.54227pt.
  [32]
-<Cayleygraph2.png, id=514, 505.89pt x 248.3679pt>
+<Cayleygraph2.png, id=519, 505.89pt x 248.3679pt>
 File: Cayleygraph2.png Graphic file (type png)
 <use Cayleygraph2.png>
-Package pdftex.def Info: Cayleygraph2.png  used on input line 1706.
+Package pdftex.def Info: Cayleygraph2.png  used on input line 1732.
 (pdftex.def)             Requested size: 303.53633pt x 149.02188pt.
 
 
@@ -1526,94 +1527,94 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [33 <./Cayleygraph1.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1770.
+(hyperref)                be the same. Added a new anchor on input line 1796.
 
 [34 <./Cayleygraph2.png>]
-Overfull \hbox (16.8842pt too wide) in paragraph at lines 1781--1800
+Overfull \hbox (16.8842pt too wide) in paragraph at lines 1807--1826
  [] 
  []
 
 [35]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1860.
+(hyperref)                be the same. Added a new anchor on input line 1886.
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1937--1943
+Underfull \hbox (badness 10000) in paragraph at lines 1963--1969
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1937--1943
+Underfull \hbox (badness 10000) in paragraph at lines 1963--1969
 
  []
 
 [37]
-<isiakanm.png, id=555, 2688.0425pt x 1140.26pt>
+<isiakanm.png, id=560, 2688.0425pt x 1140.26pt>
 File: isiakanm.png Graphic file (type png)
 <use isiakanm.png>
-Package pdftex.def Info: isiakanm.png  used on input line 1978.
+Package pdftex.def Info: isiakanm.png  used on input line 2004.
 (pdftex.def)             Requested size: 322.55118pt x 136.82529pt.
-<LURFL1.png, id=557, 1003.75pt x 1140.26pt>
+<LURFL1.png, id=562, 1003.75pt x 1140.26pt>
 File: LURFL1.png Graphic file (type png)
 <use LURFL1.png>
-Package pdftex.def Info: LURFL1.png  used on input line 2012.
+Package pdftex.def Info: LURFL1.png  used on input line 2038.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [38 <./isiakanm.png>]
-<0201.png, id=567, 1003.75pt x 1140.26pt>
+<0201.png, id=572, 1003.75pt x 1140.26pt>
 File: 0201.png Graphic file (type png)
 <use 0201.png>
-Package pdftex.def Info: 0201.png  used on input line 2026.
+Package pdftex.def Info: 0201.png  used on input line 2052.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
-<menschSchritt2.png, id=569, 1003.75pt x 1140.26pt>
+<menschSchritt2.png, id=574, 1003.75pt x 1140.26pt>
 File: menschSchritt2.png Graphic file (type png)
 <use menschSchritt2.png>
-Package pdftex.def Info: menschSchritt2.png  used on input line 2035.
+Package pdftex.def Info: menschSchritt2.png  used on input line 2061.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [39 <./LURFL1.png> <./0201.png>]
-<menschSchritt3.png, id=579, 1003.75pt x 1140.26pt>
+<menschSchritt3.png, id=584, 1003.75pt x 1140.26pt>
 File: menschSchritt3.png Graphic file (type png)
 <use menschSchritt3.png>
-Package pdftex.def Info: menschSchritt3.png  used on input line 2045.
+Package pdftex.def Info: menschSchritt3.png  used on input line 2071.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
-<menschSchritt4.png, id=581, 1003.75pt x 1140.26pt>
+<menschSchritt4.png, id=586, 1003.75pt x 1140.26pt>
 File: menschSchritt4.png Graphic file (type png)
 <use menschSchritt4.png>
-Package pdftex.def Info: menschSchritt4.png  used on input line 2054.
+Package pdftex.def Info: menschSchritt4.png  used on input line 2080.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
-<menschSchritt5.png, id=584, 1003.75pt x 1140.26pt>
+<menschSchritt5.png, id=589, 1003.75pt x 1140.26pt>
 File: menschSchritt5.png Graphic file (type png)
 <use menschSchritt5.png>
-Package pdftex.def Info: menschSchritt5.png  used on input line 2063.
+Package pdftex.def Info: menschSchritt5.png  used on input line 2089.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
  [40 <./menschSchritt2.png> <./menschSchritt3.png> <./menschSchritt4.png>]
-<RRFFRRUU.png, id=598, 1003.75pt x 1140.26pt>
+<RRFFRRUU.png, id=603, 1003.75pt x 1140.26pt>
 File: RRFFRRUU.png Graphic file (type png)
 <use RRFFRRUU.png>
-Package pdftex.def Info: RRFFRRUU.png  used on input line 2105.
+Package pdftex.def Info: RRFFRRUU.png  used on input line 2131.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<CubeInCube.png, id=599, 1003.75pt x 1140.26pt>
+<CubeInCube.png, id=604, 1003.75pt x 1140.26pt>
 File: CubeInCube.png Graphic file (type png)
 <use CubeInCube.png>
-Package pdftex.def Info: CubeInCube.png  used on input line 2105.
+Package pdftex.def Info: CubeInCube.png  used on input line 2131.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<UUFFRRUU.png, id=600, 1003.75pt x 1140.26pt>
+<UUFFRRUU.png, id=605, 1003.75pt x 1140.26pt>
 File: UUFFRRUU.png Graphic file (type png)
 <use UUFFRRUU.png>
-Package pdftex.def Info: UUFFRRUU.png  used on input line 2108.
+Package pdftex.def Info: UUFFRRUU.png  used on input line 2134.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<UFFUURRU.png, id=601, 1003.75pt x 1140.26pt>
+<UFFUURRU.png, id=606, 1003.75pt x 1140.26pt>
 File: UFFUURRU.png Graphic file (type png)
 <use UFFUURRU.png>
-Package pdftex.def Info: UFFUURRU.png  used on input line 2108.
+Package pdftex.def Info: UFFUURRU.png  used on input line 2134.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 
@@ -1621,60 +1622,60 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [41 <./menschSchritt5.png>] [42 <./RRFFRRUU.png> <./CubeInCube.png> <./UUFFRRUU
 .png> <./UFFUURRU.png>]
-<e1_s1_s1.png, id=617, 897.3525pt x 905.3825pt>
+<e1_s1_s1.png, id=622, 897.3525pt x 905.3825pt>
 File: e1_s1_s1.png Graphic file (type png)
 <use e1_s1_s1.png>
-Package pdftex.def Info: e1_s1_s1.png  used on input line 2186.
+Package pdftex.def Info: e1_s1_s1.png  used on input line 2212.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s1_s2.png, id=618, 897.3525pt x 905.3825pt>
+<e1_s1_s2.png, id=623, 897.3525pt x 905.3825pt>
 File: e1_s1_s2.png Graphic file (type png)
 <use e1_s1_s2.png>
-Package pdftex.def Info: e1_s1_s2.png  used on input line 2187.
+Package pdftex.def Info: e1_s1_s2.png  used on input line 2213.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
 
-Overfull \hbox (27.81915pt too wide) in paragraph at lines 2194--2198
+Overfull \hbox (27.81915pt too wide) in paragraph at lines 2220--2224
 []\OT1/cmr/m/n/12 (-20) Der zwei-te Stein kann dann hin-zu-gef[]ugt wer-den. Es
  gibt f[]ur den 2$\OMS/cmsy/m/n/12 ^^B$\OT1/cmr/m/n/12 (-20) 2$\OMS/cmsy/m/n/12
  ^^B$\OT1/cmr/m/n/12 (-20) 2-W[]urfel L[]osungsmethoden,
  []
 
-<e1_s2_s1.png, id=621, 897.3525pt x 905.3825pt>
+<e1_s2_s1.png, id=626, 897.3525pt x 905.3825pt>
 File: e1_s2_s1.png Graphic file (type png)
 <use e1_s2_s1.png>
-Package pdftex.def Info: e1_s2_s1.png  used on input line 2201.
+Package pdftex.def Info: e1_s2_s1.png  used on input line 2227.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s2.png, id=622, 897.3525pt x 905.3825pt>
+<e1_s2_s2.png, id=627, 897.3525pt x 905.3825pt>
 File: e1_s2_s2.png Graphic file (type png)
 <use e1_s2_s2.png>
-Package pdftex.def Info: e1_s2_s2.png  used on input line 2202.
+Package pdftex.def Info: e1_s2_s2.png  used on input line 2228.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43 <./e1_s1_s1.png> <./e1_s1_s2.png>]
-<e1_s2_s1_s.png, id=635, 897.3525pt x 905.3825pt>
+<e1_s2_s1_s.png, id=641, 897.3525pt x 905.3825pt>
 File: e1_s2_s1_s.png Graphic file (type png)
 <use e1_s2_s1_s.png>
-Package pdftex.def Info: e1_s2_s1_s.png  used on input line 2213.
+Package pdftex.def Info: e1_s2_s1_s.png  used on input line 2239.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s2_s.png, id=636, 897.3525pt x 905.3825pt>
+<e1_s2_s2_s.png, id=642, 897.3525pt x 905.3825pt>
 File: e1_s2_s2_s.png Graphic file (type png)
 <use e1_s2_s2_s.png>
-Package pdftex.def Info: e1_s2_s2_s.png  used on input line 2214.
+Package pdftex.def Info: e1_s2_s2_s.png  used on input line 2240.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s3_s.png, id=637, 897.3525pt x 905.3825pt>
+<e1_s2_s3_s.png, id=643, 897.3525pt x 905.3825pt>
 File: e1_s2_s3_s.png Graphic file (type png)
 <use e1_s2_s3_s.png>
-Package pdftex.def Info: e1_s2_s3_s.png  used on input line 2215.
+Package pdftex.def Info: e1_s2_s3_s.png  used on input line 2241.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s4_s.png, id=638, 897.3525pt x 905.3825pt>
+<e1_s2_s4_s.png, id=644, 897.3525pt x 905.3825pt>
 File: e1_s2_s4_s.png Graphic file (type png)
 <use e1_s2_s4_s.png>
-Package pdftex.def Info: e1_s2_s4_s.png  used on input line 2216.
+Package pdftex.def Info: e1_s2_s4_s.png  used on input line 2242.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
 File: ebene.png Graphic file (type png)
 <use ebene.png>
-Package pdftex.def Info: ebene.png  used on input line 2250.
+Package pdftex.def Info: ebene.png  used on input line 2276.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
 
 
@@ -1682,40 +1683,40 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [44 <./e1_s2_s1.png> <./e1_s2_s2.png> <./e1_s2_s1_s.png> <./e1_s2_s2_s.png> <./
 e1_s2_s3_s.png> <./e1_s2_s4_s.png>]
-<TOPVIEW1.png, id=651, 1043.9pt x 1034.86626pt>
+<TOPVIEW1.png, id=656, 1043.9pt x 1034.86626pt>
 File: TOPVIEW1.png Graphic file (type png)
 <use TOPVIEW1.png>
-Package pdftex.def Info: TOPVIEW1.png  used on input line 2270.
+Package pdftex.def Info: TOPVIEW1.png  used on input line 2296.
 (pdftex.def)             Requested size: 104.3961pt x 103.49268pt.
-<TOPVIEW2.png, id=652, 1043.9pt x 1034.86626pt>
+<TOPVIEW2.png, id=657, 1043.9pt x 1034.86626pt>
 File: TOPVIEW2.png Graphic file (type png)
 <use TOPVIEW2.png>
-Package pdftex.def Info: TOPVIEW2.png  used on input line 2271.
+Package pdftex.def Info: TOPVIEW2.png  used on input line 2297.
 (pdftex.def)             Requested size: 104.3961pt x 103.49268pt.
-<TOPVIEW3_1.png, id=653, 1043.9pt x 1034.86626pt>
+<TOPVIEW3_1.png, id=658, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_1.png Graphic file (type png)
 <use TOPVIEW3_1.png>
-Package pdftex.def Info: TOPVIEW3_1.png  used on input line 2281.
+Package pdftex.def Info: TOPVIEW3_1.png  used on input line 2307.
 (pdftex.def)             Requested size: 104.3961pt x 103.49268pt.
-<TOPVIEW3_2.png, id=654, 1043.9pt x 1034.86626pt>
+<TOPVIEW3_2.png, id=659, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_2.png Graphic file (type png)
 <use TOPVIEW3_2.png>
-Package pdftex.def Info: TOPVIEW3_2.png  used on input line 2282.
+Package pdftex.def Info: TOPVIEW3_2.png  used on input line 2308.
 (pdftex.def)             Requested size: 104.3961pt x 103.49268pt.
-<TOPVIEW4.png, id=655, 1043.9pt x 1034.86626pt>
+<TOPVIEW4.png, id=660, 1043.9pt x 1034.86626pt>
 File: TOPVIEW4.png Graphic file (type png)
 <use TOPVIEW4.png>
-Package pdftex.def Info: TOPVIEW4.png  used on input line 2283.
+Package pdftex.def Info: TOPVIEW4.png  used on input line 2309.
 (pdftex.def)             Requested size: 104.3961pt x 103.49268pt.
-<TOPVIEW5.png, id=656, 1043.9pt x 1034.86626pt>
+<TOPVIEW5.png, id=661, 1043.9pt x 1034.86626pt>
 File: TOPVIEW5.png Graphic file (type png)
 <use TOPVIEW5.png>
-Package pdftex.def Info: TOPVIEW5.png  used on input line 2284.
+Package pdftex.def Info: TOPVIEW5.png  used on input line 2310.
 (pdftex.def)             Requested size: 104.3961pt x 103.49268pt.
-<TOPVIEW6.png, id=657, 1043.9pt x 1034.86626pt>
+<TOPVIEW6.png, id=662, 1043.9pt x 1034.86626pt>
 File: TOPVIEW6.png Graphic file (type png)
 <use TOPVIEW6.png>
-Package pdftex.def Info: TOPVIEW6.png  used on input line 2285.
+Package pdftex.def Info: TOPVIEW6.png  used on input line 2311.
 (pdftex.def)             Requested size: 104.3961pt x 103.49268pt.
  [45 <./TOPVIEW1.png> <./TOPVIEW2.png>]
 [46 <./TOPVIEW3_1.png> <./TOPVIEW3_2.png> <./TOPVIEW4.png> <./TOPVIEW5.png> <./
@@ -1729,20 +1730,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (0.73575pt too wide) in paragraph at lines 2325--2325
+Overfull \hbox (0.73575pt too wide) in paragraph at lines 2351--2351
 \OT1/cmr/m/n/12 (-20) 0,49 Se-kun-den in 2016. On-li-ne erh[]atlich un-ter [][]
 $\OT1/cmtt/m/n/12 https : / / www . worldcubeassociation .
  []
 
 [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2334.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2334.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2360.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2360.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2334.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2334.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2360.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2360.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: CC17B2527D197F5FC120735A8471C0B2;2964.
+(rerunfilecheck)             Checksum: E0BC35CE2FEF7BF2896CC75E9C0BB1E4;2949.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1753,13 +1754,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2334.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2360.
  ) 
 Here is how much of TeX's memory you used:
- 29788 strings out of 483016
- 546594 string characters out of 5961286
- 1231657 words of memory out of 5000000
- 43968 multiletter control sequences out of 15000+600000
+ 29798 strings out of 483016
+ 546643 string characters out of 5961286
+ 1231722 words of memory out of 5000000
+ 43973 multiletter control sequences out of 15000+600000
  564602 words of font info for 204 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,13n,60p,913b,2193s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1791,10 +1792,10 @@ public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 nts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb>
-Output written on proposal.pdf (52 pages, 2702841 bytes).
+Output written on proposal.pdf (52 pages, 2702909 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
- 120 named destinations out of 1000 (max. 500000)
+ 866 PDF objects out of 1000 (max. 8388607)
+ 668 compressed objects within 7 object streams
+ 125 named destinations out of 1000 (max. 500000)
  28787 words of extra memory for PDF output out of 29859 (max. 10000000)
 
