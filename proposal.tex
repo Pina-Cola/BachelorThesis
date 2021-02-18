@@ -459,7 +459,7 @@ Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, so nennt man $(G
 Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
 
 
-\textbf{Beispieluntergruppen}
+\textbf{Beispieluntergruppe}
 
 Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellt sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
 
@@ -524,13 +524,16 @@ Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppen
 
 \textbf{Beispielcayleygraph}
 
+In Abbildung \ref{34} sieht man den Cayleygraphen der Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ mit dem Erzeuger $1$.
+
 \begin{figure}[H]
-ABBILDUNG 
+\centering
+\includegraphics[scale=0.7]{Cayleygraph3.png}
 \caption{Cayleygraph von $(\mathbb{Z}/6\mathbb{Z}, +)$ mit Erzeuger $1$}
 \label{34}
 \end{figure}
 
-In Abbildung \ref{34} sieht man den Cayleygraphen der Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ mit dem Erzeuger $1$.
+
 
 %
 %
@@ -551,7 +554,7 @@ Es gibt Links- und Rechtsoperationen auf Gruppen. Da im Folgenden nur Rechtsoper
 \begin{singlespacing}
 \begin{definition}[Rechtsoperation]
 
-Eine Rechtsoperation einer Gruppe $(G, *)$ auf einer Menge $M$ ist eine Verknüpfung mit $m \in M$, $e$ als neutralem Element von $G$ und $g,h \in G$:
+Eine Rechtsoperation einer Gruppe $(G, *)$ auf einer Menge $M$ ist eine Verknüpfung mit $m \in M$, $e$ als neutralem Element von $(G,*)$ und $g,h \in G$:
 \begin{align*}
 \cdot: M \times G \rightarrow M \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
 (m, g) \mapsto m \cdot g 
@@ -559,12 +562,22 @@ Eine Rechtsoperation einer Gruppe $(G, *)$ auf einer Menge $M$ ist eine Verknüp
 Die folgenden beiden Eigenschaften müssen gelten:
 \begin{align*}
 m \cdot e & = m \\
-n \cdot (g * h) & = (n \cdot g) \cdot h
+m \cdot (g * h) & = (m \cdot g) \cdot h
 \end{align*}
 Dann operiert $G$ von rechts auf $M$.
 
 \end{definition}
 \end{singlespacing}
+
+\textbf{Beispielrechtsoperation}
+
+Als Beispiel werden die Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ und die Menge $\mathbb{Z}$ mit der Verknüpfung $-$ betrachtet. Die folgenden Eigenschaften müssen gelten, damit $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Rechtsoperation auf $\mathbb{Z}$ ist, mit $z \in  \mathbb{Z}$ und $g,h \in \mathbb{Z}/6\mathbb{Z}$.
+\begin{itemize}
+\item Die Eigenschaft $z - 0 = z$ ist erfüllt. $0$ ist das neutrale Element von $(\mathbb{Z}/6\mathbb{Z}, +)$.
+\item Da sich $z-(g+h)$ zu $z-g-h$ umformen lässt, gilt $z-(g+h) = (z-g)-h$
+\end{itemize}
+Also operiert $(\mathbb{Z}/6\mathbb{Z}, +)$ mit $-$ von rechts auf $\mathbb{Z}$.
+
 %
 %
 %
