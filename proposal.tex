@@ -14,6 +14,19 @@
 \usepackage{verbatim}
 
 \usepackage{amsthm}
+
+
+\newtheoremstyle{mystyle}% name
+{15pt}% Space above
+{5pt}% Space below
+{\itshape}% Body font
+{}% Indent amount: 
+{\bf}% Theorem head font
+{}% Punctuation after theorem head
+{\newline}% Space after theorem head
+{}% Theorem head 
+
+\theoremstyle{mystyle}
 \newtheorem{definition}{Definition}
 
 
@@ -385,8 +398,8 @@ Die Ebenen werden bei einer Ebenendrehung um $90^\circ$ gedreht. Eine Ebenendreh
 \newpage
 \section{Mathematische Grundlagen}
 
-In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind. Es wird die Definition einer Gruppe (auch anhand von Beispielen) und die der Untergruppen erklärt. Dazu werden auch Erzeuger (die Untergruppen erzeugen) und zyklische Gruppen definiert. Außerdem werden Permutationen und die Zykelschreibweise eingeführt und erklärt. 
-Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort kann man auch detailliertere Informationen, Beispiele und weitere Definitionen nachlesen.
+In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind. Es werden Definitionen und Beispiele von Gruppen, Untergruppen, zyklischen Gruppen, Erzeugern, Gruppenoperationen, Kommutatoren, Äquivalentrelationen, Permutationen und Zykelschreibweise angegeben.
+Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort kann man auch detailliertere Informationen und weitere Beispiele nachlesen.
 Des weiteren wird der Cayleygraph erklärt. 
 %
 %
@@ -400,7 +413,6 @@ Des weiteren wird der Cayleygraph erklärt.
 
 Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für die folgenden Kapitel. 
 
-\begin{singlespacing}
 \begin{definition}[Gruppe]
 Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ nennt man Gruppe, wenn diese Bedingungen gelten: 
 \begin{itemize}
@@ -410,16 +422,16 @@ Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ nennt man Grup
 \item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G, \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
 \end{definition}
-\end{singlespacing}
+
 Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\footnote{\glqq Zu Ehren von Niels Henrik \textsc{Abel} (1802-1829); norwegischer Mathematiker und einer der Begründer der Gruppentheorie. Starb leider verarmt und deprimiert im Alter von 26 Jahren an Tuberkulose, kurz bevor er als Anerkennung für seine genialen Arbeiten  eine Dozentenstelle in Berlin angeboten bekam.\grqq \  \cite[S.21, Z.23]{Buch}}) handelt, muss zusätzlich noch die Eigenschaft der Kommutativität gelten: 
-\begin{singlespacing}
+
 \begin{definition}[Kommutative Gruppe]
 Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
 \begin{itemize}
 \item Kommutativität: $\forall a,b \in G.(a \circ b) = (b \circ a) $
 \end{itemize}
 \end{definition}
-\end{singlespacing}
+
 
 
 \begin{bsp}[Gruppe]
@@ -470,11 +482,11 @@ $(\mathbb{Z}/6\mathbb{Z}, +)$ ist also eine endliche Gruppe.
 
 Im Folgenden werden Untergruppen definiert.
 
-\begin{singlespacing}
+
 \begin{definition}[Untergruppe]
 Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann schreibt man auch $H \leqslant G$. 
 \end{definition}
-\end{singlespacing}
+
 Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. Nicht jede Teilmenge $H \subseteq G$ muss auch eine Gruppe sein.
 
 Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, so nennt man $(G, \circ)$ auch eine Obergruppe von $(H, \circ)$.
@@ -506,17 +518,17 @@ Es gilt aber auch $\mathbb{Z}/6\mathbb{Z} \subseteq \mathbb{Z}$. Da sowohl $(\ma
 \subsection*{Erzeuger und zyklische Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Erzeuger und zyklische Gruppe}
 
 
-\begin{singlespacing}
+
 \begin{definition}[Erzeuger]
 Sei die Menge $M \subseteq G$ eine nicht leere Teilmenge der Trägermenge einer Gruppe $(G, \circ)$. 
 Dann wird die Untergruppe $(M, \circ)$ von $M$ erzeugt und ist die kleinste Untergruppe von $(G, \circ)$, für die $M \subseteq G$ gilt.
 Man nennt $(M, \circ)$ dann das Erzeugnis von $M$ und die Elemente aus $M$ sind die Erzeuger der Untergruppe $(M, \circ)$.
 \end{definition}
-\end{singlespacing}
+
 Wenn $(M, \circ)$ durch $M$ erzeugt wird, ist dann eine $M$ enthaltende Untergruppe.
 
 Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht also nur aus Potenzen dieses Elementes
-\begin{singlespacing}
+
 \begin{definition}[Zyklische Gruppe]
 Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ nennt man eine zyklische Gruppe, wenn sie ein Element $a \in G$ gibt, das jedes Element in $G$ erzeugt. Dann schreibt man auch:
 \begin{align*}
@@ -524,7 +536,7 @@ Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ nennt man eine zyklische Gruppe, wenn
 \end{align*}
 
 \end{definition}
-\end{singlespacing}
+
 
 \begin{bsp}[Erzeuger und zyklische Gruppe]
 
@@ -577,7 +589,7 @@ In Abbildung \ref{34} sieht man den Cayleygraphen der Gruppe $(\mathbb{Z}/6\math
 
 Es gibt Links- und Rechtsoperationen auf Gruppen. Da im Folgenden nur Rechtsoperationen genutzt werden, werden auch nur diese hier definiert.
 
-\begin{singlespacing}
+
 \begin{definition}[Rechtsoperation]
 
 Eine Rechtsoperation einer Gruppe $(G, *)$ auf einer Menge $M$ ist eine Verknüpfung mit $m \in M$, $e$ als neutralem Element von $(G,*)$ und $g,h \in G$:
@@ -593,7 +605,7 @@ m \cdot (g * h) & = (m \cdot g) \cdot h
 Dann operiert $G$ von rechts auf $M$.
 
 \end{definition}
-\end{singlespacing}
+
 
 \begin{bsp}[Rechtsoperation]
 
@@ -624,11 +636,11 @@ Also operiert $(\mathbb{Z}/6\mathbb{Z}, +)$ mit $-$ von rechts auf $\mathbb{Z}$.
 }
 Die Komplexität eines Kommutators sagt etwas darüber aus, wie sehr zwei Elemente einer Gruppe das Kommutativgesetz verletzen. Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe \cite{TD}. Man sagt dann, dass die beiden Elemente kommutieren. 
 
-\begin{singlespacing}
+
 \begin{definition}[Kommutator]
 Als Kommutator von zwei Elementen $a, b$ einer Gruppe $(G, \circ)$  bezeichnet man $[a,b] = aba^{-1}b^{-1}$.
 \end{definition}
-\end{singlespacing}
+
 
 \begin{bsp}[Kommutator]
 
@@ -653,11 +665,11 @@ $[5,7]$ ist ein Kommutator der Gruppe $(\mathbb{Z}, +)$. $[5,7]$ ist das Gleiche
 \subsection*{Äquivalenzrelation} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelation}
 
 Mit Relationen lassen sich Beziehungen von Elementen einer Menge zueinander beschreiben.
-\begin{singlespacing}
+
 \begin{definition}[Äquivalenzrelation]
 Eine Relation $\sim \ \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität.
 \end{definition}
-\end{singlespacing}
+
 
 Hier liest man $x \sim y$ als \textit{x ist äquivalent zu y}. Im Folgenden werden noch die Bedeutungen von Reflexivität, Symmetrie und Transitivität aufgelistet:
 
