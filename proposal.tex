@@ -423,6 +423,16 @@ Es ist aber zu beachten, dass es sich hierbei nicht um formelle Beweise, sondern
 Nun kann man $(\mathbb{Z},+)$ noch auf die Kommutativität untersuchen, um zu prüfen, ob es sich um eine abelsche Gruppe handelt. \\
 Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abelsche Gruppe.
 
+Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}/n\mathbb{Z}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind dann alle ganzen Zahlen modulo 6, also $\mathbb{Z}/6\mathbb{Z}=\{0,1,2,3,4,5\}$
+\begin{itemize}
+\item Die Abgeschlossenheit gilt für $(\mathbb{Z}/6\mathbb{Z}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
+\item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
+\item Das neutrale Element von $(\mathbb{Z}/6\mathbb{Z}, +)$ ist $0$.
+\item Das Inverse Element für alle $z \in \mathbb{Z}/6\mathbb{Z}$ ist definiert als $(6-z)$. Für 1 ist es also 5, für 2 ist es 4 und für 3 ist das neutrale Element die 3.
+\end{itemize}
+
+$(\mathbb{Z}/6\mathbb{Z}, +)$ ist also eine endliche Gruppe.
+
 %
 %
 %
@@ -449,9 +459,13 @@ Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, so nennt man $(G
 Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
 
 
-\textbf{Beispieluntergruppe}
+\textbf{Beispieluntergruppen}
 
-Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellte sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
+Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellt sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
+
+Es gilt aber auch $\mathbb{Z}/6\mathbb{Z} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}/6\mathbb{Z}, +)$ Gruppen sind, ist $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Untergruppe von $(\mathbb{Z},+)$.
+
+
 %
 %
 %

@@ -21,13 +21,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Erzeuger und zyklische Gruppe}{8}{definition.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Cayleygraph}{8}{definition.5}%
+\contentsline {subsection}{\numberline {}Cayleygraph}{9}{definition.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Gruppenoperation}{9}{definition.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Kommutator }{9}{definition.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzrelation}{9}{definition.7}%
+\contentsline {subsection}{\numberline {}Äquivalenzrelation}{10}{definition.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{10}{definition.8}%
 \defcounter {refsection}{0}\relax 
