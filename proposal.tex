@@ -626,7 +626,7 @@ $[5,7]$ ist ein Kommutator der Gruppe $(\mathbb{Z}, +)$. $[5,7]$ ist das Gleiche
 Mit Relationen lassen sich Beziehungen von Elementen einer Menge zueinander beschreiben.
 \begin{singlespacing}
 \begin{definition}[Äquivalenzrelation]
-Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität.
+Eine Relation $\sim \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität.
 \end{definition}
 \end{singlespacing}
 
@@ -643,14 +643,14 @@ Aus $(x \sim y)$ und $(y \sim z)$ folgt $(x \sim y)$. & (Transitivität) \\
 
 \textbf{Beispieläquivalenzrelation:}
 
-Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ werden nun zwei verschiedene Relationen betrachtet:
+Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ werden nun die Relationen $<$ und $=$ betrachtet:
 \begin{itemize}
-\item $x \sim_< y :\Leftrightarrow x < y$
+\item $ x < y$
 
-Bei der Relation $\sim_< $ handelt es sich nicht um eine Äquivalenrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Auch die Symmetrie gilt nicht.
-\item $x \sim_= y :\Leftrightarrow x = y$
+Bei der Relation $< $ handelt es sich nicht um eine Äquivalenrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Auch die Symmetrie gilt nicht.
+\item $ x = y$
 
-Bei der Relation $\sim_=$ gilt die Reflexivität für alle Elemente, da die Gleichheit reflexiv ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit und $\sim_=$ ist ja als Gleichheit definiert. 
+Bei der Relation $=$ gilt die Reflexivität für alle Elemente, da die Gleichheit reflexiv ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit. 
 \end{itemize}
 
 
@@ -671,7 +671,7 @@ Bei der Relation $\sim_=$ gilt die Reflexivität für alle Elemente, da die Glei
 \subsection*{Permutationen und Zykelschreibweise} \addcontentsline{toc}{subsection}{\protect\numberline{}Permutationen und Zykelschreibweise}
 \label{11}
 Unter einer Permutation versteht man die Reihenfolge von Objekte. Bei einer $n$-elementigen Menge $M$ ist eine ($n$-stellige) Permutation ist eine bijektive Abbildung $f: M \rightarrow M$. Die Zykelschreibweise ist eine kurze Schreibweise für eine Permutation.
-Permutationen und die Zykelschreibweise werden anhand eines Beispiels erklärt: 
+Permutationen und die Zykelschreibweise werden nun anhand eines Beispiels erklärt. Die Definitionen gehen über den Rahmen dieser Arbeit hinaus, sie können aber in dem Buch \textit{Elementar(st)e Gruppentheorie} von Tobias Glosauer \cite{Buch} nachgelesen werden.
 
 Man hat fünf Objekte: $1, 2, 3, 4$ und $5$. Nun kann man diese Objekte in fünf Plätzen arrangieren. Die Plätze werden als $1$ bis $5$ nummeriert. Dann kann man eine Funktion $f:\{1,2,3,4,5\} \rightarrow \{1,2,3,4,5\}$ definieren, bei der $f(i)$ die Zahl ist, die in Slot $i$ liegt.
 Wenn man die Zahlen in der Reihenfolge $5 \ 1\ 4\ 3 \ 2$ anordnet, ist $5$ auf Platz $1$, $1$ auf Platz $2$, usw. Das sieht man auch in der folgenden Tabelle: 
