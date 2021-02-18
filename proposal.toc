@@ -25,11 +25,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Gruppenoperation}{9}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutator }{10}{definition.6}%
+\contentsline {subsection}{\numberline {}Kommutator }{10}{bsp.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzrelation}{10}{definition.7}%
+\contentsline {subsection}{\numberline {}Äquivalenzrelation}{10}{bsp.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{11}{definition.8}%
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{11}{bsp.8.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Konfiguration des Würfels}{13}{section.4}%
 \defcounter {refsection}{0}\relax 

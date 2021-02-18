@@ -481,7 +481,7 @@ Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, so nennt man $(G
 Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
 
 
-\begin{bsp}[Untergruppe]
+\begin{bsp}[keine Untergruppe]
 
 Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellt sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
 
@@ -549,8 +549,7 @@ Ein Erzeuger dieser Gruppe ist die einelementige Menge $M = \{ 1 \}$. Jede posit
 Ein Cayleygraph ist ein Graph, der die Struktur einer Gruppe beschreibt. Er hängt von der Menge der Erzeuger ab und dient dazu, Gruppen bildlich darzustellen.
 Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppenelemente darstellen. Pfeile zeigen von einem Element zum nächsten, wenn dies durch einen der Erzeuger erreicht werden kann. \cite{AT}
 
-\textbf{Beispielcayleygraph}
-
+\textbf{Beispiel} (Cayleygraph) \\
 In Abbildung \ref{34} sieht man den Cayleygraphen der Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ mit dem Erzeuger $1$.
 
 \begin{figure}[H]
@@ -596,7 +595,7 @@ Dann operiert $G$ von rechts auf $M$.
 \end{definition}
 \end{singlespacing}
 
-\textbf{Beispielrechtsoperation}
+\begin{bsp}[Rechtsoperation]
 
 Als Beispiel werden die Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ und die Menge $\mathbb{Z}$ mit der Verknüpfung $-$ betrachtet. Die folgenden Eigenschaften müssen gelten, damit $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Rechtsoperation auf $\mathbb{Z}$ ist, mit $z \in  \mathbb{Z}$ und $g,h \in \mathbb{Z}/6\mathbb{Z}$.
 \begin{itemize}
@@ -604,6 +603,8 @@ Als Beispiel werden die Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ und die Menge $\mat
 \item Da sich $z-(g+h)$ zu $z-g-h$ umformen lässt, gilt $z-(g+h) = (z-g)-h$
 \end{itemize}
 Also operiert $(\mathbb{Z}/6\mathbb{Z}, +)$ mit $-$ von rechts auf $\mathbb{Z}$.
+
+\end{bsp}
 
 %
 %
@@ -629,10 +630,11 @@ Als Kommutator von zwei Elementen $a, b$ einer Gruppe $(G, \circ)$  bezeichnet m
 \end{definition}
 \end{singlespacing}
 
-\textbf{Beispielrechtsoperation}
+\begin{bsp}[Kommutator]
 
 $[5,7]$ ist ein Kommutator der Gruppe $(\mathbb{Z}, +)$. $[5,7]$ ist das Gleiche wie $5+7-5-7 = 0$ und $0$ ist das neutrale Element der Gruppe. Die Gruppe $(\mathbb{Z}, +)$ ist kommutativ, deshalb ist der Kommutator von allen Elementen der Gruppe $0$.
 
+\end{bsp}
 %
 %
 %
@@ -653,7 +655,7 @@ $[5,7]$ ist ein Kommutator der Gruppe $(\mathbb{Z}, +)$. $[5,7]$ ist das Gleiche
 Mit Relationen lassen sich Beziehungen von Elementen einer Menge zueinander beschreiben.
 \begin{singlespacing}
 \begin{definition}[Äquivalenzrelation]
-Eine Relation $\sim \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität.
+Eine Relation $\sim \ \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität.
 \end{definition}
 \end{singlespacing}
 
@@ -668,18 +670,22 @@ Aus $(x \sim y)$ und $(y \sim z)$ folgt $(x \sim y)$. & (Transitivität) \\
 \end{center}
 
 
-\textbf{Beispieläquivalenzrelation:}
+\begin{bsp}[Relation]
 
-Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ werden nun die Relationen $<$ und $=$ betrachtet:
-\begin{itemize}
-\item $ x < y$
+
+Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ wird die Relation $ x < y$ betrachtet:
 
 Bei der Relation $< $ handelt es sich nicht um eine Äquivalenrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Auch die Symmetrie gilt nicht.
-\item $ x = y$
 
-Bei der Relation $=$ gilt die Reflexivität für alle Elemente, da die Gleichheit reflexiv ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit. 
-\end{itemize}
 
+\end{bsp}
+\begin{bsp}[Äquivalenzrelation]
+Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ wird die Relation $ x = y$ betrachtet:
+
+Bei der Relation $=$ gilt die Reflexivität für alle Elemente, da die Gleichheit reflexiv ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit. Somit ist es eine Äquivalenzrelation. 
+
+
+\end{bsp}
 
 %
 %
