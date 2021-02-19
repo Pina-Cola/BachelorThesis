@@ -77,7 +77,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{40}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Hübsche Muster}{44}{figure.caption.36}%
+\contentsline {subsection}{\numberline {}Muster}{44}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Schraubendrehermethode}{45}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
