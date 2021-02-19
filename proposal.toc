@@ -19,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Untergruppen}{8}{bsp.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Erzeuger und zyklische Gruppe}{8}{bsp.3.3}%
+\contentsline {subsection}{\numberline {}Erzeuger und zyklische Gruppe}{8}{bsp.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Cayleygraph}{9}{bsp.5.1}%
 \defcounter {refsection}{0}\relax 

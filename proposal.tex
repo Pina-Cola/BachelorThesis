@@ -374,7 +374,6 @@ Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht 
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
 Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen.
 
-Die Ebenen werden bei einer Ebenendrehung um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das nennt man \textit{Quarter-Turn} Metrik. Es gibt noch andere Metriken, wie z.B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden. \cite{TR}
 
 
 %
@@ -506,11 +505,6 @@ Es gilt $\mathbb{Z}/6\mathbb{Z} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)
 
 \end{bsp}
 
-\begin{bsp}[Untergruppe]
-
-Die Menge der geraden Zahlen 
-
-\end{bsp}
 %
 %
 %
@@ -2123,8 +2117,9 @@ In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5
 Wenn man die Verdrehung des Würfels invertiert, also $(FUBRF^{-1})^{-1}$ erhält man die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 
 
-Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\
-Wenn man davon ausgeht, dass jede $90^\circ$-Drehung einer Ebene als Drehung gezählt wird (und $180^\circ$-Drehungen als zwei Drehungen), ist die \textit{God's Number} des Würfels $14$. \cite{DJ} 
+Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\ 
+Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das nennt man \textit{Quarter-Turn} Metrik. Es gibt noch andere Metriken, wie z.B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden \cite{TR}.
+Wenn man in der \textit{Quarter-Turn} Metrik rechnet, ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}.
 
 
 %
