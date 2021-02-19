@@ -79,6 +79,8 @@
 
 \addbibresource{references.bib}
 
+\usepackage{adjustbox}
+
 \newcommand{\Gtwo}{\ensuremath{G_{2\times 2\times 2}}}
 
 \newcommand{\Gthree}{\ensuremath{G_{3\times 3\times 3}}}
@@ -500,7 +502,13 @@ Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellt
 \end{bsp}
 \begin{bsp}[Untergruppe]
 
-Es gilt aber auch $\mathbb{Z}/6\mathbb{Z} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}/6\mathbb{Z}, +)$ Gruppen sind, ist $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Untergruppe von $(\mathbb{Z},+)$.
+Es gilt $\mathbb{Z}/6\mathbb{Z} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}/6\mathbb{Z}, +)$ Gruppen sind, ist $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Untergruppe von $(\mathbb{Z},+)$. $(\mathbb{Z}/6\mathbb{Z}, +)$ und $(\mathbb{Z},+)$ wurden im Abschnitt über Gruppen auf die Gruppeneigenschaften untersucht.
+
+\end{bsp}
+
+\begin{bsp}[Untergruppe]
+
+Die Menge der geraden Zahlen 
 
 \end{bsp}
 %
@@ -1814,17 +1822,18 @@ Es sind also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
 \subsection*{Ausrichtung der Steine (modulo 3)}\addcontentsline{toc}{subsection}{\protect\numberline{}Ausrichtung der Steine (modulo 3)}
 
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration \begin{displaymath}
-\sum_{i= 1}^{8} \ x_i \mod 3 = 0 
+(\sum_{i= 1}^{8} \ x_i) \mod 3 = 0 
 \end{displaymath}  (modulo) gilt. 
 
-Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von der Konfiguration $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${\sum_{i= 1}^{8} \ x_i' \mod 3 = \sum_{i= 1}^{8} \  x_i \mod 3 }$.
+Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von der Konfiguration $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 }$.
 
 In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das kann man auch anhand dieser Tabelle sehen: 
-\begin{center}
-\begin{small}
+
+\begin{adjustbox}{width=1\textwidth,center}
+
 \begin{tabular}{cllcc}
 \toprule
-{\footnotesize \textbf{Zug} $\boldsymbol{M}$} & $\boldsymbol{x}$ & $\boldsymbol{x'}$ & {\footnotesize $\boldsymbol{\sum_{i= 1}^{8} x_i'}$} & {\footnotesize $\boldsymbol{\sum_{i= 1}^{8}x_i'\mod 3}$} \\
+ \textbf{Zug} $\boldsymbol{M}$ & \hspace*{2.2cm}$\boldsymbol{x}$ & \hspace*{2cm} $\boldsymbol{x'}$ &  $\boldsymbol{\sum_{i= 1}^{8} x_i'} \ \ \ $ & $\boldsymbol{\mod 3}$ \\
 \midrule
 \textit{D} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7)$ & 0 & 0 \\
 
@@ -1840,10 +1849,10 @@ In Abbildung \ref{7} kann ist diese Situation für den Zug $R$ dargestellt. Das 
 \bottomrule
 
 \end{tabular}
-\end{small}
 
-\end{center}
-Für jede valide Würfelposition gilt also ${\sum_{i = 1}^{8} \ x_i' \mod 3 = \sum_{i = 1}^{8} \  x_i \mod 3 }$. 
+\end{adjustbox}
+
+Für jede valide Würfelposition gilt also ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
 Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. 
 Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. 
 %
