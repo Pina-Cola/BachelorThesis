@@ -195,12 +195,12 @@ Im Jahr 1981 hat \textit{Rubik} dann das Patent für den \Ttwo Würfel angemelde
 
 Der \Tthree Würfel wurde mathematisch schon viel untersucht. 
 Die \textit{God's Number} -- das ist die maximal mögliche Anzahl der nötigen Drehungen zur Lösung -- wurde oft berechnet und durch neue Algorithmen verbessert. 
-Die Berechnung der \textit{God's Number} des \Tthree Cubes ist wesentlich anspruchsvoller und dadurch auch interessanter als die des \Ttwo Würfels. 
+Die Berechnung der \textit{God's Number} des \Tthree Würfels ist wesentlich anspruchsvoller und dadurch auch interessanter als die des \Ttwo Würfels. 
 
 Der \Tthree Würfel wurde schon mehrfach als Gruppe dargestellt, während der \Ttwo Würfel
-noch nicht umfangreich als Gruppe untersucht wurde. Ziel dieser Arbeit ist es, das Wissen des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} zu übertragen.
+noch nicht umfangreich als Gruppe untersucht wurde. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen.
 
-Wer die Lösungsalgorithmen der \Ttwo Würfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
+Wer die Lösungsalgorithmen des \Ttwo Zauberwürfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
 
 %
 %
@@ -213,7 +213,7 @@ Wer die Lösungsalgorithmen der \Ttwo Würfels selber herleiten möchte, sollte 
 %
 \subsection*{Ausblick} \addcontentsline{toc}{subsection}{\protect\numberline{}Ausblick}
 
-Im Folgenden wird zuerst der Aufbau des \Ttwo \textit{Cubes} beschrieben und danach werden die mathematischen Grundlagen der Gruppentheorie erklärt, auf denen diese Arbeit aufbaut. 
+Im Folgenden wird zuerst der Aufbau des \Ttwo Würfels beschrieben und danach werden die mathematischen Grundlagen der Gruppentheorie erklärt, auf denen diese Arbeit aufbaut. 
 In Kapitel \ref{8} wird die Gruppe des \Ttwo Würfels definiert und bewiesen. 
 Darauf folgt dann eine Beschreibung der Würfelkonfiguration und der Untergruppen des \textit{Cubes}. 
 Am Ende werden die validen Konfigurationen des Würfels behandelt und danach findet sich ein Kapitel über die Lösungsalgorithmen.
@@ -309,13 +309,14 @@ Wesentlich bekannter als der \Ttwo \textit{Cube} ist der \Tthree \textit{Cube}. 
 \newpage
 \item[Eck- und Kantsteine] \ \\
 Im Gegensatz zum \Ttwo hat der \Tthree Würfel Kantsteine und Mittelsteine (s. Abbildung \ref{6}).
+Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei einer Drehung der Ebenen (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.11]{mittelkant.png}
 \caption[Kant- und Mittelsteine]{Kant- und Mittelsteine}
 \label{6}
 \end{figure}
-Das besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei einer Drehung der Ebenen (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. 
+
 
 
 \end{description}
@@ -344,7 +345,7 @@ Das muss beachtet werden, da in dieser Arbeit die Gruppentheorie des \Tthree \te
 Am \Ttwo Zauberwürfel gibt es sechs verschiedene Drehseiten (auch Ebenen): oben, unten, links, rechts, vorne und hinten. 
 In Abbildung \ref{24} ist die obere Ebene markiert.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{ebene.png}
 \caption[Ebene des Würfels]{Ebene des Würfels}
@@ -746,13 +747,13 @@ Das kann man auch in der Zykelschreibweise schreiben:
 f = (1 \ 5 \ 2)\ (3 \ 4)
 \end{align*}
 Das liest man so: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. Man sagt, dass $f$ aus zwei Zykeln besteht: ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel kann man auch in Abbildung \ref{10} sehen.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Zykel_152.png}
 \caption{Zykel $f = (1 \ 5 \ 2)\ (3 \ 4)$}
 \label{10}
 \end{figure}
-Wichtig bei der Zykelschreibweise ist die Reihenfolge der Elemente. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. Wenn die Reihenfolge bestehen bleibt, können die Zykel aber bei jedem beliebigen Element beginnen. Es gilt in dem Beispiel $(1 \ 2 \ 3)$ also $(1 \ 2 \ 3) = (2 \ 3 \ 1) = (3\ 1 \ 2 \ )$.
+Bei der Zykelschreibweise ist die Reihenfolge der Elemente wichtig. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. Wenn die Reihenfolge bestehen bleibt, können die Zykel aber bei jedem beliebigen Element beginnen. Es gilt in dem Beispiel $(1 \ 2 \ 3)$ also $(1 \ 2 \ 3) = (2 \ 3 \ 1) = (3\ 1 \ 2 \ )$.
 
 
 %
@@ -1135,7 +1136,7 @@ Die Rotationen sind nicht minimal definiert, da beispielsweise $Z_l$ das gleiche
 Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. 
 
 Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen gezeigt. Die Rotation $Z_r$ sieht man in Abbildung \ref{16}.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{auf_ulf.png}
 \caption{Würfel nach Rotation um $z$-Achse}
@@ -1478,8 +1479,9 @@ Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt w
  
 Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge in Abbildung \ref{2} grafisch dargestellt.
 Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
-\begin{figure}[h]
-\includegraphics[scale=0.3]{graph_zug.png}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.27]{graph_zug.png}
 \caption[Graph aller Zugpermutationen]{Graph aller Zugpermutationen}
 \label{2}
 \end{figure}
@@ -1506,7 +1508,7 @@ F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor
 
 Die grauen Positionen bleiben bei der jeweiligen Ebenenrotation unverändert. 
 Grafisch dargestellt sieht man die Zykel des Zuges $LLFF$ in Abbildung \ref{17}. 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.25]{zykel_LLFF.png}
 \caption[Zykel des Zuges $LLFF$]{Zykel des Zuges $LLFF$}
@@ -1729,7 +1731,7 @@ Bei dem \Ttwo \textit{Cube} kommt man mit $120 \cdot 3^5$ auf $29 \, 160$ Mitgli
 \subsection*{Cayleygraph}\addcontentsline{toc}{subsection}{\protect\numberline{}Cayleygraph}
 Cayleygraphen wurden in Kapitel \ref{11} eingeführt. Sie dienen der Visualisierung von Untergruppen und deren Erzeugern.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{Cayleygraph1.png}
 \caption{Cayleygraph zu Erzeuger $\{ F \}$}
@@ -1747,7 +1749,7 @@ Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entsteh
 Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphens. 
 Anhand des Cayleygraphens kann man sehen, dass $FFFF$ und $RRRR$ das neutrale Element $N$ ergeben.
 Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ (Abbildung \ref{27}), stellt er eine sehr kleine erzeugte Untergruppe dar, wenn man es mit der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$ vergleicht. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{Cayleygraph2.png}
 \caption{Cayleygraph zu Erzeuger $\{ FF, RR \}$}
@@ -2054,7 +2056,7 @@ Man kann $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ auch als Zykel schreib
 In diesem Beispiel (Abbildung \ref{18}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde.
 In der Abbildung wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{LURFL1.png}
 \caption{\textit{Cube} nach Zug $FUBRF^{-1}$ }
@@ -2068,7 +2070,7 @@ Der Lösende sucht nun also Steine mit weißen Farbflächen und findet den weiß
 Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. 
 Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{19} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{0201.png}
 \caption[Lösung von Mensch: Schritt 1]{Lösung von Mensch: Schritt 1}
@@ -2077,7 +2079,7 @@ Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{
 
 Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. Er wird durch den Zug $R^{-1}$ in Position gebracht und findet seinen Platz neben dem weiß-orange-blauen Stein in der oberen Ebene (s. Abbildung \ref{20}).
  
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt2.png}
 \caption[Lösung von Mensch: Schritt 2]{Lösung von Mensch: Schritt 2}
@@ -2229,7 +2231,9 @@ Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann der e
 In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite oben zu beginnen. Man kann aber natürlich mit jeder anderen Seite des Würfels auch beginnen.
 Den \Tthree \textit{Cube} muss man entsprechend der Mittelsteine ausrichten und so ist vorbestimmt, welche Seite die weiße Seite wird. Bei dem \Ttwo \textit{Cube} kann man mit jeder beliebigen Seite beginnen. Möchte man aber unbedingt mit einer bestimmten Seite beginnen, die noch keine weiße Farbfläche hat, so kann man die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite bringen.
 
-\begin{figure}[h]
+In Abbildung \ref{30} wird der erste Eckstein der oberen Ebene positioniert. Das kann dort entweder durch den Zug $R$ oder einer Rotation um die $y$-Achse passieren.
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{e1_s1_s1.png}
 \includegraphics[scale=0.1]{e1_s1_s2.png}
@@ -2237,14 +2241,12 @@ Den \Tthree \textit{Cube} muss man entsprechend der Mittelsteine ausrichten und 
 \label{30}
 \end{figure}
 
-In Abbildung \ref{30} wird der erste Eckstein der oberen Ebene positioniert. Das kann dort entweder durch den Zug $R$ oder einer Rotation um die $y$-Achse passieren.
-
 Der zweite Stein kann dann hinzugefügt werden. Es gibt für den \Ttwo Würfel Lösungsmethoden, bei denen man zuerst alle weißen Farbflächen ausrichten und dann die Steinposition anpasst.
 Da hier aber Algorithmen des \Tthree Würfels übertragen werden, und man bei diesem die Steine der oberen Ebene üblicherweise direkt richtig ausrichtet und positioniert, wird hier auch so vorgegangen.
 Die Farbfläche des zweiten Steins befindet sich für diesen Algorithmus seitlich an der unteren Ebene. (Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.)
 Dann führt man $D$ aus, bis der Stein sich unter seiner Zielposition befindet und dreht ihn mit $L, R, F$ oder $R$ neben den bereits vorhandenen, ersten Eckstein. Das kann man auch in Abbildung \ref{31} sehen.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{e1_s2_s1.png}
 \includegraphics[scale=0.1]{e1_s2_s2.png}
@@ -2256,7 +2258,7 @@ Man sieht dort auch orange und grüne Farbflächen. Das gilt analog für die and
 
 Sollte die Farbfläche der Ecke unten am Würfel sein, so kann man sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{31} an die Position setzen. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann man den Stein mit einem der Züge $L, R, F$ oder $B$ herausdrehen und mit $U$ in die untere Ebene schieben. Diesen Vorgang sieht man auch in Abbildung \ref{32}. Von dort kann man ihn mit der oben beschriebenen Technik richtig ausgerichtet und positioniert einfügen (s. Abbildung \ref{31}). 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{e1_s2_s1_s.png}
 \includegraphics[scale=0.1]{e1_s2_s2_s.png}
@@ -2315,25 +2317,17 @@ Viele dieser Algorithmen enthalten $(R U R^{-1} U^{-1})$, was als Kommutator ges
 \toprule
 Ausgangsposition & Algorithmus  \\
 \midrule
-\includegraphics[scale=0.1]{TOPVIEW1.png} & $F \ [ R,U ] \  [ R,U ] \  [ R,U ] \ F^{-1}$ \\
-\includegraphics[scale=0.1]{TOPVIEW2.png} & $F \ [ R,U ] \  [ R,U ] \ F^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW1.png} & $F \ [ R,U ] \  [ R,U ] \  [ R,U ] \ F^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW2.png} & $F \ [ R,U ] \  [ R,U ] \ F^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
+\includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
+\includegraphics[scale=0.08]{TOPVIEW6.png} & $F \ [ R,U ]\ R^{-1} \ F^{-1}\ R$ \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\begin{center}
-\begin{tabular}{m{4cm} m{6cm}}
-\toprule
-Ausgangsposition & Algorithmus  \\
-\midrule
-\includegraphics[scale=0.1]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
-\includegraphics[scale=0.1]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
-\includegraphics[scale=0.1]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
-\includegraphics[scale=0.1]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
-\includegraphics[scale=0.1]{TOPVIEW6.png} & $F \ [ R,U ]\ R^{-1} \ F^{-1}\ R$ \\
-\bottomrule
-\end{tabular}
-\end{center}
 
 Die obere Seite des Würfels zeigt nach den Algorithmen nur noch gelbe Farbflächen. Die Ausrichtung der Steine ist also bereits richtig. Danach werden die Steine getauscht, bis sie richtig angeordnet sind.
 
