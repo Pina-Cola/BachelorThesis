@@ -89,4 +89,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{47}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{50}{figure.caption.41}%
+\contentsline {section}{\numberline {9}Fazit}{50}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{50}{section*.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Ausblick}{50}{section*.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abbildungsverzeichnis}{51}{section*.42}%
