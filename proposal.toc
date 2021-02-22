@@ -29,7 +29,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenzrelation}{11}{bsp.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{11}{bsp.8.2}%
+\contentsline {subsection}{\numberline {}Mächtigkeit einer Gruppe}{11}{bsp.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{12}{bsp.9.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Konfiguration des Würfels}{14}{section.4}%
 \defcounter {refsection}{0}\relax 
