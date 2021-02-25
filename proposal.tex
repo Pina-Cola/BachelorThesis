@@ -620,7 +620,7 @@ In Abbildung \ref{Abbildung_Cayleygraph} sieht man den Cayleygraphen der Gruppe 
 
 
 
-Es gibt Links- und Rechtsoperationen auf Gruppen. Da im Folgenden nur Rechtsoperationen genutzt werden, werden auch nur diese hier definiert.
+Es gibt Links- und Rechtsoperationen auf Gruppen. Da in dieser Arbeit nur Rechtsoperationen genutzt werden, beschränkt sich die Definition darauf.
 
 
 \begin{definition}[Rechtsoperation]
@@ -630,7 +630,7 @@ Eine Rechtsoperation einer Gruppe $(G, \circ)$ auf einer Menge $M$ ist eine Verk
 \cdot: M \times G \rightarrow M \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
 (m, g) \mapsto m \cdot g 
 \end{align*}
-Die folgenden beiden Eigenschaften müssen gelten:
+Die folgenden beiden Eigenschaften gelten:
 \begin{align*}
 m \cdot e & = m \\
 m \cdot (g \circ h) & = (m \cdot g) \cdot h
@@ -642,7 +642,7 @@ Dann operiert $G$ von rechts auf $M$.
 
 \begin{bsp}[Rechtsoperation]
 
-Als Beispiel werden die Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ und die Menge $\mathbb{Z}$ mit der Verknüpfung $-$ betrachtet. Die folgenden Eigenschaften müssen gelten, damit $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Rechtsoperation auf $\mathbb{Z}$ ist, mit $z \in  \mathbb{Z}$ und $g,h \in \mathbb{Z}/6\mathbb{Z}$.
+Als Beispiel werden die Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ und die Menge $\mathbb{Z}$ mit der Verknüpfung $-$ betrachtet. Die folgenden Eigenschaften gelten, da $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Rechtsoperation auf $\mathbb{Z}$ ist, mit $z \in  \mathbb{Z}$ und $g,h \in \mathbb{Z}/6\mathbb{Z}$.
 \begin{itemize}
 \item Die Eigenschaft $z - 0 = z$ ist erfüllt. $0$ ist das neutrale Element von $(\mathbb{Z}/6\mathbb{Z}, +)$.
 \item Da sich $z-(g+h)$ zu $z-g-h$ umformen lässt, gilt $z-(g+h) = (z-g)-h$
@@ -783,11 +783,16 @@ Die Mächtigkeit der Gruppe $(\mathbb{Z}, +)$ ist $\infty$, da $|\mathbb{Z}|$ (a
 %
 \subsection*{Permutationen und Zykelschreibweise} \addcontentsline{toc}{subsection}{\protect\numberline{}Permutationen und Zykelschreibweise} \label{Abschnitt_PermutationZykel}
 
-Unter einer Permutation versteht man die Reihenfolge von Objekte. Bei einer $n$-elementigen Menge $M$ ist eine ($n$-stellige) Permutation ist eine bijektive Abbildung $f: M \rightarrow M$. Die Zykelschreibweise ist eine kurze Schreibweise für eine Permutation.
-Permutationen und die Zykelschreibweise werden nun anhand eines Beispiels erklärt. Die Definitionen gehen über den Rahmen dieser Arbeit hinaus, sie können aber in dem Buch \textit{Elementar(st)e Gruppentheorie} von Tobias Glosauer \cite{Buch} nachgelesen werden.
+Unter einer Permutation versteht man die Reihenfolge von Objekte.
 
-Man hat fünf Objekte: $1, 2, 3, 4$ und $5$. Nun kann man diese Objekte in fünf Plätzen arrangieren. Die Plätze werden als $1$ bis $5$ nummeriert. Dann kann man eine Funktion $f:\{1,2,3,4,5\} \rightarrow \{1,2,3,4,5\}$ definieren, bei der $f(i)$ die Zahl ist, die in Slot $i$ liegt.
-Wenn man die Zahlen in der Reihenfolge $5 \ 1\ 4\ 3 \ 2$ anordnet, ist $5$ auf Platz $1$, $1$ auf Platz $2$, usw. Das sieht man auch in der folgenden Tabelle: 
+\begin{definition}[Permutation]
+Bei einer $n$-elementigen Menge $M$ ist eine ($n$-stellige) Permutation ist eine bijektive Abbildung $f: M \rightarrow M$.
+\end{definition}
+Die Zykelschreibweise ist eine kurze Schreibweise für eine Permutation.
+Die Zykelschreibweise wird nun anhand eines Beispiels erklärt. Die Definition geht über den Rahmen dieser Arbeit hinaus, sie kann aber in dem Buch \textit{Elementar(st)e Gruppentheorie} von Tobias Glosauer \cite{Buch} nachgelesen werden.
+
+Sei $M$ eine Menge mit fünf Objekten: $1, 2, 3, 4$ und $5$. Nun können diese Objekte in fünf Plätzen arrangiert werden. Die Plätze werden als $1$ bis $5$ nummeriert. Dann kann eine Funktion $f:\{1,2,3,4,5\} \rightarrow \{1,2,3,4,5\}$ definiert werden, bei der $f(i)$ die Zahl ist, die in Slot $i$ liegt.
+Wenn die Zahlen in der Reihenfolge $5 \ 1\ 4\ 3 \ 2$ amgeordnet werden, ist $5$ auf Platz $1$, $1$ auf Platz $2$, usw. Das ist auch in der folgenden Tabelle zu sehen: 
 
 \begin{center}
 \begin{tabular}{l ccccc}
@@ -803,23 +808,22 @@ Die Funktion $f$ sieht für diese Permutation (s. Tabelle) also so aus:
 \begin{align*}
 f(1) = 5 \ \ \ \ \ \  f(2) = 1 \ \ \ \ \ \ f(3) = 4 \ \ \ \ \ \ f(4) = 3 \ \ \ \ \ \ f(5) = 2 
 \end{align*}
-Man kann $f$ auch als eindeutige Zuordnung der Form $i \mapsto j$ schreiben (für $f(i)=j$) \cite{JC}:
+$f$ kann auch als eindeutige Zuordnung der Form $i \mapsto j$ (für $f(i)=j$) geschrieben werden \cite{JC}:
 \begin{align*}
 1 \mapsto 5 \ \ \ \ \ \ \ \ \ \  2\mapsto 1 \ \ \ \ \ \ \ \ \ \ 3\mapsto 4 \ \ \ \ \ \ \ \ \ \ 4\mapsto 3 \ \ \ \ \ \ \ \ \ \ 5\mapsto 2 
 \end{align*}
-Das kann man auch in der Zykelschreibweise schreiben:
+Das kann auch in der Zykelschreibweise geschrieben werden:
 \begin{align*}
 f = (1 \ 5 \ 2)\ (3 \ 4)
 \end{align*}
-Das liest man so: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. Man sagt, dass $f$ aus zwei Zykeln besteht: ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel kann man auch in Abbildung \ref{Abbildung_ZykelVonf} sehen.
+Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. $f$ besteht also aus zwei Zykeln: ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel sind auch in Abbildung \ref{Abbildung_ZykelVonf} zu sehen.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Zykel_152.png}
 \caption{Zykel $f = (1 \ 5 \ 2)\ (3 \ 4)$}
 \label{Abbildung_ZykelVonf}
 \end{figure}
-Bei der Zykelschreibweise ist die Reihenfolge der Elemente wichtig. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. Wenn die Reihenfolge bestehen bleibt, können die Zykel aber bei jedem beliebigen Element beginnen. Es gilt in dem Beispiel $(1 \ 2 \ 3)$ also $(1 \ 2 \ 3) = (2 \ 3 \ 1) = (3\ 1 \ 2 \ )$.
-
+Bei der Zykelschreibweise ist die Reihenfolge der Elemente wichtig. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. Wenn die Reihenfolge bestehen bleibt, können die Zykel aber bei jedem beliebigen Element beginnen. Es gilt in dem Beispiel $(1 \ 2 \ 3)$, also $(1 \ 2 \ 3) = (2 \ 3 \ 1) = (3\ 1 \ 2 \ )$.
 
 %
 %
@@ -953,14 +957,14 @@ Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden:
 %
 \subsection*{Ausrichtung der Steine} \addcontentsline{toc}{subsection}{\protect\numberline{}Ausrichtung der Steine} \label{Abschnitt_AusrichtungDerSteine}
 Der \Ttwo Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. 
-Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
+Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{foldedout_numbers.png}
 \includegraphics[scale=0.1]{foldedout_012.png}
 \caption[Markierungen $x_i$ (links), Farbflächennummern (rechts)]{ausgeklappter Würfel mit Markierungen für $x_i$ (links) und Farbflächennummerierungen (rechts) }
 \end{figure}
-Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, wird mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen/gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
+Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
 In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.
 
 Nun wird der Zug $R$ als Beispiel ausgeführt (s. Abbildung \ref{Abbildung_XnachZugR}) und die Veränderung der Nummerierung der Farbflächen dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
