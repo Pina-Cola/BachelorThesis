@@ -921,19 +921,19 @@ Das kann man auch in der Form $i \mapsto j$ schreiben:
 & \textit{dlf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ & \textit{dlb} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ & \textit{drb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ & \textit{drf} \mapsto \textit{drf} 
 \end{alignat*}
 
-Daraus entstehen folgende Zykel: $\sigma_U = \ (ulf \ ulb \ urb \ urf)\ (dlf)\ (dlb)\ (drb)\ (drf)$
+Daraus entstehen folgende Zykel: $\sigma_U = \ (\textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf})\ (\textit{dlf})\ (\textit{dlb})\ (\textit{drb})\ (\textit{drf})$
 
-Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt sich $\sigma_U = \ (ulf \ ulb \ urb \ urf)$, was den Zykel beschreibt, in dem die Steine rotiert werden, wenn die obere Ebene gedreht wird. 
+Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt sich $\sigma_U = \ (\textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf})$, was den Zykel beschreibt, in dem die Steine rotiert werden, wenn die obere Ebene gedreht wird. 
 
 
 Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden: 
 \begin{align*}
-\sigma_U & =\ (ulf \ ulb \ urb \ urf) \\
-\sigma_D & =\ (dlf \ drf \ drb \ dlb) \\
-\sigma_F & =\ (ulf \ urf \ drf \ dlf) \\
-\sigma_B & =\ (ulb \ dlb \ drb \ urb) \\
-\sigma_L & =\ (ulb \ ulf \ dlf \ dlb) \\
-\sigma_R & =\ (urb \ drb \ drf \ urf) \\
+\sigma_U & =\ (\textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf}) \\
+\sigma_D & =\ (\textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb}) \\
+\sigma_F & =\ (\textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}) \\
+\sigma_B & =\ (\textit{ulb} \ \textit{dlb} \ \textit{drb} \ \textit{urb}) \\
+\sigma_L & =\ (\textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb}) \\
+\sigma_R & =\ (\textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf}) \\
 \end{align*}
 
 %
@@ -1216,10 +1216,10 @@ Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z
 \label{Abbildung_WürfelNachRotationUmZAchse}
 \end{figure}
 Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$:
-\begin{align*}
-\delta_{Z_r}(urf) = ulf \ \ \ \ \ \ \delta_{Z_r}(ulf) = ulb \ \ \ \ \ \ \delta_{Z_r}(ulb) = urb \ \ \ \ \ \ \delta_{Z_r}(urb) = urf \\
-\delta_{Z_r}(drf) = dlf \ \ \ \ \ \ \delta_{Z_r}(dlf) = dlb \ \ \ \ \ \ \ \delta_{Z_r}(dlb) = drb \ \ \ \ \ \ \delta_{Z_r}(drb) = drf
-\end{align*}
+\begin{alignat*}{4}
+& \delta_{Z_r}(\textit{urf}) = \textit{ulf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{ulf}) = \textit{ulb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{ulb}) = \textit{urb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{urb}) = \textit{urf} \\
+& \delta_{Z_r}(\textit{drf}) = \textit{dlf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlf}) = \textit{dlb} \ \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlb}) = \textit{drb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{drb}) = \textit{drf}
+\end{alignat*}
 
 Wenn man das nun in der Form $i \mapsto j$ schreibt, erhält man: 
 \begin{align*}
