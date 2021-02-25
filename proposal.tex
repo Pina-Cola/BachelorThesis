@@ -1222,22 +1222,22 @@ Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\
 \end{alignat*}
 
 Wenn man das nun in der Form $i \mapsto j$ schreibt, erhält man: 
-\begin{align*}
-urf \mapsto ulf \ \ \ \ \ \ \ \ ulf \mapsto ulb \ \ \ \ \ \ \ \ ulb \mapsto urb \ \ \ \ \ \ \ \ urb \mapsto urf \\
-drf \mapsto dlf \ \ \ \ \ \ \ \ dlf \mapsto dlb \ \ \ \ \ \ \ \ \ dlb \mapsto drb \ \ \ \ \ \ \ \ drb \mapsto drf
-\end{align*}
+\begin{alignat*}{4}
+& \textit{urf} \mapsto \textit{ulf} \ \ \ \ \ \ \ \ & \textit{ulf} \mapsto \textit{ulb} \ \ \ \ \ \ \ \ & \textit{ulb} \mapsto \textit{urb} \ \ \ \ \ \ \ \ & \textit{urb} \mapsto \textit{urf} \\
+& \textit{drf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ & \textit{dlf} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ & \textit{dlb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ & \textit{drb} \mapsto \textit{drf}
+\end{alignat*}
 
 In der Zykel-Schreibweise sieht die Veränderung der Steinnamen dann so aus: \\
-$\delta_{Z_r}=(urf \ ulf \ ulb \ urb)(drf \ dlf \ dlb \ drb )$ 
+$\delta_{Z_r}=(\textit{urf} \ \textit{ulf} \ \textit{ulb} \ \textit{urb})(\textit{drf} \ \textit{dlf} \ \textit{dlb} \ \textit{drb} )$ 
 
 Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
-\delta_{Z_r} & = (ulf \ ulb \ urb \ urb) \ (dlf \ dlb \ drb \ drf)\\
-\delta_{Z_l} & = (ulf \ urf \ urb \ ulb) \ (dlf \ drf \ drb \ dlb)\\
-\delta_{Y_r} & = (ulf \ ulb \ dlb \ dlf) \ (urf \ urb \ drb \ drf)\\
-\delta_{Y_l} & = (ulf \ dlf \ dlb \ ulb) \ (urf \ drf \ drb \ urb)\\
-\delta_{X_r} & = (ulf \ urf \ drf \ dlf) \ (urb \ ulb \ dlb \ drb)\\
-\delta_{X_l} & = (ulf \ dlf \ drf \ urf) \ (urb \ ulb \ dlb \ drb)
+\delta_{Z_r} & = (\textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urb}) \ (\textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf})\\
+\delta_{Z_l} & = (\textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}) \ (\textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb})\\
+\delta_{Y_r} & = (\textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf}) \ (\textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf})\\
+\delta_{Y_l} & = (\textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb}) \ (\textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb})\\
+\delta_{X_r} & = (\textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}) \ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb})\\
+\delta_{X_l} & = (\textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}) \ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb})
 \end{align*}
 Bei den Rotationen wird (analog zu den Zügen) die mehrfache Ausführung einer Roatation mit der Exponentenschreibweise geschrieben. 
 Somit gilt dann auch hier $RRRR=R^4=N$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}$) und $R^0=N$ (für alle Rotationen). ($N$ ist das neutrale Element, also der leere Zug und $R$ eine beliebige Rotation des Würfels.) 
@@ -1522,7 +1522,7 @@ Daraus folgt: Wenn man den Zug wiederholt auf einen Würfel anwendet, kommen die
 Anhand der Zykelstruktur lässt sich die Ordnung des jeweiligen Zuges bestimmen. Die Ordnung beschreibt die Anzahl der Wiederholungen, die ein Zug durchgeführt werden muss, damit die Steine die gleiche Anordnung wie zu Beginn des Zuges haben. Dabei geht es um die Steinpositionen und nicht um die Steinausrichtungen.
 Der Würfel kann also alle Steine an der richtigen Position haben und trotzdem ungelöst sein, da die Steine verdreht sein können. 
 
-Der Zug $U$ als $\sigma_U =\ (ulf \ ulb \ urb \ urf) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel.
+Der Zug $U$ als $\sigma_U =\ (\textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf}) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel.
 Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
 \begin{center}
 \begin{tabular}{ccccc}
@@ -1587,10 +1587,10 @@ Grafisch dargestellt sieht man die Zykel des Zuges $LLFF$ in Abbildung \ref{Abbi
 \caption[Zykel des Zuges $LLFF$]{Zykel des Zuges $LLFF$}
 \label{Abbildung_ZykelVonLLFF}
 \end{figure}
-In Zykelschreibeweise also $\sigma_{LLFF}=(dlf \ ulb \ urf)(ulf \ dlb \ drf)$.
+In Zykelschreibeweise also $\sigma_{LLFF}=(\textit{dlf} \ \textit{ulb} \ \textit{urf})(\textit{ulf} \ \textit{dlb} \ \textit{drf})$.
 Da es also zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. 
 In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. 
-Außerdem kann man erkennen, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt werden. Die anderen beiden ($urb$ und $drb$) bleiben unverändert. 
+Außerdem kann man erkennen, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt werden. Die anderen beiden (\textit{urb} und \textit{drb}) bleiben unverändert. 
 
 %
 %
@@ -1617,7 +1617,7 @@ Außerdem kann man erkennen, dass sechs der acht Steine bei dem Zug $LLFF$ beweg
 
 
 Es kann schwierig sein, die Äquivalenz von Zügen oder Roatationen anhand der Funktionen ($\sigma$ und $\delta$) in der Zykelschreibweise zu erkennen. 
-Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann. So ist der Zug $U$ beispielsweise $ (ulf \ ulb \ urb \ urf)$, aber auch $(urb \ urf \ ulf \ ulb)$.
+Das liegt daran, dass man die Zykel in verschiedener Reihenfolge schreiben kann. So ist der Zug $U$ beispielsweise $ (\textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf})$, aber auch $(\textit{urb} \ \textit{urf} \ \textit{ulf} \ \textit{ulb})$.
 Um das zu vereinfachen, werden die Würfelpositionen priorisiert, so dass die Position mit der höchsten Priorität immer vorne steht und zwei Äquivalente Zykel somit gleich aussehen. 
 Die Positionen werden wie folgt priorisiert:
 \begin{center}
@@ -1627,7 +1627,7 @@ Priorität & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
 Position  & ulb & urb & ulf & urf & dlb & drb & dlf & drf \\
 \end{tabular}
 \end{center}
-Somit ist die angepasste Schreibweise für den Zug $U$ dann $(ulb \ urb \ urf \ ulf)$, da $ulb$ (falls vorhanden) ganz vorne stehen muss.
+Somit ist die angepasste Schreibweise für den Zug $U$ dann $(\textit{ulb} \ \textit{urb} \ \textit{urf} \ \textit{ulf})$, da \textit{ulb} (falls vorhanden) ganz vorne stehen muss.
 
 %
 %
