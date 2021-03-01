@@ -33,66 +33,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{13}{bsp.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Konfiguration des Würfels}{15}{section.4}%
+\contentsline {subsection}{\numberline {}Symmetrische Gruppe}{14}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Positionen der Steine im Würfel}{15}{section*.12}%
+\contentsline {section}{\numberline {4}Konfiguration des Würfels}{16}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{17}{figure.caption.15}%
+\contentsline {subsection}{\numberline {}Positionen der Steine im Würfel}{16}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Würfel als Gruppe}{19}{section.5}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine}{18}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}2$\times $2$\times $2-Zauberwüfel als Gruppe}{19}{section*.18}%
+\contentsline {section}{\numberline {5}Würfel als Gruppe}{20}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{22}{figure.caption.19}%
+\contentsline {subsection}{\numberline {}2$\times $2$\times $2-Zauberwüfel als Gruppe}{20}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Rotation des Würfels}{23}{figure.caption.19}%
+\contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{23}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{25}{figure.caption.21}%
+\contentsline {subsection}{\numberline {}Rotation des Würfels}{24}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Züge}{28}{figure.caption.22}%
+\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{26}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zykelstruktur}{29}{figure.caption.22}%
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{29}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{31}{figure.caption.24}%
+\contentsline {subsection}{\numberline {}Zykelstruktur}{30}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{33}{section.6}%
+\contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{32}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Untergruppen Beispiele}{33}{section*.25}%
+\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{34}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Erzeuger}{33}{section*.25}%
+\contentsline {subsection}{\numberline {}Untergruppen Beispiele}{34}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{34}{section*.25}%
+\contentsline {subsection}{\numberline {}Erzeuger}{34}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Cayleygraph}{35}{section*.25}%
+\contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{35}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{37}{section.7}%
+\contentsline {subsection}{\numberline {}Cayleygraph}{36}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Mächtigkeit von G$_{2\times 2\times 2}$}{37}{section*.28}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{38}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{38}{section*.28}%
+\contentsline {subsection}{\numberline {}Mächtigkeit von G$_{2\times 2\times 2}$}{38}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{39}{section.8}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{39}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{39}{section*.29}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{40}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{40}{section*.29}%
+\contentsline {subsection}{\numberline {}Parität}{40}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{41}{section*.29}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{41}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{41}{figure.caption.30}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{42}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Muster}{45}{figure.caption.36}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{42}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Schraubendrehermethode}{46}{figure.caption.37}%
+\contentsline {subsection}{\numberline {}Muster}{46}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{46}{figure.caption.37}%
+\contentsline {subsection}{\numberline {}Schraubendrehermethode}{47}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{48}{figure.caption.40}%
+\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{47}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Fazit}{51}{section.9}%
+\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{49}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{51}{section*.42}%
+\contentsline {section}{\numberline {9}Fazit}{52}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausblick}{51}{section*.42}%
+\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{52}{section*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{52}{section*.42}%
+\contentsline {subsection}{\numberline {}Ausblick}{52}{section*.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abbildungsverzeichnis}{53}{section*.42}%
