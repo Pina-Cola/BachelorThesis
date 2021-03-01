@@ -839,7 +839,7 @@ Bei der Zykelschreibweise ist die Reihenfolge der Elemente wichtig. Beispielswei
 \subsection*{Symmetrische Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Symmetrische Gruppe}\label{Abschnitt_SymmetrischeGruppe}
 
 \begin{definition}[Symmetrische Gruppe]
-Eine symmetrische Gruppe $(S, \circ)$ ist eine Gruppe, die aus allen Permutationen (s. Abschnitt \ref{Abschnitt_PermutationZykel}) der Menge $S$ besteht. 
+Eine symmetrische Gruppe $(S, \circ)$ ist eine Gruppe, die aus allen Permutationen (s. Kapitel \ref{Abschnitt_PermutationZykel}) der Menge $S$ besteht. 
 \end{definition}
 
 \begin{bsp}
@@ -851,7 +851,7 @@ Eine symmetrische Gruppe $(S, \circ)$, die aus allen Permutationen einer $n$-ele
 \end{definition}
 
 \begin{bsp}[Mächtigkeit einer symmetrischen Gruppe]
-Bei der symmetrischen Gruppe $(S, \circ)$ mit $S = \{(a \ b)(b \ a)(a \ c)(c \ a)(b \ c)(c \ b)\}$ enthält $S$ die Permutationen aller Elemente der $3$-elementigen Menge $\{a, b, c\}$. Somit ist die Mächtigkeit der Gruppe $3! = 1 \cdot 2 \cdot 3 = 6$. 
+Bei der symmetrischen Gruppe $(S, \circ)$ mit $S = \{(a \ b)(b \ a)(a \ c)(c \ a)(b \ c)(c \ b)\}$ enthält $S$ die Permutationen aller Elemente der $3$-elementigen Menge $\{a, b, c\}$. Somit ist die Mächtigkeit der Gruppe $3! = 1 \cdot 2 \cdot 3 = 6 (= |S|)$. 
 \end{bsp}
 %
 %
@@ -1921,7 +1921,13 @@ Es sind also nur $\frac{1}{3}$ der Würfelkonfigurationen valide.
 \subsection*{Mächtigkeit von G$_{2\times 2\times 2}$}\addcontentsline{toc}{subsection}{\protect\numberline{}Mächtigkeit von G$_{2\times 2\times 2}$}
 
 Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (also $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. Der Würfel kann $3\, 674\, 160$ verschiedene Konfigurationen annehmen. Jede dieser Konfigurationen muss durch einen Zug $Z \in \Gtwo$ erreichbar sein. Wenn zwei Züge mit gleicher Ausgangsposition die gleiche Würfelkonfiguration hervorrufen, sind sie gleich und werden sie als ein Element in $\Gtwo$ gewertet.
-Somit beträgt die Mächtigkeit der Menge $\Gtwo$ also $3\, 674\, 160$, da das die Anzahl der validen Würfelkonfigurationen ist und jede dieser Konfigurationen durch einen Zug zu erreichen ist.
+Allerdings berücksichtigt die Gruppe $(\Gtwo,\circ)$ nur die Permutationen der Steine und die Rotation des Würfels. Die Ausrichtung der Steine wir anhand eines Vekrotrs $x$ bestimmt. 
+
+Das ganze kann man auch anhand der Gruppe $(\Gtwo,\circ)$ berechnen. Die Gruppe ist eine symmetrische Gruppe (s. Kapitel \ref{Abschnitt_SymmetrischeGruppe}), da sie aus allen Permutationen der Elemente der $8$-elementigen Menge $\{ \textit{ulb},  \textit{urb},  \textit{ulf},  \textit{urf},  \textit{dlb},  \textit{drb},  \textit{dlf},  \textit{drf} \}$ besteht. Dadurch ist die Mächtigkeit dieser Gruppe $|\Gtwo| = 8!=40\, 320$. \\
+Es müssen aber auch die Äquivalenzrelationen der Rotationen von $(\Gtwo,\circ)$ berücksichtig werden. Es gibt Äquivalenzrelationen $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$, also für die Achsen $X, Y$ und $Z$, jeweils nach rechts und links. Da zwei Linksdrehungen und zwei Rechtsdrehungen äquivalent sind, gibt es also für jede Achse vier Rotationsmöglichkeiten. Das sind dann $3 \cdot 4 = 12$ Rotationen. Da aber zu jeder Achse zwei Seiten gehören, die getauscht werden können, sind es $2 \cdot 12 = 24$ Rotationen.
+Obwohl die Gruppe die Mächtigkeit $40\, 320$ hat, muss dies aufgrund der Rotationsmöglichkeiten um den Faktor $24$ reduziert werden, wenn man die Anzahl der validen Würfelkonfigurationen anhand der Gruppe berechnen möchte. Dann erhält man $40\, 320 \cdot \frac{1}{24} = 1680$ mögliche Positionen der Ecksteine unter Berücksichtigung der Würfelrotationen. Diese Zahl ist recht niedrig, da die Ausrichtung der Steine noch nicht berücksichtigt wurde. \\
+Die Ausrichtung der Steine wird durch den $8$-dimensionalen Vektor $x$ dargestellt. Jeder Eintrag in $x$ kann die Werte $0, 1$ oder $2$ annehmen. Das ergibt $3^8=6561$ Möglichkeiten der Steinausrichtung. Allerdings kann durch die Äquivalenzrelationen (und die Rotation des Würfels) ein Stein als richtig angenommen werden und somit kommt man auf $3^7=xxx$ Möglichkeiten.
+
 
 
 %
