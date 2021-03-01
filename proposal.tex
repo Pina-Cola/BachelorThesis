@@ -232,7 +232,7 @@ Diese Arbeit setzt sich aus 9 Kapiteln zusammen. Im Folgenden werden die Inhalte
 
 \item[\textbf{\ref{Kapitel_Untergruppen}}] Das Kapitel \textit{Untergruppen} befasst sich mit Beispieluntergruppen, Erzeugern und Cayleygraphen der Gruppe des\Ttwo Würfels.
 
-\item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen berechnet.
+\item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen berechnet, also die Mächtigkeit der Trägermenge der Gruppe des \Ttwo Würfels.
 
 \item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird schrittweise erklärt und es gibt eine allgemeine Anleitung, mit der man den \Ttwo Würfel immer lösen kann.
 
@@ -485,15 +485,15 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 
 \begin{bsp}[Gruppe]
 
-Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}/n\mathbb{Z}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind dann alle ganzen Zahlen modulo 6, also $\mathbb{Z}/6\mathbb{Z}=\{0,1,2,3,4,5\}$
+Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}_{\hspace*{-0.3em}\mod n}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind dann alle ganzen Zahlen modulo 6, also $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}=\{0,1,2,3,4,5\}$
 \begin{itemize}
-\item Die Abgeschlossenheit gilt für $(\mathbb{Z}/6\mathbb{Z}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
+\item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
-\item Das neutrale Element von $(\mathbb{Z}/6\mathbb{Z}, +)$ ist $0$.
-\item Das Inverse Element für alle $z \in \mathbb{Z}/6\mathbb{Z}$ ist definiert als $(6-z)$. Für 1 ist es also 5, für 2 ist es 4 und für 3 ist das neutrale Element die 3.
+\item Das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $0$.
+\item Das Inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es also 5, für 2 ist es 4 und für 3 ist das neutrale Element die 3.
 \end{itemize}
 
-$(\mathbb{Z}/6\mathbb{Z}, +)$ ist also eine endliche Gruppe.
+$(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist also eine endliche Gruppe.
 
 \end{bsp}
 
@@ -530,7 +530,7 @@ Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellt
 \end{bsp}
 \begin{bsp}[Untergruppe]
 
-Es gilt $\mathbb{Z}/6\mathbb{Z} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}/6\mathbb{Z}, +)$ Gruppen sind, ist $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Untergruppe von $(\mathbb{Z},+)$. $(\mathbb{Z}/6\mathbb{Z}, +)$ und $(\mathbb{Z},+)$ wurden im Abschnitt über Gruppen auf die Gruppeneigenschaften untersucht.
+Es gilt $\mathbb{Z}_{\hspace*{-0.3em}\mod 6} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ Gruppen sind, ist $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ eine Untergruppe von $(\mathbb{Z},+)$. $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ und $(\mathbb{Z},+)$ wurden im Abschnitt über Gruppen auf die Gruppeneigenschaften untersucht.
 
 \end{bsp}
 
@@ -593,7 +593,7 @@ Ein Cayleygraph ist ein Graph, der die Struktur einer Gruppe beschreibt. Er hän
 Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppenelemente darstellen. Pfeile zeigen von einem Element zum nächsten, wenn dies durch einen der Erzeuger erreicht werden kann. \cite{AT}
 
 \textbf{Beispiel} (Cayleygraph) \\
-In Abbildung \ref{Abbildung_Cayleygraph} sieht man den Cayleygraphen der Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ mit dem Erzeuger $1$.
+In Abbildung \ref{Abbildung_Cayleygraph} sieht man den Cayleygraphen der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit dem Erzeuger $1$.
 
 \begin{figure}[H]
 \centering
@@ -642,12 +642,12 @@ Dann operiert $G$ von rechts auf $M$.
 
 \begin{bsp}[Rechtsoperation]
 
-Als Beispiel werden die Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ und die Menge $\mathbb{Z}$ mit der Verknüpfung $-$ betrachtet. Die folgenden Eigenschaften gelten, da $(\mathbb{Z}/6\mathbb{Z}, +)$ eine Rechtsoperation auf $\mathbb{Z}$ ist, mit $z \in  \mathbb{Z}$ und $g,h \in \mathbb{Z}/6\mathbb{Z}$.
+Als Beispiel werden die Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ und die Menge $\mathbb{Z}$ mit der Verknüpfung $-$ betrachtet. Die folgenden Eigenschaften gelten, da $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ eine Rechtsoperation auf $\mathbb{Z}$ ist, mit $z \in  \mathbb{Z}$ und $g,h \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$.
 \begin{itemize}
-\item Die Eigenschaft $z - 0 = z$ ist erfüllt. $0$ ist das neutrale Element von $(\mathbb{Z}/6\mathbb{Z}, +)$.
+\item Die Eigenschaft $z - 0 = z$ ist erfüllt. $0$ ist das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$.
 \item Da sich $z-(g+h)$ zu $z-g-h$ umformen lässt, gilt $z-(g+h) = (z-g)-h$
 \end{itemize}
-Also operiert $(\mathbb{Z}/6\mathbb{Z}, +)$ mit $-$ von rechts auf $\mathbb{Z}$.
+Also operiert $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit $-$ von rechts auf $\mathbb{Z}$.
 
 \end{bsp}
 
@@ -758,7 +758,7 @@ Wenn $|G| < \infty$, spricht man von einer endlichen Gruppe.
 
 \begin{bsp}[Mächtigkeit einer endlichen Gruppe]
 
-Die Mächtigkeit der Gruppe $(\mathbb{Z}/6\mathbb{Z}, +)$ ist $6$. Die Menge $\mathbb{Z}/6\mathbb{Z}$ enthält die Elemente $\{0,1,2,3,4,5 \}$ und somit ist $| \mathbb{Z}/6\mathbb{Z} | = 6$.
+Die Mächtigkeit der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $6$. Die Menge $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ enthält die Elemente $\{0,1,2,3,4,5 \}$ und somit ist $| \mathbb{Z}_{\hspace*{-0.3em}\mod 6} | = 6$.
 
 \end{bsp}
 
