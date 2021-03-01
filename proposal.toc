@@ -69,6 +69,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{38}{section.7}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Anzahl der validen Würfelkonfigurationen}{38}{section*.28}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Mächtigkeit von G$_{2\times 2\times 2}$}{38}{section*.28}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{39}{section*.28}%
