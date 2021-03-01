@@ -285,6 +285,29 @@
       \field{number}{US4378117A}
       \field{year}{1983}
     \endentry
+    \entry{OS}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=226d140e1b8b428a2dad9e57794211cc}{%
+           family={Sète},
+           familyi={S\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{226d140e1b8b428a2dad9e57794211cc}
+      \strng{fullhash}{226d140e1b8b428a2dad9e57794211cc}
+      \strng{bibnamehash}{226d140e1b8b428a2dad9e57794211cc}
+      \strng{authorbibnamehash}{226d140e1b8b428a2dad9e57794211cc}
+      \strng{authornamehash}{226d140e1b8b428a2dad9e57794211cc}
+      \strng{authorfullhash}{226d140e1b8b428a2dad9e57794211cc}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{note}{Online erhältlich unter \url{https://www3.math.tu-berlin.de/Vorlesungen/SS10/LinAlg1/Permutationen.pdf}; abgerufen am 01.03.2021.}
+      \field{title}{Zur Zykelschreibweise von Permutationen}
+      \field{year}{2010}
+    \endentry
     \entry{AT}{thesis}{}
       \name{author}{1}{}{%
         {{hash=50a6562fc22024e4ae04aa6515a79f5b}{%
