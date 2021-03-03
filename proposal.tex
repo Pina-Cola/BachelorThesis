@@ -448,7 +448,7 @@ Des weiteren wird der Cayleygraph erklärt.
 Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für die folgenden Kapitel. 
 
 \begin{definition}[Gruppe]
-Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ nennt man Gruppe, wenn diese Bedingungen gelten: 
+Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ wird Gruppe genannt, wenn diese Bedingungen gelten: 
 \begin{itemize}
 \item Abgeschlossenheit: $\forall a,b \in G.(a \circ b) \in G $
 \item Assoziativität: $\forall a,b,c \in G.(a \circ b) \circ c = a \circ (b \circ c)$
@@ -518,12 +518,12 @@ Im Folgenden werden Untergruppen definiert.
 
 
 \begin{definition}[Untergruppe]
-Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann schreibt man auch $H \leqslant G$. 
+Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann wird auch $H \leqslant G$ geschrieben. 
 \end{definition}
 
 Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. Nicht jede Teilmenge $H \subseteq G$ muss auch eine Gruppe sein.
 
-Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, so nennt man $(G, \circ)$ auch eine Obergruppe von $(H, \circ)$.
+Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, wird $(G, \circ)$ auch Obergruppe von $(H, \circ)$ genannt.
 Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
 
 
@@ -557,7 +557,7 @@ Es gilt $\mathbb{Z}_{\hspace*{-0.3em}\mod 6} \subseteq \mathbb{Z}$. Da sowohl $(
 \begin{definition}[Erzeuger]
 Sei die Menge $M \subseteq G$ eine nicht leere Teilmenge der Trägermenge einer Gruppe $(G, \circ)$. 
 Dann wird die Untergruppe $(M, \circ)$ von $M$ erzeugt und ist die kleinste Untergruppe von $(G, \circ)$, für die $M \subseteq G$ gilt.
-Man nennt $(M, \circ)$ dann das Erzeugnis von $M$ und die Elemente aus $M$ sind die Erzeuger der Untergruppe $(M, \circ)$.
+$(M, \circ)$ wird dann Erzeugnis von $M$ genannt und die Elemente aus $M$ sind die Erzeuger der Untergruppe $(M, \circ)$.
 \end{definition}
 
 Wenn $(M, \circ)$ durch $M$ erzeugt wird, ist dann eine $M$ enthaltende Untergruppe.
@@ -565,7 +565,7 @@ Wenn $(M, \circ)$ durch $M$ erzeugt wird, ist dann eine $M$ enthaltende Untergru
 Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht also nur aus Potenzen dieses Elementes
 
 \begin{definition}[Zyklische Gruppe]
-Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ nennt man eine zyklische Gruppe, wenn sie ein Element $a \in G$ gibt, das jedes Element in $G$ erzeugt. Dann schreibt man auch:
+Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ wird zyklische Gruppe genannt, wenn es ein Element $a \in G$ gibt, das jedes Element in $G$ erzeugt. Dann schreibt man auch:
 \begin{align*}
 \langle a \rangle := \{ a^n \mid n \in \mathbb{Z} \}
 \end{align*}
@@ -757,7 +757,7 @@ Die Mächtigkeit einer Gruppe $(G, \circ)$ wird auch Gruppenordnung genannt und 
 Die Mächtigkeit einer Gruppe $(G, \circ)$ ist der Betrag der Menge $G$, also $|G|$. 
 \end{definition}
 
-Wenn $|G| < \infty$, spricht man von einer endlichen Gruppe.
+Wenn $|G| < \infty$, wird von einer endlichen Gruppe gesprochen.
 
 \begin{bsp}[Mächtigkeit einer endlichen Gruppe]
 
@@ -1813,7 +1813,7 @@ $N$ & $RR$ & $FFRR$ &  $RRFFRR$ \\
 Zum Vergleich: Tom Davis kommt bei dem  \Tthree Würfel auf $12$ Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
 
 Die doppelten Elemente können natürlich auch mathematisch erkannt werden, dafür müssen dann nicht alle Optionen an einem Würfel ausprobiert werden.
-Das wird im Folgenden beispielhaft mit $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass (da es sich um halbe Drehungen handelt) die Position, die man durch $RRFFRRFFRR$ erreicht auch durch $FF$ erreichbar ist.
+Das wird im Folgenden beispielhaft mit $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass (da es sich um halbe Drehungen handelt) die Position, die durch $RRFFRRFFRR$ erreicht wird auch durch $FF$ erreichbar ist.
 
 Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders interessant, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
 Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $120 \cdot 3^5$ auf $29 \, 160$ Mitglieder, aber auch das ist deutlich größer als $7$.
