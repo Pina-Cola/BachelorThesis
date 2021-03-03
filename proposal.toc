@@ -51,21 +51,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{26}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Züge}{29}{figure.caption.22}%
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{30}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{32}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{34}{section.6}%
+\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{33}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Untergruppen Beispiele}{34}{section*.25}%
+\contentsline {subsection}{\numberline {}Untergruppen Beispiele}{33}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Erzeuger}{34}{section*.25}%
+\contentsline {subsection}{\numberline {}Erzeuger}{33}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{35}{section*.25}%
+\contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{34}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Cayleygraph}{36}{section*.25}%
+\contentsline {subsection}{\numberline {}Cayleygraph}{35}{section*.25}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{38}{section.7}%
 \defcounter {refsection}{0}\relax 
