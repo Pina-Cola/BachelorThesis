@@ -184,7 +184,7 @@ Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem un
 Der sogenannte \textit{Rubik's Cube} wurde ab 1980 weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. Der Gewinner war Minh Thai aus den USA, der den Würfel in $22,95$ Sekunden löste. \cite{RC} Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $3,47$ Sekunden und stellte damit einen neuen Rekord auf. \cite{rekord}
 Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Um diesen Würfel geht es in dieser Arbeit.
 
-Doch die Zauberwürfel sind nicht nur interessante Puzzle -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem kann man die Würfel als algebraische Strukturen darstellen.
+Doch die Zauberwürfel sind nicht nur interessante Puzzle -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
 
 %
 %
@@ -205,7 +205,7 @@ Die \textit{God's Number} -- das ist die maximal mögliche Anzahl der nötigen D
 Die Berechnung der \textit{God's Number} des \Tthree Würfels ist wesentlich anspruchsvoller und dadurch auch interessanter als die des \Ttwo Würfels. 
 
 Auch als Gruppe wurde der \Tthree Würfel schon mehrfach dargestellt, während der \Ttwo Würfel
-noch nicht umfangreich als Gruppe untersucht wurde. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel auch weniger komplex. Dafür kann man den \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotieren und die Oberseite beliebig festlegen. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mit der Gruppentheorie dargestellt.
+noch nicht umfangreich als Gruppe untersucht wurde. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel auch weniger komplex. Dafür kann der \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotiert werden und so kann die Oberseite beliebig geändert werden. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mit der Gruppentheorie dargestellt.
 
 Wer die Lösungsalgorithmen des \Ttwo Zauberwürfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
 
@@ -237,7 +237,7 @@ Diese Arbeit setzt sich aus 9 Kapiteln zusammen. Im Folgenden werden die Inhalte
 
 \item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen berechnet, also die Mächtigkeit der Trägermenge der Gruppe des \Ttwo Würfels.
 
-\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird schrittweise erklärt und es gibt eine allgemeine Anleitung, mit der man den \Ttwo Würfel immer lösen kann.
+\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird schrittweise erklärt und es gibt eine allgemeine Anleitung, mit der der \Ttwo Würfel immer gelöst werden kann.
 
 \item[\textbf{\ref{Kapitel_Fazit}}] Am Schluss der Arbeit befindet sich die Zusammenfassung, das Ergebnis und der Ausblick.
 
@@ -326,7 +326,7 @@ Der \Ttwo und der \Tthree Würfel haben sechs Seiten (bestehend aus jeweils vier
 
 
 \item[\Tthree Würfel] \ \\
-Wesentlich bekannter als der \Ttwo \textit{Cube} ist der \Tthree \textit{Cube}. Er besteht aus 26 Steinen. In Abbildung \ref{Abbildung_3erWürfel} sieht man ihn links ungelöst und rechts in der Startkonfiguration.
+Wesentlich bekannter als der \Ttwo \textit{Cube} ist der \Tthree \textit{Cube}. Er besteht aus 26 Steinen. In Abbildung \ref{Abbildung_3erWürfel} ist er links ungelöst und rechts in der Startkonfiguration zu sehen.
 
 \begin{figure}[h]
 \centering
@@ -398,7 +398,7 @@ $B$ & Drehung der \textbf{hinteren} Ebene im Uhrzeigersinn \\
 \end{center}
 
 Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}. 
-Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn man auf diese Ebene schaut. Es wirkt also so, also würde man die untere Ebene gegen den Uhrzeigersinn drehen, wenn man von oben auf den Würfel schaut.  
+Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf diese Ebene geschaut wird. Es wirkt also so, also würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn von oben auf den Würfel geschaut wird.  
 
 
 Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
@@ -433,7 +433,7 @@ Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn 
 \label{Kapitel_MathematischeGrundlagen}
 
 In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind. Es werden Definitionen und Beispiele von Gruppen, Untergruppen, zyklischen Gruppen, Erzeugern, Gruppenoperationen, Kommutatoren, Äquivalenzrelationen, Permutationen und Zykelschreibweise angegeben.
-Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort kann man auch detailliertere Informationen und weitere Beispiele nachlesen.
+Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort können auch detailliertere Informationen und weitere Beispiele nachlesen.
 Des weiteren wird der Cayleygraph erklärt. 
 %
 %
@@ -479,7 +479,7 @@ Beispielsweise sind $1+2=3$ und es gilt $1,2,3 \in \mathbb{N}$.
 Ein Beispiel zur Veranschaulichung: $3+0=0+3=3$
 \item Die letzte erfordleriche Eigenschaft einer Gruppe ist die Existenz eines inversen Elements. Für die Gruppe $(\mathbb{Z},+)$ ist $-z$ das inverse Element für jedes $z \in \mathbb{Z}$. Für $(\mathbb{N},+)$ gibt es kein inverses Element.
 \end{itemize}
-Anhand der oberen Axiome kann man nun feststellen, dass $(\mathbb{Z},+)$ die Gruppeneigenschaften erfüllt, $(\mathbb{N},+)$ aber nicht. 
+Anhand der oberen Axiome kann nun festgestellt werden, dass $(\mathbb{Z},+)$ die Gruppeneigenschaften erfüllt, $(\mathbb{N},+)$ aber nicht. 
 $(\mathbb{Z},+)$ ist also eine Gruppe und $(\mathbb{N},+)$ nicht, da kein inverses Element existiert. 
 Es ist aber zu beachten, dass es sich hierbei nicht um formelle Beweise, sondern um anschauliche Beschreibungen handelt.
 Nun kann man $(\mathbb{Z},+)$ noch auf die Kommutativität untersuchen, um zu prüfen, ob es sich um eine abelsche Gruppe handelt. \\
