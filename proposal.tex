@@ -845,11 +845,11 @@ Die Identitätspermutation wird als $\pi = 1$ geschrieben. Dabei werden alle Ele
 \subsection*{Symmetrische Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Symmetrische Gruppe}\label{Abschnitt_SymmetrischeGruppe}
 
 \begin{definition}[Symmetrische Gruppe]
-Eine symmetrische Gruppe $(S, \circ)$ ist eine Gruppe, die aus allen Permutationen (s. Kapitel \ref{Abschnitt_PermutationZykel}) der Menge $S$ besteht. 
+Eine Gruppe $(S, \circ)$ ist symmetrisch, wenn $S$ aus allen Permutationen (s. Kapitel \ref{Abschnitt_PermutationZykel}) einer Menge besteht. 
 \end{definition}
 
 \begin{bsp}
-Die Gruppe $(S, \circ)$ mit $S = \{(a \ b)(b \ a)(a \ c)(c \ a)(b \ c)(c \ b)\}$ ist eine symmetrische Gruppe, die aus allen Permutationen der Elemente $a, b$ und $c$ besteht. Der $\circ$-Operator verknüpft zwei Permutationen. Werden beispielsweise $(a \ b)$ und $(b \ c)$ verknüpft, so gilt dann $(a \ b)\circ (b \ c) = (a \ c)$, was auch in $S$ enthalten ist. (Das inverse Element ist der jeweilige Zykel \textit{rückwärts}, das neutrale Element sind die einelementigen Zykel $(a)(b)(c)$, die durch Verknüpfung eines Zykels mit seinem Inversen entstehen.)
+Die Gruppe $(S, \circ)$ mit $S = \{(a \ b),(b \ a),(a \ c),(c \ a),(b \ c),(c \ b)\}$ ist eine symmetrische Gruppe, die aus allen Permutationen der Elemente $a, b$ und $c$ besteht. Der $\circ$-Operator verknüpft zwei Permutationen. Werden beispielsweise $(a \ b)$ und $(b \ c)$ verknüpft, so gilt dann $(a \ b)\circ (b \ c) = (a \ c)$, was auch in $S$ enthalten ist. (Das inverse Element ist der jeweilige Zykel \textit{rückwärts}, das neutrale Element sind die einelementigen Zykel $(a)(b)(c)$, die durch Verknüpfung eines Zykels mit seinem Inversen entstehen.)
 \end{bsp}
 
 \begin{definition}[Mächtigkeit einer symmetrischen Gruppe]
@@ -857,7 +857,7 @@ Eine symmetrische Gruppe $(S, \circ)$, die aus allen Permutationen einer $n$-ele
 \end{definition}
 
 \begin{bsp}[Mächtigkeit einer symmetrischen Gruppe]
-Bei der symmetrischen Gruppe $(S, \circ)$ mit $S = \{(a \ b)(b \ a)(a \ c)(c \ a)(b \ c)(c \ b)\}$ enthält $S$ die Permutationen aller Elemente der $3$-elementigen Menge $\{a, b, c\}$. Somit ist die Mächtigkeit der Gruppe $3! = 1 \cdot 2 \cdot 3 = 6 (= |S|)$. 
+Bei der symmetrischen Gruppe $(S, \circ)$ mit $S = \{(a \ b),(b \ a),(a \ c),(c \ a),(b \ c),(c \ b)\}$ enthält $S$ die Permutationen aller Elemente der $3$-elementigen Menge $\{a, b, c\}$. Somit ist die Mächtigkeit der Gruppe $3! = 1 \cdot 2 \cdot 3 = 6 \ ( \ = |S|\ )$. 
 \end{bsp}
 %
 %
@@ -885,7 +885,6 @@ Deshalb wird die Konfiguration des Würfels definiert, bevor der Würfel als Gru
 Die Konfiguration des Würfels kann als 2-Tupel geschrieben werden: $(\sigma, x)$.
 In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtung der Ecktsteine als Vektor $x$ erklärt. 
 Außerdem werden Äquivalenzrelationen definiert, um die Ausrichtung des Würfels zu berücksichtigen.
-
 %
 %
 %
@@ -907,6 +906,7 @@ Außerdem werden Äquivalenzrelationen definiert, um die Ausrichtung des Würfel
 %
 %
 %
+
 \subsection*{Positionen der Steine im Würfel} \addcontentsline{toc}{subsection}{\protect\numberline{}Positionen der Steine im Würfel}
 
 Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) stellt Übergänge der Würfelsteine als Funktion dar. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Kapitel \ref{Abschnitt_PermutationZykel} erklärt. 
@@ -1021,6 +1021,8 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 \label{Abbildung_XnachZugR}
 \end{figure}
 
+
+
 %
 %
 %
@@ -1032,6 +1034,26 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 %
 %
 %
+\subsection*{Züge ausführen} \addcontentsline{toc}{subsection}{\protect\numberline{}Züge ausführen}
+
+Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Auführen eines Zuges verändert. Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C$.
+
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+
 \newpage
 \section{Würfel als Gruppe}
 
@@ -1046,6 +1068,73 @@ Außerdem wird die Rotation des Würfels durch Äquivalenzrelationen realisiert.
 %
 %
 %=======================================================================================================
+%
+%
+%
+%
+%
+%
+
+\subsection*{Äquivalenzklassen} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzklassen}
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection*{Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppe}
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection*{Gruppenoperation} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppenoperation}
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
 %
 %
 %
