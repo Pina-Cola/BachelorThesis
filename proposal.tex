@@ -1075,7 +1075,7 @@ $\forall Z_1,Z_2,Z_3 \in \Gtwo.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ 
 
 Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, l, r, t, b$. 
 
-Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Also gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
+Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Folglich gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
 
 
 Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Dafür wird gezeigt, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: 
@@ -1097,11 +1097,11 @@ Somit ist $(\Gtwo, \circ)$ assoziativ.
 $\forall Z_1 \in \Gtwo, \exists N \in \Gtwo.N \circ Z_1 = Z_1 \circ N = Z_1$ 
 
 
-Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden also keine der Ebenen des Würfels gedreht. Wenn also ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie $Z$ auszuführen.
+Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}.
 
-Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (also zwei mal eine Drehung der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
+Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
 
-Wenn eine Ebene vier mal gedreht wird, ist der Würfel wieder in der vorherigen Position. Somit gilt also beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (also den leeren Zug) steht. Das gilt für alle Züge des Würfels:
+Wenn eine Ebene vier mal gedreht wird, ist der Würfel wieder in der vorherigen Position. Somit gilt beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (bzw. den leeren Zug) steht. Das gilt für alle Züge des Würfels:
 
 \begin{align*}
 RRRR & =R^4 =N \\
@@ -1113,16 +1113,16 @@ BBBB & =B^4 =N \\
 \end{align*}
 Somit gilt dann auch $Z^0=N$, mit $Z$ als beliebigen Zug und $N$ als neutrales Element. 
 In der mathematischen Schreibweise sieht das so aus: $\forall Z \in \Gtwo \ . \ Z^0=N$. 
-Es gilt also für alle Züge $Z \in \Gtwo$: 
+Es gilt demnach für alle Züge $Z \in \Gtwo$: 
 \begin{align*}
 Z^0 & =N \\
 Z & =Z^1 \\
 ZZ & =Z^2 \\
 ZZZ & =Z^3 \\
 \end{align*}
-Für \textit{einelementige} Züge $Z$ (also $U, D, F, B, L$ oder $R$) gilt auch $ZZZZ =Z^4=N=Z^0$.
+Für \textit{einelementige} Züge $Z$ ($U, D, F, B, L$ oder $R$) gilt auch $ZZZZ =Z^4=N=Z^0$.
 Der Exponent kann in diesem Fall $modulo \ 4$ gerechnet, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
-Es gilt dann also:
+Es gilt folglich:
 
 $\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$.
 
@@ -1147,7 +1147,7 @@ $(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation d
 \label{Abbildung_WürfelNachFRundRF}
 \end{figure}
 Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann egal und es müsste nur die Anzahl beachtet werden. 
-Es gilt also nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$. Der $\circ$-Operator der Gruppe ist also nicht kommutativ. 
+Es gilt dementsprechend nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$ und der $\circ$-Operator der Gruppe ist somit nicht kommutativ. 
 
 %
 %
@@ -1180,7 +1180,7 @@ Die folgenden beiden Eigenschaften müssen bei der Rechtsoperation gelten:
 \begin{description}
 \item [$\boldsymbol{C \cdot N = x}$ für alle $\boldsymbol{C \in M_C}$ und das neutrale Element $\boldsymbol{N \in \Gtwo}$] 
 \ \\
-Wenn der leeren Zug $N$ ausgeführt wird, wird die Konfiguration des Würfels nicht verändert. Es gilt also $C \cdot N = C$. 
+Wenn der leeren Zug $N$ ausgeführt wird, wird die Konfiguration des Würfels nicht verändert. Daher gilt $C \cdot N = C$. 
 
 \item [$\boldsymbol{C \cdot (Z_1 \circ Z_2) = (c \cdot Z_1) \cdot Z_2}$ für alle $\boldsymbol{Z_1, Z_2 \in \Gtwo}$ und $\boldsymbol{c \in M_C}$]
 \ \\
@@ -1204,7 +1204,7 @@ Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z
 \subsection*{Rotation des Würfels}\addcontentsline{toc}{subsection}{\protect\numberline{}Rotation des Würfels}
 
 Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. 
-Der \Ttwo Würfel kann also im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen.
+Der \Ttwo Würfel kann daher im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren, ohne einen Zug auszuführen.
 Das soll im nächsten Abschnitt als Äquivalenrelationen umgesetzt werden. Dafür werden die Rotationsmöglichkeiten des Würfels in diesem Abschnitt definiert.
 Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ definiert. Das ist in Abbildung \ref{Abbildung_Rotationsachsen} zu sehen.
 \begin{figure}[h]
@@ -1247,7 +1247,7 @@ Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z
 \caption{Würfel nach Rotation um $z$-Achse}
 \label{Abbildung_WürfelNachRotationUmZAchse}
 \end{figure}
-Da bei den Rotationen alle Steine die Position wechseln, muss es 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$:
+Da bei den Rotationen alle Steine die Position wechseln, muss es demnach 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$:
 \begin{alignat*}{4}
 & \delta_{Z_r}(\textit{urf}) = \textit{ulf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{ulf}) = \textit{ulb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{ulb}) = \textit{urb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{urb}) = \textit{urf} \\
 & \delta_{Z_r}(\textit{drf}) = \textit{dlf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlf}) = \textit{dlb} \ \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlb}) = \textit{drb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{drb}) = \textit{drf}
@@ -1272,8 +1272,8 @@ Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}) \ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
 \end{align*}
 Bei den Rotationen wird (analog zu den Zügen) die mehrfache Ausführung einer Roatation mit der Exponentenschreibweise geschrieben. 
-Somit gilt dann auch hier $RRRR=R^4=N$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}$) und $R^0=N$ (für alle Rotationen). ($N$ ist das neutrale Element, also der leere Zug und $R$ eine beliebige Rotation des Würfels.) 
-Analog zu den Zügen gilt bei den Rotationen also für jede Rotation: 
+Somit gilt dann auch hier $RRRR=R^4=N$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}$) und $R^0=N$ (für alle Rotationen). ($N$ ist das neutrale Element bzw. der leere Zug und $R$ ist eine beliebige Rotation des Würfels.) 
+Analog zu den Zügen gilt bei den Rotationen dementsprechend für jede Rotation: 
 \begin{align*}
 \forall R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}, n \in \mathbb{N} \ . \ R^n=R^{n \mod 4}
 \end{align*}
@@ -1406,7 +1406,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 \end{tabular} 
 \\
 
-Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$, wobei $N$ die \textit{leere} Rotation darstellt, also keine Rotation des Würfels. 
+Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$ -- wobei $N$ die \textit{leere} Rotation darstellt, das entspricht keiner Rotation des Würfels. 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow F = Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
 In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel nochmal grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
 \begin{figure}[h]
@@ -1432,7 +1432,7 @@ Z_1 \sim Z_2 : & \Leftrightarrow  Z_1 = WZ_2 \\
 \ & \Leftrightarrow Z_1=N Z_2 \\
 \ & \Leftrightarrow Z_1 = Z_2
 \end{align*}
-Also gilt die Reflexivität für $\sim$, da für $Z_1 \sim Z_2$ mit $W=N$ immer $Z_1 = Z_2$ gilt.
+Es gilt somit die Reflexivität für $\sim$, da für $Z_1 \sim Z_2$ mit $W=N$ immer $Z_1 = Z_2$ gilt.
 
 \item [Symmetrie] \ \\
 Für die Symmetrie muss gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.
@@ -1457,7 +1457,7 @@ Dann gilt:
 Z_1 = W Z_2 & \Rightarrow Z_2 = W^{-1} Z_1
 \end{align*}
 Das gilt, da durch $W^{-1}$ der Würfel in die entgegengesetzte Richtung rotiert wird und die Züge somit wieder die gleiche Würfelkonfiguration ergeben.
-Also gilt die Symmetrie für $\sim$.
+Folglich gilt die Symmetrie für $\sim$.
 
 
 \item [Transitivität] \ \\
@@ -1501,7 +1501,7 @@ Die Exponentenschreibweise kann für alle Züge aus $\Gtwo$ anwendet werden, auc
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
 Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4), ${(RRFF)^3 = N}$ (Ordnung 3) oder auch ${(LF)^{15}=N}$ (Ordnung 15). 
 Die genannten Beispiele können an einem \Ttwo Würfel einfach ausprobiert werden.
-Dabei muss beachtet werden, dass die Ordnung die Anzahl der Durchführungen beschreibt, die benötigt wird, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Es geht also nur um die Permutationen.
+Dabei muss beachtet werden, dass die Ordnung die Anzahl der Durchführungen beschreibt, die benötigt wird, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Es geht folglich nur um die Permutationen.
 
 
 Im folgenden Abschnitt wird bewiesen, dass die Würfelsteine wieder in die Ausgangspositionen gelangen, wennn ein beliebiger Zug $Z \in \Gtwo$ wiederholt auf den Würfel anwendet wird.
@@ -1509,19 +1509,19 @@ Der folgende Beweis orientiert sich an dem Beweis aus \textit{Group Theory via R
 
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet. 
 Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelposition wiederholt werden, wenn ein Zug oft genug durchführt wird.
-Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich ($11 \, 022 \, 480$). Also muss eine Position wiederholt werden, wenn der Zug öfter ausführt, als es mögliche Würfelpositionen gibt.
+Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich ($11 \, 022 \, 480$). Demnach muss eine Position wiederholt werden, wenn der Zug öfter ausführt, als es mögliche Würfelpositionen gibt.
 
 Bei einem beliebigen Zug $Z \in \Gtwo$ wird also irgendwann eine Würfelposition wiederholt. Wenn die wiederholende Würfelposition zuerst nach $n \in \mathbb{N}$ Wiederholungen auftritt und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen, sieht das so aus: $Z^n=Z^m$ mit $0 < n < m$.
-Also gilt mit der Würfelkonfiguration $Z^{n-1} \neq Z^{m-1}$, da $m$ das zweite Vorkommen der gleichen Position repräsentiert.
+Somit gilt dann $Z^{n-1} \neq Z^{m-1}$, da $m$ das zweite Vorkommen der gleichen Position repräsentiert.
 Sonst wäre das erste Vorkommen der wiederholenden Positionen ja nach $n-1$ bzw. $m-1$ Wiederholungen.
 
 Wenn $n=0$ wäre, ergibt das $Z^0=N$, was den leeren Zug (bzw. das neutrale Element) repräsentiert. Der Würfel wird dabei nicht verändert und somit wird die Würfelposition bei jedem Zug $Z \in \Gtwo$ mit $Z^0$ wiederholt. Deshalb müssen $n$ und $m$ größer als $0$ sein.
 
-Es gilt also $Z^n = Z^m$. Das bedeutet, dass der Würfel in die gleiche Endposition kommt, wenn (auf die gleiche Ausgangsposition) $n$-mal oder $m$-mal $Z$ anwendet wird.
+Wenn $Z^n = Z^m$ gilt, kommt der Würfel in die gleiche Endposition, wenn (auf die gleiche Ausgangsposition) $n$-mal oder $m$-mal $Z$ anwendet wird.
 Wenn dann $Z^{-1}$ anwendet wird, ist die Endposition wieder gleich. Dabei ist es egal, ob vorher $n$-mal oder $m$-mal $Z$ ausgeführt wurde, da von der gleichen Startposition ausgehend die gleiche Endposition erreicht wird, wenn der gleiche Zug ausführt wird.
 
-Beim Anwenden von $Z^{-1}$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn $Z$ also $n$-mal und dann $Z^{-1}$ ausführt wird, ist es das gleiche wie $n-1$-mal $Z$ ausführen, also $Z^nZ^{-1}=Z^{n-1}$. Das gilt natürlich auch für $m$, also $Z^mZ^{-1}=Z^{m-1}$.
-Demnach gilt dann $Z^{n-1}=Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. Also muss $n=0$ sein, damit $m$ die erste Wiederholung einer Position repräsentiert. 
+Beim Anwenden von $Z^{-1}$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn $Z$ $n$-mal ausgeführt wird und danach $Z^{-1}$ ausführt wird, ist es das gleiche wie $n-1$-mal $Z$ ausführen. Folglich gilt $Z^nZ^{-1}=Z^{n-1}$. Das gilt natürlich auch für $m$, also $Z^mZ^{-1}=Z^{m-1}$.
+Demnach gilt dann $Z^{n-1}=Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. Deshalb muss $n=0$ sein, damit $m$ die erste Wiederholung einer Position repräsentiert. 
 
 Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel anwendet wird, kommen die Steine wieder in die Ausgangsposition.
  
@@ -1552,10 +1552,10 @@ Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel anwendet wird, kommen di
 
 
 Anhand der Zykelstruktur lässt sich die Ordnung des jeweiligen Zuges bestimmen. Die Ordnung beschreibt die Anzahl der Wiederholungen, die ein Zug durchgeführt werden muss, damit die Steine die gleiche Anordnung wie zu Beginn des Zuges haben. Dabei geht es um die Steinpositionen und nicht um die Steinausrichtungen.
-Der Würfel kann also alle Steine an der richtigen Position haben und trotzdem ungelöst sein, da die Steine verdreht sein können. 
+Der Würfel kann demnach alle Steine an der richtigen Position haben und trotzdem ungelöst sein, da die Steine verdreht sein können. 
 
 Der Zug $U$ als $\sigma_U =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel.
-Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
+Wenn der Zug $U$ viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
 \begin{center}
 \begin{tabular}{ccccc}
 \toprule
@@ -1574,11 +1574,11 @@ Wenn der Zug $U$ also viermal ausgeführt wird, befindet sich der Würfel wieder
 
 Die vierte Zeile der Tabelle hat die selbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). 
 Somit hat die beschriebene Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).
-Es gilt also für jeden Zug $Z$, der aus nur einem $n$-elementigen Zykel besteht: \\ 
-${\forall \ Z \in \Gtwo\ mit \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  Z^n=N }$. 
+Es gilt folglich für jeden Zug $Z$, der aus nur einem $n$-elementigen Zykel besteht: 
+$\forall \ Z \in \Gtwo $ \textit{mit} $\sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \ { Z^n=N }$. \\
 Wenn $Z$ mehrfach ausführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand erreicht. \cite{TD} 
-Es gilt also auch 
-${\forall \ Z \in \Gtwo\ mit \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N} \ . \  Z^{k*n}=1 }$.
+Es gilt folglich auch 
+$\forall \ Z \in \Gtwo $ \textit{mit} $ \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N} \ . \  {Z^{k*n}=1 }$.
 Auch bei komplexeren Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache aller Zykelgrößen bestimmt werden. \cite{TD}
 
  
@@ -1619,8 +1619,8 @@ Grafisch dargestellt sind die Zykel des Zuges $LLFF$ in Abbildung \ref{Abbildung
 \caption[Zykel des Zuges $LLFF$]{Zykel des Zuges $LLFF$}
 \label{Abbildung_ZykelVonLLFF}
 \end{figure}
-In Zykelschreibeweise also $\sigma_{LLFF}=( \ \textit{dlf} \ \textit{ulb} \ \textit{urf})(\textit{ulf} \ \textit{dlb} \ \textit{drf} \ )$.
-Da es also zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. 
+In Zykelschreibeweise wird der Zug als $\sigma_{LLFF}=( \ \textit{dlf} \ \textit{ulb} \ \textit{urf})(\textit{ulf} \ \textit{dlb} \ \textit{drf} \ )$ geschrieben.
+Da es demnach zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. 
 In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. 
 Außerdem ist zu sehen, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt werden. Die anderen beiden (\textit{urb} und \textit{drb}) bleiben unverändert. 
 
@@ -1717,7 +1717,7 @@ Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt
 
 
 
-Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G=\Gtwo$). Also sind $H_N$ und $H_G$ die trivialen Untergruppen von $\Gtwo$ ($H_N \leqslant \Gtwo$ und $H_G \leqslant \Gtwo$).
+Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G=\Gtwo$). Demnach sind $H_N$ und $H_G$ die trivialen Untergruppen von $\Gtwo$ ($H_N \leqslant \Gtwo$ und $H_G \leqslant \Gtwo$).
 Die Gruppe $\Gtwo$ hat viele Untergruppen, deshalb kann hier nur auf einen Teil davon erwähnt werden. 
 
 
@@ -1759,19 +1759,19 @@ Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's 
 Ein Beispiel eines Erzeugers einer Untergruppe $F$ von $(\Gtwo, \circ)$ wird von $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die $F$ enthält somit nur die Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. $FFFF$ ist das gleiche wie das neutrale Element $N$ und der Würfel bleibt in der Ausgangsposition.
 
 
-Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält also nur $FF$ und $FFFF$.
+Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält daher nur $FF$ und $FFFF$.
 
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
 
 Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $F$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
-Die Untergruppe $F$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden also (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
+Die Untergruppe $F$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
 Das gilt für jeden Erzeuger, der nur aus einer einzelnen Ebenendrehung besteht.
 
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Kapitel \ref{Abschnitt_OrdnungPermutationen} beschrieben.
 Die Ordnung des Zuges $FR$ ist 15 -- wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ allerdings 105 \cite{TD}.
-Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat also 15 Elemente.
+Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente.
 %
 %
 %
@@ -1799,7 +1799,7 @@ Das Beispiel der durch $\{ FF, RR \}$ erzeugten Untergruppe hat Tom Davis auch g
 Da die beiden Züge als Einheiten gesehen werden, muss jede der Ebenendrehungen eine halbe Drehung sein.
 Es wurde in Kapitel \ref{Kapitel_WürfelAlsGruppe} bereits gezeigt, dass $(FF)^2 = N$ und $(RR)^2 = N$ gilt, da der Würfel dann wieder in der Ausgangsposition ist.
 
-Wenn bei einen gelösten \Ttwo Würfel $FFRR$ ausführt wird, befindet sich der Würfel nach 3 Wiederholungen wieder in der Startkonfiguration. Das gilt auch für den Zug $RRFF$. Die Ordnung von $FFRR$ und $RRFF$ ist also 3. Bei dem \Tthree \textit{Cube} ist die Ordnung dieser Züge 6 \cite{TD}.
+Wenn bei einen gelösten \Ttwo Würfel $FFRR$ ausführt wird, befindet sich der Würfel nach 3 Wiederholungen wieder in der Startkonfiguration. Das gilt auch für den Zug $RRFF$. Die Ordnung von $FFRR$ und $RRFF$ ist daher 3. Bei dem \Tthree \textit{Cube} ist die Ordnung dieser Züge 6 \cite{TD}.
 
 Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit auch mehr Elemente als die des \Ttwo Würfels. Theoretisch sind das alle Mitglieder der Untergruppe des \Ttwo \textit{Cubes}, wenn dabei berücksichtigt wird, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $FFRRFF$, $FFRRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. 
 Wenn diese Züge an einem Würfel ausprobiert werden, stellt sich aber heraus, dass beispielsweise $(RRFF)^2RR$ bei gleichem Startzustand die gleiche Würfelkonfiguration wie $FF$ ergibt. Wenn diese Doppelungen aussortiert werden, verbleiben folgende sieben Gruppenelemente:
@@ -1920,8 +1920,8 @@ In diesem Kapitel werden die validen Würfelkonfigurationen mithilfe der Gruppe 
 
 Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise berechnet. 
 Dazu wird zuerst die Anzahl der theoretisch möglichen Würfelkonfigurationen berechnet:
-Die Ecksteine können sich in jeder Ecke befinden, also gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es also $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine.
-Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt also $3^7$ Wege, wie die Ecksteine ausgerichtet sein können.
+Die Ecksteine können sich in jeder Ecke befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine.
+Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7$ Wege, wie die Ecksteine ausgerichtet sein können.
 Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24, denn es gibt $6$ Seiten, die jeweils $4$ Ausrichtungen haben können. Das sind dann $6 \cdot 4 = 24$.
 Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.
 
@@ -1950,9 +1950,9 @@ Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 =
 %
 \subsection*{Mächtigkeit von G$_{2\times 2\times 2}$}\addcontentsline{toc}{subsection}{\protect\numberline{}Mächtigkeit von G$_{2\times 2\times 2}$}
 
-Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (also $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. 
+Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (bzw. $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. 
 Das wird nun anhand der Gruppe $(\Gtwo,\circ)$ berechnet. Die Gruppe ist eine symmetrische Gruppe (s. Kapitel \ref{Abschnitt_SymmetrischeGruppe}), da sie aus allen Permutationen der $8$-elementigen Menge $\{ \textit{ulb},  \textit{urb},  \textit{ulf},  \textit{urf},  \textit{dlb},  \textit{drb},  \textit{dlf},  \textit{drf} \}$ besteht. Dadurch ist die Mächtigkeit dieser Gruppe $|\Gtwo| = 8!=40\, 320$. \\
-Es müssen aber auch die Äquivalenzrelationen der Rotationen von $(\Gtwo,\circ)$ berücksichtig werden. Es gibt Äquivalenzrelationen $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$, also für die Achsen $X, Y$ und $Z$, jeweils nach rechts und links. Da zwei Linksdrehungen und zwei Rechtsdrehungen äquivalent sind, gibt es also für jede Achse vier Rotationsmöglichkeiten. Das sind dann $3 \cdot 4 = 12$ Rotationen. Da aber zu jeder Achse zwei Seiten gehören, die getauscht werden können, sind es $2 \cdot 12 = 24$ Rotationen.
+Es müssen aber auch die Äquivalenzrelationen der Rotationen von $(\Gtwo,\circ)$ berücksichtigt werden. Es gibt die Äquivalenzrelationen $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$ -- die Rotation um die Achsen $X, Y$ und $Z$, jeweils nach rechts und links. Da zwei Linksdrehungen und zwei Rechtsdrehungen äquivalent sind, gibt es demnach für jede Achse vier Rotationsmöglichkeiten. Das sind dann $3 \cdot 4 = 12$ Rotationen. Da aber zu jeder Achse zwei Seiten gehören, die getauscht werden können, sind es $2 \cdot 12 = 24$ Rotationen.
 Die Mächtigkeit der Gruppe ($40\, 320$) muss aufgrund der Rotationsmöglichkeiten um den Faktor $24$ reduziert werden, wenn die Anzahl der validen Würfelkonfigurationen anhand der Gruppe berechnet werden soll. Das sind dann $40\, 320 \cdot \frac{1}{24} = 1680$ mögliche Positionen der Ecksteine unter Berücksichtigung der Würfelrotationen. Diese Zahl scheint verhältnismäßig niedrig, da die Ausrichtung der Steine noch nicht berücksichtigt wurde. \\
 Die Ausrichtung der Steine wird durch den $8$-dimensionalen Vektor $x$ dargestellt. Jeder Eintrag in $x$ kann die Werte $0, 1$ oder $2$ annehmen. Das ergibt $3^8=6561$ Möglichkeiten der Steinausrichtung. Allerdings kann durch die Äquivalenzrelationen (bzw. die Rotation des Würfels) einer der Steine als richtig angenommen werden. Das ergibt dann $3^7=2187$ Möglichkeiten der Steinausrichtung. Somit gibt es $40\, 320 \cdot \frac{1}{24} \cdot 2187 = 3\, 674\, 160$ valide Würfelkonfigurationen. Da die Gruppe $(\Gtwo,\circ)$ allerdings nur die Position der Steine berücksichtig, ist die Mächtigkeit $|\Gtwo| = 40\, 320$.
 
@@ -2016,9 +2016,9 @@ In Abbildung \ref{Abbildung_XnachZugR} in Kapitel \ref{Abschnitt_AusrichtungDerS
 \end{adjustbox}
 
 \ \\
-Für jede valide Würfelposition gilt also ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
-Wenn es also eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die richtigen Positionen bringt also $(1,x)$. 
-Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich also in der Startkonfiguration. 
+Für jede valide Würfelposition gilt folglich ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
+Wenn es eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die Konfiguration $(1,x)$ bringt Alle Steine befinden sich dann an der richtigen Position, sind aber nicht korrekt ausgerichtet. 
+Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich dann in der Startkonfiguration. 
 %
 %
 %
@@ -2089,8 +2089,8 @@ Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel defin
 \sigma_L & =\ ( \ \textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ ) \\
 \sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) \\
 \end{align*}
-Jeder Zug ist also als ein $4$-Zykel definiert. Der $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
-Die Parität einer einzelnen Ebenendrehung ist also ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z.B. $LF$) ist somit gerade.
+Jeder Grundzug ist demnach als ein $4$-Zykel definiert. Der $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
+Die Parität einer einzelnen Ebenendrehung ist demnach ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z.B. $LF$) ist somit gerade.
 
 % to do prüfen! 
 
@@ -2134,7 +2134,7 @@ Da die beiden Züge nicht dieselben Steine beeinflussen, ist es nicht relevant, 
 
 Auch wenn zwei Züge $Y, Z \in \Gtwo$ nicht kommutieren, kann anhand der Komplexität des Kommutators festgestellt werden, wie groß die Veränderung der Würfelkonfiguration nach $[Y, Z]$ ist. 
 Als Beispiel zur Veranschaulichung: Die Züge $Y=L$ und $Z=F$ verändern durch $[Y, Z]$ vier Steine im Würfel. Die anderen vier behalten ihre Position und Ausrichtung. 
-Es wird also $LFL^{-1}F^{-1}$ ausgeführt. Das führt zu folgenden Permutationen:
+Es wird dabei $LFL^{-1}F^{-1}$ ausgeführt. Das führt zu folgenden Permutationen:
 
 \begin{center}
 \begin{tabular}{lcccccccc}
@@ -2234,9 +2234,9 @@ In der Abbildung wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert.
 \end{figure}
 
 Der erste Schritt für einen menschlichen Ansatz der Lösung des Würfels ist (meistens), die Steine der oberen Ebene so anzuordnen, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
-Es muss also $x_{1-4} = (0,0,0,0)$ gelten und $\sigma_{ulb}=\textit{ulb}, \  \sigma_{urb} = \textit{urb}, \  \sigma_{ulf} = \textit{ulf}, \  \sigma_{urf}=\textit{urf}$ bzw. die Äquivalenzklassen $\delta_{Z_r}$ und $\delta_{Z_l}$ davon. 
+Für die Lösung der oberen muss $x_{1-4} = (0,0,0,0)$ gelten und $\sigma_{ulb}=\textit{ulb}, \  \sigma_{urb} = \textit{urb}, \  \sigma_{ulf} = \textit{ulf}, \  \sigma_{urf}=\textit{urf}$ bzw. die Äquivalenzklassen $\delta_{Z_r}$ und $\delta_{Z_l}$ davon. 
 
-Der Lösende sucht nun also Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position \textit{urf}. 
+Der Lösende sucht nun Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position \textit{urf}. 
 Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. 
 Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{Abbildung_LösungMensch1} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein.
 
@@ -2257,7 +2257,7 @@ Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. 
 \end{figure}
 
 Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere Ebene ist nun gelöst und alle Steine mit weißen Farbflächen sind wie in der Startkonfiguration zueinander ausgerichtet. (s. Abbildung \ref{Abbildung_LösungMensch3}).
-Also gilt $x_{1-4} = (0,0,0,0)$ und durch die Äquivalenzklassen $\delta_{Z_r}$ oder $\delta_{Z_l}$ ist zu sehen, dass die Steine der oberen Ebene richtig zueinander angeordnet sind. Sie sind aber um $180^\circ$ gedreht zur Startkonfiguration. 
+Dann gilt $x_{1-4} = (0,0,0,0)$ und durch die Äquivalenzklassen $\delta_{Z_r}$ oder $\delta_{Z_l}$ ist zu sehen, dass die Steine der oberen Ebene richtig zueinander angeordnet sind. Sie sind aber um $180^\circ$ gedreht zur Startkonfiguration. 
 
 \begin{figure}[H]
 \centering
@@ -2285,8 +2285,8 @@ Dann führt der Lösende den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2
 \end{figure}
 
 Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die in verschiedenen Situtionen anwendet werden können.  
-In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat also nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
-Wenn die Verdrehung des Würfels invertiert wird, also $(FUBRF^{-1})^{-1}$, ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
+In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
+Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 
 
 Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\ 
@@ -2499,7 +2499,7 @@ Ausgangsposition & Algorithmus  \\
 \end{center}
 
 
-Die obere Seite des Würfels zeigt nach den Algorithmen nur noch gelbe Farbflächen. Die Ausrichtung der Steine ist also bereits richtig. Wenn alle Steine der zweiten Ebene auch breits richtig zueiander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steine getauscht, bis sie richtig angeordnet sind.
+Die obere Seite des Würfels zeigt nach den Algorithmen nur noch gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig. Wenn alle Steine der zweiten Ebene auch breits richtig zueiander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steine getauscht, bis sie richtig angeordnet sind.
 
 Zum Vertauschen der Steine untereinander (ohne die Ausrichtung zu verändern), gibt es auch wieder verschiedene Algorithmen. Diese Algorithmen werden hier in einer Liste aufgeführt, die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
 

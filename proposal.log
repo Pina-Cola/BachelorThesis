@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  4 MAR 2021 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  4 MAR 2021 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,12 +1459,8 @@ File: 3_wuerfel.png Graphic file (type png)
 <use 3_wuerfel.png>
 Package pdftex.def Info: 3_wuerfel.png  used on input line 1414.
 (pdftex.def)             Requested size: 412.22234pt x 130.08038pt.
-[26] [27 <./3_wuerfel.png>] [28] [29]
-Overfull \hbox (2.40953pt too wide) in paragraph at lines 1575--1583
-[]$\OT1/cmr/m/n/12 (-20) . Auch bei kom-ple-xe-ren Z[]ugen kann
- []
-
-<graph_zug.png, id=538, 1927.2pt x 1084.05pt>
+[26] [27 <./3_wuerfel.png>] [28] [29] [30]
+<graph_zug.png, id=542, 1927.2pt x 1084.05pt>
 File: graph_zug.png Graphic file (type png)
 <use graph_zug.png>
 Package pdftex.def Info: graph_zug.png  used on input line 1589.
@@ -1474,13 +1470,12 @@ Overfull \hbox (65.10686pt too wide) in paragraph at lines 1589--1590
  [][] 
  []
 
-[30]
 <zykel_LLFF.png, id=544, 1366.10374pt x 593.21625pt>
 File: zykel_LLFF.png Graphic file (type png)
 <use zykel_LLFF.png>
 Package pdftex.def Info: zykel_LLFF.png  used on input line 1618.
 (pdftex.def)             Requested size: 341.5251pt x 148.3037pt.
- [31 <./graph_zug.png>] [32 <./zykel_LLFF.png>]
+[31 <./graph_zug.png>] [32 <./zykel_LLFF.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1687.
@@ -1558,6 +1553,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1951.
+
+
+Overfull \hbox (0.6391pt too wide) in paragraph at lines 1953--1958
+\OT1/cmr/m/n/12 (-20) Es m[]ussen aber auch die []Aquivalenzrelationen der Ro-t
+a-tio-nen von $(\OML/cmm/m/it/12 G[]; \OMS/cmsy/m/n/12 ^^N\OT1/cmr/m/n/12 (-20)
+ )$ ber[]ucksichtigt
+ []
 
 [38] [39] [40]
 
@@ -1775,11 +1777,11 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2643.
  ) 
 Here is how much of TeX's memory you used:
- 30788 strings out of 483016
- 563673 string characters out of 5961286
+ 30790 strings out of 483016
+ 563687 string characters out of 5961286
  1255790 words of memory out of 5000000
  44914 multiletter control sequences out of 15000+600000
- 559427 words of font info for 184 fonts, out of 8000000 for 9000
+ 559536 words of font info for 185 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,13n,77p,913b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pina/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600p
@@ -1804,7 +1806,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proposal.pdf (59 pages, 2769667 bytes).
+Output written on proposal.pdf (59 pages, 2770040 bytes).
 PDF statistics:
  946 PDF objects out of 1000 (max. 8388607)
  740 compressed objects within 8 object streams
