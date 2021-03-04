@@ -51,52 +51,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{26}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Züge}{28}{figure.caption.22}%
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{29}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{30}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenz von Zügen}{32}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{33}{section.6}%
+\contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{34}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Untergruppen Beispiele}{33}{section*.25}%
+\contentsline {subsection}{\numberline {}Untergruppen Beispiele}{34}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Erzeuger}{33}{section*.25}%
+\contentsline {subsection}{\numberline {}Erzeuger}{34}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{34}{section*.25}%
+\contentsline {subsection}{\numberline {}Durch $FF$ und $RR$ erzeugte Untergruppe}{35}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Cayleygraph}{35}{section*.25}%
+\contentsline {subsection}{\numberline {}Cayleygraph}{36}{section*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{38}{section.7}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{39}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Anzahl der validen Würfelkonfigurationen}{38}{section*.28}%
+\contentsline {subsection}{\numberline {}Anzahl der validen Würfelkonfigurationen}{39}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Mächtigkeit von G$_{2\times 2\times 2}$}{38}{section*.28}%
+\contentsline {subsection}{\numberline {}Mächtigkeit von G$_{2\times 2\times 2}$}{39}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{39}{section*.28}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{40}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{41}{section.8}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{42}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{41}{section*.29}%
+\contentsline {subsection}{\numberline {}Parität}{42}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{42}{section*.29}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{43}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{43}{section*.29}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{44}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{43}{figure.caption.30}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{44}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Muster}{47}{figure.caption.36}%
+\contentsline {subsection}{\numberline {}Muster}{48}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Schraubendrehermethode}{48}{figure.caption.37}%
+\contentsline {subsection}{\numberline {}Schraubendrehermethode}{49}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{48}{figure.caption.37}%
+\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{49}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{50}{figure.caption.40}%
+\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{51}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Fazit}{53}{section.9}%
+\contentsline {section}{\numberline {9}Fazit}{54}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{53}{section*.42}%
+\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{54}{section*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausblick}{53}{section*.42}%
+\contentsline {subsection}{\numberline {}Ausblick}{54}{section*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{54}{section*.42}%
+\contentsline {section}{Abbildungsverzeichnis}{55}{section*.42}%

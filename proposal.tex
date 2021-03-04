@@ -828,6 +828,8 @@ Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wied
 \label{Abbildung_ZykelVonf}
 \end{figure}
 Bei der Zykelschreibweise ist die Reihenfolge der Elemente wichtig. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. Wenn die Reihenfolge bestehen bleibt, können die Zykel aber bei jedem beliebigen Element beginnen. Das Beispiel $(1 \ 2 \ 3)$ kann demnach auch als $(2 \ 3 \ 1)$ oder $(3\ 1 \ 2 \ )$ geschrieben werden.
+
+Die Identitätspermutation wird als $\pi = 1$ geschrieben. Dabei werden alle Elemente auf sich selbst abgebildet und die Zykel bleiben somit unverändert.
 \end{bsp}
 
 %
@@ -968,6 +970,8 @@ Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden:
 
 Die Indizes an den Funktionen $\sigma$ stehen für die verschiedenen Grundzüge des Würfels. Diese wurden in Kapitel \ref{Abschnitt_GrundzügeWürfel} erklärt.
 
+% Die Identitätspermutation ist der \textit{leere Zug} des Würfels: $N$.
+
 %
 %
 %
@@ -1035,6 +1039,8 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 
 In diesem Kapitel wird die Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Die Gruppe des \Ttwo Würfels wird auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht und auf Kommutativität untersucht.
 
+Außerdem wird die Rotation des Würfels durch Äquivalenzrelationen realisiert. Es werden auch die Ordnung und die Äquivalenz von Zügen berechnet.
+
 %
 %
 %
@@ -1057,7 +1063,7 @@ Die Menge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels. Beispielswei
 Wenn zwei Züge mit nach gleicher Ausgangsposition die gleiche Würfelposition hervorrufen, sind die beiden Züge gleich. Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. 
 
 
-Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.)
+Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.) $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
 
 Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird:
 \begin{description}
@@ -1146,7 +1152,7 @@ $(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation d
 \caption[Würfel nach Zügen $FR$ (links) und $RF$ (rechts)]{Würfel nach Zügen $FR$(links) und $RF$(rechts)}
 \label{Abbildung_WürfelNachFRundRF}
 \end{figure}
-Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann egal und es müsste nur die Anzahl beachtet werden. 
+Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann irrelevant und es müsste nur die Anzahl beachtet werden. 
 Es gilt dementsprechend nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$ und der $\circ$-Operator der Gruppe ist somit nicht kommutativ. 
 
 %
@@ -1518,7 +1524,7 @@ Sonst wäre das erste Vorkommen der wiederholenden Positionen ja nach $n-1$ bzw.
 Wenn $n=0$ wäre, ergibt das $Z^0=N$, was den leeren Zug (bzw. das neutrale Element) repräsentiert. Der Würfel wird dabei nicht verändert und somit wird die Würfelposition bei jedem Zug $Z \in \Gtwo$ mit $Z^0$ wiederholt. Deshalb müssen $n$ und $m$ größer als $0$ sein.
 
 Wenn $Z^n = Z^m$ gilt, kommt der Würfel in die gleiche Endposition, wenn (auf die gleiche Ausgangsposition) $n$-mal oder $m$-mal $Z$ anwendet wird.
-Wenn dann $Z^{-1}$ anwendet wird, ist die Endposition wieder gleich. Dabei ist es egal, ob vorher $n$-mal oder $m$-mal $Z$ ausgeführt wurde, da von der gleichen Startposition ausgehend die gleiche Endposition erreicht wird, wenn der gleiche Zug ausführt wird.
+Wenn dann $Z^{-1}$ anwendet wird, ist die Endposition wieder gleich. Dabei ist es irrelevant, ob vorher $n$-mal oder $m$-mal $Z$ ausgeführt wurde, da von der gleichen Startposition ausgehend die gleiche Endposition erreicht wird, wenn der gleiche Zug ausführt wird.
 
 Beim Anwenden von $Z^{-1}$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn $Z$ $n$-mal ausgeführt wird und danach $Z^{-1}$ ausführt wird, ist es das gleiche wie $n-1$-mal $Z$ ausführen. Folglich gilt $Z^nZ^{-1}=Z^{n-1}$. Das gilt natürlich auch für $m$, also $Z^mZ^{-1}=Z^{m-1}$.
 Demnach gilt dann $Z^{n-1}=Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. Deshalb muss $n=0$ sein, damit $m$ die erste Wiederholung einer Position repräsentiert. 
@@ -1810,12 +1816,12 @@ $N$ & $RR$ & $FFRR$ &  $RRFFRR$ \\
 & $FF$ & $RRFF$ & $FFRRFF$   \\
 \end{tabular}
 \end{center}
-Zum Vergleich: Tom Davis kommt bei dem  \Tthree Würfel auf $12$ Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
+Zum Vergleich: Tom Davis kommt bei dem  \Tthree Würfel auf zwölf Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
 
 Die doppelten Elemente können natürlich auch mathematisch erkannt werden, dafür müssen dann nicht alle Optionen an einem Würfel ausprobiert werden.
 Das wird im Folgenden beispielhaft mit $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass (da es sich um halbe Drehungen handelt) die Position, die durch $RRFFRRFFRR$ erreicht wird auch durch $FF$ erreichbar ist.
 
-Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders interessant, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
+Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
 Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $120 \cdot 3^5$ auf $29 \, 160$ Mitglieder, aber auch das ist deutlich größer als $7$.
 
 %
