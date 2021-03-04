@@ -735,6 +735,45 @@ Bei der Relation $=$ gilt die Reflexivität für alle Elemente, da die Gleichhei
 
 \end{bsp}
 
+\begin{bsp}[Äquivalenzrelation]
+Für die Menge $A=\{ -3, -2, -1, 0, 1, 2, 3 \}$ wird die Relation $x \sim_+ y$ betrachtet, die als $|x| =|y|$ definiert ist:
+
+Bei der Relation $\sim_+$ gilt die Reflexivität für alle Elemente, da die Gleichheit reflexiv ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit mit Betrag. Somit ist es eine Äquivalenzrelation. 
+
+
+\end{bsp}
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+\subsection*{Äquivalenzklassen} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzklassen}
+
+Äquivalenzklassen sind Mengen, die äquivalente Elemente enthalten.
+
+\begin{definition}[Äquivalenzklassen]
+
+Sei $ \sim $ eine Äquivalenzrelation auf der Menge $M$ und $x \in M$. Die Äquivalenzklasse von $x$ wird dann als $[x]$ geschrieben und ist definiert als $\{y \in M \mid y \sim x\} \subseteq M$.  
+
+\end{definition}
+
+Jedes Element der Äquivalenzklasse $[x]$ heißt \textit{Repräsentant von $[x]$}. Alle Repräsentanten von $[x]$ sind äquivalent zu $x$.
+
+\begin{bsp}[Äquivalenzklasse]
+Es wird die Äquivalenzrelation $x \sim_+ y$, die als $|x| =|y|$ definiert ist, auf der Menge $A=\{ -3, -2, -1, 0, 1, 2, 3 \}$ betrachtet. Die Äquivalenzklasse von $[1]$ beispielsweise ist dann $[1] = \{x \in A \mid x \sim_+ 1\}$. $[1]$ enthält dann die Elemente $1$ und $-1$.
+
+
+\end{bsp}
+
 %
 %
 %
@@ -1373,94 +1412,6 @@ Analog zu den Zügen gilt bei den Rotationen dementsprechend für jede Rotation:
 \forall R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}, n \in \mathbb{N} \ . \ R^n=R^{n \mod 4}
 \end{align*}
 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%\hspace*{2cm}
-
-%\color{gray}
-
-
-%\subsection*{Äquivalenzrelationen der Rotationen (Fehlversuch)}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen (Fehlversuch)}
-
-
-%Um die Rotationen des Würfels umzusetzen, führe ich Äquivalenzrelationen ein. \\
-%Eine Relation $R \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, wenn für alle $x, y, z \in A$ die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. \cite{Buch} \\
-%\\
-%In dem Fall der Gruppe $(\Gtwo, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in \Gtwo$. \\ 
-%Ich führe für jede Rotationsrichtung eine Relation ein. Es gibt dann also $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}$. \\ 
-
-
-%\begin{tabular}{l l}
-
-%$Z_1 \sim_{Z_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_rZ_2$  ergeben die gleiche Würfelkonfiguration\\
-
-%\end{tabular}
-%\\
-%$Z_rZ_2$ steht für den Zug $Z_2$, der nach einer Rechtsrotation des Würfels ausgeführt wird. \\
-%\\
-%Die anderen Rotationsrelationen definiere ich wie folgt: 
-
-%\begin{tabular}{l l l}
-
-%$Z_1 \sim_{Z_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Z_lZ_2$ & ergeben die gleiche Würfelkonfiguration \\
-%$Z_1 \sim_{Y_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-%$Z_1 \sim_{Y_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $Y_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-%$Z_1 \sim_{X_r} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_rZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-%$Z_1 \sim_{X_l} Z_2$ & $:\Leftrightarrow \ \ \ \ \  Z_1$ und $X_lZ_2$ & ergeben die gleiche Würfelkonfiguration\\
-
-%\end{tabular}
-%\\
-%\\
-%\\
-%\\
-%Damit $\sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}$ und $\sim_{X_l}$ Äquivalenzrelationen sind, müssen Reflexivität, Symmetrie und Transitivität gelten, was ich im folgenden Abschnitt beweise. Ich nutze das Symbol $\sim$ für alle Elemente aus  $\{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ und $W$ als beliebige Würfelrotation (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}$ oder ${X_l}$).\\
-
-
-
-%\begin{itemize}
-
-%\item Reflexivität: \\
-%Für die Reflexivität muss $x \sim x$ gelten. \\
-%Da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind, gilt:
-%\begin{align*}
-%Z_1 \sim_W Z_2 : & \Leftrightarrow \ \ \  Z_1 \ und  \ WZ_2 \ ergeben \ die \ gleiche \ W"urfelkonfiguration\\
-%& \Leftrightarrow \ \ \ C \cdot Z_1=C \cdot WZ_2 \\
-%& \Leftrightarrow \ \ \ Z_1=WZ_2
-%\end{align*}
-%$\lightning$ Das gilt aber leider nicht, wenn $Z_1=Z_2$ gilt. Denn identische Züge ergeben nicht das gleiche, wenn der Würfel vor einem Zug rotiert wird und vor dem anderen nicht. \\
-%\\
-
-
-%\item Symmetrie $\lightning$%:  \\
-%Für die Symmetrie muss gelten: Aus $x \sim y \ folgt \ y \sim x$. \\
-%Auch das gilt, da alle $\sim \in \{ \sim_{Z_r}, \sim_{Z_l}, \sim_{Y_r}, \sim_{Y_l}, \sim_{X_r}, \sim_{X_l}\}$ durch die Gleichheit definiert sind.  
-
-%\item Transitivität $\lightning$
-
-%\end{itemize}
-
-%Diese Ansatz dieser Äquivalenzrelationen funktioniert so nicht, da die Reflexivität, Symmetrie und Transitivität nicht erfüllt sind. \\ 
-
-%falsch
 
 %
 %
