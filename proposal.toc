@@ -47,13 +47,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Würfel als Gruppe}{22}{section.5}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {}Gleichheit von Zügen}{22}{section*.18}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Rotation des Würfels}{22}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{24}{figure.caption.20}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Gleichheit von Zügen}{27}{figure.caption.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Züge}{27}{figure.caption.21}%
+\contentsline {subsection}{\numberline {}Äquivalenzrelationen der Rotationen}{25}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenzklassen}{27}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 

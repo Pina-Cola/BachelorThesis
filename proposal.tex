@@ -1115,6 +1115,41 @@ Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Auführen eines Zuges v
 In diesem Kapitel wird die Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Die Gruppe des \Ttwo Würfels wird auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht und auf Kommutativität untersucht.
 
 Außerdem wird die Rotation des Würfels und die Gleichheit von Zügen durch Äquivalenzrelationen und Äquivalenzklassen realisiert. Es werden auch die Ordnung und die Äquivalenz von Zügen berechnet.
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+
+\subsection*{Gleichheit von Zügen} \addcontentsline{toc}{subsection}{\protect\numberline{}Gleichheit von Zügen}
+
+Zwei Züge $Z_1$ und $Z_2$ gelten als gleich, wenn sie mit gleicher Ausgangskonfiguration des Würfels die gleiche Zielkonfiguration hervorrufen.
+Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
+Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
+
+Wenn eine Ebene vier mal hintereinander gedreht wird, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} $ ausgfeührt wird, ist die Folgekonfiguration wieder $C$.
+\begin{align*}
+C \cdot Z = C  \text{ mit } Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} \text{ und } C \text{ als Würfelkonfiguration}
+\end{align*}
+Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ die gleiche Konfiguration wie der Zug $Z_1Z_3$ hervorruft.
+
+Da die Anzahl der möglichen Züge im Gegensatz zur Anzahl der validen Würfelkonfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten.
+
 
 %
 %
@@ -1229,12 +1264,12 @@ Analog zu den Zügen gilt bei den Rotationen dementsprechend für jede Rotation:
 %
 \color{black}
 
-\subsection*{Äquivalenzrelationen der Rotationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen}
+\subsection*{Äquivalenzrelationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Rotationen}
 
 Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen.
 Für Äquivalenzrotaionen müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Kapitel \ref{Abschnitt_Äquivalenrelationen} findet sich die Definition und Erklärung.
 
-In dem Fall der Gruppe $(\Gtwo, \circ)$ handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2 \in \Gtwo$. 
+In dem Fall des \Ttwo Würfels handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2$. 
 
 Die Äquivalenzrelation der Rotation wird hier so definiert: 
 
@@ -1244,6 +1279,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 \  & \textit{Würfelkonfiguration} \\
 \end{tabular} 
 \\
+Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
 Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$ -- wobei $N$ die \textit{leere} Rotation darstellt, das entspricht keiner Rotation des Würfels. 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow F = Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
@@ -1261,9 +1297,9 @@ Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und 
 
 
 \item [Reflexivität] \ \\
-Für die Reflexivität muss $Z \sim Z$ für alle $Z \in \Gtwo$ gelten. 
+Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. 
 \begin{align*}
-Z_1 \sim Z_2 : & \Leftrightarrow  Z_1 = WZ_2
+Z_1 \sim_R Z_2 : & \Leftrightarrow  Z_1 = WZ_2
 \end{align*}
 Es wird $W$ als $N$ gewählt, so dass keine Rotation ausgeführt wird.
 \begin{align*}
@@ -1313,40 +1349,6 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 
 \end{description}
 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-
-\subsection*{Gleichheit von Zügen} \addcontentsline{toc}{subsection}{\protect\numberline{}Gleichheit von Zügen}
-
-Zwei Züge $Z_1$ und $Z_2$ gelten als gleich, wenn sie mit gleicher Ausgangskonfiguration des Würfels die gleiche Zielkonfiguration hervorrufen.
-Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
-Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
-
-Wenn eine Ebene vier mal hintereinander gedreht wird, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} $ ausgfeührt wird, ist die Folgekonfiguration wieder $C$.
-\begin{align*}
-C \cdot Z = C  \text{ mit } Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} \text{ und } C \text{ als Würfelkonfiguration}
-\end{align*}
-Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ die gleiche Konfiguration wie der Zug $Z_1Z_3$ hervorruft.
-
-
 
 
 
@@ -1372,28 +1374,7 @@ Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4,
 %
 %
 
-\subsection*{Äquivalenzrelationen der Züge} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzrelationen der Züge}
 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
 \subsection*{Äquivalenzklassen} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzklassen}
 
 %
