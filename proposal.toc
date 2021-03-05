@@ -59,7 +59,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{31}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Züge}{31}{figure.caption.22}%
+\contentsline {subsection}{\numberline {}Ordnung der Züge}{32}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{33}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
