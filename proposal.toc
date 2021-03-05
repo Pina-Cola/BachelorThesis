@@ -29,11 +29,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Äquivalenzrelation}{12}{bsp.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Äquivalenzklassen}{13}{bsp.8.3}%
+\contentsline {subsection}{\numberline {}Äquivalenzklassen und Faktormenge}{13}{bsp.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Mächtigkeit einer Gruppe}{13}{bsp.9.1}%
+\contentsline {subsection}{\numberline {}Mächtigkeit einer Gruppe}{13}{bsp.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{13}{bsp.10.2}%
+\contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{14}{bsp.11.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Symmetrische Gruppe}{15}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
