@@ -757,6 +757,7 @@ Bei der Relation $\sim_+$ gilt die Reflexivität für alle Elemente, da die Glei
 %
 %
 \subsection*{Äquivalenzklassen und Faktormenge} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzklassen und Faktormenge}
+\label{Abschnitt_FaktormengenUndÄquivalenzklasse}
 
 Äquivalenzklassen sind Mengen, die äquivalente Elemente enthalten.
 
@@ -1138,17 +1139,23 @@ Außerdem wird die Rotation des Würfels und die Gleichheit von Zügen durch Äq
 
 \subsection*{Gleichheit von Zügen} \addcontentsline{toc}{subsection}{\protect\numberline{}Gleichheit von Zügen}
 
-Zwei Züge $Z_1$ und $Z_2$ gelten als gleich, wenn sie mit gleicher Ausgangskonfiguration des Würfels die gleiche Zielkonfiguration hervorrufen.
+Zwei Züge $Z_1$ und $Z_2 \in A_Z$ gelten als gleich, wenn sie mit gleicher Ausgangskonfiguration des Würfels die gleiche Zielkonfiguration hervorrufen. $A_Z$ ist die Menge aller Züge.
 Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
-Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
+Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
 
-Wenn eine Ebene vier mal hintereinander gedreht wird, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} $ ausgfeührt wird, ist die Folgekonfiguration wieder $C$.
+Wenn eine Ebene vier mal hintereinander gedreht wird, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} $ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
 \begin{align*}
 C \cdot Z = C  \text{ mit } Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} \text{ und } C \text{ als Würfelkonfiguration}
 \end{align*}
 Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ die gleiche Konfiguration wie der Zug $Z_1Z_3$ hervorruft.
+Der Exponent kann in diesem Fall $modulo \ 4$ gerechnet, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
+Es gilt folglich:
+\begin{align*}
+\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}
+\end{align*}
+Dabei gilt für $n \mod 4 = 0$ dann $Z^n = Z^{n \mod 4} = Z^0$. $Z^0$ repräsentiert dabei einen leeren Zug. Das entspricht keiner Veränderung der Folgekonfiguration des Würfels.
 
-Da die Anzahl der möglichen Züge im Gegensatz zur Anzahl der validen Würfelkonfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten.
+Da die Anzahl der möglichen Züge im Gegensatz zur Anzahl der validen Würfelkonfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten. Dies wird im weiteren Verlauf dieser Arbeit durch Äquivalenzklassen realisiert.
 
 
 %
@@ -1194,6 +1201,8 @@ $Y_r$ & Rotation des Würfels um die $y$-Achse nach rechts (im Uhrzeigersinn)  \
 $X_l$ & Rotation des Würfels um die $x$-Achse nach links (gegen den Uhrzeigersinn)\\
 
 $X_r$ & Rotation des Würfels um die $x$-Achse nach rechts (im Uhrzeigersinn) \\
+
+$N_R$ & keine Rotation des Würfels \\
 \bottomrule
 \end{tabular} 
 
@@ -1234,10 +1243,10 @@ Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}) \ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
 \end{align*}
 Bei den Rotationen wird (analog zu den Zügen) die mehrfache Ausführung einer Roatation mit der Exponentenschreibweise geschrieben. 
-Somit gilt dann auch hier $RRRR=R^4=N$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}$) und $R^0=N$ (für alle Rotationen). ($N$ ist das neutrale Element bzw. der leere Zug und $R$ ist eine beliebige Rotation des Würfels.) 
+Somit gilt dann auch hier $TTTT=T^4=N_R$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , H_R \}$) und $T^0=N_R$ (für alle Rotationen). ($N_R$ ist die leere Rotation und $T$ ist eine beliebige Rotation des Würfels.) 
 Analog zu den Zügen gilt bei den Rotationen dementsprechend für jede Rotation: 
 \begin{align*}
-\forall R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} \}, n \in \mathbb{N} \ . \ R^n=R^{n \mod 4}
+\forall T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
 \end{align*}
 
 
@@ -1269,7 +1278,7 @@ Analog zu den Zügen gilt bei den Rotationen dementsprechend für jede Rotation:
 Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen.
 Für Äquivalenzrotaionen müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Kapitel \ref{Abschnitt_Äquivalenrelationen} findet sich die Definition und Erklärung.
 
-In dem Fall des \Ttwo Würfels handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2$. 
+In dem Fall des \Ttwo Würfels handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2$ aus der Menge aller Züge $A_Z$. 
 
 Die Äquivalenzrelation der Rotation wird hier so definiert: 
 
@@ -1279,10 +1288,11 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 \  & \textit{Würfelkonfiguration} \\
 \end{tabular} 
 \\
+
 Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
-Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ Z_1 = WZ_2$ mit $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$ -- wobei $N$ die \textit{leere} Rotation darstellt, das entspricht keiner Rotation des Würfels. 
-Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow F = Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
+Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$ -- wobei $N_R$ die \textit{leere} Rotation darstellt, das entspricht keiner Rotation des Würfels. 
+Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
 In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel nochmal grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
 \begin{figure}[h]
 \centering
@@ -1299,15 +1309,15 @@ Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und 
 \item [Reflexivität] \ \\
 Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. 
 \begin{align*}
-Z_1 \sim_R Z_2 : & \Leftrightarrow  Z_1 = WZ_2
+Z_1 \sim_R Z_2 : & \Leftrightarrow C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
-Es wird $W$ als $N$ gewählt, so dass keine Rotation ausgeführt wird.
+Es wird $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
 \begin{align*}
-Z_1 \sim Z_2 : & \Leftrightarrow  Z_1 = WZ_2 \\
-\ & \Leftrightarrow Z_1=N Z_2 \\
-\ & \Leftrightarrow Z_1 = Z_2
+Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot Z_1 = C \cdot WZ_2 \\
+\ & \Leftrightarrow C \cdot Z_1=C \cdot N_R Z_2 \\
+\ & \Leftrightarrow C \cdot Z_1 = C \cdot Z_2
 \end{align*}
-Es gilt somit die Reflexivität für $\sim$, da für $Z_1 \sim Z_2$ mit $W=N$ immer $Z_1 = Z_2$ gilt.
+Es gilt somit die Reflexivität für $\sim$, da für $Z_1 \sim Z_2$ mit $W=N_R$ $Z_1$ und $Z_2$ immer äquivalent sind, da sie die gleiche Folgekonfiguration des Würfels erreichen.
 
 \item [Symmetrie] \ \\
 Für die Symmetrie muss gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.
@@ -1322,9 +1332,9 @@ Das sind die Rotationen mit den dazugehörigen Inversen:
 
 \begin{center}
 \begin{tabular}{lccccccc}
-Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $N$ \\
+Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $N_R$ \\
 \hline
-Inverses \hspace*{0.1em} $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $N$ \\
+Inverses \hspace*{0.1em} $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $N_R$ \\
 \end{tabular} 
 \end{center}
 Dann gilt: 
@@ -1377,50 +1387,8 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 
 \subsection*{Äquivalenzklassen} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzklassen}
 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-\subsection*{Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppe}
+Äquivalenzklassen und Faktormengen wurden in Kapitel \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Relation $\sim$ auf der Menge aller Züge $A_Z$ definiert. Die Menge der Äquivalenzklassen, die durch $A_Z / \sim$ entstehen wird $\Gtwo$ genannt. Sie enthält alle die Äquivalenklassen aller validen Würfelzüge, ohne dabei gleiche Züge oder Würfelrotationen doppelt zu enthalten. Die Elemente von $\Gtwo$ sind definiert als $\{[Z] \mid Z \in A_Z \}$. Im weiteren Verlauf dieser Arbeit werden die eckigen Klammern der Äquivalenzklassen in $\Gtwo$ aber weggelassen, um die Notation zu verreinfachen. $\Gtwo$ enthält alle möglichen Züge des Würfels ohne dabei doppelte Züge zu enthalten.
 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-\subsection*{Gruppenoperation} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppenoperation}
-%
 %
 %
 %
@@ -1448,8 +1416,7 @@ Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Gro
 Die Grundlagen und Definition der Gruppe wurden in Kapitel \ref{Abschnitt_Gruppe} erklärt.
 
 
-Die Menge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
-Wenn zwei Züge mit nach gleicher Ausgangsposition die gleiche Würfelposition hervorrufen, sind die beiden Züge gleich. Beispielsweise eine Drehung um $180^{\circ}$ nach links oder nach rechts von einer Ebene führt zu dem gleihen Ergebnis und somit werden diese beiden Züge als gleich angesehen. 
+Die Menge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Das wurde bereits durch Äquivalenzklassen realisiert. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
 
 
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.) $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
@@ -1460,7 +1427,7 @@ Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo,
 $\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ 
 
 
-Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge in $\Gtwo$ enthalten sind. 
+Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge in $\Gtwo$ enthalten sind. In $\Gtwo$ findet sich zu jeder validen Würfelkonfiguration ein Zug, um diese zu erreichen und jede Verknüpfung von zwei validen Zügen führt zu einer validen Würfelkonfiguration. Daher gilt die Abgeschlossenheit bei der Gruppe $(\Gtwo, \circ)$.
 
 
 
@@ -1494,9 +1461,8 @@ $\forall Z_1 \in \Gtwo, \exists N \in \Gtwo.N \circ Z_1 = Z_1 \circ N = Z_1$
 
 Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}.
 
-Das mehrfache Ausführen der Züge ($U, D, F, B, L, R$) kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
 
-Wenn eine Ebene vier mal gedreht wird, ist der Würfel wieder in der vorherigen Position. Somit gilt beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (bzw. den leeren Zug) steht. Das gilt für alle Züge des Würfels:
+Wenn eine Ebene beispielsweise vier mal gedreht wird, ist der Würfel wieder in der vorherigen Position. Somit gilt beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (bzw. den leeren Zug) steht. Das gilt für alle Züge des Würfels:
 
 \begin{align*}
 RRRR & =R^4 =N \\
@@ -1506,22 +1472,10 @@ DDDD & =D^4 =N \\
 FFFF & =F^4 =N \\
 BBBB & =B^4 =N \\
 \end{align*}
+Diese sind dann alle Repräsentanten für den leeren Zug $N$ enthalten.
 Somit gilt dann auch $Z^0=N$, mit $Z$ als beliebigen Zug und $N$ als neutrales Element. 
-In der mathematischen Schreibweise sieht das so aus: $\forall Z \in \Gtwo \ . \ Z^0=N$. 
-Es gilt demnach für alle Züge $Z \in \Gtwo$: 
-\begin{align*}
-Z^0 & =N \\
-Z & =Z^1 \\
-ZZ & =Z^2 \\
-ZZZ & =Z^3 \\
-\end{align*}
-Für \textit{einelementige} Züge $Z$ ($U, D, F, B, L$ oder $R$) gilt auch $ZZZZ =Z^4=N=Z^0$.
-Der Exponent kann in diesem Fall $modulo \ 4$ gerechnet, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
-Es gilt folglich:
 
-$\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$.
-
-Somit gilt für $n \mod 4 = 0$ dann $Z^n = Z^{n \mod 4} = Z^0 = N$.
+Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist also der leere Zug bzw. jeder Repräsentant der Äquivalenzklasse des leeren Zuges.
 
 
 \item [Existenz eines inversen Elements $Z_1^{-1}$] \ \\
