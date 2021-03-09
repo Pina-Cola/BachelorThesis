@@ -892,7 +892,38 @@ Für $n$ verschiedene Objekte ist die Anzahl der Permutationen $n!$.
 \end{definition}
 
 \begin{bsp}[Anzahl der Permutationen]
-Sei $\pi = (1 \ 2 \ 3)$ eine Permutation mit 3 Objekten. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekte dann nur noch $2$ Möglichkeiten und danach nur eine. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Möglichkeiten.
+Sei $\pi = (1 \ 2 \ 3)$ eine Permutation mit 3 Objekten. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekte dann nur noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach nur eine. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Möglichkeiten.
+
+\end{bsp}
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+
+\newpage
+\subsection*{Parität} \addcontentsline{toc}{subsection}{\protect\numberline{}Parität}
+\label{Abschnitt_GrundlagenParität}
+
+\begin{definition}[Parität]
+Eine Zahl $n \in \mathbb{Z}$ ist gerade, wenn sie ganzzahlig ohne Rest durch zwei teilbar ist. Ansonsten ist sie ungerade. Die Menge der ganzen Zahlen wir dadurch in zwei Teilmengen zerlegt. Das nennt man Parität.
+\end{definition}
+
+Ungerade Zahlen ergeben bei der Division durch $2$ immer einen rest von $1$. Gerade Zahlen haben dabei den Rest $0$.
+
+\begin{bsp}[Parität]
+
+Sei $M=\{-2, -1, 0, 1, 2\}$. Die Teilmenge $\{-2, 0, 2\}$ enthält nur gerade Elemente und die Teilmenge $\{ -1, 1\}$ nur ungerade Elemente.
+
 \end{bsp}
 
 %
@@ -947,7 +978,7 @@ Deshalb wird die Konfiguration des Würfels definiert, bevor der Würfel als Gru
 \end{itemize}
 Die Konfiguration des Würfels kann als 2-Tupel geschrieben werden: $(\sigma, x)$.
 In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtung der Ecktsteine als Vektor $x$ erklärt. 
-Außerdem werden Äquivalenzrelationen definiert, um die Ausrichtung des Würfels zu berücksichtigen.
+
 %
 %
 %
@@ -1124,7 +1155,8 @@ Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Auführen eines Zuges v
 
 In diesem Kapitel wird die Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Die Gruppe des \Ttwo Würfels wird auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht und auf Kommutativität untersucht.
 
-Außerdem wird die Rotation des Würfels und die Gleichheit von Zügen durch Äquivalenzrelationen und Äquivalenzklassen realisiert. Es werden auch die Ordnung und die Äquivalenz von Zügen berechnet.
+Vorher wird die Rotation des Würfels und die Gleichheit zweier Züge durch Äquivalenz\-relationen und Äquivalenzklassen realisiert. Es werden auch die Ordnung und die Äquivalenz von Zügen berechnet.
+
 %
 %
 %
@@ -1902,12 +1934,13 @@ Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $120 \cdot 3^5$ auf $29 \,
 %
 %
 %
+
 \subsection*{Cayleygraph}\addcontentsline{toc}{subsection}{\protect\numberline{}Cayleygraph}
 Cayleygraphen wurden in Kapitel \ref{Abschnitt_Cayleygraph} eingeführt. Sie dienen der Visualisierung von Untergruppen und deren Erzeugern.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{Cayleygraph1.png}
+\includegraphics[scale=0.6]{Cayleygraph1.png}
 \caption{Cayleygraph zu Erzeuger $\{ F \}$}
 \label{Abbildung_CayleygraphF}
 \end{figure}
@@ -1923,9 +1956,10 @@ Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entsteh
 Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphens. 
 Anhand des Cayleygraphens ist zu sehen, dass $FFFF$ und $RRRR$ das neutrale Element $N$ ergeben.
 Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ (Abbildung \ref{Abbildung_CayleygraphF}), stellt er eine sehr kleine erzeugte Untergruppe dar, wenn es mit der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$ verglichen wird. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
+
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{Cayleygraph2.png}
+\includegraphics[scale=0.65]{Cayleygraph2.png}
 \caption{Cayleygraph zu Erzeuger $\{ FF, RR \}$}
 \label{Abbildung_CayleygraphFFRR}
 \end{figure}
@@ -1960,7 +1994,7 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ 
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel wird die validen Würfelkonfigurationen mithilfe berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Kapitel \ref{Abschnitt_MächtigkeitGruppe} zu finden. Es wird auch die theoretische Obergrenze der möglichen Würfelkonfigurationen berechnet. \\
+In diesem Kapitel wird Anzahl der validen Würfelkonfiguratione berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Kapitel \ref{Abschnitt_MächtigkeitGruppe} zu finden. Es wird auch die theoretische Obergrenze der möglichen Würfelkonfigurationen berechnet. \\
 Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
@@ -2133,7 +2167,7 @@ Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene unte
 
 In diesem Kapitel wird die Parität der Züge beschrieben und Kommutatoren erklärt.
 Dann wird beispielhaft ein Lösungsvorgang eines Menschens schrittweise beschrieben und erklärt.
-Außerdem werden \textit{hübsche} Muster des Würfels algorithmisch beschrieben und gezeigt.
+Außerdem werden Muster des Würfels algorithmisch beschrieben und gezeigt.
 Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen.
 
 %
@@ -2157,8 +2191,9 @@ Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf de
 %
 %
 %
-\subsection*{Parität}\addcontentsline{toc}{subsection}{\protect\numberline{}Parität}
+\subsection*{Parität der Zykel}\addcontentsline{toc}{subsection}{\protect\numberline{}Parität der Zykel}
 
+Der Begriff der Parität wurde in Kapitel \ref{Abschnitt_GrundlagenParität} definiert und erklärt.
 Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
 Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. 
 Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel definiert:
@@ -2678,6 +2713,7 @@ Die Gruppe des \Ttwo Würfels ist nützlich für die Veranschaulichung der Grupp
 
 Es wurden in dieser Arbeit Erzeuger und deren Cayleygraphen der Gruppe $(\Gtwo, \circ)$ erwähnt. Weitere Cayleygraphen und Erzeuger der Gruppe des \Ttwo Würfels könnten durchaus interessant sein. Außerdem könnte eine \textit{GUI} zum Lösen des \Ttwo Würfels aufschlussreich sein, um effiziente Algorithmen zu finden und die Lösungswege des Würfels zu optimieren.
 Auch wären weitere Untersuchungen der Gruppe $(\Gtwo, \circ)$ interessant, unter anderem die Berechnung der Anzahl der Isomorphismen, das Untersuchen der Gruppe auf Eigenschaften von Diedergruppen oder das Finden weiterer Untergruppen.
+Ein weiterer sehr interessanter Aspekt ist das Finden eines Algorithmus, der die Gleichheit zweier Züge berechnet. Das kann mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden.
 
 %
 %
