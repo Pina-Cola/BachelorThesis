@@ -81,28 +81,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{42}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{44}{section.8}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{43}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{44}{section*.29}%
+\contentsline {subsection}{\numberline {}Parität}{43}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{45}{section*.29}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{44}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{46}{section*.29}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{45}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{46}{figure.caption.30}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{45}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Muster}{50}{figure.caption.36}%
+\contentsline {subsection}{\numberline {}Muster}{49}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Schraubendrehermethode}{51}{figure.caption.37}%
+\contentsline {subsection}{\numberline {}Schraubendrehermethode}{50}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{51}{figure.caption.37}%
+\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{50}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{53}{figure.caption.40}%
+\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{52}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Fazit}{56}{section.9}%
+\contentsline {section}{\numberline {9}Fazit}{55}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{56}{section*.42}%
+\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{55}{section*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausblick}{56}{section*.42}%
+\contentsline {subsection}{\numberline {}Ausblick}{55}{section*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{57}{section*.42}%
+\contentsline {section}{Abbildungsverzeichnis}{56}{section*.42}%
