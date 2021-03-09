@@ -804,6 +804,7 @@ Die Faktormenge $A / \sim_+$ enthält dann die Äquivalenzklassen $[1]$, $[2]$, 
 %
 %
 \subsection*{Mächtigkeit einer Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Mächtigkeit einer Gruppe}
+\label{Abschnitt_MächtigkeitGruppe}
 
 Die Mächtigkeit einer Gruppe $(G, \circ)$ wird auch Gruppenordnung genannt und sagt aus, wie viele Elemente die Menge $G$ der Gruppe enthält.
 
@@ -1959,7 +1960,8 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ 
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel werden die validen Würfelkonfigurationen mithilfe der Gruppe $(\Gtwo,\circ)$ berechnet. Es wird auch die theoretische Obergrenze der möglichen Würfelkonfigurationen berechnet. Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
+In diesem Kapitel wird die validen Würfelkonfigurationen mithilfe berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Kapitel \ref{Abschnitt_MächtigkeitGruppe} zu finden. Es wird auch die theoretische Obergrenze der möglichen Würfelkonfigurationen berechnet. \\
+Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
 %
@@ -1984,10 +1986,10 @@ In diesem Kapitel werden die validen Würfelkonfigurationen mithilfe der Gruppe 
 \subsection*{Anzahl der validen Würfelkonfigurationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Anzahl der validen Würfelkonfigurationen}
 \label{Abschnitt_AnzahlKonfigurationen}
 
-Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise berechnet. 
+Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. \\
 Dazu wird zuerst die Anzahl der theoretisch möglichen Würfelkonfigurationen berechnet:
-Die Ecksteine können sich in jeder Ecke befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine.
-Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7$ Wege, wie die Ecksteine ausgerichtet sein können.
+Die Ecksteine können sich in jeder der acht Ecken befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\
+Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7 = 2187$ Wege, wie die Ecksteine ausgerichtet sein können.
 Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24, denn es gibt $6$ Seiten, die jeweils $4$ Ausrichtungen haben können. Das sind dann $6 \cdot 4 = 24$.
 Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.
 
@@ -2014,6 +2016,7 @@ Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 =
 %
 %
 %
+\newpage
 \subsection*{Mächtigkeit von G$_{2\times 2\times 2}$}\addcontentsline{toc}{subsection}{\protect\numberline{}Mächtigkeit von G$_{2\times 2\times 2}$}
 
 Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (bzw. $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. Die Mächtigkeit der Gruppe ist die Anzahl der validen Würfelkonfigurationen, da die $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enhalten. Außerdem wurden die Äuivalenzklassen mit der Menge alle Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ ist die Anzahl der validen Würfelkonfigurationen.
