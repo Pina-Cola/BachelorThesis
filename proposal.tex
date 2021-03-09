@@ -886,6 +886,14 @@ Bei der Zykelschreibweise ist die Reihenfolge der Elemente wichtig. Beispielswei
 Die Identitätspermutation wird als $\pi = 1$ geschrieben. Dabei werden alle Elemente auf sich selbst abgebildet und die Zykel bleiben somit unverändert.
 \end{bsp}
 
+\begin{definition}[Anzahl der Permutationen]
+Für $n$ verschiedene Objekte ist die Anzahl der Permutationen $n!$.
+\end{definition}
+
+\begin{bsp}[Anzahl der Permutationen]
+Sei $\pi = (1 \ 2 \ 3)$ eine Permutation mit 3 Objekten. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekte dann nur noch $2$ Möglichkeiten und danach nur eine. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Möglichkeiten.
+\end{bsp}
+
 %
 %
 %
@@ -896,23 +904,23 @@ Die Identitätspermutation wird als $\pi = 1$ geschrieben. Dabei werden alle Ele
 %
 %
 %
-\subsection*{Symmetrische Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Symmetrische Gruppe}\label{Abschnitt_SymmetrischeGruppe}
+%\subsection*{Symmetrische Gruppe} \addcontentsline{toc}{subsection}{\protect\numberline{}Symmetrische Gruppe}\label{Abschnitt_SymmetrischeGruppe}
 
-\begin{definition}[Symmetrische Gruppe]
-Eine Gruppe $(S, \circ)$ ist symmetrisch, wenn $S$ aus allen Permutationen (s. Kapitel \ref{Abschnitt_PermutationZykel}) einer Menge besteht. 
-\end{definition}
+%\begin{definition}[Symmetrische Gruppe]
+%Eine Gruppe $(S, \circ)$ ist symmetrisch, wenn $S$ aus allen Permutationen (s. Kapitel \ref{Abschnitt_PermutationZykel}) einer Menge besteht. 
+%\end{definition}
 
-\begin{bsp}
-Die Gruppe $(S, \circ)$ mit $S = \{(a \ b),(b \ a),(a \ c),(c \ a),(b \ c),(c \ b)\}$ ist eine symmetrische Gruppe, die aus allen Permutationen der Elemente $a, b$ und $c$ besteht. Der $\circ$-Operator verknüpft zwei Permutationen. Werden beispielsweise $(a \ b)$ und $(b \ c)$ verknüpft, so gilt dann $(a \ b)\circ (b \ c) = (a \ c)$, was auch in $S$ enthalten ist. (Das inverse Element ist der jeweilige Zykel \textit{rückwärts}, das neutrale Element sind die einelementigen Zykel $(a)(b)(c)$, die durch Verknüpfung eines Zykels mit seinem Inversen entstehen.)
-\end{bsp}
+%\begin{bsp}
+%Die Gruppe $(S, \circ)$ mit $S = \{(a \ b),(b \ a),(a \ c),(c \ a),(b \ c),(c \ b)\}$ ist eine symmetrische Gruppe, die aus allen Permutationen der Elemente $a, b$ und $c$ besteht. Der $\circ$-Operator verknüpft zwei Permutationen. Werden beispielsweise $(a \ b)$ und $(b \ c)$ verknüpft, so gilt dann $(a \ b)\circ (b \ c) = (a \ c)$, was auch in $S$ enthalten ist. (Das inverse Element ist der jeweilige Zykel \textit{rückwärts}, das neutrale Element sind die einelementigen Zykel $(a)(b)(c)$, die durch Verknüpfung eines Zykels mit seinem Inversen entstehen.)
+%\end{bsp}
 
-\begin{definition}[Mächtigkeit einer symmetrischen Gruppe]
-Eine symmetrische Gruppe $(S, \circ)$, die aus allen Permutationen einer $n$-elementigen Menge $M$ besteht, hat die Mächtigkeit $n!$.
-\end{definition}
+%\begin{definition}[Mächtigkeit einer symmetrischen Gruppe]
+%Eine symmetrische Gruppe $(S, \circ)$, die aus allen Permutationen einer $n$-elementigen Menge $M$ besteht, hat die Mächtigkeit $n!$.
+%\end{definition}
 
-\begin{bsp}[Mächtigkeit einer symmetrischen Gruppe]
-Bei der symmetrischen Gruppe $(S, \circ)$ mit $S = \{(a \ b),(b \ a),(a \ c),(c \ a),(b \ c),(c \ b)\}$ enthält $S$ die Permutationen aller Elemente der $3$-elementigen Menge $\{a, b, c\}$. Somit ist die Mächtigkeit der Gruppe $3! = 1 \cdot 2 \cdot 3 = 6 \ ( \ = |S|\ )$. 
-\end{bsp}
+%\begin{bsp}[Mächtigkeit einer symmetrischen Gruppe]
+%Bei der symmetrischen Gruppe $(S, \circ)$ mit $S = \{(a \ b),(b \ a),(a \ c),(c \ a),(b \ c),(c \ b)\}$ enthält $S$ die Permutationen aller Elemente der $3$-elementigen Menge $\{a, b, c\}$. Somit ist die Mächtigkeit der Gruppe $3! = 1 \cdot 2 \cdot 3 = 6 \ ( \ = |S|\ )$. 
+%\end{bsp}
 %
 %
 %
@@ -1951,7 +1959,7 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ 
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel werden die validen Würfelkonfigurationen mithilfe der Gruppe $(\Gtwo,\circ)$ berechnet und mit der Mächtigkeit der Gruppe verglichen. Es wird auch die theoretische Obergrenze der möglichen Würfelkonfigurationen berechnet. Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
+In diesem Kapitel werden die validen Würfelkonfigurationen mithilfe der Gruppe $(\Gtwo,\circ)$ berechnet. Es wird auch die theoretische Obergrenze der möglichen Würfelkonfigurationen berechnet. Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
 %
@@ -2010,7 +2018,16 @@ Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 =
 
 Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (bzw. $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. Die Mächtigkeit der Gruppe ist die Anzahl der validen Würfelkonfigurationen, da die $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enhalten. Außerdem wurden die Äuivalenzklassen mit der Menge alle Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ ist die Anzahl der validen Würfelkonfigurationen.
 
+Da Mächtigkeit der Gruppe $(\Gtwo,\circ)$ der Anzahl der validen Würfelkonfigurationen entspricht, setzt sie sich aus dem Produkt der Konfigurationsparameter $\sigma$ und $x$ zusammen. Daraufhin müssen aber auch die Äquivalenzen bezüglich der Rotationen des Würfels berücksichtigt werden.
 
+$\sigma$ ist die Menge der bijektiven Funktionen für jede Ebenenrotation. Es sind die Übergänge der acht Würfelsteine als Permutationen enthalten. Da es $8$ Permutationsobjekte gibt, ist die Anzahl der Permutationsmöglichkeiten $8! = 40320$.
+
+Der andere Parameter der Würfelkonfiguration ist der 8-dimensionale Vektor $x$. Jeder der Werte in $x$ ist aus der Menge $\{0,1,2\}$. Somit gibt es drei Möglichkeiten für jeden Wert im Vektor. Das ergibt dann $3^8 = 6561$ mögliche Konfigurationen des Vektors.
+
+Ohne Berücksichtigung der Äquivalenzklassen wird ein Wert von $40320 \cdot 6561 = 264 \, 539 \, 520$ möglichen Konfigurationen erreicht. Da durch die Rotationen eine der Steinausrichtungen in $x$ als richtig angenommen werden kann, wird $264 \, 539 \, 520$ durch drei geteilt und ergibt dann $88 \, 179 \, 840$. 
+Außerdem gibt es bei den Rotationen sechs Rotationsmöglichkeiten (und zusätlich die \textit{leere} Rotation). Jede dieser Rotationsmöglichkeiten kann vier verschiedene Rotationen hervorrufen. Das ergibt dann $6 \cdot 4 = 24$ Möglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Somit muss $88 \, 179 \, 840$ durch $24$ geteilt werden, um die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ zu berechnen. $|\Gtwo|$ ist dann $88 \, 179 \, 840 \div 24 = 3\, 674\, 160$.
+
+Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist also die Anzahl der validen Würfelkonfigurationen $3\, 674\, 160$.
 
 
 %Das wird nun anhand der Gruppe $(\Gtwo,\circ)$ berechnet. Die Gruppe ist eine symmetrische Gruppe (s. Kapitel \ref{Abschnitt_SymmetrischeGruppe}), da sie aus allen Permutationen der $8$-elementigen Menge $\{ \textit{ulb},  \textit{urb},  \textit{ulf},  \textit{urf},  \textit{dlb},  \textit{drb},  \textit{dlf},  \textit{drf} \}$ besteht. Dadurch ist die Mächtigkeit dieser Gruppe $|\Gtwo| = 8!=40\, 320$. \\
