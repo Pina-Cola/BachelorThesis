@@ -1115,15 +1115,15 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 \label{Abbildung_XnachZugR}
 \end{figure}
 
-Anhand des Beispielzuges $R$ kann eine Funktion $f_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreibt. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinfluss werden, bleiben diese unverändert.
+Anhand des Beispielzuges $R$ können Funktionen $f_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreiben. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinfluss werden, bleiben diese unverändert.
 \begin{align*}
-f_R(x_1)=x_1 \ \ \ \ \ f_R(x_3)=x_3 \ \ \ \ \ f_R(x_5)=x_5 \ \ \ \ \ f_R(x_7)=x_7 
+f_{R_1}(x_1)=x_1 \ \ \ \ \ f_{R_3}(x_3)=x_3 \ \ \ \ \ f_{R_5}(x_5)=x_5 \ \ \ \ \ f_{R_6}(x_7)=x_7 
 \end{align*}
 Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit der vorherigen Steinausrichtungen verändert. Es ergeben sich folgende Funktionen für die Positionen $x_2, x_4, x_6$ und $x_8$ nach dem Zug $R$: 
 
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_R(x_2)= \begin{cases}
+$f_{R_2}(x_2)= \begin{cases}
 2 & \ \text{falls } x_4 = 0 \\ 
 0 & \ \text{falls } x_4 = 1 \\
 1 & \ \text{falls } x_4 = 2 
@@ -1131,7 +1131,7 @@ $f_R(x_2)= \begin{cases}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_R(x_4)= \begin{cases}
+$f_{R_4}(x_4)= \begin{cases}
 1 & \ \text{falls } x_8 = 0 \\ 
 2 & \ \text{falls } x_8 = 1 \\
 0 & \ \text{falls } x_8 = 2 
@@ -1140,7 +1140,7 @@ $f_R(x_4)= \begin{cases}
 
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_R(x_8)= \begin{cases}
+$f_{R_8}(x_8)= \begin{cases}
 2 & \ \text{falls } x_6 = 0 \\ 
 0 & \ \text{falls } x_6 = 1 \\
 1 & \ \text{falls } x_6 = 2 
@@ -1148,13 +1148,40 @@ $f_R(x_8)= \begin{cases}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_R(x_6)= \begin{cases}
+$f_{R_6}(x_6)= \begin{cases}
 1 & \ \text{falls } x_2 = 0 \\ 
 2 & \ \text{falls } x_2 = 1 \\
 0 & \ \text{falls } x_2 = 2 
 \end{cases}$
 \end{minipage}
 
+Es gibt für den Zug $R$ acht Funktionen $f_R$ -- eine für jeden Vektoreintrag. Die Funktionen $f_{R_2}$ und $f_{R_8}$ sind gleich, die Funktionen $f_{R_4}$ und $f_{R_6}$ ebenfalls. Auch die Funktionen $f_{R_1}, f_{R_3}, f_{R_5}$ und $f_{R_7}$ sind identisch. Da diese Funktionen gleich sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
+
+\begin{minipage}{0.4\textwidth}
+\centering
+$g(x)= \begin{cases}
+2 & \ \text{falls } x = 0 \\ 
+0 & \ \text{falls } x = 1 \\
+1 & \ \text{falls } x = 2 
+\end{cases}$
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\centering
+$h(x)= \begin{cases}
+1 & \ \text{falls } x = 0 \\ 
+2 & \ \text{falls } x = 1 \\
+0 & \ \text{falls } x = 2 
+\end{cases}$
+\end{minipage}
+\begin{minipage}{0.2\textwidth}
+\centering
+$i(x) = x$
+\end{minipage}
+
+Mit den Funktionen \textit{g}, \textit{h} und \textit{i} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. Die Funktion, die der Vektor $x$ nach dem Zug $R$ verändert, wird $\gamma_R$ genannt:
+\begin{align*}
+\gamma_R(\left(\begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \\ x_6 \\ x_7 \\ x_8  \end{array}\right))
+\end{align*}
 
 
 
