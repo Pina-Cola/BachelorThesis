@@ -452,8 +452,8 @@ Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ wird Gruppe ge
 \begin{itemize}
 \item Abgeschlossenheit: $\forall a,b \in G.(a \circ b) \in G $
 \item Assoziativität: $\forall a,b,c \in G.(a \circ b) \circ c = a \circ (b \circ c)$
-\item Existenz eines neutralen Elements $n$: $\forall a \in G, \exists n \in G.n \circ a = a \circ n = a$ 
-\item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G, \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
+\item Existenz eines neutralen Elements $n$: $\exists n \in G. \forall a \in G.n \circ a = a \circ n = a$ 
+\item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G. \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
 \end{definition}
 
@@ -1284,7 +1284,7 @@ Zwei Züge $Z_1$ und $Z_2 \in A_Z$ gelten als gleich, wenn sie mit gleicher Ausg
 Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
 Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
 
-Wenn eine Ebene vier mal hintereinander gedreht wird, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} $ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
+Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wenn eine Ebene vier mal hintereinander gedreht wird, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} $ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
 \begin{align*}
 C \cdot Z = C  \text{ mit } Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} \text{ und } C \text{ als Würfelkonfiguration}
 \end{align*}
@@ -1292,11 +1292,11 @@ Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4,
 Der Exponent kann in diesem Fall $modulo \ 4$ gerechnet, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
 Es gilt folglich:
 \begin{align*}
-\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}
+\forall \  Z \in \{U, D, F, B, L, R\}. n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}
 \end{align*}
 Dabei gilt für $n \mod 4 = 0$ dann $Z^n = Z^{n \mod 4} = Z^0$. $Z^0$ repräsentiert dabei einen leeren Zug. Das entspricht keiner Veränderung der Folgekonfiguration des Würfels.
 
-Da die Anzahl der möglichen Züge im Gegensatz zur Anzahl der validen Würfelkonfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten. Dies wird im weiteren Verlauf dieser Arbeit durch Äquivalenzklassen realisiert.
+Da die Anzahl der möglichen Züge im Gegensatz zur Anzahl der validen Würfelkonfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten. Dies wird im weiteren Verlauf dieser Arbeit durch Äquivalenzklassen realisiert. Die Berechnung aller gleichen Züge überschreitet den Rahmen dieser Arbeit -- eine Realisierungsmöglichkeit dafür wären Termersetzungssysteme (\textit{Rewriting}).
 
 
 %
@@ -1376,18 +1376,18 @@ $\delta_{Z_r}=( \ \textit{urf} \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ )(
 
 Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
-\delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urb}) \ (\textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
-\delta_{Z_l} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}) \ (\textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ )\\
-\delta_{Y_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf}) \ (\textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf} \ )\\
-\delta_{Y_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb}) \ (\textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb} \ )\\
-\delta_{X_r} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}) \ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )\\
-\delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}) \ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
+\delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urb}\ )(\ \textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
+\delta_{Z_l} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}\ )(\ \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ )\\
+\delta_{Y_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf}\ )(\ \textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf} \ )\\
+\delta_{Y_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb}\ )(\ \textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb} \ )\\
+\delta_{X_r} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )\\
+\delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
 \end{align*}
 Bei den Rotationen wird (analog zu den Zügen) die mehrfache Ausführung einer Roatation mit der Exponentenschreibweise geschrieben. 
 Somit gilt dann auch hier $TTTT=T^4=N_R$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , H_R \}$) und $T^0=N_R$ (für alle Rotationen). ($N_R$ ist die leere Rotation und $T$ ist eine beliebige Rotation des Würfels.) 
 Analog zu den Zügen gilt bei den Rotationen dementsprechend für jede Rotation: 
 \begin{align*}
-\forall T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}. n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
 \end{align*}
 
 
@@ -1434,7 +1434,7 @@ Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berück
 
 Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$ -- wobei $N_R$ die \textit{leere} Rotation darstellt, das entspricht keiner Rotation des Würfels. 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
-In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel nochmal grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
+In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{3_wuerfel.png}
@@ -1528,7 +1528,7 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 
 \subsection*{Äquivalenzklassen} \addcontentsline{toc}{subsection}{\protect\numberline{}Äquivalenzklassen}
 
-Äquivalenzklassen und Faktormengen wurden in Kapitel \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Relation $\sim$ auf der Menge aller Züge $A_Z$ definiert. Die Menge der Äquivalenzklassen, die durch $A_Z / \sim$ entstehen wird $\Gtwo$ genannt. Sie enthält alle die Äquivalenklassen aller validen Würfelzüge, ohne dabei gleiche Züge oder Würfelrotationen doppelt zu enthalten. Die Elemente von $\Gtwo$ sind definiert als $\{[Z] \mid Z \in A_Z \}$. Im weiteren Verlauf dieser Arbeit werden die eckigen Klammern der Äquivalenzklassen in $\Gtwo$ aber weggelassen, um die Notation zu verreinfachen. $\Gtwo$ enthält alle möglichen Züge des Würfels ohne dabei doppelte Züge zu enthalten.
+Äquivalenzklassen und Faktormengen wurden in Kapitel \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Relation $\sim$ auf der Menge aller Züge $A_Z$ definiert. Die Faktormenge $A_Z / \sim$ wird $\Gtwo$ genannt. Sie enthält alle die Äquivalenklassen aller validen Würfelzüge, ohne dabei gleiche Züge oder Würfelrotationen doppelt zu enthalten. Die Elemente von $\Gtwo$ sind definiert als $\{[Z] \mid Z \in A_Z \}$. Im weiteren Verlauf dieser Arbeit werden die eckigen Klammern der Äquivalenzklassen in $\Gtwo$ aber weggelassen, um die Notation zu verreinfachen. $\Gtwo$ enthält alle möglichen Züge des Würfels ohne dabei doppelte Züge zu enthalten.
 
 %
 %
@@ -1557,7 +1557,7 @@ Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Gro
 Die Grundlagen und Definition der Gruppe wurden in Kapitel \ref{Abschnitt_Gruppe} erklärt.
 
 
-Die Menge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Das wurde bereits durch Äquivalenzklassen realisiert. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
+Die Faktormenge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
 
 
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.) $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
@@ -1597,7 +1597,7 @@ Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt we
 Somit ist $(\Gtwo, \circ)$ assoziativ.
 
 \item [Existenz eines neutralen Elements $N$] \ \\
-$\forall Z_1 \in \Gtwo, \exists N \in \Gtwo.N \circ Z_1 = Z_1 \circ N = Z_1$ 
+$\exists N \in \Gtwo. \forall Z_1 \in \Gtwo .N \circ Z_1 = Z_1 \circ N = Z_1$ 
 
 
 Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}.
@@ -1620,7 +1620,7 @@ Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist also der leere Zug bzw. jeder 
 
 
 \item [Existenz eines inversen Elements $Z^{-1}$] \ \\
-$\forall \  Z \in \Gtwo,\ \exists \  Z^{-1} \in \Gtwo.  \ \ Z \circ Z^{-1} = Z^{-1} \circ Z = N$  
+$\forall \  Z \in \Gtwo.\ \exists \  Z^{-1} \in \Gtwo.  \ \ Z \circ Z^{-1} = Z^{-1} \circ Z = N$  
 
 
 Da jeder Zug $Z$ als Permutation definiert ist, kann diese invertiert werden. Wenn man eine Permutation invertieren will, kehrt man die Reihenfolge der Elemente der Zykel um. Heraus kommt bei einer Verknüpfung dieser beiden Permutationen das die Identitätspermutation bzw. das neutrale Element.
@@ -1694,7 +1694,7 @@ Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z
 %
 
 \subsection*{Ordnung der Permutationen}\addcontentsline{toc}{subsection}{\protect\numberline{}Ordnung der Züge} \label{Abschnitt_OrdnungPermutationen}
-Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$, da alle Steine des Würfels in ihrer vorherigen Position bleiben, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Dann werden die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4 bezeichnet. 
+Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}. n \in \mathbb{N} \ . \ Z^n=Z^{n \mod 4}$, da alle Steine des Würfels in ihrer vorherigen Position bleiben, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Dann werden die Züge $U, D, F, B, L, R$ als Züge der Ordnung 4 bezeichnet. 
 Die Exponentenschreibweise kann für alle Züge aus $\Gtwo$ anwendet werden, auch wenn sie mehr als eine Ebene rotieren, beispielsweise bei $LLFF$. $(LLFF)^2$ entspricht dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$, was wieder die Ausgangsposition ergibt. 
 
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel wieder in die Ausgangsposition des Zuges \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Der Zug $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
