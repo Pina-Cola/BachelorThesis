@@ -398,12 +398,12 @@ $B$ & Drehung der \textbf{hinteren} Ebene im Uhrzeigersinn \\
 \end{center}
 
 Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}. 
-Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf diese Ebene geschaut wird. Dementsprechend wirkt es so, als würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn von oben auf den Würfel geschaut wird.  
+Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf diese Ebene geschaut wird. Dementsprechend wirkt es so, als würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn von oben auf den Würfel geschaut wird. So ergibt sich die Menge der Grundzüge: $\{U, D, R, L, F, B\}$.
 
 
 Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
-Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen.
+Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer dreifachen Drehung der unteren Ebene im Uhrziegersinn ($DDD$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$.
 
 
 
@@ -918,7 +918,7 @@ Sei $\pi = (1 \ 2 \ 3)$ eine Permutation mit 3 Objekten. Für das erste Objekt d
 Eine Zahl $n \in \mathbb{Z}$ ist gerade, wenn sie ganzzahlig ohne Rest durch zwei teilbar ist. Ansonsten ist sie ungerade. Die Menge der ganzen Zahlen wir dadurch in zwei Teilmengen zerlegt. Das nennt man Parität.
 \end{definition}
 
-Ungerade Zahlen ergeben bei der Division durch $2$ immer einen rest von $1$. Gerade Zahlen haben dabei den Rest $0$.
+Ungerade Zahlen ergeben bei der Division durch $2$ immer einen Rest von $1$. Gerade Zahlen haben dabei den Rest $0$.
 
 \begin{bsp}[Parität]
 
