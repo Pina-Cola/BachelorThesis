@@ -1115,6 +1115,31 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 \label{Abbildung_XnachZugR}
 \end{figure}
 
+Anhand des Beispielzuges $R$ kann eine Funktion $f_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreibt. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinfluss werden, bleiben diese unverändert.
+\begin{align*}
+f_R(x_1)=x_1 \ \ \ \ \ f_R(x_3)=x_3 \ \ \ \ \ f_R(x_5)=x_5 \ \ \ \ \ f_R(x_7)=x_7 
+\end{align*}
+Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit der vorherigen Steinausrichtungen verändert. Es ergeben sich folgende Funktionen für die Positionen $x_2, x_4, x_6$ und $x_8$ nach dem Zug $R$: 
+
+\begin{minipage}{0.5\textwidth}
+$f_R(x_2)= \begin{cases}
+2 & \text{falls } x_4 = 0 \\ 
+0 & \text{falls } x_4 = 1 \\
+1 & \text{falls } x_4 = 2 
+\end{cases}$
+\end{minipage}
+
+\begin{minipage}{0.5\textwidth}
+$f_R(x_4)= \begin{cases}
+1 & \text{falls } x_8 = 0 \\ 
+2 & \text{falls } x_8 = 1 \\
+0 & \text{falls } x_8 = 2 
+\end{cases}$
+\end{minipage}
+
+
+
+
 
 
 %
