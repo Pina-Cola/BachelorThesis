@@ -43,7 +43,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Ausrichtung der Steine}{19}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Züge ausführen}{21}{figure.caption.17}%
+\contentsline {subsection}{\numberline {}Züge ausführen}{22}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Würfel als Gruppe}{23}{section.5}%
 \defcounter {refsection}{0}\relax 

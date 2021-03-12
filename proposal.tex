@@ -1120,7 +1120,7 @@ Anhand des Beispielzuges $R$ können Funktionen $f_R$ aufgestellt werden, die di
 f_{R_1}(x_1)=x_1 \ \ \ \ \ f_{R_3}(x_3)=x_3 \ \ \ \ \ f_{R_5}(x_5)=x_5 \ \ \ \ \ f_{R_6}(x_7)=x_7 
 \end{align*}
 Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit der vorherigen Steinausrichtungen verändert. Es ergeben sich folgende Funktionen für die Positionen $x_2, x_4, x_6$ und $x_8$ nach dem Zug $R$: 
-
+\\
 
 \begin{minipage}{0.5\textwidth}
 \centering
@@ -1155,10 +1155,10 @@ $f_{R_6}(x_6)= \begin{cases}
 0 & \ \text{falls } x_2 = 2 
 \end{cases}$
 \end{minipage}
-
+\vspace*{1em}
 
 Es gibt für den Zug $R$ acht Funktionen $f_R$ -- eine für jeden Vektoreintrag. Die Funktionen $f_{R_2}$ und $f_{R_8}$ sind gleich, die Funktionen $f_{R_4}$ und $f_{R_6}$ ebenfalls. Auch die Funktionen $f_{R_1}, f_{R_3}, f_{R_5}$ und $f_{R_7}$ sind identisch. Da diese Funktionen gleich sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
-
+\\
 
 \begin{minipage}{0.4\textwidth}
 \centering
@@ -1180,13 +1180,36 @@ $h(x)= \begin{cases}
 \centering
 $i(x) = x$
 \end{minipage}
+\vspace*{1em}
 
 Da \textit{i} die Identitätsfunktion ist, kann diese weggelassen werden.
 Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$ verändert:
 \begin{align*}
-&& \gamma_R \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
-&& = \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right)
+& \gamma_R \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right)
 \end{align*}
+
+Analog dazu gibt es für alle Grundzüge Funktionen, die die Veränderung der Steinausrichtung realisieren:
+\begin{align*}
+& \gamma_U \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_3, x_1, x_4, x_2, x_5, x_6, x_7, x_8 \right) \\
+\\
+& \gamma_D \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7 \right) \\
+\\
+& \gamma_R \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right) \\
+\\
+& \gamma_L \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( (h(x_5), x_2, g(x_1), x_4, g(x_7), x_6, h(x_3), x_8) \right) \\
+\\
+& \gamma_F \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_1, x_2, h(x_7), g(x_3), x_5, x_6, g(x_8), h(x_4) \right) \\
+\\
+& \gamma_B \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( g(x_2), h(x_6), x_3, x_4), h(x_1), g(x_5), x_7, x_8 \right)
+\end{align*}
+
 
 
 %
