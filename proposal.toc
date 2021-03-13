@@ -59,7 +59,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Züge als Gruppenoperation}{35}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ordnung der Permutationen}{35}{figure.caption.22}%
+\contentsline {subsection}{\numberline {}Ordnung der Permutationen}{36}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Zykelstruktur}{37}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
