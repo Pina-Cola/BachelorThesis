@@ -1944,7 +1944,7 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
 \SetNlSty{textbf}{}{\ \ }
 \SetAlgoNlRelativeSize{0}
 \KwData{(Konfiguration $C(\sigma, x)$, Zug $Z$)}
-\KwResult{\textit{count * ord} gibt die Ordnung eines Zuges zurück}
+\KwResult{\textit{count $\ast$ ord} gibt die Ordnung eines Zuges zurück}
 \BlankLine
  \textit{ord} $\leftarrow$ Ordnung der Permutation von $Z$\;
   \textit{x'} $\leftarrow$ \textit{x}\;
@@ -1955,16 +1955,16 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
   $C \leftarrow C \cdot Z^\textit{ord}$\;
    \textit{count} $\leftarrow$ \textit{count} + 1 \;
  }
- return \textit{count * ord} \;
-
-
+ return \textit{count $\ast$ ord} \;
 % \caption{Ordnung eines Zuges bestimmen}
 \end{algorithm}
+
+\vspace*{1em}
 
 Der Pseudocode braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Den Zug $Z$ und die Ausgangskonfiguration $C$ des Würfels. Daraufhin wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Kapitel \ref{Abschnitt_OrdnungPermutationen} beschrieben. Dann wird der Wert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um später Vergleiche durchzuführen. Außerdem wird die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangsposition ist. \textit{count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtig. Die Steine sind nur nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
 Die \textit{while}-Schleife wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zum Start ist. Bei jeder Ausführung wird \textit{count} inkrementiert.
-
+Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das kleinste gemeinsame Vielfache von diesen beiden Werten.
 
 
 %
