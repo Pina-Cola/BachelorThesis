@@ -906,7 +906,7 @@ Die Ordnung einer Permutation ist das kleinste gemeinsame Vielfache der Zykellä
 
 \end{definition}
 
-Die Ordnung einer Permutation ist die kleinste Zahl $n \in \mathbb{N}$, so dass nach $n$-facher Ausführung der Permutation die identische Permutation heraus kommt.
+Die Ordnung einer Permutation ist die kleinste Zahl $n \in \mathbb{N}$, so dass nach $n$-facher Ausführung der Permutation die identische Permutation heraus kommt. Man kann die Ordnung einer Permutation $\pi$ als \textit{ord}$(\pi)$ schreiben.
 
 \begin{bsp}[Ordnung von Permutationen]
 
@@ -1966,6 +1966,7 @@ Der Pseudocode braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Einga
 
 Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zum Start ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
 Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das kleinste gemeinsame Vielfache von diesen beiden Werten (Zeile 9).
+
 
 
 %
