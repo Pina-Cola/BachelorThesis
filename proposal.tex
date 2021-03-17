@@ -154,11 +154,15 @@
 
 \setcounter{page}{2}
 
-\setstretch{0.8}
+%\setstretch{0.6}
+
+\begin{singlespacing}
 
 \tableofcontents
 
-\setstretch{1.5}
+\end{singlespacing}
+
+%\setstretch{1.5}
 
 
 
@@ -948,6 +952,48 @@ Ungerade Zahlen ergeben bei der Division durch $2$ immer einen Rest von $1$. Ger
 \begin{bsp}[Parität]
 
 Sei $M=\{-2, -1, 0, 1, 2\}$. Die Teilmenge $\{-2, 0, 2\}$ enthält nur gerade Elemente und die Teilmenge $\{ -1, 1\}$ nur ungerade Elemente.
+
+\end{bsp}
+
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+
+\subsection*{Gruppenhomomorphie und -isomorphie} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppenhomomorphie und -isomorphie}
+\label{Abschnitt_GrundlagenHomoIso}
+
+Homomorphismen sind Abbildungen, die eine mathematische Struktur auf eine andere abbilden.
+
+\begin{definition}[Gruppenhomomorphismus]
+
+Seien $(G, \circ)$ und $(H, \ast)$ Gruppen. Eine Abbildung $f: G \rightarrow H$ heißt Gruppenhomomorphismus, wenn für alle $g_1, g_2 \in G$ gilt: $f(g_1 \circ g_2) = f(g_1) \ast f(g_2)$.
+
+\end{definition}
+
+\begin{definition}[Gruppenisomorphismus]
+
+Eine Abbildung $f$ ist ein Gruppenisomorphismus, wenn $f$ ein Homomorphismus ist und bijektiv ist.
+
+\end{definition}
+
+\begin{bsp}[Gruppenisomorphismus]
+
+Sei $(G, \circ)$ eine Gruppe und $id: G \rightarrow G$ die Identitätsfunktion $id(x)=x$. 
+Seien $g_1, g_2 \in G$:
+\begin{align*}
+id(g_1 \circ g_2) & = id(g_1) \circ id(g_2) \\
+\Leftrightarrow g_1 \circ g_2 & = g_1 \circ g_2
+\end{align*}
+
+Die Abbildung $id$ ist somit ein Gruppenhomomorphismus und die Identitätsfunktion ist bijektiv. Deshalb ist $id$ ein Gruppenisomorphismus. Somit ist $(G,\circ)$ ist zu sich selbst isomorph. 
+
 
 \end{bsp}
 
