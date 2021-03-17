@@ -35,9 +35,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Permutationen und Zykelschreibweise}{14}{bsp.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität}{17}{bsp.14.2}%
+\contentsline {subsection}{\numberline {}Parität}{16}{bsp.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Gruppenhomomorphie und -isomorphie}{17}{bsp.15.1}%
+\contentsline {subsection}{\numberline {}Gruppenhomomorphie und -isomorphie}{16}{bsp.15.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Konfiguration des Würfels}{18}{section.4}%
 \defcounter {refsection}{0}\relax 
