@@ -105,20 +105,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Minimale Permutationen}{72}{section*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Minimale Rotation des Würfels}{72}{section*.43}%
+\contentsline {subsection}{\numberline {}Minimale Rotation des Würfels}{73}{section*.43}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Minimale Ausrichtung der Steine bei minimaler Abbildung}{73}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Minimale Gleichheit zweier Züge}{73}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Minimale Gleichheit zweier Züge}{74}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Würfel als minimale Gruppe}{73}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Würfel als minimale Gruppe}{74}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Isomorphie}{73}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Isomorphie}{74}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{74}{section.10}%
+\contentsline {subsection}{\numberline {}Vergleich der Gruppen}{74}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{74}{section*.45}%
+\contentsline {section}{\numberline {10}Fazit}{75}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausblick}{74}{section*.45}%
+\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{75}{section*.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{75}{section*.45}%
+\contentsline {subsection}{\numberline {}Ausblick}{75}{section*.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abbildungsverzeichnis}{76}{section*.45}%

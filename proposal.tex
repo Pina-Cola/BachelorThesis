@@ -2906,7 +2906,7 @@ Nach Wahl der passenden Algorithmen sollten beide Ebenen gelöst sein. Eventuell
 \section{Minimale Gruppe}
 \label{Kapitel_Minimale}
 
-In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $\Gtwo, \circ$ ist zwar eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. So eine minimale Abbildung soll in diesem Kapitel definiert werden.
+In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $(\Gtwo, \circ)$ ist zwar eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. So eine minimale Abbildung soll in diesem Kapitel definiert werden.
 
 %
 %
@@ -2943,6 +2943,8 @@ Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser
 \sigma_F & =\ ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ ) \\
 \end{align*}
 
+Der Stein \textit{dlb} wird durch keine dieserPermutationen bewegt. Darauf wird bei der Definition der minimalen Rotation des Würfels (Kapitel \ref{Abschnitt_minimaleRotation}) genauer eingegangen.
+
 
 %
 %
@@ -2964,6 +2966,8 @@ Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser
 %
 %
 \subsection*{Minimale Rotation des Würfels}\addcontentsline{toc}{subsection}{\protect\numberline{}Minimale Rotation des Würfels}
+
+\label{Abschnitt_minimaleRotation}
 
 Da die Grundzüge des Würfels für die minimale Abbildung durch die Züge $U$, $R$ und $F$ definiert sind, bleibt der Stein unten links hinten (\textit{dlb}) immer unbewegt. Der Würfel muss demnach nicht rotiert werden, da er anhand des Steines \textit{dlb} eine feste Ausrichtung hat. Dieser Stein ist in Abbildung \ref{Abbildung_DLB} hervorgehoben. 
 
@@ -2997,7 +3001,7 @@ Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Realisierung der 
 %
 \subsection*{Minimale Ausrichtung der Steine}\addcontentsline{toc}{subsection}{\protect\numberline{}Minimale Ausrichtung der Steine bei minimaler Abbildung}
 
-Nachdem in Kapitel \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine minimal durch Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine definiert. Das erfolg (wie bei der Gruppe $\Gtwo, \circ$) über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition findet sich in Kapitel \ref{Kapitel_KonfigurationDesWürfels} und wird für die minimale Abbildung genau so verwendet.
+Nachdem in Kapitel \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine minimal durch Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine definiert. Das erfolg (wie bei der Gruppe $(\Gtwo, \circ)$) über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition findet sich in Kapitel \ref{Kapitel_KonfigurationDesWürfels} und wird für die minimale Abbildung genau so verwendet.
 
 %
 %
@@ -3020,6 +3024,16 @@ Nachdem in Kapitel \ref{Abschnitt_MinimalePermutationen} bereits die Positionen 
 %
 \subsection*{Minimale Gleichheit zweier Züge}\addcontentsline{toc}{subsection}{\protect\numberline{}Minimale Gleichheit zweier Züge}
 
+Die Gleichheit von Zügen wird auch hier durch Äquivalenklassen realisiert. Dafür wird eine Äquivalenzrelation definiert, die die Gleichheit zweier Züge darstellt. Die Rotation muss bei der minimalen Abbildung nicht berücksichtig werden. Die Äquivalenrelation wird folgendermaßen definiert:
+
+\begin{tabular}{l l}
+$Z_1 \sim_{\textit{min}} Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben die gleiche Würfelkonfiguration}\\
+\end{tabular} 
+
+
+Die Definition der Äquivalenzrelationen und -klassen erfolgt analog zu der Definition der Äquivalenklassen von $(\Gtwo, \circ)$ in Kapitel \ref{Kapitel_WürfelAlsGruppe}. 
+
+
 %
 %
 %
@@ -3040,6 +3054,9 @@ Nachdem in Kapitel \ref{Abschnitt_MinimalePermutationen} bereits die Positionen 
 %
 %
 \subsection*{Würfel als minimale Gruppe}\addcontentsline{toc}{subsection}{\protect\numberline{}Würfel als minimale Gruppe}
+
+Die minimale Abbildung als Gruppe des \Ttwo Zauberwürfels wird nun $(G_{min}, \circ)$
+genannt. Der Beweis der Gruppenkriterien ist der gleiche wie bei der Gruppe $(\Gtwo, \circ)$, da die Trägermengen durch die Äquivalenzklassen der Gleichheit zweier Züge gleich sind.
 
 %
 %
@@ -3062,6 +3079,31 @@ Nachdem in Kapitel \ref{Abschnitt_MinimalePermutationen} bereits die Positionen 
 %
 
 \subsection*{Isomorphie}\addcontentsline{toc}{subsection}{\protect\numberline{}Isomorphie}
+
+Jede valide Konfiguration muss durch einen der Züge aus $\{ U, R, F\}$ erreicht worden sein und alle Kombinationen der Züge aus $\{ U, R, F\}$ führen zu einer validen Würfelkonfiguration.
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection*{Vergleich der Gruppen}\addcontentsline{toc}{subsection}{\protect\numberline{}Vergleich der Gruppen}
+
+Die Gruppen $(G_{min}, \circ)$ und $(\Gtwo, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
 
 %
 %
