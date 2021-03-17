@@ -79,48 +79,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {}Anzahl der validen Würfelkonfigurationen}{54}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Mächtigkeit von G$_{2\times 2\times 2}$}{56}{section*.29}%
+\contentsline {subsection}{\numberline {}Mächtigkeit von G$_{2\times 2\times 2}$}{55}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{57}{section*.29}%
+\contentsline {subsection}{\numberline {}Ausrichtung der Steine (modulo 3)}{56}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{59}{section.8}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{58}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Parität der Zykel}{59}{section*.30}%
+\contentsline {subsection}{\numberline {}Parität der Zykel}{58}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Kommutatoren}{60}{section*.30}%
+\contentsline {subsection}{\numberline {}Kommutatoren}{59}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösungsansätze}{61}{section*.30}%
+\contentsline {subsection}{\numberline {}Lösungsansätze}{60}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{62}{figure.caption.31}%
+\contentsline {subsection}{\numberline {}Lösung des Würfels anhand eines Beispiels}{61}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Muster}{65}{figure.caption.37}%
+\contentsline {subsection}{\numberline {}Muster}{64}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Schraubendrehermethode}{66}{figure.caption.38}%
+\contentsline {subsection}{\numberline {}Schraubendrehermethode}{65}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{67}{figure.caption.38}%
+\contentsline {subsection}{\numberline {}Algorithmen für die erste Ebene}{66}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{69}{figure.caption.41}%
+\contentsline {subsection}{\numberline {}Algorithmen für die zweite Ebene}{68}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Minimale Gruppe}{72}{section.9}%
+\contentsline {section}{\numberline {9}Minimale Gruppe}{71}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Minimale Permutationen}{72}{section*.43}%
+\contentsline {subsection}{\numberline {}Minimale Permutationen}{71}{section*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Minimale Rotation des Würfels}{73}{section*.43}%
+\contentsline {subsection}{\numberline {}Minimale Rotation des Würfels}{72}{section*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Minimale Ausrichtung der Steine bei minimaler Abbildung}{73}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Minimale Ausrichtung der Steine bei minimaler Abbildung}{72}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Minimale Gleichheit zweier Züge}{74}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Minimale Gleichheit zweier Züge}{73}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Würfel als minimale Gruppe}{74}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Würfel als minimale Gruppe}{73}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Isomorphie}{74}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Isomorphie}{73}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Vergleich der Gruppen}{74}{figure.caption.44}%
+\contentsline {subsection}{\numberline {}Vergleich der Gruppen}{73}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{75}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{74}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{75}{section*.45}%
+\contentsline {subsection}{\numberline {}Zusammenfassung und Ergebnis}{74}{section*.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {}Ausblick}{75}{section*.45}%
+\contentsline {subsection}{\numberline {}Ausblick}{74}{section*.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{76}{section*.45}%
+\contentsline {section}{Abbildungsverzeichnis}{75}{section*.45}%
