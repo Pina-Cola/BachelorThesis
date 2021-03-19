@@ -7,11 +7,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
 \usepackage{amsmath}
+\allowdisplaybreaks
 \usepackage{amssymb}
 \usepackage{geometry}
 \usepackage{tikz}
 \usepackage{float}
 \usepackage{verbatim}
+
+\usepackage{autobreak}
 
 %\usepackage{algorithm} 
 %\usepackage{algpseudocode} 
@@ -1185,52 +1188,52 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 \label{Abbildung_XnachZugR}
 \end{figure}
 
-Anhand des Beispielzuges $R$ können Funktionen $\Gamma_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreiben. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinfluss werden, bleiben diese unverändert.
+Anhand des Beispielzuges $R$ können Funktionen $\Gamma_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreiben. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinflusst werden, bleiben diese unverändert. Der Vektoreintrag, der durch $\Gamma_R$ in den Folgewert verändert wird, ist schwarz hervorgehoben. Die anderne Einträge sind grau.
 \begin{align*}
-\Gamma_{R_1}(x_1)=x_1 \ \ \ \ \ \Gamma_{R_3}(x_3)=x_3 \ \ \ \ \ \Gamma_{R_5}(x_5)=x_5 \ \ \ \ \ \Gamma_{R_6}(x_7)=x_7 
+& \Gamma_{R_1}(\textcolor{gray}{(\textcolor{black}{x_1}, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )})=\textcolor{gray}{(\textcolor{black}{x_1}, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )} \\
+& \Gamma_{R_3}(\textcolor{gray}{(x_1, x_2, \textcolor{black}{x_3}, x_4, x_5, x_6, x_7, x_8  )})=\textcolor{gray}{(x_1, x_2, \textcolor{black}{x_3}, x_4, x_5, x_6, x_7, x_8  )} \\
+& \Gamma_{R_5}(\textcolor{gray}{(x_1, x_2, x_3, x_4, \textcolor{black}{x_5}, x_6, x_7, x_8  )})=\textcolor{gray}{(x_1, x_2, x_3, x_4, \textcolor{black}{x_5}, x_6, x_7, x_8  )}\\
+& \Gamma_{R_7}(\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6,\textcolor{black}{x_7}, x_8  )})=\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6, \textcolor{black}{x_7}, x_8  )} 
 \end{align*}
 Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit der vorherigen Steinausrichtungen verändert. Es ergeben sich folgende Funktionen für die Positionen $x_2, x_4, x_6$ und $x_8$ nach dem Zug $R$: 
+
+
+\begin{align*}
+\Gamma_{R_2}\textcolor{gray}{(x_1, \textcolor{black}{x_2}, x_3, x_4, x_5, x_6, x_7, x_8  )})= \begin{cases}
+\textcolor{gray}{(x_1, \textcolor{black}{2}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 0 \\ 
+\textcolor{gray}{(x_1, \textcolor{black}{0}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 1 \\
+\textcolor{gray}{(x_1, \textcolor{black}{1}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 2 
+\end{cases} \\ 
+\\
+\Gamma_{R_4}(\textcolor{gray}{(x_1, x_2, x_3, \textcolor{black}{x_4}, x_5, x_6, x_7, x_8  )})= \begin{cases}
+\textcolor{gray}{(x_1, x_2, x_3, \textcolor{black}{1}, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_8 = 0 \\ 
+\textcolor{gray}{(x_1, x_2, x_3, \textcolor{black}{2}, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_8 = 1 \\
+\textcolor{gray}{(x_1, x_2, x_3, \textcolor{black}{0}, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_8 = 2 
+\end{cases} \\
+\\
+\Gamma_{R_6}(\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, \textcolor{black}{x_6}, x_7, x_8  )})= \begin{cases}
+\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, \textcolor{black}{1}, x_7, x_8  )} & \ \text{falls } x_2 = 0 \\ 
+\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, \textcolor{black}{2}, x_7, x_8  )} & \ \text{falls } x_2 = 1 \\
+\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, \textcolor{black}{0}, x_7, x_8  )} & \ \text{falls } x_2 = 2 
+\end{cases} \\
+\\
+\Gamma_{R_8}(\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6, x_7, \textcolor{black}{x_8})})= \begin{cases}
+\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6, x_7, \textcolor{black}{2})} & \ \text{falls } x_6 = 0 \\ 
+\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6, x_7, \textcolor{black}{0})} & \ \text{falls } x_6 = 1 \\
+\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6, x_7, \textcolor{black}{1})} & \ \text{falls } x_6 = 2 
+\end{cases}
+\end{align*}
+
+
+
+
+
+
+
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ funktionieren gleich, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind analog. Da diese Funktionen gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
 \\
 
-\begin{minipage}{0.5\textwidth}
-\centering
-$\Gamma_{R_2}(x_2)= \begin{cases}
-2 & \ \text{falls } x_4 = 0 \\ 
-0 & \ \text{falls } x_4 = 1 \\
-1 & \ \text{falls } x_4 = 2 
-\end{cases}$
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\centering
-$\Gamma_{R_4}(x_4)= \begin{cases}
-1 & \ \text{falls } x_8 = 0 \\ 
-2 & \ \text{falls } x_8 = 1 \\
-0 & \ \text{falls } x_8 = 2 
-\end{cases}$
-\end{minipage}
-
-\begin{minipage}{0.5\textwidth}
-\centering
-$\Gamma_{R_8}(x_8)= \begin{cases}
-2 & \ \text{falls } x_6 = 0 \\ 
-0 & \ \text{falls } x_6 = 1 \\
-1 & \ \text{falls } x_6 = 2 
-\end{cases}$
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\centering
-$\Gamma_{R_6}(x_6)= \begin{cases}
-1 & \ \text{falls } x_2 = 0 \\ 
-2 & \ \text{falls } x_2 = 1 \\
-0 & \ \text{falls } x_2 = 2 
-\end{cases}$
-\end{minipage}
-\vspace*{1em}
-
-Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ sind gleich, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind identisch. Da diese Funktionen gleich sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
-\\
-
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.33\textwidth}
 \centering
 $g(x)= \begin{cases}
 2 & \ \text{falls } x = 0 \\ 
@@ -1238,7 +1241,7 @@ $g(x)= \begin{cases}
 1 & \ \text{falls } x = 2 
 \end{cases}$
 \end{minipage}
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.33\textwidth}
 \centering
 $h(x)= \begin{cases}
 1 & \ \text{falls } x = 0 \\ 
@@ -1246,14 +1249,14 @@ $h(x)= \begin{cases}
 0 & \ \text{falls } x = 2 
 \end{cases}$
 \end{minipage}
-\begin{minipage}{0.2\textwidth}
+\begin{minipage}{0.33\textwidth}
 \centering
 $i(x) = x$
 \end{minipage}
 \vspace*{1em}
 
 Da \textit{i} die Identitätsfunktion ist, kann diese weggelassen werden.
-Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$, die sich aus den Funktionen $\Gamma_{R_{1-8}}$ zusammensetzt, verändert:
+Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$ verändert, die sich aus den Funktionen $\Gamma_{R_{1-8}}$ zusammensetzt:
 \begin{align*}
 & \gamma_R \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right)
@@ -1263,15 +1266,15 @@ Analog dazu gibt es für alle Grundzüge Funktionen, die die Veränderung der St
 \begin{align*}
 & \gamma_U \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_3, x_1, x_4, x_2, x_5, x_6, x_7, x_8 \right) \\
-\\
+\\ 
 & \gamma_D \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7 \right) \\
 \\
 & \gamma_R \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
-& =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right) \\
+& =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right) \\ 
 \\
 & \gamma_L \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
-& =  \left( (h(x_5), x_2, g(x_1), x_4, g(x_7), x_6, h(x_3), x_8) \right) \\
+& =  \left( (h(x_5), x_2, g(x_1), x_4, g(x_7), x_6, h(x_3), x_8) \right) \\ \displaybreak
 \\
 & \gamma_F \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_1, x_2, h(x_7), g(x_3), x_5, x_6, g(x_8), h(x_4) \right) \\
