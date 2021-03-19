@@ -1185,16 +1185,16 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$.
 \label{Abbildung_XnachZugR}
 \end{figure}
 
-Anhand des Beispielzuges $R$ können Funktionen $f_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreiben. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinfluss werden, bleiben diese unverändert.
+Anhand des Beispielzuges $R$ können Funktionen $\Gamma_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreiben. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinfluss werden, bleiben diese unverändert.
 \begin{align*}
-f_{R_1}(x_1)=x_1 \ \ \ \ \ f_{R_3}(x_3)=x_3 \ \ \ \ \ f_{R_5}(x_5)=x_5 \ \ \ \ \ f_{R_6}(x_7)=x_7 
+\Gamma_{R_1}(x_1)=x_1 \ \ \ \ \ \Gamma_{R_3}(x_3)=x_3 \ \ \ \ \ \Gamma_{R_5}(x_5)=x_5 \ \ \ \ \ \Gamma_{R_6}(x_7)=x_7 
 \end{align*}
 Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit der vorherigen Steinausrichtungen verändert. Es ergeben sich folgende Funktionen für die Positionen $x_2, x_4, x_6$ und $x_8$ nach dem Zug $R$: 
 \\
 
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_{R_2}(x_2)= \begin{cases}
+$\Gamma_{R_2}(x_2)= \begin{cases}
 2 & \ \text{falls } x_4 = 0 \\ 
 0 & \ \text{falls } x_4 = 1 \\
 1 & \ \text{falls } x_4 = 2 
@@ -1202,7 +1202,7 @@ $f_{R_2}(x_2)= \begin{cases}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_{R_4}(x_4)= \begin{cases}
+$\Gamma_{R_4}(x_4)= \begin{cases}
 1 & \ \text{falls } x_8 = 0 \\ 
 2 & \ \text{falls } x_8 = 1 \\
 0 & \ \text{falls } x_8 = 2 
@@ -1211,7 +1211,7 @@ $f_{R_4}(x_4)= \begin{cases}
 
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_{R_8}(x_8)= \begin{cases}
+$\Gamma_{R_8}(x_8)= \begin{cases}
 2 & \ \text{falls } x_6 = 0 \\ 
 0 & \ \text{falls } x_6 = 1 \\
 1 & \ \text{falls } x_6 = 2 
@@ -1219,7 +1219,7 @@ $f_{R_8}(x_8)= \begin{cases}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \centering
-$f_{R_6}(x_6)= \begin{cases}
+$\Gamma_{R_6}(x_6)= \begin{cases}
 1 & \ \text{falls } x_2 = 0 \\ 
 2 & \ \text{falls } x_2 = 1 \\
 0 & \ \text{falls } x_2 = 2 
@@ -1227,7 +1227,7 @@ $f_{R_6}(x_6)= \begin{cases}
 \end{minipage}
 \vspace*{1em}
 
-Es gibt für den Zug $R$ acht Funktionen $f_R$ -- eine für jeden Vektoreintrag. Die Funktionen $f_{R_2}$ und $f_{R_8}$ sind gleich, die Funktionen $f_{R_4}$ und $f_{R_6}$ ebenfalls. Auch die Funktionen $f_{R_1}, f_{R_3}, f_{R_5}$ und $f_{R_7}$ sind identisch. Da diese Funktionen gleich sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ sind gleich, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind identisch. Da diese Funktionen gleich sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
 \\
 
 \begin{minipage}{0.4\textwidth}
@@ -1253,7 +1253,7 @@ $i(x) = x$
 \vspace*{1em}
 
 Da \textit{i} die Identitätsfunktion ist, kann diese weggelassen werden.
-Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$ verändert:
+Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$, die sich aus den Funktionen $\Gamma_{R_{1-8}}$ zusammensetzt, verändert:
 \begin{align*}
 & \gamma_R \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right)
@@ -1990,9 +1990,9 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
 \begin{algorithm}[H]
 \LinesNumbered
 \DontPrintSemicolon
-\SetNlSty{textbf}{}{\ \ }
+\SetNlSty{textbf}{}{\ }
 \SetAlgoNlRelativeSize{0}
-\KwData{(Konfiguration $C(\sigma, x)$, Zug $Z$)}
+\KwData{Konfiguration $C(\sigma, x)$, Zug $Z$}
 \KwResult{\textit{kgV(count, ord)} gibt ist Ordnung eines Zuges}
 \BlankLine
  \textit{ord} $\leftarrow$ Ordnung der Permutation von $Z$\;
