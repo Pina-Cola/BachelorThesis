@@ -15,7 +15,7 @@
 
 %\usepackage{algorithm} 
 %\usepackage{algpseudocode} 
-\usepackage[german]{algorithm2e}
+\usepackage[german, ruled, vlined]{algorithm2e}
 
 \usepackage{amsthm}
 
@@ -1983,10 +1983,10 @@ Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel anwendet wird, kommen di
 Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird.
 
 
-\begin{minipage}[H]{0.2\textwidth}
+\begin{minipage}[H]{0.15\textwidth}
       $\ $
 \end{minipage}
-\begin{minipage}[H]{0.6\textwidth}
+\begin{minipage}[H]{0.65\textwidth}
 \begin{algorithm}[H]
 \LinesNumbered
 \DontPrintSemicolon
@@ -2005,9 +2005,8 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
    \textit{count} $\leftarrow$ \textit{count} + 1 \;
  }
  return \textit{kgV(count, ord)} \;
- 
- \vspace*{1em}
- \caption{Ordnung eines Zuges bestimmen}
+
+\caption{Ordnung eines Zuges bestimmen} 
 \end{algorithm}
 \end{minipage}
 \begin{minipage}[H]{0.2\textwidth}
