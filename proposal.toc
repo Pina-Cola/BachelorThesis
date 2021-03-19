@@ -15,27 +15,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Mathematische Grundlagen}{7}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Definition einer Gruppe}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Gruppe}{7}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Untergruppen}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Untergruppe}{9}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Erzeuger und zyklische Gruppe}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Erzeuger und zyklische Gruppe}{10}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Cayleygraph}{10}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5}Gruppenoperation}{11}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6}Kommutator}{11}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.6}Kommutator}{12}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.7}Äquivalenzrelation}{12}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.7}Äquivalenzrelation und -klasse}{12}{subsection.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.8}Äquivalenzklassen und Faktormenge}{13}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.8}Permutationen und Zykelschreibweise}{14}{subsection.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.9}Mächtigkeit einer Gruppe}{13}{subsection.3.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.10}Permutationen und Zykelschreibweise}{14}{subsection.3.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.11}Parität}{16}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.9}Parität}{16}{subsection.3.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Konfiguration des Würfels}{17}{section.4}%
 \defcounter {refsection}{0}\relax 
@@ -109,18 +105,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{62}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Minimale Gleichheit zweier Züge}{62}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{62}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Würfel als minimale Gruppe}{63}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Fazit}{63}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}Isomorphie}{63}{subsection.9.6}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{63}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.7}Vergleich der Gruppen}{63}{subsection.9.7}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{63}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{64}{section.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{64}{subsection.10.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{64}{subsection.10.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{65}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{64}{subsection.10.2}%

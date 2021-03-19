@@ -251,6 +251,8 @@ Diese Arbeit setzt sich aus 9 Kapiteln zusammen. Im Folgenden werden die Inhalte
 
 \item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird schrittweise erklärt und es gibt eine allgemeine Anleitung, mit der der \Ttwo Würfel immer gelöst werden kann.
 
+\item[\textbf{\ref{Kapitel_MinUntergruppe}}] Hier wird die Untergruppe des Würfels mit minimalen Grundzügen beschrieben.  
+
 \item[\textbf{\ref{Kapitel_Fazit}}] Am Schluss der Arbeit befindet sich die Zusammenfassung, das Ergebnis und der Ausblick.
 
 \end{itemize}
@@ -455,14 +457,16 @@ Des weiteren wird der Cayleygraph erklärt.
 %
 %
 %
-\subsection{Definition einer Gruppe}
+\subsection{Gruppe}
 \label{Abschnitt_Gruppe}
 
+\subsubsection*{Definition einer Gruppe}
 
 Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für die folgenden Kapitel. 
 
 \begin{definition}[Gruppe]
 Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ wird Gruppe genannt, wenn diese Bedingungen gelten: 
+\vspace*{-0.5em}
 \begin{itemize}
 \item Abgeschlossenheit: $\forall a,b \in G.(a \circ b) \in G $
 \item Assoziativität: $\forall a,b,c \in G.(a \circ b) \circ c = a \circ (b \circ c)$
@@ -475,6 +479,7 @@ Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\foo
 
 \begin{definition}[Kommutative Gruppe]
 Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
+\vspace*{-0.5em}
 \begin{itemize}
 \item Kommutativität: $\forall a,b \in G.(a \circ b) = (b \circ a) $
 \end{itemize}
@@ -515,6 +520,30 @@ $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist eine endliche Gruppe, da die vier
 
 \end{bsp}
 
+\subsubsection*{Mächtigkeit einer Gruppe}
+
+\label{Abschnitt_MächtigkeitGruppe}
+
+Die Mächtigkeit einer Gruppe $(G, \circ)$ wird auch Gruppenordnung genannt und sagt aus, wie viele Elemente die Menge $G$ der Gruppe enthält.
+
+\begin{definition}[Mächtigkeit einer Gruppe]
+Die Mächtigkeit einer Gruppe $(G, \circ)$ ist der Betrag der Menge $G$, also $|G|$. 
+\end{definition}
+
+Wenn $|G| < \infty$, wird von einer endlichen Gruppe gesprochen.
+
+\begin{bsp}[Mächtigkeit einer endlichen Gruppe]
+
+Die Mächtigkeit der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $6$. Die Menge $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ enthält die Elemente $\{0,1,2,3,4,5 \}$ und somit ist $| \mathbb{Z}_{\hspace*{-0.3em}\mod 6} | = 6$.
+
+\end{bsp}
+
+\begin{bsp}[Mächtigkeit einer unendlichen Gruppe]
+
+Die Mächtigkeit der Gruppe $(\mathbb{Z}, +)$ ist $\infty$, da $|\mathbb{Z}|$ (abzählbar) unendlich ist.
+
+\end{bsp}
+
 %
 %
 %
@@ -526,7 +555,7 @@ $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist eine endliche Gruppe, da die vier
 %
 %
 %
-\subsection{Untergruppen} 
+\subsection{Untergruppe} 
 \label{Abschnitt_Untergruppe}
 
 Im Folgenden werden Untergruppen definiert.
@@ -715,7 +744,11 @@ $[5,7]$ ist ein Kommutator der Gruppe $(\mathbb{Z}, +)$. $[5,7]$ ist das Gleiche
 %
 %
 
-\subsection{Äquivalenzrelation}
+\subsection{Äquivalenzrelation und -klasse}
+
+ 
+\subsubsection*{Äquivalenzrelation}
+
  \label{Abschnitt_Äquivalenrelationen}
 
 Mit Relationen lassen sich Beziehungen von Elementen einer Menge zueinander beschreiben.
@@ -760,21 +793,8 @@ Bei der Relation $\sim_+$ gilt die Reflexivität für alle Elemente, da die Glei
 
 
 \end{bsp}
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-\subsection{Äquivalenzklassen und Faktormenge} 
+
+\subsubsection*{Äquivalenzklasse und Faktormenge} 
 \label{Abschnitt_FaktormengenUndÄquivalenzklasse}
 
 Äquivalenzklassen sind Mengen, die äquivalente Elemente enthalten.
@@ -807,42 +827,8 @@ Die Faktormenge $A / \sim_+$ enthält dann die Äquivalenzklassen $[1]$, $[2]$, 
 
 \end{bsp}
 
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-\subsection{Mächtigkeit einer Gruppe} 
-\label{Abschnitt_MächtigkeitGruppe}
 
-Die Mächtigkeit einer Gruppe $(G, \circ)$ wird auch Gruppenordnung genannt und sagt aus, wie viele Elemente die Menge $G$ der Gruppe enthält.
 
-\begin{definition}[Mächtigkeit einer Gruppe]
-Die Mächtigkeit einer Gruppe $(G, \circ)$ ist der Betrag der Menge $G$, also $|G|$. 
-\end{definition}
-
-Wenn $|G| < \infty$, wird von einer endlichen Gruppe gesprochen.
-
-\begin{bsp}[Mächtigkeit einer endlichen Gruppe]
-
-Die Mächtigkeit der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $6$. Die Menge $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ enthält die Elemente $\{0,1,2,3,4,5 \}$ und somit ist $| \mathbb{Z}_{\hspace*{-0.3em}\mod 6} | = 6$.
-
-\end{bsp}
-
-\begin{bsp}[Mächtigkeit einer unendlichen Gruppe]
-
-Die Mächtigkeit der Gruppe $(\mathbb{Z}, +)$ ist $\infty$, da $|\mathbb{Z}|$ (abzählbar) unendlich ist.
-
-\end{bsp}
 %
 %
 %
@@ -2972,7 +2958,7 @@ Nach Wahl der passenden Algorithmen sollten beide Ebenen gelöst sein. Eventuell
 \newpage
 
 \section{Minimale Gruppe}
-\label{Kapitel_Minimale}
+\label{Kapitel_MinUntergruppe}
 
 In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $(\Gtwo, \circ)$ ist zwar eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. So eine minimale Abbildung soll in diesem Kapitel definiert werden.
 
@@ -3071,87 +3057,10 @@ Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Realisierung der 
 
 Nachdem in Abschnitt \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine minimal durch Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine definiert. Das erfolg (wie bei der Gruppe $(\Gtwo, \circ)$) über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition findet sich in Kapitel \ref{Kapitel_KonfigurationDesWürfels} und wird für die minimale Abbildung genau so verwendet.
 
-Da der Stein an der Position \textit{dlb} immer als fest angenommenw wird, ist der fünfte Vektoreintrag immer 0. 
-
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-\subsection{Minimale Gleichheit zweier Züge}
-
-Die Gleichheit von Zügen wird auch hier durch Äquivalenklassen realisiert. Dafür wird eine Äquivalenzrelation definiert, die die Gleichheit zweier Züge darstellt. Die Rotation muss bei der minimalen Abbildung nicht berücksichtig werden. Die Äquivalenrelation wird folgendermaßen definiert:
-
-\begin{tabular}{l l}
-$Z_1 \sim_{\textit{min}} Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben die gleiche Würfelkonfiguration}\\
-\end{tabular} 
+Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist der fünfte Vektoreintrag immer 0. 
 
 
-Die Definition der Äquivalenzrelationen und -klassen erfolgt analog zu der Definition der Äquivalenklassen von $(\Gtwo, \circ)$ in Kapitel \ref{Kapitel_WürfelAlsGruppe}. 
 
-
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-\subsection{Würfel als minimale Gruppe}
-
-Die minimale Abbildung als Gruppe des \Ttwo Zauberwürfels wird nun $(G_{min}, \circ)$
-genannt. Der Beweis der Gruppenkriterien ist der gleiche wie bei der Gruppe $(\Gtwo, \circ)$, da die Trägermengen durch die Äquivalenzklassen der Gleichheit zweier Züge gleich sind.
-
-
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-
-\subsection{Isomorphie}
-
-Jede valide Konfiguration muss durch einen der Züge aus $\{ U, R, F\}$ erreicht worden sein und alle Kombinationen der Züge aus $\{ U, R, F\}$ führen zu einer validen Würfelkonfiguration.
 
 %
 %
