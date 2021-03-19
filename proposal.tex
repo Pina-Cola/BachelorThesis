@@ -965,36 +965,36 @@ Sei $M=\{-2, -1, 0, 1, 2\}$. Die Teilmenge $\{-2, 0, 2\}$ enthält nur gerade El
 %
 %
 
-\subsection*{Gruppenhomomorphie und -isomorphie} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppenhomomorphie und -isomorphie}
-\label{Abschnitt_GrundlagenHomoIso}
+%\subsection*{Gruppenhomomorphie und -isomorphie} \addcontentsline{toc}{subsection}{\protect\numberline{}Gruppenhomomorphie und -isomorphie}
+%\label{Abschnitt_GrundlagenHomoIso}
 
-Homomorphismen sind Abbildungen, die eine mathematische Struktur auf eine andere abbilden.
+%Homomorphismen sind Abbildungen, die eine mathematische Struktur auf eine andere abbilden.
 
-\begin{definition}[Gruppenhomomorphismus]
+%\begin{definition}[Gruppenhomomorphismus]
 
-Seien $(G, \circ)$ und $(H, \ast)$ Gruppen. Eine Abbildung $f: G \rightarrow H$ heißt Gruppenhomomorphismus, wenn für alle $g_1, g_2 \in G$ gilt: $f(g_1 \circ g_2) = f(g_1) \ast f(g_2)$.
+%Seien $(G, \circ)$ und $(H, \ast)$ Gruppen. Eine Abbildung $f: G \rightarrow H$ heißt Gruppenhomomorphismus, wenn für alle $g_1, g_2 \in G$ gilt: $f(g_1 \circ g_2) = f(g_1) \ast f(g_2)$.
 
-\end{definition}
+%\end{definition}
 
-\begin{definition}[Gruppenisomorphismus]
+%\begin{definition}[Gruppenisomorphismus]
 
-Eine Abbildung $f$ ist ein Gruppenisomorphismus, wenn $f$ ein Homomorphismus ist und bijektiv ist.
+%Eine Abbildung $f$ ist ein Gruppenisomorphismus, wenn $f$ ein Homomorphismus ist und bijektiv ist.
 
-\end{definition}
+%\end{definition}
 
-\begin{bsp}[Gruppenisomorphismus]
+%\begin{bsp}[Gruppenisomorphismus]
 
-Sei $(G, \circ)$ eine Gruppe und $id: G \rightarrow G$ die Identitätsfunktion $id(x)=x$. 
-Seien $g_1, g_2 \in G$:
-\begin{align*}
-id(g_1 \circ g_2) & = id(g_1) \circ id(g_2) \\
-\Leftrightarrow g_1 \circ g_2 & = g_1 \circ g_2
-\end{align*}
+%Sei $(G, \circ)$ eine Gruppe und $id: G \rightarrow G$ die Identitätsfunktion $id(x)=x$. 
+%Seien $g_1, g_2 \in G$:
+%\begin{align*}
+%id(g_1 \circ g_2) & = id(g_1) \circ id(g_2) \\
+%\Leftrightarrow g_1 \circ g_2 & = g_1 \circ g_2
+%\end{align*}
 
-Die Abbildung $id$ ist somit ein Gruppenhomomorphismus und die Identitätsfunktion ist bijektiv. Deshalb ist $id$ ein Gruppenisomorphismus. Somit ist $(G,\circ)$ ist zu sich selbst isomorph. 
+%Die Abbildung $id$ ist somit ein Gruppenhomomorphismus und die Identitätsfunktion ist bijektiv. Deshalb ist $id$ ein Gruppenisomorphismus. Somit ist $(G,\circ)$ ist zu sich selbst isomorph. 
 
 
-\end{bsp}
+%\end{bsp}
 
 %
 %
@@ -1277,7 +1277,7 @@ Analog dazu gibt es für alle Grundzüge Funktionen, die die Veränderung der St
 & =  \left( x_1, x_2, h(x_7), g(x_3), x_5, x_6, g(x_8), h(x_4) \right) \\
 \\
 & \gamma_B \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
-& =  \left( g(x_2), h(x_6), x_3, x_4), h(x_1), g(x_5), x_7, x_8 \right)
+& =  \left( g(x_2), h(x_6), x_3, x_4, h(x_1), g(x_5), x_7, x_8 \right)
 \end{align*}
 
 Das oben genannte Beispiel des Zuges $R$ kann nun mithilfe von $\gamma_R$ berechnet werden. Dafür befindet sich der Würfel in der Startkonfiguration ($x = (0, 0, 0, 0, 0, 0, 0, 0)$). Wenn der Zug $R$ ausgeführt wird, wird $\gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) )$ berechnet:
@@ -1983,7 +1983,10 @@ Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel anwendet wird, kommen di
 Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird.
 
 
-\hspace*{3cm}
+\begin{minipage}[H]{0.2\textwidth}
+      $\ $
+\end{minipage}
+\begin{minipage}[H]{0.6\textwidth}
 \begin{algorithm}[H]
 \LinesNumbered
 \DontPrintSemicolon
@@ -2002,9 +2005,14 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
    \textit{count} $\leftarrow$ \textit{count} + 1 \;
  }
  return \textit{kgV(count, ord)} \;
-% \caption{Ordnung eines Zuges bestimmen}
-
+ 
+ \vspace*{1em}
+ \caption{Ordnung eines Zuges bestimmen}
 \end{algorithm}
+\end{minipage}
+\begin{minipage}[H]{0.2\textwidth}
+      $\ $
+\end{minipage}
 
 \vspace*{1em}
 

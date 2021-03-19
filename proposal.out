@@ -16,48 +16,47 @@
 \BOOKMARK [2][-]{bsp.10.1}{M\344chtigkeit einer Gruppe}{section.3}% 16
 \BOOKMARK [2][-]{bsp.11.2}{Permutationen und Zykelschreibweise}{section.3}% 17
 \BOOKMARK [2][-]{bsp.14.2}{Parit\344t}{section.3}% 18
-\BOOKMARK [2][-]{bsp.15.1}{Gruppenhomomorphie und -isomorphie}{section.3}% 19
-\BOOKMARK [1][-]{section.4}{Konfiguration des W\374rfels}{}% 20
-\BOOKMARK [2][-]{section*.12}{Positionen der Steine im W\374rfel}{section.4}% 21
-\BOOKMARK [2][-]{figure.caption.15}{Ausrichtung der Steine}{section.4}% 22
-\BOOKMARK [2][-]{figure.caption.17}{Z\374ge ausf\374hren}{section.4}% 23
-\BOOKMARK [1][-]{section.5}{W\374rfel als Gruppe}{}% 24
-\BOOKMARK [2][-]{section*.18}{Gleichheit von Z\374gen}{section.5}% 25
-\BOOKMARK [2][-]{section*.18}{Rotation des W\374rfels}{section.5}% 26
-\BOOKMARK [2][-]{figure.caption.20}{\304quivalenzrelationen der Rotationen}{section.5}% 27
-\BOOKMARK [2][-]{figure.caption.21}{\304quivalenzklassen}{section.5}% 28
-\BOOKMARK [2][-]{figure.caption.21}{222-Zauberw\374fel als Gruppe}{section.5}% 29
-\BOOKMARK [2][-]{figure.caption.22}{Z\374ge als Gruppenoperation}{section.5}% 30
-\BOOKMARK [2][-]{figure.caption.22}{Ordnung der Permutationen}{section.5}% 31
-\BOOKMARK [2][-]{figure.caption.23}{Zykelstruktur}{section.5}% 32
-\BOOKMARK [2][-]{figure.caption.25}{Ordnung der Z\374ge}{section.5}% 33
-\BOOKMARK [1][-]{section.6}{Untergruppen von G222}{}% 34
-\BOOKMARK [2][-]{section*.26}{Untergruppen Beispiele}{section.6}% 35
-\BOOKMARK [2][-]{section*.26}{Erzeuger}{section.6}% 36
-\BOOKMARK [2][-]{section*.26}{Durch FF und RR erzeugte Untergruppe}{section.6}% 37
-\BOOKMARK [2][-]{section*.26}{Cayleygraph}{section.6}% 38
-\BOOKMARK [1][-]{section.7}{Valide Konfigurationen des W\374rfels}{}% 39
-\BOOKMARK [2][-]{section*.29}{Anzahl der validen W\374rfelkonfigurationen}{section.7}% 40
-\BOOKMARK [2][-]{section*.29}{M\344chtigkeit von G222}{section.7}% 41
-\BOOKMARK [2][-]{section*.29}{Ausrichtung der Steine \(modulo 3\)}{section.7}% 42
-\BOOKMARK [1][-]{section.8}{L\366sung des W\374rfels}{}% 43
-\BOOKMARK [2][-]{section*.30}{Parit\344t der Zykel}{section.8}% 44
-\BOOKMARK [2][-]{section*.30}{Kommutatoren}{section.8}% 45
-\BOOKMARK [2][-]{section*.30}{L\366sungsans\344tze}{section.8}% 46
-\BOOKMARK [2][-]{figure.caption.31}{L\366sung des W\374rfels anhand eines Beispiels}{section.8}% 47
-\BOOKMARK [2][-]{figure.caption.37}{Muster}{section.8}% 48
-\BOOKMARK [2][-]{figure.caption.38}{Schraubendrehermethode}{section.8}% 49
-\BOOKMARK [2][-]{figure.caption.38}{Algorithmen f\374r die erste Ebene}{section.8}% 50
-\BOOKMARK [2][-]{figure.caption.41}{Algorithmen f\374r die zweite Ebene}{section.8}% 51
-\BOOKMARK [1][-]{section.9}{Minimale Gruppe}{}% 52
-\BOOKMARK [2][-]{section*.43}{Minimale Permutationen}{section.9}% 53
-\BOOKMARK [2][-]{section*.43}{Minimale Rotation des W\374rfels}{section.9}% 54
-\BOOKMARK [2][-]{figure.caption.44}{Minimale Ausrichtung der Steine bei minimaler Abbildung}{section.9}% 55
-\BOOKMARK [2][-]{figure.caption.44}{Minimale Gleichheit zweier Z\374ge}{section.9}% 56
-\BOOKMARK [2][-]{figure.caption.44}{W\374rfel als minimale Gruppe}{section.9}% 57
-\BOOKMARK [2][-]{figure.caption.44}{Isomorphie}{section.9}% 58
-\BOOKMARK [2][-]{figure.caption.44}{Vergleich der Gruppen}{section.9}% 59
-\BOOKMARK [1][-]{section.10}{Fazit}{}% 60
-\BOOKMARK [2][-]{section*.45}{Zusammenfassung und Ergebnis}{section.10}% 61
-\BOOKMARK [2][-]{section*.45}{Ausblick}{section.10}% 62
-\BOOKMARK [1][-]{section*.45}{Abbildungsverzeichnis}{}% 63
+\BOOKMARK [1][-]{section.4}{Konfiguration des W\374rfels}{}% 19
+\BOOKMARK [2][-]{section*.12}{Positionen der Steine im W\374rfel}{section.4}% 20
+\BOOKMARK [2][-]{figure.caption.15}{Ausrichtung der Steine}{section.4}% 21
+\BOOKMARK [2][-]{figure.caption.17}{Z\374ge ausf\374hren}{section.4}% 22
+\BOOKMARK [1][-]{section.5}{W\374rfel als Gruppe}{}% 23
+\BOOKMARK [2][-]{section*.18}{Gleichheit von Z\374gen}{section.5}% 24
+\BOOKMARK [2][-]{section*.18}{Rotation des W\374rfels}{section.5}% 25
+\BOOKMARK [2][-]{figure.caption.20}{\304quivalenzrelationen der Rotationen}{section.5}% 26
+\BOOKMARK [2][-]{figure.caption.21}{\304quivalenzklassen}{section.5}% 27
+\BOOKMARK [2][-]{figure.caption.21}{222-Zauberw\374fel als Gruppe}{section.5}% 28
+\BOOKMARK [2][-]{figure.caption.22}{Z\374ge als Gruppenoperation}{section.5}% 29
+\BOOKMARK [2][-]{figure.caption.22}{Ordnung der Permutationen}{section.5}% 30
+\BOOKMARK [2][-]{figure.caption.23}{Zykelstruktur}{section.5}% 31
+\BOOKMARK [2][-]{figure.caption.25}{Ordnung der Z\374ge}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{Untergruppen von G222}{}% 33
+\BOOKMARK [2][-]{section*.26}{Untergruppen Beispiele}{section.6}% 34
+\BOOKMARK [2][-]{section*.26}{Erzeuger}{section.6}% 35
+\BOOKMARK [2][-]{section*.26}{Durch FF und RR erzeugte Untergruppe}{section.6}% 36
+\BOOKMARK [2][-]{section*.26}{Cayleygraph}{section.6}% 37
+\BOOKMARK [1][-]{section.7}{Valide Konfigurationen des W\374rfels}{}% 38
+\BOOKMARK [2][-]{section*.29}{Anzahl der validen W\374rfelkonfigurationen}{section.7}% 39
+\BOOKMARK [2][-]{section*.29}{M\344chtigkeit von G222}{section.7}% 40
+\BOOKMARK [2][-]{section*.29}{Ausrichtung der Steine \(modulo 3\)}{section.7}% 41
+\BOOKMARK [1][-]{section.8}{L\366sung des W\374rfels}{}% 42
+\BOOKMARK [2][-]{section*.30}{Parit\344t der Zykel}{section.8}% 43
+\BOOKMARK [2][-]{section*.30}{Kommutatoren}{section.8}% 44
+\BOOKMARK [2][-]{section*.30}{L\366sungsans\344tze}{section.8}% 45
+\BOOKMARK [2][-]{figure.caption.31}{L\366sung des W\374rfels anhand eines Beispiels}{section.8}% 46
+\BOOKMARK [2][-]{figure.caption.37}{Muster}{section.8}% 47
+\BOOKMARK [2][-]{figure.caption.38}{Schraubendrehermethode}{section.8}% 48
+\BOOKMARK [2][-]{figure.caption.38}{Algorithmen f\374r die erste Ebene}{section.8}% 49
+\BOOKMARK [2][-]{figure.caption.41}{Algorithmen f\374r die zweite Ebene}{section.8}% 50
+\BOOKMARK [1][-]{section.9}{Minimale Gruppe}{}% 51
+\BOOKMARK [2][-]{section*.43}{Minimale Permutationen}{section.9}% 52
+\BOOKMARK [2][-]{section*.43}{Minimale Rotation des W\374rfels}{section.9}% 53
+\BOOKMARK [2][-]{figure.caption.44}{Minimale Ausrichtung der Steine bei minimaler Abbildung}{section.9}% 54
+\BOOKMARK [2][-]{figure.caption.44}{Minimale Gleichheit zweier Z\374ge}{section.9}% 55
+\BOOKMARK [2][-]{figure.caption.44}{W\374rfel als minimale Gruppe}{section.9}% 56
+\BOOKMARK [2][-]{figure.caption.44}{Isomorphie}{section.9}% 57
+\BOOKMARK [2][-]{figure.caption.44}{Vergleich der Gruppen}{section.9}% 58
+\BOOKMARK [1][-]{section.10}{Fazit}{}% 59
+\BOOKMARK [2][-]{section*.45}{Zusammenfassung und Ergebnis}{section.10}% 60
+\BOOKMARK [2][-]{section*.45}{Ausblick}{section.10}% 61
+\BOOKMARK [1][-]{section*.45}{Abbildungsverzeichnis}{}% 62
