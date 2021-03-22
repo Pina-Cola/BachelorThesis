@@ -1229,7 +1229,7 @@ Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit
 Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ funktionieren gleich, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind analog. Da diese Funktionen gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
 \\
 
-\begin{minipage}{0.33\textwidth}
+\begin{minipage}{0.35\textwidth}
 \centering
 $g(x)= \begin{cases}
 2 & \ \text{falls } x = 0 \\ 
@@ -1237,7 +1237,7 @@ $g(x)= \begin{cases}
 1 & \ \text{falls } x = 2 
 \end{cases}$
 \end{minipage}
-\begin{minipage}{0.33\textwidth}
+\begin{minipage}{0.35\textwidth}
 \centering
 $h(x)= \begin{cases}
 1 & \ \text{falls } x = 0 \\ 
@@ -1245,7 +1245,7 @@ $h(x)= \begin{cases}
 0 & \ \text{falls } x = 2 
 \end{cases}$
 \end{minipage}
-\begin{minipage}{0.33\textwidth}
+\begin{minipage}{0.3\textwidth}
 \centering
 $i(x) = x$
 \end{minipage}
@@ -2156,7 +2156,7 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen.
 
 
-Ein Beispiel eines Erzeugers einer Untergruppe $F$ von $(\Gtwo, \circ)$ wird von $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die $F$ enthält somit nur die Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. $FFFF$ ist das gleiche wie das neutrale Element $N$ und der Würfel bleibt in der Ausgangsposition.
+Ein Beispiel eines Erzeugers einer Untergruppe $(F, \circ)$ von $(\Gtwo, \circ)$ wird von $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die Untergruppe $(F, \circ)$ enthält somit nur die Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. $FFFF$ ist das gleiche wie das neutrale Element $N$ und der Würfel bleibt in der Ausgangsposition.
 
 
 Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält daher nur $FF$ und $FFFF$.
@@ -2164,8 +2164,8 @@ Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei k
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
 
-Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $F$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
-Die Untergruppe $F$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
+Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(F, \circ)$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
+$(F, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
 Das gilt für jeden Erzeuger, der nur aus einer einzelnen Ebenendrehung besteht.
 
 
@@ -2399,6 +2399,8 @@ Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist also die Anzahl der validen Wür
 %
 %
 \subsection{Ausrichtung der Steine (modulo 3)}
+
+\label{Abschnitt_Modulo3}
 
 Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration \begin{displaymath}
 \left( \sum_{i= 1}^{8} \ x_i \right) \hspace*{-0.7em} \mod 3 = 0 
@@ -2999,6 +3001,7 @@ Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser
 \sigma_F & =\ ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ ) \\
 \end{align*}
 
+Die Grundzüge $U$, $R$, und $F$ sind somit die Erzeuger der Untergruppe $(G_{min}, \circ)$.
 Der Stein \textit{dlb} wird durch keine dieser Permutationen bewegt. Darauf wird bei der Definition der minimalen Rotation des Würfels (Abschnitt \ref{Abschnitt_minimaleRotation}) genauer eingegangen.
 
 
@@ -3087,9 +3090,8 @@ Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist de
 Die Gruppe $(\Gtwo, \circ)$ und ihre Untergruppe $(G_{min}, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
 Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt berechnet. 
 
-Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$.
+Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $mod 3$ gerechnet immer null ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer null ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$.
 
-% M7ächtgkeit von $(G_{min}, \circ)$: $7! \cdot 3^7 = 5040 \cdot 2187 = 11 \ 022 \ 480$ als theoretische Obergrenze. (Mechanismusbedingt $\frac{1}{3}$ nur valide.)
 
 %
 %
