@@ -512,7 +512,7 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 
 Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}_{\hspace*{-0.3em}\mod n}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind dann alle ganzen Zahlen modulo 6, also $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}=\{0,1,2,3,4,5\}$
 \begin{itemize}
-\item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
+\item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von$\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
 \item Das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $0$.
 \item Das Inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es demnach 5, für 2 ist es 4 und für 3 ist das neutrale Element die 3.
@@ -1038,14 +1038,14 @@ Sei $M=\{-2, -1, 0, 1, 2\}$. Die Teilmenge $\{-2, 0, 2\}$ enthält nur gerade El
 
 \label{Kapitel_KonfigurationDesWürfels}
 
-Um mit dem Würfel zu arbeiten, muss festgestellt werden, in welcher Position er sich befindet.
-Deshalb wird die Konfiguration des Würfels definiert, bevor der Würfel als Gruppe dargestellt wird. Eine Würfelkonfiguration setzt sich aus zwei Parametern zusammen: 
+Um mit dem Würfel zu arbeiten, muss festgestellt werden können, in welcher Position er sich befindet.
+Deshalb wird in diesem Kapitel die Konfiguration des Würfels definiert, bevor der Würfel in Kapitel \ref{Kapitel_WürfelAlsGruppe} als Gruppe dargestellt wird. Eine Würfelkonfiguration setzt sich aus zwei Parametern zusammen: 
 \begin{itemize}
 \item Position der Ecksteine (angegeben als $\sigma$)
 \item Ausrichtung der Ecksteine (angegeben als $x$)
 \end{itemize}
 Die Konfiguration des Würfels kann als 2-Tupel geschrieben werden: $(\sigma, x)$.
-In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtung der Ecktsteine als Vektor $x$ erklärt. 
+In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtung der Ecktsteine als Vektor $x$ erklärt. Außerdem wird die Veränderung der Würfelkonfiguration an einem Beispielzug schrittweise erklärt.
 
 %
 %
@@ -1076,9 +1076,9 @@ In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtu
 Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) stellt Übergänge der Würfelsteine als Funktion dar. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
 
 Die Einteilung der Würfelpositionen sind in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} zu sehen. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die \textit{up, down, right, left, front und back} beschreiben.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.15]{caged_positions.png} \\
+\includegraphics[scale=0.14]{caged_positions.png} \\
 \caption[Namen der Steinpositionen im Würfel]{Namen der Steinpositionen im Würfel}
 \label{Abbildung_SteinpositionNamen}
 \end{figure}
