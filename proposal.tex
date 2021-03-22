@@ -232,7 +232,7 @@ Wer die Lösungsalgorithmen des \Ttwo Zauberwürfels selber herleiten möchte, s
 %
 \subsection{Struktur} 
 
-Diese Arbeit setzt sich aus 9 Kapiteln zusammen. Im Folgenden werden die Inhalte und Themen dieser Kapitel aufgelistet.
+Diese Arbeit setzt sich aus 10 Kapiteln zusammen. Im Folgenden werden die Inhalte und Themen dieser Kapitel aufgelistet.
 
 \begin{itemize}
 \item[\textbf{\ref{Kapitel_Einleitung}}] In der Einleitung wird eine kurze Übersicht der Geschichte des Würfels gegeben. Außerdem befinden sich hier die Motivation und die Struktur.
@@ -418,7 +418,7 @@ Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf di
 
 Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
-Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer Drehung der unteren Ebene im Uhrziegersinn ($D$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$.
+Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer Drehung der unteren Ebene im Uhrziegersinn ($D$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$. Die minimale Abbildung des Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} behandelt.
 
 
 
@@ -716,7 +716,7 @@ Demnach operiert $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit $-$ von rechts a
 
 \subsection{Kommutator} 
  \label{Abschnitt_Kommutator}
-Die Komplexität eines Kommutators sagt etwas darüber aus, wie sehr zwei Elemente einer Gruppe das Kommutativgesetz verletzen. Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe \cite{TD}. Man sagt dann, dass die beiden Elemente kommutieren. 
+Die Komplexität eines Kommutators sagt etwas darüber aus, wie stark zwei Elemente einer Gruppe das Kommutativgesetz verletzen. Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe \cite{TD}. Man sagt dann, dass die beiden Elemente kommutieren. 
 
 
 \begin{definition}[Kommutator]
@@ -887,7 +887,7 @@ Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wied
 \caption{Zykel $\pi = (1 \ 5 \ 2)\ (3 \ 4)$}
 \label{Abbildung_ZykelVonf}
 \end{figure}
-Bei der Zykelschreibweise ist die Reihenfolge der Elemente wichtig. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. 
+Bei der Zykelschreibweise ist die Reihenfolge der Elemente ausschlaggebend. Beispielsweise ist $(1 \ 2 \ 3)$ nicht das gleiche wie $(1 \ 3 \ 2)$. 
 
 Die Identitätspermutation wird als $\pi = 1$ geschrieben. Dabei werden alle Elemente auf sich selbst abgebildet und die Zykel bleiben somit unverändert.
 \end{bsp}
@@ -1682,7 +1682,7 @@ Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Gro
 Die Grundlagen und Definition der Gruppe wurden in Abschnitt \ref{Abschnitt_Gruppe} erklärt.
 
 
-Die Faktormenge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z.B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
+Die Faktormenge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z. B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
 
 
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.) $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
@@ -1754,7 +1754,7 @@ Somit gilt dann $Z \circ Z^{-1} = Z^{-1} \circ Z = N$.
 Somit ist $(\Gtwo, \circ)$ eine Gruppe. 
 
 
-$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann einfach händisch an einem Würfel ausprobiert werden.
+$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann händisch an einem Würfel ausprobiert werden.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{RF.png}
@@ -1828,7 +1828,7 @@ Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgan
 Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4) oder ${(RRFF)^3 = N}$ (Ordnung 3).
 
 
-Die genannten Beispiele können an einem \Ttwo Würfel einfach ausprobiert werden.
+Die genannten Beispiele können an einem \Ttwo Würfel händisch ausprobiert werden.
 Dabei muss beachtet werden, dass sich die Ordnung der Permutationen und der Ordnung der Züge unterscheiden. Die Ordnung der Permutationen ist die Anzahl der Durchführungen, die benötigt wird, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Wenn die Würfelkonfiguration beachtet wird, handelt es sich um die Ordnung der Züge.
 
 Der Zug $LF$ beispielsweise hat die Ordnung $15$, die Permutation der Steine hat aber die Ordnung $5$. Nach $5$ Wiederholungen von $LF$ befinden sich alle Steine wieder an ihrer Ausgangsposition (links in Abbildung \ref{Abbildung_LF_5_15} von der Startkonfiguration ausgehend). Nach $15$ Wiederholungen befindet sich der Würfel wieder in der gleichen Konfiguration, wie vor dem Zug (rechts in Abbildung \ref{Abbildung_LF_5_15}).
@@ -2466,7 +2466,7 @@ Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so d
 
 \label{Kapitel_Lösung}
 
-Die übliche, händische Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern den Würfel dann sehr spezifisch. 
+Die übliche, händische Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern die Würfelkonfiguration Würfel dann spezifisch. 
 Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 In diesem Kapitel wird die Parität der Züge beschrieben und Kommutatoren erklärt.
@@ -2510,7 +2510,7 @@ Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel defin
 \sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) \\
 \end{align*}
 Jeder Grundzug ist demnach als ein $4$-Zykel definiert. Der $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
-Die Parität einer einzelnen Ebenendrehung ist demnach ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z.B. $LF$) ist somit gerade.
+Die Parität einer einzelnen Ebenendrehung ist demnach ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
 
 % to do prüfen! 
 
@@ -2711,7 +2711,7 @@ Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt d
 
 
 Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\ 
-Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn} Metrik genannt. Es gibt noch andere Metriken, wie z.B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden \cite{TR}.
+Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn} Metrik genannt. Es gibt noch andere Metriken, wie z. B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden \cite{TR}.
 Wenn in der \textit{Quarter-Turn} Metrik gerechnet wird, ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}.
 
 
@@ -2789,12 +2789,12 @@ Diese Muster sind in den meisten Fällen zwar keine üblichen Lösungsalgorithme
 %
 \subsection{Schraubendrehermethode}
 
-Die Methode, die oft als einfachste Methode zum Lösen von Zauberwürfeln beschrieben wird, ist die Schraubendrehermethode.
+Die Methode, die oft als simpelste Methode zum Lösen von Zauberwürfeln beschrieben wird, ist die Schraubendrehermethode.
 Bei den üblichen \Ttwo Würfel ist auf einer oder mehreren Seiten in der Mitte zwischen den Steinen eine Schraube zu sehen.
 Um den Würfel auseinander zu bauen, muss diese Schrauben gelockert werden. Daraufhin kann die Ebene ohne Probleme abgenommen werden. 
 Dann werden die Steine neu arrangiert und der Würfel kann in der gelösten Konfiguration wieder zusammen gebaut werden.
 
-Ob das wirklich die einfachste Methode ist, liegt wohl im Auge des Betrachters und unter Berücksichtigung der Tatsache, dass der Weltrekord des \Ttwo Würfels mit der Methode des algorithmischen, händischen Lösens bei $0,49$ Sekunden liegt \cite{rekord}, ist die Schraubendrehermethode wohl kaum die schnellste Methode.
+Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters und unter Berücksichtigung der Tatsache, dass der Weltrekord des \Ttwo Würfels mit der Methode des algorithmischen, händischen Lösens bei $0,49$ Sekunden liegt \cite{rekord}, ist die Schraubendrehermethode wohl kaum die schnellste Methode.
 
 %
 %
@@ -2845,7 +2845,7 @@ Dann wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition befindet
 \label{Abbildung_ZweiterEckstein}
 \end{figure}
 
-Dort sind auch orange und grüne Farbflächen abgebildet. Das gilt analog für die anderen benachbarten Farbflächen. Wichtig ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
+Dort sind auch orange und grüne Farbflächen abgebildet. Das gilt analog für die anderen benachbarten Farbflächen. Zu beachten ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
 
 Sollte die weiße Farbfläche der Ecke unten am Würfel sein, so kann sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist auch in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Von dort wird er mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
 
@@ -3171,7 +3171,7 @@ Die Gruppe des \Ttwo Würfels ist nützlich für die Veranschaulichung der Grupp
 \subsection{Ausblick}
 
 Es wurden in dieser Arbeit Erzeuger und deren Cayleygraphen der Gruppe $(\Gtwo, \circ)$ beschrieben. Die Generierung des Cayleygraphens der kompletten Gruppe wäre eine interessante Idee für eine andere Arbeit. Außerdem könnte eine \textit{GUI} zum Lösen des \Ttwo Würfels aufschlussreich sein, um effiziente Algorithmen zu finden und die Lösungswege des Würfels zu optimieren.
-Ein weiterer sehr interessanter Aspekt ist das Finden eines Algorithmus, der die Gleichheit zweier Züge berechnet. Das kann mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden und wäre nötig, um einen korrekten Cayleygraphen der Gruppe zu generieren.
+Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Gleichheit zweier Züge berechnet. Das kann mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden und wäre nötig, um einen korrekten Cayleygraphen der Gruppe zu generieren.
 
 %
 %
