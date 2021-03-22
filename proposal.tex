@@ -1069,6 +1069,8 @@ In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtu
 
 \subsection{Positionen der Steine im Würfel} 
 
+\label{Abschnitt_PositionenDerSteineImWürfel}
+
 Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) stellt Übergänge der Würfelsteine als Funktion dar. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
 
 Die Einteilung der Würfelpositionen sind in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} zu sehen. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die \textit{up, down, right, left, front und back} beschreiben.
@@ -2294,7 +2296,7 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ 
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel wird Anzahl der validen Würfelkonfiguratione berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. Es wird auch die theoretische Obergrenze der möglichen Würfelkonfigurationen berechnet. \\
+In diesem Kapitel wird Anzahl der validen Würfelkonfiguratione berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
 Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
@@ -2321,13 +2323,13 @@ Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^
 \label{Abschnitt_AnzahlKonfigurationen}
 
 Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. \\
-Dazu wird zuerst die Anzahl der theoretisch möglichen Würfelkonfigurationen berechnet:
+Dazu wird zuerst die Anzahl der möglichen Steinpositionen berechnet:
 Die Ecksteine können sich in jeder der acht Ecken befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\
-Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen theoretisch 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7 = 2187$ Wege, wie die Ecksteine ausgerichtet sein können.
+Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7 = 2187$ Wege, wie die Ecksteine ausgerichtet sein können.
 Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24, denn es gibt $6$ Seiten, die jeweils $4$ Ausrichtungen haben können. Das sind dann $6 \cdot 4 = 24$.
 Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.
 
-Die theoretische Obergrenze der Würfelkonfigurationen liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Davon sind aber nicht alle Rotationen durch Ebenedrehungen erreichbar und die Rotationen des Würfels wurden auch nicht berücksichtigt. Unter der Berücksichtigung der Rotationen liegt die theoretischeObergrenze bei $11 \ 022 \ 480$ Möglichkeiten.
+Die Anzahl der Würfelkonfigurationen ohne Berücksichtigung der Rotationen des Würfels liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Unter der Berücksichtigung der Rotationen liegt die Anzahl bei $3\, 674\, 160$ Möglichkeiten.
 
 
 %
@@ -2960,7 +2962,7 @@ Nach Wahl der passenden Algorithmen sollten beide Ebenen gelöst sein. Eventuell
 \section{Minimale Gruppe}
 \label{Kapitel_MinUntergruppe}
 
-In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $(\Gtwo, \circ)$ ist zwar eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. So eine minimale Abbildung soll in diesem Kapitel definiert werden.
+In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $(\Gtwo, \circ)$ ist zwar eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. So eine minimale Abbildung soll in diesem Kapitel definiert werden. Diese minimale Abbildung ist eine Untergruppe von $(\Gtwo, \circ)$.
 
 %
 %
@@ -2987,9 +2989,9 @@ In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realis
 
 \label{Abschnitt_MinimalePermutationen}
 
-Wie bereits beschrieben, sind die Züge $U$, $D$, $R$, $L$, $F$ und $B$ des \Ttwo Würfels nicht minimal. Der Zug $U$ und der Zug $D$ beispielsweise sind äquivalent, aber mit einer Rotation des kompletten Würfels. Deshalb werden hier die minmalen Züge des Würfels definiert, so dass kein Zug durch einen anderen gebildet werden kann.
+Wie bereits beschrieben, sind die Züge $U$, $D$, $R$, $L$, $F$ und $B$ des \Ttwo Würfels nicht minimal. Der Zug $U$ und der Zug $D$ beispielsweise sind äquivalent, aber mit einer Rotation des kompletten Würfels. Die Untergruppe der minimalen Abbildung des \Ttwo Würfels wird $(G_{min}, \circ)$ genannt. Die Menge $G_{min}$ enthält die Äquivalenzklassen der minmalen Züge des Würfels.
 
-Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser drei Grundzüge lassen sich auch als Permutation $\sigma$ schreiben. Dabei handelt es sich um die gleichen Permutationsfunktionen wie in Kapitel \ref{Kapitel_KonfigurationDesWürfels}. Es gibt aber nur drei statt sechs Funktionen.
+Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser drei Grundzüge sind die Permutationen $\sigma$. Dabei handelt es sich um die gleichen Permutationsfunktionen wie in Kapitel \ref{Abschnitt_PositionenDerSteineImWürfel}. Es gibt aber nur drei statt sechs Funktionen.
 
 \begin{align*}
 \sigma_U & =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) \\
@@ -2997,7 +2999,7 @@ Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser
 \sigma_F & =\ ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ ) \\
 \end{align*}
 
-Der Stein \textit{dlb} wird durch keine dieserPermutationen bewegt. Darauf wird bei der Definition der minimalen Rotation des Würfels (Abschnitt \ref{Abschnitt_minimaleRotation}) genauer eingegangen.
+Der Stein \textit{dlb} wird durch keine dieser Permutationen bewegt. Darauf wird bei der Definition der minimalen Rotation des Würfels (Abschnitt \ref{Abschnitt_minimaleRotation}) genauer eingegangen.
 
 
 %
@@ -3032,7 +3034,7 @@ Da die Grundzüge des Würfels für die minimale Abbildung durch die Züge $U$, 
 \label{Abbildung_DLB}
 \end{figure}
 
-Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Realisierung der Rotationen durch Äquivalenzklassen nötig, da sich die Rotation des Würfels immer fest bestimmen lässt.
+Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Rotation des Würfels nötig, da sich die Rotation des Würfels immer fest bestimmen lässt.
 
 %
 %
@@ -3055,8 +3057,7 @@ Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Realisierung der 
 %
 \subsection{Minimale Ausrichtung der Steine}
 
-Nachdem in Abschnitt \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine minimal durch Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine definiert. Das erfolg (wie bei der Gruppe $(\Gtwo, \circ)$) über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition findet sich in Kapitel \ref{Kapitel_KonfigurationDesWürfels} und wird für die minimale Abbildung genau so verwendet.
-
+Nachdem in Abschnitt \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine minimal durch Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine beschrieben. Das erfolgt über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition findet sich in Abschnitt \ref{Abschnitt_AusrichtungDerSteine}.
 Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist der fünfte Vektoreintrag immer 0. 
 
 
@@ -3083,9 +3084,12 @@ Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist de
 %
 \subsection{Vergleich der Gruppen}
 
-Die Gruppen $(G_{min}, \circ)$ und $(\Gtwo, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
+Die Gruppe $(\Gtwo, \circ)$ und ihre Untergruppe $(G_{min}, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
+Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt berechnet. 
 
-Mächtgkeit von $(G_{min}, \circ)$: $7! \cdot 3^7 = 5040 \cdot 2187 = 11 \ 022 \ 480$ als theoretische Obergrenze. (Mechanismusbedingt $\frac{1}{3}$ nur valide.)
+Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$.
+
+% M7ächtgkeit von $(G_{min}, \circ)$: $7! \cdot 3^7 = 5040 \cdot 2187 = 11 \ 022 \ 480$ als theoretische Obergrenze. (Mechanismusbedingt $\frac{1}{3}$ nur valide.)
 
 %
 %
