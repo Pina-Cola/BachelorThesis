@@ -277,7 +277,7 @@ Diese Arbeit setzt sich aus 10 Kapiteln zusammen. Im Folgenden werden die Inhalt
 \label{Kapitel_Würfel}
 
 In diesem Kapitel werden die Grundlagen des \Ttwo \textit{Cubes} erklärt. Zuerst wird der Aufbau und die Terminologie des Würfels erläutert. Dann wird kurz auf die Unterschiede zwischen dem \Ttwo und dem \Tthree Würfel eingegangen. 
-Außerdem werden die sechs Grundzüge des Würfels definiert und erklärt. Darauf basieren alle späteren Algorithmen. 
+Außerdem werden die sechs Grundzüge des Würfels definiert und erklärt. Darauf basieren alle späteren Algorithmen und die Definition der Gruppe des Würfels.
 
 
 %
@@ -293,7 +293,7 @@ Außerdem werden die sechs Grundzüge des Würfels definiert und erklärt. Darau
 %
 \subsection{Terminologie}
 
-Diese Arbeit befasst sich mit dem \Ttwo Zauberwürfel, deshalb sind die Terminologie und der Aufbau des \textit{Cubes} Grundlagen für die weiteren Kapitel.
+Diese Arbeit befasst sich mit dem \Ttwo Zauberwürfel, deshalb sind die Terminologie und der Aufbau des Würfels Grundlagen für die weiteren Kapitel.
 Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
 
 
@@ -317,7 +317,7 @@ Bei dem verdrehten Würfel können die Steine des Würfels an anderen Positionen
 
 
 \item[Eckstein und Farbfläche] \ \\
-Ein \Ttwo Würfel besteht aus acht Ecksteinen (links in Abbildung \ref{Abbildung_Eckstein}), die jeweils drei Farbflächen (rechts in Abbildung \ref{Abbildung_Eckstein}) haben. Ein \Ttwo Zauberwürfel hat somit 24 Farbflächen. Die verschiedenen Farbpaare, die sich jeweils gegenüberliegen, sind weiß und gelb, rot und orange, grün und blau.
+Ein \Ttwo Würfel besteht aus acht Ecksteinen (links in Abbildung \ref{Abbildung_Eckstein}), die jeweils drei Farbflächen (rechts in Abbildung \ref{Abbildung_Eckstein}) haben. Ein \Ttwo Zauberwürfel hat somit 24 Farbflächen. Die verschiedenen Farbpaare, die sich im gelösten Zustand jeweils gegenüberliegen, sind weiß und gelb, rot und orange, grün und blau.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2stein.png}
@@ -352,7 +352,7 @@ Wesentlich bekannter als der \Ttwo \textit{Cube} ist der \Tthree \textit{Cube}. 
 \newpage
 \item[Mittel- und Kantsteine] \ \\
 Im Gegensatz zum \Ttwo \ hat der \Tthree Würfel Kantsteine und Mittelsteine (s. Abbildung \ref{Abbildung_MittelKantSteine}).
-Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei einer Drehung der Ebenen (also bei Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer fest zu stellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. 
+Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie Ebenendrehungen (also bei den Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer festzustellen: Die obere Seite hat immer das weiße Mittelstück in der Mitte. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.11]{mittelkant.png}
@@ -364,7 +364,7 @@ Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei einer 
 
 \end{description}
 
-Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Konfiguration einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird.
+Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Würfelkonfiguration einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird.
 Die Ausrichtung des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann.  
 Das muss beachtet werden, da in dieser Arbeit die Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen wird. Es wird sich dabei vorallem an \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
 
@@ -416,9 +416,11 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.
 Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf diese Ebene geschaut wird. Dementsprechend wirkt es so, als würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn von oben auf den Würfel geschaut wird. So ergibt sich die Menge der Grundzüge: $\{U, D, R, L, F, B\}$.
 
 
-Da der Würfel aber immer nur zwei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
+Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel aber immer nur zwei statt drei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
-Sonst entspräche beispielsweise eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) einer Drehung der unteren Ebene im Uhrziegersinn ($D$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$. Die minimale Abbildung des Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} behandelt.
+Eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) beispielsweise entspricht einer Drehung der unteren Ebene im Uhrziegersinn ($D$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. 
+
+Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$. Die minimale Abbildung des Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} behandelt.
 
 
 
