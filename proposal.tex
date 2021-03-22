@@ -155,15 +155,15 @@
 	{\large \today\par}
 \end{titlepage}
 
-\setcounter{page}{2}
+\setcounter{page}{1}
 
 %\setstretch{0.6}
 
-\begin{singlespace}
+\begin{spacing}{0.8}
 
 \tableofcontents
 
-\end{singlespace}
+\end{spacing}
 
 %\setstretch{1.5}
 
@@ -3090,7 +3090,9 @@ Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist de
 Die Gruppe $(\Gtwo, \circ)$ und ihre Untergruppe $(G_{min}, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
 Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt berechnet. 
 
-Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $mod 3$ gerechnet immer null ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer null ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$.
+Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $mod 3$ gerechnet immer null ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer null ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$. Somit sind die Gruppen $(\Gtwo, \circ)$ und $(G_{min}, \circ)$ gleichmächtig.
+
+Der Cayleygraph beider Gruppe hätte $3 \ 647 \ 160$ Elemente. Ein Cayleygraph mit dieser Komplexität ist leider zu umfangreich für diese Arbeit. Deshalb wird im Folgenden nur ein Teilgraph abgebildet.
 
 
 %
@@ -3168,9 +3170,8 @@ Die Gruppe des \Ttwo Würfels ist nützlich für die Veranschaulichung der Grupp
 %
 \subsection{Ausblick}
 
-Es wurden in dieser Arbeit Erzeuger und deren Cayleygraphen der Gruppe $(\Gtwo, \circ)$ erwähnt. Weitere Cayleygraphen und Erzeuger der Gruppe des \Ttwo Würfels könnten durchaus interessant sein. Außerdem könnte eine \textit{GUI} zum Lösen des \Ttwo Würfels aufschlussreich sein, um effiziente Algorithmen zu finden und die Lösungswege des Würfels zu optimieren.
-Auch wären weitere Untersuchungen der Gruppe $(\Gtwo, \circ)$ interessant, unter anderem die Berechnung der Anzahl der Isomorphismen, das Untersuchen der Gruppe auf Eigenschaften von Diedergruppen oder das Finden weiterer Untergruppen.
-Ein weiterer sehr interessanter Aspekt ist das Finden eines Algorithmus, der die Gleichheit zweier Züge berechnet. Das kann mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden.
+Es wurden in dieser Arbeit Erzeuger und deren Cayleygraphen der Gruppe $(\Gtwo, \circ)$ beschrieben. Die Generierung des Cayleygraphens der kompletten Gruppe wäre eine interessante Idee für eine andere Arbeit. Außerdem könnte eine \textit{GUI} zum Lösen des \Ttwo Würfels aufschlussreich sein, um effiziente Algorithmen zu finden und die Lösungswege des Würfels zu optimieren.
+Ein weiterer sehr interessanter Aspekt ist das Finden eines Algorithmus, der die Gleichheit zweier Züge berechnet. Das kann mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden und wäre nötig, um einen korrekten Cayleygraphen der Gruppe zu generieren.
 
 %
 %
@@ -3195,9 +3196,9 @@ Ein weiterer sehr interessanter Aspekt ist das Finden eines Algorithmus, der die
 \newpage
 
 
-\begin{singlespacing}
+\begin{spacing}{0.8}
 \listoffigures
-\end{singlespacing}
+\end{spacing}
 
 
 

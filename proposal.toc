@@ -107,10 +107,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{62}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{63}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{64}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{63}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{64}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{63}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{64}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{64}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{65}{subsection.10.2}%
