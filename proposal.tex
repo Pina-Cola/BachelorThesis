@@ -1167,24 +1167,24 @@ In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.1]{foldedout_numbers.png}
-\includegraphics[scale=0.1]{foldedout_012.png}
+\includegraphics[scale=0.13]{foldedout_numbers.png}
+\includegraphics[scale=0.13]{foldedout_012.png}
 \caption[Markierungen $x_i$ (links), Farbflächennummern (rechts)]{ausgeklappter Würfel mit Markierungen für $x_i$ (links) und Farbflächennummerierungen (rechts) }
 \end{figure}
 
 
 In den folgenden Absätzen wird der Zug $R$ zur Veranschaulichung ausgeführt (s. Abbildung \ref{Abbildung_XnachZugR}) und die Veränderung Farbflächennummerierung dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
 Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position, die Nummerierungen  der Farbflächen ändern sich mit Rotation der Ebene und ermöglichen so eine Zuordnung der Ecksteinausrichtung. 
-Die linke Seite der Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0.
+Die linke Seite der Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0, da sie sich in der linken Hälfte des Würfels befinden.
 Die anderen Positionen von $x$ zeigen nun aber andere Farbflächen: 
 \begin{align*}
 x_2 = 2 \ \ \ \ x_4 = 1 \ \ \ \ x_6 = 1 \ \ \ \ x_8 = 2  
 \end{align*}
-Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. 
-\begin{figure}[h]
+Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das ist auch in Abbildung \ref{Abbildung_XnachZugR} zu sehen.
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.1]{foldedout_012_white.png}
-\includegraphics[scale=0.1]{foldedout_012_spin.png}
+\includegraphics[scale=0.13]{foldedout_012_white.png}
+\includegraphics[scale=0.13]{foldedout_012_spin.png}
 \caption[links: $x_1$ bis $x_8$, rechts: Veränderung nach dem Zug $R$]{links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \label{Abbildung_XnachZugR}
 \end{figure}
@@ -1231,7 +1231,7 @@ Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit
 
 
 
-Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ funktionieren gleich, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind analog. Da diese Funktionen gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$.
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind analog. Da diese Funktionen gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$ aus.
 \\
 
 \begin{minipage}{0.35\textwidth}
@@ -1263,7 +1263,7 @@ Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der S
 & =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right)
 \end{align*}
 
-Analog dazu gibt es für alle Grundzüge Funktionen, die die Veränderung der Steinausrichtung realisieren:
+Analog dazu gibt es für jeden der sechs Grundzüge eine Funktion $\gamma$, die die Veränderung der Steinausrichtung realisieren:
 \begin{align*}
 & \gamma_U \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_3, x_1, x_4, x_2, x_5, x_6, x_7, x_8 \right) \\
@@ -1275,7 +1275,7 @@ Analog dazu gibt es für alle Grundzüge Funktionen, die die Veränderung der St
 & =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right) \\ 
 \\
 & \gamma_L \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
-& =  \left( (h(x_5), x_2, g(x_1), x_4, g(x_7), x_6, h(x_3), x_8) \right) \\ \displaybreak
+& =  \left( (h(x_5), x_2, g(x_1), x_4, g(x_7), x_6, h(x_3), x_8) \right) \\ 
 \\
 & \gamma_F \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_1, x_2, h(x_7), g(x_3), x_5, x_6, g(x_8), h(x_4) \right) \\
