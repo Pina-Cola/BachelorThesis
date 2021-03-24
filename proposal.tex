@@ -1161,19 +1161,22 @@ Die Identitätspermutation ist wird als $\sigma=1$ geschrieben.
  \label{Abschnitt_AusrichtungDerSteine}
 Der \Ttwo Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. 
 Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
-\begin{figure}[h]
+
+Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
+In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{foldedout_numbers.png}
 \includegraphics[scale=0.1]{foldedout_012.png}
 \caption[Markierungen $x_i$ (links), Farbflächennummern (rechts)]{ausgeklappter Würfel mit Markierungen für $x_i$ (links) und Farbflächennummerierungen (rechts) }
 \end{figure}
-Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
-In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.
 
-Nun wird der Zug $R$ als Beispiel ausgeführt (s. Abbildung \ref{Abbildung_XnachZugR}) und die Veränderung der Nummerierung der Farbflächen dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
-Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position, die Nummerierungen  der Farbflächen ändern sich mit Rotation der Ebene und ermöglichen so eine Zuordnung der Ausrichtung der Ecksteine. 
-Die linke Seite der Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0. 
-Die anderen Positionen haben nun aber andere Farbflächen: 
+
+In den folgenden Absätzen wird der Zug $R$ zur Veranschaulichung ausgeführt (s. Abbildung \ref{Abbildung_XnachZugR}) und die Veränderung Farbflächennummerierung dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
+Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position, die Nummerierungen  der Farbflächen ändern sich mit Rotation der Ebene und ermöglichen so eine Zuordnung der Ecksteinausrichtung. 
+Die linke Seite der Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0.
+Die anderen Positionen von $x$ zeigen nun aber andere Farbflächen: 
 \begin{align*}
 x_2 = 2 \ \ \ \ x_4 = 1 \ \ \ \ x_6 = 1 \ \ \ \ x_8 = 2  
 \end{align*}
