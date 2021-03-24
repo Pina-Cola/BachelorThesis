@@ -1906,21 +1906,21 @@ Es gilt folglich für jede Permutation eines Zuges $Z$, der aus nur einem $n$-el
 $\forall \ Z \in \Gtwo $ \textit{mit} $\sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \ { (\sigma, x) \cdot Z^n= (\sigma, x')}$.
 Wenn $Z$ mehrfach ausführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand der Permutationen erreicht. \cite{TD} 
 Es gilt folglich auch 
-$\forall \ Z \in \Gtwo $ \textit{mit} $ \ Z=(i_1 \ i_2 \ ... \ i_n), n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }$.
-Auch bei komplexeren Permutationen von Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache aller Zykelgrößen bestimmt werden. \cite{TD}
+$\forall \ Z \in \Gtwo $ \textit{mit} $ \ Z=(i_1 \ i_2 \ ... \ i_n). n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }$.
+Auch bei komplexeren Permutationen von Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache (kurz kgV) aller Zykelgrößen bestimmt werden. \cite{TD}
 
  
 Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge in Abbildung \ref{Abbildung_GraphAllerPermutationen} grafisch dargestellt.
 Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.27]{graph_zug.png}
+\includegraphics[scale=0.3]{graph_zug.png}
 \caption[Graph aller Zugpermutationen]{Graph aller Zugpermutationen}
 \label{Abbildung_GraphAllerPermutationen}
 \end{figure}
 
-So kann nun anhand des Beispielzuges $LLFF$ die Zykelstruktur der Permutationen dargestellt werden. 
-Zuerst wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbildet. Der Zug $LLFF$ setzt sich aus den Zügen $L$ und $F$ zusammen. 
+Mithilfe des Graphens oder der Permutationsfunktionen kann nun anhand des Beispielzuges $LLFF$ die Zykelstruktur der Permutationen dargestellt werden. 
+Dazu wird eine Tabelle erstellt, die jede Position auf ihre neue Position abbildet. Der Zug $LLFF$ setzt sich aus den Zügen $L$ und $F$ zusammen. 
 
 \begin{center}
 \begin{tabular}{ccccccccc}
@@ -1940,16 +1940,16 @@ F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor
 \end{center}
 
 Die grauen Positionen bleiben bei der jeweiligen Ebenenrotation unverändert. 
-Grafisch dargestellt sind die Zykel des Zuges $LLFF$ in Abbildung \ref{Abbildung_ZykelVonLLFF}. 
+Die Zykel des Zuges $LLFF$ sind in Abbildung \ref{Abbildung_ZykelVonLLFF} grafisch dargestellt. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.25]{zykel_LLFF.png}
 \caption[Zykel des Zuges $LLFF$]{Zykel des Zuges $LLFF$}
 \label{Abbildung_ZykelVonLLFF}
 \end{figure}
-In Zykelschreibeweise wird der Zug als $\sigma_{LLFF}=( \ \textit{dlf} \ \textit{ulb} \ \textit{urf}\ )(\ \textit{ulf} \ \textit{dlb} \ \textit{drf} \ )$ geschrieben.
+In der Zykelschreibeweise wird der Zug $LLFF$ als $\sigma_{LLFF}=( \ \textit{dlf} \ \textit{ulb} \ \textit{urf}\ )(\ \textit{ulf} \ \textit{dlb} \ \textit{drf} \ )$ geschrieben.
 Da es demnach zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. 
-In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. Die Permutation des Zuges $LLFF$ hat also dieOrdnung $3$.
+In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. Die Permutation des Zuges $LLFF$ hat also die Ordnung $3$.
 Außerdem ist zu sehen, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt werden. Die anderen beiden (\textit{urb} und \textit{drb}) bleiben unverändert. 
 %
 %
