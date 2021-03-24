@@ -597,7 +597,7 @@ Es gilt $\mathbb{Z}_{\hspace*{-0.3em}\mod 6} \subseteq \mathbb{Z}$. Da sowohl $(
 %
 
 \subsection{Erzeuger und zyklische Gruppe} 
-
+\label{Abschnitt_Erzeuger}
 
 
 \begin{definition}[Erzeuger]
@@ -2164,10 +2164,10 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 
 \subsection{Erzeuger}
 
-Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen.
+Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden bereits in Kapitel \ref{Abschnitt_Erzeuger} erklärt.
 
 
-Ein Beispiel eines Erzeugers einer Untergruppe $(F, \circ)$ von $(\Gtwo, \circ)$ wird von $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die Untergruppe $(F, \circ)$ enthält somit nur die Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. $FFFF$ ist das gleiche wie das neutrale Element $N$ und der Würfel bleibt in der Ausgangsposition.
+Ein Beispiel eines Erzeugers einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ wird von dem einzelnen Zug $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die Untergruppe $(G_F, \circ)$ enthält somit nur die Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
 
 
 Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält daher nur $FF$ und $FFFF$.
@@ -2175,8 +2175,8 @@ Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei k
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
 
-Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(F, \circ)$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
-$(F, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $F = \{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
+Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
+$(GF, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $G_F = \{N, F^1, F^2, F^3, F^4, ...\}$ ist. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
 Das gilt für jeden Erzeuger, der nur aus einer einzelnen Ebenendrehung besteht.
 
 

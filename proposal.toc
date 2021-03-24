@@ -69,7 +69,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.3}Durch \textit {FF} und \textit {RR} erzeugte Untergruppe}{43}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Cayleygraph}{44}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.4}Cayleygraph}{45}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{47}{section.7}%
 \defcounter {refsection}{0}\relax 
