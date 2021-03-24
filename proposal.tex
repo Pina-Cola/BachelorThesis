@@ -1479,7 +1479,7 @@ $N_R$ & keine Rotation des Würfels \\
 
 Die Rotationen sind nicht minimal definiert, da beispielsweise $Z_l$ das gleiche wie ${Z_r}^3$ ist. Dies dient der Anschaulichkeit. 
 
-Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass der Würfel verändert wird, da er komplett gedreht wird. 
+Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass die Würfelkonfiguration verändert wird, da er komplett gedreht wird. 
 
 Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen gezeigt. Die Rotation $Z_r$ ist in Abbildung \ref{Abbildung_WürfelNachRotationUmZAchse} zu sehen.
 \begin{figure}[H]
@@ -1512,8 +1512,8 @@ Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{X_r} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )\\
 \delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
 \end{align*}
-Da die Rotationen zu den Zügen zählen, wird die mehrfache Ausführung einer Rotation mit der Exponentenschreibweise geschrieben. 
-Somit gilt dann auch hier $TTTT=T^4=N_R$ (für $R \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , H_R \}$) und $T^0=N_R$ (für alle Rotationen). ($N_R$ ist die leere Rotation und $T$ ist eine beliebige Rotation des Würfels.) 
+Da die Rotationen zu den Zügen zählen, wird die mehrfache Ausführung einer Rotation auch mit der Exponentenschreibweise geschrieben. 
+Somit gilt für jede Rotation $TTTT=T^4=N_R$ (für $T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \}$) und $T^0=N_R$ (für alle Rotationen $T$). Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. 
 Dementsprechend gilt bei den Rotationen auch für jede Rotation: 
 \begin{align*}
 \forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}. n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
@@ -1561,9 +1561,9 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 
 Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
-Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$ -- wobei $N_R$ die \textit{leere} Rotation darstellt, das entspricht keiner Rotation des Würfels. 
+Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die \textit{leere} Rotation dar -- das entspricht keiner Rotation des Würfels. 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
-In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfigurationen, aber anders gedreht.
+In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfiguration, aber anders gedreht.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{3_wuerfel.png}
@@ -1581,13 +1581,13 @@ Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten.
 \begin{align*}
 Z_1 \sim_R Z_2 : & \Leftrightarrow C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
-Es wird $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
+Es wird die Rotation $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
 \begin{align*}
 Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot Z_1 = C \cdot WZ_2 \\
 \ & \Leftrightarrow C \cdot Z_1=C \cdot N_R Z_2 \\
 \ & \Leftrightarrow C \cdot Z_1 = C \cdot Z_2
 \end{align*}
-Es gilt somit die Reflexivität für $\sim$, da für $Z_1 \sim Z_2$ mit $W=N_R$ $Z_1$ und $Z_2$ immer äquivalent sind, da sie die gleiche Folgekonfiguration des Würfels erreichen.
+Es gilt somit die Reflexivität für $\sim$, da bei $Z_1 \sim Z_2$ mit $W=N_R$, die Züge $Z_1$ und $Z_2$ immer äquivalent sind, da sie die gleiche Folgekonfiguration des Würfels erreichen.
 
 \item [Symmetrie] \ \\
 Für die Symmetrie muss gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.
