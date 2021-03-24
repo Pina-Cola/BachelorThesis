@@ -2212,7 +2212,7 @@ Es wurde in Kapitel \ref{Kapitel_WürfelAlsGruppe} bereits gezeigt, dass $(FF)^2
 
 Wenn bei einen gelösten \Ttwo Würfel $FFRR$ ausführt wird, befindet sich der Würfel nach 3 Wiederholungen wieder in der Startkonfiguration. Das gilt auch für den Zug $RRFF$. Die Ordnung von $FFRR$ und $RRFF$ ist daher 3. Bei dem \Tthree \textit{Cube} ist die Ordnung dieser Züge 6 \cite{TD}.
 
-Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit auch mehr Elemente als die des \Ttwo Würfels. Theoretisch sind das alle Mitglieder der Untergruppe des \Ttwo \textit{Cubes}, wenn dabei berücksichtigt wird, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $FFRRFF$, $FFRRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. 
+Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit auch mehr Elemente als die des \Ttwo Würfels. Hier werden (alle) Mitglieder der Untergruppe des \Ttwo \textit{Cubes} aufgelistet, wenn dabei berücksichtigt wird, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $FFRRFF$, $FFRRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. Da $FF$ und $RR$ die Ordnung 2 haben und $FFRR$ die Ordnung 3, sind alle komplexeren Zugkonkatenationen bereits abgedeckt.
 Wenn diese Züge an einem Würfel ausprobiert werden, stellt sich aber heraus, dass beispielsweise $(RRFF)^2RR$ bei gleichem Startzustand die gleiche Würfelkonfiguration wie $FF$ ergibt. Wenn diese Doppelungen aussortiert werden, verbleiben folgende sieben Gruppenelemente:
 \begin{center}
 \centering
@@ -2221,10 +2221,10 @@ $N$ & $RR$ & $FFRR$ &  $RRFFRR$ \\
 & $FF$ & $RRFF$ & $FFRRFF$   \\
 \end{tabular}
 \end{center}
-Zum Vergleich: Tom Davis kommt bei dem  \Tthree Würfel auf zwölf Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
+Zum Vergleich: Tom Davis erhält bei dem  \Tthree Würfel zwölf Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
 
 Die doppelten Elemente können natürlich auch mathematisch erkannt werden, dafür müssen dann nicht alle Optionen an einem Würfel ausprobiert werden.
-Das wird im Folgenden beispielhaft mit $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass (da es sich um halbe Drehungen handelt) die Position, die durch $RRFFRRFFRR$ erreicht wird auch durch $FF$ erreichbar ist.
+Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass (da es sich um halbe Drehungen handelt) die Position, die durch $RRFFRRFFRR$ erreicht wird auch durch $FF$ erreichbar ist.
 
 Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
 Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $120 \cdot 3^5$ auf $29 \, 160$ Mitglieder, aber auch das ist deutlich größer als $7$.
