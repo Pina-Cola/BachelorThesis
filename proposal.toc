@@ -65,52 +65,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Untergruppen Beispiele}{42}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Erzeuger}{42}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}Erzeuger}{43}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.3}Durch \textit {FF} und \textit {RR} erzeugte Untergruppe}{43}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.4}Cayleygraph}{44}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{46}{section.7}%
+\contentsline {section}{\numberline {7}Valide Konfigurationen des Würfels}{47}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Anzahl der validen Würfelkonfigurationen}{46}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.1}Anzahl der validen Würfelkonfigurationen}{47}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Mächtigkeit von G$_{2\times 2\times 2}$}{46}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Mächtigkeit von G$_{2\times 2\times 2}$}{47}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Ausrichtung der Steine (modulo 3)}{47}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.3}Ausrichtung der Steine (modulo 3)}{48}{subsection.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lösung des Würfels}{49}{section.8}%
+\contentsline {section}{\numberline {8}Lösung des Würfels}{50}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Parität der Zykel}{49}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.1}Parität der Zykel}{50}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Kommutatoren}{50}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Kommutatoren}{51}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Lösungsansätze}{51}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.3}Lösungsansätze}{52}{subsection.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{51}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{52}{subsection.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5}Muster}{55}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.5}Muster}{56}{subsection.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{56}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{57}{subsection.8.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{56}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{57}{subsection.8.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{58}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{59}{subsection.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Minimale Gruppe}{61}{section.9}%
+\contentsline {section}{\numberline {9}Minimale Gruppe}{62}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{61}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{62}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{61}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{62}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{62}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{63}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{62}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{63}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{64}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{65}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{64}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{65}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{64}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{65}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{65}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{66}{subsection.10.2}%

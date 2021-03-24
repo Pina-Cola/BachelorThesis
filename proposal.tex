@@ -564,13 +564,13 @@ Im Folgenden werden Untergruppen definiert.
 
 
 \begin{definition}[Untergruppe]
-Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann wird auch $H \leqslant G$ geschrieben. 
+Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann wird auch $(H, \circ) \leqslant (G, \circ)$ geschrieben. 
 \end{definition}
 
 Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. Nicht jede Teilmenge $H \subseteq G$ muss auch eine Gruppe sein.
 
 Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, wird $(G, \circ)$ auch Obergruppe von $(H, \circ)$ genannt.
-Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$.
+Jede Gruppe $(G, \circ)$ mit neutralem Element $N$ hat die beiden trivialen Untergruppen $(H_N, \circ)$ mit ${H_N = \{N\}}$ und $(H_G, \circ)$ mit $H_G=G$.
 
 
 \begin{bsp}[keine Untergruppe]
@@ -2096,9 +2096,9 @@ Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation vo
 
 \label{Kapitel_Untergruppen}
 
-Dieses Kapitel behandelt die Untergruppen von $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen. Außerdem werden noch weitere Untergruppen beschrieben und erzeugt.
+Dieses Kapitel behandelt die Untergruppen der Gruppe $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen. Außerdem werden noch weitere Untergruppen beschrieben und erzeugt.
 Die Definition und Erklärung der Untergruppe und des Erzeugers findet sich in Abschnitt \ref{Abschnitt_Untergruppe}.
-Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt.
+Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt. Die Untergruppe, die den \Ttwo Würfel minimal aber komplett abbildet, findet sich in Kapitel \ref{Kapitel_MinUntergruppe}.
 
 %
 %
@@ -2125,14 +2125,17 @@ Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt
 
 
 
-Jede Gruppe G mit neutralem Element $N$ hat die beiden trivialen Untergruppen ${H_N = \{N\}}$ und $H_G=G$ (hier: $G=\Gtwo$). Demnach sind $H_N$ und $H_G$ die trivialen Untergruppen von $\Gtwo$ ($H_N \leqslant \Gtwo$ und $H_G \leqslant \Gtwo$).
-Die Gruppe $\Gtwo$ hat viele Untergruppen, deshalb kann hier nur auf einen Teil davon erwähnt werden. 
+Wie bereits in Kapitel \ref{Abschnitt_Untergruppe} erklärt, hat jede Gruppe zwei triviale Untergruppen. Demnach sind $(H_N, \circ)$ und $(H_G, \circ)$ die trivialen Untergruppen von $\Gtwo$ ($(H_N, \circ) \leqslant (\Gtwo, \circ)$ und $(H_G, \circ) \leqslant (\Gtwo, \circ)$). Die Untergruppe $(H_N, \circ)$ enthält in der Trägermenge $H_N$ nur das neutrale Element $N$. Bei der Untergruppe $(H_G, \circ)$ hingegen ist die Trägermenge $H_G$ die gleiche Menge wie $\Gtwo$.
+Die Gruppe $\Gtwo$ hat viele Untergruppen, deshalb kann hier nur auf einen Teil davon eingegangen werden. 
 
 
-Da die trivialen Untergruppen nicht sonderlich aussagekräftig sind, geht der folgende Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Diese Gruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
+Da die trivialen Untergruppen nicht sonderlich aussagekräftig sind, geht der folgende Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Die folgenden Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
 \begin{itemize}
-\item Die Untergruppe $H_{E1}$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
-\item Eine weitere Untergruppe von $\Gtwo$ ist $H_{E2}$. Hier dürfen zwei gegenüberliegende Ebenen gedreht werden. 
+\item Die Untergruppe $(H_{E1}, \circ)$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
+
+Die Trägermenge $H_{E1}$, die Äquivalenzklassen aller möglichen Züge enthält, enthält hier nur vier Elemente. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
+
+\item Eine weitere Untergruppe von $(\Gtwo, \circ)$ ist $(H_{E2}, \circ)$. Hier dürfen zwei gegenüber\-liegende Ebenen gedreht werden. 
 Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und nicht anhand der Mittelsteine oben und unten unterschieden werden kann.
 \end{itemize}
 
