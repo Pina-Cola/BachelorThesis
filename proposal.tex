@@ -1687,18 +1687,21 @@ Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Gro
 Die Grundlagen und Definition der Gruppe wurden in Abschnitt \ref{Abschnitt_Gruppe} erklärt.
 
 
-Die Faktormenge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Beispielsweise die Drehung der oberen Ebene ist ein Zug. Ein Zug kann aber auch aus mehreren Drehungen bestehen, z. B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar. 
+Die Faktormenge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Ein Beispielzug ist die Drehung der oberen Ebene ($U$). Ein Zug kann aber auch aus mehreren Drehungen bestehen, z. B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene stellt ebenfalls einen Zug dar ($UR$). 
 
 
-Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1 \in \Gtwo$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. (Außerdem gilt dann auch $Z_1 \circ Z_2 \in \Gtwo$.) $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
+Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
 
 Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird:
+
+\newpage
+
 \begin{description}
 \item [Abgeschlossenheit] \ \\
 $\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ 
 
 
-Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge in $\Gtwo$ enthalten sind. In $\Gtwo$ findet sich zu jeder validen Würfelkonfiguration ein Zug, um diese zu erreichen und jede Verknüpfung von zwei validen Zügen führt zu einer validen Würfelkonfiguration. Daher gilt die Abgeschlossenheit bei der Gruppe $(\Gtwo, \circ)$.
+Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge (bzw. die Äquivalenzklassen der Züge) in $\Gtwo$ enthalten sind. Jede Konkatenation von zwei Zügen ist auch ein Zug. In $\Gtwo$ findet sich zu jeder validen Würfelkonfiguration ein Zug, mit dem diese erreicht werden kann und jede Verknüpfung von zwei validen Zügen führt zu einer validen Würfelkonfiguration. Daher gilt die Abgeschlossenheit bei der Gruppe $(\Gtwo, \circ)$.
 
 
 
@@ -1746,7 +1749,7 @@ BBBB & =B^4 =N \\
 Diese sind dann alle als Repräsentanten für den leeren Zug in der Äquivalenzklasse von $N$ enthalten.
 Somit gilt dann auch $Z^0=N$, mit $Z$ als beliebigen Zug und $N$ als neutrales Element. 
 
-Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist der leere Zug bzw. jeder Repräsentant der Äquivalenzklasse des leeren Zuges.
+Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist somit der leere Zug bzw. jeder Repräsentant der Äquivalenzklasse des leeren Zuges.
 
 
 \item [Existenz eines inversen Elements $Z^{-1}$] \ \\
@@ -1760,14 +1763,14 @@ Somit ist $(\Gtwo, \circ)$ eine Gruppe.
 
 
 $(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann händisch an einem Würfel ausprobiert werden.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{RF.png}
 \includegraphics[scale=0.1]{FR.png}
 \caption[Würfel nach Zügen $FR$ (links) und $RF$ (rechts)]{Würfel nach Zügen $FR$(links) und $RF$(rechts)}
 \label{Abbildung_WürfelNachFRundRF}
 \end{figure}
-Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde.\cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann irrelevant und es müsste nur die Anzahl beachtet werden. 
+Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde. \cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann irrelevant und es müsste nur die Anzahl beachtet werden. 
 Es gilt dementsprechend nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$ und der $\circ$-Operator der Gruppe ist somit nicht kommutativ. 
 
 %
