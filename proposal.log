@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  26 MAR 2021 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  26 MAR 2021 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1650,12 +1650,12 @@ File: menschSchritt2.png Graphic file (type png)
 Package pdftex.def Info: menschSchritt2.png  used on input line 2679.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
  [53 <./LURFL1.png> <./0201.png>]
-<menschSchritt3.png, id=799, 1003.75pt x 1140.26pt>
+<menschSchritt3.png, id=798, 1003.75pt x 1140.26pt>
 File: menschSchritt3.png Graphic file (type png)
 <use menschSchritt3.png>
 Package pdftex.def Info: menschSchritt3.png  used on input line 2689.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
-<menschSchritt4.png, id=801, 1003.75pt x 1140.26pt>
+<menschSchritt4.png, id=800, 1003.75pt x 1140.26pt>
 File: menschSchritt4.png Graphic file (type png)
 <use menschSchritt4.png>
 Package pdftex.def Info: menschSchritt4.png  used on input line 2698.
@@ -1862,7 +1862,7 @@ public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb>
-Output written on proposal.pdf (71 pages, 2888893 bytes).
+Output written on proposal.pdf (71 pages, 2889088 bytes).
 PDF statistics:
  1137 PDF objects out of 1200 (max. 8388607)
  910 compressed objects within 10 object streams
