@@ -2304,7 +2304,7 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $(G_
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel wird Anzahl der validen Würfelkonfiguratione berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
+In diesem Kapitel wird Anzahl der validen Würfelkonfigurationen berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
 Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
@@ -2330,7 +2330,7 @@ Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^
 \subsection{Anzahl der validen Würfelkonfigurationen}
 \label{Abschnitt_AnzahlKonfigurationen}
 
-Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. \\
+Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen anhand des Würfels brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. \\
 Dazu wird zuerst die Anzahl der möglichen Steinpositionen berechnet:
 Die Ecksteine können sich in jeder der acht Ecken befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\
 Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7 = 2187$ Wege, wie die Ecksteine ausgerichtet sein können.
@@ -2363,9 +2363,9 @@ Die Anzahl der Würfelkonfigurationen ohne Berücksichtigung der Rotationen des 
 
 \subsection{Mächtigkeit von G$_{2\times 2\times 2}$}
 
-Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (bzw. $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. Die Mächtigkeit der Gruppe ist die Anzahl der validen Würfelkonfigurationen, da die $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enhalten. Außerdem wurden die Äuivalenzklassen mit der Menge alle Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ ist die Anzahl der validen Würfelkonfigurationen.
+Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (bzw. $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. Die Mächtigkeit der Gruppe ist die Anzahl der validen Würfelkonfigurationen, da die $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt jedes Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enhalten. Außerdem wurden die Äuivalenzklassen mit der Menge alle Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ ist die Anzahl der validen Würfelkonfigurationen.
 
-Da Mächtigkeit der Gruppe $(\Gtwo,\circ)$ der Anzahl der validen Würfelkonfigurationen entspricht, setzt sie sich aus dem Produkt der Konfigurationsparameter $\sigma$ und $x$ zusammen. Daraufhin müssen aber auch die Äquivalenzen bezüglich der Rotationen des Würfels berücksichtigt werden.
+Da die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ der Anzahl der validen Würfelkonfigurationen entspricht, setzt sie sich aus dem Produkt der Konfigurationsparameter $\sigma$ und $x$ zusammen. Daraufhin müssen aber auch die Äquivalenzen bezüglich der Rotationen des Würfels berücksichtigt werden.
 
 $\sigma$ ist die Menge der bijektiven Funktionen für jede Ebenenrotation. Es sind die Übergänge der acht Würfelsteine als Permutationen enthalten. Da es $8$ Permutationsobjekte gibt, ist die Anzahl der Permutationsmöglichkeiten $8! = 40320$.
 
@@ -2375,13 +2375,6 @@ Ohne Berücksichtigung der Äquivalenzklassen wird ein Wert von $40320 \cdot 656
 Außerdem gibt es bei den Rotationen sechs Rotationsmöglichkeiten (und zusätlich die \textit{leere} Rotation). Jede dieser Rotationsmöglichkeiten kann vier verschiedene Rotationen hervorrufen. Das ergibt dann $6 \cdot 4 = 24$ Möglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Somit muss $88 \, 179 \, 840$ durch $24$ geteilt werden, um die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ zu berechnen. $|\Gtwo|$ ist dann $88 \, 179 \, 840 \div 24 = 3\, 674\, 160$.
 
 Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist also die Anzahl der validen Würfelkonfigurationen $3\, 674\, 160$.
-
-
-%Das wird nun anhand der Gruppe $(\Gtwo,\circ)$ berechnet. Die Gruppe ist eine symmetrische Gruppe (s. Kapitel \ref{Abschnitt_SymmetrischeGruppe}), da sie aus allen Permutationen der $8$-elementigen Menge $\{ \textit{ulb},  \textit{urb},  \textit{ulf},  \textit{urf},  \textit{dlb},  \textit{drb},  \textit{dlf},  \textit{drf} \}$ besteht. Dadurch ist die Mächtigkeit dieser Gruppe $|\Gtwo| = 8!=40\, 320$. \\
-%Es müssen aber auch die Äquivalenzrelationen der Rotationen von $(\Gtwo,\circ)$ berücksichtigt werden. Es gibt die Äquivalenzrelationen $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N\}$ -- die Rotation um die Achsen $X, Y$ und $Z$, jeweils nach rechts und links. Da zwei Linksdrehungen und zwei Rechtsdrehungen äquivalent sind, gibt es demnach für jede Achse vier Rotationsmöglichkeiten. Das sind dann $3 \cdot 4 = 12$ Rotationen. Da aber zu jeder Achse zwei Seiten gehören, die getauscht werden können, sind es $2 \cdot 12 = 24$ Rotationen.
-%Die Mächtigkeit der Gruppe ($40\, 320$) muss aufgrund der Rotationsmöglichkeiten um den Faktor $24$ reduziert werden, wenn die Anzahl der validen Würfelkonfigurationen anhand der Gruppe berechnet werden soll. Das sind dann $40\, 320 \cdot \frac{1}{24} = 1680$ mögliche Positionen der Ecksteine unter Berücksichtigung der Würfelrotationen. Diese Zahl scheint verhältnismäßig niedrig, da die Ausrichtung der Steine noch nicht berücksichtigt wurde. \\
-%Die Ausrichtung der Steine wird durch den $8$-dimensionalen Vektor $x$ dargestellt. Jeder Eintrag in $x$ kann die Werte $0, 1$ oder $2$ annehmen. Das ergibt $3^8=6561$ Möglichkeiten der Steinausrichtung. Allerdings kann durch die Äquivalenzrelationen (bzw. die Rotation des Würfels) einer der Steine als richtig angenommen werden. Das ergibt dann $3^7=2187$ Möglichkeiten der Steinausrichtung. Somit gibt es $40\, 320 \cdot \frac{1}{24} \cdot 2187 = 3\, 674\, 160$ valide Würfelkonfigurationen. Da die Gruppe $(\Gtwo,\circ)$ allerdings nur die Position der Steine berücksichtig, ist die Mächtigkeit $|\Gtwo| = 40\, 320$.
-
 
 
 
@@ -2410,11 +2403,14 @@ Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist also die Anzahl der validen Wür
 
 \label{Abschnitt_Modulo3}
 
-Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration \begin{displaymath}
+Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration für die Werte des Vektors $x$ \begin{displaymath}
 \left( \sum_{i= 1}^{8} \ x_i \right) \hspace*{-0.7em} \mod 3 = 0 
 \end{displaymath}  (modulo) gilt. 
 
-Wenn $C'=(\sigma', x')$ eine Nachfolgekonfiguration von der Konfiguration $C=(\sigma, x)$ ist, dann gilt  ${(\sigma, x) \cdot M = (\sigma', x')}$. Dabei ist $M$ eine der Züge aus $U, D, R, L, F, B$. Es gilt dann ${(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 }$.
+Sei $C'=(\sigma', x')$ eine Nachfolgekonfiguration der Konfiguration $C=(\sigma, x)$, dann gilt  ${(\sigma, x) \cdot Z = (\sigma', x')}$. Dabei ist $Z$ einer der Züge aus $\Gtwo$. Es gilt dann:
+\begin{align*}
+(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3
+\end{align*}
 
 In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} ist diese Situation für den Zug $R$ dargestellt. Das kann auch in dieser Tabelle gesehen werden: 
 \vspace*{1em}
@@ -2423,7 +2419,7 @@ In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDe
 
 \begin{tabular}{cllcc}
 \toprule
- \textbf{Zug} $\boldsymbol{M}$ & \hspace*{2.2cm}$\boldsymbol{x}$ & \hspace*{2cm} $\boldsymbol{x'}$ &  $\boldsymbol{\sum_{i= 1}^{8} x_i'} \ \ \ $ & $\boldsymbol{\mod 3}$ \\
+ \textbf{Zug} $\boldsymbol{Z}$ & \hspace*{2.2cm}$\boldsymbol{x}$ & \hspace*{2cm} $\boldsymbol{x'}$ &  $\boldsymbol{\sum_{i= 1}^{8} x_i'} \ \ \ $ & $\boldsymbol{\mod 3}$ \\
 \midrule
 \textit{D} & $(x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8)$ & $(x_1, x_2, x_3, x_4, x_6, x_8, x_5, x_7)$ & 0 & 0 \\
 
@@ -2444,8 +2440,8 @@ In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDe
 
 \ \\
 Für jede valide Würfelposition gilt folglich ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
-Wenn es eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $M \in \Gtwo$, so dass $M \cdot C'$ die Steine in die Konfiguration $(1,x)$ bringt Alle Steine befinden sich dann an der richtigen Position, sind aber nicht korrekt ausgerichtet. 
-Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $M \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich dann in der Startkonfiguration. 
+Wenn es eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $Z \in \Gtwo$, so dass $Z \cdot C'$ die Steine in die Konfiguration $(1,x)$ bringt Alle Steine befinden sich dann an der richtigen Position, sind aber nicht korrekt ausgerichtet. 
+Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $Z \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich dann in der Startkonfiguration. 
 %
 %
 %
