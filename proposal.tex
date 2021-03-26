@@ -2258,17 +2258,17 @@ Cayleygraphen wurden in Abschnitt \ref{Abschnitt_Cayleygraph} eingeführt. Sie d
 \label{Abbildung_CayleygraphF}
 \end{figure}
 
-Ein simples Beispiel ist in Abbildung \ref{Abbildung_CayleygraphF} zu sehen: Der Cayleygraph der Untergruppe $F$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
+Ein simples Beispiel ist in Abbildung \ref{Abbildung_CayleygraphF} zu sehen: Der Cayleygraph der Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
 Dieser Cayleygraph ist anschaulich, der er nicht sonderlich komplex ist.
-Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt, daraus ergibt sich durch hinzufügen einer weiteren Drehung der vorderen Ebene um $90^\circ$ dann $FF$, dann $FFF$ und dann $FFFF$, was dem neutralen Element $F$ entspricht.
+Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt, daraus ergibt sich durch hinzufügen einer weiteren Drehung der vorderen Ebene um $90^\circ$ dann $FF$, dann $FFF$ und dann $FFFF$, was dem neutralen Element von $(G_F, \circ)$ entspricht.
 
 
-Der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe ist etwas komplexer (s. Abbildung \ref{Abbildung_CayleygraphFFRR}). 
+Im Vergleich dazu ist der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe etwas komplexer (s. Abbildung \ref{Abbildung_CayleygraphFFRR}). 
 Die roten Pfeile repräsentieren den Erzeuger $\{FF\}$ (da es sich dabei in der Startkonfiguration um die rote Seite des Würfels handelt) und die blauen Pfeile repräsentieren den Erzeuger $\{RR\}$ (da es sich dabei um die blaue Würfelseite handelt).
 Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entstehen können, sind durch einen Pfeil (Erzeuger) miteinander verbunden.
 Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphens. 
-Anhand des Cayleygraphens ist zu sehen, dass $FFFF$ und $RRRR$ das neutrale Element $N$ ergeben.
-Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ (Abbildung \ref{Abbildung_CayleygraphF}), stellt er eine sehr kleine erzeugte Untergruppe dar, wenn es mit der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$ verglichen wird. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
+Anhand des Cayleygraphens ist zu sehen, dass $FFFF$ und $RRRR$ dem neutralen Element $N$ entsprechen.
+Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $(G_F, \circ)$ (Abbildung \ref{Abbildung_CayleygraphF}), stellt er eine sehr kleine erzeugte Untergruppe dar, im Vergleich zu der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
 
 \begin{figure}[H]
 \centering
@@ -2276,9 +2276,6 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $F$ 
 \caption{Cayleygraph zu Erzeuger $\{ FF, RR \}$}
 \label{Abbildung_CayleygraphFFRR}
 \end{figure}
-
-
-
 
 
 
@@ -3101,7 +3098,7 @@ Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist de
 Die Gruppe $(\Gtwo, \circ)$ und ihre Untergruppe $(G_{min}, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
 Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt berechnet. 
 
-Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $mod 3$ gerechnet immer null ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer null ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$. Somit sind die Gruppen $(\Gtwo, \circ)$ und $(G_{min}, \circ)$ gleichmächtig.
+Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $\mod  3$ gerechnet immer null ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer null ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$. Somit sind die Gruppen $(\Gtwo, \circ)$ und $(G_{min}, \circ)$ gleichmächtig.
 
 Der Cayleygraph beider Gruppe hätte $3 \ 647 \ 160$ Elemente. Ein Cayleygraph mit dieser Komplexität ist leider zu umfangreich für diese Arbeit. Deshalb wird im Folgenden nur ein Teilgraph abgebildet.
 
