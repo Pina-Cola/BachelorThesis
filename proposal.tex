@@ -2412,7 +2412,7 @@ Sei $C'=(\sigma', x')$ eine Nachfolgekonfiguration der Konfiguration $C=(\sigma,
 (\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3
 \end{align*}
 
-In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} ist diese Situation für den Zug $R$ dargestellt. Das kann auch in dieser Tabelle gesehen werden: 
+In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} ist diese Situation für den Zug $R$ dargestellt. Dort sind außerdem auch die Funktionen $\gamma$ definiert, die die Veränderungen des Vektor $x$ für jeden der Züge realisieren. Die Veränderung der Vektoreinträge durch die Grundzüge des Würfels, ausgehend von der Startkonfiguration, kann auch in dieser Tabelle gesehen werden: 
 \vspace*{1em}
 
 \begin{adjustbox}{width=1\textwidth,center}
@@ -2440,7 +2440,7 @@ In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDe
 
 \ \\
 Für jede valide Würfelposition gilt folglich ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
-Wenn es eine valide Konfiguration $C'=(\sigma', x')$, für die gilt $\sum_{i = 1}^{8} x_i' \mod 3 = 0$, dann gibt es einen Zug $Z \in \Gtwo$, so dass $Z \cdot C'$ die Steine in die Konfiguration $(1,x)$ bringt Alle Steine befinden sich dann an der richtigen Position, sind aber nicht korrekt ausgerichtet. 
+Wenn es eine valide Konfiguration $C'=(\sigma', x')$, für die $\sum_{i = 1}^{8} x_i' \mod 3 = 0$ gilt, dann gibt es einen Zug $Z \in \Gtwo$, so dass $Z \cdot C'$ die Steine in die Konfiguration $(1,x)$ bringt Alle Steine befinden sich dann an der richtigen Position, sind aber nicht korrekt ausgerichtet. 
 Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $Z \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich dann in der Startkonfiguration. 
 %
 %
@@ -2470,12 +2470,12 @@ Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $Z \in \Gtwo$, so d
 
 \label{Kapitel_Lösung}
 
-Die übliche, händische Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern die Würfelkonfiguration Würfel dann spezifisch. 
+Die übliche, händische Methode zum Lösen eines Zauberwürfels ist das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern die Konfiguration des Würfels dann spezifisch. 
 Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 In diesem Kapitel wird die Parität der Züge beschrieben und Kommutatoren erklärt.
 Dann wird beispielhaft ein Lösungsvorgang eines Menschens schrittweise beschrieben und erklärt.
-Außerdem werden Muster des Würfels algorithmisch beschrieben und gezeigt.
+Außerdem werden Muster des Würfels algorithmisch beschrieben und grafisch dargestellt.
 Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen.
 
 %
@@ -2542,11 +2542,11 @@ Die Parität einer einzelnen Ebenendrehung ist demnach ungerade. Die Parität ei
 \subsection{Kommutatoren}
 
 Der Kommutator von zwei Elementen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist definiert als $[Y,Z]=YZY^{-1}Z^{-1}$ (s. Abschnitt \ref{Abschnitt_Kommutator}).
-Kommutierende Elemente ergeben das neutrale Element einer Gruppe. 
+Kommutierende Elemente ergeben dabei das neutrale Element einer Gruppe. 
 Wenn $Y = Z$ mit $Y, Z \in \Gtwo$ gilt, kommutieren $Y$ und $Z$. 
 Dazu folgt nun der Beweis. 
 
-Zur Veranschaulichung wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1} = Z(ZZ^{-1})Z^{-1}$. 
+Zur besseren Übersichtlichkeit wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1} = Z(ZZ^{-1})Z^{-1}$. 
 $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. 
 Somit kommutieren alle $Y, Z \in \Gtwo$ mit $X=Y$.
 
@@ -2609,10 +2609,10 @@ Wenn nun die Kopfzeile der Tabelle und die unterste Zeile verglichen werden, zei
 
 Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine bewegen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. 
 
-Es gibt verschiedene Vorgehensweisen um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Die gelbe Seite gehört dann zur letzten Ebene, die gelöst wird. 
+Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Die gelbe Seite gehört dann zur letzten Ebene, die gelöst wird. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. 
 
-Eine gängige Lösungsmethode geht so vor, dass bei der letzten Ebene zuerst alle Steine richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. 
+Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der letzten Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. 
 Dafür wird der Würfel üblicherweise gedreht, damit die gelbe Seite oben ist. 
 Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
 In Abbildung \ref{Abbildung_AusrichtungEbene2} ist zu sehen, wie der Würfel bei der Ausgangsposition (links) durch den Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ verändert wird. Die Steine der oberen Ebene werden dabei ausgerichtet.
@@ -2649,7 +2649,7 @@ $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ kann auch als Zykel geschrieben
 \subsection{Lösung des Würfels anhand eines Beispiels}
 
 In diesem Beispiel (Abbildung \ref{Abbildung_LösungMensch0}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde.
-In der Abbildung wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert.
+In der Abbildung wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert. Der Würfel befindet sich dann in der Konfiguration $((\textit{ulf} \ \textit{dlf} \ \textit{urf} \ \textit{dlb}),(2,2,0,0,2,2,1,0))$.
 
 \begin{figure}[H]
 \centering

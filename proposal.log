@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  26 MAR 2021 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  26 MAR 2021 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1830,11 +1830,11 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3222.
  ) 
 Here is how much of TeX's memory you used:
- 32107 strings out of 483016
- 585998 string characters out of 5961286
+ 32111 strings out of 483016
+ 586034 string characters out of 5961286
  1290740 words of memory out of 5000000
  46141 multiletter control sequences out of 15000+600000
- 559536 words of font info for 185 fonts, out of 8000000 for 9000
+ 559754 words of font info for 187 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,16n,77p,1129b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pina/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600p
@@ -1862,7 +1862,7 @@ public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb>
-Output written on proposal.pdf (71 pages, 2888226 bytes).
+Output written on proposal.pdf (71 pages, 2888893 bytes).
 PDF statistics:
  1137 PDF objects out of 1200 (max. 8388607)
  910 compressed objects within 10 object streams
