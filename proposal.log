@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  28 MAR 2021 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  28 MAR 2021 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1747,60 +1747,60 @@ Package pdftex.def Info: ebene.png  used on input line 2898.
 <TOPVIEW1.png, id=880, 1043.9pt x 1034.86626pt>
 File: TOPVIEW1.png Graphic file (type png)
 <use TOPVIEW1.png>
-Package pdftex.def Info: TOPVIEW1.png  used on input line 2915.
+Package pdftex.def Info: TOPVIEW1.png  used on input line 2916.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW2.png, id=881, 1043.9pt x 1034.86626pt>
 File: TOPVIEW2.png Graphic file (type png)
 <use TOPVIEW2.png>
-Package pdftex.def Info: TOPVIEW2.png  used on input line 2916.
+Package pdftex.def Info: TOPVIEW2.png  used on input line 2917.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW3_1.png, id=882, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_1.png Graphic file (type png)
 <use TOPVIEW3_1.png>
-Package pdftex.def Info: TOPVIEW3_1.png  used on input line 2917.
+Package pdftex.def Info: TOPVIEW3_1.png  used on input line 2918.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW3_2.png, id=883, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_2.png Graphic file (type png)
 <use TOPVIEW3_2.png>
-Package pdftex.def Info: TOPVIEW3_2.png  used on input line 2918.
+Package pdftex.def Info: TOPVIEW3_2.png  used on input line 2919.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW4.png, id=884, 1043.9pt x 1034.86626pt>
 File: TOPVIEW4.png Graphic file (type png)
 <use TOPVIEW4.png>
-Package pdftex.def Info: TOPVIEW4.png  used on input line 2919.
+Package pdftex.def Info: TOPVIEW4.png  used on input line 2920.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW5.png, id=885, 1043.9pt x 1034.86626pt>
 File: TOPVIEW5.png Graphic file (type png)
 <use TOPVIEW5.png>
-Package pdftex.def Info: TOPVIEW5.png  used on input line 2920.
+Package pdftex.def Info: TOPVIEW5.png  used on input line 2921.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW6.png, id=886, 1043.9pt x 1034.86626pt>
 File: TOPVIEW6.png Graphic file (type png)
 <use TOPVIEW6.png>
-Package pdftex.def Info: TOPVIEW6.png  used on input line 2921.
+Package pdftex.def Info: TOPVIEW6.png  used on input line 2931.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
- [60] [61 <./TOPVIEW1.png> <./TOPVIEW2.png> <./TOPVIEW3_1.png> <./TOPVIEW3_2.pn
-g> <./TOPVIEW4.png> <./TOPVIEW5.png> <./TOPVIEW6.png>]
-<corners1.png, id=903, 1043.9pt x 1034.86626pt>
+ [60 <./TOPVIEW1.png> <./TOPVIEW2.png> <./TOPVIEW3_1.png> <./TOPVIEW3_2.png> <.
+/TOPVIEW4.png> <./TOPVIEW5.png>]
+<corners1.png, id=898, 1043.9pt x 1034.86626pt>
 File: corners1.png Graphic file (type png)
 <use corners1.png>
-Package pdftex.def Info: corners1.png  used on input line 2936.
+Package pdftex.def Info: corners1.png  used on input line 2946.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners2.png, id=904, 1043.9pt x 1034.86626pt>
+<corners2.png, id=899, 1043.9pt x 1034.86626pt>
 File: corners2.png Graphic file (type png)
 <use corners2.png>
-Package pdftex.def Info: corners2.png  used on input line 2937.
+Package pdftex.def Info: corners2.png  used on input line 2947.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners3.png, id=905, 1043.9pt x 1034.86626pt>
+<corners3.png, id=900, 1043.9pt x 1034.86626pt>
 File: corners3.png Graphic file (type png)
 <use corners3.png>
-Package pdftex.def Info: corners3.png  used on input line 2938.
+Package pdftex.def Info: corners3.png  used on input line 2948.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
- [62 <./corners1.png> <./corners2.png> <./corners3.png>]
+ [61 <./TOPVIEW6.png> <./corners1.png> <./corners2.png> <./corners3.png>] [62]
 <DLB.png, id=916, 1043.9pt x 1201.48875pt>
 File: DLB.png Graphic file (type png)
 <use DLB.png>
-Package pdftex.def Info: DLB.png  used on input line 3039.
+Package pdftex.def Info: DLB.png  used on input line 3049.
 (pdftex.def)             Requested size: 156.57823pt x 180.21553pt.
  [63] [64 <./DLB.png>] [65] [66]
 (./proposal.lof [67])
@@ -1813,11 +1813,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [69]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3222.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3232.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3232.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 503B4E48D898FBCD6E9CC51F87370E79;3943.
@@ -1828,7 +1828,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3222.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3232.
  ) 
 Here is how much of TeX's memory you used:
  32112 strings out of 483016
@@ -1863,7 +1863,7 @@ public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb>
-Output written on proposal.pdf (72 pages, 2890428 bytes).
+Output written on proposal.pdf (72 pages, 2890785 bytes).
 PDF statistics:
  1142 PDF objects out of 1200 (max. 8388607)
  914 compressed objects within 10 object streams
