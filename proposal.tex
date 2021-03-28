@@ -2227,7 +2227,7 @@ Die doppelten Elemente können natürlich auch mathematisch erkannt werden, daf�
 Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass (da es sich um halbe Drehungen handelt) die Position, die durch $RRFFRRFFRR$ erreicht wird auch durch $FF$ erreichbar ist.
 
 Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
-Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $120 \cdot 3^5$ auf $29 \, 160$ Mitglieder, aber auch das ist deutlich größer als $7$.
+Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $5! \cdot 3^5$ auf $29 \, 160$ Mitglieder \cite{TD}, aber auch das ist deutlich größer als $7$.
 
 %
 %
@@ -2822,9 +2822,9 @@ Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters un
 %
 \subsection{Algorithmen für die erste Ebene}
 
-Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann der erste Eckstein als richtig angenommen werden, da der Würfel nur gedreht werden muss, um eine weiße Farbfläche zu finden.
-In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite oben zu beginnen. Es kann aber natürlich mit jeder anderen Seite des Würfels auch begonnen werden.
-Der \Tthree \textit{Cube} muss entsprechend der Mittelsteine ausgerichtet werden und so ist vorbestimmt, welche Seite die weiße Seite wird, je nach Ausrichtung der Mittelsteine. Bei dem \Ttwo \textit{Cube} kann mit jeder beliebigen Seite begonnen werden. Wenn unbedingt mit einer bestimmten Seite als Oberseiten begonnen werden soll, die noch keine weiße Farbfläche hat, so kann die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite gebracht werden.
+Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel nur gedreht werden muss, um eine weiße Farbfläche zu finden.
+In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite oben zu beginnen. Es kann aber mit jeder anderen Seite des Würfels auch begonnen werden.
+Der \Tthree \textit{Cube} muss entsprechend der Mittelsteine ausgerichtet werden und so ist vorbestimmt, welche Seite die weiße Seite wird, je nach Ausrichtung der Mittelsteine. Bei dem \Ttwo \textit{Cube} kann mit jeder beliebigen Seite begonnen werden. Wenn unbedingt mit einer bestimmten Seite als Oberseite begonnen werden soll, die noch keine weiße Farbfläche hat, so kann die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite gebracht werden.
 
 In Abbildung \ref{Abbildung_ErsterEckstein} wird der erste Eckstein der oberen Ebene positioniert. Das kann dort entweder durch den Zug $R$ oder einer Rotation um die $y$-Achse passieren.
 
@@ -2838,8 +2838,8 @@ In Abbildung \ref{Abbildung_ErsterEckstein} wird der erste Eckstein der oberen E
 
 Der zweite Stein kann dann hinzugefügt werden. Es gibt für den \Ttwo Würfel Lösungsmethoden, bei denen zuerst alle weißen Farbflächen ausgerichtet und dann die Steinposition anpasst werden.
 Da hier aber Algorithmen des \Tthree Würfels übertragen werden, und bei diesem die Steine der oberen Ebene üblicherweise direkt richtig ausrichtet und positioniert werden, wird hier auch so vorgegangen.
-Die Farbfläche des zweiten Steins befindet sich für diesen Algorithmus seitlich an der unteren Ebene. (Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.)
-Dann wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition befindet und er wird mit $L, R, F$ oder $R$ neben den bereits vorhandenen ersten Eckstein gedreht. Das ist auch in Abbildung \ref{Abbildung_ZweiterEckstein} zu sehen.
+Die Farbfläche des zweiten Steins muss sich für diesen Algorithmus seitlich an der unteren Ebene befinden. Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.
+Ansonsten wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition befindet und er wird mit $L, R, F$ oder $R$ neben den bereits vorhandenen ersten Eckstein gedreht. Das ist auch in Abbildung \ref{Abbildung_ZweiterEckstein} zu sehen.
 
 \begin{figure}[H]
 \centering
@@ -2851,7 +2851,7 @@ Dann wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition befindet
 
 Dort sind auch orange und grüne Farbflächen abgebildet. Das gilt analog für die anderen benachbarten Farbflächen. Zu beachten ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
 
-Sollte die weiße Farbfläche der Ecke unten am Würfel sein, so kann sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist auch in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Von dort wird er mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
+Sollte die weiße Farbfläche der Ecke unten am Würfel sein, so kann sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist auch in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Danach wird er mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
 
 \begin{figure}[H]
 \centering
@@ -2890,15 +2890,15 @@ Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hä
 %
 \subsection{Algorithmen für die zweite Ebene}
 
-\begin{figure}[h]
+Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
+In Abbildung \ref{Abbildung_GelösteObereEbene} ist die obere Ebene des Würfels gelöst.
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{ebene.png}
 \caption{Würfel mit gelöster oberer Ebene}
 \label{Abbildung_GelösteObereEbene}
 \end{figure}
-
-Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
-In Abbildung \ref{Abbildung_GelösteObereEbene} ist die obere Ebene des Würfels gelöst.
 
 Ein Mensch dreht zum Lösen der zweiten Ebene meistens den Würfel um. Der Anschaulichkeit halber wird das hier auch gemacht.
 

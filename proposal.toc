@@ -97,20 +97,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{59}{subsection.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Minimale Gruppe}{62}{section.9}%
+\contentsline {section}{\numberline {9}Minimale Gruppe}{63}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{62}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{63}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{62}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{63}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{63}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{64}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{63}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{64}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{65}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{66}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{65}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{66}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{65}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{66}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{66}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{67}{subsection.10.2}%
