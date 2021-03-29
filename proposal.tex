@@ -2180,8 +2180,8 @@ Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei k
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
 
-Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $\langle F \rangle$ erzeugt wird, ist somit eine zyklische Untergruppe.
-$(GF, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $G_F = \{N, F^1, F^2, F^3, F^4, ...\}$ ist. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
+Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $ F $ erzeugt wird, ist somit eine zyklische Untergruppe.
+$(G_F, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $G_F = \{N, F^1, F^2, F^3, F^4, ...\}$ ist. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
 Das gilt für jeden Erzeuger, der nur aus einer einzelnen Ebenendrehung besteht.
 
 
@@ -2486,7 +2486,7 @@ Jede valide Würfelkonfiguration $C$ kann nur durch Züge erreicht werden. Züge
 \end{align*}
 und somit gilt auch
 \begin{align*}
-(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 .
+(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 = 0.
 \end{align*}
 
 
@@ -2602,8 +2602,8 @@ $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. Daraus ergibt sich $Z
 Somit kommutieren alle $Y, Z \in \Gtwo$ mit $X=Y$.
 
 
-Es kommutieren auch Züge, die nur gegenüberliegende Ebenen beeinflussen und somit nicht dieselben Steine bewegen, denn elementfremde Zykel kommutieren \cite{OS}.
-Das sind dann die Kommutatoren der Form $[U^n, D^n]$, $[F^n, B^n]$ und $[L^n, R^n]$ mit $n \in \mathbb{N}$. 
+Es kommutieren nicht nur zwei gleiche Züge sonder auch Züge, die nur gegenüberliegende Ebenen beeinflussen. Somit bewegen sie nicht dieselben Steine und elementfremde Zykel kommutieren \cite{OS}.
+Das sind dann die Kommutatoren der Form $[U^n, D^n]$, $[F^n, B^n]$ und $[L^n, R^n]$ (und anders herum) mit $n \in \mathbb{N}$. 
 Da die beiden Züge nicht dieselben Steine beeinflussen, ist es nicht relevant, dass die Gruppe nicht kommutativ ist und durch $YZY^{-1}Z^{-1}$ werden beide Züge wieder invertiert.
 
 
@@ -2634,6 +2634,7 @@ Wenn nun die Kopfzeile der Tabelle und die unterste Zeile verglichen werden, zei
 \\
 \\
 (Daraus ergibt sich $\lbrack L, F \rbrack  = ( \ \textit{ulb} \ \textit{ulf} \ )(\ \textit{dlf} \ \textit{drf} \ )$ in der Zykelschreibweise.)
+
 
 %
 %
