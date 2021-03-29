@@ -2451,13 +2451,15 @@ In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDe
 %\end{align*}
 
 
-Der Würfel kann nur durch einen der Grundzüge des Würfels oder einer Kombination der Grundzüge verändert werden. Die Veränderungen des Vektors $x$ durch die Funktion $\gamma$ sind in der folgenden Tabelle detailliert zu sehen.
+Der Würfel kann nur durch einen der Grundzüge des Würfels oder einer Kombination der Grundzüge verändert werden. Die Veränderungen des Vektors $x$ durch das Ausführen der Grundzüge sind in der folgenden Tabelle detailliert zu sehen. Die Variable $s$ beschreibt dabei die Veränderung der Summe der Vektoreinträge.
+\ \\
+
 
 \begin{adjustbox}{width=1\textwidth,center}
 \begin{tabular}{c l c c }
 \toprule
 
-\textbf{Zug} $\boldsymbol{Z}$ & \textbf{Vektor} $\boldsymbol{x}$ & \  & $\boldsymbol{\mod 3}$ \\
+\textbf{Zug} $\boldsymbol{Z}$ & \textbf{Vektor} $\boldsymbol{x}$ & $\boldsymbol{s}$  & $\boldsymbol{\mod 3}$ \\
 
 \midrule
 
@@ -2476,6 +2478,16 @@ $B$ & $(x_2 +2) \hspace*{-0.6em} \mod 3, (x_6 + 1)  \hspace*{-0.6em} \mod 3, x_3
 \bottomrule
 \end{tabular}
 \end{adjustbox}
+\ \\
+
+Jede valide Würfelkonfiguration $C$ kann nur durch Züge erreicht werden. Züge bestehen aus Elementen der Menge $\{U, D, R, L, F, B\}$. In der Startkonfiguration ist der Summe der Vektoreinträge $0$. Der Vektor $x$ ist dabei $(0,0,0,0,0,0,0,0)$ und die Summe der Einträge ist somit 0. Es gilt $0 \hspace*{-0.5em} \mod 3 = 0$. Bei jedem der Grundzüge aus $\{U, D, R, L, F, B\}$ wird die Summe der Vektoreinträge um den Wert von $s$ verändert. Die Variable $s$ ist bei den Grundzügen entweder 0 oder 6. Es gilt auch $6 \hspace*{-0.5em} \mod 3 = 0$ und damit auch $s \hspace*{-0.5em} \mod 3 = 0$. Somit muss die Summe der Vektoreinträge immer 0 sein, wenn man modulo 3 rechnet, da jeder Zug $Z$ aus einem der Grundzüge aus $\{U, D, R, L, F, B\}$ oder einer Kombination dieser besteht. Jedes Vielfache von 6 und 0 ergibt 0, wenn man modulo 3 rechnet. Es gilt also
+\begin{align*}
+(k \cdot s) \hspace*{-0.5em} \mod 3 = 0 \textit{ für } k \in \mathbb{N}
+\end{align*}
+und somit gilt auch
+\begin{align*}
+(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 .
+\end{align*}
 
 
 %Für jede valide Würfelposition gilt folglich ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
