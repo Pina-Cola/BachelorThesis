@@ -1256,6 +1256,11 @@ $i(x) = x$
 \end{minipage}
 \vspace*{1em}
 
+Die Funktionen $g$ und $h$ können auch ohne Fallunterscheidung mit modulo 3 geschrieben werden:
+\begin{align*}
+g(x)=(x+2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3
+\end{align*}
+
 Da \textit{i} die Identitätsfunktion ist, kann diese weggelassen werden.
 Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$ verändert, die sich aus den Funktionen $\Gamma_{R_{1-8}}$ zusammensetzt:
 \begin{align*}
@@ -2440,7 +2445,7 @@ In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDe
 
 \ \\
 Für jede valide Würfelposition gilt folglich ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
-Wenn es eine valide Konfiguration $C'=(\sigma', x')$, für die $\sum_{i = 1}^{8} x_i' \mod 3 = 0$ gilt, dann gibt es einen Zug $Z \in \Gtwo$, so dass $Z \cdot C'$ die Steine in die Konfiguration $(1,x)$ bringt Alle Steine befinden sich dann an der richtigen Position, sind aber nicht korrekt ausgerichtet. 
+Wenn es eine valide Konfiguration $C'=(\sigma', x')$ gibt, für die $\sum_{i = 1}^{8} x_i' \mod 3 = 0$ gilt, dann gibt es einen Zug $Z \in \Gtwo$, so dass $Z \cdot C'$ die Steine in die Konfiguration $(1,x)$ bringt Alle Steine befinden sich dann an der richtigen Position, sind aber nicht korrekt ausgerichtet. 
 Von dieser Konfiguration $(1,x)$ ausgehend gibt es einen Zug $Z \in \Gtwo$, so dass alle Eckstücke richtig ausgerichtet sind. Dann ergibt sich die Konfiguration $(1, 0)$ und alle Eckstücke sind in der richtigen Ausrichtung und Position. Der Würfel befindet sich dann in der Startkonfiguration. 
 %
 %
