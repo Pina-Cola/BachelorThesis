@@ -2633,7 +2633,7 @@ Wenn nun die Kopfzeile der Tabelle und die unterste Zeile verglichen werden, zei
 \hspace*{1.5cm } $\textit{ulb} \mapsto \textit{ulf}$ \hspace*{1.5cm }$\textit{ulf}  \mapsto \textit{ulb}$ \hspace*{1.5cm } $\textit{dlf} \mapsto \textit{drf}$ \hspace*{1.5cm } $\textit{drf} \mapsto \textit{dlf}$
 \\
 \\
-(Daraus ergibt sich $\lbrack L, F \rbrack  = ( \ \textit{ulb} \ \textit{ulf} \ )(\ \textit{dlf} \ \textit{drf} \ )$ in der Zykelschreibweise.)
+Daraus ergibt sich $\lbrack L, F \rbrack  = ( \ \textit{ulb} \ \textit{ulf} \ )(\ \textit{dlf} \ \textit{drf} \ )$ in der Zykelschreibweise.
 
 
 %
@@ -2659,13 +2659,13 @@ Wenn nun die Kopfzeile der Tabelle und die unterste Zeile verglichen werden, zei
 %
 \subsection{Lösungsansätze}
 
-Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine bewegen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. 
+Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine beeinflussen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. 
 
-Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Die gelbe Seite gehört dann zur letzten Ebene, die gelöst wird. 
+Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Der Würfel wird ebenenweise gelöst und die gelbe Seite gehört zur letzten Ebene, die gelöst wird. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. 
 
-Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der letzten Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. 
-Dafür wird der Würfel üblicherweise gedreht, damit die gelbe Seite oben ist. 
+Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Außerdem wird der Würfel dafür üblicherweise gedreht, damit die gelbe Seite oben ist. Danach werden die Positionen noch getauscht. 
+
 Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
 In Abbildung \ref{Abbildung_AusrichtungEbene2} ist zu sehen, wie der Würfel bei der Ausgangsposition (links) durch den Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ verändert wird. Die Steine der oberen Ebene werden dabei ausgerichtet.
 

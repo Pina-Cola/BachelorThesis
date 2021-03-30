@@ -87,30 +87,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.3}Lösungsansätze}{53}{subsection.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{53}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{54}{subsection.8.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.5}Muster}{57}{subsection.8.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{58}{subsection.8.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{58}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{59}{subsection.8.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{60}{subsection.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Minimale Gruppe}{64}{section.9}%
+\contentsline {section}{\numberline {9}Minimale Gruppe}{65}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{64}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{65}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{64}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{65}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{65}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{66}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{65}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{66}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{67}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{68}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{67}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{68}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{67}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{68}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{68}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{69}{subsection.10.2}%
