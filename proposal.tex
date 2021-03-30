@@ -2664,19 +2664,23 @@ Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine beeinf
 Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Der Würfel wird ebenenweise gelöst und die gelbe Seite gehört zur letzten Ebene, die gelöst wird. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. 
 
-Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Außerdem wird der Würfel dafür üblicherweise gedreht, damit die gelbe Seite oben ist. Danach werden die Positionen noch getauscht. 
+Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
 
-Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
-In Abbildung \ref{Abbildung_AusrichtungEbene2} ist zu sehen, wie der Würfel bei der Ausgangsposition (links) durch den Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ verändert wird. Die Steine der oberen Ebene werden dabei ausgerichtet.
+Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Außerdem wird der Würfel dafür üblicherweise gedreht, damit die gelbe Seite oben ist. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist dann $(1,0)$.
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.12]{isiakanm.png}
-\caption{Ausrichtung der zweiten Ebene (Beispiel)}
-\label{Abbildung_AusrichtungEbene2}
-\end{figure}
+%Bei einem anderen Lösungsansatz werden die Steine zuerst in die richtige Position gebracht. Die Permutationsfunktion $\sigma$ ist dann 1. Danach wird die Ausrichtung der Steine noch verändert. (?) Der Würfel ist dann wieder in der Startkonfiguration.
 
-$\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ kann auch als Zykel geschrieben werden: $( \ \textit{ulb} \ \textit{ulf} \ \textit{urb} \ )$. 
+%Ein Beispiel für einen Zug dieses Lösungsansatzes ist $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$. Dabei werden zwei Steine der oberen Ebene gedreht und drei Steine verändern ihre Position. Dieser Zug kann für die Lösung der zweiten Ebene genutzt werden, ohne dabei die erste Ebene zu verändern. \cite{RF2} 
+%In Abbildung \ref{Abbildung_AusrichtungEbene2} ist zu sehen, wie der Würfel bei der Ausgangsposition (links) durch den Zug $\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ verändert wird. Die Steine der oberen Ebene werden dabei ausgerichtet.
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=0.12]{isiakanm.png}
+%\caption{Ausrichtung der zweiten Ebene (Beispiel)}
+%\label{Abbildung_AusrichtungEbene2}
+%\end{figure}
+
+%$\lbrack R, U \rbrack \lbrack R^{-1}, F \rbrack$ kann auch als Zykel geschrieben werden: $( \ \textit{ulb} \ \textit{ulf} \ \textit{urb} \ )$. 
 %
 %
 %
