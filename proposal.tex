@@ -2664,9 +2664,15 @@ Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine beeinf
 Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Der Würfel wird ebenenweise gelöst und die gelbe Seite gehört zur letzten Ebene, die gelöst wird. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. 
 
-Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
+Bei einem der Lösungsansätze wird zuerst die erste Ebene vollständig gelöst und danach die zweite. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
 
-Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Außerdem wird der Würfel dafür üblicherweise gedreht, damit die gelbe Seite oben ist. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist dann $(1,0)$.
+Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist dann $(1,0)$.
+
+Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite aber die Position der Steine ist dabei unwichtig. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Wenn alle Steine korrekt ausgerichtet sind, werden sie untereinander getauscht und der Würfel wird so gelöst.
+
+Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Kapitel \ref{Abschnitt_LösungBeispiel}.
+
+
 
 %Bei einem anderen Lösungsansatz werden die Steine zuerst in die richtige Position gebracht. Die Permutationsfunktion $\sigma$ ist dann 1. Danach wird die Ausrichtung der Steine noch verändert. (?) Der Würfel ist dann wieder in der Startkonfiguration.
 
@@ -2703,6 +2709,8 @@ Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst all
 %
 %
 \subsection{Lösung des Würfels anhand eines Beispiels}
+
+\label{Abschnitt_LösungBeispiel}
 
 In diesem Beispiel (Abbildung \ref{Abbildung_LösungMensch0}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde.
 In den Abbildungen wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert. Der Würfel befindet sich dann in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{urf} \ \textit{dlb}),(2,2,0,0,2,2,1,0))$.

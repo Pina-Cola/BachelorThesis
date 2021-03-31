@@ -89,9 +89,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{53}{subsection.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5}Muster}{56}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.5}Muster}{57}{subsection.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{57}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{58}{subsection.8.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{58}{subsection.8.7}%
 \defcounter {refsection}{0}\relax 
