@@ -1510,7 +1510,7 @@ $\delta_{Z_r}=( \ \textit{urf} \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ )(
 
 Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
-\delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urb}\ )(\ \textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
+\delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf}\ )(\ \textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
 \delta_{Z_l} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}\ )(\ \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ )\\
 \delta_{Y_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf}\ )(\ \textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf} \ )\\
 \delta_{Y_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb}\ )(\ \textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb} \ )\\
@@ -2670,7 +2670,7 @@ Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst all
 
 Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite aber die Position der Steine ist dabei unwichtig. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Wenn alle Steine korrekt ausgerichtet sind, werden sie untereinander getauscht und der Würfel wird so gelöst.
 
-Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Kapitel \ref{Abschnitt_LösungBeispiel}.
+Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Kapitel \ref{Abschnitt_LösungBeispiel} und in Kapitel \ref{Abschnitt_MinLösung}.
 
 
 
@@ -2712,8 +2712,8 @@ Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösu
 
 \label{Abschnitt_LösungBeispiel}
 
-In diesem Beispiel (Abbildung \ref{Abbildung_LösungMensch0}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde.
-In den Abbildungen wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert. Der Würfel befindet sich dann in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{urf} \ \textit{dlb}),(2,2,0,0,2,2,1,0))$.
+In diesem Beispiel (Abbildung \ref{Abbildung_LösungMensch0}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde. Der Würfel befindet sich dann in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{urf} \ \textit{dlb}),(2,2,0,0,2,2,1,0))$.
+In den Abbildungen wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert. Dann ist die Würfelkonfiguration $C=((\textit{ulb} \ \textit{urb} \ \textit{urf} \ \textit{drb} \ \textit{drf} \ \textit{dlf} \ \textit{ulf} \ \textit{dlb} ),(0,2,0,2,1,2,0,2))$.
 
 \begin{figure}[H]
 \centering
@@ -2723,11 +2723,11 @@ In den Abbildungen wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotier
 \end{figure}
 
 Der erste Schritt für einen menschlichen Ansatz der Lösung des Würfels ist (meistens), die Steine der oberen Ebene so anzuordnen, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
-Für die Lösung der oberen muss $x_{1-4} = (0,0,0,0)$ gelten und $\sigma_{ulb}=\textit{ulb}, \  \sigma_{urb} = \textit{urb}, \  \sigma_{ulf} = \textit{ulf}, \  \sigma_{urf}=\textit{urf}$ \ bzw. die Äquivalenzklassen $\delta_{Z_r}$ und $\delta_{Z_l}$ davon. 
+Für die Lösung der oberen Ebene muss $x_{1-4} = (0,0,0,0)$ gelten und $\sigma_{ulb}=\textit{ulb}, \  \sigma_{urb} = \textit{urb}, \  \sigma_{ulf} = \textit{ulf}, \  \sigma_{urf}=\textit{urf}$. 
 
 Der Lösende sucht nun Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position \textit{urf}. 
 Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. 
-Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{Abbildung_LösungMensch1} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein. Die neue Würfelkonfiguration ist dann $C' = C \cdot F^{-1} = ((\textit{urb} \ \textit{urf} \ \textit{drf} \ \textit{drb}), (0,2,0,1,1,2,2,1))$.
+Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{Abbildung_LösungMensch1} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein. Die neue Würfelkonfiguration ist dann $C' = C \cdot F^{-1} = ((\textit{urf} \ \textit{ulf} \ \textit{dlf} \ \textit{drf})), (0,2,0,1,2,1,1,2))$.
 
 \begin{figure}[H]
 \centering
@@ -2735,7 +2735,7 @@ Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{
 \caption[Lösung von Mensch: Schritt 1]{Lösung von Mensch: Schritt 1}
 \label{Abbildung_LösungMensch1}
 \end{figure}
-
+HIER \\ \\
 Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. Er wird durch den Zug $R^{-1}$ in Position gebracht und findet seinen Platz neben dem weiß-orange-blauen Stein in der oberen Ebene (s. Abbildung \ref{Abbildung_LösungMensch2}).
  
 \begin{figure}[H]
@@ -2780,7 +2780,7 @@ Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt d
 
 Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\ 
 Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn} Metrik genannt. Es gibt noch andere Metriken, wie z. B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden \cite{TR}.
-Wenn in der \textit{Quarter-Turn} Metrik gerechnet wird, ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}.
+Wenn in der \textit{Quarter-Turn} Metrik gerechnet wird, ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}. Mehr zu der optimalen Lösung findet sich in Kapitel \ref{Abschnitt_MinLösung}.
 
 
 %
@@ -3234,6 +3234,8 @@ Der Cayleygraph beider Gruppe hätte $3 \ 647 \ 160$ Elemente. Ein Cayleygraph m
 %
 \subsection{Minimaler Lösungsweg}
 
+\label{Abschnitt_MinLösung}
+
 Auf die \textit{God's Number} des \Ttwo Würfels wurde am Ende von Kapitel \ref{Abschnitt_LösungBeispiel} bereits eingegangen. Bei der \textit{Quarter-Turn Metrik} werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14. Bei der \textit{Half-Turn Metrik} werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11.
 
 Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C_0$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier nur das Konzept entworfen und die Größe berechnet.
@@ -3348,7 +3350,7 @@ Die Gruppe des \Ttwo Würfels ist nützlich für die Veranschaulichung der Grupp
 %
 \subsection{Ausblick}
 
-Es wurden in dieser Arbeit Erzeuger und deren Cayleygraphen der Gruppe $(\Gtwo, \circ)$ beschrieben. Die Generierung des Cayleygraphens der kompletten Gruppe wäre eine interessante Idee für eine andere Arbeit. Außerdem könnte eine \textit{GUI} zum Lösen des \Ttwo Würfels aufschlussreich sein, um effiziente Algorithmen zu finden und die Lösungswege des Würfels zu optimieren.
+Es wurden in dieser Arbeit Erzeuger und deren Cayleygraphen der Gruppe $(\Gtwo, \circ)$ beschrieben. Die Generierung des Cayleygraphens der kompletten Gruppe wäre eine interessante Idee für eine andere Arbeit. Außerdem könnte eine \textit{GUI} zum Lösen des \Ttwo Würfels aufschlussreich sein, um effiziente Algorithmen zu finden und die Lösungswege des Würfels zu optimieren. Das kann auch mit dem Baum aus Kapitel \ref{Abschnitt_MinLösung} realisiert werden.
 Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Gleichheit zweier Züge berechnet. Das kann mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden und wäre nötig, um einen korrekten Cayleygraphen der Gruppe zu generieren.
 
 %
