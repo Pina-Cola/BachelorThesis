@@ -2988,8 +2988,6 @@ Ausgangsposition & Algorithmus  \\
 \includegraphics[scale=0.08]{TOPVIEW2.png} & $F \ [ R,U ] \  [ R,U ] \ F^{-1}$ \\
 \includegraphics[scale=0.08]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
 \includegraphics[scale=0.08]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
-\includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
-\includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -2999,6 +2997,8 @@ Ausgangsposition & Algorithmus  \\
 \toprule
 Ausgangsposition & Algorithmus  \\
 \midrule
+\includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
 \includegraphics[scale=0.08]{TOPVIEW6.png} & $F \ [ R,U ]\ R^{-1} \ F^{-1}\ R$ \\
 \bottomrule
 \end{tabular}
@@ -3204,7 +3204,7 @@ Am Knoten $FFF$ kann man sehen, dass der Pfeil beim hinzufügen eines weiteren $
 %
 %
 %
-\subsection{Vergleich der Gruppen}
+\subsection{Äquivalenz der Gruppen}
 
 Die Gruppe $(\Gtwo, \circ)$ und ihre Untergruppe $(G_{min}, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
 Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt berechnet. 
@@ -3212,6 +3212,44 @@ Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt ber
 Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $\mod  3$ gerechnet immer 0 ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer 0 ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$. Somit sind die Gruppen $(\Gtwo, \circ)$ und $(G_{min}, \circ)$ gleichmächtig.
 
 Der Cayleygraph beider Gruppe hätte $3 \ 647 \ 160$ Elemente. Ein Cayleygraph mit dieser Komplexität ist leider zu umfangreich für diese Arbeit. Deshalb wird im Folgenden nur ein Teilgraph abgebildet.
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection{Minimaler Lösungsweg}
+
+Auf die \textit{God's Number} des \Ttwo Würfels wurde am Ende von Kapitel \ref{Abschnitt_LösungBeispiel} bereits eingegangen. Bei der \textit{Quarter-Turn Metrik} werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14. Bei der \textit{Half-Turn Metrik} werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11.
+
+Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C_0$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier nur das Konzept entworfen und die Größe berechnet.
+
+Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für einen minimalen Baum drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
+
+Wenn man jeden möglichen Zug für die \textit{Quarter-Turn Metrik} betrachtet, erhält man sechs Züge, da jeder Ebene in zwei Richtungen gedreht werden kann. Es handelt sich dabei um die Züge $F, F^{-1}, R, R^{-1}, U$ und $U^{-1}$.
+
+Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
+
+\begin{figure}[H]
+\centering
+HIER GRAFIK EINFÜGEN
+\caption{Lösungsbaum: \textit{Quarter-Turn Metrik}}
+\label{Abbildung_BaumQTM}
+\end{figure}
 
 
 %

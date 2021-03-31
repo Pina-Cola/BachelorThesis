@@ -97,17 +97,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{60}{subsection.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Minimale Gruppe}{65}{section.9}%
+\contentsline {section}{\numberline {9}Minimale Gruppe}{64}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{65}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{64}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{65}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{64}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{66}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{65}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{66}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{65}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Vergleich der Gruppen}{67}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{66}{subsection.9.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{67}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10}Fazit}{68}{section.10}%
 \defcounter {refsection}{0}\relax 
