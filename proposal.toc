@@ -111,10 +111,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{67}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{68}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{69}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{68}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{69}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{68}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{69}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{69}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{70}{subsection.10.2}%
