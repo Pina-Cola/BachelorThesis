@@ -3141,6 +3141,40 @@ Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Rotation des Wür
 Nachdem in Abschnitt \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine minimal durch Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine beschrieben. Das erfolgt über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition findet sich in Abschnitt \ref{Abschnitt_AusrichtungDerSteine}.
 Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist der fünfte Vektoreintrag immer 0. 
 
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection{Erzeuger und Cayleygraph von $G_{min}$}
+
+Die Untergruppe $(G_{min}, \circ)$ wird durch $\{U, R, F\}$ erzeugt. Der vollständige Cayleygraph dieser Untergruppe hat  $3 \ 647 \ 160$ Mitglieder. Das ist die Anzahl der validen Würfelkonfigurationen. Jede Äquivalenzklasse aus $G_{min}$ steht für die Züge, durch die man eine bestimmte Würfelkonfiguration erreichen kann.
+Da der vollständige Cayleygraph deutlich zu umfangreich für den Rahmen dieser Arbeit ist, 
+ist in abbildung \ref{Abbildung_Cayleygraph_min} nur ein Ausschnitt dieses Graphens zu sehen. Die roten Pfeile repräsentieren den Zug $F$, $R$ wird durch blau repräsentiert und $U$ durch grün. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.9]{Cayleygraph_URF.png}
+\caption{Cayleygraph der Untergruppe $G_{min}$}
+\label{Abbildung_Cayleygraph_min}
+\end{figure}
+
+Am Knoten $FFF$ kann man sehen, dass der Pfeil beim hinzufügen eines weiteren $F$ zurück zu $N$ führt. Das liegt daran, dass $FFFF$ und $N$ aus der gleichen Äquivalenzklasse sind und den gleichen Zug repräsentieren.
+ 
 
 
 

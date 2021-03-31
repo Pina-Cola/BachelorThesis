@@ -105,7 +105,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{65}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Vergleich der Gruppen}{65}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{65}{subsection.9.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.5}Vergleich der Gruppen}{66}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10}Fazit}{67}{section.10}%
 \defcounter {refsection}{0}\relax 
