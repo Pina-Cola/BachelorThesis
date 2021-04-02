@@ -2713,7 +2713,7 @@ Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösu
 \label{Abschnitt_LösungBeispiel}
 
 In diesem Beispiel (Abbildung \ref{Abbildung_LösungMensch0}) wird der Würfel mit dem Zug $FUBRF^{-1}$ verdreht und so gelöst, wie ein Mensch den \textit{Cube} lösen würde. Der Würfel befindet sich dann in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{urf}),(2,2,0,0,2,2,1,0))$.
-In den Abbildungen wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotiert. Dann ist die Würfelkonfiguration $C=((\textit{ulb} \ \textit{urf} \ \textit{urb} \ \textit{ulf} \ \textit{drb} \ \textit{dlf} \ \textit{drf} \ \textit{dlb} ),(0,2,0,2,1,2,0,2))$.
+In den Abbildungen wurde der Würfel noch um $90^\circ$ um die $z$-Achse rotiert. Dann ist die Würfelkonfiguration $C'=(( \textit{ulb} \ \textit{urb} \ \textit{urf})( \textit{ulf} \ \textit{dlb} )(\textit{drb} \ \textit{drf} \ \textit{dlf}),(0,2,0,2,1,2,0,2))$.
 
 \begin{figure}[H]
 \centering
@@ -2723,12 +2723,11 @@ In den Abbildungen wurde der Würfel noch um $180^\circ$ um die $z$-Achse rotier
 \end{figure}
 
 Der erste Schritt für einen menschlichen Ansatz der Lösung des Würfels ist (meistens), die Steine der oberen Ebene so anzuordnen, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
-Für die Lösung der oberen Ebene muss $x_{1-4} = (0,0,0,0)$ gelten, damit die Steine auch richtig ausgerichtet sind. Die Position der Steine wird durch die Permutationsfunktion beschrieben. 
-%und $\sigma_{ulb}=\textit{ulb}, \  \sigma_{urb} = \textit{urb}, \  \sigma_{ulf} = \textit{ulf}, \  \sigma_{urf}=\textit{urf}$. 
+Für die Lösung der oberen Ebene muss $x_{1-4} = (0,0,0,0)$ gelten und die Steine der Ebene müssen an der richtigen Position zueinander sein.
 
 Der Lösende sucht nun Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position \textit{urf}. 
 Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. 
-Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{Abbildung_LösungMensch1} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein. Die neue Würfelkonfiguration ist dann $C' $ $= C \cdot F^{-1} $ $= (( \textit{ulb} \ \textit{ulf} \ \textit{drb} \ \textit{drf} \ \textit{dlb} )( \textit{urb} \ \textit{dlf} \ \textit{urf} ),$ $ (0,2,0,1,2,1,1,2))$.
+Nun ist $x_{1-4}''=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{Abbildung_LösungMensch1} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein. Die neue Würfelkonfiguration ist dann $C'' $ $= C' \cdot F^{-1} $ $= ((\textit{ulb} \ \textit{urb} \ \textit{ulf} \ \textit{dlb} \ \textit{dlf} \ \textit{drb} \ \textit{urb}),$ $(0,2,0,1,1,2,2,1))$.
 
 \begin{figure}[H]
 \centering
@@ -2737,7 +2736,7 @@ Nun ist $x_{1-4}=(0,2,0,1)$ und der Würfel sieht so aus, wie in Abbildung \ref{
 \label{Abbildung_LösungMensch1}
 \end{figure}
 
-Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. Er wird durch den Zug $R^{-1}$ in Position gebracht und findet seinen Platz neben dem weiß-orange-blauen Stein in der oberen Ebene (s. Abbildung \ref{Abbildung_LösungMensch2}). Die Würfelkonfiguration ist dann $(( \textit{ulb} \ \textit{ulf} \ \textit{urb} \ \textit{dlf} \ \textit{drf} \ \textit{dlb}),(0,1,0,0,2,0,1,2))$.
+Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. Er wird durch den Zug $R^{-1}$ in Position gebracht und findet seinen Platz neben dem weiß-orange-blauen Stein in der oberen Ebene (s. Abbildung \ref{Abbildung_LösungMensch2}). Die Würfelkonfiguration $C'''$ ist dann $C'' \cdot R^{-1} = (( \textit{ulb} \ \textit{urf} )( \textit{drb} \ \textit{drf} )( \textit{urb} \ \textit{ulf} \ \textit{dlb} \ \textit{dlf}),(0,1,0,0,2,0,1,2))$.
  
 \begin{figure}[H]
 \centering
@@ -2747,7 +2746,7 @@ Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. 
 \end{figure}
 
 Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere Ebene ist nun gelöst und alle Steine mit weißen Farbflächen sind wie in der Startkonfiguration zueinander ausgerichtet. (s. Abbildung \ref{Abbildung_LösungMensch3}).
-Die Würfelkonfiguration ist $C=((\textit{ulb} \ \textit{ulf} \ \textit{drb} \ \textit{dlf} \ \textit{drf} \ \textit{urb} \ \textit{dlb}),(0,0,0,0,2,0,1,0))$.
+Die Würfelkonfiguration ist $C^{IV}=(( \textit{ulb} \ \textit{urf} )( \textit{urb} \ \textit{ulf} )( \textit{drb} \ \textit{drf} \ \textit{dlf} ),(0,0,0,0,2,0,1,0))$.
 
 \begin{figure}[H]
 \centering
@@ -2756,7 +2755,7 @@ Die Würfelkonfiguration ist $C=((\textit{ulb} \ \textit{ulf} \ \textit{drb} \ \
 \label{Abbildung_LösungMensch3}
 \end{figure} 
 
-Für den nächsten Schritt rotiert der Mensch den Würfel, hier zweimal um die $y$-Achse (s. Abbildung \ref{Abbildung_LösungMensch4}). Die weiße Seite ist nun unten und zwei der vier gelben Farbflächen sind nach oben ausgerichtet.
+Für den nächsten Schritt rotiert der Mensch den Würfel, hier zweimal um die $y$-Achse (s. Abbildung \ref{Abbildung_LösungMensch4}). Die weiße Seite ist nun unten und zwei der vier gelben Farbflächen sind nach oben ausgerichtet. Dann ist die Würfelkonfiguration $C^V $ $= (( \textit{ulb} \ \textit{drb} \ \textit{urb} \ \textit{dlb} \ \textit{ulf} \ \textit{drf} )( \textit{urf} \ \textit{dlf} ),$ $(1,0,2,0,0,0,0,0))$
 
 \begin{figure}[H]
 \centering
@@ -2765,7 +2764,7 @@ Für den nächsten Schritt rotiert der Mensch den Würfel, hier zweimal um die $
 \label{Abbildung_LösungMensch4}
 \end{figure} 
 
-Dann führt der Lösende den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2} und erhält einen gelösten Würfel (s. Abbildung \ref{Abbildung_LösungMensch5}). 
+Dann führt der Lösende den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2} und erhält einen gelösten Würfel, der falsch herum gehalten wird (s. Abbildung \ref{Abbildung_LösungMensch5}). Die Würfelkonfiguration ist $ C^{VI} = (( \textit{ulb} \ \textit{drb} )( \textit{urb} \ \textit{dlb} )( \textit{ulf} \ \textit{drf} )( \textit{urf} \ \textit{dlf} ), (0,0,0,0,0,0,0,0))$
 
 \begin{figure}[H]
 \centering
@@ -2774,7 +2773,7 @@ Dann führt der Lösende den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2
 \label{Abbildung_LösungMensch5}
 \end{figure} 
 
-Wenn dieser Würfel nun noch zweimal um die $x$-Achse gedreht wird, befindet er sich in der Konfiguration $(1,0)$.
+Wenn dieser Würfel nun noch zweimal um die $x$-Achse gedreht wird, befindet er sich in der Konfiguration $C^{VII} =(1,0)$.
 
 Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die in verschiedenen Situtionen anwendet werden können.  
 In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
