@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  2 APR 2021 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  2 APR 2021 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1843,18 +1843,18 @@ File: Cayleygraph_URF.png Graphic file (type png)
 Package pdftex.def Info: Cayleygraph_URF.png  used on input line 3180.
 (pdftex.def)             Requested size: 299.41183pt x 223.52902pt.
 [66 <./DLB.png>] [67 <./Cayleygraph_URF.png>]
-<Baum_1.pdf, id=961, 592.33797pt x 137.83395pt>
-File: Baum_1.pdf Graphic file (type pdf)
-<use Baum_1.pdf>
-Package pdftex.def Info: Baum_1.pdf  used on input line 3253.
-(pdftex.def)             Requested size: 414.63374pt x 96.4831pt.
+<Baum_1.jpg, id=961, 566.01865pt x 137.74661pt>
+File: Baum_1.jpg Graphic file (type jpg)
+<use Baum_1.jpg>
+Package pdftex.def Info: Baum_1.jpg  used on input line 3253.
+(pdftex.def)             Requested size: 396.21034pt x 96.42197pt.
 <Baum_2.pdf, id=962, 891.09212pt x 137.83395pt>
 File: Baum_2.pdf Graphic file (type pdf)
 <use Baum_2.pdf>
 Package pdftex.def Info: Baum_2.pdf  used on input line 3264.
 (pdftex.def)             Requested size: 445.54497pt x 68.9168pt.
- [68 <./Baum_1.pdf>]
-<Baum_3.pdf, id=989, 891.09212pt x 137.83395pt>
+ [68 <./Baum_1.jpg>]
+<Baum_3.pdf, id=968, 891.09212pt x 137.83395pt>
 File: Baum_3.pdf Graphic file (type pdf)
 <use Baum_3.pdf>
 Package pdftex.def Info: Baum_3.pdf  used on input line 3275.
@@ -1887,8 +1887,8 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3400.
  ) 
 Here is how much of TeX's memory you used:
- 32160 strings out of 483016
- 586843 string characters out of 5961286
+ 32161 strings out of 483016
+ 586823 string characters out of 5961286
  1292149 words of memory out of 5000000
  46169 multiletter control sequences out of 15000+600000
  560081 words of font info for 190 fonts, out of 8000000 for 9000
@@ -1920,10 +1920,10 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (76 pages, 3126697 bytes).
+Output written on proposal.pdf (76 pages, 3297053 bytes).
 PDF statistics:
- 1231 PDF objects out of 1440 (max. 8388607)
- 993 compressed objects within 10 object streams
+ 1217 PDF objects out of 1440 (max. 8388607)
+ 979 compressed objects within 10 object streams
  231 named destinations out of 1000 (max. 500000)
  23840 words of extra memory for PDF output out of 24883 (max. 10000000)
 
