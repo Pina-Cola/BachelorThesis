@@ -1505,10 +1505,10 @@ Das kann nun in der Form $i \mapsto j$ geschrieben werden:
 & \textit{drf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ & \textit{dlf} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ & \textit{dlb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ & \textit{drb} \mapsto \textit{drf}
 \end{alignat*}
 
-In der Zykel-Schreibweise sieht die Veränderung der Steinnamen dann so aus: \\
+In der Zykel-Schreibweise sieht die Veränderung der Steinpositionen dann so aus: \\
 $\delta_{Z_r}=( \ \textit{urf} \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ )( \ \textit{drf} \ \textit{dlf} \ \textit{dlb} \ \textit{drb} \  )$ 
 
-Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
+Alle Funktionen der Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \begin{align*}
 \delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf}\ )(\ \textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
 \delta_{Z_l} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}\ )(\ \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ )\\
@@ -1517,7 +1517,34 @@ Alle Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{X_r} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )\\
 \delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
 \end{align*}
-Da die Rotationen zu den Zügen zählen, wird die mehrfache Ausführung einer Rotation auch mit der Exponentenschreibweise geschrieben. 
+
+Da die Rotationen die Würfelkonfiguration verändern, muss es nicht nur Permutationsfunktionen für die Veränderung der Steinposition geben, sondern auch Übergangsfunktionen für den Vektor $x$, der die Ausrichtung der Steine darstellt. Die Funktionen $\Gamma$ wurden für jeden Zug des Würfels bereits in Kapitel \ref{Abschnitt_AusrichtungDerSteine} beschrieben. Die Vektoreinträge werden dort mit den Funktionen $g, h$ und $i$ verändert.
+\begin{align*}
+g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 \ \ \ \ \ i(x)=x
+\end{align*}
+
+Für der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folgezustand überführt. Die Identitätsfunktion $i$ muss nicht geschrieben werden. Die Funktionen $\beta$ für die Rotationen sind im Folgenden definiert:
+\begin{align*}
+ & \beta_{Z_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
+ & = (x_3, x_1, x_4, x_2, x_7, x_5, x_8, x_6) \\
+\\
+ & \beta_{Z_l}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
+ & = (x_2, x_4, x_1, x_3, x_6, x_8, x_5, x_7) \\
+\\
+ & \beta_{Y_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
+ & = (h(x_3), g(x_4), g(x_7), h(x_8), g(x_1), h(x_2), h(x_5), g(x_6)) \\
+\\
+ & \beta_{Y_l}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
+ & = (h(x_5), g(x_6), g(x_1), h(x_2),g(x_7),h(x_8),h(x_3),g(x_4)) \\
+\\
+ & \beta_{X_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
+ & (g(x_5), h(x_1), h(x_7), g(x_3), h(x_6), g(x_2), g(x_8),h(x_4)) \\
+\\
+ & \beta_{X_l}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
+ & (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
+\end{align*}
+
+Die mehrfache Ausführung einer Rotation wird auch mit der Exponentenschreibweise geschrieben. 
 Somit gilt für jede Rotation $TTTT=T^4=N_R$ (für $T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \}$) und $T^0=N_R$ (für alle Rotationen $T$). Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. 
 Dementsprechend gilt bei den Rotationen auch für jede Rotation: 
 \begin{align*}

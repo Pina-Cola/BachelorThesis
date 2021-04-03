@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  2 APR 2021 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  3 APR 2021 12:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1293,7 +1293,7 @@ ing (ext4): destination with the same identifier (name{page.i}) has been alread
 y used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66 ...ntergruppen Beispiele}{42}{subsection.6.1}
+l.66 ...ntergruppen Beispiele}{43}{subsection.6.1}
                                                   % [1])
 \tf@toc=\write6
 \openout6 = `proposal.toc'.
@@ -1466,424 +1466,433 @@ File: auf_ulf.png Graphic file (type png)
 <use auf_ulf.png>
 Package pdftex.def Info: auf_ulf.png  used on input line 1492.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
- [28 <./auf_ulf.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1561--1566
+ [28 <./auf_ulf.png>] [29]
+Overfull \hbox (12.90288pt too wide) in paragraph at lines 1547--1550
+\OT1/cmr/m/n/12 (-20) schrie-ben. So-mit gilt f[]ur je-de Ro-ta-ti-on $\OML/cmm
+/m/it/12 TTTT \OT1/cmr/m/n/12 (-20) = \OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 (-20
+) = \OML/cmm/m/it/12 N[]$ \OT1/cmr/m/n/12 (-20) (f[]ur $\OML/cmm/m/it/12 T \OMS
+/cmsy/m/n/12 2 f[]\OML/cmm/m/it/12 ; []; []; []; []; []; N[]\OMS/cmsy/m/n/12 g$
+\OT1/cmr/m/n/12 (-20) )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1588--1593
 
  []
 
-[29]
-<3_wuerfel.png, id=601, 2748.2675pt x 867.24pt>
+[30]
+<3_wuerfel.png, id=606, 2748.2675pt x 867.24pt>
 File: 3_wuerfel.png Graphic file (type png)
 <use 3_wuerfel.png>
-Package pdftex.def Info: 3_wuerfel.png  used on input line 1574.
+Package pdftex.def Info: 3_wuerfel.png  used on input line 1601.
 (pdftex.def)             Requested size: 412.22234pt x 130.08038pt.
- [30 <./3_wuerfel.png>] [31]
+ [31 <./3_wuerfel.png>] [32]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1688.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 1688.
+(hyperref)                removing `math shift' on input line 1715.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1688.
+(hyperref)                removing `\times' on input line 1715.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1688.
+(hyperref)                removing `math shift' on input line 1715.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 1688.
+(hyperref)                removing `math shift' on input line 1715.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1688.
+(hyperref)                removing `\times' on input line 1715.
 
-[32] [33]
-<RF.png, id=625, 1003.75pt x 1140.26pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1715.
+
+[33] [34]
+<RF.png, id=631, 1003.75pt x 1140.26pt>
 File: RF.png Graphic file (type png)
 <use RF.png>
-Package pdftex.def Info: RF.png  used on input line 1773.
+Package pdftex.def Info: RF.png  used on input line 1800.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<FR.png, id=626, 1003.75pt x 1140.26pt>
+<FR.png, id=632, 1003.75pt x 1140.26pt>
 File: FR.png Graphic file (type png)
 <use FR.png>
-Package pdftex.def Info: FR.png  used on input line 1774.
+Package pdftex.def Info: FR.png  used on input line 1801.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- [34]
+ [35]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 1810.
+(Font)              using `U/stmry/m/n' instead on input line 1837.
 
-[35 <./RF.png> <./FR.png>]
-<LLFF_5.png, id=649, 1043.9pt x 1201.48875pt>
+[36 <./RF.png> <./FR.png>]
+<LLFF_5.png, id=654, 1043.9pt x 1201.48875pt>
 File: LLFF_5.png Graphic file (type png)
 <use LLFF_5.png>
-Package pdftex.def Info: LLFF_5.png  used on input line 1851.
+Package pdftex.def Info: LLFF_5.png  used on input line 1878.
 (pdftex.def)             Requested size: 146.145pt x 168.20728pt.
 File: 2x2solved.png Graphic file (type png)
 <use 2x2solved.png>
-Package pdftex.def Info: 2x2solved.png  used on input line 1852.
+Package pdftex.def Info: 2x2solved.png  used on input line 1879.
 (pdftex.def)             Requested size: 140.52403pt x 159.6353pt.
- [36] [37 <./LLFF_5.png>]
-<graph_zug.png, id=664, 1927.2pt x 1084.05pt>
+ [37] [38 <./LLFF_5.png>]
+<graph_zug.png, id=669, 1927.2pt x 1084.05pt>
 File: graph_zug.png Graphic file (type png)
 <use graph_zug.png>
-Package pdftex.def Info: graph_zug.png  used on input line 1922.
+Package pdftex.def Info: graph_zug.png  used on input line 1949.
 (pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
 
-Overfull \hbox (122.92036pt too wide) in paragraph at lines 1922--1923
+Overfull \hbox (122.92036pt too wide) in paragraph at lines 1949--1950
  [][] 
  []
 
-[38 <./graph_zug.png>]
-<zykel_LLFF.png, id=672, 1366.10374pt x 593.21625pt>
+[39 <./graph_zug.png>]
+<zykel_LLFF.png, id=677, 1366.10374pt x 593.21625pt>
 File: zykel_LLFF.png Graphic file (type png)
 <use zykel_LLFF.png>
-Package pdftex.def Info: zykel_LLFF.png  used on input line 1951.
+Package pdftex.def Info: zykel_LLFF.png  used on input line 1978.
 (pdftex.def)             Requested size: 341.5251pt x 148.3037pt.
- [39 <./zykel_LLFF.png>]
-Overfull \hbox (5.2152pt too wide) in paragraph at lines 2001--2030
+ [40 <./zykel_LLFF.png>]
+Overfull \hbox (5.2152pt too wide) in paragraph at lines 2028--2057
 []$[]$ $[]$ $[]$ 
  []
 
-[40] [41]
+[41] [42]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2100.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2100.
+(hyperref)                removing `math shift' on input line 2127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 2100.
+(hyperref)                removing `subscript' on input line 2127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 2100.
+(hyperref)                removing `\times' on input line 2127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2100.
+(hyperref)                removing `\times' on input line 2127.
 
-[42] [43]
-Overfull \hbox (1.19084pt too wide) in paragraph at lines 2231--2233
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2127.
+
+[43] [44]
+Overfull \hbox (1.19084pt too wide) in paragraph at lines 2258--2260
 \OML/cmm/m/it/12 RRFF$ \OT1/cmr/m/n/12 (-20) die Ord-nung 3 hat, be-fin-det sic
 h der W[]urfel nach $(\OML/cmm/m/it/12 RRFF\OT1/cmr/m/n/12 (-20) )[] = \OML/cmm
 /m/it/12 RRFFRRFFRRFF$
  []
 
-<Cayleygraph1.png, id=728, 178.7478pt x 189.3474pt>
+<Cayleygraph1.png, id=733, 178.7478pt x 189.3474pt>
 File: Cayleygraph1.png Graphic file (type png)
 <use Cayleygraph1.png>
-Package pdftex.def Info: Cayleygraph1.png  used on input line 2261.
+Package pdftex.def Info: Cayleygraph1.png  used on input line 2288.
 (pdftex.def)             Requested size: 107.2495pt x 113.6093pt.
-[44]
-<Cayleygraph2.png, id=736, 505.89pt x 248.3679pt>
+[45]
+<Cayleygraph2.png, id=742, 505.89pt x 248.3679pt>
 File: Cayleygraph2.png Graphic file (type png)
 <use Cayleygraph2.png>
-Package pdftex.def Info: Cayleygraph2.png  used on input line 2280.
+Package pdftex.def Info: Cayleygraph2.png  used on input line 2307.
 (pdftex.def)             Requested size: 328.82458pt x 161.43721pt.
- [45 <./Cayleygraph1.png>] [46 <./Cayleygraph2.png>]
+ [46 <./Cayleygraph1.png>] [47 <./Cayleygraph2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2369.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2369.
+(hyperref)                removing `math shift' on input line 2396.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 2369.
+(hyperref)                removing `subscript' on input line 2396.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 2369.
+(hyperref)                removing `\times' on input line 2396.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2369.
+(hyperref)                removing `\times' on input line 2396.
 
-[47]
-Overfull \hbox (5.59138pt too wide) in paragraph at lines 2382--2383
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2396.
+
+[48]
+Overfull \hbox (5.59138pt too wide) in paragraph at lines 2409--2410
 []\OT1/cmr/m/n/12 (-20) Die M[]achtigkeit der Grup-pe $(\OML/cmm/m/it/12 G[]; \
 OMS/cmsy/m/n/12 ^^N\OT1/cmr/m/n/12 (-20) )$ ist al-so die An-zahl der va-li-den
  W[]urfelkonfigurationen
  []
 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 2454--2456
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 2481--2483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2458--2482
+Underfull \hbox (badness 10000) in paragraph at lines 2485--2509
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2458--2482
+Underfull \hbox (badness 10000) in paragraph at lines 2485--2509
 
  []
 
-[49] [50] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 2631--2637
+[50] [51] [52]
+Underfull \hbox (badness 10000) in paragraph at lines 2658--2664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2631--2637
+Underfull \hbox (badness 10000) in paragraph at lines 2658--2664
 
  []
 
-[52]
-<LURFL1.png, id=790, 1003.75pt x 1140.26pt>
+[53]
+<LURFL1.png, id=795, 1003.75pt x 1140.26pt>
 File: LURFL1.png Graphic file (type png)
 <use LURFL1.png>
-Package pdftex.def Info: LURFL1.png  used on input line 2720.
+Package pdftex.def Info: LURFL1.png  used on input line 2747.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
- [53]
-<0201.png, id=798, 1003.75pt x 1140.26pt>
+ [54]
+<0201.png, id=803, 1003.75pt x 1140.26pt>
 File: 0201.png Graphic file (type png)
 <use 0201.png>
-Package pdftex.def Info: 0201.png  used on input line 2734.
+Package pdftex.def Info: 0201.png  used on input line 2761.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
-<menschSchritt2.png, id=800, 1003.75pt x 1140.26pt>
+<menschSchritt2.png, id=805, 1003.75pt x 1140.26pt>
 File: menschSchritt2.png Graphic file (type png)
 <use menschSchritt2.png>
-Package pdftex.def Info: menschSchritt2.png  used on input line 2743.
+Package pdftex.def Info: menschSchritt2.png  used on input line 2770.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
- [54 <./LURFL1.png> <./0201.png>]
-<menschSchritt3.png, id=809, 1003.75pt x 1140.26pt>
+ [55 <./LURFL1.png> <./0201.png>]
+<menschSchritt3.png, id=814, 1003.75pt x 1140.26pt>
 File: menschSchritt3.png Graphic file (type png)
 <use menschSchritt3.png>
-Package pdftex.def Info: menschSchritt3.png  used on input line 2753.
+Package pdftex.def Info: menschSchritt3.png  used on input line 2780.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
-<menschSchritt4.png, id=811, 1003.75pt x 1140.26pt>
+<menschSchritt4.png, id=816, 1003.75pt x 1140.26pt>
 File: menschSchritt4.png Graphic file (type png)
 <use menschSchritt4.png>
-Package pdftex.def Info: menschSchritt4.png  used on input line 2762.
+Package pdftex.def Info: menschSchritt4.png  used on input line 2789.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
- [55 <./menschSchritt2.png> <./menschSchritt3.png>]
-<menschSchritt5.png, id=823, 1003.75pt x 1140.26pt>
+ [56 <./menschSchritt2.png> <./menschSchritt3.png>]
+<menschSchritt5.png, id=828, 1003.75pt x 1140.26pt>
 File: menschSchritt5.png Graphic file (type png)
 <use menschSchritt5.png>
-Package pdftex.def Info: menschSchritt5.png  used on input line 2771.
+Package pdftex.def Info: menschSchritt5.png  used on input line 2798.
 (pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
- [56 <./menschSchritt4.png> <./menschSchritt5.png>]
-<RRFFRRUU.png, id=837, 1003.75pt x 1140.26pt>
+ [57 <./menschSchritt4.png> <./menschSchritt5.png>]
+<RRFFRRUU.png, id=842, 1003.75pt x 1140.26pt>
 File: RRFFRRUU.png Graphic file (type png)
 <use RRFFRRUU.png>
-Package pdftex.def Info: RRFFRRUU.png  used on input line 2817.
+Package pdftex.def Info: RRFFRRUU.png  used on input line 2844.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<CubeInCube.png, id=838, 1003.75pt x 1140.26pt>
+<CubeInCube.png, id=843, 1003.75pt x 1140.26pt>
 File: CubeInCube.png Graphic file (type png)
 <use CubeInCube.png>
-Package pdftex.def Info: CubeInCube.png  used on input line 2817.
+Package pdftex.def Info: CubeInCube.png  used on input line 2844.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<UUFFRRUU.png, id=839, 1003.75pt x 1140.26pt>
+<UUFFRRUU.png, id=844, 1003.75pt x 1140.26pt>
 File: UUFFRRUU.png Graphic file (type png)
 <use UUFFRRUU.png>
-Package pdftex.def Info: UUFFRRUU.png  used on input line 2820.
+Package pdftex.def Info: UUFFRRUU.png  used on input line 2847.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
-<UFFUURRU.png, id=840, 1003.75pt x 1140.26pt>
+<UFFUURRU.png, id=845, 1003.75pt x 1140.26pt>
 File: UFFUURRU.png Graphic file (type png)
 <use UFFUURRU.png>
-Package pdftex.def Info: UFFUURRU.png  used on input line 2820.
+Package pdftex.def Info: UFFUURRU.png  used on input line 2847.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- [57 <./RRFFRRUU.png> <./CubeInCube.png> <./UUFFRRUU.png> <./UFFUURRU.png>]
-<schraube_m.png, id=854, 1769.10938pt x 615.0478pt>
+ [58 <./RRFFRRUU.png> <./CubeInCube.png> <./UUFFRRUU.png> <./UFFUURRU.png>]
+<schraube_m.png, id=860, 1769.10938pt x 615.0478pt>
 File: schraube_m.png Graphic file (type png)
 <use schraube_m.png>
-Package pdftex.def Info: schraube_m.png  used on input line 2871.
+Package pdftex.def Info: schraube_m.png  used on input line 2898.
 (pdftex.def)             Requested size: 353.81561pt x 123.00737pt.
- [58 <./schraube_m.png>]
-<e1_s1_s1.png, id=863, 897.3525pt x 905.3825pt>
+ [59 <./schraube_m.png>]
+<e1_s1_s1.png, id=868, 897.3525pt x 905.3825pt>
 File: e1_s1_s1.png Graphic file (type png)
 <use e1_s1_s1.png>
-Package pdftex.def Info: e1_s1_s1.png  used on input line 2906.
+Package pdftex.def Info: e1_s1_s1.png  used on input line 2933.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s1_s2.png, id=864, 897.3525pt x 905.3825pt>
+<e1_s1_s2.png, id=869, 897.3525pt x 905.3825pt>
 File: e1_s1_s2.png Graphic file (type png)
 <use e1_s1_s2.png>
-Package pdftex.def Info: e1_s1_s2.png  used on input line 2907.
+Package pdftex.def Info: e1_s1_s2.png  used on input line 2934.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
 
-Overfull \hbox (27.81915pt too wide) in paragraph at lines 2912--2916
+Overfull \hbox (27.81915pt too wide) in paragraph at lines 2939--2943
 []\OT1/cmr/m/n/12 (-20) Der zwei-te Stein kann dann hin-zu-gef[]ugt wer-den. Es
  gibt f[]ur den 2$\OMS/cmsy/m/n/12 ^^B$\OT1/cmr/m/n/12 (-20) 2$\OMS/cmsy/m/n/12
  ^^B$\OT1/cmr/m/n/12 (-20) 2-W[]urfel L[]osungsmethoden,
  []
 
-<e1_s2_s1.png, id=866, 897.3525pt x 905.3825pt>
+<e1_s2_s1.png, id=871, 897.3525pt x 905.3825pt>
 File: e1_s2_s1.png Graphic file (type png)
 <use e1_s2_s1.png>
-Package pdftex.def Info: e1_s2_s1.png  used on input line 2919.
+Package pdftex.def Info: e1_s2_s1.png  used on input line 2946.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s2.png, id=867, 897.3525pt x 905.3825pt>
+<e1_s2_s2.png, id=872, 897.3525pt x 905.3825pt>
 File: e1_s2_s2.png Graphic file (type png)
 <use e1_s2_s2.png>
-Package pdftex.def Info: e1_s2_s2.png  used on input line 2920.
+Package pdftex.def Info: e1_s2_s2.png  used on input line 2947.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-[59 <./e1_s1_s1.png> <./e1_s1_s2.png>]
-<e1_s2_s1_s.png, id=879, 897.3525pt x 905.3825pt>
+[60 <./e1_s1_s1.png> <./e1_s1_s2.png>]
+<e1_s2_s1_s.png, id=885, 897.3525pt x 905.3825pt>
 File: e1_s2_s1_s.png Graphic file (type png)
 <use e1_s2_s1_s.png>
-Package pdftex.def Info: e1_s2_s1_s.png  used on input line 2931.
+Package pdftex.def Info: e1_s2_s1_s.png  used on input line 2958.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s2_s.png, id=880, 897.3525pt x 905.3825pt>
+<e1_s2_s2_s.png, id=886, 897.3525pt x 905.3825pt>
 File: e1_s2_s2_s.png Graphic file (type png)
 <use e1_s2_s2_s.png>
-Package pdftex.def Info: e1_s2_s2_s.png  used on input line 2932.
+Package pdftex.def Info: e1_s2_s2_s.png  used on input line 2959.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s3_s.png, id=881, 897.3525pt x 905.3825pt>
+<e1_s2_s3_s.png, id=887, 897.3525pt x 905.3825pt>
 File: e1_s2_s3_s.png Graphic file (type png)
 <use e1_s2_s3_s.png>
-Package pdftex.def Info: e1_s2_s3_s.png  used on input line 2933.
+Package pdftex.def Info: e1_s2_s3_s.png  used on input line 2960.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
-<e1_s2_s4_s.png, id=882, 897.3525pt x 905.3825pt>
+<e1_s2_s4_s.png, id=888, 897.3525pt x 905.3825pt>
 File: e1_s2_s4_s.png Graphic file (type png)
 <use e1_s2_s4_s.png>
-Package pdftex.def Info: e1_s2_s4_s.png  used on input line 2934.
+Package pdftex.def Info: e1_s2_s4_s.png  used on input line 2961.
 (pdftex.def)             Requested size: 89.7405pt x 90.54355pt.
 File: ebene.png Graphic file (type png)
 <use ebene.png>
-Package pdftex.def Info: ebene.png  used on input line 2971.
+Package pdftex.def Info: ebene.png  used on input line 2998.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- [60 <./e1_s2_s1.png> <./e1_s2_s2.png> <./e1_s2_s1_s.png> <./e1_s2_s2_s.png> <.
+ [61 <./e1_s2_s1.png> <./e1_s2_s2.png> <./e1_s2_s1_s.png> <./e1_s2_s2_s.png> <.
 /e1_s2_s3_s.png> <./e1_s2_s4_s.png>]
-<TOPVIEW1.png, id=897, 1043.9pt x 1034.86626pt>
+<TOPVIEW1.png, id=902, 1043.9pt x 1034.86626pt>
 File: TOPVIEW1.png Graphic file (type png)
 <use TOPVIEW1.png>
-Package pdftex.def Info: TOPVIEW1.png  used on input line 2989.
+Package pdftex.def Info: TOPVIEW1.png  used on input line 3016.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<TOPVIEW2.png, id=898, 1043.9pt x 1034.86626pt>
+<TOPVIEW2.png, id=903, 1043.9pt x 1034.86626pt>
 File: TOPVIEW2.png Graphic file (type png)
 <use TOPVIEW2.png>
-Package pdftex.def Info: TOPVIEW2.png  used on input line 2990.
+Package pdftex.def Info: TOPVIEW2.png  used on input line 3017.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<TOPVIEW3_1.png, id=899, 1043.9pt x 1034.86626pt>
+<TOPVIEW3_1.png, id=904, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_1.png Graphic file (type png)
 <use TOPVIEW3_1.png>
-Package pdftex.def Info: TOPVIEW3_1.png  used on input line 3001.
+Package pdftex.def Info: TOPVIEW3_1.png  used on input line 3028.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<TOPVIEW3_2.png, id=900, 1043.9pt x 1034.86626pt>
+<TOPVIEW3_2.png, id=905, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_2.png Graphic file (type png)
 <use TOPVIEW3_2.png>
-Package pdftex.def Info: TOPVIEW3_2.png  used on input line 3002.
+Package pdftex.def Info: TOPVIEW3_2.png  used on input line 3029.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<TOPVIEW4.png, id=901, 1043.9pt x 1034.86626pt>
+<TOPVIEW4.png, id=906, 1043.9pt x 1034.86626pt>
 File: TOPVIEW4.png Graphic file (type png)
 <use TOPVIEW4.png>
-Package pdftex.def Info: TOPVIEW4.png  used on input line 3003.
+Package pdftex.def Info: TOPVIEW4.png  used on input line 3030.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<TOPVIEW5.png, id=902, 1043.9pt x 1034.86626pt>
+<TOPVIEW5.png, id=907, 1043.9pt x 1034.86626pt>
 File: TOPVIEW5.png Graphic file (type png)
 <use TOPVIEW5.png>
-Package pdftex.def Info: TOPVIEW5.png  used on input line 3004.
+Package pdftex.def Info: TOPVIEW5.png  used on input line 3031.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<TOPVIEW6.png, id=903, 1043.9pt x 1034.86626pt>
+<TOPVIEW6.png, id=908, 1043.9pt x 1034.86626pt>
 File: TOPVIEW6.png Graphic file (type png)
 <use TOPVIEW6.png>
-Package pdftex.def Info: TOPVIEW6.png  used on input line 3005.
+Package pdftex.def Info: TOPVIEW6.png  used on input line 3032.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 
-[61 <./TOPVIEW1.png> <./TOPVIEW2.png>]
-<corners1.png, id=910, 1043.9pt x 1034.86626pt>
+[62 <./TOPVIEW1.png> <./TOPVIEW2.png>]
+<corners1.png, id=915, 1043.9pt x 1034.86626pt>
 File: corners1.png Graphic file (type png)
 <use corners1.png>
-Package pdftex.def Info: corners1.png  used on input line 3020.
+Package pdftex.def Info: corners1.png  used on input line 3047.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners2.png, id=911, 1043.9pt x 1034.86626pt>
+<corners2.png, id=916, 1043.9pt x 1034.86626pt>
 File: corners2.png Graphic file (type png)
 <use corners2.png>
-Package pdftex.def Info: corners2.png  used on input line 3021.
+Package pdftex.def Info: corners2.png  used on input line 3048.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners3.png, id=912, 1043.9pt x 1034.86626pt>
+<corners3.png, id=917, 1043.9pt x 1034.86626pt>
 File: corners3.png Graphic file (type png)
 <use corners3.png>
-Package pdftex.def Info: corners3.png  used on input line 3022.
+Package pdftex.def Info: corners3.png  used on input line 3049.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
- [62 <./TOPVIEW3_1.png> <./TOPVIEW3_2.png> <./TOPVIEW4.png> <./TOPVIEW5.png> <.
-/TOPVIEW6.png>] [63 <./corners1.png> <./corners2.png> <./corners3.png>]
-<DLB.png, id=932, 1043.9pt x 1201.48875pt>
+ [63 <./TOPVIEW3_1.png> <./TOPVIEW3_2.png> <./TOPVIEW4.png> <./TOPVIEW5.png> <.
+/TOPVIEW6.png>] [64 <./corners1.png> <./corners2.png> <./corners3.png>]
+<DLB.png, id=938, 1043.9pt x 1201.48875pt>
 File: DLB.png Graphic file (type png)
 <use DLB.png>
-Package pdftex.def Info: DLB.png  used on input line 3123.
+Package pdftex.def Info: DLB.png  used on input line 3150.
 (pdftex.def)             Requested size: 156.57823pt x 180.21553pt.
- [64]
+ [65]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 3173.
+(hyperref)                removing `math shift' on input line 3200.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3173.
+(hyperref)                removing `subscript' on input line 3200.
 
 
-Overfull \hbox (14.62761pt too wide) in paragraph at lines 3175--3178
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3200.
+
+
+Overfull \hbox (14.62761pt too wide) in paragraph at lines 3202--3205
 \OT1/cmr/m/n/12 (-20) ser Un-ter-grup-pe hat $3 647 160$ Mit-glie-der. Das ist 
 die An-zahl der va-li-den W[]urfelkonfigurationen.
  []
 
-<Cayleygraph_URF.png, id=942, 332.6829pt x 248.3679pt>
+<Cayleygraph_URF.png, id=947, 332.6829pt x 248.3679pt>
 File: Cayleygraph_URF.png Graphic file (type png)
 <use Cayleygraph_URF.png>
-Package pdftex.def Info: Cayleygraph_URF.png  used on input line 3181.
+Package pdftex.def Info: Cayleygraph_URF.png  used on input line 3208.
 (pdftex.def)             Requested size: 299.41183pt x 223.52902pt.
-[65 <./DLB.png>] [66 <./Cayleygraph_URF.png>]
-<Baum_1.jpg, id=957, 566.01865pt x 137.74661pt>
+[66 <./DLB.png>] [67 <./Cayleygraph_URF.png>]
+<Baum_1.jpg, id=962, 566.01865pt x 137.74661pt>
 File: Baum_1.jpg Graphic file (type jpg)
 <use Baum_1.jpg>
-Package pdftex.def Info: Baum_1.jpg  used on input line 3254.
+Package pdftex.def Info: Baum_1.jpg  used on input line 3281.
 (pdftex.def)             Requested size: 396.21034pt x 96.42197pt.
-<Baum_2.jpg, id=958, 891.0891pt x 137.74661pt>
+<Baum_2.jpg, id=963, 891.0891pt x 137.74661pt>
 File: Baum_2.jpg Graphic file (type jpg)
 <use Baum_2.jpg>
-Package pdftex.def Info: Baum_2.jpg  used on input line 3265.
+Package pdftex.def Info: Baum_2.jpg  used on input line 3292.
 (pdftex.def)             Requested size: 463.369pt x 71.62865pt.
 
-Overfull \hbox (8.1249pt too wide) in paragraph at lines 3265--3266
+Overfull \hbox (8.1249pt too wide) in paragraph at lines 3292--3293
  [][] 
  []
 
-[67 <./Baum_1.jpg>]
-<Baum_3.jpg, id=964, 891.0891pt x 137.74661pt>
+[68 <./Baum_1.jpg>]
+<Baum_3.jpg, id=969, 891.0891pt x 137.74661pt>
 File: Baum_3.jpg Graphic file (type jpg)
 <use Baum_3.jpg>
-Package pdftex.def Info: Baum_3.jpg  used on input line 3276.
+Package pdftex.def Info: Baum_3.jpg  used on input line 3303.
 (pdftex.def)             Requested size: 463.369pt x 71.62865pt.
 
-Overfull \hbox (8.1249pt too wide) in paragraph at lines 3276--3277
+Overfull \hbox (8.1249pt too wide) in paragraph at lines 3303--3304
  [][] 
  []
 
-[68 <./Baum_2.jpg> <./Baum_3.jpg>] [69] (./proposal.lof [70])
+[69 <./Baum_2.jpg> <./Baum_3.jpg>] [70] (./proposal.lof [71])
 \tf@lof=\write7
 \openout7 = `proposal.lof'.
 
- [71]
+ [72]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [72]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3401.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3401.
+ [73]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3428.
 
 (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3401.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3401.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3428.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 9C3B63E0A8E9DE9D7A677DA58C9C24EB;4103.
@@ -1894,11 +1903,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3401.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3428.
  ) 
 Here is how much of TeX's memory you used:
- 32160 strings out of 483016
- 586768 string characters out of 5961286
+ 32161 strings out of 483016
+ 586775 string characters out of 5961286
  1292149 words of memory out of 5000000
  46169 multiletter control sequences out of 15000+600000
  560081 words of font info for 190 fonts, out of 8000000 for 9000
@@ -1930,10 +1939,10 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (75 pages, 3873415 bytes).
+Output written on proposal.pdf (76 pages, 3875980 bytes).
 PDF statistics:
- 1190 PDF objects out of 1200 (max. 8388607)
- 953 compressed objects within 10 object streams
- 230 named destinations out of 1000 (max. 500000)
+ 1195 PDF objects out of 1200 (max. 8388607)
+ 957 compressed objects within 10 object streams
+ 231 named destinations out of 1000 (max. 500000)
  23840 words of extra memory for PDF output out of 24883 (max. 10000000)
 
