@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  7 APR 2021 13:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  7 APR 2021 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1850,35 +1850,34 @@ File: Cayleygraph_URF.png Graphic file (type png)
 <use Cayleygraph_URF.png>
 Package pdftex.def Info: Cayleygraph_URF.png  used on input line 3224.
 (pdftex.def)             Requested size: 299.41183pt x 223.52902pt.
-[67 <./Cayleygraph_URF.png>] [68]
-<Baum_1.jpg, id=965, 566.01865pt x 137.74661pt>
+[67 <./Cayleygraph_URF.png>] [68] [69]
+<Baum_1.jpg, id=969, 566.01865pt x 137.74661pt>
 File: Baum_1.jpg Graphic file (type jpg)
 <use Baum_1.jpg>
-Package pdftex.def Info: Baum_1.jpg  used on input line 3336.
+Package pdftex.def Info: Baum_1.jpg  used on input line 3346.
 (pdftex.def)             Requested size: 396.21034pt x 96.42197pt.
- [69]
 <Baum_2.jpg, id=970, 891.0891pt x 137.74661pt>
 File: Baum_2.jpg Graphic file (type jpg)
 <use Baum_2.jpg>
-Package pdftex.def Info: Baum_2.jpg  used on input line 3347.
+Package pdftex.def Info: Baum_2.jpg  used on input line 3357.
 (pdftex.def)             Requested size: 463.369pt x 71.62865pt.
 
-Overfull \hbox (8.1249pt too wide) in paragraph at lines 3347--3348
+Overfull \hbox (8.1249pt too wide) in paragraph at lines 3357--3358
  [][] 
  []
 
-<Baum_3.jpg, id=971, 891.0891pt x 137.74661pt>
+[70 <./Baum_1.jpg> <./Baum_2.jpg>]
+<Baum_3.jpg, id=978, 891.0891pt x 137.74661pt>
 File: Baum_3.jpg Graphic file (type jpg)
 <use Baum_3.jpg>
-Package pdftex.def Info: Baum_3.jpg  used on input line 3358.
+Package pdftex.def Info: Baum_3.jpg  used on input line 3368.
 (pdftex.def)             Requested size: 463.369pt x 71.62865pt.
 
-Overfull \hbox (8.1249pt too wide) in paragraph at lines 3358--3359
+Overfull \hbox (8.1249pt too wide) in paragraph at lines 3368--3369
  [][] 
  []
 
-[70 <./Baum_1.jpg> <./Baum_2.jpg>] [71 <./Baum_3.jpg>] [72] (./proposal.lof
-[73])
+[71 <./Baum_3.jpg>] [72] (./proposal.lof [73])
 \tf@lof=\write7
 \openout7 = `proposal.lof'.
 
@@ -1888,11 +1887,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [75]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3483.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3483.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3493.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3493.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3483.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3483.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3493.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3493.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 9C3B63E0A8E9DE9D7A677DA58C9C24EB;4103.
@@ -1903,7 +1902,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3483.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3493.
  ) 
 Here is how much of TeX's memory you used:
  32159 strings out of 483016
@@ -1939,7 +1938,7 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (78 pages, 3880471 bytes).
+Output written on proposal.pdf (78 pages, 3881170 bytes).
 PDF statistics:
  1202 PDF objects out of 1440 (max. 8388607)
  962 compressed objects within 10 object streams

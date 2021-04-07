@@ -3281,7 +3281,7 @@ Wird also beispielweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, 
 \end{align*}
 
 
-Bei den Zügen $U, R, F$ bleiben die Folgezüge unverändert, da diese Züge in beiden Gruppen identisch sind. Bei den Zügen $D, L, B$ werden die Folgezüge aufgrund der Würfelausrichtung verändert. Daraus ergibt sich die Überführung des Zuges $ULF$ der Gruppe  $(\Gtwo, \circ)$ zum Zug $URU$ bei der minimalen Untergruppe $(G_{min}, \circ)$:
+Bei den Zügen $U, R, F$ bleiben die Folgezüge unverändert, da diese Züge in beiden Gruppen identisch sind. Bei den Zügen $D, L, B$ werden die Folgezüge aufgrund der Würfelausrichtung verändert. Daraus ergibt sich die Überführung des Zuges $ULF$ der Gruppe $(\Gtwo, \circ)$ zum Zug $URU$ bei der minimalen Untergruppe $(G_{min}, \circ)$:
 \begin{align*}
 U \ L \ F \Rightarrow U \ R \ \rho_L(F) \Rightarrow U \ R \ U
 \end{align*}
@@ -3297,6 +3297,16 @@ Die Überführungsfunktionen alle Grundzüge sind im Folgenden definiert:
  & \rho_B(U) = R && \rho_B(D) = L   && \rho_B(R) = D \\
  & \rho_B(L) = U  && \rho_B(F) =  F && \rho_B(B) = B  \\
 \end{alignat*}
+
+Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Züge der minimalen Gruppe $(G_{min}, \circ)$ überführen. Die Funktionen $\rho$ werden auf alle Elemente angewendet, die hinter dem entsprechendem Zug ausgeführt werden sollen. Die Funktion kann auch verschachtelt werden. Zur besseren Anschaulichkeit folgt noch ein Beispiel:
+\begin{align*}
+& U \ R \ F \ B \ R \ L \ F  \\ 
+\Rightarrow \ & U \ R \ F \ F \ \rho_B(R) \ \rho_B(L) \ \rho_B(F) \\
+\Rightarrow \ & U \ R \ F \ F \ D \ U \ F \\
+\Rightarrow \ & U \ R \ F \ F \ U \ \rho_D(U) \ \rho_D(F) \\
+\Rightarrow  \ & U \ R \ F \ F \ U \ U \ L \\
+\Rightarrow \ & U \ R \ F \ F \ U \ U \ R
+\end{align*}
 
 %
 %
