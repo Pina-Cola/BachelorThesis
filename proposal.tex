@@ -3274,6 +3274,30 @@ $G_{min}$ & $U$ & $U$ & $R$  & $R$  & $F$  & $F$  \\
 
 Jeder Zug aus $\Gtwo$ kann also mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug $ULF$ bei der Gruppe $(\Gtwo, \circ)$ die gleiche Würfelkonfiguration hervor, wie der Zug $URU$ bei der Untergruppe $(G_{min}, \circ)$, wenn dabei die Rotation des Würfels nicht berücksichtig wird. Dadurch, dass er Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
 
+Wird also beispielweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, um der minimalen Abbildung zu entsprechen, so müssen die folgenden Züge entsprechend verändert werden. Bei dem Zug $L$ werden die Folgezüge wie folgt verändert:
+\begin{align*}
+\rho_L(U) = B \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \rho_L(D) = F \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \   \rho_L(R) = R \\
+\rho_L(L) = L \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \rho_L(F) = U \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \rho_L(B) = D 
+\end{align*}
+
+
+Bei den Zügen $U, R, F$ bleiben die Folgezüge unverändert, da diese Züge in beiden Gruppen identisch sind. Bei den Zügen $D, L, B$ werden die Folgezüge aufgrund der Würfelausrichtung verändert. Daraus ergibt sich die Überführung des Zuges $ULF$ der Gruppe  $(\Gtwo, \circ)$ zum Zug $URU$ bei der minimalen Untergruppe $(G_{min}, \circ)$:
+\begin{align*}
+U \ L \ F \Rightarrow U \ R \ \rho_L(F) \Rightarrow U \ R \ U
+\end{align*}
+
+Die Überführungsfunktionen alle Grundzüge sind im Folgenden definiert:
+\begin{alignat*}{3}
+ & \rho_D(U) = U \qquad \qquad  && \rho_D(D) = D  \qquad \qquad && \rho_D(R) = F  \\
+ & \rho_D(L) = B    && \rho_D(F) = L    && \rho_D(B) =  R \\
+\\
+ & \rho_L(U) = B  && \rho_L(D) = F  && \rho_L(R) = R \\
+ & \rho_L(L) = L  && \rho_L(F) = U  && \rho_L(B) = D  \\
+\\
+ & \rho_B(U) = R && \rho_B(D) = L   && \rho_B(R) = D \\
+ & \rho_B(L) = U  && \rho_B(F) =  F && \rho_B(B) = B  \\
+\end{alignat*}
+
 %
 %
 %

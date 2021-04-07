@@ -109,12 +109,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{67}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{68}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{69}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{71}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{72}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{71}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{72}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{71}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{72}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{72}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{73}{subsection.10.2}%
