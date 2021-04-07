@@ -3079,7 +3079,7 @@ Nach Wahl der passenden Algorithmen sollten beide Ebenen gelöst sein. Eventuell
 \section{Minimale Gruppe}
 \label{Kapitel_MinUntergruppe}
 
-In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $(\Gtwo, \circ)$ ist zwar eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. So eine minimale Abbildung soll in diesem Kapitel definiert werden. Diese minimale Abbildung ist eine Untergruppe von $(\Gtwo, \circ)$.
+In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $(\Gtwo, \circ)$ ist eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. So eine minimale Abbildung wird in diesem Kapitel definiert. Diese minimale Abbildung ist eine Untergruppe von $(\Gtwo, \circ)$.
 
 %
 %
@@ -3106,9 +3106,8 @@ In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realis
 
 \label{Abschnitt_MinimalePermutationen}
 
-Wie bereits beschrieben, sind die Züge $U$, $D$, $R$, $L$, $F$ und $B$ des \Ttwo Würfels nicht minimal. Der Zug $U$ und der Zug $D$ beispielsweise sind äquivalent, aber mit einer Rotation des kompletten Würfels. Die Untergruppe der minimalen Abbildung des \Ttwo Würfels wird $(G_{min}, \circ)$ genannt. Die Menge $G_{min}$ enthält die Äquivalenzklassen der minmalen Züge des Würfels.
-
-Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser drei Grundzüge sind die Permutationen $\sigma$. Dabei handelt es sich um die gleichen Permutationsfunktionen wie in Kapitel \ref{Abschnitt_PositionenDerSteineImWürfel}. Es gibt aber nur drei statt sechs Funktionen.
+Wie bereits beschrieben, sind die Züge $U$, $D$, $R$, $L$, $F$ und $B$ des \Ttwo Würfels nicht minimal. Der Zug $U$ und der Zug $D$ beispielsweise sind äquivalent, aber mit einer Rotation des kompletten Würfels. 
+Die Menge der minimalen Züge ist $\{ U, R, F\}$. Die Permutationen dieser drei Grundzüge sind die Permutationen $\sigma$. Dabei handelt es sich um die gleichen Permutationsfunktionen wie in Kapitel \ref{Abschnitt_PositionenDerSteineImWürfel}. Es gibt aber nur drei statt sechs Funktionen.
 
 \begin{align*}
 \sigma_U & =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) \\
@@ -3116,8 +3115,11 @@ Die Menge der minimalen Züge ist somit $\{ U, R, F\}$. Die Permutationen dieser
 \sigma_F & =\ ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ ) \\
 \end{align*}
 
+Keiner dieser drei Grundzüge lässt sich durch einen anderen Zug oder eine Kombination andererZüge darstellen.
+
+Die Untergruppe der minimalen Abbildung des \Ttwo Würfels wird $(G_{min}, \circ)$ genannt. Die Menge $G_{min}$ enthält die Äquivalenzklassen der minmalen Züge des Würfels.
 Die Grundzüge $U$, $R$, und $F$ sind somit die Erzeuger der Untergruppe $(G_{min}, \circ)$.
-Der Stein \textit{dlb} wird durch keine dieser Permutationen bewegt. Darauf wird bei der Definition der minimalen Rotation des Würfels (Abschnitt \ref{Abschnitt_minimaleRotation}) genauer eingegangen.
+Der Stein \textit{dlb} (unten, links, hinten) wird durch keine dieser Permutationen bewegt. Das wird bei der Definition der minimalen Rotation des Würfels (Abschnitt \ref{Abschnitt_minimaleRotation}) genauer beschrieben.
 
 
 %
@@ -3143,7 +3145,7 @@ Der Stein \textit{dlb} wird durch keine dieser Permutationen bewegt. Darauf wird
 
 \label{Abschnitt_minimaleRotation}
 
-Da die Grundzüge des Würfels für die minimale Abbildung durch die Züge $U$, $R$ und $F$ definiert sind, bleibt der Stein unten links hinten (\textit{dlb}) immer unbewegt. Der Würfel muss demnach nicht rotiert werden, da er anhand des Steines \textit{dlb} eine feste Ausrichtung hat. Dieser Stein ist in Abbildung \ref{Abbildung_DLB} hervorgehoben. 
+Da die Grundzüge des Würfels für die minimale Abbildung die Züge $U$, $R$ und $F$ sind, bleibt der Stein unten links hinten (\textit{dlb}) immer unbewegt. Der Würfel muss demnach nicht rotiert werden, da er anhand des Steines \textit{dlb} eine feste Ausrichtung hat. Dieser Stein ist in Abbildung \ref{Abbildung_DLB} hervorgehoben, der Würfel wird dort von hinten gezeigt. 
 
 \begin{figure}[H]
 \centering
@@ -3152,7 +3154,7 @@ Da die Grundzüge des Würfels für die minimale Abbildung durch die Züge $U$, 
 \label{Abbildung_DLB}
 \end{figure}
 
-Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Rotation des Würfels nötig, da sich die Rotation des Würfels immer fest bestimmen lässt.
+Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Rotation des Würfels nötig, da sich die Ausrichtung des Würfels anhand des Steins \textit{dlb} immer fest bestimmen lässt.
 
 %
 %
@@ -3175,8 +3177,22 @@ Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Rotation des Wür
 %
 \subsection{Minimale Ausrichtung der Steine}
 
-Nachdem in Abschnitt \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine minimal durch Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine beschrieben. Das erfolgt über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition findet sich in Abschnitt \ref{Abschnitt_AusrichtungDerSteine}.
-Da der Stein an der Position \textit{dlb} immer als fest angenommen wird, ist der fünfte Vektoreintrag immer 0. 
+Nachdem in Abschnitt \ref{Abschnitt_MinimalePermutationen} bereits die Positionen der Steine durch die minimale Anzahl der Permutationen abgebildet wurde, wird in diesem Abschnitt die Ausrichtung der Steine beschrieben. Das erfolgt über einen 8-dimensionalen Vektor $x$, der die Ober- und Unterseite des Würfels und die sich dort befinden Farbflächen der Steine abbildet. Die Definition des Vektors $x$ der Gruppe $(\Gtwo, \circ)$ findet sich in Abschnitt \ref{Abschnitt_AusrichtungDerSteine}.
+Da der Stein an der Position \textit{dlb} bei der minimale Untergruppe $(G_{min}, \circ)$ immer als fest angenommen wird, ist der fünfte Vektoreintrag immer 0. 
+
+Die Vektorübergangsfunktionen der Rotationen werden nicht gebraucht, da der Würfel eine feste Ausrichtung hat. Die Veränderung der Vektoreinträge kann also durch die drei Funktionen der Grundzüge vollständig abgedeckt werden.
+\begin{align*}
+& \gamma_U \left( (x_1, x_2, x_3, x_4, 0, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_3, x_1, x_4, x_2, 0, x_6, x_7, x_8 \right) \\
+\\ 
+& \gamma_R \left( (x_1, x_2, x_3, x_4, 0, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_1, g(x_4), x_3, h(x_8), 0, h(x_2), x_7, g(x_6) \right) \\ 
+\\
+& \gamma_F \left( (x_1, x_2, x_3, x_4, 0, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_1, x_2, h(x_7), g(x_3), 0, x_6, g(x_8), h(x_4) \right) \\
+\end{align*}
+
+
 
 %
 %
