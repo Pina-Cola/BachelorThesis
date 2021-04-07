@@ -3217,7 +3217,7 @@ Die Vektorübergangsfunktionen der Rotationen werden nicht gebraucht, da der Wü
 
 Die Untergruppe $(G_{min}, \circ)$ wird durch $\{U, R, F\}$ erzeugt. Der vollständige Cayleygraph dieser Untergruppe hat  $3 \ 647 \ 160$ Mitglieder. Das ist die Anzahl der validen Würfelkonfigurationen. Jede Äquivalenzklasse aus $G_{min}$ steht für die Züge, durch die man eine bestimmte Würfelkonfiguration erreichen kann.
 Da der vollständige Cayleygraph deutlich zu umfangreich für den Rahmen dieser Arbeit ist, 
-ist in abbildung \ref{Abbildung_Cayleygraph_min} nur ein Ausschnitt dieses Graphens zu sehen. Die roten Pfeile repräsentieren den Zug $F$, $R$ wird durch blau repräsentiert und $U$ durch grün. 
+ist in Abbildung \ref{Abbildung_Cayleygraph_min} nur ein Ausschnitt dieses Graphens zu sehen. Die roten Pfeile repräsentieren den Zug $F$, $R$ wird durch blau repräsentiert und $U$ durch grün. 
 
 \begin{figure}[H]
 \centering
@@ -3252,12 +3252,25 @@ Am Knoten $FFF$ kann man sehen, dass der Pfeil beim hinzufügen eines weiteren $
 %
 \subsection{Äquivalenz der Gruppen}
 
-Die Gruppe $(\Gtwo, \circ)$ und ihre Untergruppe $(G_{min}, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
-Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt berechnet. 
+%Die Gruppe $(\Gtwo, \circ)$ und ihre Untergruppe $(G_{min}, \circ)$ bilden den \Ttwo Würfel beide vollständig ab und haben die gleiche Mächtigkeit.
+%Die Mächtigkeit der Untergruppe $(G_{min}, \circ)$ wird in diesem Abschnitt berechnet. 
 
-Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $\mod  3$ gerechnet immer 0 ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer 0 ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$. Somit sind die Gruppen $(\Gtwo, \circ)$ und $(G_{min}, \circ)$ gleichmächtig.
+%Da einer der Steine (\textit{dlb}) durch die Permuationen nicht bewegt wird, ist die Anzahl der möglichen Steinpositionen $7!= 5040$. Die Ausrichtung der Steine wird durch den Vektor $x$ bestimmt. Dort werden aber nur sieben der acht Werte verändert. In Abschnitt \ref{Abschnitt_Modulo3} wurde gezeigt, dass die Summe der Vektoreinträge $\mod  3$ gerechnet immer 0 ergibt. Da bei dieser Untergruppe der Vektoreintrag der Farbfläche des Steins \textit{dlb} ($x_5$) immer 0 ist und der Würfel nicht rotiert wird, gibt es $3^6 = 729$ Ausrichtungsmöglichenkeiten der Steine. Das ergibt $5040 \cdot 729 = 3 \ 647 \ 160$ als Mächtigkeit der Untergruppe $(G_{min}, \circ)$. Somit sind die Gruppen $(\Gtwo, \circ)$ und $(G_{min}, \circ)$ gleichmächtig.
 
-Der Cayleygraph beider Gruppe hätte $3 \ 647 \ 160$ Elemente. Ein Cayleygraph mit dieser Komplexität ist leider zu umfangreich für diese Arbeit. Deshalb wird im Folgenden nur ein Teilgraph abgebildet.
+%Der Cayleygraph beider Gruppe hätte $3 \ 647 \ 160$ Elemente. Ein Cayleygraph mit dieser Komplexität ist leider zu umfangreich für diese Arbeit. Deshalb wird im Folgenden nur ein Teilgraph abgebildet.
+
+In diesem Abschnitt wird bewiesen, dass die Mengen $\Gtwo$ und $G_{min}$ gleichnächtig sind und somit beide eine vollständige Abbildung des \Ttwo Würfels bilden. 
+
+Dazu wird zuerst gezeigt, dass die Züge der minimalen Untergruppe $(G_{min}, \circ)$ ausreichen, um alle Züge des Würfels zu repräsentieren. Bei den Elementen der Mengen $\Gtwo$ und $G_{min}$ handelt es sich um die Äquivalenzklassen der Züge. Die Elemente der Menge $\Gtwo$ können aus den Grundzügen $U, D, R, L, F$ und $B$ bestehen. Die Rotationen des Würfels werden hier nicht als Züge berücksichtigt, da die Äquivalenzklassen die Gleichheit von zwei Würfelkonfigurationen mit Rotation berücksichtigen.
+Jeder der Grundzüge $U, D, R, L, F$ und $B$ der Gruppe $(\Gtwo, \circ)$ kann durch einen der Grundzüge der minimalen Gruppe $(G_{min}, \circ)$ dargestellt werden. Der Würfel kann dann verschieden rotiert sein, das wird aber durch die Äquivalenzklassen abgefangen, die die Gleichheit von zwei Zügen mit optionaler Rotation realisieren. In der folgenden Tabelle sind die Züge der Gruppe $(\Gtwo, \circ)$ und die dazugehörigen, minimalen Repräsentanten der Gruppe $(G_{min}, \circ)$ dargestellt:
+
+\begin{center}
+\begin{tabular}{c c c c c c c }
+$\Gtwo$ & $U$ & $D$ & $R$  & $L$  & $F$  & $B$  \\
+\midrule
+$G_{min}$ & $U$ & $U$ & $R$  & $R$  & $F$  & $F$  \\
+\end{tabular}
+\end{center}
 
 %
 %

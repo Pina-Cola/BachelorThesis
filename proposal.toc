@@ -107,7 +107,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{67}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{68}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{67}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{68}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
