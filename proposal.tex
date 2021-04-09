@@ -3258,7 +3258,7 @@ Am Knoten $FFF$ kann man sehen, dass der Pfeil beim hinzufügen eines weiteren $
 
 %Der Cayleygraph beider Gruppe hätte $3 \ 647 \ 160$ Elemente. Ein Cayleygraph mit dieser Komplexität ist leider zu umfangreich für diese Arbeit. Deshalb wird im Folgenden nur ein Teilgraph abgebildet.
 
-In diesem Abschnitt wird bewiesen, dass die Mengen $\Gtwo$ und $G_{min}$ gleichnächtig sind und somit beide eine vollständige Abbildung des \Ttwo Würfels bilden. 
+In diesem Abschnitt wird bewiesen, dass die Mengen $\Gtwo$ und $G_{min}$ gleichmächtig sind und somit beide eine vollständige Abbildung des \Ttwo Würfels bilden. 
 
 Dazu wird zuerst gezeigt, dass die Züge der minimalen Untergruppe $(G_{min}, \circ)$ ausreichen, um alle Züge des Würfels zu repräsentieren. Bei den Elementen der Mengen $\Gtwo$ und $G_{min}$ handelt es sich um die Äquivalenzklassen der Züge. Die Elemente der Menge $\Gtwo$ können aus den Grundzügen $U, D, R, L, F$ und $B$ bestehen. Die Rotationen des Würfels werden hier nicht als Züge berücksichtigt, da die Äquivalenzklassen die Gleichheit von zwei Würfelkonfigurationen mit Rotation berücksichtigen.
 Jeder der Grundzüge $U, D, R, L, F$ und $B$ der Gruppe $(\Gtwo, \circ)$ kann durch einen der Grundzüge der minimalen Gruppe $(G_{min}, \circ)$ dargestellt werden. Der Würfel kann dann verschieden rotiert sein, das wird aber durch die Äquivalenzklassen abgefangen, die die Gleichheit von zwei Zügen mit optionaler Rotation realisieren. In der folgenden Tabelle sind die Züge der Gruppe $(\Gtwo, \circ)$ und die dazugehörigen, minimalen Repräsentanten der Untergruppe $(G_{min}, \circ)$ dargestellt:
@@ -3271,7 +3271,7 @@ $G_{min}$ & $U$ & $U$ & $R$  & $R$  & $F$  & $F$  \\
 \end{tabular}
 \end{center}
 
-Jeder Zug aus $\Gtwo$ kann also mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug $ULF$ bei der Gruppe $(\Gtwo, \circ)$ die gleiche Würfelkonfiguration hervor, wie der Zug $URU$ bei der Untergruppe $(G_{min}, \circ)$, wenn dabei die Rotation des Würfels nicht berücksichtig wird. Dadurch, dass er Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
+So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug $ULF$ bei der Gruppe $(\Gtwo, \circ)$ die gleiche Würfelkonfiguration hervor, wie der Zug $URU$ bei der Untergruppe $(G_{min}, \circ)$, wenn dabei die Rotation des Würfels nicht berücksichtig wird. Dadurch, dass er Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
 
 Wird also beispielweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, um der minimalen Abbildung zu entsprechen, so müssen die folgenden Züge entsprechend verändert werden. Bei dem Zug $L$ werden die Folgezüge wie folgt verändert:
 \begin{align*}
@@ -3299,11 +3299,11 @@ Die Überführungsfunktionen alle Grundzüge sind im Folgenden definiert:
 
 Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Züge der minimalen Gruppe $(G_{min}, \circ)$ überführen. Die Funktionen $\rho$ werden auf alle Elemente angewendet, die hinter dem entsprechendem Zug ausgeführt werden sollen. Die Funktion kann auch verschachtelt werden. Zur besseren Anschaulichkeit folgt noch ein Beispiel:
 \begin{align*}
-& U \ R \ F \ B \ R \ L \ F  \\ 
+& U \ R \ F \ \textbf{\textit{B}} \ R \ L \ F  \\ 
 \Rightarrow \ & U \ R \ F \ F \ \rho_B(R) \ \rho_B(L) \ \rho_B(F) \\
-\Rightarrow \ & U \ R \ F \ F \ D \ U \ F \\
+\Rightarrow \ & U \ R \ F \ F \ \textbf{\textit{D}} \ U \ F \\
 \Rightarrow \ & U \ R \ F \ F \ U \ \rho_D(U) \ \rho_D(F) \\
-\Rightarrow  \ & U \ R \ F \ F \ U \ U \ L \\
+\Rightarrow  \ & U \ R \ F \ F \ U \ U \ \textbf{\textit{L}} \\
 \Rightarrow \ & U \ R \ F \ F \ U \ U \ R
 \end{align*}
 
