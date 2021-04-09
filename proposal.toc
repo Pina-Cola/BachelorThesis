@@ -105,16 +105,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{66}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{67}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Äquivalenzklassen von $G_{min}$}{67}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{67}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.5}Erzeuger und Cayleygraph von $G_{min}$}{67}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{69}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.6}Äquivalenz der Gruppen}{68}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{72}{section.10}%
+\contentsline {subsection}{\numberline {9.7}Minimaler Lösungsweg}{70}{subsection.9.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{72}{subsection.10.1}%
+\contentsline {section}{\numberline {10}Fazit}{73}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{72}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{73}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{73}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{73}{subsection.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Abbildungsverzeichnis}{74}{subsection.10.2}%

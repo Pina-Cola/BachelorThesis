@@ -1576,6 +1576,7 @@ Dementsprechend gilt bei den Rotationen auch für jede Rotation:
 \color{black}
 
 \subsection{Äquivalenzrelation der Züge}
+\label{Abschnitt_ÄquivalenzrelationDerZüge}
 
 Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen.
 Für Äquivalenzrotaionen müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Abschnitt \ref{Abschnitt_Äquivalenrelationen} findet sich die Definition und Erklärung.
@@ -3192,6 +3193,34 @@ Die Vektorübergangsfunktionen der Rotationen werden nicht gebraucht, da der Wü
 \end{align*}
 
 
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\subsection{Äquivalenzklassen von $G_{min}$}
+
+Die Äquivalenzrelation der Gruppe $(\Gtwo, \circ)$ wurde in Kapitel \ref{Abschnitt_ÄquivalenzrelationDerZüge} definiert. Diese Äquivalenrelation überprüft die Gleichheit zweier Züge mit optionaler Rotation. Für die minimale Untergruppe, die den Würfel vollständig abbildet, ist die Rotation nicht notwendig, da die Ausrichtung des Würfels anhand des Steins \textit{dlb} bestimmt wird. 
+
+Die Äquivalenrelation der Gruppe $(\Gtwo, \circ)$ ist definiert als $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $Z_1, Z_2 \in \Gtwo$, $C$ als Würfelkonfiguration und $W$ als Rotation. Wenn der Würfel nicht rotiert werden soll, ist $W$ die \textit{leere} Rotaion $N_R$. Daraus ergibt sich für die minimale Abbildung dann $Z_1 \sim_{min} Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot N_RZ_2$. Das kann auch als $Z_1 \sim_{min} Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot Z_2$ geschrieben werden.
+
+Da die Äquivalenzrelation $\sim_{min}$ der Gruppe $(G_{min}, \circ)$ anders definiert ist, als die der Gruppe $(\Gtwo, \circ)$, wird bewiesen, dass auch $\sim_{min}$ eine Äquivalenrelation ist.
+
+
 
 %
 %
@@ -3306,6 +3335,11 @@ Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Z
 \Rightarrow  \ & U \ R \ F \ F \ U \ U \ \textbf{\textit{L}} \\
 \Rightarrow \ & U \ R \ F \ F \ U \ U \ R
 \end{align*}
+
+Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist also mindestens so groß wie die von $\Gtwo$.
+
+
+Nun muss noch gezeigt werden, dass die Züge der Gruppe $(G_{min}, \circ)$  minimal sind. Dann gilt $ | G_{min} |=| \Gtwo | $.
 
 %
 %
