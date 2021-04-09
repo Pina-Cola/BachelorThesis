@@ -243,15 +243,15 @@ Diese Arbeit setzt sich aus 10 Kapiteln zusammen. Im Folgenden werden die Inhalt
 
 \item[\textbf{\ref{Kapitel_KonfigurationDesWürfels}}] In dem Kapitel \textit{Konfiguration des Würfels} werden die Positionen der Steine und die Ausrichtung der Steine im Würfel erklärt. Daraus setzt sich die Konfiguration zusammen. 
 
-\item[\textbf{\ref{Kapitel_WürfelAlsGruppe}}] In diesem Kapitel wird die Gruppe des \Ttwo Würfels beschrieben. Außerdem werden Äquivalenzrelationen eingeführt, um die Rotationen des Würfels zu realisieren.
+\item[\textbf{\ref{Kapitel_WürfelAlsGruppe}}] In diesem Kapitel wird die Gruppe des \Ttwo Würfels beschrieben und die Gleichheit von Zügen definiert. Außerdem werden Äquivalenzrelationen eingeführt, um die Rotationen des Würfels zu realisieren.
 
-\item[\textbf{\ref{Kapitel_Untergruppen}}] Das Kapitel \textit{Untergruppen} befasst sich mit Beispieluntergruppen, Erzeugern und Cayleygraphen der Gruppe des\Ttwo Würfels.
+\item[\textbf{\ref{Kapitel_Untergruppen}}] Das Kapitel \textit{Untergruppen} befasst sich mit Beispieluntergruppen, Erzeugern und Cayleygraphen der Gruppe des \Ttwo Würfels.
 
 \item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen und die Mächtigkeit der Trägermenge der Gruppe des \Ttwo Würfels berechnet.
 
 \item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird schrittweise erklärt und es gibt eine allgemeine Anleitung, mit der der \Ttwo Würfel immer gelöst werden kann.
 
-\item[\textbf{\ref{Kapitel_MinUntergruppe}}] Hier wird die Untergruppe des Würfels mit minimalen Grundzügen beschrieben.  
+\item[\textbf{\ref{Kapitel_MinUntergruppe}}] Hier wird die Untergruppe mit minimalen Grundzügen beschrieben, die den Würfel vollständig abbildet. Außerdem wird ein Konzept eingeführt, um den optimalen Lösungsweg des Würfels zu berechnen.  
 
 \item[\textbf{\ref{Kapitel_Fazit}}] Am Schluss der Arbeit befindet sich die Zusammenfassung, das Ergebnis und der Ausblick.
 
@@ -3212,13 +3212,31 @@ Die Vektorübergangsfunktionen der Rotationen werden nicht gebraucht, da der Wü
 %
 %
 %
-\subsection{Äquivalenzklassen von $G_{min}$}
+%\subsection{Äquivalenzrelation von $G_{min}$}
 
-Die Äquivalenzrelation der Gruppe $(\Gtwo, \circ)$ wurde in Kapitel \ref{Abschnitt_ÄquivalenzrelationDerZüge} definiert. Diese Äquivalenrelation überprüft die Gleichheit zweier Züge mit optionaler Rotation. Für die minimale Untergruppe, die den Würfel vollständig abbildet, ist die Rotation nicht notwendig, da die Ausrichtung des Würfels anhand des Steins \textit{dlb} bestimmt wird. 
+%Die Äquivalenzrelation der Gruppe $(\Gtwo, \circ)$ wurde in Kapitel \ref{Abschnitt_ÄquivalenzrelationDerZüge} definiert. Diese Äquivalenrelation überprüft die Gleichheit zweier Züge mit optionaler Rotation. Für die minimale Untergruppe, die den Würfel vollständig abbildet, ist die Rotation nicht notwendig, da die Ausrichtung des Würfels anhand des Steins \textit{dlb} bestimmt wird. 
 
-Die Äquivalenrelation der Gruppe $(\Gtwo, \circ)$ ist definiert als $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $Z_1, Z_2 \in \Gtwo$, $C$ als Würfelkonfiguration und $W$ als Rotation. Wenn der Würfel nicht rotiert werden soll, ist $W$ die \textit{leere} Rotaion $N_R$. Daraus ergibt sich für die minimale Abbildung dann $Z_1 \sim_{min} Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot N_RZ_2$. Das kann auch als $Z_1 \sim_{min} Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot Z_2$ geschrieben werden.
+%Die Äquivalenrelation der Gruppe $(\Gtwo, \circ)$ ist definiert als $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $Z_1, Z_2 \in \Gtwo$, $C$ als Würfelkonfiguration und $W$ als Rotation. Wenn der Würfel nicht rotiert werden soll, ist $W$ die \textit{leere} Rotaion $N_R$. Daraus ergibt sich für die minimale Abbildung dann $Z_1 \sim_{min} Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot N_RZ_2$. Das kann auch als $Z_1 \sim_{min} Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot Z_2$ geschrieben werden.
 
-Da die Äquivalenzrelation $\sim_{min}$ der Gruppe $(G_{min}, \circ)$ anders definiert ist, als die der Gruppe $(\Gtwo, \circ)$, wird bewiesen, dass auch $\sim_{min}$ eine Äquivalenrelation ist.
+%Da die Äquivalenzrelation $\sim_{min}$ der Gruppe $(G_{min}, \circ)$ anders definiert ist, als die der Gruppe $(\Gtwo, \circ)$, wird im folgenden Abschnitt bewiesen, dass auch $\sim_{min}$ eine Äquivalenrelation ist.
+
+%\begin{description}
+
+
+%\item [Reflexivität] \ \\
+%Für die Reflexivität muss $Z \sim_{min} Z$ für alle Züge gelten. 
+
+
+%\item [Symmetrie] \ \\
+%Für die Symmetrie muss gelten: Aus $Z_1 \sim_{min} Z_2$ folgt $Z_2 \sim_{min} Z_1$.
+
+
+
+%\item [Transitivität] \ \\
+%Es muss gelten: Aus $Z_1 \sim_{min} Z_2$ und $Z_2 \sim_{min} Z_3$ folgt $Z_1 \sim_{min} Z_3$.
+
+
+%\end{description}
 
 
 
@@ -3336,10 +3354,9 @@ Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Z
 \Rightarrow \ & U \ R \ F \ F \ U \ U \ R
 \end{align*}
 
-Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist also mindestens so groß wie die von $\Gtwo$.
+Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist also mindestens so groß wie die von $\Gtwo$. Sie kann aber nicht größer sein, da $\Gtwo$ aufgrund der Äquivalenzklassen genau die Anzahl der möglichen Züge, die nicht gleich sind enthält. Da $(G_{min}, \circ)$ eine Untergruppe von $(\Gtwo, \circ)$ ist, kann $G_{min}$ maximal so viele Elemente wie $\Gtwo$ enthalten.
 
-
-Nun muss noch gezeigt werden, dass die Züge der Gruppe $(G_{min}, \circ)$  minimal sind. Dann gilt $ | G_{min} |=| \Gtwo | $.
+Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und ist eine vollstänndige Abbildung des \Ttwo Würfels.
 
 %
 %
@@ -3370,7 +3387,7 @@ Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C_0
 
 Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für einen minimalen Baum drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
-Wenn man jeden möglichen Zug für die \textit{Quarter-Turn Metrik} betrachtet, erhält man sechs Züge, da jeder Ebene in zwei Richtungen gedreht werden kann. Es handelt sich dabei um die Züge $F, F^{-1}, R, R^{-1}, U$ und $U^{-1}$.
+Wenn man jeden möglichen Zug für die \textit{Quarter-Turn Metrik} betrachtet, erhält man sechs Züge, da jede Ebene in zwei Richtungen gedreht werden kann. Es handelt sich dabei um die Züge $F, F^{-1}, R, R^{-1}, U$ und $U^{-1}$.
 
 Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 
