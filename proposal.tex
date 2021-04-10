@@ -3383,7 +3383,9 @@ Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und 
 
 Auf die \textit{God's Number} des \Ttwo Würfels wurde am Ende von Kapitel \ref{Abschnitt_LösungBeispiel} bereits eingegangen. Bei der \textit{Quarter-Turn} Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14. Bei der \textit{Half-Turn} Metrik werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11.
 
-Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C_0$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier nur das Konzept entworfen und die Größe berechnet.
+Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C_0$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier nur das Konzept entworfen und die Größe berechnet. 
+
+Ein solcher Baum enthält eine Konfiguration $C_0$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_1$. So folgt dann auf jeden Knoten $C_i$ ein Knoten $C_{i+1}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(0,1)$ führt der Pfad im Baum, der einen Lösungsweg repräsentiert. Die Konfiguration $C_i$ befindet sich in der $i$-ten Ebene des Baums und wurde nach $i$ Zügen erreicht. So läaast sich die Länge des optimalen Lösungswegs auslesen.
 
 Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für einen minimalen Baum drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
@@ -3420,7 +3422,8 @@ Die Berechnung der Lösung in der \textit{Quarter-Turn} Metrik kann man auch mit
 \label{Abbildung_BaumQTM_min}
 \end{figure}
 
-Der Baum der \textit{Half-Turn} Metrik ist kleiner als der Baum der \textit{Quarter-Turn} Metrik. Wird der Baum der \textit{Half-Turn} Metrik modifiziert, kann so auch die Länge der optimalen Lösung der \textit{Quarter-Turn} Metrik abgelesen werden.
+Allerdings muss bei der Suche 
+%Der Baum der \textit{Half-Turn} Metrik ist kleiner als der Baum der \textit{Quarter-Turn} Metrik. Wird der Baum der \textit{Half-Turn} Metrik modifiziert, kann so auch die Länge der optimalen Lösung der \textit{Quarter-Turn} Metrik abgelesen werden. 
 
 %
 %
