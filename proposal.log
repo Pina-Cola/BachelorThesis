@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  10 APR 2021 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  10 APR 2021 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1861,26 +1861,26 @@ st[]anndige
 <Baum_1.jpg, id=969, 566.01865pt x 137.74661pt>
 File: Baum_1.jpg Graphic file (type jpg)
 <use Baum_1.jpg>
-Package pdftex.def Info: Baum_1.jpg  used on input line 3398.
+Package pdftex.def Info: Baum_1.jpg  used on input line 3400.
 (pdftex.def)             Requested size: 396.21034pt x 96.42197pt.
  [70]
 <Baum_2.jpg, id=975, 891.0891pt x 137.74661pt>
 File: Baum_2.jpg Graphic file (type jpg)
 <use Baum_2.jpg>
-Package pdftex.def Info: Baum_2.jpg  used on input line 3409.
+Package pdftex.def Info: Baum_2.jpg  used on input line 3411.
 (pdftex.def)             Requested size: 463.369pt x 71.62865pt.
 
-Overfull \hbox (8.1249pt too wide) in paragraph at lines 3409--3410
+Overfull \hbox (8.1249pt too wide) in paragraph at lines 3411--3412
  [][] 
  []
 
 <Baum_3.jpg, id=976, 891.0891pt x 137.74661pt>
 File: Baum_3.jpg Graphic file (type jpg)
 <use Baum_3.jpg>
-Package pdftex.def Info: Baum_3.jpg  used on input line 3420.
+Package pdftex.def Info: Baum_3.jpg  used on input line 3422.
 (pdftex.def)             Requested size: 463.369pt x 71.62865pt.
 
-Overfull \hbox (8.1249pt too wide) in paragraph at lines 3420--3421
+Overfull \hbox (8.1249pt too wide) in paragraph at lines 3422--3423
  [][] 
  []
 
@@ -1895,11 +1895,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [76]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3548.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3548.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3550.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3550.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3548.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3548.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3550.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3550.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 9C3B63E0A8E9DE9D7A677DA58C9C24EB;4103.
@@ -1910,14 +1910,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3548.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3550.
  ) 
 Here is how much of TeX's memory you used:
- 32165 strings out of 483016
- 586904 string characters out of 5961286
+ 32169 strings out of 483016
+ 586942 string characters out of 5961286
  1292209 words of memory out of 5000000
  46176 multiletter control sequences out of 15000+600000
- 560831 words of font info for 190 fonts, out of 8000000 for 9000
+ 561049 words of font info for 192 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,16n,77p,1129b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pina/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600p
@@ -1946,7 +1946,7 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (79 pages, 3928848 bytes).
+Output written on proposal.pdf (79 pages, 3929886 bytes).
 PDF statistics:
  1207 PDF objects out of 1440 (max. 8388607)
  966 compressed objects within 10 object streams
