@@ -2637,7 +2637,7 @@ Da die beiden Züge nicht dieselben Steine beeinflussen, ist es nicht relevant, 
 
 Auch wenn zwei Züge $Y, Z \in \Gtwo$ nicht kommutieren, kann anhand der Komplexität des Kommutators festgestellt werden, wie groß die Veränderung der Würfelkonfiguration nach $[Y, Z]$ ist. 
 Als Beispiel zur Veranschaulichung: Die Züge $Y=L$ und $Z=F$ verändern durch $[Y, Z]$ vier Steine im Würfel. Die anderen vier behalten ihre Position und Ausrichtung. 
-Es wird dabei $LFL^{-1}F^{-1}$ ausgeführt. Das führt zu folgenden Permutationen:
+Es wird dabei $LFL^{-1}F^{-1}$ ausgeführt. Das führt von der Starkonfiguration $C =(1,0)$ ausgehend zu dem Vektor $(0,0,2,0,0,0,0,1)$ und zu folgenden Permutationen:
 
 \begin{center}
 \begin{tabular}{lcccccccc}
@@ -2661,7 +2661,7 @@ Wenn nun die Kopfzeile der Tabelle und die unterste Zeile verglichen werden, zei
 \hspace*{1.5cm } $\textit{ulb} \mapsto \textit{ulf}$ \hspace*{1.5cm }$\textit{ulf}  \mapsto \textit{ulb}$ \hspace*{1.5cm } $\textit{dlf} \mapsto \textit{drf}$ \hspace*{1.5cm } $\textit{drf} \mapsto \textit{dlf}$
 \\
 \\
-Daraus ergibt sich $\lbrack L, F \rbrack  = ( \ \textit{ulb} \ \textit{ulf} \ )(\ \textit{dlf} \ \textit{drf} \ )$ in der Zykelschreibweise.
+Daraus ergibt sich $C \cdot \lbrack L, F \rbrack  = (( \ \textit{ulb} \ \textit{ulf} \ )(\ \textit{dlf} \ \textit{drf} \ ), (0,0,2,0,0,0,0,1) )$ in der Zykelschreibweise. Es haben also zwei Steinpaare ihre Position getauscht und ihre Ausrichtung verändert. Im Vergleich dazu werden bei dem Kommutator von $\lbrack L, R \rbrack$ keine Steinpositionen verändert: $C \cdot \lbrack L, R \rbrack = C $.
 
 
 %
@@ -3397,7 +3397,7 @@ Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{Baum_1.jpg}
+\includegraphics[scale=1.3]{Baum_1.jpg}
 \caption{Lösungsbaum: \textit{Quarter-Turn} Metrik}
 \label{Abbildung_BaumQTM}
 \end{figure}
@@ -3408,7 +3408,7 @@ Ausgehend von der \textit{Half-Turn} Metrik, wird ein anderer Baum erzeugt. Es g
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.52]{Baum_2.jpg}
+\includegraphics[scale=1.3]{Baum_2.jpg}
 \caption{Lösungsbaum: \textit{Half-Turn} Metrik}
 \label{Abbildung_BaumHTM}
 \end{figure}
@@ -3419,7 +3419,7 @@ Die Berechnung der optimalen Lösung in der \textit{Quarter-Turn} Metrik kann ma
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.52]{Baum_3.jpg}
+\includegraphics[scale=1.3]{Baum_3.jpg}
 \caption{optimierter Lösungsbaum: \textit{Half-Turn} Metrik}
 \label{Abbildung_BaumQTM_min}
 \end{figure}

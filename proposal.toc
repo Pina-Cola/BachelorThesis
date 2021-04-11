@@ -87,34 +87,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.3}Lösungsansätze}{54}{subsection.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{54}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{55}{subsection.8.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.5}Muster}{58}{subsection.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{59}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{60}{subsection.8.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{60}{subsection.8.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{61}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{62}{subsection.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Minimale Gruppe}{65}{section.9}%
+\contentsline {section}{\numberline {9}Minimale Gruppe}{66}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{65}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{66}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{65}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{66}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{66}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{67}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{67}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{68}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{67}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{68}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{70}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{71}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{73}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{74}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{73}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{74}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{73}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{74}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{74}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{75}{subsection.10.2}%
