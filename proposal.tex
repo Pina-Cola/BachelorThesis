@@ -2005,7 +2005,7 @@ Außerdem ist zu sehen, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt wer
 \subsection{Ordnung der Züge}
 \label{Abschnitt_OrdnungZüge}
 
-Im folgenden Abschnitt wird bewiesen, dass der Würfel wieder in die Ausgangsposition gelangt, wennn ein beliebiger Zug $Z \in \Gtwo$ wiederholt auf den Würfel anwendet wird.
+Im folgenden Abschnitt wird gezeigt, dass der Würfel wieder in die Ausgangsposition gelangt, wennn ein beliebiger Zug $Z \in \Gtwo$ wiederholt auf den Würfel anwendet wird.
 Der folgende Beweis orientiert sich an dem Beweis aus \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD}.
 
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet und ausgerichtet. 
@@ -3020,7 +3020,9 @@ Ausgangsposition & Algorithmus  \\
 \midrule
 \includegraphics[scale=0.08]{TOPVIEW1.png} & $F \ [ R,U ] \  [ R,U ] \  [ R,U ] \ F^{-1}$ \\
 \includegraphics[scale=0.08]{TOPVIEW2.png} & $F \ [ R,U ] \  [ R,U ] \ F^{-1}$ \\
-
+\includegraphics[scale=0.08]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
+\includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -3030,9 +3032,6 @@ Ausgangsposition & Algorithmus  \\
 \toprule
 Ausgangsposition & Algorithmus  \\
 \midrule
-\includegraphics[scale=0.08]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
-\includegraphics[scale=0.08]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
-\includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
 \includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
 \includegraphics[scale=0.08]{TOPVIEW6.png} & $F \ [ R,U ]\ R^{-1} \ F^{-1}\ R$ \\
 \bottomrule
@@ -3040,9 +3039,9 @@ Ausgangsposition & Algorithmus  \\
 \end{center}
 
 
-Die obere Seite des Würfels zeigt nach dem Ausführen der Algorithmen nur noch gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit 0. Wenn alle Steine der zweiten Ebene auch breits richtig zueiander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steine getauscht, bis sie richtig angeordnet sind.
+Die obere Seite des Würfels zeigt nach dem Ausführen der Algorithmen nur noch gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann breits richtig zueiander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
 
-Zum Vertauschen der Steine untereinander (ohne die Ausrichtung zu verändern), gibt es auch wieder verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Liste aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
+Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es auch wieder verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Liste aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
 
 \begin{center}
 \begin{tabular}{m{4cm} m{8cm}}
@@ -3051,6 +3050,15 @@ Steinpermutation & Algorithmus  \\
 \midrule
 \includegraphics[scale=0.08]{corners1.png}  & $F \ R \ U^{-1} \ [R^{-1}, U^{-1}] \ R^{-1} \ F^{-1}  \ [R, U]   [R^{-1}, F]$ \\
 \includegraphics[scale=0.08]{corners2.png}   & $[R,U] \  R^{-1} \ F \ RR \   U^{-1} \ [R^{-1}, U^{-1}] \ R^{-1} \  F^{-1})$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{m{4cm} m{8cm}}
+\toprule
+Steinpermutation & Algorithmus  \\
+\midrule
 \includegraphics[scale=0.08]{corners3.png}   & $R \ B^{-1} \ R \ FF \ R^{-1} \ B \ R \ FF \ RR $ \\
 \bottomrule
 \end{tabular}
