@@ -1865,7 +1865,7 @@ Anders gesagt: Der Würfel hat in Konfiguration $C$ gestartet und der Zug $Z_1 Z
 Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}. n \in \mathbb{N} \ . \ C \cdot Z^n=C \cdot Z^{n \mod 4}$, da alle Steine des Würfels wieder in ihre vorherige Position gelangen, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werden die Züge $U, D, F, B, L, R$ als Permutationen der Ordnung 4 bezeichnet. 
 Die Exponentenschreibweise kann für alle Züge aus $\Gtwo$ anwendet werden, auch wenn sie mehr als eine Ebene rotieren. Das wird beispielhaft bei dem Zug $LLFF$ gezeigt: $(LLFF)^2$ entspricht dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$. 
 
-Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei Wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
+Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
 Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4) oder ${(RRFF)^3 = N}$ (Ordnung 3).
 
 
@@ -1882,7 +1882,7 @@ Der Zug $LF$ beispielsweise hat die Ordnung $15$, die Permutation der Steine hat
 \label{Abbildung_LF_5_15}
 \end{figure}
 
-Man kann in Abbildung \ref{Abbildung_LF_5_15} sehen, dass die Würfelsteine alle an der richtigen Position sind, aber nicht richtig ausgerichtet. Die Würfelkonfiguration ist nach dem Anwenden von $(LF)^5$ auf den Startzustand $(1, (1,0,1,1,1,0,1,1))$. Der Würfel ist nach fünf Wiederholungen von $LF$ nicht gelöst, da die Ausrichtung der Steine verändert ist -- die Ordnung der Permutation von $LF$ ist 5. Die Ordnung des Zuges von $LF$ ist allerdings 15, da der Würfel dann wieder in seiner Ausgangskonfiguration ist. Die Würfelkonfiguration nach dem Ausführen von $(LF)^{15}$ auf dem Startzustand ist $(1,0)$.
+Man kann links in Abbildung \ref{Abbildung_LF_5_15} sehen, dass die Würfelsteine alle an der richtigen Position sind, aber nicht richtig ausgerichtet. Die Würfelkonfiguration ist nach dem Anwenden von $(LF)^5$ auf den Startzustand $(1, (1,0,1,1,1,0,1,1))$. Der Würfel ist nach fünf Wiederholungen von $LF$ nicht gelöst, da die Ausrichtung der Steine verändert ist -- die Ordnung der Permutation von $LF$ ist 5. Die Ordnung des Zuges von $LF$ ist allerdings 15, da der Würfel dann wieder in seiner Ausgangskonfiguration ist. Die Würfelkonfiguration nach dem Ausführen von $(LF)^{15}$ auf dem Startzustand ist $(1,0)$.
 
 
 
@@ -1936,18 +1936,22 @@ Wenn der Zug $U$ viermal ausgeführt wird, befindet sich der Würfel wieder in s
 Die vierte Zeile der Tabelle hat die selbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). 
 Somit hat die Permutation der beschriebenen Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).
 Es gilt folglich für jede Permutation eines Zuges $Z$, der aus nur einem $n$-elementigen Zykel besteht (und Würfelkofiguration $C=(\sigma, x)$): 
-$\forall \ Z \in \Gtwo $ \textit{mit} $\sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \ { (\sigma, x) \cdot Z^n= (\sigma, x')}$.
+\begin{align*}
+\forall \ Z \in \Gtwo \ \textit{mit} \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  (\sigma, x) \cdot Z^n= (\sigma, x')
+\end{align*}
 Wenn $Z$ mehrfach ausführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand der Permutationen erreicht. \cite{TD} 
-Es gilt folglich auch 
-$\forall \ Z \in \Gtwo $ \textit{mit} $ \ Z=(i_1 \ i_2 \ ... \ i_n). n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }$.
+Es gilt folglich auch:
+\begin{align*}
+\forall \ Z \in \Gtwo \ \textit{mit} \ \ Z=(i_1 \ i_2 \ ... \ i_n). n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }
+\end{align*}
 Auch bei komplexeren Permutationen von Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache (kurz kgV) aller Zykelgrößen bestimmt werden. \cite{TD}
 
  
 Der besseren Übersichtlichkeit halber, sind die Zykel aller Züge in Abbildung \ref{Abbildung_GraphAllerPermutationen} grafisch dargestellt.
-Dieser Graph vereinfach das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
+Dieser Graph vereinfacht das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{graph_zug.png}
+\includegraphics[scale=0.25]{graph_zug1.png}
 \caption[Graph aller Zugpermutationen]{Graph aller Zugpermutationen}
 \label{Abbildung_GraphAllerPermutationen}
 \end{figure}
