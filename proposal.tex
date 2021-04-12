@@ -2599,7 +2599,7 @@ Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel defin
 Jeder Grundzug ist demnach als ein $4$-Zykel definiert. Der $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
 Die Parität einer einzelnen Ebenendrehung ist demnach ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
 
-% to do prüfen! 
+Bei dem \Tthree Würfel ist die Parität jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im würfel tauscht \cite{TD}. Im Gegensatz dazu kann die Parität der Zykel des \Ttwo Würfels ungerade sein und es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Kapitel \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
 
 %
 %
@@ -2968,7 +2968,7 @@ Sollte die weiße Farbfläche der Ecke unten am Würfel sein, so kann sie falsch
 \label{Abbildung_ZweiterEckstein2}
 \end{figure}
 
-Die anderen zwei Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst.
+Die anderen zwei Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst. Die Vektoreinträge $x_{1-4}$ sind dann $(0,0,0,0)$.
 Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hälfte des Würfels.
 
 
@@ -2994,6 +2994,7 @@ Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hä
 %
 %
 \subsection{Algorithmen für die zweite Ebene}
+\label{Abschnitt_AlgorithmenZweiteEbene}
 
 Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
 In Abbildung \ref{Abbildung_GelösteObereEbene} ist die obere Ebene des Würfels gelöst. 
@@ -3064,7 +3065,7 @@ Steinpermutation & Algorithmus  \\
 \end{tabular}
 \end{center}
 
-Nach Wahl der passenden Algorithmen sollten beide Ebenen gelöst sein. Eventuell müssen die beiden Ebenen noch durch $U$, $U^{-1}$ oder $UU$ richtig zueinander ausgerichtet werden. Dann befindet sich der Würfel im gelösten Zustand und die Würfelkonfiguration ist somit $(1,0)$.
+Nach Wahl der passenden Algorithmen sind beide Ebenen gelöst sein. Eventuell müssen die beiden Ebenen noch durch $U$, $U^{-1}$ oder $UU$ richtig zueinander ausgerichtet werden. Dann befindet sich der Würfel im gelösten Zustand und die Würfelkonfiguration ist somit $(1,0)$.
 
 %
 %
