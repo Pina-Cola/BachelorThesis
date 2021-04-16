@@ -2586,15 +2586,19 @@ Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf de
 
 Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
 Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. 
-Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel definiert:
-\begin{align*}
-\sigma_U & =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) \\
-\sigma_D & =\ ( \ \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ ) \\
-\sigma_F & =\ ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ ) \\
-\sigma_B & =\ ( \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ \textit{urb} \ ) \\
-\sigma_L & =\ ( \ \textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ ) \\
-\sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) 
-\end{align*}
+Die Zykel der Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$-Zykeln geschrieben:
+\begin{alignat*}{2}
+\sigma_U &  = \ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) &&  = ( \textit{ulf} \ \textit{ulb} ) 
+( \textit{ulf} \ \textit{urb} ) 
+( \textit{ulf} \  \textit{urf} )\\
+\sigma_D & =\ ( \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} )  && = ( \textit{dlf} \ \textit{drf} ) 
+( \textit{dlf} \ \textit{drb}  ) 
+( \textit{dlf} \ \textit{dlb} )\\
+\sigma_F & =\ ( \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} )  && = \\
+\sigma_B & =\ ( \textit{ulb} \ \textit{dlb} \ \textit{drb} \ \textit{urb} )  && = \\
+\sigma_L & =\ ( \textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} )  && = \\
+\sigma_R & =\ ( \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} ) && =
+\end{alignat*}
 Jeder Grundzug ist demnach als ein $4$-Zykel definiert. Jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
 Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
 
