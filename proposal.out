@@ -20,39 +20,40 @@
 \BOOKMARK [1][-]{section.5}{W\374rfel als Gruppe}{}% 20
 \BOOKMARK [2][-]{subsection.5.1}{Gleichheit von Z\374gen}{section.5}% 21
 \BOOKMARK [2][-]{subsection.5.2}{Rotation des W\374rfels}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.3}{\304quivalenzrelation der Z\374ge}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.4}{\304quivalenzklassen}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.5}{222-Zauberw\374fel als Gruppe}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.6}{Z\374ge als Gruppenoperation}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.7}{Ordnung der Permutationen}{section.5}% 27
-\BOOKMARK [2][-]{subsection.5.8}{Zykelstruktur}{section.5}% 28
-\BOOKMARK [2][-]{subsection.5.9}{Ordnung der Z\374ge}{section.5}% 29
-\BOOKMARK [1][-]{section.6}{Untergruppen von G222}{}% 30
-\BOOKMARK [2][-]{subsection.6.1}{Untergruppen Beispiele}{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.2}{Erzeuger}{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.3}{Durch FF und RR erzeugte Untergruppe}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.4}{Cayleygraph}{section.6}% 34
-\BOOKMARK [1][-]{section.7}{Valide Konfigurationen des W\374rfels}{}% 35
-\BOOKMARK [2][-]{subsection.7.1}{Anzahl der validen W\374rfelkonfigurationen}{section.7}% 36
-\BOOKMARK [2][-]{subsection.7.2}{M\344chtigkeit von G222}{section.7}% 37
-\BOOKMARK [2][-]{subsection.7.3}{Ausrichtung der Steine \(modulo 3\)}{section.7}% 38
-\BOOKMARK [1][-]{section.8}{L\366sung des W\374rfels}{}% 39
-\BOOKMARK [2][-]{subsection.8.1}{Anzahl der 2-Zykel}{section.8}% 40
-\BOOKMARK [2][-]{subsection.8.2}{Kommutatoren}{section.8}% 41
-\BOOKMARK [2][-]{subsection.8.3}{L\366sungsans\344tze}{section.8}% 42
-\BOOKMARK [2][-]{subsection.8.4}{L\366sung des W\374rfels anhand eines Beispiels}{section.8}% 43
-\BOOKMARK [2][-]{subsection.8.5}{Muster}{section.8}% 44
-\BOOKMARK [2][-]{subsection.8.6}{Schraubendrehermethode}{section.8}% 45
-\BOOKMARK [2][-]{subsection.8.7}{Algorithmen f\374r die erste Ebene}{section.8}% 46
-\BOOKMARK [2][-]{subsection.8.8}{Algorithmen f\374r die zweite Ebene}{section.8}% 47
-\BOOKMARK [1][-]{section.9}{Minimale Gruppe}{}% 48
-\BOOKMARK [2][-]{subsection.9.1}{Minimale Permutationen}{section.9}% 49
-\BOOKMARK [2][-]{subsection.9.2}{Minimale Rotation des W\374rfels}{section.9}% 50
-\BOOKMARK [2][-]{subsection.9.3}{Minimale Ausrichtung der Steine}{section.9}% 51
-\BOOKMARK [2][-]{subsection.9.4}{Erzeuger und Cayleygraph von Gmin}{section.9}% 52
-\BOOKMARK [2][-]{subsection.9.5}{\304quivalenz der Gruppen}{section.9}% 53
-\BOOKMARK [2][-]{subsection.9.6}{Minimaler L\366sungsweg}{section.9}% 54
-\BOOKMARK [1][-]{section.10}{Fazit}{}% 55
-\BOOKMARK [2][-]{subsection.10.1}{Zusammenfassung und Ergebnis}{section.10}% 56
-\BOOKMARK [2][-]{subsection.10.2}{Ausblick}{section.10}% 57
-\BOOKMARK [1][-]{subsection.10.2}{Abbildungsverzeichnis}{}% 58
+\BOOKMARK [2][-]{subsection.5.3}{Maximale Anzahl der Rotationen}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.4}{\304quivalenzrelation der Z\374ge}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.5}{\304quivalenzklassen}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.6}{222-Zauberw\374fel als Gruppe}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.7}{Z\374ge als Gruppenoperation}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.8}{Ordnung der Permutationen}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.9}{Zykelstruktur}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.10}{Ordnung der Z\374ge}{section.5}% 30
+\BOOKMARK [1][-]{section.6}{Untergruppen von G222}{}% 31
+\BOOKMARK [2][-]{subsection.6.1}{Untergruppen Beispiele}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.2}{Erzeuger}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.3}{Durch FF und RR erzeugte Untergruppe}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.4}{Cayleygraph}{section.6}% 35
+\BOOKMARK [1][-]{section.7}{Valide Konfigurationen des W\374rfels}{}% 36
+\BOOKMARK [2][-]{subsection.7.1}{Anzahl der validen W\374rfelkonfigurationen}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.2}{M\344chtigkeit von G222}{section.7}% 38
+\BOOKMARK [2][-]{subsection.7.3}{Ausrichtung der Steine \(modulo 3\)}{section.7}% 39
+\BOOKMARK [1][-]{section.8}{L\366sung des W\374rfels}{}% 40
+\BOOKMARK [2][-]{subsection.8.1}{Anzahl der 2-Zykel}{section.8}% 41
+\BOOKMARK [2][-]{subsection.8.2}{Kommutatoren}{section.8}% 42
+\BOOKMARK [2][-]{subsection.8.3}{L\366sungsans\344tze}{section.8}% 43
+\BOOKMARK [2][-]{subsection.8.4}{L\366sung des W\374rfels anhand eines Beispiels}{section.8}% 44
+\BOOKMARK [2][-]{subsection.8.5}{Muster}{section.8}% 45
+\BOOKMARK [2][-]{subsection.8.6}{Schraubendrehermethode}{section.8}% 46
+\BOOKMARK [2][-]{subsection.8.7}{Algorithmen f\374r die erste Ebene}{section.8}% 47
+\BOOKMARK [2][-]{subsection.8.8}{Algorithmen f\374r die zweite Ebene}{section.8}% 48
+\BOOKMARK [1][-]{section.9}{Minimale Gruppe}{}% 49
+\BOOKMARK [2][-]{subsection.9.1}{Minimale Permutationen}{section.9}% 50
+\BOOKMARK [2][-]{subsection.9.2}{Minimale Rotation des W\374rfels}{section.9}% 51
+\BOOKMARK [2][-]{subsection.9.3}{Minimale Ausrichtung der Steine}{section.9}% 52
+\BOOKMARK [2][-]{subsection.9.4}{Erzeuger und Cayleygraph von Gmin}{section.9}% 53
+\BOOKMARK [2][-]{subsection.9.5}{\304quivalenz der Gruppen}{section.9}% 54
+\BOOKMARK [2][-]{subsection.9.6}{Minimaler L\366sungsweg}{section.9}% 55
+\BOOKMARK [1][-]{section.10}{Fazit}{}% 56
+\BOOKMARK [2][-]{subsection.10.1}{Zusammenfassung und Ergebnis}{section.10}% 57
+\BOOKMARK [2][-]{subsection.10.2}{Ausblick}{section.10}% 58
+\BOOKMARK [1][-]{subsection.10.2}{Abbildungsverzeichnis}{}% 59

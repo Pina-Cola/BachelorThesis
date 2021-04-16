@@ -45,19 +45,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Rotation des Würfels}{27}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Äquivalenzrelation der Züge}{30}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Maximale Anzahl der Rotationen}{30}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Äquivalenzklassen}{33}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}Äquivalenzrelation der Züge}{30}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}2$\times $2$\times $2-Zauberwüfel als Gruppe}{33}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.5}Äquivalenzklassen}{33}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}Züge als Gruppenoperation}{36}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.6}2$\times $2$\times $2-Zauberwüfel als Gruppe}{33}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7}Ordnung der Permutationen}{37}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.7}Züge als Gruppenoperation}{36}{subsection.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.8}Zykelstruktur}{38}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.8}Ordnung der Permutationen}{37}{subsection.5.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.9}Ordnung der Züge}{40}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.9}Zykelstruktur}{38}{subsection.5.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.10}Ordnung der Züge}{40}{subsection.5.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Untergruppen von G$_{2\times 2\times 2}$}{43}{section.6}%
 \defcounter {refsection}{0}\relax 
@@ -109,10 +111,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{71}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{74}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{73}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{74}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{73}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{74}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{73}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{75}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{74}{subsection.10.2}%

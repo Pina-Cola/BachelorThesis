@@ -1544,12 +1544,45 @@ Für der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folg
  & (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
 \end{align*}
 
+
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+
+\subsection{Maximale Anzahl der Rotationen}
+\label{Abschnitt_MaxAnzahlRotationen}
+
 Die mehrfache Ausführung einer Rotation wird auch mit der Exponentenschreibweise geschrieben. 
-Somit gilt für jede Rotation $TTTT=T^4=N_R$ (für $T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \}$) und $T^0=N_R$ (für alle Rotationen $T$). Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. 
+Somit gilt für jede Rotation $TTTT=T^4=N_R$ (mit $T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \}$) und $T^0=N_R$ (für alle Rotationen $T$). Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. 
 Dementsprechend gilt bei den Rotationen auch für jede Rotation: 
 \begin{align*}
 \forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}. n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
 \end{align*}
+
+Anhand dieser Aussage wird veranschaulicht, dass der Würfel sich nach mehreren Rotationen wieder seine Ausgangsrotation nähern kann. Es gibt für die Roationen also eine maximale Anzahl. Jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
+In diesem Abschnitt wird berechnet, wie viel der Würfel maximal rotiert werden muss, um zurück in die Ausgangsposition zu gelangen.
+
+
+
+
 
 
 %
@@ -3434,28 +3467,29 @@ Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 
 Jeder der Baumknoten hat demnach 6 Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
 
-Ausgehend von der \textit{Half-Turn} Metrik, wird ein anderer Baum erzeugt. Es gibt dann mehr mögliche Ebenendrehungen: $F, FF, F^{-1}, R, RR, R^{-1}, U, UU$ und $U^{-1}$. So sieht der Baum von jeder Konfiguration $C_i$ ausgehend aus:
+%Ausgehend von der \textit{Half-Turn} Metrik, wird ein anderer Baum erzeugt. Es gibt dann mehr mögliche Ebenendrehungen: $F, FF, F^{-1}, R, RR, R^{-1}, U, UU$ und $U^{-1}$. So sieht der Baum von jeder Konfiguration $C_i$ ausgehend aus: 
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1.3]{Baum_2.jpg}
-\caption{Lösungsbaum: \textit{Half-Turn} Metrik}
-\label{Abbildung_BaumHTM}
-\end{figure}
 
-Bei dem der Baum \textit{Half-Turn}  Metrik hat jeder Knoten 9 Kinder. Da die \textit{God's Number} in der \textit{Half-Turn} Metrik 11 ist, hat der Baum eine maximale Tiefe von 11. Die maximale Größe des Baums ist dann $9^{11} = 31 \ 381 \ 059 \ 609$. Der Baum der \textit{Half-Turn}  Metrik ist somit kleiner als der Baum der \textit{Quarter-Turn} Metrik.
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=1.3]{Baum_2.jpg}
+%\caption{Lösungsbaum: \textit{Half-Turn} Metrik}
+%\label{Abbildung_BaumHTM}
+%\end{figure}
 
-Die Berechnung der optimalen Lösung in der \textit{Quarter-Turn} Metrik kann man auch mit dem Baum der \textit{Half-Turn} Metrik umsetzen. Der Baum ist dann kleiner als der oben beschriebene Baum der  \textit{Quarter-Turn} Metrik. Der modifizierte Baum hat pro Knoten 9 Kinder. Bei den Kanten mit halben Drehungen ($FF, UU$ und $RR$) wird der Index der Folgekoniguration aber um zwei statt um 1 inkrementiert. Dadurch kann mit diesem Baum auch der optimale Lösungsweg in der \textit{Quarter-Turn} Metrik berechnet werden und die Größe des Baums ist maximal $9^{11} = 31 \ 381 \ 059 \ 609$.
+%Bei dem der Baum \textit{Half-Turn}  Metrik hat jeder Knoten 9 Kinder. Da die \textit{God's Number} in der \textit{Half-Turn} Metrik 11 ist, hat der Baum eine maximale Tiefe von 11. Die maximale Größe des Baums ist dann $9^{11} = 31 \ 381 \ 059 \ 609$. Der Baum der \textit{Half-Turn}  Metrik ist somit kleiner als der Baum der \textit{Quarter-Turn} Metrik.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1.3]{Baum_3.jpg}
-\caption{optimierter Lösungsbaum: \textit{Half-Turn} Metrik}
-\label{Abbildung_BaumQTM_min}
-\end{figure}
+%Die Berechnung der optimalen Lösung in der \textit{Quarter-Turn} Metrik kann man auch mit dem Baum der \textit{Half-Turn} Metrik umsetzen. Der Baum ist dann kleiner als der oben beschriebene Baum der  \textit{Quarter-Turn} Metrik. Der modifizierte Baum hat pro Knoten 9 Kinder. Bei den Kanten mit halben Drehungen ($FF, UU$ und $RR$) wird der Index der Folgekoniguration aber um zwei statt um 1 inkrementiert. Dadurch kann mit diesem Baum auch der optimale Lösungsweg in der \textit{Quarter-Turn} Metrik berechnet werden und die Größe des Baums ist maximal $9^{11} = 31 \ 381 \ 059 \ 609$.
 
-Allerdings muss bei der Suche des optimalen Pfades nach der Konfiguration $C_i=(1,0)$ mit dem kleinsten Wert für $i$ gesucht werden, da die Baumebene des Knotens bei dem modifizierten Baum nichts über die Anzahl der Züge aussagt. 
-Da der Baum der \textit{Half-Turn} Metrik kleiner ist als der Baum der \textit{Quarter-Turn} Metrik, kann von dem modigizierten auch die Länge der optimalen Lösung der \textit{Quarter-Turn} Metrik effizienter abgelesen werden. 
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=1.3]{Baum_3.jpg}
+%\caption{optimierter Lösungsbaum: \textit{Half-Turn} Metrik}
+%\label{Abbildung_BaumQTM_min}
+%\end{figure}
+
+%Allerdings muss bei der Suche des optimalen Pfades nach der Konfiguration $C_i=(1,0)$ mit dem kleinsten Wert für $i$ gesucht werden, da die Baumebene des Knotens bei dem modifizierten Baum nichts über die Anzahl der Züge aussagt. 
+%Da der Baum der \textit{Half-Turn} Metrik kleiner ist als der Baum der \textit{Quarter-Turn} Metrik, kann von dem modigizierten auch die Länge der optimalen Lösung der \textit{Quarter-Turn} Metrik effizienter abgelesen werden. 
 
 %
 %
