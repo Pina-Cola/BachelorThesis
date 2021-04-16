@@ -2588,21 +2588,35 @@ Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dab
 Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. 
 Die Zykel der Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$-Zykeln geschrieben:
 \begin{alignat*}{2}
-\sigma_U &  = \ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) &&  = ( \textit{ulf} \ \textit{ulb} ) 
+\sigma_U &  = \ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) &&  = \ ( \textit{ulf} \ \textit{ulb} ) 
 ( \textit{ulf} \ \textit{urb} ) 
 ( \textit{ulf} \  \textit{urf} )\\
-\sigma_D & =\ ( \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} )  && = ( \textit{dlf} \ \textit{drf} ) 
+
+\sigma_D & = \ ( \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} )  && = \ ( \textit{dlf} \ \textit{drf} ) 
 ( \textit{dlf} \ \textit{drb}  ) 
 ( \textit{dlf} \ \textit{dlb} )\\
-\sigma_F & =\ ( \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} )  && = \\
-\sigma_B & =\ ( \textit{ulb} \ \textit{dlb} \ \textit{drb} \ \textit{urb} )  && = \\
-\sigma_L & =\ ( \textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} )  && = \\
-\sigma_R & =\ ( \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} ) && =
-\end{alignat*}
-Jeder Grundzug ist demnach als ein $4$-Zykel definiert. Jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
-Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
 
-Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Im Gegensatz dazu kann die Anzahl der $2$-Zykel der Zykel des \Ttwo Würfels ungerade sein und es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
+\sigma_F & = \ ( \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} )  && = \ ( \textit{ulf} \ \textit{urf} )
+( \textit{ulf} \ \textit{drf} )
+( \textit{ulf}  \ \textit{dlf} ) \\
+
+\sigma_B & = \ ( \textit{ulb} \ \textit{dlb} \ \textit{drb} \ \textit{urb} )  && = \ ( \textit{ulb} \ \textit{dlb} )
+( \textit{ulb} \  \textit{drb} )
+( \textit{ulb}  \ \textit{urb} )\\
+
+\sigma_L & = \ ( \textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} )  && = \ ( \textit{ulb} \ \textit{ulf} ) 
+( \textit{ulb} \ \textit{dlf}  ) 
+( \textit{ulb} \ \textit{dlb} ) \\
+
+\sigma_R & = \ ( \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} ) && = \  ( \textit{urb} \ \textit{drb}  ) 
+( \textit{urb} \  \textit{drf} ) 
+( \textit{urb} \ \textit{urf} )  \
+\end{alignat*}
+Jeder Grundzug ist demnach als ein $4$-Zykel definiert und jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
+Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
+Die Zykel treffen ausschließlich eine Aussagen über die Position der Steine im Würfel. Die Rotation wird durch den Vektor $x$ dargestellt und hier nicht berücksichtigt. 
+
+Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Ein Zug, der genau zwei Steine tauscht, wird durch einen $2$-Zykel dargestellt. Das ist eine ungerade Anzahl an $2$-Zykeln. Im Gegensatz zum \Tthree Würfel kann die Anzahl der $2$-Zykel des \Ttwo Würfels ungerade sein und es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
 
 %
 %
@@ -3403,7 +3417,7 @@ Auf die \textit{God's Number} des \Ttwo Würfels wurde am Ende von Abschnitt \re
 
 Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier nur das Konzept entworfen und die Größe der jeweiligen Bäume berechnet und verglichen. 
 
-Ein solcher Baum enthält eine Konfiguration $C_0$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_1$. So folgt dann auf jeden Knoten $C_i$ ein Knoten $C_{i+1}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad im Baum, der einen Lösungsweg repräsentiert. Eine Konfiguration $C_i$ befindet sich in der $i$-ten Ebene des Baums und wurde nach $i$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
+Ein solcher Baum enthält eine Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenerotationen im Index' $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
 
 Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für einen minimalen Baum drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
@@ -3418,7 +3432,7 @@ Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 \label{Abbildung_BaumQTM}
 \end{figure}
 
-Jeder der Baumknoten hat demnach 6 Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $i \leq 14$. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
+Jeder der Baumknoten hat demnach 6 Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
 
 Ausgehend von der \textit{Half-Turn} Metrik, wird ein anderer Baum erzeugt. Es gibt dann mehr mögliche Ebenendrehungen: $F, FF, F^{-1}, R, RR, R^{-1}, U, UU$ und $U^{-1}$. So sieht der Baum von jeder Konfiguration $C_i$ ausgehend aus:
 
