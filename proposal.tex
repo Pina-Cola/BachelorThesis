@@ -1580,6 +1580,17 @@ Dementsprechend gilt bei den Rotationen auch für jede Rotation:
 Anhand dieser Aussage wird veranschaulicht, dass der Würfel sich nach mehreren Rotationen wieder seine Ausgangsrotation nähern kann. Es gibt für die Roationen also eine maximale Anzahl. Jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
 In diesem Abschnitt wird berechnet, wie viel der Würfel maximal rotiert werden muss, um zurück in die Ausgangsposition zu gelangen.
 
+Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel.
+
+\begin{figure}[H]
+\centering
+INCLUDE GRAPHIC
+\caption{Rotationsmöglichekeiten des Würfels mit weißer Seite oben}
+\label{AbbildungWürfelRotationWeisseSeite}
+\end{figure}
+
+
+In Anhang \ref{Anhang_RotationenDesWürfels} befinden sich Abbildungen aller Rotationsmöglichkeiten des Würfels.
 
 
 
@@ -3589,6 +3600,97 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 %
 %
 %
+\newpage
+\appendix
+
+\section{Alle Rotationen des Würfels}
+\label{Anhang_RotationenDesWürfels}
+
+\begin{adjustbox}{width=1\textwidth,center}
+
+\begin{tabular}{c | c c c c c c c c c c c c c c c c c c c c c c c c}
+\toprule
+
+& $N_r$ & $Z_r$ & $Z_rZ_r$ & $Z_l$ & $Y_r$ & $Y_rY_r$ & $Y_l$ & $X_r$ & $X_rX_r$ & $X_l$ & & & & & & & & & & & & & & \\
+
+\midrule
+
+$N_r$ & $N_r$ & $Z_r$ & $Z_rZ_r$ & $Z_l$ & $Y_r$ & $Y_rY_r$ & $Y_l$ & $X_r$ & $X_rX_r$ & $X_l$ & & & & & & & & & & & & & & \\
+
+$Z_r$ & $Z_r$ & $Z_rZ_r$ & & & & & & & & & & & & & & & & & & & & & & \\
+
+$Z_rZ_r$ & $Z_rZ_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+$Z_l$ & $Z_l$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+$Y_r$& $Y_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+$Y_rY_r$& $Y_rY_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+$Y_l$ & $Y_l$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+$X_r$  & $X_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+$X_rX_r$ & $X_rX_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+$X_l$ & $X_l$ & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+& & & & & & & & & & & & & & & & & & & & & & & & \\
+
+
+
+\bottomrule
+\end{tabular}
+
+\end{adjustbox}
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+
 \newpage
 
 
