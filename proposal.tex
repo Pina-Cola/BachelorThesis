@@ -937,20 +937,20 @@ Sei die Permutation $\pi = (1 \ 5 \ 2)\ (3 \ 4)$. Das kleinste gemeinsame Vielfa
 %
 %
 
-\subsection{Parität} 
-\label{Abschnitt_GrundlagenParität}
+%\subsection{Parität} 
+%\label{Abschnitt_GrundlagenParität}
 
-\begin{definition}[Parität]
-Eine Zahl $n \in \mathbb{Z}$ ist gerade, wenn sie ganzzahlig ohne Rest durch zwei teilbar ist. Ansonsten ist sie ungerade. Die Menge der ganzen Zahlen wir dadurch in zwei Teilmengen zerlegt. Das nennt man Parität.
-\end{definition}
+%\begin{definition}[Parität]
+%Eine Zahl $n \in \mathbb{Z}$ ist gerade, wenn sie ganzzahlig ohne Rest durch zwei teilbar ist. Ansonsten ist sie ungerade. Die Menge der ganzen Zahlen wir dadurch in zwei Teilmengen zerlegt. Das nennt man Parität.
+%\end{definition}
 
-Ungerade Zahlen ergeben bei der Division durch $2$ immer einen Rest von $1$. Gerade Zahlen haben dabei den Rest $0$.
+%Ungerade Zahlen ergeben bei der Division durch $2$ immer einen Rest von $1$. Gerade Zahlen haben dabei den Rest $0$.
 
-\begin{bsp}[Parität]
+%\begin{bsp}[Parität]
 
-Sei $M=\{-2, -1, 0, 1, 2\}$. Die Teilmenge $\{-2, 0, 2\}$ enthält nur gerade Elemente und die Teilmenge $\{ -1, 1\}$ nur ungerade Elemente.
+%Sei $M=\{-2, -1, 0, 1, 2\}$. Die Teilmenge $\{-2, 0, 2\}$ enthält nur gerade Elemente und die Teilmenge $\{ -1, 1\}$ nur ungerade Elemente.
 
-\end{bsp}
+%\end{bsp}
 
 %
 %
@@ -2582,9 +2582,8 @@ Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf de
 %
 %
 %
-\subsection{Parität der Zykel}
+\subsection{Anzahl der 2-Zykel}
 
-Der Begriff der Parität wurde in Kapitel \ref{Abschnitt_GrundlagenParität} definiert und erklärt.
 Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
 Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. 
 Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel definiert:
@@ -2594,12 +2593,12 @@ Zur Erinnerung: Die Ebenendrehungen des Würfels sind durch folgende Zykel defin
 \sigma_F & =\ ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ ) \\
 \sigma_B & =\ ( \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ \textit{urb} \ ) \\
 \sigma_L & =\ ( \ \textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ ) \\
-\sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) \\
+\sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) 
 \end{align*}
-Jeder Grundzug ist demnach als ein $4$-Zykel definiert. Der $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
-Die Parität einer einzelnen Ebenendrehung ist demnach ungerade. Die Parität eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
+Jeder Grundzug ist demnach als ein $4$-Zykel definiert. Jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
+Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
 
-Bei dem \Tthree Würfel ist die Parität jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Im Gegensatz dazu kann die Parität der Zykel des \Ttwo Würfels ungerade sein und es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Kapitel \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
+Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Im Gegensatz dazu kann die Anzahl der $2$-Zykel der Zykel des \Ttwo Würfels ungerade sein und es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Kapitel \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
 
 %
 %
@@ -3034,7 +3033,7 @@ Ausgangsposition & Algorithmus  \\
 Ausgangsposition & Algorithmus  \\
 \midrule
 \includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
-\includegraphics[scale=0.08]{TOPVIEW6.png} & $F \ [ R,U ]\ R^{-1} \ F^{-1}\ R$ \\
+\includegraphics[scale=0.08]{TOPVIEW6.png} & $F^{-1} \ [ R,U ]\ L^{-1} \ U \ L$ \\
 \bottomrule
 \end{tabular}
 \end{center}
