@@ -3606,7 +3606,7 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 \section{Alle Rotationen des Würfels}
 \label{Anhang_RotationenDesWürfels}
 
-Alle Rotationsmöglichkeiten in Form einer Tabelle. (Zuerst die Spalte lesen, dann die Zeile.)
+In dieser Tabelle sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen.
 
 \begin{adjustbox}{width=1\textwidth,center}
 
@@ -3623,45 +3623,45 @@ $X_r$ & $X_r$ & $X_rX_r$ & $Y_rX_r$ & $X_rY_r$ & $N_R$ & $Y_lX_r$ & $X_rY_l$ & $
 
 $Y_r$ & $Y_r$ & $X_rY_r$ & $Y_rY_r$ & $Y_rX_l$ & $X_lY_r$ & $N_R$ & $Y_rX_r$ & $X_rY_rZ_r$ & $Y_l$ & $X_lY_lZ_r$ & $Y_lX_lZ_l$ & $X_lZ_rY_r$ & $X_l$ & $Z_r$ & $Z_l$ & $X_r$ & $Y_rZ_rX_r$ & $Y_lX_rZ_r$ & $Z_rZ_r$ & $Y_lX_l$ & $X_rY_l$ & $Y_lX_r$ & $X_lY_l$ & $X_rX_r$ \\
 
-$Z_r$ & $Z_r$ & $ $ & & & & & & & & & & & & & & & & & & & & & & \\
+$Z_r$ & $Z_r$ & $Y_lX_r$ & & & & & & & & & & & & & & & & & & & & & & $X_rY_l$ \\
 
-$X_l$ & $X_l$ & $N_R$ & & & & & & & & & & & & & & & & & & & & & & \\
+$X_l$ & $X_l$ & $N_R$ & & & & & & & & & & & & & & & & & & & & & & $Y_rX_r$ \\
 
-$Y_l$ & $Y_l$ & $ $ & $N_R$ & & & & & & & & & & & & & & & & & & & & & \\
+$Y_l$ & $Y_l$ & $X_rY_l$ & $N_R$ & & & & & & & & & & & & & & & & & & & & & $Z_rZ_r$ \\
 
-$Z_l$ & $Z_l$ & $ $ & & $N_R$ & & & & & & & & & & & & & & & & & & & & \\
+$Z_l$ & $Z_l$ & $Y_rX_r$ & & $N_R$ & & & & & & & & & & & & & & & & & & & & $X_lY_l$ \\
 
-$X_rX_r$  & $X_rX_r$ & $ $ & & & & & & & & & & & & & & & & & & & & & & \\
+$X_rX_r$  & $X_rX_r$ & $X_l$ & & & & & & & & & & & & & & & & & & & & & & $Y_r$ \\
 
-$Y_rY_r$ & $Y_rY_r$ & $ $ & & & & & & & & & & & & & & & & & & & & & & \\
+$Y_rY_r$ & $Y_rY_r$ & $Y_lX_lZ_l$ & & & & & & & & & & & & & & & & & & & & & & $X_rY_rZ_r$ \\
 
-$Z_rZ_r$ & $Z_rZ_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$Z_rZ_r$ & $Z_rZ_r$ & $Y_lX_rZ_r$ & & & & & & & & & & & & & & & & & & & & & & $Y_l$ \\
 
-$X_rY_r$ & $X_rY_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$X_rY_r$ & $X_rY_r$ & $X_rY_rZ_r$ & & & & & & & & & & & & & & & & & & & & & & $X_lY_rZ_r$ \\
 
-$Y_rX_l$ & $Y_rX_l$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$Y_rX_l$ & $Y_rX_l$ & $Z_r$ & & & & & & & & & & & & & & & & & & & & & & $X_r$ \\
 
-$X_lY_l$ & $X_lY_l$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$X_lY_l$ & $X_lY_l$ & $Y_l$ & & & & & & & & & & & & & & & & & & & & & & $Z_l$ \\
 
-$Y_lX_r$ & $Y_lX_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$Y_lX_r$ & $Y_lX_r$ & $X_lZ_rY_r$ & & & & & & & & & & & & & & & & & & & & & & $Y_lX_lZ_l$ \\
 
-$Y_lX_l$ & $Y_lX_l$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$Y_lX_l$ & $Y_lX_l$ & $Z_l$ & & & & & & & & & & & & & & & & & & & & & & $Y_lX_rZ_r$ \\
 
-$X_rY_l$ & $X_rY_l$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$X_rY_l$ & $X_rY_l$ & $X_lY_lZ_r$ & & & & & & & & & & & & & & & & & & & & & & $Z_r$ \\
 
-$Y_rX_r$ & $Y_rX_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$Y_rX_r$ & $Y_rX_r$ & $Y_rZ_rX_r$ & & & & & & & & & & & & & & & & & & & & & & $Y_r$ \\
 
-$X_rY_r$ & $X_rY_r$ & & & & & & & & & & & & & & & & & & & & & & & \\
+$X_rY_r$ & $X_rY_r$ & $Y_r$ & & & & & & & & & & & & & & & & & & & & & & $Y_rZ_rX_r$ \\
 
-$X_rY_rZ_r$ & $X_rY_rZ_r$ & & & & & & & & & & & & & & & & & & $N_R$ & & & & & \\
+$X_rY_rZ_r$ & $X_rY_rZ_r$ & $X_lY_r$ & & & & & & & & & & & & & & & & & $N_R$ & & & & & $Y_rY_r$ \\
 
-$Y_rZ_rX_r$ & $Y_rZ_rX_r$ & & & & & & & & & & & & & & & & & & & $N_R$ & & & & \\
+$Y_rZ_rX_r$ & $Y_rZ_rX_r$ & $Y_lX_l$ & & & & & & & & & & & & & & & & & & $N_R$ & & & & $X_lY_r$ \\
 
-$Y_rX_lZ_l$ & $Y_rX_lZ_l$ & & & & & & & & & & & & & & & & & & & & $N_R$ & & & \\
+$Y_rX_lZ_l$ & $Y_rX_lZ_l$ & $Z_rZ_r$ & & & & & & & & & & & & & & & & & & & $N_R$ & & & $Y_lX_r$ \\
 
-$X_lZ_rY_r$ & $X_lZ_rY_r$ & & & & & & & & & & & & & & & & & & & & & $N_R$ & & \\
+$X_lZ_rY_r$ & $X_lZ_rY_r$ & $Y_rX_l$ & & & & & & & & & & & & & & & & & & & & $N_R$ & & $X_rY_r$ \\
 
-$Y_lX_rZ_r$ & $Y_lX_rZ_r$ & & & & & & & & & & & & & & & & & & & & & & $N_R$ & $Y_lX_l$ \\
+$Y_lX_rZ_r$ & $Y_lX_rZ_r$ & $Y_rY_r$ & & & & & & & & & & & & & & & & & & & & & $N_R$ & $Y_lX_l$ \\
 
 $X_lY_lZ_r$ & $X_lY_lZ_r$ & $X_lY_l$ & $Z_rZ_r$ & $Y_rX_r$ & $X_rY_l$ & $X_rX_r$ & $Y_rX_l$ & $Y_l$ & $X_rY_rZ_r$ & $Y_r$ & $Y_lX_rZ_r$ & $Z_l$ & $X_r$ & $Y_rZ_rX_r$ & $X_lZ_rY_r$ & $X_l$ & $Z_r$ & $Y_lX_lZ_l$ & $Y_rY_r$ & $Y_lX_r$ & $X_lY_r$ & $Y_lX_l$ & $X_rY_r$ & $N_R$ \\
 
