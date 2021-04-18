@@ -1544,6 +1544,8 @@ Für der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folg
  & (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
 \end{align*}
 
+Da die Rotationen zu den Zügen zählen, können sie ebenfalls mit dem $\circ$-Operator aneinandergereiht werden.
+
 
 
 %
@@ -1577,20 +1579,20 @@ Dementsprechend gilt bei den Rotationen auch für jede Rotation:
 \forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}. n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
 \end{align*}
 
-Anhand dieser Aussage wird veranschaulicht, dass der Würfel sich nach mehreren Rotationen wieder seine Ausgangsrotation nähern kann. Es gibt für die Roationen also eine maximale Anzahl. Jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
+Anhand dieser Aussage wird veranschaulicht, dass der Würfel sich nach mehreren Rotationen wieder seine Ausgangsrotation nähern kann. Es gibt für die Roationen also eine maximale Anzahl, jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
 In diesem Abschnitt wird berechnet, wie viel der Würfel maximal rotiert werden muss, um zurück in die Ausgangsposition zu gelangen.
 
-Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel.
+Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel. In Abbildung \ref{AbbildungWürfelRotationWeisseSeite} sind die vier verschiedenen Ausrichtungen des gelösten Würfels zu sehen, wenn die weiße Seite als obere Seite angenommen wird. Für die anderen fünf Seiten gibt es ebenfalls vier Möglichkeiten der Ausrichtung.
 
 \begin{figure}[H]
 \centering
-INCLUDE GRAPHIC
+\includegraphics[scale=0.06]{RotationWeiss.png}
 \caption{Rotationsmöglichekeiten des Würfels mit weißer Seite oben}
 \label{AbbildungWürfelRotationWeisseSeite}
 \end{figure}
 
 
-In Anhang \ref{Anhang_RotationenDesWürfels} befinden sich Abbildungen aller Rotationsmöglichkeiten des Würfels.
+In Anhang \ref{Anhang_RotationenDesWürfels} befinden sich Abbildungen aller Rotationsmöglichkeiten des Würfels und eine Verknüpfungstafel, die alle Rotationen darstellt.
 
 
 
@@ -1771,7 +1773,6 @@ Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1$ un
 
 Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird:
 
-\newpage
 
 \begin{description}
 \item [Abgeschlossenheit] \ \\
@@ -3606,7 +3607,7 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 \section{Alle Rotationen des Würfels}
 \label{Anhang_RotationenDesWürfels}
 
-In dieser Tabelle sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen.
+In dieser Verknüpfungstafel sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen.
 
 \begin{adjustbox}{width=1\textwidth,center}
 
