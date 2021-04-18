@@ -31,7 +31,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {15}{\ignorespaces Würfel nach Rotation um $z$-Achse\relax }}{28}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Rotationsmöglichekeiten des Würfels mit weißer Seite oben\relax }}{31}{figure.caption.16}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Rotationsmöglichkeiten des Würfels mit der weißen Seite oben\relax }}{31}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {17}{\ignorespaces Würfel gelöst, nach Zug $F$ und nach $Z_rL$}}{32}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
@@ -76,3 +76,5 @@
 \contentsline {figure}{\numberline {37}{\ignorespaces Cayleygraph der Untergruppe $G_{min}$\relax }}{69}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {38}{\ignorespaces Lösungsbaum: \textit {Quarter-Turn} Metrik\relax }}{73}{figure.caption.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {39}{\ignorespaces Rotationsmöglichkeiten des Würfels\relax }}{75}{figure.caption.39}%

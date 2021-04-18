@@ -119,4 +119,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Alle Rotationen des Würfels}{75}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{76}{appendix.A}%
+\contentsline {section}{Abbildungsverzeichnis}{77}{figure.caption.39}%

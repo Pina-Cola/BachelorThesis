@@ -1544,7 +1544,7 @@ Für der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folg
  & (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
 \end{align*}
 
-Da die Rotationen zu den Zügen zählen, können sie ebenfalls mit dem $\circ$-Operator aneinandergereiht werden.
+Es können aich mehrere Rotationen nacheinander ausgeführt werden.
 
 
 
@@ -1587,7 +1587,7 @@ Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben kön
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.06]{RotationWeiss.png}
-\caption{Rotationsmöglichekeiten des Würfels mit weißer Seite oben}
+\caption{Rotationsmöglichkeiten des Würfels mit der weißen Seite oben}
 \label{AbbildungWürfelRotationWeisseSeite}
 \end{figure}
 
@@ -3607,7 +3607,18 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 \section{Alle Rotationen des Würfels}
 \label{Anhang_RotationenDesWürfels}
 
-In dieser Verknüpfungstafel sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen.
+In der folgenden Verknüpfungstafel sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen.
+
+Außerdem zeigt \ref{AbbildungWürfelRotationAlleSeiten} alle Rotationsmöglichkeiten des Würfels.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.06]{AlleRotationen.png}
+\caption{Rotationsmöglichkeiten des Würfels}
+\label{AbbildungWürfelRotationAlleSeiten}
+\end{figure}
+
 
 \begin{adjustbox}{width=1\textwidth,center}
 
@@ -3630,7 +3641,7 @@ $X_l$ & $X_l$ & $N_R$ & $Y_rX_l$ & $X_lY_l$ & $X_rX_r$ & $Y_lX_l$ & $X_lY_r$ & $
 
 $Y_l$ & $Y_l$ & $X_rY_l$ & $N_R$ & $Y_lX_r$ & $X_lY_l$ & $Y_rY_r$ & $Y_lX_l$ & $X_lY_lZ_r$ & $Y_r$ & $X_rY_rZ_r$ & $X_r$ & $Z_r$ & $Y_lX_rZ_r$ & $X_lZ_rY_r$ & $Y_rZ_rX_r$ & $Y_lX_lZ_l$ & $Z_l$ & $X_l$ & $X_rX_r$ & $Y_rX_r$ & $X_rY_r$ & $Y_rX_l$ & $X_lY_r$ & $Z_rZ_r$ \\
 
-$Z_l$ & $Z_l$ & $Y_rX_r$ & & $N_R$ & & & & & & & & & & & & & & & & & & & & $X_lY_l$ \\
+$Z_l$ & $Z_l$ & $Y_rX_r$ & $X_lY_r$ & $N_R$ & $Y_lX_l$ & $X_rY_l$ & $Z_rZ_r$ & $Y_rZ_rX_r$ & $X_lZ_rY_r$ & $Z_r$ & $Y_r$ & $X_l$ & $Y_l$ & $X_r$ & $Y_lX_lZ_l$ & $X_lY_lZ_r$ & $Y_lX_rZ_r$ & $X_rY_rZ_r$ & $X_rY_r$ & $Y_rY_r$ & $Y_rX_l$ & $X_rX_r$ & $Y_lX_r$ & $X_lY_l$ \\
 
 $X_rX_r$  & $X_rX_r$ & $X_l$ & & & & & & & & & & & & & & & & & & & & & & $Y_r$ \\
 
