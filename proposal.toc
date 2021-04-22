@@ -117,8 +117,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.2}Ausblick}{74}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Alle Rotationen des Würfels}{75}{appendix.A}%
+\contentsline {section}{Abbildungsverzeichnis}{75}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{77}{figure.caption.39}%
+\contentsline {section}{Literatur}{77}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatur}{79}{figure.caption.39}%
+\contentsline {section}{\numberline {A}Alle Rotationen des Würfels}{78}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Eidesstattliche Versicherung}{80}{appendix.B}%
