@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  22 APR 2021 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  22 APR 2021 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1490,10 +1490,7 @@ File: 3_wuerfel.png Graphic file (type png)
 <use 3_wuerfel.png>
 Package pdftex.def Info: 3_wuerfel.png  used on input line 1648.
 (pdftex.def)             Requested size: 412.22234pt x 130.08038pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31 <./RotationWeiss.png>] [32 <./3_wuerfel.png>]
+[31 <./RotationWeiss.png>] [32 <./3_wuerfel.png>] [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1762.
@@ -1518,7 +1515,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1762.
 
-[33] [34] [35]
+[34] [35]
 <RF.png, id=656, 1003.75pt x 1140.26pt>
 File: RF.png Graphic file (type png)
 <use RF.png>
@@ -1529,12 +1526,12 @@ File: FR.png Graphic file (type png)
 <use FR.png>
 Package pdftex.def Info: FR.png  used on input line 1847.
 (pdftex.def)             Requested size: 100.38087pt x 114.03267pt.
- [36 <./RF.png> <./FR.png>]
+ [36]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 1883.
 
-[37]
+[37 <./RF.png> <./FR.png>]
 <LLFF_5.png, id=679, 1043.9pt x 1201.48875pt>
 File: LLFF_5.png Graphic file (type png)
 <use LLFF_5.png>
@@ -1544,24 +1541,25 @@ File: 2x2solved.png Graphic file (type png)
 <use 2x2solved.png>
 Package pdftex.def Info: 2x2solved.png  used on input line 1925.
 (pdftex.def)             Requested size: 140.52403pt x 159.6353pt.
- [38 <./LLFF_5.png>]
-<graph_zug1.png, id=690, 1265.72874pt x 1078.0275pt>
+ [38] [39 <./LLFF_5.png>]
+<graph_zug1.png, id=695, 1265.72874pt x 1078.0275pt>
 File: graph_zug1.png Graphic file (type png)
 <use graph_zug1.png>
 Package pdftex.def Info: graph_zug1.png  used on input line 1999.
 (pdftex.def)             Requested size: 316.43141pt x 269.50621pt.
- [39]
-<zykel_LLFF.png, id=697, 1366.10374pt x 593.21625pt>
+ [40 <./graph_zug1.png>]
+<zykel_LLFF.png, id=703, 1366.10374pt x 593.21625pt>
 File: zykel_LLFF.png Graphic file (type png)
 <use zykel_LLFF.png>
 Package pdftex.def Info: zykel_LLFF.png  used on input line 2028.
 (pdftex.def)             Requested size: 341.5251pt x 148.3037pt.
- [40 <./graph_zug1.png>] [41 <./zykel_LLFF.png>]
+
+[41 <./zykel_LLFF.png>] [42]
 Overfull \hbox (5.2152pt too wide) in paragraph at lines 2078--2107
 []$[]$ $[]$ $[]$ 
  []
 
-[42] [43]
+[43]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2177.
@@ -1913,6 +1911,9 @@ Package rerunfilecheck Info: File `proposal.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
@@ -1952,7 +1953,7 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (84 pages, 6836067 bytes).
+Output written on proposal.pdf (84 pages, 6836502 bytes).
 PDF statistics:
  1261 PDF objects out of 1440 (max. 8388607)
  1007 compressed objects within 11 object streams

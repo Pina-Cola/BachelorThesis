@@ -55,7 +55,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7}Züge als Gruppenoperation}{37}{subsection.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.8}Ordnung der Permutationen}{37}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.8}Ordnung der Permutationen}{38}{subsection.5.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.9}Zykelstruktur}{39}{subsection.5.9}%
 \defcounter {refsection}{0}\relax 
