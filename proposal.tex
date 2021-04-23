@@ -913,7 +913,7 @@ Die Ordnung einer Permutation ist die kleinste Zahl $n \in \mathbb{N}$, so dass 
 
 \begin{bsp}[Ordnung von Permutationen]
 
-Sei die Permutation $\pi = (1 \ 2 \ 3)$. Die Ordnung von $\pi$ ist 3, da $\pi$ aus nur einem 3-elementigen Zykel besteht. $\pi \cdot \pi \cdot \pi = (1 \ 2 \ 3) \cdot (1 \ 2 \ 3) \cdot (1 \ 2 \ 3) =  (1 \ 2 \ 3) $
+Sei die Permutation $\pi = (1 \ 2 \ 3)$. Die Ordnung von $\pi$ ist 3, da $\pi$ aus nur einem dreielementigen Zykel besteht. $\pi \cdot \pi \cdot \pi = (1 \ 2 \ 3) \cdot (1 \ 2 \ 3) \cdot (1 \ 2 \ 3) =  (1 \ 2 \ 3) $
 
 \end{bsp}
 
@@ -1447,6 +1447,8 @@ Da die Anzahl der möglichen Züge im Gegensatz zur Anzahl der validen Würfelko
 
 \subsection{Rotation des Würfels}
 
+\label{Abschnitt_RotationDesWürfels}
+
 Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. 
 Der \Ttwo Würfel kann daher im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren.
 Das soll im nächsten Abschnitt als Äquivalenrelationen umgesetzt werden. Dafür werden die Rotationsmöglichkeiten des Würfels in diesem Abschnitt definiert.
@@ -1962,7 +1964,7 @@ Man kann links in Abbildung \ref{Abbildung_LF_5_15} sehen, dass die Würfelstein
 
 Anhand der Zykelstruktur lässt sich die Ordnung der jeweiligen Permutation bestimmen. Die Ordnung der Permutationen beschreibt die Anzahl der Wiederholungen, die ein Zug durchgeführt werden muss, damit die Steine die gleiche Anordnung wie zu Beginn des Zuges haben. Dabei geht es um die Steinpositionen und nicht um die Steinausrichtungen.
 
-Der Zug $U$ als $\sigma_U =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem 4-elementigen Zykel.
+Der Zug $U$ als $\sigma_U =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem vierelementigen Zykel.
 Wenn der Zug $U$ viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
 \begin{center}
 \begin{tabular}{ccccc}
@@ -2219,7 +2221,7 @@ Da die trivialen Untergruppen nicht sonderlich aussagekräftig sind, geht der fo
 
 Da die Trägermenge $H_{E1}$ die Äquivalenzklassen aller möglichen Züge enthält, sind hier genau vier Elemente enthalten. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
 
-Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werden, dass die Züge der Untergruppe $(H_{E1}, \circ)$ genau vier Würfelkonfigurationen erreichen: Jede Ebenendrehung ($U, D, R, L, F$ oder $B$) ist durch eine Permutationsfunktion $\sigma$ definiert. Dabei besteht $\sigma$ für jeden dieser Grundzüge aus nur einem 4-elementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Die Ordnung der Permutation ist im Fall einer einzelnen Ebenendrehung immer vier. Die Ordnung einer Permutation wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben und die Ordnung eines Zuges  in Abschnitt \ref{Abschnitt_OrdnungZüge}. Bei der Ordnung eines Zuges wird zusätzlich zu den Permutationen die Funktion $\gamma$ berücksichtig, die die Ausrichtung der Steine darstellt. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert. Jede dieser Funktionen $\gamma$ gibt die Eingabe unverändert zurück, wenn sie vier mal direkt nacheinander ausgeführt wird. Somit ist die Ordnung einer einzelnen Ebenendrehung immer vier und die Trägermenge $H_{E1}$ enthält genau vier Züge. Durch diese vier Züge können genau vier verschiedene Würfelkonfigurationen erreicht werden. 
+Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werden, dass die Züge der Untergruppe $(H_{E1}, \circ)$ genau vier Würfelkonfigurationen erreichen: Jede Ebenendrehung ($U, D, R, L, F$ oder $B$) ist durch eine Permutationsfunktion $\sigma$ definiert. Dabei besteht $\sigma$ für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Die Ordnung der Permutation ist im Fall einer einzelnen Ebenendrehung immer vier. Die Ordnung einer Permutation wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben und die Ordnung eines Zuges  in Abschnitt \ref{Abschnitt_OrdnungZüge}. Bei der Ordnung eines Zuges wird zusätzlich zu den Permutationen die Funktion $\gamma$ berücksichtig, die die Ausrichtung der Steine darstellt. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert. Jede dieser Funktionen $\gamma$ gibt die Eingabe unverändert zurück, wenn sie vier mal direkt nacheinander ausgeführt wird. Somit ist die Ordnung einer einzelnen Ebenendrehung immer vier und die Trägermenge $H_{E1}$ enthält genau vier Züge. Durch diese vier Züge können genau vier verschiedene Würfelkonfigurationen erreicht werden. 
 
 
 
@@ -3687,9 +3689,11 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 \section{Alle Rotationen des Würfels}
 \label{Anhang_RotationenDesWürfels}
 
-In der folgenden Verknüpfungstafel sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen.
+Abbildung \ref{AbbildungWürfelRotationAlleSeiten} zeigt alle Rotationsmöglichkeiten des Würfels.
 
-Außerdem zeigt Abbildung \ref{AbbildungWürfelRotationAlleSeiten} alle Rotationsmöglichkeiten des Würfels.
+Außerdem sind in der folgenden Verknüpfungstafel alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen.
+
+
 
 
 \begin{figure}[H]
@@ -3763,6 +3767,11 @@ $X_lY_lZ_r$ & $X_lY_lZ_r$ & $X_lY_l$ & $Z_rZ_r$ & $Y_rX_r$ & $X_rY_l$ & $X_rX_r$
 \end{tabular}
 
 \end{adjustbox}
+\\
+\\
+
+
+Die Rotationen wurden in Kapitel \ref{Abschnitt_RotationDesWürfels} definiert. Diese Verknüpfungstafel stellt die Verknüpfungen aller Rotationsmöglichkeiten des Würfels dar. Alle 24 Rotationsmöglichkeiten sind in Abbildung \ref{AbbildungWürfelRotationAlleSeiten} dargestellt.
 
 %
 %
