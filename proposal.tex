@@ -3465,7 +3465,7 @@ Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C$,
 
 Ein solcher Baum enthält eine Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenerotationen im Index' $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
 
-Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für einen minimalen Baum drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
+Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für einen Baum drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
 Wenn man jeden möglichen Zug für die \textit{Quarter-Turn} Metrik betrachtet, erhält man sechs Züge, da jede Ebene in zwei Richtungen gedreht werden kann. Es handelt sich dabei um die Züge $F, F^{-1}, R, R^{-1}, U$ und $U^{-1}$.
 
@@ -3473,12 +3473,27 @@ Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=1.3]{Baum_1.jpg}
+\includegraphics[scale=1.5]{Baum_1.jpg}
 \caption{Lösungsbaum: \textit{Quarter-Turn} Metrik}
 \label{Abbildung_BaumQTM}
 \end{figure}
 
 Jeder der Baumknoten hat demnach 6 Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. $|i|$ entspricht dabei der Tiefe des Baums. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
+
+Für einen Baum mit minimaler Kantenzahl fallen die Kanten $F^{-1}, R^{-1}$ und $U^{-1}$ weg. Diese Züge können durch $FFF, RRR$ und $UUU$ dargestellt werden. Jeder Knoten hat dann nur noch drei Kinder. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.45]{Baum_2.jpg}
+\caption{Lösungsbaum mit minimalen Kanten}
+\label{Abbildung_BaumMin}
+\end{figure}
+
+Allerdings werden die Züge $F^{-1}, R^{-1}$ und $U^{-1}$ durch jeweils drei Kanten dargestellt. Dadurch ergibt sich eine maximale Tiefe von $|i| = 14 \cdot 3 = 42$. Die maximale Größe des Baums ist somit $3^{14} = 109\ 418\ 989\ 131\ 512\ 359\ 209$. 
+
+Der Baum mit minimaler Kantenanzahl 
+
+
 
 %Ausgehend von der \textit{Half-Turn} Metrik, wird ein anderer Baum erzeugt. Es gibt dann mehr mögliche Ebenendrehungen: $F, FF, F^{-1}, R, RR, R^{-1}, U, UU$ und $U^{-1}$. So sieht der Baum von jeder Konfiguration $C_i$ ausgehend aus: 
 
