@@ -364,7 +364,7 @@ Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie Ebenendreh
 
 \end{description}
 
-Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Würfelkonfiguration einer vermeintlich anderen Konfiguration entspricht, bei der nur eine andere Seite nach oben gehalten wird.
+Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Würfelkonfiguration einer vermeintlich anderen Konfiguration entspricht, bei der jedoch eine andere Seite nach oben gehalten wird.
 Die Ausrichtung des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann.  
 Das muss beachtet werden, da in dieser Arbeit die Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen wird. Es wird sich dabei vorallem an \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
 
@@ -416,7 +416,7 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.
 Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf diese Ebene geschaut wird. Dementsprechend wirkt es so, als würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn von oben auf den Würfel geschaut wird. So ergibt sich die Menge der Grundzüge: $\{U, D, R, L, F, B\}$.
 
 
-Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel aber immer nur zwei statt drei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
+Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel aber immer lediglich zwei statt drei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
 Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
 Eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) beispielsweise entspricht einer Drehung der unteren Ebene im Uhrziegersinn ($D$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. 
 
@@ -608,7 +608,7 @@ $(M, \circ)$ wird dann Erzeugnis von $M$ genannt und die Elemente aus $M$ sind d
 
 Wenn $(M, \circ)$ durch $M$ erzeugt wird, ist dann eine $M$ enthaltende Untergruppe.
 
-Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht nur aus Potenzen dieses Elementes
+Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht ausschließlich aus Potenzen dieses Elementes
 
 \begin{definition}[Zyklische Gruppe]
 Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ wird zyklische Gruppe genannt, wenn es ein Element $a \in G$ gibt, das jedes Element in $G$ erzeugt. Dann schreibt man auch:
@@ -671,7 +671,7 @@ In Abbildung \ref{Abbildung_Cayleygraph} ist den Cayleygraphen der Gruppe $(\mat
 
 
 
-Es gibt Links- und Rechtsoperationen auf Gruppen. Da in dieser Arbeit nur Rechtsoperationen genutzt werden, beschränkt sich die Definition darauf.
+Es gibt Links- und Rechtsoperationen auf Gruppen. Da in dieser Arbeit ausschließlich Rechtsoperationen genutzt werden, beschränkt sich die Definition darauf.
 
 
 \begin{definition}[Rechtsoperation]
@@ -899,7 +899,7 @@ Für $n$ verschiedene Objekte ist die Anzahl der Permutationen $n!$.
 \end{definition}
 
 \begin{bsp}[Anzahl der Permutationen]
-Sei $M = \{ 1 \ 2 \ 3 \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekte dann nur noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach nur eine. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
+Sei $M = \{ 1 \ 2 \ 3 \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekte bleiben dann noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach gibt es nur noch eine Option. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
 
 \end{bsp}
 
@@ -1119,7 +1119,7 @@ Das kann auch in der Form $i \mapsto j$ geschrieben werden:
 
 Daraus entstehen folgende Zykel: $\sigma_U = \ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ )\ ( \ \textit{dlf} \ )\ ( \ \textit{dlb} \ )\ ( \ \textit{drb} \ )\ ( \ \textit{drf} \ )$
 
-Die Zykel mit nur einem Element müssen nicht aufgeschrieben werden. Dann ergibt sich $\sigma_U = \ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ )$, was den Zykel beschreibt, in dem die Steine rotiert werden, wenn die obere Ebene gedreht wird. 
+Einelementige Zykel müssen nicht aufgeschrieben werden. Dann ergibt sich $\sigma_U = \ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ )$, was den Zykel beschreibt, in dem die Steine rotiert werden, wenn die obere Ebene gedreht wird. 
 
 
 Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden: 
@@ -1484,7 +1484,7 @@ $N_R$ & keine Rotation des Würfels \\
 
 Die Rotationen sind nicht minimal definiert, da beispielsweise $Z_l$ das gleiche wie ${Z_r}^3$ ist. Dies dient der Anschaulichkeit. 
 
-Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo nur einige Steine die Position ändern, ändern hier alle Steine die Position, ohne dass die Würfelkonfiguration verändert wird, da er komplett gedreht wird. 
+Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo eine Auswahl der Steine die Position ändert, ändern hier alle Steine die Position, ohne dass die Würfelkonfiguration verändert wird, da er komplett gedreht wird. 
 
 Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen gezeigt. Die Rotation $Z_r$ ist in Abbildung \ref{Abbildung_WürfelNachRotationUmZAchse} zu sehen.
 \begin{figure}[H]
@@ -1518,7 +1518,7 @@ Alle Funktionen der Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
 \delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
 \end{align*}
 
-Da die Rotationen die Würfelkonfiguration verändern, muss es nicht nur Permutationsfunktionen für die Veränderung der Steinposition geben, sondern auch Übergangsfunktionen für den Vektor $x$, der die Ausrichtung der Steine darstellt. Die Funktionen $\Gamma$ wurden für jeden Zug des Würfels bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} beschrieben. Die Vektoreinträge werden dort mit den Funktionen $g, h$ und $i$ verändert.
+Da die Rotationen die Würfelkonfiguration verändern, muss es neben den Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\Gamma$ wurden für jeden Zug des Würfels bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} beschrieben. Die Vektoreinträge werden dort mit den Funktionen $g, h$ und $i$ verändert.
 \begin{align*}
 g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 \ \ \ \ \ i(x)=x
 \end{align*}
@@ -1641,7 +1641,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
 Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die \textit{leere} Rotation dar -- das entspricht keiner Rotation des Würfels. 
-Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann nur verschieden ausgerichtet. 
+Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann lediglich verschieden ausgerichtet. 
 In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfiguration, aber anders gedreht.
 \begin{figure}[h]
 \centering

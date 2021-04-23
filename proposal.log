@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  23 APR 2021 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  23 APR 2021 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1412,7 +1412,14 @@ File: foldedout_spin.png Graphic file (type png)
 Package pdftex.def Info: foldedout_spin.png  used on input line 1103.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
  [18 <./foldedout_cage.png> <./foldedout_cage_color.png> <./caged_spin.png> <./
-foldedout_spin.png>] [19]
+foldedout_spin.png>]
+Overfull \hbox (29.57411pt too wide) in paragraph at lines 1122--1123
+[]\OT1/cmr/m/n/12 (-20) Einelementige Zy-kel m[]ussen nicht auf-ge-schrie-ben w
+er-den. Dann er-gibt sich $\OML/cmm/m/it/12 ^^[[] \OT1/cmr/m/n/12 (-20) =  ( []
+ [] [] [] )$,
+ []
+
+[19]
 <foldedout_numbers.png, id=543, 1003.75pt x 1140.26pt>
 File: foldedout_numbers.png Graphic file (type png)
 <use foldedout_numbers.png>
@@ -1956,7 +1963,7 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (83 pages, 6909765 bytes).
+Output written on proposal.pdf (83 pages, 6909790 bytes).
 PDF statistics:
  1260 PDF objects out of 1440 (max. 8388607)
  1006 compressed objects within 11 object streams
