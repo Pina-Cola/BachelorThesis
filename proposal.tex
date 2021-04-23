@@ -1045,7 +1045,7 @@ Deshalb wird in diesem Kapitel die Konfiguration des Würfels definiert, bevor d
 \item Ausrichtung der Ecksteine (angegeben als $x$)
 \end{itemize}
 Die Konfiguration des Würfels kann als 2-Tupel geschrieben werden: $(\sigma, x)$.
-In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtung der Ecktsteine als Vektor $x$ erklärt. Außerdem wird die Veränderung der Würfelkonfiguration an einem Beispielzug schrittweise erklärt.
+In diesem Kapitel wird die Position der Ecksteine als Menge bijektiver Funktionen $\sigma$ und die Ausrichtung der Ecktsteine als Vektor $x$ definiert. Außerdem wird die Veränderung der Würfelkonfiguration an einem Beispielzug schrittweise erklärt.
 
 %
 %
@@ -1073,9 +1073,9 @@ In diesem Kapitel wird die Position der Ecksteine als $\sigma$ und die Ausrichtu
 
 \label{Abschnitt_PositionenDerSteineImWürfel}
 
-Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) stellt Übergänge der Würfelsteine als Funktion dar. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
+Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) enthält Funktionen, die die Übergänge der Würfelsteine darstellen. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
 
-Die Einteilung der Würfelpositionen sind in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} zu sehen. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die \textit{up, down, right, left, front und back} beschreiben.
+Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} zu sehen. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die ihre Position mit \textit{up, down, right, left, front und back} beschreiben.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.14]{caged_positions.png} \\
@@ -1095,7 +1095,7 @@ Somit heißt die Steinposition oben links beispielsweise \textit{ulf} (für \tex
 Jeder Stein bekommt auch einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
 
 Nun wird zur Veranschaulichung die Permutation $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn definiert. Grundlagen zu Permutationen und der Zykelschreibeweise wurden in Abschnitt \ref{Abschnitt_PermutationZykel} erklärt.
-Hier wird $\sigma_U$ ausführlich beschrieben und verschiedene Schreibweisen angegeben. Die weiteren Drehungen sind analog definiert. 
+Hier wird $\sigma_U$ hergeleitet, ausführlich beschrieben und verschiedene Schreibweisen angegeben. Die Herleitung der weiteren Drehungen funktioniert analog. 
 Die Drehung der oberen Ebene ist in Abbildung \ref{Abbildung_SteinpositionnamenNachU} grafisch dargestellt.
 \begin{figure}[h]
 \centering
@@ -1105,7 +1105,7 @@ Die Drehung der oberen Ebene ist in Abbildung \ref{Abbildung_SteinpositionnamenN
 \label{Abbildung_SteinpositionnamenNachU}
 \end{figure}
 
-Die Funktion $\sigma_U$ sieht dann so aus:
+In Abbildung \ref{Abbildung_SteinpositionnamenNachU} ist zu sehen, dass die Steine der unteren Ebene nicht bewegt wurden. Die Positionen der oberen Ebene haben sich um einen Stein im Uhrzeigersinn verschoben. Daraus ergeben sich folgende Funktionen $\sigma_U$:
 \begin{alignat*}{4}
 & \sigma_U(\textit{ulf})=\textit{ulb} \ \ \ \ \ \ \ & \sigma_U(\textit{ulb})=\textit{urb} \ \ \ \ \ \ \ & \sigma_U(\textit{urb})=\textit{urf} \ \ \ \ \ \ \ & \sigma_U(\textit{urf})=\textit{ulf} \\
 & \sigma_U(\textit{dlf})=\textit{dlf} \ \ \ \ \ \ \ & \sigma_U(\textit{dlb})=\textit{dlb} \ \ \ \ \ \ \ & \sigma_U(\textit{drb})=\textit{drb} \ \ \ \ \ \ \ & \sigma_U(\textit{drf})=\textit{drf} 
