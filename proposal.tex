@@ -2224,7 +2224,7 @@ Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werd
 
 
 \item Eine weitere Untergruppe von $(\Gtwo, \circ)$ ist $(H_{E2}, \circ)$. Hier dürfen zwei gegenüber\-liegende Ebenen gedreht werden. 
-Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und nicht anhand der Mittelsteine oben und unten unterschieden werden kann.
+Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} sind es allerdings lediglich vier, da es nur zwei Ebenen gibt und nicht anhand der Mittelsteine oben und unten unterschieden werden kann.
 \end{itemize}
 
 
@@ -2255,17 +2255,17 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden bereits in Abschnitt \ref{Abschnitt_Erzeuger} erklärt.
 
 
-Ein Beispiel eines Erzeugers einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ wird von dem einzelnen Zug $\{ F \}$ erzeugt. Es können nur $4$ Würfelkonfigurationen erreicht werden und die Untergruppe $(G_F, \circ)$ enthält somit nur die Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
+Ein Beispiel eines Erzeugers einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ wird von dem einzelnen Zug $\{ F \}$ erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
 
 
-Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei können die Ebenen nur halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Untergruppe enthält daher nur $FF$ und $FFFF$.
+Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei kann die Ebene ausschließlich halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Trägermenge enthält daher die beiden Züge $FF$ und $FFFF$.
 
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
 
-Die Untergruppen, die mit nur einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $ F $ erzeugt wird, ist somit eine zyklische Untergruppe.
+Die Untergruppen, die von genau einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $ F $ erzeugt wird, ist eine solche zyklische Untergruppe.
 $(G_F, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $G_F = \{N, F^1, F^2, F^3, F^4, ...\}$ ist. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
-Das gilt für jeden Erzeuger, der nur aus einer einzelnen Ebenendrehung besteht.
+Das gilt für jeden Erzeuger, der aus einer einzelnen Ebenendrehung besteht.
 
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
@@ -2312,9 +2312,9 @@ $N$ & $RR$ & $FFRR$ &  $RRFFRR$ \\
 Zum Vergleich: Tom Davis erhält bei dem  \Tthree Würfel zwölf Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
 
 Die doppelten Elemente können natürlich auch mathematisch erkannt werden, dafür müssen dann nicht alle Optionen an einem Würfel ausprobiert werden.
-Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass von dem Zug $RRFFRRFFRR$ aus nur noch $FF$ bis zur Ausgangsposition fehlt und dass (da es sich um halbe Drehungen handelt) die Position, die durch $RRFFRRFFRR$ erreicht wird auch durch $FF$ erreichbar ist.
+Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass nach dem Auführen von $RRFFRRFFRR$ einzig $FF$ ausgeführt werden muss, um wiederin die Ausgangsposition zu gelangen. Da es sich um halbe Drehungen handelt, kann die Position, die durch $RRFFRRFFRR$ erreicht wird, auch durch $FF$ erreicht werden, da auch $FF$ eine solche halbe Ebenendrehung ist..
 
-Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit nur 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
+Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit lediglich 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
 Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $5! \cdot 3^5$ auf $29 \, 160$ Mitglieder \cite{TD}, aber auch das ist deutlich größer als $7$.
 
 %
