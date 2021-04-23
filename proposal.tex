@@ -1850,7 +1850,7 @@ $(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation d
 \caption[Würfel nach Zügen $FR$ (links) und $RF$ (rechts)]{Würfel nach Zügen $FR$(links) und $RF$(rechts)}
 \label{Abbildung_WürfelNachFRundRF}
 \end{figure}
-Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde. \cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann irrelevant und es müsste nur die Anzahl beachtet werden. 
+Außerdem wäre das Lösen des Würfels trivial, wenn die Kommutativität gelten würde. \cite{TD} Die Reihenfolge der gedrehten Ebenen wäre dann irrelevant und es müsste lediglich die Anzahl beachtet werden. 
 Es gilt dementsprechend nicht $\forall \  Z_1, Z_2 \in \Gtwo. Z_1 \circ Z_2 = Z_2 \circ Z_1$ und der $\circ$-Operator der Gruppe ist somit nicht kommutativ. 
 
 %
@@ -1982,7 +1982,7 @@ Wenn der Zug $U$ viermal ausgeführt wird, befindet sich der Würfel wieder in s
 
 Die vierte Zeile der Tabelle hat die selbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). 
 Somit hat die Permutation der beschriebenen Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).
-Es gilt folglich für jede Permutation eines Zuges $Z$, der aus nur einem $n$-elementigen Zykel besteht (und Würfelkofiguration $C=(\sigma, x)$): 
+Es gilt folglich für jede Permutation eines Zuges $Z$, der aus lediglich einem $n$-elementigen Zykel besteht (und Würfelkofiguration $C=(\sigma, x)$): 
 \begin{align*}
 \forall \ Z \in \Gtwo \ \textit{mit} \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  (\sigma, x) \cdot Z^n= (\sigma, x')
 \end{align*}
@@ -2033,7 +2033,7 @@ Die Zykel des Zuges $LLFF$ sind in Abbildung \ref{Abbildung_ZykelVonLLFF} grafis
 \end{figure}
 In der Zykelschreibeweise wird der Zug $LLFF$ als $\sigma_{LLFF}=( \ \textit{dlf} \ \textit{ulb} \ \textit{urf}\ )(\ \textit{ulf} \ \textit{dlb} \ \textit{drf} \ )$ geschrieben.
 Da es demnach zwei Zykel der Länge drei gibt, befinden sich alle Würfelsteine nach drei Zügen ($KGV(3,3,1,1)=3$) wieder in ihrer Ausgangsposition. 
-In diesem Fall sind die Steine nicht nur an der richtigen Position sondern auch so ausgerichtet, wie zu Beginn des Zuges. Die Permutation des Zuges $LLFF$ hat also die Ordnung $3$.
+In diesem Fall ist nicht ausschließlich die Position der Steine korrekt sondern auch die Ausrichtung. Die Permutation des Zuges $LLFF$ hat also die Ordnung $3$.
 Außerdem ist zu sehen, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt werden. Die anderen beiden (\textit{urb} und \textit{drb}) bleiben unverändert. 
 %
 %
@@ -2109,7 +2109,7 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
 
 \vspace*{1em}
 
-Der Pseudocode braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Den Zug $Z$ und die Ausgangskonfiguration $C$ des Würfels. In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Dann wird der Wert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtig. Die Steine sind nur nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
+Der Pseudocode braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Den Zug $Z$ und die Ausgangskonfiguration $C$ des Würfels. In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Dann wird der Wert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtig. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
 Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zum Start ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
 Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das kleinste gemeinsame Vielfache von diesen beiden Werten (Zeile 9).
@@ -2209,15 +2209,19 @@ Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt
 
 
 
-Wie bereits in Abschnitt \ref{Abschnitt_Untergruppe} erklärt, hat jede Gruppe zwei triviale Untergruppen. Demnach sind $(H_N, \circ)$ und $(H_G, \circ)$ die trivialen Untergruppen von $\Gtwo$ ($(H_N, \circ) \leqslant (\Gtwo, \circ)$ und $(H_G, \circ) \leqslant (\Gtwo, \circ)$). Die Untergruppe $(H_N, \circ)$ enthält in der Trägermenge $H_N$ nur das neutrale Element $N$. Bei der Untergruppe $(H_G, \circ)$ hingegen ist die Trägermenge $H_G$ die gleiche Menge wie $\Gtwo$.
+Wie bereits in Abschnitt \ref{Abschnitt_Untergruppe} erklärt, hat jede Gruppe zwei triviale Untergruppen. Demnach sind $(H_N, \circ)$ und $(H_G, \circ)$ die trivialen Untergruppen von $\Gtwo$ ($(H_N, \circ) \leqslant (\Gtwo, \circ)$ und $(H_G, \circ) \leqslant (\Gtwo, \circ)$). Die Untergruppe $(H_N, \circ)$ enthält in der Trägermenge $H_N$ ausschließlich das neutrale Element $N$. Bei der Untergruppe $(H_G, \circ)$ hingegen ist die Trägermenge $H_G$ die gleiche Menge wie $\Gtwo$.
 Die Gruppe $\Gtwo$ hat viele Untergruppen, deshalb kann hier nur auf einen Teil davon eingegangen werden. 
 
 
 Da die trivialen Untergruppen nicht sonderlich aussagekräftig sind, geht der folgende Abschnitt auf einige anschauliche Untergruppen zum Lösen des Würfels ein. Die folgenden Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
 \begin{itemize}
-\item Die Untergruppe $(H_{E1}, \circ)$, die nur die Rotation einer Ebene zulässt, hat nur vier erreichbare Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
+\item Die Züge der Untergruppe $(H_{E1}, \circ)$, die nur die Rotation einer Ebene zulässt, erreichen lediglich vier Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
 
-Die Trägermenge $H_{E1}$, die Äquivalenzklassen aller möglichen Züge enthält, enthält hier nur vier Elemente. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
+Da die Trägermenge $H_{E1}$ die Äquivalenzklassen aller möglichen Züge enthält, sind hier genau vier Elemente enthalten. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
+
+Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werden, dass die Züge der Untergruppe $(H_{E1}, \circ)$ genau vier Würfelkonfigurationen erreichen: Jede Ebenendrehung ($U, D, R, L, F$ oder $B$) ist durch eine Permutationsfunktion $\sigma$ definiert. Dabei besteht $\sigma$ für jeden dieser Grundzüge aus nur einem 4-elementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Die Ordnung der Permutation ist im Fall einer einzelnen Ebenendrehung immer vier. Die Ordnung einer Permutation wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben und die Ordnung eines Zuges  in Abschnitt \ref{Abschnitt_OrdnungZüge}. Bei der Ordnung eines Zuges wird zusätzlich zu den Permutationen die Funktion $\gamma$ berücksichtig, die die Ausrichtung der Steine darstellt. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert. Jede dieser Funktionen $\gamma$ gibt die Eingabe unverändert zurück, wenn sie vier mal direkt nacheinander ausgeführt wird. Somit ist die Ordnung einer einzelnen Ebenendrehung immer vier und die Trägermenge $H_{E1}$ enthält genau vier Züge. Durch diese vier Züge können genau vier verschiedene Würfelkonfigurationen erreicht werden. 
+
+
 
 \item Eine weitere Untergruppe von $(\Gtwo, \circ)$ ist $(H_{E2}, \circ)$. Hier dürfen zwei gegenüber\-liegende Ebenen gedreht werden. 
 Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} allerdings nur vier, da es nur zwei Ebenen gibt und nicht anhand der Mittelsteine oben und unten unterschieden werden kann.
