@@ -2534,7 +2534,7 @@ In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDe
 %\end{align*}
 
 
-Der Würfel kann nur durch einen der Grundzüge des Würfels oder einer Kombination der Grundzüge verändert werden. Die Veränderungen des Vektors $x$ durch das Ausführen der Grundzüge sind in der folgenden Tabelle detailliert zu sehen. Die Variable $s$ beschreibt dabei die Veränderung der Summe der Vektoreinträge.
+Der Würfel kann durch einen der Grundzüge des Würfels oder einer Kombination der Grundzüge verändert werden. Die Veränderungen des Vektors $x$ durch das Ausführen der Grundzüge sind in der folgenden Tabelle detailliert zu sehen. Die Variable $s$ beschreibt dabei die Veränderung der Summe der Vektoreinträge.
 \ \\
 
 
@@ -2563,7 +2563,7 @@ $B$ & $(x_2 +2) \hspace*{-0.6em} \mod 3, (x_6 + 1)  \hspace*{-0.6em} \mod 3, x_3
 \end{adjustbox}
 \ \\
 
-Jede valide Würfelkonfiguration $C$ kann nur durch Züge erreicht werden. Züge bestehen aus Elementen der Menge $\{U, D, R, L, F, B\}$. In der Startkonfiguration ist der Summe der Vektoreinträge $0$. Der Vektor $x$ ist dabei $(0,0,0,0,0,0,0,0)$ und die Summe der Einträge ist somit 0. Es gilt $0 \hspace*{-0.5em} \mod 3 = 0$. Bei jedem der Grundzüge aus $\{U, D, R, L, F, B\}$ wird die Summe der Vektoreinträge um den Wert von $s$ verändert. Die Variable $s$ ist bei den Grundzügen entweder 0 oder 6. Es gilt auch $6 \hspace*{-0.5em} \mod 3 = 0$ und damit auch $s \hspace*{-0.5em} \mod 3 = 0$. Somit muss die Summe der Vektoreinträge immer 0 sein, wenn man modulo 3 rechnet, da jeder Zug $Z$ aus einem der Grundzüge aus $\{U, D, R, L, F, B\}$ oder einer Kombination dieser besteht. Jedes Vielfache von 6 und 0 ergibt 0, wenn man modulo 3 rechnet. Es gilt also
+Jede valide Würfelkonfiguration $C$ kann ausschließlich durch Züge erreicht werden. Züge bestehen aus Elementen der Menge $\{U, D, R, L, F, B\}$. In der Startkonfiguration ist der Summe der Vektoreinträge $0$. Der Vektor $x$ ist dabei $(0,0,0,0,0,0,0,0)$ und die Summe der Einträge ist somit 0. Es gilt $0 \hspace*{-0.5em} \mod 3 = 0$. Bei jedem der Grundzüge aus $\{U, D, R, L, F, B\}$ wird die Summe der Vektoreinträge um den Wert von $s$ verändert. Die Variable $s$ ist bei den Grundzügen entweder 0 oder 6. Es gilt auch $6 \hspace*{-0.5em} \mod 3 = 0$ und damit auch $s \hspace*{-0.5em} \mod 3 = 0$. Somit muss die Summe der Vektoreinträge immer 0 sein, wenn man modulo 3 rechnet, da jeder Zug $Z$ aus einem der Grundzüge aus $\{U, D, R, L, F, B\}$ oder einer Kombination dieser besteht. Jedes Vielfache von 6 und 0 ergibt 0, wenn man modulo 3 rechnet. Es gilt also
 \begin{align*}
 (k \cdot s) \hspace*{-0.5em} \mod 3 = 0 \textit{ für } k \in \mathbb{N}
 \end{align*}
@@ -2702,7 +2702,7 @@ $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. Daraus ergibt sich $Z
 Somit kommutieren alle $Y, Z \in \Gtwo$ mit $X=Y$.
 
 
-Es kommutieren nicht nur zwei gleiche Züge sonder auch Züge, die nur gegenüberliegende Ebenen beeinflussen. Somit bewegen sie nicht dieselben Steine und elementfremde Zykel kommutieren \cite{OS}.
+Es kommutieren nicht nur zwei gleiche Züge sondern auch Züge, die gegenüberliegende Ebenen beeinflussen. Somit bewegen sie nicht dieselben Steine und elementfremde Zykel kommutieren \cite{OS}.
 Das sind dann die Kommutatoren der Form $[U^n, D^n]$, $[F^n, B^n]$ und $[L^n, R^n]$ (und anders herum) mit $n \in \mathbb{N}$. 
 Da die beiden Züge nicht dieselben Steine beeinflussen, ist es nicht relevant, dass die Gruppe nicht kommutativ ist und durch $YZY^{-1}Z^{-1}$ werden beide Züge wieder invertiert.
 
@@ -2759,7 +2759,7 @@ Daraus ergibt sich $C \cdot \lbrack L, F \rbrack  = (( \ \textit{ulb} \ \textit{
 %
 \subsection{Lösungsansätze}
 
-Für die Lösung des Würfels sind Züge nützlich, die nur wenige Steine beeinflussen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. 
+Für die Lösung des Würfels sind Züge nützlich, die lediglich wenige Steine beeinflussen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. 
 
 Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Der Würfel wird ebenenweise gelöst und die gelbe Seite gehört zur letzten Ebene, die gelöst wird. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. 
@@ -2877,7 +2877,7 @@ Die Würfelkonfiguration ist $ C^{VI} = (( \textit{ulb} \ \textit{drb} )( \texti
 Daher wird dieser Würfel nun noch zweimal um die $x$-Achse gedreht und befindet sich dann in der Konfiguration $C^{VII} =(1,0)$.
 
 Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die in verschiedenen Situtionen anwendet werden können.  
-In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen nur $5$ Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
+In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen lediglich $5$ Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
 Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 
 
@@ -2996,7 +2996,7 @@ Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters un
 %
 \subsection{Algorithmen für die erste Ebene}
 
-Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel nur gedreht werden muss, um eine weiße Farbfläche zu finden.
+Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel lediglich rotiert werden muss, um eine weiße Farbfläche zu finden.
 In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite oben zu beginnen. Es kann aber mit jeder anderen Seite des Würfels auch begonnen werden.
 Der \Tthree \textit{Cube} muss entsprechend der Mittelsteine ausgerichtet werden und so ist vorbestimmt, welche Seite die weiße Seite wird, je nach Ausrichtung der Mittelsteine. Bei dem \Ttwo \textit{Cube} kann mit jeder beliebigen Seite begonnen werden. Wenn unbedingt mit einer bestimmten Seite als Oberseite begonnen werden soll, die noch keine weiße Farbfläche hat, so kann die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite gebracht werden.
 
@@ -3078,9 +3078,9 @@ In Abbildung \ref{Abbildung_GelösteObereEbene} ist die obere Ebene des Würfels
 
 Ein Mensch dreht den Würfel zum Lösen der zweiten Ebene meistens um. Der Anschaulichkeit halber wird das hier auch gemacht.
 
-Zuerst werden nun alle Steine richtig ausgerichtet, so dass die obere Seite des Würfels nur noch gelbe Farbflächen zeigt. Der Vektor $x$ ist dann $0$. Dann werden die Steine getauscht, bis sie richtig angeordnet sind. Dann ist die Permutationsfunktion $\sigma$ 1.
+Zuerst werden nun alle Steine richtig ausgerichtet, so dass die obere Seite des Würfels ausschließlich gelbe Farbflächen zeigt. Der Vektor $x$ ist dann $0$. Dann werden die Steine getauscht, bis sie richtig angeordnet sind. Dann ist die Permutationsfunktion $\sigma$ 1.
 
-Da es auch nach Lösung der ersten Ebene noch viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite nur gelbe Farbflächen zeigt.
+Da es auch nach Lösung der ersten Ebene noch viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite ausschließlich gelbe Farbflächen zeigt.
 Viele dieser Algorithmen enthalten $(R U R^{-1} U^{-1})$, was der Kommutator $[ R,U ]$ ist.
 
 \begin{center}
@@ -3109,7 +3109,7 @@ Ausgangsposition & Algorithmus  \\
 \end{center}
 
 
-Die obere Seite des Würfels zeigt nach dem Ausführen der Algorithmen nur noch gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann breits richtig zueiander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
+Die obere Seite des Würfels zeigt nach dem Ausführen der Algorithmen ausschließlich gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann breits richtig zueiander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
 
 Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es auch wieder verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Liste aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
 
@@ -3190,7 +3190,7 @@ In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realis
 \label{Abschnitt_MinimalePermutationen}
 
 Wie bereits beschrieben, sind die Züge $U$, $D$, $R$, $L$, $F$ und $B$ des \Ttwo Würfels nicht minimal. Der Zug $U$ und der Zug $D$ beispielsweise sind äquivalent, aber mit einer Rotation des kompletten Würfels. 
-Die Menge der minimalen Züge ist $\{ U, R, F\}$. Die Permutationen dieser drei Grundzüge sind die Permutationen $\sigma$. Dabei handelt es sich um die gleichen Permutationsfunktionen wie in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel}. Es gibt aber nur drei statt sechs Funktionen für die Permutationen, da es auch nur drei Grundzüge gibt.
+Die Menge der minimalen Züge ist $\{ U, R, F\}$. Die Permutationen dieser drei Grundzüge sind die Permutationen $\sigma$. Dabei handelt es sich um die gleichen Permutationsfunktionen wie in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel}. Es gibt jedoch drei statt sechs Funktionen für die Permutationen, da es auch nur drei Grundzüge gibt.
 \begin{align*}
 \sigma_U & =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) \\
 \sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) \\
@@ -3345,7 +3345,7 @@ Die Vektorübergangsfunktionen der Rotationen werden nicht gebraucht, da der Wü
 
 Die Untergruppe $(G_{min}, \circ)$ wird durch $\{U, R, F\}$ erzeugt. Der vollständige Cayleygraph dieser Untergruppe hat  $3 \ 647 \ 160$ Mitglieder. Das ist die Anzahl der validen Würfelkonfigurationen. Jede Äquivalenzklasse aus $G_{min}$ steht für die Züge, durch die man eine bestimmte Würfelkonfiguration erreichen kann.
 Da der vollständige Cayleygraph deutlich zu umfangreich für den Rahmen dieser Arbeit ist, 
-ist in Abbildung \ref{Abbildung_Cayleygraph_min} nur ein Ausschnitt dieses Graphens zu sehen. Die roten Pfeile repräsentieren den Zug $F$, $R$ wird durch blau repräsentiert und $U$ durch grün. 
+ist in Abbildung \ref{Abbildung_Cayleygraph_min} lediglich ein Ausschnitt dieses Graphens zu sehen. Die roten Pfeile repräsentieren den Zug $F$, $R$ wird durch blau repräsentiert und $U$ durch grün. 
 
 \begin{figure}[H]
 \centering
@@ -3465,9 +3465,9 @@ Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und 
 
 In diesem Kapitel wird ein Konzept zum Finden des optimalen Lösungsweges von jeder beliebigen Würfelkonfiguration ausgehend entworfen. Dazu werden verschiedene Bäume modelliert und verglichen. Die \textit{God's Number} des Würfels sagt aus, wie viele Züge zum Lösen des Würfels maximal gebraucht werden.
 
-Auf die \textit{God's Number} des \Ttwo Würfels wurde am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} bereits eingegangen. Bei der \textit{Quarter-Turn} Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14. Bei der \textit{Half-Turn} Metrik werden auch halbe Drehungen einer Ebene als nur eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11.
+Auf die \textit{God's Number} des \Ttwo Würfels wurde am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} bereits eingegangen. Bei der \textit{Quarter-Turn} Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14. Bei der \textit{Half-Turn} Metrik werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11.
 
-Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier nur das Konzept entworfen und die Größe der jeweiligen Bäume berechnet und verglichen. 
+Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier lediglich das Konzept entworfen und die Größe der jeweiligen Bäume berechnet und verglichen. 
 
 Ein solcher Baum enthält eine Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenerotationen im Index' $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
 
