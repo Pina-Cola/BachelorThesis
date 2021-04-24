@@ -1314,7 +1314,7 @@ Der Vektor $x$ sieht nach dem Zug $R$ von der Startkonfiguration ausgehend so au
 Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Auführen eines Zuges verändert. Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
 
 Die Startkonfiguration $C=(1,0)$ wird im folgenden Beispiel durch das dreifache Ausführen des Zuges $LLFF$ ($LLFF^3 = LLFFLLFFLLFF$) schrittweise verändert.
-Die Position der Steine -- dargestellt durch $\sigma$ -- verändert sich nach dem Ausführen von $LLFF$ wie folgt:
+Die Position der Steine -- dargestellt durch $\sigma$ -- verändert sich nach dem ersten Ausführen von $LLFF$ wie folgt:
 
 \begin{center}
 \begin{tabular}{ccccccccc}
@@ -1346,16 +1346,16 @@ Der neue Vektor $x$ wird nach dem Teilzug $LLFF$ durch $\gamma_F(\gamma_F(\gamma
 = \ & (0,0,0,0,0,0,0,0)
 \end{align*}
 
-Aus dieser Rechnung geht hervor, dass der Vektor nach Ausführen der Drehung $L$ $(1,0,2,0,2,0,1,0)$ ist. Wird $L$ dann nochmal ausgeführt, so ist der Vektor dann wieder $(0,0,0,0,0,0,0,0)$. Der Würfel ist dann aber nicht gelöst, da die Position der Steine ($\sigma$) verändert ist.
+Aus dieser Rechnung geht hervor, dass der Vektor nach Ausführen der Drehung $L$ zu $(1,0,2,0,2,0,1,0)$ wird. Wird $L$ dann nochmal ausgeführt, so ist der Vektor wieder $(0,0,0,0,0,0,0,0)$. Der Würfel ist dann aber nicht gelöst, da die Position der Steine ($\sigma$) verändert ist.
 Wird nun die Drehung $F$ zweimal ausgeführt, geht der Vektor über $(0,0,1,2,0,0,2,1)$ wieder in  $(0,0,0,0,0,0,0,0)$ über. 
 
-Die Konfiguration $C'$ nach dem Teilzug $LLFF$ ist somit 
+Die Konfiguration $C'$ nach dem ersten Ausführen des Teilzuges $LLFF$ ist somit 
 \begin{align*}
 C' = ((\ \textit{ulb} \ \textit{urf} \ \textit{dlf} \ )(\ \textit{dlb} \ \textit{drf} \ \textit{ulf} \ ),(0,0,0,0,0,0,0,0))
 \end{align*} 
 oder kurz $C' = ((\ \textit{ulb} \ \textit{urf} \ \textit{dlf} \ )(\ \textit{dlb} \ \textit{drf} \ \textit{ulf} \ ),0)$.
 
-Wenn der Zug $LLFF$ nun nochmal ausgeführt wird, verändert der Vektor $x$ sich wieder auf die gleiche Weise und ist dann wieder $(0,0,0,0,0,0,0,0)$. Die Permutation $\sigma$ der Position ergibt nach dem zweiten Ausführen von $LLFF$ $(\ \textit{urf} \ \textit{dlf} \ \textit{ulb} \ )(\ \textit{drf} \ \textit{ulf} \ \textit{dlb} \ )$. Die Folgekonfiguration nach dem zweiten Ausführen von $LLFF$ ist somit 
+Wenn der Zug $LLFF$ nun erneut ausgeführt wird, verändert der Vektor $x$ sich wieder auf die gleiche Weise und wird wieder $(0,0,0,0,0,0,0,0)$. Die Permutation $\sigma$ der Position ergibt nach dem zweiten Ausführen von $LLFF$ $(\ \textit{urf} \ \textit{dlf} \ \textit{ulb} \ )(\ \textit{drf} \ \textit{ulf} \ \textit{dlb} \ )$. Die Folgekonfiguration nach dem zweiten Ausführen von $LLFF$ ist somit 
 \begin{align*}
 C'' = ((\ \textit{dlf} \ \textit{urf} \ \textit{ulb} \ )(\ \textit{ulf} \ \textit{drf} \ \textit{dlb} \ ),(0,0,0,0,0,0,0,0)).
 \end{align*} 
