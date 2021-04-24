@@ -1204,8 +1204,21 @@ Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit
 \textcolor{gray}{(x_1, \textcolor{black}{2}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 0 \\ 
 \textcolor{gray}{(x_1, \textcolor{black}{0}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 1 \\
 \textcolor{gray}{(x_1, \textcolor{black}{1}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 2 
-\end{cases} \\ 
-\\
+\end{cases}
+\end{align*}
+
+Die Funktion $\Gamma_{R_2}$ verändert den Vektoreintrag $x_2$ nach Ausführen des Zuges $R$ in Abhängigkeit des Vektoreintrages $x_4$. Die Farbfläche, die durch das Ausführen des Zuges auf die Position $x_2$ gelangt, steht in direkter Abhängigkeit der Farbfläche an Position $x_4$, da es sich dabei um den selben Stein handelt. Wenn sich an der Position $x_4$ zu Beginn eine Farbfläche mit dem Wert 0 befindet, so wird die Farbfläche mit dem Wert 2 des selben Steines durch Ausführen von $R$ an die Position $x_2$ gebracht. Das ist auch in Abbildung \ref{Abbildung_UebergangsfunktionR} zu sehen. Analog funktioniert das mit $x_4 = 1$ (dann wird $x_2 = 0$) und $x_4=2$ (dann wird $x_2 = 1$). 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.13]{UebergangsfunktionR.png}
+\caption{Veränderung von Vektoreintrag $x_2$ bei Zug $R$}
+\label{Abbildung_UebergangsfunktionR}
+\end{figure}
+
+Die anderen Funktionen für die Veränderung des Vektors $x$ werden ebenfalls durch die Abhängigkeit der Steinflächen zueinander definiert.
+
+\begin{align*}
 \Gamma_{R_4}(\textcolor{gray}{(x_1, x_2, x_3, \textcolor{black}{x_4}, x_5, x_6, x_7, x_8  )})= \begin{cases}
 \textcolor{gray}{(x_1, x_2, x_3, \textcolor{black}{1}, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_8 = 0 \\ 
 \textcolor{gray}{(x_1, x_2, x_3, \textcolor{black}{2}, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_8 = 1 \\
