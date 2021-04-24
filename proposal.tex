@@ -1160,7 +1160,7 @@ Die Identitätspermutation ist wird als $\sigma=1$ geschrieben.
 \subsection{Ausrichtung der Steine} 
  \label{Abschnitt_AusrichtungDerSteine}
 Der \Ttwo Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. 
-Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche einer Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
+Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche eine Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
 
 Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
 In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.
@@ -1173,14 +1173,14 @@ In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0
 \end{figure}
 
 
-In den folgenden Absätzen wird der Zug $R$ zur Veranschaulichung ausgeführt (s. Abbildung \ref{Abbildung_XnachZugR}) und die Veränderung Farbflächennummerierung dargestellt. $R$ ist eine Rotation der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
-Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position, die Nummerierungen  der Farbflächen ändern sich mit Rotation der Ebene und ermöglichen so eine Zuordnung der Ecksteinausrichtung. 
-Die linke Seite der Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0, da sie sich in der linken Hälfte des Würfels befinden.
+Im Folgenden wird der Zug $R$ ausgeführt (s. Abbildung \ref{Abbildung_XnachZugR}) und die Veränderung der Farbflächennummerierung zur Veranschaulichung dargestellt. $R$ ist eine Drehung der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
+Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position. Die Nummerierungen  der Farbflächen ändern sich mit Drehung der Ebene und ermöglichen so eine Zuordnung der Ecksteinausrichtung. 
+Die linke Seite der Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0, da sie der der linken Hälfte des Würfels zugeordnet sind.
 Die anderen Positionen von $x$ zeigen nun aber andere Farbflächen: 
 \begin{align*}
-x_2 = 2 \ \ \ \ x_4 = 1 \ \ \ \ x_6 = 1 \ \ \ \ x_8 = 2  
+x_2 = 2 \ \ \ \ \ \ x_4 = 1 \ \ \ \ \ \ x_6 = 1 \ \ \ \ \ \ x_8 = 2  
 \end{align*}
-Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das ist auch in Abbildung \ref{Abbildung_XnachZugR} zu sehen.
+Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das kann auch in Abbildung \ref{Abbildung_XnachZugR} abgelesen werden. Links sind dort die Positionen der Vektoreinträge von $x$ abgebildet und rechts sieht man den Würfel mit den Farbflächennummerierungen, nachdem der Zug $R$ ausgeführt wurde.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{foldedout_012_white.png}
@@ -1189,7 +1189,7 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das ist auch in Abbi
 \label{Abbildung_XnachZugR}
 \end{figure}
 
-Anhand des Beispielzuges $R$ können Funktionen $\Gamma_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreiben. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinflusst werden, bleiben diese unverändert. Der Vektoreintrag, der durch $\Gamma_R$ in den Folgewert verändert wird, ist schwarz hervorgehoben. Die anderne Einträge sind grau.
+Anhand des Beispielzuges $R$ kann für jeden Vektoreintrag eine Funktion $\Gamma_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreibt. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinflusst werden, bleiben diese unverändert. Der Vektoreintrag, der durch $\Gamma_R$ in den Folgewert verändert wird, ist im Folgenden schwarz hervorgehoben. Die anderen Einträge sind ausgegraut.
 \begin{align*}
 & \Gamma_{R_1}(\textcolor{gray}{(\textcolor{black}{x_1}, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )})=\textcolor{gray}{(\textcolor{black}{x_1}, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )} \\
 & \Gamma_{R_3}(\textcolor{gray}{(x_1, x_2, \textcolor{black}{x_3}, x_4, x_5, x_6, x_7, x_8  )})=\textcolor{gray}{(x_1, x_2, \textcolor{black}{x_3}, x_4, x_5, x_6, x_7, x_8  )} \\
@@ -1231,7 +1231,7 @@ Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit
 
 
 
-Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind analog. Da diese Funktionen gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung von $x$ nach dem Zug $R$ aus.
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind analog. Da diese Funktionen in Hinblick auf Ein- und Aufgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags aus $x$ nach dem Zug $R$ aus.
 \\
 
 \begin{minipage}{0.35\textwidth}
@@ -1262,13 +1262,13 @@ g(x)=(x+2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em}
 \end{align*}
 
 Da \textit{i} die Identitätsfunktion ist, kann diese weggelassen werden.
-Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach jedem Zug bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$ verändert, die sich aus den Funktionen $\Gamma_{R_{1-8}}$ zusammensetzt:
+Mit den Funktionen \textit{g} und \textit{h} lassen sich die Ausrichtungen der Steine nach dem Zug $R$ bestimmen. So wird der Vektor $x$ nach dem Zug $R$ durch die Funktion $\gamma_R$ verändert, die sich aus den Funktionen $\Gamma_{R_{1-8}}$ zusammensetzt:
 \begin{align*}
 & \gamma_R \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right)
 \end{align*}
 
-Analog dazu gibt es für jeden der sechs Grundzüge eine Funktion $\gamma$, die die Veränderung der Steinausrichtung realisieren:
+Analog dazu gibt es für jeden der sechs Grundzüge eine Funktion $\gamma$, die die Veränderung der Steinausrichtung realisieren. Diese Funktionen lassen sich ebenfalls mit den Funktionen $g$, $h$ und $i$ bilden.
 \begin{align*}
 & \gamma_U \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_3, x_1, x_4, x_2, x_5, x_6, x_7, x_8 \right) \\
@@ -1289,14 +1289,14 @@ Analog dazu gibt es für jeden der sechs Grundzüge eine Funktion $\gamma$, die 
 & =  \left( g(x_2), h(x_6), x_3, x_4, h(x_1), g(x_5), x_7, x_8 \right)
 \end{align*}
 
-Das oben genannte Beispiel des Zuges $R$ wird nun schrittweise mithilfe von $\gamma_R$ berechnet werden. Dafür befindet sich der Würfel in der Startkonfiguration ($x = (0, 0, 0, 0, 0, 0, 0, 0)$). Wenn der Zug $R$ ausgeführt wird, wird $\gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) )$ berechnet:
+Das oben genannte Beispiel des Zuges $R$ (s. Abbildung \ref{Abbildung_XnachZugR}) wird nun schrittweise mithilfe von $\gamma_R$ berechnet werden. Dafür befindet sich der Würfel zu Beginn in der Startkonfiguration ($x = (0, 0, 0, 0, 0, 0, 0, 0)$). Die Steinposition wird hier nicht berücksichtigt. Wenn der Zug $R$ ausgeführt wird, wird $\gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) )$ berechnet:
 \begin{align*}
 & \gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) ) \\
 & = (0, g(0), 0, h(0), 0, h(0), 0, g(0)) \\
 & = (0, 2, 0, 1, 0, 1, 0, 2)
 \end{align*}
 
-Der Vektor $x$ sieht nach dem Zug $R$ von der Startkonfiguration ausgehend so aus: $(0, 2, 0, 1, 0, 1, 0, 2)$.
+Der Vektor $x$ sieht nach dem Zug $R$ von der Startkonfiguration ausgehend so aus: $(0, 2, 0, 1, 0, 1, 0, 2)$. 
 
 %
 %
