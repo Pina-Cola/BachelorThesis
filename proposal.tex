@@ -2237,14 +2237,14 @@ Da die trivialen Untergruppen nicht sonderlich aussagekräftig sind, geht der fo
 \begin{itemize}
 \item Die Züge der Untergruppe $(H_{E1}, \circ)$, die nur die Rotation einer Ebene zulässt, erreichen lediglich vier Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
 
-Da die Trägermenge $H_{E1}$ die Äquivalenzklassen aller möglichen Züge enthält, sind hier genau vier Elemente enthalten. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
+Da die Trägermenge $H_{E1}$ die Äquivalenzklassen aller möglichen Züge beinhaltet, sind hier genau vier Elemente enthalten. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
 
 Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werden, dass die Züge der Untergruppe $(H_{E1}, \circ)$ genau vier Würfelkonfigurationen erreichen: Jede Ebenendrehung ($U, D, R, L, F$ oder $B$) ist durch eine Permutationsfunktion $\sigma$ definiert. Dabei besteht $\sigma$ für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Die Ordnung der Permutation ist im Fall einer einzelnen Ebenendrehung immer vier. Die Ordnung einer Permutation wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben und die Ordnung eines Zuges  in Abschnitt \ref{Abschnitt_OrdnungZüge}. Bei der Ordnung eines Zuges wird zusätzlich zu den Permutationen die Funktion $\gamma$ berücksichtig, die die Ausrichtung der Steine darstellt. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert. Jede dieser Funktionen $\gamma$ gibt die Eingabe unverändert zurück, wenn sie vier mal direkt nacheinander ausgeführt wird. Somit ist die Ordnung einer einzelnen Ebenendrehung immer vier und die Trägermenge $H_{E1}$ enthält genau vier Züge. Durch diese vier Züge können genau vier verschiedene Würfelkonfigurationen erreicht werden. 
 
 
 
 \item Eine weitere Untergruppe von $(\Gtwo, \circ)$ ist $(H_{E2}, \circ)$. Hier dürfen zwei gegenüber\-liegende Ebenen gedreht werden. 
-Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} sind es allerdings lediglich vier, da es nur zwei Ebenen gibt und nicht anhand der Mittelsteine oben und unten unterschieden werden kann. Durch die Äquivalenklassen der Rotationen ergibt sich somit eine zu $(H_{E1}, \circ)$ äquivalente Untergruppe.
+Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} sind es allerdings lediglich vier, da es nur zwei Ebenen gibt und die Rotation der Würfels nicht anhand der Mittelsteine unterschieden werden kann. Durch die Äquivalenklassen der Rotationen ergibt sich somit eine zu $(H_{E1}, \circ)$ äquivalente Untergruppe.
 \end{itemize}
 
 
@@ -2275,10 +2275,10 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden bereits in Abschnitt \ref{Abschnitt_Erzeuger} erklärt.
 
 
-Ein Beispiel eines Erzeugers einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ wird von dem einzelnen Zug $\{ F \}$ erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
+Ein Beispiel für einen Erzeuger einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ ist der einzelnen Zug $\{ F \}$, der diese Untergruppe erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
 
 
-Ein weitere Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei kann die Ebene ausschließlich halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Trägermenge enthält daher die beiden Züge $FF$ und $FFFF$.
+Ein weiteres Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei kann die Ebene ausschließlich halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Trägermenge enthält daher die beiden Züge $FF$ und $FFFF$.
 
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
@@ -2290,7 +2290,7 @@ Das gilt für jeden Erzeuger, der aus einer einzelnen Ebenendrehung besteht.
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
 Die Ordnung des Zuges $FR$ ist 15 -- wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. 
-Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ allerdings 105 \cite{TD}.
+Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ 105 \cite{TD}.
 %
 %
 %
@@ -2314,13 +2314,13 @@ Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente. Bei dem \Tth
 
 \subsection{Durch \textit{FF} und \textit{RR} erzeugte Untergruppe}
 
-Das Beispiel der durch $\{ FF, RR \}$ erzeugten Untergruppe hat Tom Davis auch gewählt \cite{TD} und hier wird es von dem \Tthree \ auf den \Ttwo Würfel übertragen.
+Das Beispiel der durch $\{ FF, RR \}$ erzeugten Untergruppe hat Tom Davis ebenfalls gewählt \cite{TD} und hier wird es von dem \Tthree \ auf den \Ttwo Würfel übertragen.
 Da die beiden Züge als Einheiten gesehen werden, muss jede der Ebenendrehungen eine halbe Drehung sein.
 Es wurde in Kapitel \ref{Kapitel_WürfelAlsGruppe} bereits gezeigt, dass $(FF)^2 = N$ und $(RR)^2 = N$ gilt, da der Würfel dann wieder in der Ausgangsposition ist.
 
-Wenn bei einen gelösten \Ttwo Würfel $FFRR$ ausführt wird, befindet sich der Würfel nach 3 Wiederholungen wieder in der Startkonfiguration. Das gilt auch für den Zug $RRFF$. Die Ordnung von $FFRR$ und $RRFF$ ist daher 3. Bei dem \Tthree \textit{Cube} ist die Ordnung dieser Züge 6 \cite{TD}.
+Wenn bei einem gelösten \Ttwo Würfel $FFRR$ ausgeführt wird, befindet sich der Würfel nach 3 Wiederholungen wieder in der Startkonfiguration. Das gilt auch für den Zug $RRFF$. Die Ordnung von $FFRR$ und $RRFF$ ist daher 3. Bei dem \Tthree \textit{Cube} ist die Ordnung dieser Züge 6 \cite{TD}.
 
-Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit auch mehr Elemente als die des \Ttwo Würfels. Hier werden (alle) Mitglieder der Untergruppe des \Ttwo \textit{Cubes} aufgelistet, wenn dabei berücksichtigt wird, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $FFRRFF$, $FFRRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. Da $FF$ und $RR$ die Ordnung 2 haben und $FFRR$ die Ordnung 3, sind alle komplexeren Zugkonkatenationen bereits abgedeckt.
+Die durch $\{ FF, RR \}$ erzeugte Untergruppe des \Tthree Würfels hat somit mehr Elemente als die des \Ttwo Würfels. Im Folgenden werden alle Mitglieder der Untergruppe des \Ttwo \textit{Cubes} aufgelistet, wenn dabei berücksichtigt wird, dass $FFFF$ und $RRRR$ keine Veränderung ergeben: $N$, $FF$, $RR$, $FFRR$, $RRFF$, $FFRRFF$, $FFRRFF$, $(FFRR)^2$, $(RRFF)^2$, $FF(RRFF)^2$, $RR(FFRR)^2$, $(FFRR)^2FF$ und $(RRFF)^2RR$. Da $FF$ und $RR$ die Ordnung 2 haben und $FFRR$ die Ordnung 3, sind alle komplexeren Zugkonkatenationen bereits abgedeckt.
 Wenn diese Züge an einem Würfel ausprobiert werden, stellt sich aber heraus, dass beispielsweise $(RRFF)^2RR$ bei gleichem Startzustand die gleiche Würfelkonfiguration wie $FF$ ergibt. Wenn diese Doppelungen aussortiert werden, verbleiben folgende sieben Gruppenelemente:
 \begin{center}
 \centering
@@ -2332,7 +2332,7 @@ $N$ & $RR$ & $FFRR$ &  $RRFFRR$ \\
 Zum Vergleich: Tom Davis erhält bei dem  \Tthree Würfel zwölf Elemente in der durch $\{ FF, RR \}$ erzeugten Untergruppe.
 
 Die doppelten Elemente können natürlich auch mathematisch erkannt werden, dafür müssen dann nicht alle Optionen an einem Würfel ausprobiert werden.
-Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass nach dem Auführen von $RRFFRRFFRR$ einzig $FF$ ausgeführt werden muss, um wiederin die Ausgangsposition zu gelangen. Da es sich um halbe Drehungen handelt, kann die Position, die durch $RRFFRRFFRR$ erreicht wird, auch durch $FF$ erreicht werden, da auch $FF$ eine solche halbe Ebenendrehung ist..
+Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2RR$ gemacht. Das ist ausgeschrieben $RRFFRRFFRR$. Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3 = RRFFRRFFRRFF$ wieder in der Ausgangsposition. Daraus kann geschlossen werden, dass nach dem Auführen von $RRFFRRFFRR$ einzig $FF$ ausgeführt werden muss, um wieder in die Ausgangsposition zu gelangen. Da es sich um halbe Drehungen handelt, kann die Position, die durch $RRFFRRFFRR$ erreicht wird, auch durch $FF$ erreicht werden, da auch $FF$ eine solche halbe Ebenendrehung ist.
 
 Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppen mit lediglich 7 bzw. 12 Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
 Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $5! \cdot 3^5$ auf $29 \, 160$ Mitglieder \cite{TD}, aber auch das ist deutlich größer als $7$.
@@ -2367,12 +2367,12 @@ Cayleygraphen wurden in Abschnitt \ref{Abschnitt_Cayleygraph} eingeführt. Sie d
 \end{figure}
 
 Ein simples Beispiel ist in Abbildung \ref{Abbildung_CayleygraphF} zu sehen: Der Cayleygraph der Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
-Dieser Cayleygraph ist anschaulich, der er nicht sonderlich komplex ist.
-Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt, daraus ergibt sich durch hinzufügen einer weiteren Drehung der vorderen Ebene um $90^\circ$ dann $FF$, dann $FFF$ und dann $FFFF$, was dem neutralen Element von $(G_F, \circ)$ entspricht.
+Dieser Cayleygraph ist anschaulich, da der er nicht sonderlich komplex ist.
+Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt, daraus ergibt sich durch Hinzufügen einer weiteren Drehung der vorderen Ebene um $90^\circ$ dann $FF$, dann $FFF$ und dann $FFFF$, was dem neutralen Element von $(G_F, \circ)$ entspricht.
 
 
 Im Vergleich dazu ist der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe etwas komplexer (s. Abbildung \ref{Abbildung_CayleygraphFFRR}). 
-Die roten Pfeile repräsentieren den Erzeuger $\{FF\}$ (da es sich dabei in der Startkonfiguration um die rote Seite des Würfels handelt) und die blauen Pfeile repräsentieren den Erzeuger $\{RR\}$ (da es sich dabei um die blaue Würfelseite handelt).
+Die roten Pfeile repräsentieren den Erzeuger $\{FF\}$, da es sich dabei in der Startkonfiguration um die rote Seite des Würfels handelt. Die blauen Pfeile repräsentieren den Erzeuger $\{RR\}$, da es sich dabei um die blaue Würfelseite handelt.
 Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entstehen können, sind durch einen Pfeil (Erzeuger) miteinander verbunden.
 Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphens. 
 Anhand des Cayleygraphens ist zu sehen, dass $FFFF$ und $RRRR$ dem neutralen Element $N$ entsprechen.
