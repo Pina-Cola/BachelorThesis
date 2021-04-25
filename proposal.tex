@@ -2412,7 +2412,7 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $(G_
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel wird Anzahl der validen Würfelkonfigurationen berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
+In diesem Kapitel wird die Anzahl der validen Würfelkonfigurationen berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
 Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
@@ -2471,7 +2471,7 @@ Die Anzahl der Würfelkonfigurationen ohne Berücksichtigung der Rotationen des 
 
 \subsection{Mächtigkeit von G$_{2\times 2\times 2}$}
 
-Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (bzw. $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. Die Mächtigkeit der Gruppe ist die Anzahl der validen Würfelkonfigurationen, da die $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt jedes Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enhalten. Außerdem wurden die Äuivalenzklassen mit der Menge alle Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ ist die Anzahl der validen Würfelkonfigurationen.
+Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ (bzw. $|\Gtwo|$) ist die Anzahl der Elemente von $\Gtwo$. Die Mächtigkeit der Gruppe ist die Anzahl der validen Würfelkonfigurationen, da die $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt jedes Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enhalten. Außerdem wurden die Äquivalenzklassen mit der Menge alle Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ ist die Anzahl der validen Würfelkonfigurationen.
 
 Da die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ der Anzahl der validen Würfelkonfigurationen entspricht, setzt sie sich aus dem Produkt der Konfigurationsparameter $\sigma$ und $x$ zusammen. Daraufhin müssen aber auch die Äquivalenzen bezüglich der Rotationen des Würfels berücksichtigt werden.
 
@@ -2480,9 +2480,9 @@ $\sigma$ ist die Menge der bijektiven Funktionen für jede Ebenenrotation. Es si
 Der andere Parameter der Würfelkonfiguration ist der 8-dimensionale Vektor $x$. Jeder der Werte in $x$ ist aus der Menge $\{0,1,2\}$. Somit gibt es drei Möglichkeiten für jeden Wert im Vektor. Das ergibt dann $3^8 = 6561$ mögliche Konfigurationen des Vektors.
 
 Ohne Berücksichtigung der Äquivalenzklassen wird ein Wert von $40320 \cdot 6561 = 264 \, 539 \, 520$ möglichen Konfigurationen erreicht. Da durch die Rotationen eine der Steinausrichtungen in $x$ als richtig angenommen werden kann, wird $264 \, 539 \, 520$ durch drei geteilt und ergibt dann $88 \, 179 \, 840$. 
-Außerdem gibt es bei den Rotationen sechs Rotationsmöglichkeiten (und zusätlich die \textit{leere} Rotation). Jede dieser Rotationsmöglichkeiten kann vier verschiedene Rotationen hervorrufen. Das ergibt dann $6 \cdot 4 = 24$ Möglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Somit muss $88 \, 179 \, 840$ durch $24$ geteilt werden, um die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ zu berechnen. $|\Gtwo|$ ist dann $88 \, 179 \, 840 \div 24 = 3\, 674\, 160$.
+Außerdem gibt es bei den Rotationen sechs Rotationsmöglichkeiten (und zusätzlich die \textit{leere} Rotation). Jede dieser Rotationsmöglichkeiten kann vier verschiedene Rotationen hervorrufen. Das ergibt dann $6 \cdot 4 = 24$ Möglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Somit muss $88 \, 179 \, 840$ durch $24$ geteilt werden, um die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ zu berechnen. $|\Gtwo|$ ist dann $88 \, 179 \, 840 \div 24 = 3\, 674\, 160$.
 
-Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist also die Anzahl der validen Würfelkonfigurationen $3\, 674\, 160$.
+Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist somit die Anzahl der validen Würfelkonfigurationen: $3\, 674\, 160$.
 
 
 
