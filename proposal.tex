@@ -196,7 +196,7 @@ Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem un
 Der sogenannte \textit{Rubik's Cube} wurde ab 1980 weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. Der Gewinner war Minh Thai aus den USA, der den Würfel in $22,95$ Sekunden löste. \cite{RC} Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $3,47$ Sekunden und stellte damit einen neuen Rekord auf. \cite{rekord}
 Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Um diesen Würfel geht es in dieser Arbeit.
 
-Doch die Zauberwürfel sind nicht nur interessante Puzzle -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
+Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
 
 %
 %
@@ -897,7 +897,7 @@ Für $n$ verschiedene Objekte ist die Anzahl der Permutationen $n!$.
 \end{definition}
 
 \begin{bsp}[Anzahl der Permutationen]
-Sei $M = \{ 1 \ 2 \ 3 \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekte bleiben dann noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach gibt es nur noch eine Option. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
+Sei $M = \{ 1 \ 2 \ 3 \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekt bleiben dann noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach gibt es nur noch eine Option. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
 
 \end{bsp}
 
@@ -2083,8 +2083,8 @@ Sonst wäre das erste Vorkommen der wiederholenden Positionen ja nach $n-1$ bzw.
 
 Wenn $n=0$ wäre, ergibt das $C \cdot Z^0=C$, was den leeren Zug repräsentiert. Der Würfel wird dabei nicht verändert und somit erfolgt die erste Wiederholung der Konfiguration nach $m$-facher Ausführung von $Z$.
 
-Wenn $C \cdot Z^n =C \cdot Z^m$ mit $0<n<m$ gilt, kommt der Würfel in die gleiche Folgekonfiguration, wenn (auf die gleiche Ausgangskonfiguration) $n$-mal oder $m$-mal $Z$ anwendet wird.
-Wenn dann $Z^{-1}$ anwendet wird, ist die Folgekonfiguration wieder gleich. Dabei ist es irrelevant, ob vorher $n$-mal oder $m$-mal $Z$ ausgeführt wurde, da von der gleichen Ausgangskonfiguration ausgehend die gleiche Folgekonfiguration erreicht wird, wenn der gleiche Zug ausgeführt wird.
+Wenn $C \cdot Z^n =C \cdot Z^m$ mit $0<n<m$ gilt, kommt der Würfel in die gleiche Folgekonfiguration, wenn (auf die gleiche Ausgangskonfiguration) $n$-mal oder $m$-mal $Z$ angewendet wird.
+Wenn dann $Z^{-1}$ angewendet wird, ist die Folgekonfiguration wieder gleich. Dabei ist es irrelevant, ob vorher $n$-mal oder $m$-mal $Z$ ausgeführt wurde, da von der gleichen Ausgangskonfiguration ausgehend die gleiche Folgekonfiguration erreicht wird, wenn der gleiche Zug ausgeführt wird.
 
 Beim Anwenden von $Z^{-1}$ auf die Konfiguration $C$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn $Z$ $n$-mal ausgeführt wird und danach $Z^{-1}$ ausgeführt wird, ist es das gleiche wie $n-1$-mal $Z$ ausführen. Folglich gilt $C \cdot Z^nZ^{-1}=C \cdot Z^{n-1}$. Das gilt natürlich auch für $m$, also $C \cdot Z^mZ^{-1}=C \cdot Z^{m-1}$.
 Demnach gilt dann $C \cdot Z^{n-1}=C \cdot Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. Deshalb muss $n=0$ sein, damit $m$ die erste Wiederholung einer Position repräsentiert. 
@@ -2242,7 +2242,7 @@ Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werd
 
 
 \item Eine weitere Untergruppe von $(\Gtwo, \circ)$ ist $(H_{E2}, \circ)$. Hier dürfen zwei gegenüber\-liegende Ebenen gedreht werden. 
-Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} sind es allerdings lediglich vier, da es nur zwei Ebenen gibt und die Rotation der Würfels nicht anhand der Mittelsteine unterschieden werden kann. Durch die Äquivalenklassen der Rotationen ergibt sich somit eine zu $(H_{E1}, \circ)$ äquivalente Untergruppe.
+Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonfigurationen \cite{TD}. Bei dem \Ttwo \textit{Cube} sind es allerdings lediglich vier, da es nur zwei Ebenen gibt und die Rotation der Würfels nicht anhand der Mittelsteine unterschieden werden kann. Durch die Äquivalenzklassen der Rotationen ergibt sich somit eine zu $(H_{E1}, \circ)$ äquivalente Untergruppe.
 \end{itemize}
 
 
@@ -2894,7 +2894,7 @@ Dann führt der Lösende den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2
 Die Würfelkonfiguration ist $ C^{VI} = (( \textit{ulb} \ \textit{drb} )( \textit{urb} \ \textit{dlb} )( \textit{ulf} \ \textit{drf} )( \textit{urf} \ \textit{dlf} ), (0,0,0,0,0,0,0,0))$. Diese Konfiguration ist äquivalent zu der Konfiguration $(1,0)$.
 Daher wird dieser Würfel nun noch zweimal um die $x$-Achse gedreht und befindet sich dann in der Konfiguration $C^{VII} =(1,0)$.
 
-Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die in verschiedenen Situtionen anwendet werden können.  
+Der Mensch folgt beim Lösen des \textit{Cubes} (meistens) bestimmten Kombinationen, die in verschiedenen Situtionen angewendet werden können.  
 In diesem Fall hat der Mensch $13$ Ebenen gedreht, während das Verdrehen lediglich $5$ Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
 Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 
