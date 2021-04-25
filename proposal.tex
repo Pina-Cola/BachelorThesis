@@ -352,7 +352,7 @@ Wesentlich bekannter als der \Ttwo \textit{Cube} ist der \Tthree \textit{Cube}. 
 \newpage
 \item[Mittel- und Kantsteine] \ \\
 Im Gegensatz zum \Ttwo \ hat der \Tthree Würfel Kantsteine und Mittelsteine (s. Abbildung \ref{Abbildung_MittelKantSteine}).
-Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei Ebenendrehungen (also bei den Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer feststellbar: Die obere Seite hat immer das weiße Mittelstück in der Mitte. 
+Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei Ebenendrehungen (also bei den Zügen des Würfels) nicht verändert werden. Somit ist beim \Tthree Würfel die obere Seite immer identifizierbar: Die obere Seite hat immer das weiße Mittelstück in der Mitte. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.11]{mittelkant.png}
@@ -605,8 +605,6 @@ Sei die Menge $M \subseteq G$ eine nicht leere Teilmenge der Trägermenge einer 
 Dann wird die Untergruppe $(M, \circ)$ von $M$ erzeugt und ist die kleinste Untergruppe von $(G, \circ)$, für die $M \subseteq G$ gilt.
 $(M, \circ)$ wird dann Erzeugnis von $M$ genannt und die Elemente aus $M$ sind die Erzeuger der Untergruppe $(M, \circ)$.
 \end{definition}
-
-Wenn $(M, \circ)$ durch $M$ erzeugt wird, dann ist $(M, \circ)$ eine $M$ enthaltende Untergruppe.
 
 Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht ausschließlich aus Potenzen dieses Elementes
 
@@ -1207,7 +1205,7 @@ Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit
 \end{cases}
 \end{align*}
 
-Die Funktion $\Gamma_{R_2}$ verändert den Vektoreintrag $x_2$ nach Ausführen des Zuges $R$ in Abhängigkeit des Vektoreintrages $x_4$. Die Farbfläche, die durch das Ausführen des Zuges auf die Position $x_2$ gelangt, steht in direkter Abhängigkeit der Farbfläche an Position $x_4$, da es sich dabei um den selben Stein handelt. Wenn sich an der Position $x_4$ zu Beginn eine Farbfläche mit dem Wert 0 befindet, so wird die Farbfläche mit dem Wert 2 des selben Steines durch Ausführen von $R$ an die Position $x_2$ gebracht. Das ist auch in Abbildung \ref{Abbildung_UebergangsfunktionR} zu sehen. Analog funktioniert das mit $x_4 = 1$ (dann wird $x_2 = 0$) und $x_4=2$ (dann wird $x_2 = 1$). 
+Die Funktion $\Gamma_{R_2}$ verändert den Vektoreintrag $x_2$ nach Ausführen des Zuges $R$ in Abhängigkeit des Vektoreintrages $x_4$. Die Farbfläche, die durch das Ausführen des Zuges auf die Position $x_2$ gelangt, steht in direkter Abhängigkeit der Farbfläche an Position $x_4$, da es sich dabei um denselben Stein handelt. Wenn sich an der Position $x_4$ zu Beginn eine Farbfläche mit dem Wert 0 befindet, so wird die Farbfläche mit dem Wert 2 desselben Steines durch Ausführen von $R$ an die Position $x_2$ gebracht. Das ist auch in Abbildung \ref{Abbildung_UebergangsfunktionR} zu sehen. Analog funktioniert das mit $x_4 = 1$ (dann wird $x_2 = 0$) und $x_4=2$ (dann wird $x_2 = 1$). 
 
 \begin{figure}[H]
 \centering
@@ -1442,9 +1440,9 @@ Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4,
 Der Exponent kann in diesem Fall $modulo \ 4$ gerechnet werden, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
 Es gilt folglich:
 \begin{align*}
-\forall \  Z \in \{U, D, F, B, L, R\}. n \in \mathbb{N} \ . \ Z^n=Z^{n \hspace*{-0.5em} \mod 4}
+\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
-Dabei gilt für $n \hspace*{-0.3em} \mod 4 = 0$ ($n$ ist ein Vielfaches von 4) dann $Z^n = Z^{n \hspace*{-0.3em} \mod 4} = Z^0$. $Z^0$ repräsentiert dabei einen leeren Zug. Das entspricht keiner Veränderung der Folgekonfiguration des Würfels.
+Dabei gilt für $n \hspace*{-0.3em} \mod 4 = 0$ ($n$ ist ein Vielfaches von 4) dann $Z^n = Z^{n \hspace*{-0.3em} \mod 4} = Z^0$. Dabei repräsentiert $Z^0$ einen leeren Zug. Das entspricht keiner Veränderung der Folgekonfiguration des Würfels.
 
 $\forall \  Z \in \{U, D, F, B, L, R\}. n \in \mathbb{N} \ . \ Z^n=Z^{n \hspace*{-0.3em} \mod 4}$ gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird genauer als \textit{Ordnung von Zügen} in abschnitt \ref{Abschnitt_OrdnungZüge} beschrieben und in Abschnitt \ref{Abschnitt_UntergruppenBeispiele} anhand einer Untergruppe erklärt.
 
@@ -1596,7 +1594,7 @@ Die mehrfache Ausführung einer Rotation wird auch mit der Exponentenschreibweis
 Somit gilt für jede Rotation $TTTT=T^4=N_R$ (mit $T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \}$) und $T^0=N_R$ (für alle Rotationen $T$). Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. 
 Dementsprechend gilt bei den Rotationen auch für jede Rotation: 
 \begin{align*}
-\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}. n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
 \end{align*}
 
 Anhand dieser Aussage wird veranschaulicht, dass der Würfel sich nach mehreren Rotationen wieder seine Ausgangsausrichtung nähern kann. Es gibt für die Roationen also eine maximale Anzahl, jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
@@ -2009,7 +2007,7 @@ Es gilt folglich für jede Permutation eines Zuges $Z$, der aus lediglich einem 
 Wenn $Z$ mehrfach ausführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand der Permutationen erreicht. \cite{TD} 
 Es gilt folglich auch:
 \begin{align*}
-\forall \ Z \in \Gtwo \ \textit{mit} \ \ Z=(i_1 \ i_2 \ ... \ i_n). n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }
+\forall \ Z \in \Gtwo \ \textit{mit} \ \ Z=(i_1 \ i_2 \ ... \ i_n), \ n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }
 \end{align*}
 Auch bei komplexeren Permutationen von Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache (kurz kgV) aller Zykelgrößen bestimmt werden. \cite{TD}
 
