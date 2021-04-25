@@ -451,7 +451,7 @@ Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\
 
 In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind. Es werden Definitionen und Beispiele von Gruppen, Untergruppen, zyklischen Gruppen, Erzeugern, Gruppenoperationen, Kommutatoren, Äquivalenzrelationen, Permutationen und Zykelschreibweise angegeben.
 Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort können auch detailliertere Informationen und weitere Beispiele nachgelesen werden.
-Des weiteren wird der Cayleygraph erklärt. 
+Des Weiteren wird der Cayleygraph erklärt. 
 %
 %
 %
@@ -498,7 +498,7 @@ Beispielsweise sind $1+2=3$ und es gilt $1,2,3 \in \mathbb{N}$.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
 \item Das neutrale Element von $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ ist $0$. Es gilt also $\forall n \in N. \ n + 0 = 0 + n = n$ (und mit $\mathbb{Z}$ analog). \\
 Ein Beispiel zur Veranschaulichung: $3+0=0+3=3$
-\item Die letzte erfordleriche Eigenschaft einer Gruppe ist die Existenz eines inversen Elements. Für die Gruppe $(\mathbb{Z},+)$ ist $-z$ das inverse Element für jedes $z \in \mathbb{Z}$. Für $(\mathbb{N},+)$ gibt es kein inverses Element.
+\item Die letzte erforderliche Eigenschaft einer Gruppe ist die Existenz eines inversen Elements. Für die Gruppe $(\mathbb{Z},+)$ ist $-z$ das inverse Element für jedes $z \in \mathbb{Z}$. Für $(\mathbb{N},+)$ gibt es kein inverses Element.
 \end{itemize}
 Anhand der oberen Axiome kann nun festgestellt werden, dass $(\mathbb{Z},+)$ die Gruppeneigenschaften erfüllt, $(\mathbb{N},+)$ aber nicht. 
 $(\mathbb{Z},+)$ ist folglich eine Gruppe und $(\mathbb{N},+)$ nicht, da kein inverses Element existiert. 
@@ -606,7 +606,7 @@ Dann wird die Untergruppe $(M, \circ)$ von $M$ erzeugt und ist die kleinste Unte
 $(M, \circ)$ wird dann Erzeugnis von $M$ genannt und die Elemente aus $M$ sind die Erzeuger der Untergruppe $(M, \circ)$.
 \end{definition}
 
-Wenn $(M, \circ)$ durch $M$ erzeugt wird, ist dann eine $M$ enthaltende Untergruppe.
+Wenn $(M, \circ)$ durch $M$ erzeugt wird, dann ist $(M, \circ)$ eine $M$ enthaltende Untergruppe.
 
 Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht ausschließlich aus Potenzen dieses Elementes
 
@@ -644,7 +644,7 @@ Ein Cayleygraph ist ein Graph, der die Struktur einer Gruppe beschreibt. Er hän
 Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppenelemente darstellen. Pfeile zeigen von einem Element zum nächsten, wenn dies durch einen der Erzeuger erreicht werden kann. \cite{AT}
 
 \textbf{Beispiel} (Cayleygraph) \\
-In Abbildung \ref{Abbildung_Cayleygraph} ist den Cayleygraphen der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit dem Erzeuger $1$ zu sehen.
+In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit dem Erzeuger $1$ zu sehen.
 
 \begin{figure}[H]
 \centering
@@ -848,10 +848,10 @@ Die Faktormenge $A / \sim_+$ enthält dann die Äquivalenzklassen $[1]$, $[2]$, 
 \subsection{Permutationen und Zykelschreibweise} 
  \label{Abschnitt_PermutationZykel}
 
-Unter einer Permutation versteht man die Reihenfolge von Objekte.
+Unter einer Permutation versteht man die Reihenfolge von Objekten.
 
 \begin{definition}[Permutation]
-Bei einer $n$-elementigen Menge $M$ ist eine ($n$-stellige) Permutation ist eine bijektive Abbildung $\pi  : M \rightarrow M$.
+Bei einer $n$-elementigen Menge $M$ ist eine ($n$-stellige) Permutation eine bijektive Abbildung $\pi  : M \rightarrow M$.
 \end{definition}
 Die Zykelschreibweise ist eine kurze Schreibweise für eine Permutation.
 Die Zykelschreibweise wird nun anhand eines Beispiels erklärt. Die Definition geht über den Rahmen dieser Arbeit hinaus, sie kann aber in dem Buch \textit{Elementar(st)e Gruppentheorie} von Tobias Glosauer \cite{Buch} nachgelesen werden.
@@ -909,7 +909,7 @@ Die Ordnung einer Permutation ist das kleinste gemeinsame Vielfache der Zykellä
 
 \end{definition}
 
-Die Ordnung einer Permutation ist die kleinste Zahl $n \in \mathbb{N}$, so dass nach $n$-facher Ausführung der Permutation die identische Permutation heraus kommt. Man kann die Ordnung einer Permutation $\pi$ als \textit{ord}$(\pi)$ schreiben.
+Die Ordnung einer Permutation ist die kleinste Zahl $n \in \mathbb{N}$, so dass sich nach $n$-facher Ausführung der Permutation die identische Permutation ergibt. Man kann die Ordnung einer Permutation $\pi$ als \textit{ord}$(\pi)$ schreiben.
 
 \begin{bsp}[Ordnung von Permutationen]
 
