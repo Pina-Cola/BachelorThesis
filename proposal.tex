@@ -2717,7 +2717,7 @@ Kommutierende Elemente ergeben dabei das neutrale Element einer Gruppe.
 Wenn $Y = Z$ mit $Y, Z \in \Gtwo$ gilt, kommutieren $Y$ und $Z$. 
 Dazu folgt nun der Beweis. 
 
-Zur besseren Übersichtlichkeit wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1} = Z(ZZ^{-1})Z^{-1}$. 
+Zur besseren Übersichtlichkeit wird $[Y,Z]$ mit $Y=Z$ nun als $[Z,Z]$ geschrieben. Das ist dann das Gleiche wie $ZZZ^{-1}Z^{-1}$, was auch als $Z(ZZ^{-1})Z^{-1}$ geschrieben werden kann. 
 $(ZZ^{-1})$ ist äquivalent mit dem neutralen Element $N$. Daraus ergibt sich $Z(N)Z^{-1} = ZZ^{-1} = N$. 
 Somit kommutieren alle $Y, Z \in \Gtwo$ mit $X=Y$.
 
@@ -2748,7 +2748,7 @@ $F^{-1}$ \: & ulf & \textcolor{gray}{urb} & \textcolor{gray}{ulb} & urf & \textc
 \end{tabular}
 \end{center}
 
-Wenn nun die Kopfzeile der Tabelle und die unterste Zeile verglichen werden, zeigt sich, dass \textit{urb}, \textit{urf}, \textit{dlb} und \textit{drb} wieder an ihrer Ausgangsposition sind. Die anderen vier Steine (\textit{ulf}, \textit{ulb}, \textit{urf} und \textit{ulf}) haben die Positionen gewechselt: \\
+Wenn nun die Kopfzeile der Tabelle und die unterste Zeile verglichen werden, zeigt sich, dass \textit{urb}, \textit{urf}, \textit{dlb} und \textit{drb} wieder an ihrer Ausgangsposition sind. Die anderen vier Steine (\textit{ulf}, \textit{ulb}, \textit{urf} und \textit{dlf}) haben die Positionen gewechselt: \\
 \\
 \hspace*{1.5cm } $\textit{ulb} \mapsto \textit{ulf}$ \hspace*{1.5cm }$\textit{ulf}  \mapsto \textit{ulb}$ \hspace*{1.5cm } $\textit{dlf} \mapsto \textit{drf}$ \hspace*{1.5cm } $\textit{drf} \mapsto \textit{dlf}$
 \\
@@ -2781,8 +2781,8 @@ Daraus ergibt sich $C \cdot \lbrack L, F \rbrack  = (( \ \textit{ulb} \ \textit{
 
 Für die Lösung des Würfels sind Züge nützlich, die lediglich wenige Steine beeinflussen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. 
 
-Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise wird mit der weißen Seite angefangen, deshalb werden auch die folgenden Beispiele so vorgehen. Der Würfel wird ebenenweise gelöst und die gelbe Seite gehört zur letzten Ebene, die gelöst wird. 
-Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. 
+Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Der Würfel wird ebenenweise gelöst. 
+Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. Auch in den folgenden Beispielen wird deshalb mit der Lösung der weißen Seite begonnen.
 
 Bei einem der Lösungsansätze wird zuerst die erste Ebene vollständig gelöst und danach die zweite. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
 
@@ -2902,8 +2902,8 @@ Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt d
 
 
 Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. \\ 
-Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn} Metrik genannt. Es gibt noch andere Metriken, wie z. B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene um $90^\circ$ oder um $180^\circ$ als eine Drehung gezählt werden \cite{TR}.
-Wenn in der \textit{Quarter-Turn} Metrik gerechnet wird, ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}. Mehr zu der optimalen Lösung findet sich in Abschnitt \ref{Abschnitt_MinLösung}.
+Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn} Metrik genannt. Es gibt noch andere Metriken, wie z. B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene sowohl um $90^\circ$ als auch um $180^\circ$ als eine Drehung gezählt wird \cite{TR}.
+Wenn in der \textit{Quarter-Turn} Metrik gerechnet wird, ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}. Ein Konzept zum Finden der optimalen Lösung wird in Abschnitt \ref{Abschnitt_MinLösung} beschrieben.
 
 
 %
@@ -2953,7 +2953,7 @@ Muster 2 hat einen \textit{Würfel im Würfel}. Dabei werden zwei Steine getausc
 
 Muster 3 zeigt abwechselnd Quer- und Längsstreifen auf den verschiedenen Seiten. Die Konfiguration des Würfels ist dann $C = (( \ \textit{ulb} \ \textit{dlf} \ \textit{drb} \ )( \ \textit{urb} \ \textit{ulf} \ \textit{drf} \ )),(0,0,0,0,0,0,0,0))$.
 
-Muster 4 ordnet die Farben wie vier Säulen an. Die weiße und die gelbe Seite ist dabei kariert, die anderen Seiten gestreift. Die Konfiguration des Würfels ist dann $C = ( (\ \textit{urb} \ \textit{dlf} \ )( \ \textit{ulf} \ \textit{drb} \ ) ),(0,0,0,0,0,0,0,0))$.
+Muster 4 ordnet die Farben wie vier Säulen an. Die weiße und die gelbe Seite sind dabei kariert, die anderen Seiten gestreift. Die Konfiguration des Würfels ist dann $C = ( (\ \textit{urb} \ \textit{dlf} \ )( \ \textit{ulf} \ \textit{drb} \ ) ),(0,0,0,0,0,0,0,0))$.
 
 
 Diese Muster sind in den meisten Fällen zwar keine üblichen Lösungsalgorithmen, sollten aber in dieser Arbeit auch nicht unerwähnt bleiben.
@@ -3017,7 +3017,7 @@ Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters un
 \subsection{Algorithmen für die erste Ebene}
 
 Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel lediglich rotiert werden muss, um eine weiße Farbfläche zu finden.
-In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite oben zu beginnen. Es kann aber mit jeder anderen Seite des Würfels auch begonnen werden.
+In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite zu beginnen. Es kann aber ebenso mit jeder anderen Seite des Würfels begonnen werden.
 Der \Tthree \textit{Cube} muss entsprechend der Mittelsteine ausgerichtet werden und so ist vorbestimmt, welche Seite die weiße Seite wird, je nach Ausrichtung der Mittelsteine. Bei dem \Ttwo \textit{Cube} kann mit jeder beliebigen Seite begonnen werden. Wenn unbedingt mit einer bestimmten Seite als Oberseite begonnen werden soll, die noch keine weiße Farbfläche hat, so kann die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite gebracht werden.
 
 In Abbildung \ref{Abbildung_ErsterEckstein} wird der erste Eckstein der oberen Ebene positioniert. Das kann dort entweder durch den Zug $R$ oder einer Rotation um die $y$-Achse passieren.
@@ -3045,7 +3045,7 @@ Ansonsten wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition bef
 
 Dort sind auch orange und grüne Farbflächen abgebildet. Das gilt analog für die anderen benachbarten Farbflächen. Zu beachten ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
 
-Sollte die weiße Farbfläche der Ecke unten am Würfel sein, so kann sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist auch in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Danach wird er mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
+Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist auch in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Danach wird er mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
 
 \begin{figure}[H]
 \centering
@@ -3129,7 +3129,7 @@ Ausgangsposition & Algorithmus  \\
 \end{center}
 
 
-Die obere Seite des Würfels zeigt nach dem Ausführen der Algorithmen ausschließlich gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann breits richtig zueiander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
+Die obere Seite des Würfels zeigt nach dem Ausführen der Algorithmen ausschließlich gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann bereits richtig zueinander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
 
 Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es auch wieder verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Liste aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
 
