@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  24 APR 2021 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  25 APR 2021 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1930,11 +1930,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 3850.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3850.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3850.
 
-Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: D7F849986ECFA5702A72D73500DC1841;4305.
 
+
+Package rerunfilecheck Warning: File `proposal.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `proposal.out':
+(rerunfilecheck)             Before: D7F849986ECFA5702A72D73500DC1841;4305
+(rerunfilecheck)             After:  EB0871AD79D13A72A28DBA336976DE82;4306.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
@@ -1975,7 +1984,7 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (85 pages, 7005477 bytes).
+Output written on proposal.pdf (85 pages, 7005472 bytes).
 PDF statistics:
  1289 PDF objects out of 1440 (max. 8388607)
  1031 compressed objects within 11 object streams
