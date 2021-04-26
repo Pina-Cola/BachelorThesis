@@ -1436,17 +1436,33 @@ Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargeste
 
 Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird eine Ebene vier mal hintereinander gedreht, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
 \begin{align*}
-C \cdot Z = C  \text{ mit } Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} \text{ und } C \text{ als Würfelkonfiguration}
+\forall \ Z \in \{ U, D, R, L, F, B\} \ . \ C \cdot Z^4 = C  
 \end{align*}
 Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ die gleiche Konfiguration wie der Zug $Z_1Z_3$ hervorruft.
 Der Exponent kann in diesem Fall modulo 4 gerechnet werden, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
 Es gilt folglich:
 \begin{align*}
-\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \hspace*{-0.5em} \mod 4}
+\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ C \cdot Z^n= C \cdot Z^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
-Dabei gilt für $n \hspace*{-0.3em} \mod 4 = 0$ ($n$ ist ein Vielfaches von 4) dann $Z^n = Z^{n \hspace*{-0.3em} \mod 4} = Z^0$. Dabei repräsentiert $Z^0$ einen leeren Zug. Das entspricht keiner Veränderung der Folgekonfiguration des Würfels.
+Das gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert ist. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird genauer als \textit{Ordnung von Zügen} in Abschnitt \ref{Abschnitt_OrdnungZüge} beschrieben und in Abschnitt \ref{Abschnitt_UntergruppenBeispiele} anhand einer Untergruppe erklärt.
 
-$\forall \  Z \in \{U, D, F, B, L, R\}. n \in \mathbb{N} \ . \ Z^n=Z^{n \hspace*{-0.3em} \mod 4}$ gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird genauer als \textit{Ordnung von Zügen} in abschnitt \ref{Abschnitt_OrdnungZüge} beschrieben und in Abschnitt \ref{Abschnitt_UntergruppenBeispiele} anhand einer Untergruppe erklärt.
+
+Für alle $n$, die Vielfache von vier sind gilt dann:
+\begin{align*}
+\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N}, n \hspace*{-0.6em} \mod 4 = 0 \ . \ 
+C \cdot Z^n  
+= C
+\end{align*}
+In diesem Fall kann man folgende Umformung durchführen:
+\begin{align*}
+C \cdot Z^n
+= C \cdot Z^{n \hspace*{-0.5em} \mod 4} 
+= C \cdot Z^0 
+= C
+\end{align*}
+$Z^0$ repräsentiert einen leeren Zug. Das entspricht keiner Veränderung der Folgekonfiguration des Würfels.
+
+
 
 Da die Anzahl der möglichen Züge ($|A_Z|$) im Gegensatz zur Anzahl der validen Würfel\-konfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es unendlich viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten. Dies wird im weiteren Verlauf dieser Arbeit durch Äquivalenzklassen realisiert. Die Berechnung aller gleichen Züge überschreitet den Rahmen dieser Arbeit -- eine Realisierungsmöglichkeit dafür wären Termersetzungssysteme (\textit{Rewriting}).
 
