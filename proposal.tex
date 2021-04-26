@@ -1322,6 +1322,8 @@ Der Vektor $x$ sieht nach dem Zug $R$ von der Startkonfiguration ausgehend so au
 %
 \subsection{Züge ausführen}
 
+\label{Abschnitt_ZuegeAusfuehren}
+
 Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Ausführen eines Zuges verändert. Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
 
 Die Startkonfiguration $C=(1,0)$ wird im folgenden Beispiel durch das dreifache Ausführen des Zuges $LLFF$ ($LLFF^3 = LLFFLLFFLLFF$) schrittweise verändert.
@@ -1437,7 +1439,7 @@ Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird ei
 C \cdot Z = C  \text{ mit } Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\} \text{ und } C \text{ als Würfelkonfiguration}
 \end{align*}
 Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ die gleiche Konfiguration wie der Zug $Z_1Z_3$ hervorruft.
-Der Exponent kann in diesem Fall $modulo \ 4$ gerechnet werden, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
+Der Exponent kann in diesem Fall modulo 4 gerechnet werden, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
 Es gilt folglich:
 \begin{align*}
 \forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ Z^n=Z^{n \hspace*{-0.5em} \mod 4}
@@ -1521,31 +1523,35 @@ Die Permutationsfunktion der Rotationen wird im Folgenden $\delta$ genannt. Da b
 & \delta_{Z_r}(\textit{drf}) = \textit{dlf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlf}) = \textit{dlb} \ \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlb}) = \textit{drb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{drb}) = \textit{drf}
 \end{alignat*}
 
-Das kann nun in der Form $i \mapsto j$ geschrieben werden: 
+Das kann auch in der Form $i \mapsto j$ geschrieben werden: 
 \begin{alignat*}{4}
 & \textit{urf} \mapsto \textit{ulf} \ \ \ \ \ \ \ \ & \textit{ulf} \mapsto \textit{ulb} \ \ \ \ \ \ \ \ & \textit{ulb} \mapsto \textit{urb} \ \ \ \ \ \ \ \ & \textit{urb} \mapsto \textit{urf} \\
 & \textit{drf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ & \textit{dlf} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ & \textit{dlb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ & \textit{drb} \mapsto \textit{drf}
 \end{alignat*}
 
-In der Zykel-Schreibweise sieht die Veränderung der Steinpositionen dann so aus: \\
-$\delta_{Z_r}=( \ \textit{urf} \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ )( \ \textit{drf} \ \textit{dlf} \ \textit{dlb} \ \textit{drb} \  )$ 
-
-Alle Funktionen der Rotationen sehen in Zykel-Schreibweise folgendermaßen aus:
+In der Zykel-Schreibweise sieht die Funktion $\delta_{Z_r}$ für die Rotation $Z_r$ dann so aus:
 \begin{align*}
-\delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf}\ )(\ \textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
-\delta_{Z_l} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}\ )(\ \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ )\\
-\delta_{Y_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf}\ )(\ \textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf} \ )\\
-\delta_{Y_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb}\ )(\ \textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb} \ )\\
-\delta_{X_r} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )\\
-\delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )
+\delta_{Z_r}=( \ \textit{urf} \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ )( \ \textit{drf} \ \textit{dlf} \ \textit{dlb} \ \textit{drb} \  )
 \end{align*}
+ 
 
-Da die Rotationen die Würfelkonfiguration verändern, muss es neben den Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\Gamma$ wurden für jeden Zug des Würfels bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} beschrieben. Die Vektoreinträge werden dort mit den Funktionen $g, h$ und $i$ verändert.
+Die anderen Rotationen können ebenfalls durch Funktionen $\delta$ in der Zykelschreibweise abgebildet werden. Die leere Rotation ist dabei die Identitätspermutation 1. Im Folgenden sind die Funktionen $\delta$ für alle Rotationen aufgelistet:
+\begin{alignat*}{2}
+& \delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf}\ )(\ \textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
+& \delta_{Z_l} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}\ )(\ \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ )\\
+& \delta_{Y_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf}\ )(\ \textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf} \ )\\
+& \delta_{Y_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb}\ )(\ \textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb} \ )\\
+& \delta_{X_r} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )\\
+& \delta_{X_l} & = ( \ \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf}\ )(\ \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ )\\
+& \delta_{N_R} & = \ 1 \hspace*{14.1em}
+\end{alignat*}
+
+Da die Rotationen die Würfelkonfiguration in eine andere, äquivalente Würfelkonfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Die Vektoreinträge der Steinausrichtungen werden dort mit den Funktionen $g, h$ und $i$ verändert.
 \begin{align*}
 g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 \ \ \ \ \ i(x)=x
 \end{align*}
 
-Für jede der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folgezustand überführt. Die Identitätsfunktion $i$ muss nicht geschrieben werden. Die Funktionen $\beta$ für die Rotationen sind im Folgenden definiert:
+Die Überführungsfunktionen des Vektors $x$ werden im Folgenden $\beta$ genannt. Für jede der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folgezustand überführt. Die Identitätsfunktion $i$ muss nicht geschrieben werden. Die Funktionen $\beta$ für die Rotationen sind im Folgenden definiert:
 \begin{align*}
  & \beta_{Z_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
  & = (x_3, x_1, x_4, x_2, x_7, x_5, x_8, x_6) \\
@@ -1566,7 +1572,7 @@ Für jede der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen
  & (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
 \end{align*}
 
-Es können auch mehrere Rotationen nacheinander ausgeführt werden.
+Es können auch mehrere Rotationen nacheinander ausgeführt werden. Die Funktionen $\delta$ und $\beta$ werden dann jeweils verschachtelt. Das erfolgt analog zu dem mehrfachen Ausführen von Zügen (s. Abschnitt \ref{Abschnitt_ZuegeAusfuehren}).
 
 
 
@@ -1595,16 +1601,23 @@ Es können auch mehrere Rotationen nacheinander ausgeführt werden.
 \label{Abschnitt_MaxAnzahlRotationen}
 
 Die mehrfache Ausführung einer Rotation wird auch mit der Exponentenschreibweise geschrieben. 
-Somit gilt für jede Rotation $TTTT=T^4=N_R$ (mit $T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \}$) und $T^0=N_R$ (für alle Rotationen $T$). Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. 
-Dementsprechend gilt bei den Rotationen auch für jede Rotation: 
+Somit gilt für jede einelementige Rotation $T$: 
 \begin{align*}
-\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ T^n=T^{n \mod 4}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \} \ . \  TTTT=T^4=N_R 
+\end{align*} 
+Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. Es gilt somit für jede beliebige Rotation $T$:
+\begin{align*}
+T^{\hspace*{0.1em}0}=N_R
+\end{align*}
+Da alle vierfachen der einelementigen Rotationen (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R$) keine Veränderung hervorrufen, kann der Exponent der Rotationen modulo 4 gerechnet werden: 
+\begin{align*}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ T^n=T^{n \hspace*{-0.3em} \mod 4}
 \end{align*}
 
-Anhand dieser Aussage wird veranschaulicht, dass der Würfel sich nach mehreren Rotationen wieder seine Ausgangsausrichtung nähern kann. Es gibt für die Roationen also eine maximale Anzahl, jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
-In diesem Abschnitt wird berechnet, wie viel der Würfel maximal rotiert werden muss, um zurück in die Ausgangsposition zu gelangen.
+Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung nähern kann. Es gibt für die Roationen also eine maximale Tiefe, jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
+In diesem Abschnitt wird berechnet, wie oft der Würfel maximal um 90$^\circ$ rotiert werden muss, um zurück in die Ausgangsposition zu gelangen.
 
-Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel. In Abbildung \ref{AbbildungWürfelRotationWeisseSeite} sind die vier verschiedenen Ausrichtungen des gelösten Würfels zu sehen, wenn die weiße Seite als obere Seite angenommen wird. Für die anderen fünf Seiten gibt es ebenfalls vier Möglichkeiten der Ausrichtung.
+Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel. In Abbildung \ref{AbbildungWürfelRotationWeisseSeite} sind die vier verschiedenen Ausrichtungen des Würfels zu sehen, wenn die weiße Seite als obere Seite angenommen wird. In den Abbildungen wird von einem gelösten Würfel ausgegangen. Für die anderen fünf Seiten gibt es ebenfalls vier Möglichkeiten der Ausrichtung. Alle Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} in Abbildung \ref{AbbildungWürfelRotationAlleSeiten} dargestellt.
 
 \begin{figure}[H]
 \centering
@@ -1613,8 +1626,7 @@ Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben kön
 \label{AbbildungWürfelRotationWeisseSeite}
 \end{figure}
 
-
-In Anhang \ref{Anhang_RotationenDesWürfels} befinden sich Abbildungen aller Rotationsmöglichkeiten des Würfels und eine Verknüpfungstafel, die alle Rotationen darstellt. Anhand dieser vollständigen Darstellung jeder Rotationsmöglichkeit kann festgestellt werden, dass der Würfel maximal drei Rotationen von der Ausgangsausrichtung entfernt sein kann. Mit jeder weiteren Rotation nähert er sich seiner vorherigen Ausrichtung wieder an.
+Neben den Abbildungen aller Rotationsmöglichkeiten des Würfels, befindet sich in Anhang \ref{Anhang_RotationenDesWürfels} eine Verknüpfungstafel, die alle Rotationen und die Verknüpfung dieser abbildet. Anhand dieser vollständigen Darstellung der Rotationsmöglichkeiten kann festgestellt werden, dass der Würfel maximal drei Rotationen von der Ausgangsausrichtung entfernt sein kann. Mit jeder weiteren Rotation nähert er sich seiner vorherigen Ausrichtung wieder an.
 
 
 
