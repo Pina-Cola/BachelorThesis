@@ -1322,7 +1322,7 @@ Der Vektor $x$ sieht nach dem Zug $R$ von der Startkonfiguration ausgehend so au
 %
 \subsection{Züge ausführen}
 
-Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Auführen eines Zuges verändert. Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
+Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Ausführen eines Zuges verändert. Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
 
 Die Startkonfiguration $C=(1,0)$ wird im folgenden Beispiel durch das dreifache Ausführen des Zuges $LLFF$ ($LLFF^3 = LLFFLLFFLLFF$) schrittweise verändert.
 Die Position der Steine -- dargestellt durch $\sigma$ -- verändert sich nach dem ersten Ausführen von $LLFF$ wie folgt:
@@ -2004,7 +2004,7 @@ Es gilt folglich für jede Permutation eines Zuges $Z$, der aus lediglich einem 
 \begin{align*}
 \forall \ Z \in \Gtwo \ \textit{mit} \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  (\sigma, x) \cdot Z^n= (\sigma, x')
 \end{align*}
-Wenn $Z$ mehrfach ausführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand der Permutationen erreicht. \cite{TD} 
+Wenn $Z$ mehrfach ausgeführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand der Permutationen erreicht. \cite{TD} 
 Es gilt folglich auch:
 \begin{align*}
 \forall \ Z \in \Gtwo \ \textit{mit} \ \ Z=(i_1 \ i_2 \ ... \ i_n), \ n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }
@@ -2086,7 +2086,7 @@ Wenn $n=0$ wäre, ergibt das $C \cdot Z^0=C$, was den leeren Zug repräsentiert.
 Wenn $C \cdot Z^n =C \cdot Z^m$ mit $0<n<m$ gilt, kommt der Würfel in die gleiche Folgekonfiguration, wenn (auf die gleiche Ausgangskonfiguration) $n$-mal oder $m$-mal $Z$ angewendet wird.
 Wenn dann $Z^{-1}$ angewendet wird, ist die Folgekonfiguration wieder gleich. Dabei ist es irrelevant, ob vorher $n$-mal oder $m$-mal $Z$ ausgeführt wurde, da von der gleichen Ausgangskonfiguration ausgehend die gleiche Folgekonfiguration erreicht wird, wenn der gleiche Zug ausgeführt wird.
 
-Beim Anwenden von $Z^{-1}$ auf die Konfiguration $C$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn $Z$ $n$-mal ausgeführt wird und danach $Z^{-1}$ ausgeführt wird, ist es das gleiche wie $n-1$-mal $Z$ ausführen. Folglich gilt $C \cdot Z^nZ^{-1}=C \cdot Z^{n-1}$. Das gilt natürlich auch für $m$, also $C \cdot Z^mZ^{-1}=C \cdot Z^{m-1}$.
+Beim Anwenden von $Z^{-1}$ auf die Konfiguration $C$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht. Wenn $Z$ $n$-mal ausgeführt wird und danach $Z^{-1}$ ausgeführt wird, ist es das gleiche wie $n-1$-mal $Z$ auszuführen. Folglich gilt $C \cdot Z^nZ^{-1}=C \cdot Z^{n-1}$. Das gilt natürlich auch für $m$, also $C \cdot Z^mZ^{-1}=C \cdot Z^{m-1}$.
 Demnach gilt dann $C \cdot Z^{n-1}=C \cdot Z^{m-1}$. Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Position ist. Deshalb muss $n=0$ sein, damit $m$ die erste Wiederholung einer Position repräsentiert. 
 
 Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel angewendet wird, kommen die Steine wieder in die Ausgangsposition.
@@ -2105,7 +2105,7 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
 \SetNlSty{textbf}{}{\ }
 \SetAlgoNlRelativeSize{0}
 \KwData{Konfiguration $C(\sigma, x)$, Zug $Z$}
-\KwResult{\textit{kgV(count, ord)} gibt ist Ordnung eines Zuges}
+\KwResult{\textit{kgV(count, ord)} ist Ordnung eines Zuges}
 \BlankLine
  \textit{ord} $\leftarrow$ Ordnung der Permutation von $Z$\;
   \textit{x'} $\leftarrow$ \textit{x}\;
@@ -2130,7 +2130,7 @@ Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangs
 Der Pseudocode braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Den Zug $Z$ und die Ausgangskonfiguration $C$ des Würfels. In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Dann wird der Wert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
 Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zum Start ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
-Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das kleinste gemeinsame Vielfache von diesen beiden Werten (Zeile 9).
+Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das kleinste gemeinsame Vielfache von diesen beiden Werten (Zeile 8).
 
 
 
@@ -2273,7 +2273,7 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden bereits in Abschnitt \ref{Abschnitt_Erzeuger} erklärt.
 
 
-Ein Beispiel für einen Erzeuger einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ ist der einzelnen Zug $\{ F \}$, der diese Untergruppe erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
+Ein Beispiel für einen Erzeuger einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ ist der einzelne Zug $\{ F \}$, der diese Untergruppe erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
 
 
 Ein weiteres Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei kann die Ebene ausschließlich halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Trägermenge enthält daher die beiden Züge $FF$ und $FFFF$.
@@ -2683,7 +2683,7 @@ Die Zykel der Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$
 \end{alignat*}
 Jeder Grundzug ist demnach als ein $4$-Zykel definiert und jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
 Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
-Die Zykel treffen ausschließlich eine Aussagen über die Position der Steine im Würfel. Die Rotation wird durch den Vektor $x$ dargestellt und hier nicht berücksichtigt. 
+Die Zykel treffen ausschließlich eine Aussage über die Position der Steine im Würfel. Die Rotation wird durch den Vektor $x$ dargestellt und hier nicht berücksichtigt. 
 
 Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Ein Zug, der genau zwei Steine tauscht, wird durch einen $2$-Zykel dargestellt. Das ist eine ungerade Anzahl an $2$-Zykeln. Im Gegensatz zum \Tthree Würfel kann die Anzahl der $2$-Zykel des \Ttwo Würfels ungerade sein und es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
 
