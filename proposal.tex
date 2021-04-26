@@ -1670,30 +1670,32 @@ Neben den Abbildungen aller Rotationsmöglichkeiten des Würfels, befindet sich 
 %
 %
 %
-\color{black}
 
 \subsection{Äquivalenzrelation der Züge}
 \label{Abschnitt_ÄquivalenzrelationDerZüge}
 
-Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen.
-Für Äquivalenzrelationen müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Abschnitt \ref{Abschnitt_Äquivalenrelationen} findet sich die Definition und Erklärung.
+Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine eindeutige Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen.
+Damit eine Relation eine Äquivalenzrelationen ist, müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Abschnitt \ref{Abschnitt_Äquivalenrelationen} finden sich Definition und Erklärung.
 
-In dem Fall des \Ttwo Würfels handelt es sich um eine Relation von zwei Zügen $Z_1, Z_2$ aus der Menge aller Züge $A_Z$ (ohne Rotationen). 
+In dem Fall des \Ttwo Würfels handelt es sich um eine Relation $\sim$ von zwei Zügen $Z_1, Z_2$ aus der Menge aller Züge $A_Z$ (ohne Rotationen). Dann ist die Relation $\sim$ eine Teilmenge von $A_Z \times A_Z$. 
+Die Relation ist im Folgenden definiert: 
 
-Die Äquivalenzrelation der Rotation wird hier so definiert: 
-
-
+\begin{center}
 \begin{tabular}{l l}
 $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler Rotation) die gleiche }\\
 \  & \textit{Würfelkonfiguration} \\
 \end{tabular} 
-\\
+\end{center}
 
 Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
-Daraus ergibt sich $Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2$ mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die \textit{leere} Rotation dar -- das entspricht keiner Rotation des Würfels. 
-Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene die gleiche Würfelkonfiguration ergeben. Der Würfel ist dann lediglich verschieden ausgerichtet. 
-In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der gelöste Würfel nach dem Zug $F$ und rechts der gelöste Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der gleichen Konfiguration, aber anders gedreht.
+Daraus ergibt sich folgende Definition mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die \textit{leere} Rotation dar -- das entspricht keiner Rotation des Würfels. 
+\begin{align*}
+Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2
+\end{align*}
+
+Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene eine äquivalente Würfelkonfiguration ergeben. Der Würfel ist dann lediglich verschieden ausgerichtet. 
+In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der Würfel nach dem Zug $F$ und rechts der Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der äquivalenten Konfigurationen, aber anders gedreht.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{3_wuerfel.png}
@@ -1701,26 +1703,26 @@ In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dar
 \label{Abbildung_GelöstnachFnachZL}
 \end{figure}
 
-Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und Transitivität gelten, was im folgenden Abschnitt bewiesen wird.
+Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und Transitivität gelten. Diese Eigenschaften werden im Folgenden für die Relation $\sim$ gezeigt.
 
 \begin{description}
 
 
 \item [Reflexivität] \ \\
-Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. 
+Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. Jeder Zug muss dafür zu sich selbst in Relation stehen.
 \begin{align*}
 Z_1 \sim_R Z_2 : & \Leftrightarrow C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
-Es wird die Rotation $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
+Um zu zeigen, dass $Z_1$ und $Z_2$ äquivalent sind, wird die Rotation $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
 \begin{align*}
 Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot Z_1 = C \cdot WZ_2 \\
 \ & \Leftrightarrow C \cdot Z_1=C \cdot N_R Z_2 \\
 \ & \Leftrightarrow C \cdot Z_1 = C \cdot Z_2
 \end{align*}
-Es gilt somit die Reflexivität für $\sim$, da bei $Z_1 \sim Z_2$ mit $W=N_R$, die Züge $Z_1$ und $Z_2$ immer äquivalent sind, da sie die gleiche Folgekonfiguration des Würfels erreichen.
+Bei $Z_1 \sim Z_2$ mit $W=N_R$ sind die Züge $Z_1$ und $Z_2$ immer äquivalent, da sie bei gleicher Startkonfiguration die gleiche Folgekonfiguration des Würfels erzeugen. Es gilt somit die Reflexivität für die Relation $\sim$.
 
 \item [Symmetrie] \ \\
-Für die Symmetrie muss gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.
+Für die Symmetrie muss folgendes gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.
 \begin{align*}
 Z_1 \sim Z_2 & \Rightarrow Z_2 \sim Z_1 \\
 mit \ Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot  Z_1 = C \cdot  WZ_2 \\
