@@ -1465,20 +1465,22 @@ Da die Anzahl der möglichen Züge ($|A_Z|$) im Gegensatz zur Anzahl der validen
 
 \label{Abschnitt_RotationDesWürfels}
 
-Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel keine Mittelsteine, die fest darüber entscheiden, welche Seite die obere Seite ist. 
+Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel keine Mittelsteine, die fest darüber entscheiden, wie der Würfel ausgerichtet ist. 
 Der \Ttwo Würfel kann daher im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren.
-Das soll im nächsten Abschnitt als Äquivalenzrelation umgesetzt werden. Dafür werden die Rotationsmöglichkeiten des Würfels in diesem Abschnitt definiert.
-Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ definiert. Das ist in Abbildung \ref{Abbildung_Rotationsachsen} zu sehen.
-\begin{figure}[h]
+Das soll im nächsten Abschnitt als Äquivalenzrelation umgesetzt werden. Dazu werden in diesem Abschnitt die Rotationsmöglichkeiten des Würfels definiert.
+Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ definiert. Das ist in Abbildung \ref{Abbildung_Rotationsachsen} zu sehen. Die vetikale Achse wird $z$ genannt. Die $x$-Achse verläuft von vorne nach hinten durch den Würfel und die $y$-Achse von rechts nach links.
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Pfeile.png}
 \caption[Würfel mit $x, y$ und $z$-Achsen]{Würfel mit $x, y$ und $z$-Achsen}
 \label{Abbildung_Rotationsachsen}
 \end{figure} 
 
-Nun können für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festgelegt werden. 
-Dazu werden zuerst die einzelnen Rotationen des Würfels benannt. 
+Mit den Bezeichnungen der Achsen können für die möglichen Rotationen des Würfels Nachfolgekonfigurationen festgelegt werden. 
+Dazu werden zuerst die einzelnen Rotationen des Würfels benannt. Dabei handelt es sich um 90$^\circ$-Drehungen.
 
+\vspace*{1em}
+\begin{adjustbox}{width=1\textwidth,center}
 \begin{tabular}{cl}
 \toprule
 \textbf{Abkürzung} & \textbf{Beschreibung der Rotation} \\
@@ -1498,20 +1500,22 @@ $X_r$ & Rotation des Würfels um die $x$-Achse nach rechts (im Uhrzeigersinn) \\
 $N_R$ & keine Rotation des Würfels \\
 \bottomrule
 \end{tabular} 
+\end{adjustbox}
+\vspace*{0.5em}
 
 
-Die Rotationen sind nicht minimal definiert, da beispielsweise $Z_l$ das gleiche wie ${Z_r}^3$ ist. Dies dient der Anschaulichkeit. 
+Die Rotationen sind zur besseren Anschaulichkeit nicht minimal definiert. Es gibt für jede Würfelseite nur vier Rotationsmöglichkeiten ($0^\circ, 90^\circ, 180^\circ, 270^\circ$), da immer um $90^\circ$ gedreht wird. Beispielsweise ist $Z_l$ das gleiche wie ${Z_r}^3$. Das bedeutet, das eine Drehung des Würfels um 90$^\circ$ nach links äquivalent zu drei 90$^\circ$ Drehungen des Würfels nach rechts ist.  Die Drehung nach links entspricht $0^\circ-90^\circ = 270^\circ$ während drei Drehungen nach rechts $0^\circ+90^\circ+90^\circ+90^\circ=270^\circ$ entsprechen.
 
-Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo eine Auswahl der Steine die Position ändert, ändern hier alle Steine die Position, ohne dass die Würfelkonfiguration verändert wird, da er komplett gedreht wird. 
+Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo eine Auswahl der Steine die Position ändert, ändern hier alle Steine die Position. Die Folgekonfiguration des Würfels nach einer Rotation ist dann eine andere, äquivalente Konfiguration.
 
-Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen gezeigt. Die Rotation $Z_r$ ist in Abbildung \ref{Abbildung_WürfelNachRotationUmZAchse} zu sehen.
+Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen erläutert. Der Würfel ist in Abbildung \ref{Abbildung_WürfelNachRotationUmZAchse} nach der Rotation $Z_r$ zu sehen.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{auf_ulf.png}
 \caption{Würfel nach Rotation um $z$-Achse}
 \label{Abbildung_WürfelNachRotationUmZAchse}
 \end{figure}
-Da bei den Rotationen alle Steine die Position wechseln, muss es demnach 8 Funktionen $\delta$ geben, also für jeden Eckstein eine Funktion $\delta$:
+Die Permutationsfunktion der Rotationen wird im Folgenden $\delta$ genannt. Da bei den Rotationen alle Steine die Position wechseln, muss es für jede Rotation 8 Funktionen $\delta$ geben, für jeden Eckstein eine Funktion:
 \begin{alignat*}{4}
 & \delta_{Z_r}(\textit{urf}) = \textit{ulf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{ulf}) = \textit{ulb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{ulb}) = \textit{urb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{urb}) = \textit{urf} \\
 & \delta_{Z_r}(\textit{drf}) = \textit{dlf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlf}) = \textit{dlb} \ \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlb}) = \textit{drb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{drb}) = \textit{drf}
