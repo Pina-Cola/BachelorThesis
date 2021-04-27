@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  27 APR 2021 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  27 APR 2021 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1875,27 +1875,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 <AlleRotationen.png, id=1119, 6500.285pt x 7889.475pt>
 File: AlleRotationen.png Graphic file (type png)
 <use AlleRotationen.png>
-Package pdftex.def Info: AlleRotationen.png  used on input line 3752.
-(pdftex.def)             Requested size: 390.00027pt x 473.34808pt.
+Package pdftex.def Info: AlleRotationen.png  used on input line 3753.
+(pdftex.def)             Requested size: 422.53336pt x 512.8339pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3758--3823
+Underfull \hbox (badness 10000) in paragraph at lines 3766--3831
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3758--3823
+Underfull \hbox (badness 10000) in paragraph at lines 3766--3831
 
  []
 
 [80 <./AlleRotationen.png>]
-<Eidesstattliche_Versicherung.pdf, id=1126, 597.23125pt x 844.15375pt>
+<Eidesstattliche_Versicherung.pdf, id=1125, 597.23125pt x 844.15375pt>
 File: Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use Eidesstattliche_Versicherung.pdf>
 Package pdftex.def Info: Eidesstattliche_Versicherung.pdf  used on input line 3
-852.
+858.
 (pdftex.def)             Requested size: 477.78564pt x 675.32391pt.
 
-Overfull \hbox (22.54153pt too wide) in paragraph at lines 3852--3853
+Overfull \hbox (22.54153pt too wide) in paragraph at lines 3858--3859
  [] 
  []
 
@@ -1904,11 +1904,11 @@ Overfull \vbox (48.83144pt too high) has occurred while \output is active []
 
 
 [82 <./Eidesstattliche_Versicherung.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3883.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3883.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3889.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3889.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3883.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3883.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3889.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3889.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: EB0871AD79D13A72A28DBA336976DE82;4306.
@@ -1919,14 +1919,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3883.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3889.
  ) 
 Here is how much of TeX's memory you used:
- 32200 strings out of 483016
- 587809 string characters out of 5961286
- 1410674 words of memory out of 5000000
+ 32202 strings out of 483016
+ 587825 string characters out of 5961286
+ 1411674 words of memory out of 5000000
  46200 multiletter control sequences out of 15000+600000
- 560831 words of font info for 190 fonts, out of 8000000 for 9000
+ 560940 words of font info for 191 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,16n,77p,1328b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pina/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600p
@@ -1955,10 +1955,10 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (85 pages, 7009463 bytes).
+Output written on proposal.pdf (85 pages, 7009380 bytes).
 PDF statistics:
- 1293 PDF objects out of 1440 (max. 8388607)
- 1035 compressed objects within 11 object streams
+ 1292 PDF objects out of 1440 (max. 8388607)
+ 1034 compressed objects within 11 object streams
  242 named destinations out of 1000 (max. 500000)
  25415 words of extra memory for PDF output out of 29859 (max. 10000000)
 
