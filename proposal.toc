@@ -51,11 +51,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.5}Äquivalenzklassen der Züge}{36}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}2$\times $2$\times $2-Zauberwürfel als Gruppe}{36}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.6}2$\times $2$\times $2-Zauberwürfel als Gruppe}{37}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.7}Züge als Gruppenoperation}{40}{subsection.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.8}Ordnung der Permutationen}{40}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.8}Ordnung der Permutationen}{41}{subsection.5.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.9}Zykelstruktur}{42}{subsection.5.9}%
 \defcounter {refsection}{0}\relax 
