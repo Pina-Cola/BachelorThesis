@@ -1127,7 +1127,7 @@ Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden:
 \sigma_F & =\ ( \ \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ ) \\
 \sigma_B & =\ ( \ \textit{ulb} \ \textit{dlb} \ \textit{drb} \ \textit{urb} \ ) \\
 \sigma_L & =\ ( \ \textit{ulb} \ \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ ) \\
-\sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) \\
+\sigma_R & =\ ( \ \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} \ ) 
 \end{align*}
 
 Die Indizes an den Funktionen $\sigma$ stehen für die verschiedenen Grundzüge des Würfels. Diese wurden in Abschnitt \ref{Abschnitt_GrundzügeWürfel} erklärt.
@@ -1791,6 +1791,8 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 
 \subsection{Äquivalenzklassen der Züge} 
 
+\label{Abschnitt_ÄquivalenzklassenDerZüge}
+
 Äquivalenzklassen und Faktormengen wurden in Abschnitt \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Äquivalenzrelation $\sim$ auf der Menge aller Züge $A_Z$ definiert und damit eine Faktormenge gebildet, die diese Äquivalenzklassen enthält. Jede Äquivalenzklasse ist definiert als:
 \begin{align*}
 [Z] := \{ Y \in A_Z \mid Y \sim Z \} \subseteq A_Z
@@ -1834,14 +1836,14 @@ Zwei Äquivalenzklassen bzw. deren Repräsentanten können durch den Operator $\
 \subsection{\Ttwo Zauberwürfel als Gruppe} 
  \label{Abschnitt_WürfelAlsGruppe}
 
-Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des \Ttwo Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Name der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Die Gruppe des \Ttwo Würfels heißt $(\Gtwo, \circ)$. 
+Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des \Ttwo Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Name der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Die Gruppe des \Ttwo Würfels heißt im Folgenden $(\Gtwo, \circ)$. 
 Grundlagen und Definition der Gruppe wurden in Abschnitt \ref{Abschnitt_Gruppe} erklärt.
 
 
-Die Faktormenge $\Gtwo$ besteht aus allen möglichen Zügen des Würfels, ohne doppelte Züge zu enthalten. Ein Beispielzug ist die Drehung der oberen Ebene ($U$). Ein Zug kann aber auch aus mehreren Drehungen bestehen, z. B. das Drehen der oberen Ebene, gefolgt von dem Drehen der rechten Ebene, stellt ebenfalls einen Zug dar ($UR$). 
+Die Trägermenge $\Gtwo$ der Gruppe wurde in Abschnitt \ref{Abschnitt_ÄquivalenzklassenDerZüge} definiert. Sie besteht aus den Äquivalenzklassen aller möglichen Zügen des Würfels. Äquivalente Züge sind dabei Repräsentanten der gleichen Äquivalenzklasse.
 
 
-Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Wenn $Z_1$ und $Z_2 \in \Gtwo$ zwei Züge sind, dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
+Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Seien $Z_1$ und $Z_2$ zwei Züge in $\Gtwo$. Dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
 
 Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird:
 
@@ -1851,8 +1853,9 @@ Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo,
 $\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ 
 
 
-Die Gruppe $\Gtwo$ ist abgeschlossen unter dem Operator $\circ$. Wenn $Z_1 $ und $Z_2$ Züge sind und somit Elemente von $\Gtwo$, dann ist auch $Z_1 \circ Z_2$ ein Element der Gruppe, da alle Züge (bzw. die Äquivalenzklassen der Züge) in $\Gtwo$ enthalten sind. Jede Konkatenation von zwei Zügen ist auch ein Zug. In $\Gtwo$ findet sich zu jeder validen Würfelkonfiguration ein Zug, mit dem diese erreicht werden kann und jede Verknüpfung von zwei validen Zügen führt zu einer validen Würfelkonfiguration. Daher gilt die Abgeschlossenheit bei der Gruppe $(\Gtwo, \circ)$.
-
+Seien $Z_1$ und $Z_2$ Züge und somit Elemente aus $\Gtwo$. Dann ist auch $Z_1 \circ Z_2$ ein Element aus $\Gtwo$. Die Menge $\Gtwo$ enthält Äquivalenzklassen. Diese wurden in Abschnitt \ref{Abschnitt_ÄquivalenzklassenDerZüge} mit den Elementen aus der unendlichen Menge aller Züge $A_Z$ definiert. Es sind somit alle Elemente der Menge $A_Z$ Repräsentanten der Äquivalenzklassen in $\Gtwo$. Eine Verknüpfung zweier Züge ist auch ein Zug aus $A_Z$. Somit ist $Z_1 \circ Z_2$ ebenfalls Repräsentant einer Äquivalenzklasse in $\Gtwo$. Die Gruppe $(\Gtwo, \circ)$ ist folglich unter dem Operator $\circ$ abgeschlossen.
+ 
+%Mit anderen Worten: In $\Gtwo$ findet sich zu jeder validen Würfelkonfiguration ein Zug, mit dem diese erreicht werden kann und jede Verknüpfung von zwei validen Zügen führt zu einer validen Würfelkonfiguration. Daher gilt die Abgeschlossenheit bei der Gruppe $(\Gtwo, \circ)$.
 
 
 \item [Assoziativität] \ \\
@@ -1861,7 +1864,7 @@ $\forall Z_1,Z_2,Z_3 \in \Gtwo.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ 
 
 Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird hier $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, r, l, f, b$. 
 
-Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein s zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Folglich gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
+Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein $s$ zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Folglich gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
 
 
 Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Dafür wird gezeigt, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: 
@@ -1870,8 +1873,8 @@ Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt we
 \Leftrightarrow (&(Z_1 \circ Z_2) \circ Z_3)(s) \\
 = & Z_3(Z_1 \circ Z_2)(s)) \\
 = & Z_3(Z_2(Z_1(s)))  
-\end{align*}
-\begin{align*}
+\\
+\\
 &Z_1 \circ (Z_2 \circ Z_3) \\
 \Leftrightarrow (&Z_1 \circ (Z_2 \circ Z_3))(s) \\
 = (&Z_2 \circ Z_3)(Z_1(s)) \\
@@ -1880,39 +1883,39 @@ Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt we
 Somit ist $(\Gtwo, \circ)$ assoziativ.
 
 \item [Existenz eines neutralen Elements $N$] \ \\
-$\exists N \in \Gtwo. \forall Z_1 \in \Gtwo .N \circ Z_1 = Z_1 \circ N = Z_1$ 
+$\exists N \in \Gtwo. \forall Z \in \Gtwo .N \circ Z = Z \circ N = Z$ 
 
 
-Das neutrale Element $N$ muss aus der Menge $\Gtwo$ der Züge sein und es muss gelten: $N \circ Z_1 = Z_1 \circ N = Z_1$. Somit ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es wird dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}.
+Das neutrale Element $N$ muss eine Äquivalenzklasse aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: $N \circ Z = Z \circ N = Z$. Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
+
+Wenn das auf das mathematischen Modell des Würfels übertragen wird, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Vektor wird dabei unverändert zurückgegeben.
 
 
-Wenn eine Ebene beispielsweise vier mal gedreht wird, ist der Würfel wieder in der vorherigen Position. Somit gilt beispielsweise $RRRR=R^4=N$, wobei $N$ für das neutrale Element (bzw. den leeren Zug) steht. Das gilt für alle Grundzüge des Würfels:
+Wird beispielsweise eine einzelne Ebene vier mal am Stück gedreht, befindet sich der Würfel wieder in der Ausgangskonfiguration. Somit gilt beispielsweise $RRRR=R^4=N$. Das gilt analog für alle einelementigen Züge des Würfels.
+Die vierfachen Ausführungen der Grundzüge sind alle als Repräsentanten des leeren Zuges in der Äquivalenzklasse von $N$ enthalten.
+Für jeden beliebigen Zug $Z$ aus $\Gtwo$ gilt somit auch $Z^0=N$, da die Würfelkonfiguration bei nullfacher Ausführung eines Zuges unverändert bleibt.
 
-\begin{align*}
-RRRR & =R^4 =N \\
-LLLL & =L^4 =N \\
-UUUU & =U^4 =N \\
-DDDD & =D^4 =N \\
-FFFF & =F^4 =N \\
-BBBB & =B^4 =N \\
-\end{align*}
-Diese sind dann alle als Repräsentanten für den leeren Zug in der Äquivalenzklasse von $N$ enthalten.
-Somit gilt dann auch $Z^0=N$, mit $Z$ als beliebigen Zug und $N$ als neutrales Element. 
-
-Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist somit der leere Zug bzw. jeder Repräsentant der Äquivalenzklasse des leeren Zuges.
+Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist somit die Äquivalenzklasse des leeren Zuges.
 
 
 \item [Existenz eines inversen Elements $Z^{-1}$] \ \\
 $\forall \  Z \in \Gtwo.\ \exists \  Z^{-1} \in \Gtwo.  \ \ Z \circ Z^{-1} = Z^{-1} \circ Z = N$  
 
 
-Da jeder Zug $Z$ als Permutation definiert ist, kann diese invertiert werden. Wenn man eine Permutation invertieren will, kehrt man die Reihenfolge der Elemente der Zykel um. Eine Verknüpfung dieser beiden Permutationen ergibt die Identitätspermutation bzw. das neutrale Element.
-Somit gilt dann $Z \circ Z^{-1} = Z^{-1} \circ Z = N$.
+Jeder Zug $Z$ überführt eine Würfelkonfiguration in eine Folgekonfiguration. 
+Das passiert durch eine Permutationsfunktion $\sigma$ und eine Übergangsfunktion $\gamma$ für den Vektor $x$. 
+Betrachtet man den physischen Würfel, so wird auffallen, dass man die einzelnen Ebenen auch gegen den Uhrzeigersinn drehen kann und somit eine Ebenendrehung invertiert. Eine Ebenendrehung um $90^\circ$ gegen den Uhrzeigersinn entspricht einer Ebenendrehung um $270^\circ$ im Uhrzeigersinn. Die Funktionen $\sigma$ und $\gamma$ sind dabei gleich.
+Die Inversen der einzelnen Ebenendrehungen werden somit folgendermaßen definiert:
+\begin{align*}
+\forall Z \in \{U, D, F, B, L, R\} \ . \ Z^{-1} = ZZZ
+\end{align*}
+Soll ein Zug invertiert werden, der aus mehreren Grundzügen besteht, so muss das hintere Element zuerst invertiert werden. Bei einem Zug $Z$ der Länge $n$ wird zuerst der $n$-te Grundzug $Z_n$ invertiert, indem er in $Z_nZ_nZ_n$ überführt wird. Daraufhin werden die weiteren Elemente des kompletten Zuges von hinten invertiert.
+
 \end{description}
-Somit ist $(\Gtwo, \circ)$ eine Gruppe. 
+Somit ist $(\Gtwo, \circ)$ eine Gruppe, da die vier Gruppenaxiome erfüllt sind. 
 
 
-$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Das ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann händisch an einem Würfel ausprobiert werden.
+$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Dieses Beispiel ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann händisch an einem Würfel ausprobiert werden.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{RF.png}
