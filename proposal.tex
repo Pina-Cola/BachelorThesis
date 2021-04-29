@@ -1430,6 +1430,8 @@ Dafür wird die Gruppe des \Ttwo Würfels auf die vier Gruppenaxiome (Abgeschlos
 
 \subsection{Gleichheit von Zügen} 
 
+\label{Abschnitt_GleichheitVonZügen}
+
 Für den weiteren Verlauf der Arbeit wird $A_Z$ als die unendliche Menge aller Züge des Würfels definiert. Zwei Züge $Z_1$ und $Z_2 \in A_Z$ gelten als gleich, wenn sie mit gleicher Ausgangskonfiguration des Würfels die gleiche Zielkonfiguration hervorrufen. 
 Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
 Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
@@ -1789,7 +1791,8 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 
 \subsection{Äquivalenzklassen} 
 
-Äquivalenzklassen und Faktormengen wurden in Abschnitt \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Relation $\sim$ auf der Menge aller Züge $A_Z$ definiert. Die Faktormenge $A_Z / \sim$ wird $\Gtwo$ genannt. Sie enthält die Äquivalenzklassen aller Würfelzüge, ohne dabei gleiche Züge oder Würfelrotationen doppelt zu enthalten. Die Elemente von $\Gtwo$ sind definiert als $\{[Z] \mid Z \in A_Z \}$. Im weiteren Verlauf dieser Arbeit werden die eckigen Klammern der Äquivalenzklassen in $\Gtwo$ aber weggelassen, um die Notation zu vereinfachen. $\Gtwo$ enthält alle möglichen Züge des Würfels, ohne dabei Züge doppelt zu enthalten. Alle äquivalenten Elemente einer Äquivalenzklasse $[Z]$ werden als Repräsentanten dieser Äquivalenzklasse bezeichnet. So ist der Zug $RRRRR$ beispielsweise ein Repräsentant der Äquivalenzklasse $[R]$, da die Züge $R$ und $RRRRR$ äquivalent sind.
+Äquivalenzklassen und Faktormengen wurden in Abschnitt \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Relation $\sim$ auf der Menge aller Züge $A_Z$ definiert. Die Faktormenge $A_Z / \sim$ wird $\Gtwo$ genannt. Sie enthält die Äquivalenzklassen aller Würfelzüge, ohne dabei gleiche Züge oder Würfelrotationen doppelt zu enthalten. Die Elemente von $\Gtwo$ sind definiert als $\{[Z] \mid Z \in A_Z \}$.  $\Gtwo$ enthält somit alle möglichen Züge des Würfels, ohne dabei gleiche Züge doppelt zu enthalten. Die Gleichheit zweier Züge wurde in Abschnitt \ref{Abschnitt_GleichheitVonZügen} definiert. Alle äquivalenten Elemente einer Äquivalenzklasse $[Z]$ werden als Repräsentanten dieser Äquivalenzklasse bezeichnet. So ist der Zug $RRRRR$ beispielsweise ein Repräsentant der Äquivalenzklasse $[R]$, da die Züge $R$ und $RRRRR$ äquivalent sind.
+Im weiteren Verlauf dieser Arbeit werden die eckigen Klammern der Äquivalenzklassen in $\Gtwo$ aber weggelassen, um die Notation zu vereinfachen.
 
 Zwei Äquivalenzklassen bzw. deren Repräsentanten können durch den Operator $\circ$ verknüpft werden. Die Züge werden dann nacheinander (von links) ausgeführt.
 
@@ -3761,7 +3764,7 @@ Abbildung \ref{AbbildungWürfelRotationAlleSeiten} zeigt alle Rotationsmöglichk
 
 In der folgenden Verknüpfungstafel sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen. 
 
-\vspace*{1.5em}
+\vspace*{1em}
 
 \begin{adjustbox}{width=1\textwidth,center}
 
