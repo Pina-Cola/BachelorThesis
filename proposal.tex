@@ -1791,10 +1791,13 @@ Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfigura
 
 \subsection{Äquivalenzklassen der Züge} 
 
-Äquivalenzklassen und Faktormengen wurden in Abschnitt \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Relation $\sim$ auf der Menge aller Züge $A_Z$ definiert. Die Faktormenge $A_Z / \sim$ wird $\Gtwo$ genannt. Sie enthält die Äquivalenzklassen aller Würfelzüge, ohne dabei gleiche Züge oder Würfelrotationen doppelt zu enthalten. Jede Äquivalenzklasse ist definiert als:
+Äquivalenzklassen und Faktormengen wurden in Abschnitt \ref{Abschnitt_FaktormengenUndÄquivalenzklasse} eingeführt. In diesem Abschnitt werden die Äquivalenzklassen der Relation $\sim$ auf der Menge aller Züge $A_Z$ definiert und eine Faktormenge gebildet, die diese Äquivalenzklassen enthält. Jede Äquivalenzklasse ist definiert als:
 \begin{align*}
 [Z] := \{ Y \in A_Z \mid Y \sim Z \} \subseteq A_Z
 \end{align*}
+Somit enthält jede Äquivalenzklasse $[Z]$ alle Züge der Menge $A_Z$, die mit der Relation $\sim$ äquivalent zu $Z$ sind. Dabei ist $[Z]$ dann eine Teilmenge von $A_Z$.
+
+Die Faktormenge $A_Z / \sim$ wird im weiteren Verlauf der Arbeit $\Gtwo$ genannt. Sie enthält die Äquivalenzklassen aller Würfelzüge, ohne dabei gleiche Züge oder Würfelrotationen doppelt zu enthalten.
 Die Elemente von $\Gtwo$ sind alle Äquivalenzklassen bezüglich der Relation $\sim$. Es gilt demnach:
 \begin{align*}
 \Gtwo := \{[Z] \mid Z \in A_Z \}
@@ -1802,7 +1805,7 @@ Die Elemente von $\Gtwo$ sind alle Äquivalenzklassen bezüglich der Relation $\
 $\Gtwo$ enthält somit die Äquivalenzklassen aller möglichen Züge des Würfels, ohne dabei gleiche Züge doppelt zu enthalten. Die Gleichheit zweier Züge wurde in Abschnitt \ref{Abschnitt_GleichheitVonZügen} beschrieben. Alle äquivalenten Elemente einer Äquivalenzklasse $[Z]$ werden als Repräsentanten dieser Äquivalenzklasse bezeichnet. So ist der Zug $RRRRR$ beispielsweise ein Repräsentant der Äquivalenzklasse $[R]$, da die Züge $R$ und $RRRRR$ mit der Relation $\sim$ äquivalent sind.
 Im weiteren Verlauf dieser Arbeit werden die eckigen Klammern der Äquivalenzklassen in $\Gtwo$ weggelassen, um die Notation zu vereinfachen.
 
-Zwei Äquivalenzklassen bzw. deren Repräsentanten können durch den Operator $\circ$ verknüpft werden. Die Züge werden dann nacheinander (von links) ausgeführt. Das Ausführen der Züge erfolgt bei Äquivalenzklassen von Zügen äquivalent zu dem in Abschnitt \ref{Abschnitt_ZuegeAusfuehren} definierten Ausführen von Zügen.
+Zwei Äquivalenzklassen bzw. deren Repräsentanten können durch den Operator $\circ$ verknüpft werden. Die Züge werden dann nacheinander (von links) ausgeführt. Das Ausführen der Züge erfolgt bei den Äquivalenzklassen der Züge äquivalent zu dem in Abschnitt \ref{Abschnitt_ZuegeAusfuehren} definierten Ausführen von Zügen.
 
 %
 %
