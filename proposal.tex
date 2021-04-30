@@ -2067,7 +2067,9 @@ Die Ordnung einer Permutation ist im Folgenden mathematisch definiert. Dabei ist
 \begin{align*}
 \forall \ Z \in \Gtwo \ \exists \ n \in \mathbb{N} \ . \ (\sigma, x) \cdot Z^n = (\sigma, x')
 \end{align*}
-Demnach gibt es für jeden beliebigen Zug $Z$ eine natürliche Zahl $n$, die die Ordnung der Permutation des Zuges ist. Wird dieser Zug $n$-mal ausgeführt, befindet sich die Permutationsfunktion $\sigma$ wieder im Ausgangszustand. Der Vektor $x$ wird dabei nicht berücksichtigt.
+Demnach gibt es für jeden beliebigen Zug $Z$ eine natürliche Zahl $n$, die die Ordnung der Permutation des Zuges ist. Wird dieser Zug $Z$ $n$-mal ausgeführt, befindet sich die Permutationsfunktion $\sigma$ wieder im Ausgangszustand. Der Vektor $x$ wird dabei nicht berücksichtigt.
+
+Im folgenden Abschnitt wird beschrieben, wie sich die Ordnung einer Permutation anhand der Zykelstruktur bestimmen lässt.
 
 
  
@@ -2096,11 +2098,12 @@ Demnach gibt es für jeden beliebigen Zug $Z$ eine natürliche Zahl $n$, die die
 
 \subsection{Zykelstruktur}
 
+\label{Abschnitt_Zykelstruktur}
 
-Anhand der Zykelstruktur lässt sich die Ordnung der jeweiligen Permutation bestimmen. Die Ordnung der Permutationen beschreibt die Anzahl der Wiederholungen, die für einen Zug notwendig sind, damit die Steine die gleiche Anordnung wie zu Beginn des Zuges haben. Dabei geht es um die Steinpositionen und nicht um die Steinausrichtungen.
+Die Ordnung einer Permutation lässt sich anhand ihrer Zykelstruktur bestimmen. In Abschnitt \ref{Abschnitt_OrdnungPermutationen} wurde die Ordnung einer Permutation definiert und beschrieben. Dabei handelt es sich um die Anzahl der Wiederholungen, die für einen Zug notwendig sind, damit die Steine die gleiche Anordnung wie zu Beginn des Zuges haben. Dabei geht es um die Steinpositionen und nicht um die Steinausrichtungen.
 
-Der Zug $U$ als $\sigma_U =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) $ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) besteht aus einem vierelementigen Zykel.
-Wenn der Zug $U$ viermal ausgeführt wird, befindet sich der Würfel wieder in seiner vorherigen Position: 
+Beispielsweise besteht die Permutationsfunktion $\sigma_U =\ ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} \ ) $  des Zuges $U$ (eine Drehung der oberen Ebene um $90^\circ$ im Uhrzeigersinn) aus genau einem vierelementigen Zykel.
+Wird der Zug $U$ viermal ausgeführt, befinden sich die Würfelsteine wieder in ihrer vorherigen Position. In der folgenden Tabelle ist das vierfache Ausführen der Permutation $\sigma_U$ abgebildet.
 \begin{center}
 \begin{tabular}{ccccc}
 \toprule
@@ -2118,17 +2121,17 @@ Wenn der Zug $U$ viermal ausgeführt wird, befindet sich der Würfel wieder in s
 \end{center}
 
 Die vierte Zeile der Tabelle hat dieselbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). 
-Somit hat die Permutation der beschriebenen Ebenenrotation $U$ die Ordnung 4. Das gilt auch für jede andere Ebenenrotation ($D, F, B, L, R$).
-Es gilt folglich für jede Permutation eines Zuges $Z$, der aus lediglich einem $n$-elementigen Zykel besteht (und Würfelkofiguration $C=(\sigma, x)$): 
+Somit hat die Permutation der beschriebenen Ebenenrotation $U$ die Ordnung 4, da $\sigma_U$ nach vier Wiederholungen wieder zur Ausgangspermutation führt. Das gilt auch für die anderen einelementigen Züge ($D, F, B, L, R$).
+Bei jeder Permutation eines Zuges $Z$, der aus lediglich einem $n$-elementigen Zykel besteht, ist die Ordnung der Permutation $n$. Dabei ist $n$ aus den natürlichen Zahlen $\mathbb{N}$ und $(\sigma, x)$ eine beliebige Würfelkonfiguration:
 \begin{align*}
-\forall \ Z \in \Gtwo \ \textit{mit} \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n), n \in \mathbb{N} \ . \  (\sigma, x) \cdot Z^n= (\sigma, x')
+\forall \ Z \in \Gtwo \ \textit{mit} \ \sigma_Z=(i_1 \ i_2 \ ... \ i_n) \ . \  (\sigma, x) \cdot Z^n= (\sigma, x')
 \end{align*}
-Wenn $Z$ mehrfach ausgeführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand der Permutationen erreicht. \cite{TD} 
+Wenn der Zug $Z$ mehrfach ausgeführt wird, wird nach jeder $n$-ten Wiederholung der Ausgangszustand der Permutationen erreicht. \cite{TD} 
 Es gilt folglich auch:
 \begin{align*}
-\forall \ Z \in \Gtwo \ \textit{mit} \ \ Z=(i_1 \ i_2 \ ... \ i_n), \ n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }
+\forall \ Z \in \Gtwo \ \textit{mit} \ Z=(i_1 \ i_2 \ ... \ i_n), \ n,k \in \mathbb{N} \ . \  {(\sigma, x) \cdot Z^{k*n}=(\sigma, x') }
 \end{align*}
-Auch bei komplexeren Permutationen von Zügen kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache (kurz kgV) aller Zykelgrößen bestimmt werden. \cite{TD}
+Auch bei komplexeren Permutationen von Zügen, die aus mehr als einem Zykel bestehen, kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das kleinste gemeinsame Vielfache (kurz kgV) aller Zykelgrößen bestimmt werden. \cite{TD}
 
  
 Der besseren Übersichtlichkeit halber sind die Zykel aller Züge in Abbildung \ref{Abbildung_GraphAllerPermutationen} grafisch dargestellt.
