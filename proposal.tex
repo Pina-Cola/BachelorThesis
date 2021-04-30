@@ -927,6 +927,22 @@ Seien $\pi$ und $\tau$ zwei $n$-stellige Permutationen mit $n \in \mathbb{N}$. D
 
 \begin{bsp}[Komposition von Permutationen]
 Seien $\pi$ und $\tau$ Permutationen mit $\pi = (1 \ 2) \ (3 \ 5) \ (4)$ und $\tau = (1 \ 4\ 3) \ (2 \ 5)$. Die Komposition der Zykel $\tau \diamond \pi$ ist dann $(1 \ 5) \ (2 \ 4 \ 3)$. 
+Der Zykel $(1 \ 5)$ ergibt sich folgendermaßen: In der Permutation $\pi$ geht die 1 auf die 2, in der Permutation $\tau$ geht die 2 dann auf die 5. Daraus ergibt sich dann $(1 \ 5 ...)$. In der Permutation $\pi$ geht die 5 auf die 3 und die 3 in $\tau$ auf die 1. Somit ergibt sich dann der Zykel $(1 \ 5)$ für die Komposition der beiden Permutationen. Die Komposition von $\pi$ und $\tau$ wird im Folgenden durch Pfeile verdeutlicht:
+
+\begin{align*}
+\pi \begin{cases}
+\ \  1 \ \ \ \  2 \ \ \ \  3 \ \ \ \  4 \ \ \ \  5 \\
+\ \  \textcolor{gray}{\downarrow \ \ \ \ \downarrow \ \ \ \  \downarrow \ \ \ \ \downarrow \ \ \ \  \downarrow} \\
+\ \  \textcolor{gray}{2 \ \ \ \  1 \ \ \ \  5 \ \ \ \  4 \ \ \ \  3}
+\end{cases}
+\\
+\tau \begin{cases}
+\ \  \textcolor{gray}{ 2 \ \ \ \  1 \ \ \ \  5 \ \ \ \  4 \ \ \ \  3} \\
+\ \ \textcolor{gray}{\downarrow \ \ \ \ \downarrow \ \ \ \  \downarrow \ \ \ \ \downarrow \ \ \ \  \downarrow} \\
+\ \ 5 \ \ \ \  4 \ \ \ \  2 \ \ \ \  3 \ \ \ \  1
+\end{cases}
+\end{align*}
+ 
 \end{bsp}
 %
 %
