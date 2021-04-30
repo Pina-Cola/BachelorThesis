@@ -2025,18 +2025,23 @@ In den Abschnitten \ref{Abschnitt_GleichheitVonZügen} und \ref{Abschnitt_MaxAnz
 \begin{align*}
 \forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.3em} \mod 4}
 \end{align*}
-Das bedeutet, dass alle Steine des Würfels wieder in ihre vorherige Position gelangen, wenn eine einelementige Ebenen oder Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werden die Grundzüge $U, D, F, B, L, R$ und die Rotationen $X_r, X_l, Y_r, Y_l, Z_L, Z_r$ als Permutationen der Ordnung 4 bezeichnet. 
+Das bedeutet, dass alle Steine des Würfels wieder in ihre vorherige Position gelangen, wenn eine einelementige Ebenen oder Würfelrotation viermal hintereinander ausgeführt wird. Deshalb werden die Grundzüge $U, D, F, B, L, R$ und die Rotationen $X_r, X_l, Y_r, Y_l, Z_L, Z_r$ als Permutationen der Ordnung 4 bezeichnet. 
 
 
-
-Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
-Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4) oder ${(RRFF)^3 = N}$ (Ordnung 3).
+Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Dazu sind je nach Zug verschieden viele Wiederholungen nötig. 
 
 
-Die genannten Beispiele können an einem \Ttwo Würfel händisch ausprobiert werden.
-Dabei muss beachtet werden, dass sich die Ordnung der Permutationen von der Ordnung der Züge unterscheidet. Die Ordnung der Permutationen ist die Anzahl der Durchführungen, die benötigt werden, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Wenn die ganze Würfelkonfiguration beachtet wird, handelt es sich um die Ordnung der Züge.
+Es ist aber zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permutationen behandelt. Überträgt man dies auf die Würfelkonfiguration, so wird nur die Steinposition $\sigma$ beachtet. Die Ordnung der Permutationen ist daher die Anzahl der Durchführungen, die benötigt werden, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Die Ordnung im Bezug auf die komplette Würfelkonfiguration wird in dem Abschnitt \ref{Abschnitt_OrdnungZüge} als \textit{Ordnung der Züge} beschrieben.
 
-Der Zug $LF$ beispielsweise hat die Ordnung $15$, die Permutation der Steine hat aber die Ordnung $5$. Nach $5$ Wiederholungen von $LF$ befinden sich alle Steine wieder an ihrer Ausgangsposition (links in Abbildung \ref{Abbildung_LF_5_15} von der Startkonfiguration ausgehend). Nach $15$ Wiederholungen befindet sich der Würfel wieder in der gleichen Konfiguration, wie vor dem Zug (rechts in Abbildung \ref{Abbildung_LF_5_15}).
+
+%Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
+%Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4) oder ${(RRFF)^3 = N}$ (Ordnung 3).
+
+
+%Die genannten Beispiele können an einem \Ttwo Würfel händisch ausprobiert werden.
+%Dabei muss beachtet werden, dass sich die Ordnung der Permutationen von der Ordnung der Züge unterscheidet. 
+
+Der Zug $LF$ beispielsweise hat die Ordnung $15$, die Permutation der Steine hat aber die Ordnung $5$. Nach $5$ Wiederholungen von $LF$ befinden sich alle Steine wieder an ihrer Ausgangsposition (links in Abbildung \ref{Abbildung_LF_5_15}, von der Startkonfiguration ausgehend). Nach $15$ Wiederholungen befindet sich der Würfel wieder in der gleichen Konfiguration, wie vor dem Zug (rechts in Abbildung \ref{Abbildung_LF_5_15}).
 
 \begin{figure}[H]
 \centering
@@ -2046,8 +2051,23 @@ Der Zug $LF$ beispielsweise hat die Ordnung $15$, die Permutation der Steine hat
 \label{Abbildung_LF_5_15}
 \end{figure}
 
-Man kann links in Abbildung \ref{Abbildung_LF_5_15} sehen, dass die Würfelsteine alle an der richtigen Position sind, aber nicht richtig ausgerichtet. Die Würfelkonfiguration ist nach dem Anwenden von $(LF)^5$ auf den Startzustand $(1, (1,0,1,1,1,0,1,1))$. Der Würfel ist nach fünf Wiederholungen von $LF$ nicht gelöst, da die Ausrichtung der Steine verändert ist -- die Ordnung der Permutation von $LF$ ist 5. Die Ordnung des Zuges von $LF$ ist allerdings 15, da der Würfel dann wieder in seiner Ausgangskonfiguration ist. Die Würfelkonfiguration nach dem Ausführen von $(LF)^{15}$ auf dem Startzustand ist $(1,0)$.
-
+Links in Abbildung \ref{Abbildung_LF_5_15} ist zu sehen, dass alle Würfelsteine an der jeweiligen Ausgangsposition sind, aber nicht richtig ausgerichtet. Wird auf die Startkonfiguration $(1,0)$ der Zug $(LF)^5$ angewandt, gelangt man zu dieser Folgekonfiguration:
+\begin{align*}
+(1,0) \cdot (LF)^5 = (1, (1,0,1,1,1,0,1,1))
+\end{align*}
+Der Würfel ist nach fünf Wiederholungen von $LF$ nicht gelöst, da die Ausrichtung der Steine verändert ist -- der Vektor $x$ ist nicht 0. Die Ordnung der Permutation von $LF$ ist 5, da die Funktion $\sigma$ nach fünffachem Ausführen 1 ist. Die Ordnung des Zuges von $LF$ ist allerdings 15, da sich der Würfel erst dann wieder in seiner Ausgangskonfiguration befindet. Somit ist die Würfelkonfiguration nach dem Ausführen von $(LF)^{15}$ auf dem Startzustand wieder $(1,0)$:
+\begin{align*}
+(1,0) \cdot (LF)^{15} = (1,0)
+\end{align*}
+Das gilt dann auch für jede andere Startkonfiguration nach Ausführen des Zuges $(LF)^{15}$:
+\begin{align*}
+(\sigma, x) \cdot (LF)^{15} = (\sigma, x)
+\end{align*}
+Die Ordnung einer Permutation ist im Folgenden mathematisch definiert. Dabei ist $(\sigma, x)$ eine beliebige Würfelkonfiguration.
+\begin{align*}
+\forall \ Z \in \Gtwo \ \exists \ n \in \mathbb{N} \ . \ (\sigma, x) \cdot Z^n = (\sigma, x')
+\end{align*}
+Demnach gibt es für jeden beliebigen Zug $Z$ eine natürliche Zahl $n$, die die Ordnung der Permutation des Zuges ist. Wird dieser Zug $n$-mal ausgeführt, befindet sich die Permutationsfunktion $\sigma$ wieder im Ausgangszustand. Der Vektor $x$ wird dabei nicht berücksichtigt.
 
 
  
