@@ -920,6 +920,14 @@ Sei die Permutation $\pi = (1 \ 2 \ 3)$. Die Ordnung von $\pi$ ist 3, da $\pi$ a
 Sei die Permutation $\pi = (1 \ 5 \ 2)\ (3 \ 4)$. Das kleinste gemeinsame Vielfache von $3$ und $2$ ist 6. Somit hat $\pi$ die Ordnung 6.
 
 \end{bsp}
+
+\begin{definition}[Komposition von Permutationen]
+Seien $\pi$ und $\tau$ zwei $n$-stellige Permutationen mit $n \in \mathbb{N}$. Die Hintereinanderausführung dieser Permutationen wird als $\tau \diamond \pi$ geschrieben. Dabei wird zuerst $\pi$ ausgeführt und das Ergebnis auf $\tau$ angewendet.
+\end{definition}
+
+\begin{bsp}[Komposition von Permutationen]
+Seien $\pi$ und $\tau$ Permutationen mit $\pi = (1 \ 2) \ (3 \ 5) \ (4)$ und $\tau = (1 \ 4\ 3) \ (2 \ 5)$. Die Komposition der Zykel $\tau \diamond \pi$ ist dann $(1 \ 5) \ (2 \ 4 \ 3)$. 
+\end{bsp}
 %
 %
 %
@@ -1949,15 +1957,26 @@ $(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation d
 %
 \subsection{Züge als Gruppenoperation}
 
-Im Folgenden wird eine Gruppenoperation beschrieben, die eine Würfelkonfiguration durch das Ausführen eines Zuges auf eine neue Würfelkonfiguration abbildet. Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. Es handelt sich um eine Rechtsoperation, die im Abschnitt \ref{Abschnitt_Gruppenoperation} definiert wurde.
+Im Folgenden wird eine Gruppenoperation beschrieben, die eine Würfelkonfiguration durch das Ausführen eines Zuges auf eine neue Würfelkonfiguration abbildet. Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. Es handelt sich um eine Rechtsoperation, da die Elemente der Gruppe von rechts auf den Elementen der Menge operieren. Die Rechtsoperation wurde in Abschnitt \ref{Abschnitt_Gruppenoperation} definiert.
 
-Der Punktoperator ist definiert als $\cdot: M_C \times \Gtwo \rightarrow M_C$. Wenn der Zauberwürfel in einer Konfiguration $C=(\sigma, x)$ aus der Menge der Konfigurationen $M_C$ ist, wird er durch das Ausführen eines Zuges $Z \in \Gtwo$ in eine neue Konfiguration gebracht. Diese Konfiguration wird als $(C \cdot Z) \in M_C$ geschrieben.
+Bei $\Gtwo$ handelt es sich um die Trägermenge und $M_C$ ist die Menge aller Konfigurationen. Der Punktoperator ist im Folgenden definiert:
+\begin{align*}
+\cdot: M_C \times \Gtwo \rightarrow M_C
+\end{align*} 
+Wird eine Konfiguration $C=(\sigma, x)$ aus der Menge der Konfigurationen $M_C$ durch das Ausführen eines Zuges $Z \in \Gtwo$ in eine neue Konfiguration überführt, so wird diese Folgekonfiguration als $(C \cdot Z) \in M_C$ geschrieben.
 Die folgenden beiden Eigenschaften müssen bei der Rechtsoperation gelten:
 
 \begin{description}
 \item [$\boldsymbol{C \cdot N = C}$ für alle $\boldsymbol{C \in M_C}$ und das neutrale Element $\boldsymbol{N \in \Gtwo}$] 
 \ \\
-Wenn der leere Zug $N$ ausgeführt wird, wird die Konfiguration des Würfels nicht verändert. Daher gilt $C \cdot N = C$. 
+Wenn der leere Zug $N$ ausgeführt wird, wird die Konfiguration des Würfels nicht verändert. Der leere Zug überführt die Konfiguration mit $\sigma_N=1$ und $\gamma_N(x)=x$. Sowohl die Permutationsfunktion $\sigma$ als auch der Vektor $x$ bleiben bei Ausführung des leeren Zuges $N$ unverändert. Daher gilt:
+\begin{align*}
+& C \cdot N \\
+\Leftrightarrow \ \  & (\sigma, x) \cdot  N \\
+% = \ \ & (\sigma_N \diamond \sigma, \gamma_N(x)) \\
+= \ \ &  (\sigma, x) \\
+= \ \ & C
+\end{align*}
 
 \item [$\boldsymbol{C \cdot (Z_1 \circ Z_2) = (C \cdot Z_1) \cdot Z_2}$ für alle $\boldsymbol{Z_1, Z_2 \in \Gtwo}$ und $\boldsymbol{C \in M_C}$]
 \ \\
