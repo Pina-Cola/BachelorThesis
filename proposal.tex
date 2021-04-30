@@ -1458,7 +1458,7 @@ Dafür wird die Gruppe des \Ttwo Würfels auf die vier Gruppenaxiome (Abgeschlos
 
 Für den weiteren Verlauf der Arbeit wird $A_Z$ als die unendliche Menge aller Züge des Würfels definiert. Zwei Züge $Z_1$ und $Z_2 \in A_Z$ gelten als gleich, wenn sie mit gleicher Ausgangskonfiguration des Würfels die gleiche Zielkonfiguration hervorrufen. 
 Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
-Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben.
+Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben. Die Exponentenschreibweise kann für alle Züge angewendet werden, auch wenn sie mehr als eine Ebene rotieren. Der Zug $(LLFF)^2$ beispielsweise entspricht dann $LLFFLLFF$. 
 
 Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird eine Ebene vier mal hintereinander gedreht, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
 \begin{align*}
@@ -1643,9 +1643,9 @@ Es können auch mehrere Rotationen nacheinander ausgeführt werden. Die Funktion
 \label{Abschnitt_MaxAnzahlRotationen}
 
 Die mehrfache Ausführung einer Rotation wird auch mit der Exponentenschreibweise geschrieben. 
-Somit gilt für jede einelementige Rotation $T$: 
+Somit gilt für jede einelementige Rotation $T$ und Konfiguration $C$: 
 \begin{align*}
-\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \} \ . \  TTTT=T^4=N_R 
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R \} \ . \  C \cdot TTTT= C \cdot T^4=C \cdot N_R = C 
 \end{align*} 
 Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würfels. Es gilt somit für jede beliebige Rotation $T$:
 \begin{align*}
@@ -1654,7 +1654,7 @@ T^{\hspace*{0.1em}0}=N_R
 Jede einelementige Rotation ist durch die Funktionen $\delta$ und $\beta$ definiert. Jede dieser Funktionen $\delta$ besteht in der Zykelschreibweise aus zwei 4-Zykeln. Diese Zykel befinden sich nach vier Ausführungen wieder in ihrem Ausgangszustand. Darauf wird in Abschnitt \ref{Abschnitt_OrdnungPermutationen} weiter eingegangen. Außerdem wird bei jeder Rotation der Vektor $x$ durch eine Funktion $\beta$ verändert. Der Vektor bleibt nach vierfachem Ausführen von $\beta$ unverändert.
 Da alle vierfachen der einelementigen Rotationen (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R$) keine Veränderung hervorrufen, kann der Exponent der Rotationen modulo 4 gerechnet werden: 
 \begin{align*}
-\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ T^n=T^{n \hspace*{-0.3em} \mod 4}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.3em} \mod 4}
 \end{align*}
 
 Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung nähern kann. Es gibt für die Roationen also eine maximale Tiefe, jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
@@ -2017,8 +2017,17 @@ Es wurde demnach mit Konfiguration $C$ gestartet und der Zug $Z_1 \circ Z_2$ wur
 \subsection{Ordnung der Permutationen}
  \label{Abschnitt_OrdnungPermutationen}
 
-Wie bereits beschrieben, gilt $\forall Z \in \{ U, D, F, B, L, R \}. n \in \mathbb{N} \ . \ C \cdot Z^n=C \cdot Z^{n \mod 4}$, da alle Steine des Würfels wieder in ihre vorherige Position gelangen, wenn eine Ebenen- oder eine Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werden die Züge $U, D, F, B, L, R$ als Permutationen der Ordnung 4 bezeichnet. 
-Die Exponentenschreibweise kann für alle Züge aus $\Gtwo$ angewendet werden, auch wenn sie mehr als eine Ebene rotieren. Das wird beispielhaft bei dem Zug $LLFF$ gezeigt: $(LLFF)^2$ entspricht dann $LLFFLLFF$ und $(LLFF)^3$ ist $LLFFLLFFLLFF$. 
+In den Abschnitten \ref{Abschnitt_GleichheitVonZügen} und \ref{Abschnitt_MaxAnzahlRotationen} wurde folgendes gezeigt:
+\begin{align*}
+\forall \ Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ C \cdot Z^n=C \cdot Z^{n \hspace*{-0.3em} \mod 4} 
+\end{align*}
+\vspace*{-3em}
+\begin{align*}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.3em} \mod 4}
+\end{align*}
+Das bedeutet, dass alle Steine des Würfels wieder in ihre vorherige Position gelangen, wenn eine einelementige Ebenen oder Würfelrotation vier mal hintereinander ausgeführt wird. Deshalb werden die Grundzüge $U, D, F, B, L, R$ und die Rotationen $X_r, X_l, Y_r, Y_l, Z_L, Z_r$ als Permutationen der Ordnung 4 bezeichnet. 
+
+
 
 Nicht nur die Züge $U, D, F, B, L, R$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Es sind aber je nach Zug verschieden viele Wiederholungen nötig. Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
 Weitere Beispielzüge mit Angabe der Ordnung sind: ${R^4= N}$ (Ordnung 4) oder ${(RRFF)^3 = N}$ (Ordnung 3).
