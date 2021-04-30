@@ -2219,6 +2219,8 @@ Aus diesen Erkenntnissen ergibt sich folgender Algorithmus zur Bestimmung der Or
 
 Bei diesem Algorithmus wird ein Zug $Z$ als Eingabeparameter übergeben, um die Ordnung der Permutationsfunktion des Zuges zu berechnen. In Zeile 1 wird die Permutationsfunktion des Zuges der Variablen \textit{perm} zugewiesen und in Zeile 2 wird eine leere Liste initialisiert, um darin die Längen der einzelnen Zykel zu speichern. Danach wird in Zeile 3 die Anzahl der Zykel ausgelesen und in der Variablen $z$ gespeichert. Daraufhin wird eine \textit{while}-Schleife $z$-mal ausgeführt. In jedem Durchlauf wird die Länge von einem der $z$ Zykel ausgelesen und in die Liste hinzugefügt. Außerdem wird $z$ dekrementiert. Nachdem alle Zykellängen in \textit{list} gespeichert sind, wird in Zeile 8 das kleinste gemeinsame Vielfache der Listenelemente berechnet und der Variablen \textit{kgVList} zugewiesen. Dabei handelt es sich um die Ordnung der Permutation und deshalb wird \textit{kgVList} in Zeile 9 zurückgegeben.
 
+Die Ordnung der Permutation wird zur Berechnung der Ordnung von Zügen benötigt. Diese wird im folgenden Abschnitt beschrieben und es wird ein Algorithmus zur Berechnung eingeführt.
+
 %
 %
 %
