@@ -1470,7 +1470,7 @@ Es gilt folglich:
 \begin{align*}
 \forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ C \cdot Z^n= C \cdot Z^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
-Das gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert ist. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird genauer als \textit{Ordnung von Zügen} in Abschnitt \ref{Abschnitt_OrdnungZüge} beschrieben und in Abschnitt \ref{Abschnitt_UntergruppenBeispiele} anhand einer Untergruppe erklärt.
+Das gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert ist. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird in Anhang \ref{Anhang_Ausrichtungsfunktionen} für alle Grundzüge des Würfels gezeigt.
 
 
 Für alle $n$, die Vielfache von vier sind gilt dann:
@@ -2477,25 +2477,24 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 
 \subsection{Erzeuger}
 
-Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden bereits in Abschnitt \ref{Abschnitt_Erzeuger} erklärt.
+Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden in Abschnitt \ref{Abschnitt_Erzeuger} definiert und erklärt.
 
 
-Ein Beispiel für einen Erzeuger einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ ist der einzelne Zug $\{ F \}$, der diese Untergruppe erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ das gleiche wie das neutrale Element $N$ und der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
+Ein Beispiel für einen Erzeuger einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ ist der einzelne Zug $\{ F \}$, der diese Untergruppe erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge $G_F$ der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ ein Repräsentant der Äquivalenzklasse von $N$ -- der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
 
 
-Ein weiteres Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei kann die Ebene ausschließlich halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Trägermenge enthält daher die beiden Züge $FF$ und $FFFF$.
+Ein weiteres Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei kann die obere Ebene ausschließlich halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Trägermenge enthält daher die Äquivalenzklassen der beiden Züge $FF$ und $FFFF$.
 
 
-Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$.
+Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$. Eine minimale Gruppe des \Ttwo Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} beschrieben und durch $\{U, R, F\}$ erzeugt.
 
 Die Untergruppen, die von genau einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $ F $ erzeugt wird, ist eine solche zyklische Untergruppe.
-$(G_F, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass $G_F = \{N, F^1, F^2, F^3, F^4, ...\}$ ist. Es gibt auch unendliche zyklische Gruppen, diese hier sind aber endlich, da $N = FFFF$. Die Züge werden (wie bereits in Kapitel \ref{Kapitel_WürfelAlsGruppe} beschrieben) modulo $4$ gerechnet.
-Das gilt für jeden Erzeuger, der aus einer einzelnen Ebenendrehung besteht.
+$(G_F, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass die Trägermenge $G_F$ die Äquivalenzklassen der folgenden Elemente enthält: $\{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aufgrund der Äquivalenzklassen aber endlich. Die Gleichheit der einelementigen Züge wurde bereits in Abschnitt \ref{Abschnitt_GleichheitVonZügen} beschrieben.
 
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
 Die Ordnung des Zuges $FR$ ist 15 -- wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. 
-Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ 105 \cite{TD}.
+Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente, da mit dem Zug 15 Würfelkonfigurationen erreichbar sind. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ 105 \cite{TD}.
 %
 %
 %
