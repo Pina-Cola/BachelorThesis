@@ -159,11 +159,22 @@
 
 %\setstretch{0.6}
 
-\begin{spacing}{0.6}
+\newgeometry{
+  top=2.5cm % Top margin
+}
+
+\begin{spacing}{0.45}
+
+
 
 \tableofcontents
 
 \end{spacing}
+
+\newgeometry{
+  top=3cm % Top margin
+}
+
 
 %\setstretch{1.5}
 
@@ -3917,7 +3928,6 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 \label{Anhang_Ausrichtungsfunktionen}
 
 Im Folgenden wird gezeigt, dass der Vektor $x$ nach dem vierfachen Ausführen einer der Grundzüge wieder in der Ausgangskonfiguration ist. 
-
 \begin{align*}
 \forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma', x)
 \end{align*}
