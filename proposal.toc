@@ -121,6 +121,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Übergangsfunktionen - Vektor $x$}{85}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Alle Rotationen des Würfels}{87}{appendix.B}%
+\contentsline {section}{\numberline {B}Alle Rotationen des Würfels}{86}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Eidesstattliche Versicherung}{89}{appendix.C}%
+\contentsline {section}{\numberline {C}Eidesstattliche Versicherung}{88}{appendix.C}%

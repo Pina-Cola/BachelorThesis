@@ -3914,42 +3914,70 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 ....
 
 Zu zeigen:
-\begin{align*}
-g(h(g(h(x)))) = x \\
-\\
-h(g(h(g(x)))) = x
-\end{align*}
+
+\begin{minipage}[H]{0.5\textwidth}
+	\begin{align*}
+		g(h(g(h(x)))) = x
+	\end{align*}
+\end{minipage}
+\begin{minipage}[H]{0.5\textwidth}
+      \begin{align*}
+			h(g(h(g(x)))) = x
+	  \end{align*}
+\end{minipage}
+
 mit
 \begin{align*}
 g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 
 \end{align*}
 
-\begin{align*}
- & g(h(x)) \\
-= \ & g((x+1) \hspace*{-0.5em} \mod 3) \\
-= \ & ((x+1) \hspace*{-0.5em} \mod 3) +2 \hspace*{-0.5em} \mod 3  \\
-= \ & (x \hspace*{-0.5em} \mod 3) +1 +2 \hspace*{-0.5em} \mod 3  \\
-= \ & (x \hspace*{-0.5em} \mod 3) +3 \hspace*{-0.5em} \mod 3  \\
-= \ & ((x \hspace*{-0.5em} \mod 3) \hspace*{-0.5em} \mod 3  \\
-= \ & x \hspace*{-0.5em} \mod 3 \\
-= \ & x \\
-\end{align*}
-$x \hspace*{-0.5em} \mod 3 = x$ gilt, da $x \in \{0,1,2\}$.
-Da $g(h(x))=x$ gilt, gilt auch folgendes:
-\begin{align*}
-g(h(g(h(x)))) = g(h(x)) = x 
-\end{align*}
+\begin{minipage}[H]{0.5\textwidth}
+      \begin{align*}
+		 & g(h(x)) \\
+		= \ & g((x+1) \hspace*{-0.5em} \mod 3) \\
+		= \ & ((x+1) \hspace*{-0.5em} \mod 3) +2 \hspace*{-0.5em} \mod 3  \\
+		= \ & (x \hspace*{-0.5em} \mod 3) +1 +2 \hspace*{-0.5em} \mod 3  \\
+		= \ & (x \hspace*{-0.5em} \mod 3) +3 \hspace*{-0.5em} \mod 3  \\
+		= \ & ((x \hspace*{-0.5em} \mod 3) \hspace*{-0.5em} \mod 3  \\
+		= \ & x \hspace*{-0.5em} \mod 3 \\
+		= \ & x \\
+	\end{align*}
+\end{minipage}
+\begin{minipage}[H]{0.5\textwidth}
+      \begin{align*}
+		 & h(g(x)) \\
+		= \ & h((x+2) \hspace*{-0.5em} \mod 3) \\
+		= \ & ((x+2) \hspace*{-0.5em} \mod 3) +1 \hspace*{-0.5em} \mod 3  \\
+		= \ & (x \hspace*{-0.5em} \mod 3) +2 +1 \hspace*{-0.5em} \mod 3  \\
+		= \ & (x \hspace*{-0.5em} \mod 3) +3 \hspace*{-0.5em} \mod 3  \\
+		= \ & ((x \hspace*{-0.5em} \mod 3) \hspace*{-0.5em} \mod 3  \\
+		= \ & x \hspace*{-0.5em} \mod 3 \\
+		= \ & x \\
+	\end{align*}
+\end{minipage}
 
-\begin{align*}
- & h(g(x)) \\
-= \ & h((x+2) \hspace*{-0.5em} \mod 3) \\
-= \ & ((x+2) \hspace*{-0.5em} \mod 3) +1 \hspace*{-0.5em} \mod 3  \\
-= \ & (x \hspace*{-0.5em} \mod 3) +2 +1 \hspace*{-0.5em} \mod 3  \\
-= \ & (x \hspace*{-0.5em} \mod 3) +3 \hspace*{-0.5em} \mod 3  \\
-= \ & ((x \hspace*{-0.5em} \mod 3) \hspace*{-0.5em} \mod 3  \\
-= \ & x \hspace*{-0.5em} \mod 3 \\
-= \ & x \\
-\end{align*}
+
+
+
+
+
+Der Ausdruck $x \hspace*{-0.5em} \mod 3$ kann in diesem Fall zu $x$ umgeformt werden, da $x \in \{0,1,2\}$. 
+
+
+Da $g(h(x))=x$ und $h(g(x))=x$ gelten, gilt auch das Folgende:
+
+\begin{minipage}[H]{0.5\textwidth}
+	\begin{align*}
+		g(h(g(h(x)))) = g(h(x)) = x
+	\end{align*}
+\end{minipage}
+\begin{minipage}[H]{0.5\textwidth}
+      \begin{align*}
+			h(g(h(g(x)))) = h(g(x)) = x
+	  \end{align*}
+\end{minipage}
+
+
 
 %
 %
