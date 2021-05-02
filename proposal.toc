@@ -119,6 +119,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Literatur}{84}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Alle Rotationen des Würfels}{85}{appendix.A}%
+\contentsline {section}{\numberline {A}Übergangsfunktionen - Vektor $x$}{85}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Eidesstattliche Versicherung}{87}{appendix.B}%
+\contentsline {section}{\numberline {B}Alle Rotationen des Würfels}{87}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Eidesstattliche Versicherung}{89}{appendix.C}%
