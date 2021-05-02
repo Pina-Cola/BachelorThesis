@@ -3911,9 +3911,57 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 
 \label{Anhang_Ausrichtungsfunktionen}
 
-....
+Im Folgenden wird gezeigt, dass der Vektor $x$ nach dem vierfachen Ausführen einer der Grundzüge wieder in der Ausgangskonfiguration ist. 
 
-Zu zeigen:
+\begin{align*}
+\forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma', x)
+\end{align*}
+
+Die Veränderung des Vektors erfolgt durch die Funktion $\gamma$. Diese Funktion wurde für jeden der Grundzüge in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert.
+
+Zuerst wird die Veränderung des Vektors $x$ anhand des Zuges $R$ beispielhaft betrachtet.
+
+\begin{figure}[H]
+Platzhalter
+\end{figure}
+\begin{figure}[H]
+Platzhalter
+\end{figure}
+\begin{figure}[H]
+Platzhalter
+\end{figure}
+\begin{figure}[H]
+Platzhalter
+\end{figure}
+
+Im Folgenden ist die Veränderung des Vektors $x$ durch den Zug $R^4$ zu sehen:
+\begin{align*}
+& \gamma_R (\gamma_R (\gamma_R (\gamma_R ((x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )))) \\
+= \ & (x_1, \ g(h(g(h(x_2)))), \ x_3, \ h(g(h(g(x_4)))), \ x_5, \ h(g(h(g(x_6)))), \ x_7, \ g(h(g(h(x_8)))) )
+\end{align*}
+
+Die anderen Grundzüge verändern den Vektor bei vierfacher Ausführung folgendermaßen:
+\begin{align*}
+& \gamma_U ( \gamma_U ( \gamma_U ( \gamma_U \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) ) ) ) \\ 
+& =  \left((x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\
+\\ 
+& \gamma_D ( \gamma_D ( \gamma_D ( \gamma_D \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) ) ) ) \\ 
+& =  \left((x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\
+\\ 
+& \gamma_R (\gamma_R (\gamma_R (\gamma_R ((x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )))) \\
+& =  (x_1, \ g(h(g(h(x_2)))), \ x_3, \ h(g(h(g(x_4)))), \ x_5, \ h(g(h(g(x_6)))), \ x_7, \ g(h(g(h(x_8)))) ) \\
+\\
+& \gamma_L \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( (h(g(h(g(x_1)))), x_2, g(h(g(h(x_3)))), x_4, g(h(g(h(x_5)))), x_6, h(g(h(g(x_7)))), x_8) \right) \\ 
+\\
+& \gamma_F \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( x_1, x_2, h(g(h(g(x_3)))), g(h(g(h(x_4)))), x_5, x_6, g(h(g(h(x_7)))), h(g(h(g(x_8)))) \right) \\
+\\
+& \gamma_B \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
+& =  \left( g(h(g(h(x_1)))), h(g(h(g(x_2)))), x_3, x_4, h(g(h(g(x_5)))), g(h(g(h(x_6)))), x_7, x_8 \right)
+\end{align*}
+
+Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleichen Zuges immer aus den Funktionsverschachtelungen $g(h(g(h(x))))$ und $h(g(h(g(x))))$ bestehen. Daher: muss folgendes gezeigt werden:
 
 \begin{minipage}[H]{0.5\textwidth}
 	\begin{align*}
@@ -3968,14 +4016,19 @@ Da $g(h(x))=x$ und $h(g(x))=x$ gelten, gilt auch das Folgende:
 
 \begin{minipage}[H]{0.5\textwidth}
 	\begin{align*}
-		g(h(g(h(x)))) = g(h(x)) = x
+		g(h(g(h(x)))) = g(h(x)) = x \\
 	\end{align*}
 \end{minipage}
 \begin{minipage}[H]{0.5\textwidth}
       \begin{align*}
-			h(g(h(g(x)))) = h(g(x)) = x
+			h(g(h(g(x)))) = h(g(x)) = x \\
 	  \end{align*}
 \end{minipage}
+
+Somit gilt:
+\begin{align*}
+\forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma', x)
+\end{align*}
 
 
 
