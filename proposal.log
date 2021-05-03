@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  2 MAY 2021 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  3 MAY 2021 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1977,46 +1977,61 @@ File: Rhoch1.jpg Graphic file (type jpg)
 <use Rhoch1.jpg>
 Package pdftex.def Info: Rhoch1.jpg  used on input line 3945.
 (pdftex.def)             Requested size: 203.4876pt x 94.36368pt.
-[86 <./Rhoch1.jpg>]
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 3990--4000
+<Rhoch2.jpg, id=1171, 2034.75676pt x 943.58154pt>
+File: Rhoch2.jpg Graphic file (type jpg)
+<use Rhoch2.jpg>
+Package pdftex.def Info: Rhoch2.jpg  used on input line 3950.
+(pdftex.def)             Requested size: 203.4876pt x 94.36368pt.
+<Rhoch3.jpg, id=1172, 2034.75676pt x 943.58154pt>
+File: Rhoch3.jpg Graphic file (type jpg)
+<use Rhoch3.jpg>
+Package pdftex.def Info: Rhoch3.jpg  used on input line 3955.
+(pdftex.def)             Requested size: 203.4876pt x 94.36368pt.
+<Rhoch4.jpg, id=1173, 2034.75676pt x 943.58154pt>
+File: Rhoch4.jpg Graphic file (type jpg)
+<use Rhoch4.jpg>
+Package pdftex.def Info: Rhoch4.jpg  used on input line 3960.
+(pdftex.def)             Requested size: 203.4876pt x 94.36368pt.
+[86 <./Rhoch1.jpg> <./Rhoch2.jpg> <./Rhoch3.jpg>] [87 <./Rhoch4.jpg>]
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 3993--4003
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 4006--4030
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 4009--4033
 []$[]$ $[]$ 
  []
 
-[87]
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 4041--4051
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 4044--4054
 []$[]$ $[]$ 
  []
 
 [88]
-<AlleRotationen.png, id=1189, 6500.285pt x 7889.475pt>
+<AlleRotationen.png, id=1192, 6500.285pt x 7889.475pt>
 File: AlleRotationen.png Graphic file (type png)
 <use AlleRotationen.png>
-Package pdftex.def Info: AlleRotationen.png  used on input line 4094.
+Package pdftex.def Info: AlleRotationen.png  used on input line 4097.
 (pdftex.def)             Requested size: 422.53336pt x 512.8339pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4107--4172
+Underfull \hbox (badness 10000) in paragraph at lines 4110--4175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4107--4172
+Underfull \hbox (badness 10000) in paragraph at lines 4110--4175
 
  []
 
 [89 <./AlleRotationen.png>]
-<Eidesstattliche_Versicherung.pdf, id=1195, 597.23125pt x 844.15375pt>
+<Eidesstattliche_Versicherung.pdf, id=1198, 597.23125pt x 844.15375pt>
 File: Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use Eidesstattliche_Versicherung.pdf>
 Package pdftex.def Info: Eidesstattliche_Versicherung.pdf  used on input line 4
-199.
+202.
 (pdftex.def)             Requested size: 477.78564pt x 675.32391pt.
 
-Overfull \hbox (22.54153pt too wide) in paragraph at lines 4199--4200
+Overfull \hbox (22.54153pt too wide) in paragraph at lines 4202--4203
  [] 
  []
 
@@ -2025,11 +2040,11 @@ Overfull \vbox (48.83144pt too high) has occurred while \output is active []
 
 
 [91 <./Eidesstattliche_Versicherung.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4230.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4230.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4233.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4230.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4230.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4233.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4233.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 7D84CC66A6F0E3C1396E8966CD2DD9ED;4323.
@@ -2037,16 +2052,19 @@ Package rerunfilecheck Info: File `proposal.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4230.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4233.
  ) 
 Here is how much of TeX's memory you used:
- 32240 strings out of 483016
- 588385 string characters out of 5961286
- 1410978 words of memory out of 5000000
- 46213 multiletter control sequences out of 15000+600000
+ 32258 strings out of 483016
+ 588622 string characters out of 5961286
+ 1411978 words of memory out of 5000000
+ 46228 multiletter control sequences out of 15000+600000
  560831 words of font info for 190 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,16n,77p,1039b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2076,10 +2094,10 @@ public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proposal.pdf (94 pages, 7150543 bytes).
+Output written on proposal.pdf (94 pages, 7416528 bytes).
 PDF statistics:
- 1365 PDF objects out of 1440 (max. 8388607)
+ 1368 PDF objects out of 1440 (max. 8388607)
  1097 compressed objects within 11 object streams
  268 named destinations out of 1000 (max. 500000)
- 25420 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 25435 words of extra memory for PDF output out of 29859 (max. 10000000)
 
