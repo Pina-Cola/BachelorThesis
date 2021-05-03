@@ -2491,6 +2491,7 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 %
 
 \subsection{Erzeuger}
+\label{Abschnitt_ErzeugerGF}
 
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden in Abschnitt \ref{Abschnitt_Erzeuger} definiert und erklärt.
 
@@ -2544,6 +2545,7 @@ Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente, da mit dem Z
 %
 
 \subsection{Durch \textit{FF} und \textit{RR} erzeugte Untergruppe}
+\label{Abschnitt_UntergruppeFFRR}
 
 Das Beispiel der durch $\{ FF, RR \}$ erzeugten Untergruppe hat Tom Davis in \textit{Group Theory via Rubik's Cube} \cite{TD} ebenfalls beschrieben und hier wird es von dem \Tthree \ auf den \Ttwo Würfel übertragen.
 Da die beiden Züge $FF$ und $RR$ als Einheiten gesehen werden, muss jede der Ebenendrehungen eine halbe Drehung sein.
@@ -2615,6 +2617,7 @@ Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $5! \cdot 3^5$ auf ledigli
 \subsection{Cayleygraph}
 
 Cayleygraphen wurden in Abschnitt \ref{Abschnitt_Cayleygraph} eingeführt. Sie dienen der Visualisierung von Untergruppen und deren Erzeugern.
+Ein simples Beispiel ist in Abbildung \ref{Abbildung_CayleygraphF} zu sehen: Der Cayleygraph der Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird. Die Untergruppe $(G_F, \circ)$ wurde in Kapitel \ref{Abschnitt_ErzeugerGF} beschrieben.
 
 \begin{figure}[H]
 \centering
@@ -2623,17 +2626,20 @@ Cayleygraphen wurden in Abschnitt \ref{Abschnitt_Cayleygraph} eingeführt. Sie d
 \label{Abbildung_CayleygraphF}
 \end{figure}
 
-Ein simples Beispiel ist in Abbildung \ref{Abbildung_CayleygraphF} zu sehen: Der Cayleygraph der Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$, die durch $\{ F \}$  erzeugt wird.
+
 Dieser Cayleygraph ist anschaulich, da der er nicht sonderlich komplex ist.
-Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt, daraus ergibt sich durch Hinzufügen einer weiteren Drehung der vorderen Ebene um $90^\circ$ dann $FF$, dann $FFF$ und dann $FFFF$, was dem neutralen Element von $(G_F, \circ)$ entspricht.
+Die Untergruppe wird durch die Ebenendrehung $F$ erzeugt. Dadurch ergeben sich vier Elemente in der Trägermenge:
+\begin{align*}
+G_F = \{F, FF, FFF, N\}
+\end{align*}
+Jedes Element aus $G_F$ wird durch einen Knoten dargestellt. Die Pfeile zwischen den Knoten zeigen, welches Element sich durch das weitere Hinzufügen eines Erzeugers ergibt. In diesem Fall ist der Zyklus einer einzelnen Ebenendrehung zu sehen.
 
 
-Im Vergleich dazu ist der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe etwas komplexer (s. Abbildung \ref{Abbildung_CayleygraphFFRR}). 
+Im Vergleich dazu ist der Cayleygraph der durch $\{ FF, RR \}$ erzeugten Untergruppe komplexer (s. Abbildung \ref{Abbildung_CayleygraphFFRR}). Diese Untergruppe wurde in Abschnitt \ref{Abschnitt_UntergruppeFFRR} beschrieben.
 Die roten Pfeile repräsentieren den Erzeuger $\{FF\}$, da es sich dabei in der Startkonfiguration um die rote Seite des Würfels handelt. Die blauen Pfeile repräsentieren den Erzeuger $\{RR\}$, da es sich dabei um die blaue Würfelseite handelt.
-Elemente die durch ein anderes Element in Kombination mit einem Erzeuger entstehen können, sind durch einen Pfeil (Erzeuger) miteinander verbunden.
-Die 7 Elemente der durch  $\{ FF, RR \}$ erzeugten Untergruppe sind die Knoten des Graphen. 
-Anhand des Cayleygraphen ist zu sehen, dass $FFFF$ und $RRRR$ dem neutralen Element $N$ entsprechen.
-Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $(G_F, \circ)$ (Abbildung \ref{Abbildung_CayleygraphF}), stellt er eine sehr kleine erzeugte Untergruppe dar, im Vergleich zu der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden.
+Elemente, die durch ein anderes Element in Kombination mit einem Erzeuger entstehen, sind durch einen Pfeil (Erzeuger) miteinander verbunden.
+
+Anhand dieses Cayleygraphen kann beispielsweise abgelesen werden, dass die Züge $FFFF$ und $RRRR$ dem neutralen Element $N$ entsprechen. Von dem Knoten $FF$ führt ein roter Pfeil zu $N$. Die roten Pfeile repräsentieren den Erzeuger $FF$. Somit erzeugen $FFFF$ und $N$ die gleiche Würfelkonfiguration.
 
 \begin{figure}[H]
 \centering
@@ -2642,6 +2648,7 @@ Obwohl dieser Cayleygraph wesentlich komplexer ist, als der der Untergruppe $(G_
 \label{Abbildung_CayleygraphFFRR}
 \end{figure}
 
+Dieser Cayleygraph ist wesentlich komplexer, als der Graph der Untergruppe $(G_F, \circ)$ (Abbildung \ref{Abbildung_CayleygraphF}). Trotzdem stellt er eine sehr kleine erzeugte Untergruppe dar, wenn man das mit der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$ vergleicht. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden. In Kapitel \ref{Kapitel_MinUntergruppe} wird die Untergruppe der minimalen, vollständigen Abbildung des Würfels definiert. Der Cayleygraph dieser Untergruppe wird in Abschnitt \ref{Abschnitt_CayleygraphMIN} beschrieben und enthält $3 \ 647 \ 160$ Knoten.
 
 
 
@@ -3621,6 +3628,7 @@ Die Vektorübergangsfunktionen der Rotationen werden nicht gebraucht, da der Wü
 %
 %
 \subsection{Erzeuger und Cayleygraph von $G_{min}$}
+\label{Abschnitt_CayleygraphMIN}
 
 Die Untergruppe $(G_{min}, \circ)$ wird durch $\{U, R, F\}$ erzeugt. Der vollständige Cayleygraph dieser Untergruppe hat  $3 \ 647 \ 160$ Mitglieder. Das ist die Anzahl der validen Würfelkonfigurationen. Jede Äquivalenzklasse aus $G_{min}$ steht für die Züge, durch die man eine bestimmte Würfelkonfiguration erreichen kann.
 Da der vollständige Cayleygraph deutlich zu umfangreich für den Rahmen dieser Arbeit ist, 
