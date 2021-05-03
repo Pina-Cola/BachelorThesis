@@ -1631,6 +1631,18 @@ Die Überführungsfunktionen des Vektors $x$ werden im Folgenden $\beta$ genannt
 
 Es können auch mehrere Rotationen nacheinander ausgeführt werden. Die Funktionen $\delta$ und $\beta$ werden dann jeweils verschachtelt. Das erfolgt analog zu dem mehrfachen Ausführen von Zügen (s. Abschnitt \ref{Abschnitt_ZuegeAusfuehren}).
 
+Beim Betrachten der Rotationen und der dazugehörigen Funktionen fällt auf, dass die Rotationen auch durch eine Kombination von Zügen definiert werden können. Die Rotationen entsprechen den folgenden Zügen:
+\begin{alignat*}{3}
+& Z_l && \Leftrightarrow \ \ &&  D U^{-1} \\
+& Z_r && \Leftrightarrow &&  D^{-1} U \\
+& Y_l && \Leftrightarrow && L R^{-1} \\
+& Y_r && \Leftrightarrow && L^{-1} R  \\
+& X_l && \Leftrightarrow && B F^{-1} \\
+& X_r && \Leftrightarrow && B^{-1} F  \\
+& N_R && \Leftrightarrow && N 
+\end{alignat*}
+Jede Rotation kann also durch Ebenendrehungen von zwei gegenüberliegenden Würfelseiten erreicht werden.
+
 
 
 %
@@ -2875,6 +2887,8 @@ Und somit gilt auch:
 \begin{align*}
 (\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 = 0.
 \end{align*}
+
+Da in Abschnitt \ref{Abschnitt_RotationDesWürfels} gezeigt wurde, dass die Rotationen auch als Kombination von Zügen definiert werden können, gilt die Aussage auch für jede Rotation des Würfels.
 
 
 %Für jede valide Würfelposition gilt folglich ${(\sum_{i = 1}^{8} \ x_i') \mod 3 = (\sum_{i = 1}^{8} \  x_i) \mod 3 }$. 
