@@ -2676,7 +2676,7 @@ Dieser Cayleygraph ist wesentlich komplexer, als der Graph der Untergruppe $(G_F
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel wird die Anzahl der validen Würfelkonfigurationen berechnet -- sowohl anhand des Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
+In diesem Kapitel wird die Anzahl der validen Würfelkonfigurationen berechnet -- sowohl anhand des physischen Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
 Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
@@ -2702,14 +2702,18 @@ Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^
 \subsection{Anzahl der validen Würfelkonfigurationen}
 \label{Abschnitt_AnzahlKonfigurationen}
 
-Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen anhand des Würfels brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. \\
+Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen anhand des Würfels brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. 
+
 Dazu wird zuerst die Anzahl der möglichen Steinpositionen berechnet:
-Die Ecksteine können sich in jeder der acht Ecken befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. \\
-Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7 = 2187$ Wege, wie die Ecksteine ausgerichtet sein können.
-Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24, denn es gibt $6$ Seiten, die jeweils $4$ Ausrichtungen haben können. Das sind dann $6 \cdot 4 = 24$.
+Die Ecksteine können sich in jeder der acht Ecken befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es 8 Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. 
+
+Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbflächen oben sein. Da die Steine aus 3 Farbflächen bestehen, können sieben davon durch Ebenendrehungen 3 verschiedene Ausrichtungen annehmen. Der achte Stein kann durch die Möglichkeit der Rotation des kompletten Würfels als richtig gedreht angenommen werden. Es gibt folglich $3^7 = 2187$ Möglichkeiten für die Ausrichtung der Ecksteine.
+
+Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24, denn es gibt $6$ Seiten, die jeweils $4$ Ausrichtungen haben können. Das sind dann $6 \cdot 4 = 24$. Alle $24$ Ausrichtungsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} abgebildet.
+
 Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Positionen für den Würfel. Das sind $3\, 674\, 160$ Positionen.
 
-Die Anzahl der Würfelkonfigurationen ohne Berücksichtigung der Rotationen des Würfels liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Unter der Berücksichtigung der Rotationen liegt die Anzahl bei $3\, 674\, 160$ Möglichkeiten.
+%Die Anzahl der Würfelkonfigurationen ohne Berücksichtigung der Rotationen des Würfels liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Unter der Berücksichtigung der Rotationen liegt die Anzahl bei $3\, 674\, 160$ Möglichkeiten.
 
 
 %
@@ -3942,9 +3946,9 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 
 \newpage
 
-\begin{singlespacing}
+\begin{spacing}{1.2}
 \printbibliography
-\end{singlespacing}
+\end{spacing}
 
 \addcontentsline{toc}{section}{\bibname}
 
