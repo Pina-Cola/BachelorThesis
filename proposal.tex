@@ -2751,9 +2751,9 @@ Der andere Parameter der Würfelkonfiguration ist der 8-dimensionale Vektor $x$.
 
 Ohne Berücksichtigung der Rotationen wird ein Wert von $40320 \cdot 6561 = 264 \, 539 \, 520$ möglichen Konfigurationen erreicht. 
 Da durch die Rotationen eine der Steinausrichtungen in $x$ als richtig angenommen werden kann, wird $264 \, 539 \, 520$ durch drei geteilt und ergibt dann $88 \, 179 \, 840$. 
-Außerdem gibt es bei den Rotationen sechs Rotationsmöglichkeiten (und zusätzlich die \textit{leere} Rotation). Jede dieser Rotationsmöglichkeiten kann vier verschiedene Rotationen hervorrufen. Das ergibt dann $6 \cdot 4 = 24$ Möglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Somit muss $88 \, 179 \, 840$ durch $24$ geteilt werden, um die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ zu berechnen. $|\Gtwo|$ ist dann $88 \, 179 \, 840 \div 24 = 3\, 674\, 160$.
+Außerdem gibt es $6 \cdot 4 = 24$ Rotationsmöglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Alle 24 Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} abgebildet. Somit muss $88 \, 179 \, 840$ durch $24$ geteilt werden, um die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ zu berechnen. $|\Gtwo|$ ist dann $88 \, 179 \, 840 \div 24 = 3\, 674\, 160$.
 
-Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist somit die Anzahl der validen Würfelkonfigurationen: $3\, 674\, 160$.
+Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ entspricht der Anzahl der validen Würfelkonfigurationen: $3\, 674\, 160$.
 
 
 
@@ -2782,16 +2782,21 @@ Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist somit die Anzahl der validen Wü
 
 \label{Abschnitt_Modulo3}
 
-Die Konfiguration des Würfels ist definiert als $C=(\sigma, x)$. In diesem Abschnitt wird gezeigt, dass bei einer validen Würfelkonfiguration für die Werte des Vektors $x$ \begin{displaymath}
+Die Konfiguration des Würfels ist als $C=(\sigma, x)$ definiert. In diesem Abschnitt wird gezeigt, dass bei jeder validen Würfelkonfiguration für die Werte des Vektors $x$ folgendes gilt: 
+\begin{displaymath}
 \left( \sum_{i= 1}^{8} \ x_i \right) \hspace*{-0.7em} \mod 3 = 0 
-\end{displaymath}  (modulo) gilt. 
+\end{displaymath} 
 
-Sei $C'=(\sigma', x')$ eine Nachfolgekonfiguration der Konfiguration $C=(\sigma, x)$, dann gilt  ${(\sigma, x) \cdot Z = (\sigma', x')}$. Dabei ist $Z$ einer der Züge aus $\Gtwo$. Es gilt dann:
+Sei $C'=(\sigma', x')$ eine Nachfolgekonfiguration der Konfiguration $C=(\sigma, x)$.  Dabei ist $Z$ einer der Züge aus $\Gtwo$.  
 \begin{align*}
-(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 
+{(\sigma, x) \cdot Z = (\sigma', x')}
+\end{align*}
+Für diese Vektoren $x$ und $x'$ gilt dann:
+\begin{align*}
+(\sum_{i= 1}^{8} \ x_i') \hspace*{-0.5em} \mod 3 = (\sum_{i= 1}^{8} \  x_i) \hspace*{-0.5em} \mod 3 = 0
 \end{align*}
 
-In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} ist diese Situation für den Zug $R$ dargestellt. Dort sind außerdem auch die Funktionen $\gamma$ definiert, die die Veränderungen des Vektor $x$ für jeden der Züge realisieren. %Die Veränderung der Vektoreinträge durch die Grundzüge des Würfels, ausgehend von der Startkonfiguration, kann auch in dieser Tabelle gesehen werden: 
+%Die Veränderung der Vektoreinträge durch die Grundzüge des Würfels, ausgehend von der Startkonfiguration, kann auch in dieser Tabelle gesehen werden: 
 %\vspace*{1em}
 
 %\begin{adjustbox}{width=1\textwidth,center}
@@ -2825,7 +2830,7 @@ In Abbildung \ref{Abbildung_XnachZugR} in Abschnitt \ref{Abschnitt_AusrichtungDe
 %\end{align*}
 
 
-Der Würfel kann durch einen der Grundzüge des Würfels oder einer Kombination der Grundzüge verändert werden. Die Veränderungen des Vektors $x$ durch das Ausführen der Grundzüge sind in der folgenden Tabelle detailliert zu sehen. Die Variable $s$ beschreibt dabei die Veränderung der Summe der Vektoreinträge.
+Der Würfel kann durch einen der Grundzüge des Würfels oder einer Kombination der Grundzüge verändert werden. Die Veränderungen des Vektors $x$ durch das Ausführen der Grundzüge sind in der folgenden Tabelle detailliert zu sehen. Die Variable $s$ beschreibt dabei die Veränderung der Summe der Vektoreinträge. In Abschnitt \ref{Abschnitt_AusrichtungDerSteine} sind die Funktionen definiert, die die Veränderungen des Vektor $x$ für jeden der Züge realisieren. 
 \ \\
 
 
@@ -2854,11 +2859,19 @@ $B$ & $(x_2 +2) \hspace*{-0.6em} \mod 3, (x_6 + 1)  \hspace*{-0.6em} \mod 3, x_3
 \end{adjustbox}
 \ \\
 
-Jede valide Würfelkonfiguration $C$ kann ausschließlich durch Züge erreicht werden. Züge bestehen aus Elementen der Menge $\{U, D, R, L, F, B\}$. In der Startkonfiguration ist der Summe der Vektoreinträge $0$. Der Vektor $x$ ist dabei $(0,0,0,0,0,0,0,0)$ und die Summe der Einträge ist somit 0. Es gilt $0 \hspace*{-0.5em} \mod 3 = 0$. Bei jedem der Grundzüge aus $\{U, D, R, L, F, B\}$ wird die Summe der Vektoreinträge um den Wert von $s$ verändert. Die Variable $s$ ist bei den Grundzügen entweder 0 oder 6. Es gilt auch $6 \hspace*{-0.5em} \mod 3 = 0$ und damit auch $s \hspace*{-0.5em} \mod 3 = 0$. Somit muss die Summe der Vektoreinträge immer 0 sein, wenn man modulo 3 rechnet, da jeder Zug $Z$ aus einem der Grundzüge aus $\{U, D, R, L, F, B\}$ oder einer Kombination dieser besteht. Jedes Vielfache von 6 und 0 ergibt 0, wenn man modulo 3 rechnet. Es gilt also
+Jede valide Würfelkonfiguration $C$ kann ausschließlich durch Züge erreicht werden. Züge bestehen aus Elementen der Menge $\{U, D, R, L, F, B\}$. In der Startkonfiguration ist der Summe der Vektoreinträge $0$. Der Vektor $x$ ist dabei $(0,0,0,0,0,0,0,0)$ und die Summe der Einträge ist somit 0. Es gilt 
+\begin{align*}
+(\sum_{i= 1}^{8} \ (0,0,0,0,0,0,0,0)) \hspace*{-0.5em} \mod 3 = 0
+\end{align*}
+Bei jedem der Grundzüge aus $\{U, D, R, L, F, B\}$ wird die Summe der Vektoreinträge um den Wert von $s$ verändert. Die Variable $s$ ist bei den Grundzügen entweder 0 oder 6. Es gilt demnach auch:
+\begin{align*}
+s \hspace*{-0.5em} \mod 3 = 0
+\end{align*}
+Somit muss die Summe $s$ der Vektoreinträge immer 0 sein, wenn modulo 3 gerechnet wird, da jeder Zug $Z$ aus einem der Grundzüge aus $\{U, D, R, L, F, B\}$ oder einer Kombination dieser besteht. Jedes Vielfache von 6 und 0 ergibt 0, wenn modulo 3 gerechnet wird. Es gilt demnach:
 \begin{align*}
 (k \cdot s) \hspace*{-0.5em} \mod 3 = 0 \textit{ für } k \in \mathbb{N}
 \end{align*}
-und somit gilt auch
+Und somit gilt auch:
 \begin{align*}
 (\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 = 0.
 \end{align*}
