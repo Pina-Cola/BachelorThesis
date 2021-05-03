@@ -2447,9 +2447,9 @@ Die Untergruppe $(H_N, \circ)$ enthält in der Trägermenge $H_N$ ausschließlic
 (H_N, \circ) = (\{N\}, \circ)\textit{ und }  (H_G, \circ) = (\Gtwo, \circ)
 \end{align*}
 Im Rahmen dieser Arbeit kann nur auf einen Teil der Unterguppen von $(\Gtwo, \circ)$ eingegangen werden. 
-Der folgende Abschnitt beschreibt einige anschauliche Untergruppenn des Würfels. Die folgenden Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
+Der folgende Abschnitt beschreibt zwei anschauliche Untergruppenn des Würfels. Diese Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
 \begin{itemize}
-\item Die Züge der Untergruppe $(H_{E1}, \circ)$, die nur die Rotation einer Ebene zulässt, erreichen lediglich vier Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
+\item Die Untergruppe $(H_{E1}, \circ)$ lässt nur die Rotation einer Ebene zu. Die Züge der Trägermenge erreichen lediglich vier Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
 
 Da die Trägermenge $H_{E1}$ die Äquivalenzklassen aller möglichen Züge der Untergruppe beinhaltet, sind hier genau vier Elemente enthalten. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
 
@@ -2495,7 +2495,11 @@ Bei der Gruppe des \Tthree Würfels ergeben sich daraus 16 mögliche Würfelkonf
 Die folgenden Beispiele stammen aus Tom Davis' \textit{Group Theory via Rubik's Cube} \cite{TD} und werden hier von der Gruppe des \Tthree \textit{Cubes} auf den \Ttwo \textit{Cube} übertragen. Erzeuger wurden in Abschnitt \ref{Abschnitt_Erzeuger} definiert und erklärt.
 
 
-Ein Beispiel für einen Erzeuger einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ ist der einzelne Zug $\{ F \}$, der diese Untergruppe erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge $G_F$ der Untergruppe $(G_F, \circ)$ enthält somit die vier Elemente ${N, F, FF, FFF}$, da alle weiteren Züge äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ ein Repräsentant der Äquivalenzklasse von $N$ -- der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
+Ein Beispiel für einen Erzeuger einer Untergruppe $(G_F, \circ)$ von $(\Gtwo, \circ)$ ist der einzelne Zug $\{ F \}$, der diese Untergruppe erzeugt. Durch den Zug $F$ können genau vier Würfelkonfigurationen erreicht werden und die Trägermenge $G_F$ der Untergruppe $(G_F, \circ)$ enthält somit vier Elemente:
+\begin{align*}
+G_F = \{N, F, FF, FFF\}
+\end{align*}
+Alle weiteren Züge, die durch $F$ erzeugt werden, sind äquivalent zu einem dieser Züge sind. Beispielsweise ist $FFFF$ ein Repräsentant der Äquivalenzklasse von $N$ -- der Würfel befindet sich nach Ausführen dieses Zuges wieder in der Ausgangsposition.
 
 
 Ein weiteres Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei kann die obere Ebene ausschließlich halbe Drehungen (statt Vierteldrehungen) machen und somit nur zwei Positionen erreichen. Die Trägermenge enthält daher die Äquivalenzklassen der beiden Züge $FF$ und $FFFF$.
@@ -2503,12 +2507,20 @@ Ein weiteres Beispiel ist die Untergruppe, die von $\{FF\}$ erzeugt wird. Dabei 
 
 Die komplette Gruppe $(\Gtwo, \circ)$ wird erzeugt durch $\{U, D, R, L, F, B\}$. Eine minimale Gruppe des \Ttwo Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} beschrieben und durch $\{U, R, F\}$ erzeugt.
 
-Die Untergruppen, die von genau einem Element aus $\Gtwo$ erzeugt werden, sind zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $ F $ erzeugt wird, ist eine solche zyklische Untergruppe.
-$(G_F, \circ)$ wird erzeugt durch $\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}$. Das bedeutet, dass die Trägermenge $G_F$ die Äquivalenzklassen der folgenden Elemente enthält: $\{N, F^1, F^2, F^3, F^4, ...\}$. Es gibt auch unendliche zyklische Gruppen, diese hier sind aufgrund der Äquivalenzklassen aber endlich. Die Gleichheit der einelementigen Züge wurde bereits in Abschnitt \ref{Abschnitt_GleichheitVonZügen} beschrieben.
+Die Untergruppen, die von genau einem Element aus $\Gtwo$ erzeugt werden, nennt man zyklische Gruppen. Die oben beschriebene Untergruppe $(G_F, \circ)$, die durch $ F $ erzeugt wird, ist eine solche zyklische Untergruppe.
+$(G_F, \circ)$ wird erzeugt durch:
+\begin{align*}
+\langle F \rangle = \{ F^n \mid n \in \mathbb{Z}\}
+\end{align*}
+Das bedeutet, dass die Trägermenge $G_F$ die Äquivalenzklassen der folgenden Elemente enthält: 
+\begin{align*}
+\{N, F^1, F^2, F^3, F^4, ...\}
+\end{align*}
+Zyklische Gruppen können unendlich sein. Die Gruppe $(G_F,  \circ)$ ist aufgrund der Äquivalenzklassen aber endlich. Die Gleichheit der einelementigen Züge wurde bereits in Abschnitt \ref{Abschnitt_GleichheitVonZügen} beschrieben.
 
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
-Die Ordnung des Zuges $FR$ ist 15 -- wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. 
+Die Ordnung des Zuges $FR$ beispielsweise ist 15 -- wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. 
 Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente, da mit dem Zug 15 Würfelkonfigurationen erreichbar sind. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ 105 \cite{TD}.
 %
 %
