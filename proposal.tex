@@ -3126,14 +3126,15 @@ Um aussagekräftigere Ergebnisse zu der Kommutativität der Zugpaare zu bekommen
 
 Für die Lösung des Würfels sind Züge nützlich, die lediglich wenige Steine beeinflussen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. 
 
-Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Der Würfel wird ebenenweise gelöst. 
-Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört \cite{RF}. Auch in den folgenden Beispielen wird deshalb mit der Lösung der weißen Seite begonnen.
+Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise werden die Ebenen des Würfels nacheinander gelöst. 
+Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört. \cite{RF} Deshalb wird im weiteren Verlauf dieser Arbeit bei der Lösung mit der weißen Seite begonnen.
 
-Bei einem der Lösungsansätze wird zuerst die erste Ebene vollständig gelöst und danach die zweite. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
 
-Eine gängige Lösungsmethode für die zweite Ebene geht so vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist dann $(1,0)$.
+Einer der Lösungsansätze geht so vor, dass zuerst die erste Ebene vollständig gelöst wird und danach die zweite. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
 
-Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite aber die Position der Steine ist dabei unwichtig. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Wenn alle Steine korrekt ausgerichtet sind, werden sie untereinander getauscht und der Würfel wird so gelöst.
+Eine gängige Lösungsmethode für die zweite Ebene sieht vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist dann $(1,0)$ und der Würfel gelöst.
+
+Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite aber die Position der Steine ist dabei unwichtig. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie untereinander getauscht und der Würfel wird so gelöst.
 
 Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} und in Abschnitt \ref{Abschnitt_MinLösung}.
 
