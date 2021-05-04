@@ -2953,9 +2953,10 @@ Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf de
 %
 \subsection{Anzahl der 2-Zykel}
 
-Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
-Jede Würfelposition kann durch die Ebenendrehungen $U, D, F, B, L, R$ (und die Rotation des Würfels) erreicht werden. 
-Die Zykel der Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$-Zykeln geschrieben:
+Die Position der Würfelsteine wird durch die Permutationsfunktionen $\sigma$ beschrieben.  $\sigma$ besteht aus verschiedenen Zykeln in Abhängigkeit von der Position der Steine. Das wurde in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert und beschrieben. Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
+
+Jede Würfelkonfiguration kann durch eine Kombination der Ebenendrehungen $U, D, F, B, L, R$ (und der Rotationen des Würfels) erreicht werden. 
+Die Zykel der einzelnen Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$-Zykeln geschrieben:
 \begin{alignat*}{2}
 \sigma_U &  = \ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) &&  = \ ( \textit{ulf} \ \textit{ulb} ) 
 ( \textit{ulf} \ \textit{urb} ) 
@@ -2981,11 +2982,18 @@ Die Zykel der Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$
 ( \textit{urb} \  \textit{drf} ) 
 ( \textit{urb} \ \textit{urf} )  \
 \end{alignat*}
-Jeder Grundzug ist demnach als ein $4$-Zykel definiert und jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
-Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht (z. B. $LF$) ist somit gerade.
+Anhand der Funktionen der Grundzüge ist ersichtlich, dass jeder Grundzug durch einen $4$-Zykel definiert ist.
+Jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
+Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht ist demnach gerade.
+Beispielsweise hat der Zug $LF$ eine gerade Anzahl an $2$-Zykeln:
+\begin{align*}
+\sigma_{LF} & = (\textit{ulb} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ \textit{dlb}) \\
+ & =  (\textit{ulb} \ \textit{urf})(\textit{ulb} \ \textit{drf})(\textit{ulb} \ \textit{dlf})(\textit{ulb} \ \textit{dlb})
+\end{align*}
+
 Die Zykel treffen ausschließlich eine Aussage über die Position der Steine im Würfel. Die Rotation wird durch den Vektor $x$ dargestellt und hier nicht berücksichtigt. 
 
-Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Ein Zug, der genau zwei Steine tauscht, wird durch einen $2$-Zykel dargestellt. Das ist eine ungerade Anzahl an $2$-Zykeln. Im Gegensatz zum \Tthree Würfel kann die Anzahl der $2$-Zykel des \Ttwo Würfels ungerade sein und es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
+Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Ein Zug, der genau zwei Steine tauscht, wird durch \textit{einen} $2$-Zykel dargestellt -- das wäre eine ungerade Anzahl an $2$-Zykeln. Im Gegensatz zum \Tthree Würfel kann die Anzahl der $2$-Zykel des \Ttwo Würfels ungerade sein und somit es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
 
 %
 %
