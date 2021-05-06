@@ -3129,14 +3129,21 @@ Für die Lösung des Würfels sind Züge nützlich, die lediglich wenige Steine 
 Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise werden die Ebenen des Würfels nacheinander gelöst. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört. \cite{RF} Deshalb wird im weiteren Verlauf dieser Arbeit bei der Lösung mit der weißen Seite begonnen.
 
+\subsubsection*{Ebenen nacheinander vollständig lösen}
 
-Einer der Lösungsansätze geht so vor, dass zuerst die erste Ebene vollständig gelöst wird und danach die zweite. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
+Einer der Lösungsansätze geht so vor, dass die beiden Ebenen nacheinander vollständig gelöst werden. Dazu wird zuerst die erste Ebene und danach die zweite vollständig gelöst. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
 
 Eine gängige Lösungsmethode für die zweite Ebene sieht vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist dann $(1,0)$ und der Würfel gelöst.
 
-Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite aber die Position der Steine ist dabei unwichtig. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie untereinander getauscht und der Würfel wird so gelöst.
+Dieses ebenenweise Vorgehen wird üblicherweise bei dem \Tthree Würfel angewandt und wurde hier auf den \Ttwo Würfel übertragen: Beim \Tthree Würfel wird zuerst die obere Ebene gelöst, dann die Mittlere, gefolgt von der Unteren. Wird dieses Vorgehen auf den \Ttwo Würfel übertragen, können sämtliche Lösungsschritte, die die Kanten beeinflussen, ignorieren, da der \Ttwo Würfel keine Kantsteine hat. Außerdem gibt es keine mittlere Ebene und die entsprechenden Lösungsschritte des \Tthree Würfels werden ebenfalls nicht auf den \Ttwo Würfel übertragen.
 
-Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} und in Abschnitt \ref{Abschnitt_MinLösung}.
+Dieser Lösungsansatz wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schrittweise ausgeführt und erklärt. Außerdem werden die Algorithmen für die beiden Ebenen in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. Dies kann als eine Anleitung zum Lösen des Würfels dienen.
+
+\subsubsection*{Steine ausrichten und dann positionieren}
+
+Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite aber die Position der Steine ist dabei unwichtig. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie untereinander getauscht und der Würfel wird so gelöst. Dieses Vorgehen wird Ortega-Methode genannt \cite{RF2}.
+
+Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} und in Abschnitt \ref{Abschnitt_MinLösung}. Außerdem ist zu beachten, dass es eine Vielzahl weiterer Lösungsansätze gibt.
 
 
 
@@ -3361,6 +3368,7 @@ Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters un
 %
 %
 \subsection{Algorithmen für die erste Ebene}
+\label{Abschnitt_AlgorithmenErsteEbene}
 
 Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel lediglich rotiert werden muss, um eine weiße Farbfläche zu finden.
 In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite zu beginnen. Es kann aber ebenso mit jeder anderen Seite des Würfels begonnen werden.

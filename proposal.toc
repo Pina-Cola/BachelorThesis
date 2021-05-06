@@ -87,40 +87,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.4}Lösung des Würfels anhand eines Beispiels}{65}{subsection.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5}Muster}{68}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.5}Muster}{69}{subsection.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{69}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.6}Schraubendrehermethode}{70}{subsection.8.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{70}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{71}{subsection.8.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{72}{subsection.8.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Minimale Gruppe}{76}{section.9}%
+\contentsline {section}{\numberline {9}Minimale Gruppe}{77}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{76}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{77}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{76}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{77}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{77}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{78}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{78}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{79}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{78}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{79}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{81}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{82}{subsection.9.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Fazit}{83}{section.10}%
+\contentsline {section}{\numberline {10}Fazit}{84}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{83}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Zusammenfassung und Ergebnis}{84}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Ausblick}{83}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Ausblick}{84}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{84}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{85}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatur}{86}{subsection.10.2}%
+\contentsline {section}{Literatur}{87}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Übergangsfunktionen - Vektor $\pmb {x}$}{87}{appendix.A}%
+\contentsline {section}{\numberline {A}Übergangsfunktionen - Vektor $\pmb {x}$}{88}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Alle Rotationen des Würfels}{91}{appendix.B}%
+\contentsline {section}{\numberline {B}Alle Rotationen des Würfels}{92}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Eidesstattliche Versicherung}{93}{appendix.C}%
+\contentsline {section}{\numberline {C}Eidesstattliche Versicherung}{94}{appendix.C}%
