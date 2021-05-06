@@ -208,6 +208,30 @@
       \field{title}{Adventures in Group Theory: Rubik's Cube, Merlin's Machine, and Other Mathematical Toys}
       \field{year}{2008}
     \endentry
+    \entry{RMG}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d676056cd1e08ad8a7eb6c978e59e709}{%
+           family={McGregor},
+           familyi={M\bibinitperiod},
+           given={Ryan\bibnamedelima Taylor},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Hofstra University}%
+      }
+      \strng{namehash}{d676056cd1e08ad8a7eb6c978e59e709}
+      \strng{fullhash}{d676056cd1e08ad8a7eb6c978e59e709}
+      \strng{bibnamehash}{d676056cd1e08ad8a7eb6c978e59e709}
+      \strng{authorbibnamehash}{d676056cd1e08ad8a7eb6c978e59e709}
+      \strng{authornamehash}{d676056cd1e08ad8a7eb6c978e59e709}
+      \strng{authorfullhash}{d676056cd1e08ad8a7eb6c978e59e709}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finding God's Number for the Rubik's Cube Using Computational Analysis}
+      \field{year}{2016}
+    \endentry
     \entry{TR}{article}{}
       \name{author}{1}{}{%
         {{hash=f76321ccd6d13fea50f79f499eae3630}{%

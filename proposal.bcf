@@ -2215,9 +2215,10 @@
     <bcf:citekey order="31">RF2</bcf:citekey>
     <bcf:citekey order="32">TR</bcf:citekey>
     <bcf:citekey order="33">DJ</bcf:citekey>
-    <bcf:citekey order="34">TD</bcf:citekey>
-    <bcf:citekey order="35">rekord</bcf:citekey>
-    <bcf:citekey order="36">TD</bcf:citekey>
+    <bcf:citekey order="34">RMG</bcf:citekey>
+    <bcf:citekey order="35">TD</bcf:citekey>
+    <bcf:citekey order="36">rekord</bcf:citekey>
+    <bcf:citekey order="37">TD</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
