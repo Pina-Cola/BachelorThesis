@@ -3129,6 +3129,8 @@ Für die Lösung des Würfels sind Züge nützlich, die lediglich wenige Steine 
 Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise werden die Ebenen des Würfels nacheinander gelöst. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört. \cite{RF} Deshalb wird im weiteren Verlauf dieser Arbeit bei der Lösung mit der weißen Seite begonnen.
 
+Die beiden unten beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} und in Abschnitt \ref{Abschnitt_MinLösung}. Außerdem ist zu beachten, dass es eine Vielzahl weiterer Lösungsansätze gibt.
+
 \subsubsection*{Ebenen nacheinander vollständig lösen}
 
 Einer der Lösungsansätze geht so vor, dass die beiden Ebenen nacheinander vollständig gelöst werden. Dazu wird zuerst die erste Ebene und danach die zweite vollständig gelöst. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
@@ -3141,10 +3143,8 @@ Dieser Lösungsansatz wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand e
 
 \subsubsection*{Steine ausrichten und dann positionieren}
 
-Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite aber die Position der Steine ist dabei unwichtig. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie untereinander getauscht und der Würfel wird so gelöst. Dieses Vorgehen wird Ortega-Methode genannt \cite{RF2}.
-
-Die beiden beschriebenen Lösungsansätze führen nicht zu einer optimalen Lösung des Würfels. Mehr zu der optimalen Lösung findet sich am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} und in Abschnitt \ref{Abschnitt_MinLösung}. Außerdem ist zu beachten, dass es eine Vielzahl weiterer Lösungsansätze gibt.
-
+Bei einem anderen Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite, die aus vier weißen Farbflächen besteht. Die Position der Steine ist dabei jedoch nicht relevant. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Es gibt dann eine weiße und eine gelbe Seite, die anderen vier Seiten sind allerdings nicht gelöst, da die Steinposition noch nicht berücksichtig wurde.
+Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie untereinander getauscht und der Würfel wird so gelöst. Dieses Vorgehen wird Ortega-Methode genannt \cite{RF2}.
 
 
 %Bei einem anderen Lösungsansatz werden die Steine zuerst in die richtige Position gebracht. Die Permutationsfunktion $\sigma$ ist dann 1. Danach wird die Ausrichtung der Steine noch verändert. (?) Der Würfel ist dann wieder in der Startkonfiguration.
