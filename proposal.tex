@@ -290,7 +290,7 @@ Diese Arbeit setzt sich aus 10 Kapiteln zusammen. Im Folgenden werden die Inhalt
 
 \label{Kapitel_Würfel}
 
-In diesem Kapitel werden die Grundlagen des \Ttwo \textit{Cubes} erklärt. Zuerst wird der Aufbau und die Terminologie des Würfels erläutert. Dann wird kurz auf die Unterschiede zwischen dem \Ttwo und dem \Tthree Würfel eingegangen. 
+In diesem Kapitel werden die Grundlagen des \Ttwo \textit{Cubes} erklärt. Zuerst wird der Aufbau und die Terminologie des Würfels erläutert. Anschließend wird kurz auf die Unterschiede zwischen dem \Ttwo und dem \Tthree Würfel eingegangen. 
 Außerdem werden die sechs Grundzüge des Würfels definiert und erklärt. Darauf basieren alle späteren Algorithmen und die Definition der Gruppe des Würfels.
 
 
@@ -319,8 +319,8 @@ Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
 
 Der Würfel setzt sich aus acht kleinen Würfeln zusammen.
 In Abbildung \ref{Abbildung_WürfelUngelöstGelöst} ist er links verdreht und rechts im gelösten Zustand zu sehen. Der gelöste Zustand wird auch als Startkonfiguration bezeichnet.
-Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen einer Farbe. Der Würfel ist dann gelöst.  
-Bei dem verdrehten Würfel können die Steine des Würfels an anderen Positionen sein und anders ausgerichtet sein.
+Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen derselben Farbe. 
+Bei dem verdrehten Würfel können sich die Steine des Würfels an anderen Positionen befinden und anders ausgerichtet sein.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2scrambled.png}
@@ -331,7 +331,7 @@ Bei dem verdrehten Würfel können die Steine des Würfels an anderen Positionen
 
 
 \item[Eckstein und Farbfläche] \ \\
-Ein \Ttwo Würfel besteht aus acht Ecksteinen (links in Abbildung \ref{Abbildung_Eckstein}), die jeweils drei Farbflächen (rechts in Abbildung \ref{Abbildung_Eckstein}) haben. Ein \Ttwo Zauberwürfel hat somit 24 Farbflächen. Die verschiedenen Farbpaare, die sich im gelösten Zustand jeweils gegenüberliegen, sind weiß und gelb, rot und orange, grün und blau.
+Ein \Ttwo Würfel besteht aus acht Ecksteinen (links in Abbildung \ref{Abbildung_Eckstein}), die jeweils drei Farbflächen (rechts in Abbildung \ref{Abbildung_Eckstein}) haben. Ein \Ttwo Zauberwürfel weist somit 24 Farbflächen auf. Die verschiedenen Farbpaare, die sich im gelösten Zustand jeweils gegenüberliegen, sind weiß und gelb, rot und orange, grün und blau.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.1]{2x2stein.png}
@@ -380,7 +380,7 @@ Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei Ebenen
 
 Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Würfelkonfiguration einer vermeintlich anderen Konfiguration entspricht, bei der jedoch eine andere Seite nach oben gehalten wird.
 Die Ausrichtung des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann.  
-Das muss beachtet werden, da in dieser Arbeit die Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen wird. Es wird sich dabei vorallem an \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
+Dieser Sachverhalt ist entscheident bei der Übertragrung der Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel. Es wird sich dabei vorallem an \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
 
 %
 %
@@ -431,7 +431,7 @@ Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf di
 
 
 Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel aber immer lediglich zwei statt drei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
-Auf die Rotationsmöglichkeiten des kompletten Würfels wird im Verlauf dieser Arbeit noch eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
+Auf die Rotationsmöglichkeiten des kompletten Würfels wird in Abschnitt \ref{Abschnitt_RotationDesWürfels} genauer eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
 Eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) beispielsweise entspricht einer Drehung der unteren Ebene im Uhrziegersinn ($D$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. 
 
 Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$. Die minimale Abbildung des Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} behandelt.
@@ -464,7 +464,7 @@ Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\
 \label{Kapitel_MathematischeGrundlagen}
 
 In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind. Es werden Definitionen und Beispiele von Gruppen, Untergruppen, zyklischen Gruppen, Erzeugern, Gruppenoperationen, Kommutatoren, Äquivalenzrelationen, Permutationen und Zykelschreibweise angegeben.
-Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort können auch detailliertere Informationen und weitere Beispiele nachgelesen werden.
+Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort finden sich auch detailliertere Informationen und weitere Beispiele.
 Des Weiteren wird der Cayleygraph erklärt. 
 %
 %
@@ -509,7 +509,7 @@ Zur Veranschaulichung der Gruppendefinition werden hier die natürlichen Zahlen 
 \begin{itemize}
 \item Die Abgeschlossenheit gilt sowohl für $(\mathbb{N},+)$ als auch für $(\mathbb{Z},+)$, da zwei natürliche Zahlen addiert immer eine natürliche Zahl ergeben. Zwei ganze Zahlen addiert ergeben immer eine ganze Zahl. \\
 Beispielsweise sind $1+2=3$ und es gilt $1,2,3 \in \mathbb{N}$.
-\item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
+\item Die Verknüpfung ist assoziativ, aufgrund der Definition des Pluszeichens.
 \item Das neutrale Element von $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ ist $0$. Es gilt also $\forall n \in N. \ n + 0 = 0 + n = n$ (und mit $\mathbb{Z}$ analog). \\
 Ein Beispiel zur Veranschaulichung: $3+0=0+3=3$
 \item Die letzte erforderliche Eigenschaft einer Gruppe ist die Existenz eines inversen Elements. Für die Gruppe $(\mathbb{Z},+)$ ist $-z$ das inverse Element für jedes $z \in \mathbb{Z}$. Für $(\mathbb{N},+)$ gibt es kein inverses Element.
@@ -529,7 +529,7 @@ Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}
 \item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von$\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
 \item Das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $0$.
-\item Das Inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es demnach 5, für 2 ist es 4 und für 3 ist das neutrale Element die 3.
+\item Das Inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es demnach 5, für 2 ist es 4 und für 3 ist das inverse Element die 3.
 \end{itemize}
 
 $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist eine endliche Gruppe, da die vier Gruppeneigenschaften erfüllt sind und die Trägermenge $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ endlich ist.
@@ -656,7 +656,7 @@ Ein Cayleygraph ist ein Graph, der die Struktur einer Gruppe beschreibt. Er hän
 Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppenelemente darstellen. Pfeile zeigen von einem Element zum nächsten, wenn dies durch einen der Erzeuger erreicht werden kann. \cite{AT}
 
 \textbf{Beispiel} (Cayleygraph) \\
-In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit dem Erzeuger $1$ zu sehen.
+In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit dem Erzeuger $1$ dargestellt.
 
 \begin{figure}[H]
 \centering
@@ -740,7 +740,7 @@ Als Kommutator von zwei Elementen $a, b$ einer Gruppe $(G, \circ)$  bezeichnet m
 
 \begin{bsp}[Kommutator]
 
-$[5,7]$ ist ein Kommutator der Gruppe $(\mathbb{Z}, +)$. $[5,7]$ ist das Gleiche wie $5+7-5-7 = 0$ und $0$ ist das neutrale Element der Gruppe. Die Gruppe $(\mathbb{Z}, +)$ ist kommutativ, deshalb ist der Kommutator von allen Elementen der Gruppe $0$.
+$[5,7]$ ist ein Kommutator der Gruppe $(\mathbb{Z}, +)$. $[5,7]$ entspricht $5+7-5-7 = 0$ und $0$ ist das neutrale Element der Gruppe. Die Gruppe $(\mathbb{Z}, +)$ ist kommutativ, deshalb ist der Kommutator von allen Elementen der Gruppe $0$.
 
 \end{bsp}
 %
@@ -778,7 +778,7 @@ Hier wird $x \sim y$ als \textit{x ist äquivalent zu y} gelesen. Im Folgenden w
 \begin{tabular}{ll}
 $x \sim x$ & (Reflexivität) \\
 Aus $(x \sim y)$ folgt $(y \sim x)$. & (Symmetrie) \\
-Aus $(x \sim y)$ und $(y \sim z)$ folgt $(x \sim y)$. & (Transitivität) \\
+Aus $(x \sim y)$ und $(y \sim z)$ folgt $(x \sim z)$. & (Transitivität) \\
 \end{tabular}
 \end{center}
 
@@ -795,7 +795,7 @@ Bei der Relation $< $ handelt es sich nicht um eine Äquivalenrelation, da die E
 \begin{bsp}[Äquivalenzrelation]
 Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ wird die Relation $ x = y$ betrachtet:
 
-Bei der Relation $=$ gilt die Reflexivität für alle Elemente, da die Gleichheit reflexiv ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit. Somit ist es eine Äquivalenzrelation. 
+Bei der Relation $=$ gilt die Reflexivität für alle Elemente, da ein Element immer mit sich selbst identisch ist. Auch die Symmetrie und die Transitivität gelten für die Gleichheit. Somit ist es eine Äquivalenzrelation. 
 
 
 \end{bsp}
@@ -860,7 +860,7 @@ Die Faktormenge $A / \sim_+$ enthält dann die Äquivalenzklassen $[1]$, $[2]$, 
 \subsection{Permutationen und Zykelschreibweise} 
  \label{Abschnitt_PermutationZykel}
 
-Unter einer Permutation versteht man die Reihenfolge von Objekten.
+Unter einer Permutation versteht man die Vertauschung der Reihenfolge von Objekten.
 
 \begin{definition}[Permutation]
 Bei einer $n$-elementigen Menge $M$ ist eine ($n$-stellige) Permutation eine bijektive Abbildung $\pi  : M \rightarrow M$.
@@ -869,7 +869,7 @@ Die Zykelschreibweise ist eine kurze Schreibweise für eine Permutation.
 Die Zykelschreibweise wird nun anhand eines Beispiels erklärt. Die Definition geht über den Rahmen dieser Arbeit hinaus, sie kann aber in dem Buch \textit{Elementar(st)e Gruppentheorie} von Tobias Glosauer \cite{Buch} nachgelesen werden.
 
 \begin{bsp}[Permutationen und Zykelschreibweise]
-Sei $M$ eine Menge mit fünf Objekten: $1, 2, 3, 4$ und $5$. Nun können diese Objekte in fünf Plätzen arrangiert werden. Die Plätze werden als $1$ bis $5$ nummeriert. Dann kann eine Funktion $\pi :\{1,2,3,4,5\} \rightarrow \{1,2,3,4,5\}$ definiert werden, bei der $\pi (i)$ die Zahl ist, die in Slot $i$ liegt.
+Sei $M$ eine Menge mit fünf Objekten: $1, 2, 3, 4$ und $5$. Nun können diese Objekte in fünf Plätzen arrangiert werden. Die Plätze werden mit $1$ bis $5$ nummeriert. Dann kann eine Funktion $\pi :\{1,2,3,4,5\} \rightarrow \{1,2,3,4,5\}$ definiert werden, bei der $\pi (i)$ die Zahl ist, die in Slot $i$ liegt.
 Wenn die Zahlen in der Reihenfolge $5 \ 1\ 4\ 3 \ 2$ amgeordnet werden, ist $5$ auf Platz $1$, $1$ auf Platz $2$, usw. Das ist auch in der folgenden Tabelle zu sehen: 
 
 \begin{center}
@@ -886,7 +886,7 @@ Die Funktion $\pi$ sieht für diese Permutation (s. Tabelle) so aus:
 \begin{align*}
 \pi(1) = 5 \ \ \ \ \ \  \pi(2) = 1 \ \ \ \ \ \ \pi(3) = 4 \ \ \ \ \ \ \pi(4) = 3 \ \ \ \ \ \ \pi(5) = 2 
 \end{align*}
-$\pi$ kann auch als eindeutige Zuordnung der Form $i \mapsto j$ (für $\pi(i)=j$) geschrieben werden \cite{JC}:
+$\pi$ kann auch als eindeutige Zuordnung der Form $i \mapsto j$ (für $\pi(i)=j$) geschrieben werden, da jede Permutationsfunktion in dieser Form angegeben werden kann \cite{JC}:
 \begin{align*}
 1 \mapsto 5 \ \ \ \ \ \ \ \ \ \  2\mapsto 1 \ \ \ \ \ \ \ \ \ \ 3\mapsto 4 \ \ \ \ \ \ \ \ \ \ 4\mapsto 3 \ \ \ \ \ \ \ \ \ \ 5\mapsto 2 
 \end{align*}
@@ -894,7 +894,7 @@ Das kann auch in der Zykelschreibweise geschrieben werden:
 \begin{align*}
 \pi = (1 \ 5 \ 2)\ (3 \ 4)
 \end{align*}
-Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. $\pi$ besteht somit aus zwei Zykeln: ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel sind auch in Abbildung \ref{Abbildung_ZykelVonf} zu sehen.
+Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. $\pi$ besteht somit aus zwei Zykeln: ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel sind auch in Abbildung \ref{Abbildung_ZykelVonf} dargestellt.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Zykel_152.png}
@@ -911,7 +911,7 @@ Für $n$ verschiedene Objekte ist die Anzahl der Permutationen $n!$.
 \end{definition}
 
 \begin{bsp}[Anzahl der Permutationen]
-Sei $M = \{ 1 \ 2 \ 3 \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten: $1$, $2$ oder $3$. Für das zweite Objekt bleiben dann noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach gibt es nur noch eine Option. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
+Sei $M = \{ 1 \ 2 \ 3 \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten der Platzeinname: $1$, $2$ oder $3$. Für das zweite Objekt bleiben dann noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach gibt es nur noch eine Option. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
 
 \end{bsp}
 
@@ -1109,9 +1109,9 @@ In diesem Kapitel wird die Position der Ecksteine als Menge bijektiver Funktione
 
 \label{Abschnitt_PositionenDerSteineImWürfel}
 
-Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) enthält Funktionen, die die Übergänge der Würfelsteine darstellen. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
+Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) enthält Funktionen, die die Übergänge der Würfelsteine darstellen. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. Die Funktion $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
 
-Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} zu sehen. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die ihre Position mit \textit{up, down, right, left, front und back} beschreiben.
+Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} abgebildet. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die ihre Position mit \textit{up, down, right, left, front und back} beschreiben.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.14]{caged_positions.png} \\
@@ -1126,7 +1126,7 @@ Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_Stein
 \caption[Aufgeklappter Würfel mit Namen der Steinpositionen]{aufgeklappter Würfel mit Namen der Steinpositionen}
 \label{Abbildung_SteinpositionNamenFoldetOut}
 \end{figure}
-Jeder Steinposition wird ein einzigartiger Name zugeordnet, um sich darauf zu beziehen. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinposition werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, r, l, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, right, left, front, back}. \\
+Jeder Steinposition wird ein einzigartiger Name zugeordnet, um sich darauf zu beziehen. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinpositionen werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, r, l, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, right, left, front, back}. \\
 Somit heißt die Steinposition oben links beispielsweise \textit{ulf} (für \textit{up}, \textit{left} und \textit{front}). 
 Jeder Stein bekommt auch einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
 
@@ -1147,7 +1147,7 @@ In Abbildung \ref{Abbildung_SteinpositionnamenNachU} ist zu sehen, dass die Stei
 & \sigma_U(\textit{dlf})=\textit{dlf} \ \ \ \ \ \ \ & \sigma_U(\textit{dlb})=\textit{dlb} \ \ \ \ \ \ \ & \sigma_U(\textit{drb})=\textit{drb} \ \ \ \ \ \ \ & \sigma_U(\textit{drf})=\textit{drf} 
 \end{alignat*}
 
-Das kann auch in der Form $i \mapsto j$ geschrieben werden: 
+Üblich ist auch die Notation der Form $i \mapsto j$: 
 \begin{alignat*}{4}
 & \textit{ulf} \mapsto \textit{ulb} \ \ \ \ \ \ \ \ & \textit{ulb} \mapsto \textit{urb} \ \ \ \ \ \ \ \ & \textit{urb} \mapsto \textit{urf} \ \ \ \ \ \ \ \ & \textit{urf} \mapsto \textit{ulf} \\
 & \textit{dlf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ & \textit{dlb} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ & \textit{drb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ & \textit{drf} \mapsto \textit{drf} 
@@ -1216,7 +1216,7 @@ Die anderen Positionen von $x$ zeigen nun aber andere Farbflächen:
 \begin{align*}
 x_2 = 2 \ \ \ \ \ \ x_4 = 1 \ \ \ \ \ \ x_6 = 1 \ \ \ \ \ \ x_8 = 2  
 \end{align*}
-Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das kann auch in Abbildung \ref{Abbildung_XnachZugR} abgelesen werden. Links sind dort die Positionen der Vektoreinträge von $x$ abgebildet und rechts sieht man den Würfel mit den Farbflächennummerierungen, nachdem der Zug $R$ ausgeführt wurde.
+Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das ist auch anhand von Abbildung \ref{Abbildung_XnachZugR} zu erkennen. Links sind dort die Positionen der Vektoreinträge von $x$ abgebildet und rechts sieht man den Würfel mit den Farbflächennummerierungen, nachdem der Zug $R$ ausgeführt wurde.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{foldedout_012_white.png}
@@ -1225,7 +1225,7 @@ Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das kann auch in Abb
 \label{Abbildung_XnachZugR}
 \end{figure}
 
-Anhand des Beispielzuges $R$ kann für jeden Vektoreintrag eine Funktion $\Gamma_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreibt. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinflusst werden, bleiben diese unverändert. Der Vektoreintrag, der durch $\Gamma_R$ in den Folgewert verändert wird, ist im Folgenden schwarz hervorgehoben. Die anderen Einträge sind ausgegraut.
+Anhand des Beispielzuges $R$ kann für jeden Vektoreintrag eine Funktion $\Gamma_R$ aufgestellt werden, die die Veränderung des Vektors $x$ nach Ausführen des Zuges $R$ bei jeder beliebigen Ausgangskonfiguration beschreibt. Da $x_1, x_3, x_5$ und $x_7$ nicht beeinflusst werden, bleiben diese unverändert. Der Vektoreintrag, der durch $\Gamma_R$ in den Folgewert verändert wird, ist im Folgenden schwarz hervorgehoben. Alle anderen Einträge sind ausgegraut.
 \begin{align*}
 & \Gamma_{R_1}(\textcolor{gray}{(\textcolor{black}{x_1}, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )})=\textcolor{gray}{(\textcolor{black}{x_1}, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )} \\
 & \Gamma_{R_3}(\textcolor{gray}{(x_1, x_2, \textcolor{black}{x_3}, x_4, x_5, x_6, x_7, x_8  )})=\textcolor{gray}{(x_1, x_2, \textcolor{black}{x_3}, x_4, x_5, x_6, x_7, x_8  )} \\
@@ -1236,7 +1236,7 @@ Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit
 
 
 \begin{align*}
-\Gamma_{R_2}\textcolor{gray}{(x_1, \textcolor{black}{x_2}, x_3, x_4, x_5, x_6, x_7, x_8  )})= \begin{cases}
+\Gamma_{R_2}(\textcolor{gray}{(x_1, \textcolor{black}{x_2}, x_3, x_4, x_5, x_6, x_7, x_8  )})= \begin{cases}
 \textcolor{gray}{(x_1, \textcolor{black}{2}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 0 \\ 
 \textcolor{gray}{(x_1, \textcolor{black}{0}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 1 \\
 \textcolor{gray}{(x_1, \textcolor{black}{1}, x_3, x_4, x_5, x_6, x_7, x_8  )} & \ \text{falls } x_4 = 2 
@@ -1338,14 +1338,14 @@ Analog dazu gibt es für jeden der sechs Grundzüge eine Funktion $\gamma$, die 
 & =  \left( g(x_2), h(x_6), x_3, x_4, h(x_1), g(x_5), x_7, x_8 \right)
 \end{align*}
 
-Das oben genannte Beispiel des Zuges $R$ (s. Abbildung \ref{Abbildung_XnachZugR}) wird nun schrittweise mithilfe von $\gamma_R$ berechnet werden. Dafür befindet sich der Würfel zu Beginn in der Startkonfiguration ($x = (0, 0, 0, 0, 0, 0, 0, 0)$). Die Steinposition wird hier nicht berücksichtigt. Wenn der Zug $R$ ausgeführt wird, wird $\gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) )$ berechnet:
+Das oben genannte Beispiel des Zuges $R$ (s. Abbildung \ref{Abbildung_XnachZugR}) wird nun schrittweise mithilfe von $\gamma_R$ berechnet. Dafür befindet sich der Würfel zu Beginn in der Startkonfiguration ($x = (0, 0, 0, 0, 0, 0, 0, 0)$). Die Steinposition wird hier nicht berücksichtigt. Wenn der Zug $R$ ausgeführt wird, wird $\gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) )$ berechnet:
 \begin{align*}
 & \gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) ) \\
 & = (0, g(0), 0, h(0), 0, h(0), 0, g(0)) \\
 & = (0, 2, 0, 1, 0, 1, 0, 2)
 \end{align*}
 
-Der Vektor $x$ sieht nach dem Zug $R$ von der Startkonfiguration ausgehend so aus: $(0, 2, 0, 1, 0, 1, 0, 2)$. 
+Der Vektor $x$ lautet nach dem Zug $R$ von der Startkonfiguration ausgehend: $(0, 2, 0, 1, 0, 1, 0, 2)$. 
 
 %
 %
@@ -1566,7 +1566,7 @@ Die Rotationen sind zur besseren Anschaulichkeit nicht minimal definiert. Es gib
 
 Die Steine werden durch eine Rotation alle an einen neuen Platz gebracht. Anders als bei der Drehung der Ebenen, wo eine Auswahl der Steine die Position ändert, ändern hier alle Steine die Position. Die Folgekonfiguration des Würfels nach einer Rotation ist dann eine andere, äquivalente Konfiguration.
 
-Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen erläutert. Der Würfel ist in Abbildung \ref{Abbildung_WürfelNachRotationUmZAchse} nach der Rotation $Z_r$ zu sehen.
+Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z$-Achse um $90^\circ$ im Uhrzeigersinn, wird nun die Veränderung der Würfelpositionen erläutert. Der Würfel ist in Abbildung \ref{Abbildung_WürfelNachRotationUmZAchse} nach der Rotation $Z_r$ abgebildet.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{auf_ulf.png}
@@ -1579,19 +1579,19 @@ Die Permutationsfunktion der Rotationen wird im Folgenden $\delta$ genannt. Da b
 & \delta_{Z_r}(\textit{drf}) = \textit{dlf} \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlf}) = \textit{dlb} \ \ \ \ \ \ \ & \delta_{Z_r}(\textit{dlb}) = \textit{drb} \ \ \ \ \ \ & \delta_{Z_r}(\textit{drb}) = \textit{drf}
 \end{alignat*}
 
-Das kann auch in der Form $i \mapsto j$ geschrieben werden: 
+Die äquivalente Schreibweise in der Form $i \mapsto j$ lautet: 
 \begin{alignat*}{4}
 & \textit{urf} \mapsto \textit{ulf} \ \ \ \ \ \ \ \ & \textit{ulf} \mapsto \textit{ulb} \ \ \ \ \ \ \ \ & \textit{ulb} \mapsto \textit{urb} \ \ \ \ \ \ \ \ & \textit{urb} \mapsto \textit{urf} \\
 & \textit{drf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ & \textit{dlf} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ & \textit{dlb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ & \textit{drb} \mapsto \textit{drf}
 \end{alignat*}
 
-In der Zykel-Schreibweise sieht die Funktion $\delta_{Z_r}$ für die Rotation $Z_r$ dann so aus:
+In der Zykel-Schreibweise entspricht die Funktion $\delta_{Z_r}$ für die Rotation $Z_r$ dem folgenden Ausdruck:
 \begin{align*}
 \delta_{Z_r}=( \ \textit{urf} \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ )( \ \textit{drf} \ \textit{dlf} \ \textit{dlb} \ \textit{drb} \  )
 \end{align*}
  
 
-Die anderen Rotationen können ebenfalls durch Funktionen $\delta$ in der Zykelschreibweise abgebildet werden. Die leere Rotation ist dabei die Identitätspermutation 1. Im Folgenden sind die Funktionen $\delta$ für alle Rotationen aufgelistet:
+Die übrigen Rotationen können ebenfalls durch Funktionen $\delta$ in der Zykelschreibweise abgebildet werden. Die leere Rotation ist dabei die Identitätspermutation 1. Im Folgenden sind die Funktionen $\delta$ für alle Rotationen aufgelistet:
 \begin{alignat*}{2}
 & \delta_{Z_r} & = ( \ \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf}\ )(\ \textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} \ )\\
 & \delta_{Z_l} & = ( \ \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb}\ )(\ \textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} \ )\\
@@ -1607,7 +1607,7 @@ Da die Rotationen die Würfelkonfiguration in eine andere, äquivalente Würfelk
 g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 \ \ \ \ \ i(x)=x
 \end{align*}
 
-Die Überführungsfunktionen des Vektors $x$ werden im Folgenden $\beta$ genannt. Für jede der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folgezustand überführt. Die Identitätsfunktion $i$ muss nicht geschrieben werden. Die Funktionen $\beta$ für die Rotationen sind im Folgenden definiert:
+Die Überführungsfunktionen des Vektors $x$ werden im Folgenden $\beta$ genannt. Für jede der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folgezustand überführt. Die Identitätsfunktion $i$ muss nicht mit aufgeführt werden. Die Funktionen $\beta$ für die Rotationen sind im Folgenden definiert:
 \begin{align*}
  & \beta_{Z_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
  & = (x_3, x_1, x_4, x_2, x_7, x_5, x_8, x_6) \\
@@ -1622,10 +1622,10 @@ Die Überführungsfunktionen des Vektors $x$ werden im Folgenden $\beta$ genannt
  & = (h(x_5), g(x_6), g(x_1), h(x_2),g(x_7),h(x_8),h(x_3),g(x_4)) \\
 \\
  & \beta_{X_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & (g(x_5), h(x_1), h(x_7), g(x_3), h(x_6), g(x_2), g(x_8),h(x_4)) \\
+ & = (g(x_5), h(x_1), h(x_7), g(x_3), h(x_6), g(x_2), g(x_8),h(x_4)) \\
 \\
  & \beta_{X_l}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
+ & = (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
 \end{align*}
 
 Es können auch mehrere Rotationen nacheinander ausgeführt werden. Die Funktionen $\delta$ und $\beta$ werden dann jeweils verschachtelt. Das erfolgt analog zu dem mehrfachen Ausführen von Zügen (s. Abschnitt \ref{Abschnitt_ZuegeAusfuehren}).
@@ -1886,7 +1886,7 @@ Zwei Äquivalenzklassen bzw. deren Repräsentanten können durch den Operator $\
 \subsection{\Ttwo Zauberwürfel als Gruppe} 
  \label{Abschnitt_WürfelAlsGruppe}
 
-Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des \Ttwo Würfels umgesetzt. Die Gruppe von Janet Chen wird hier als $(\Gthree, *)$ bezeichnet, auch wenn er sie als $(G, *)$ bezeichnet hat. Der Name der Gruppe wird geändert, um klar zwischen dem \Ttwo  und dem \Tthree Würfel zu differenzieren. Die Gruppe des \Ttwo Würfels heißt im Folgenden $(\Gtwo, \circ)$. 
+Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Group Theory and the Rubik's Cube}  von Janet Chen \cite{JC} als Gruppe des \Ttwo Würfels umgesetzt. Die Gruppe des \Ttwo Würfels heißt im Folgenden $(\Gtwo, \circ)$. 
 Grundlagen und Definition der Gruppe wurden in Abschnitt \ref{Abschnitt_Gruppe} erklärt.
 
 
