@@ -97,17 +97,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9}Minimale Gruppe}{76}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Minimale Permutationen}{76}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Minimale Grundzüge}{76}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{76}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Minimale Rotation des Würfels}{77}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Minimale Ausrichtung der Steine}{77}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Erzeuger und Cayleygraph von $G_{min}$}{78}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Erzeuger und Cayleygraph von $G_{min}$}{78}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Äquivalenz der Gruppen}{78}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Äquivalenz der Gruppen}{78}{subsection.9.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.6}Minimaler Lösungsweg}{81}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.5}Minimaler Lösungsweg}{81}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10}Fazit}{83}{section.10}%
 \defcounter {refsection}{0}\relax 
