@@ -105,6 +105,33 @@
       \field{note}{Online erhältlich unter \url{http://www.geometer.org/rubik/group.pdf}; abgerufen am 05.01.2021.}
       \field{title}{Group Theory via Rubik's Cube}
     \endentry
+    \entry{DDJT}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=aac644456ece97ed5b1040cf7ae78be1}{%
+           family={Duberg},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c3a9915a135042c7dec668d3ad0a8f6c}{%
+           family={Tideström},
+           familyi={T\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2c98a3d19ee402d48ef59c86628321f}
+      \strng{fullhash}{a2c98a3d19ee402d48ef59c86628321f}
+      \strng{bibnamehash}{a2c98a3d19ee402d48ef59c86628321f}
+      \strng{authorbibnamehash}{a2c98a3d19ee402d48ef59c86628321f}
+      \strng{authornamehash}{a2c98a3d19ee402d48ef59c86628321f}
+      \strng{authorfullhash}{a2c98a3d19ee402d48ef59c86628321f}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abschlussarbeit. Stockholm, CSC School}
+      \field{title}{Comparison of Rubik’s Cube Solving Methods Made for Humans}
+      \field{year}{2015}
+    \endentry
     \entry{RF2}{misc}{}
       \name{author}{1}{}{%
         {{hash=346f0b48527b994b6e7e2aabaff00e28}{%
