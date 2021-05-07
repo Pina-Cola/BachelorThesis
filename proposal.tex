@@ -257,15 +257,15 @@ Diese Arbeit setzt sich aus 10 Kapiteln zusammen. Im Folgenden werden die Inhalt
 
 \item[\textbf{\ref{Kapitel_MathematischeGrundlagen}}] Hier werden die mathematischen Grundlagen erklärt. Dafür werden unter anderem Gruppen und andere algebraische Strukturen definiert und anhand von Beispielen erklärt.
 
-\item[\textbf{\ref{Kapitel_KonfigurationDesWürfels}}] In dem Kapitel \textit{Konfiguration des Würfels} werden die Positionen der Steine und die Ausrichtung der Steine im Würfel erklärt. Daraus setzt sich die Konfiguration zusammen. 
+\item[\textbf{\ref{Kapitel_KonfigurationDesWürfels}}] In dem Kapitel \textit{Konfiguration des Würfels} werden die Positionen der Steine und die Ausrichtung der Steine im Würfel erklärt und auf das mathematische Modell übertragen. Dabei wird die Konfiguration definiert. 
 
-\item[\textbf{\ref{Kapitel_WürfelAlsGruppe}}] In diesem Kapitel wird die Gruppe des \Ttwo Würfels beschrieben und die Gleichheit von Zügen definiert. Außerdem werden Äquivalenzrelationen eingeführt, um die Rotationen des Würfels zu realisieren.
+\item[\textbf{\ref{Kapitel_WürfelAlsGruppe}}] In diesem Kapitel wird die Gruppe des \Ttwo Würfels beschrieben und die Gleichheit von Zügen definiert. Außerdem werden Äquivalenzrelationen eingeführt, um die Rotationen des Würfels zu realisieren und es wird die Ordnung von Zügen definiert.
 
 \item[\textbf{\ref{Kapitel_Untergruppen}}] Das Kapitel \textit{Untergruppen} befasst sich mit Beispieluntergruppen, Erzeugern und Cayleygraphen der Gruppe des \Ttwo Würfels.
 
-\item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen und die Mächtigkeit der Trägermenge der Gruppe des \Ttwo Würfels berechnet.
+\item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen und die Mächtigkeit der Trägermenge der Gruppe des \Ttwo Würfels berechnet und verglichen.
 
-\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird schrittweise erklärt und es gibt eine allgemeine Anleitung, mit der der \Ttwo Würfel immer gelöst werden kann.
+\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird anhand eines Beispiels schrittweise erklärt und es findet sich eine allgemeine Anleitung, mit der der \Ttwo Würfel immer gelöst werden kann.
 
 \item[\textbf{\ref{Kapitel_MinUntergruppe}}] Hier wird die Untergruppe mit minimalen Grundzügen beschrieben, die den Würfel vollständig abbildet. Außerdem wird ein Konzept eingeführt, um den optimalen Lösungsweg des Würfels zu berechnen.  
 
@@ -2075,8 +2075,8 @@ Der Zug $LF$ beispielsweise hat die Ordnung $15$, die Permutation der Steine hat
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.14]{LLFF_5.png}
-\includegraphics[scale=0.14]{2x2solved.png}
+\includegraphics[scale=0.12]{LLFF_5.png}
+\includegraphics[scale=0.12]{2x2solved.png}
 \caption{Ordnung des Zuges und der Permutation $LF$}
 \label{Abbildung_LF_5_15}
 \end{figure}
@@ -2422,7 +2422,7 @@ Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation vo
 
 \label{Kapitel_Untergruppen}
 
-Dieses Kapitel behandelt einige der Untergruppen der Gruppe $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen. Außerdem werden noch weitere, interessante Untergruppen beschrieben.
+Dieses Kapitel behandelt einige der Untergruppen der Gruppe $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen, außerdem werden noch weitere Untergruppen beschrieben.
 Die Definition und Erklärung der Untergruppe und des Erzeugers findet sich in Abschnitt \ref{Abschnitt_Untergruppe}.
 Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt. Die Cayleygraphen dienen der Veranschaulichung von Gruppenstrukturen. Die Untergruppe, die den \Ttwo Würfel minimal aber komplett abbildet, findet sich in Kapitel \ref{Kapitel_MinUntergruppe}.
 
@@ -4069,7 +4069,7 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 
 \label{Anhang_Ausrichtungsfunktionen}
 
-Im Folgenden wird gezeigt, dass der Vektor $x$ nach dem vierfachen Ausführen einer der Grundzüge wieder in der Ausgangskonfiguration ist. 
+Im Folgenden wird gezeigt, dass sich der Vektor $x$ nach dem vierfachen Ausführen einer der Grundzüge wieder in seinem Ausgangszustand befindet. 
 \begin{align*}
 \forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma', x)
 \end{align*}
@@ -4080,23 +4080,23 @@ Zuerst wird die Veränderung des Vektors $x$ anhand des Zuges $R$ beispielhaft b
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.15]{Rhoch1.jpg}
+\includegraphics[scale=0.155]{Rhoch1.jpg}
 \caption{Vektor $x$ nach $\gamma_R(x)$}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.15]{Rhoch2.jpg}
+\includegraphics[scale=0.155]{Rhoch2.jpg}
 \caption{Vektor $x$ nach $\gamma_R (\gamma_R(x))$}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.15]{Rhoch3.jpg}
+\includegraphics[scale=0.155]{Rhoch3.jpg}
 \caption{Vektor $x$ nach $\gamma_R ( \gamma_R (\gamma_R(x)))$}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.15]{Rhoch4.jpg}
+\includegraphics[scale=0.155]{Rhoch4.jpg}
 \caption{Vektor $x$ nach $\gamma_R ( \gamma_R ( \gamma_R (\gamma_R(x))))$}
 \end{figure}
 
@@ -4142,8 +4142,10 @@ Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleic
 
 mit
 \begin{align*}
-g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 
+g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ \ \ \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 
 \end{align*}
+
+Dazu werden zuerst $g(h(x))$ und $h(g(x))$ berechnet.
 
 \begin{minipage}[H]{0.5\textwidth}
       \begin{align*}
@@ -4169,11 +4171,6 @@ g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mo
 		= \ & x \\
 	\end{align*}
 \end{minipage}
-
-
-
-
-
 
 Der Ausdruck $x \hspace*{-0.5em} \mod 3$ kann in diesem Fall zu $x$ umgeformt werden, da $x \in \{0,1,2\}$. 
 

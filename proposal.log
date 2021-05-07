@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  7 MAY 2021 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  7 MAY 2021 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1627,18 +1627,19 @@ LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 File: LLFF_5.png Graphic file (type png)
 <use LLFF_5.png>
 Package pdftex.def Info: LLFF_5.png  used on input line 2078.
-(pdftex.def)             Requested size: 146.145pt x 168.20728pt.
+(pdftex.def)             Requested size: 125.26259pt x 144.17242pt.
 File: 2x2solved.png Graphic file (type png)
 <use 2x2solved.png>
 Package pdftex.def Info: 2x2solved.png  used on input line 2079.
-(pdftex.def)             Requested size: 140.52403pt x 159.6353pt.
- [42] [43 <./LLFF_5.png>] [44]
-<graph_zug1.png, id=744, 1265.72874pt x 1078.0275pt>
+(pdftex.def)             Requested size: 120.4448pt x 136.82529pt.
+ [42 <./LLFF_5.png>] [43]
+<graph_zug1.png, id=740, 1265.72874pt x 1078.0275pt>
 File: graph_zug1.png Graphic file (type png)
 <use graph_zug1.png>
 Package pdftex.def Info: graph_zug1.png  used on input line 2152.
 (pdftex.def)             Requested size: 316.43141pt x 269.50621pt.
-<zykel_LLFF.png, id=746, 1366.10374pt x 593.21625pt>
+ [44]
+<zykel_LLFF.png, id=747, 1366.10374pt x 593.21625pt>
 File: zykel_LLFF.png Graphic file (type png)
 <use zykel_LLFF.png>
 Package pdftex.def Info: zykel_LLFF.png  used on input line 2181.
@@ -2079,34 +2080,34 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 File: Rhoch1.jpg Graphic file (type jpg)
 <use Rhoch1.jpg>
 Package pdftex.def Info: Rhoch1.jpg  used on input line 4083.
-(pdftex.def)             Requested size: 305.20035pt x 141.53111pt.
+(pdftex.def)             Requested size: 315.38403pt x 146.25362pt.
 <Rhoch2.jpg, id=1214, 2034.75676pt x 943.58154pt>
 File: Rhoch2.jpg Graphic file (type jpg)
 <use Rhoch2.jpg>
 Package pdftex.def Info: Rhoch2.jpg  used on input line 4089.
-(pdftex.def)             Requested size: 305.20035pt x 141.53111pt.
+(pdftex.def)             Requested size: 315.38403pt x 146.25362pt.
 <Rhoch3.jpg, id=1215, 2034.75676pt x 943.58154pt>
 File: Rhoch3.jpg Graphic file (type jpg)
 <use Rhoch3.jpg>
 Package pdftex.def Info: Rhoch3.jpg  used on input line 4094.
-(pdftex.def)             Requested size: 305.20035pt x 141.53111pt.
+(pdftex.def)             Requested size: 315.38403pt x 146.25362pt.
 <Rhoch4.jpg, id=1216, 2034.75676pt x 943.58154pt>
 File: Rhoch4.jpg Graphic file (type jpg)
 <use Rhoch4.jpg>
 Package pdftex.def Info: Rhoch4.jpg  used on input line 4099.
-(pdftex.def)             Requested size: 305.20035pt x 141.53111pt.
+(pdftex.def)             Requested size: 315.38403pt x 146.25362pt.
 [88 <./Rhoch1.jpg> <./Rhoch2.jpg>] [89 <./Rhoch3.jpg> <./Rhoch4.jpg>]
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 4132--4142
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 4148--4172
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 4150--4174
 []$[]$ $[]$ 
  []
 
 [90]
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 4183--4193
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 4180--4190
 []$[]$ $[]$ 
  []
 
@@ -2114,15 +2115,15 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 4183--4193
 <AlleRotationen.png, id=1236, 6500.285pt x 7889.475pt>
 File: AlleRotationen.png Graphic file (type png)
 <use AlleRotationen.png>
-Package pdftex.def Info: AlleRotationen.png  used on input line 4236.
+Package pdftex.def Info: AlleRotationen.png  used on input line 4233.
 (pdftex.def)             Requested size: 422.53336pt x 512.8339pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4249--4314
+Underfull \hbox (badness 10000) in paragraph at lines 4246--4311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4249--4314
+Underfull \hbox (badness 10000) in paragraph at lines 4246--4311
 
  []
 
@@ -2131,10 +2132,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 4249--4314
 File: Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use Eidesstattliche_Versicherung.pdf>
 Package pdftex.def Info: Eidesstattliche_Versicherung.pdf  used on input line 4
-341.
+338.
 (pdftex.def)             Requested size: 477.78564pt x 675.32391pt.
 
-Overfull \hbox (22.54153pt too wide) in paragraph at lines 4341--4342
+Overfull \hbox (22.54153pt too wide) in paragraph at lines 4338--4339
  [] 
  []
 
@@ -2143,11 +2144,11 @@ Overfull \vbox (48.83144pt too high) has occurred while \output is active []
 
 
 [94 <./Eidesstattliche_Versicherung.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4372.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4372.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4369.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4369.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4372.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4372.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4369.
 
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 57E9B91B7DD73D8D8519B5640DC07DB3;4246.
@@ -2158,7 +2159,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4372.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4369.
  ) 
 Here is how much of TeX's memory you used:
  32285 strings out of 483016
@@ -2195,7 +2196,7 @@ nts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on proposal.pdf (97 pages, 7438268 bytes).
+Output written on proposal.pdf (97 pages, 7438600 bytes).
 PDF statistics:
  1418 PDF objects out of 1440 (max. 8388607)
  1142 compressed objects within 12 object streams
