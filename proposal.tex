@@ -208,9 +208,11 @@
 \label{Kapitel_Einleitung}
 
 Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem ungarischen Professor Er\~{n}o Rubik erfunden wurde. Er wollte damit seinen Studenten helfen, dreidimensionale Probleme zu verstehen. Er\~{n}o Rubik selbst brauchte über einen Monat, um den \Tthree Würfel zum ersten Mal zu lösen.
-Der sogenannte \textit{Rubik's Cube} wurde ab 1980 weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. Der Gewinner war Minh Thai aus den USA, der den Würfel in $22,95$ Sekunden löste. \cite{RC} Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $3,47$ Sekunden und stellte damit einen neuen Rekord auf. \cite{rekord}
+Der sogenannte \textit{Rubik's Cube} wurde ab 1980 weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. Der Gewinner war Minh Thai aus den USA, der den Würfel in $22,95$ Sekunden löste. \cite{RC} Die Zeiten zum Lösen des \Tthree Würfels wurden immer wieder unterboten.
+Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $3,47$ Sekunden und stellte damit einen neuen Weltrekord auf. \cite{rekord} 
 Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Dieser Würfel ist Gegenstand dieser Arbeit.
 
+Bis heute sind Kinder und Erwachsene gleichermaßen begeistert von den Zauberwürfeln.
 Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
 
 %
@@ -231,7 +233,7 @@ Der \Tthree Würfel wurde bereits in zahlreichen Arbeiten untersucht \cite{JC, T
 Die \textit{God's Number} -- das ist die maximal mögliche Anzahl der nötigen Drehungen zur Lösung -- wurde oft berechnet und durch neue Algorithmen verbessert. 
 Die Berechnung der \textit{God's Number} des \Tthree Würfels ist wesentlich anspruchsvoller und dadurch auch interessanter als die des \Ttwo Würfels. 
 
-Der \Tthree Würfel wurde schon mehrfach als Gruppe dargestellt und untersucht \cite{JC, TD, DJ}, während dies beim \Ttwo Würfel noch nicht der Fall ist. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel auch weniger komplex. Dafür kann der \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotiert werden und so kann die Oberseite beliebig geändert werden. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mithilfe der Gruppentheorie dargestellt.
+Der \Tthree Würfel wurde schon mehrfach als Gruppe dargestellt und untersucht \cite{JC, TD, DJ}, während dies beim \Ttwo Würfel noch nicht der Fall ist. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel weniger komplex. Dafür kann der \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotiert werden und so kann die Oberseite beliebig geändert werden. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mithilfe der Gruppentheorie dargestellt.
 
 Wer die Lösungsalgorithmen des \Ttwo Zauberwürfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
 
@@ -318,7 +320,7 @@ Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
 \item[\Ttwo Würfel] (auch Zauberwürfel oder \textit{Cube}) 
 
 Der Würfel setzt sich aus acht kleinen Würfeln zusammen.
-In Abbildung \ref{Abbildung_WürfelUngelöstGelöst} ist er links verdreht und rechts im gelösten Zustand zu sehen. Der gelöste Zustand wird auch als Startkonfiguration bezeichnet.
+In Abbildung \ref{Abbildung_WürfelUngelöstGelöst} ist er links verdreht und rechts im gelösten Zustand zu sehen. Der gelöste Zustand wird als Startkonfiguration bezeichnet.
 Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen derselben Farbe. 
 Bei dem verdrehten Würfel können sich die Steine des Würfels an anderen Positionen befinden und anders ausgerichtet sein.
 \begin{figure}[h]
@@ -464,7 +466,7 @@ Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\
 \label{Kapitel_MathematischeGrundlagen}
 
 In diesem Kapitel werden die mathematischen Grundlagen erklärt, die für den weiteren Inhalt dieser Arbeit relevant sind. Es werden Definitionen und Beispiele von Gruppen, Untergruppen, zyklischen Gruppen, Erzeugern, Gruppenoperationen, Kommutatoren, Äquivalenzrelationen, Permutationen und Zykelschreibweise angegeben.
-Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort finden sich auch detailliertere Informationen und weitere Beispiele.
+Die genannten Definitionen basieren auf denen von Tobias Glosauer aus dem Buch \textit{Elementar(st)e Gruppentheorie} \cite{Buch}. Dort finden sich außerdem detailliertere Informationen und weitere Beispiele.
 Des Weiteren wird der Cayleygraph erklärt. 
 %
 %
@@ -581,7 +583,7 @@ Im Folgenden werden Untergruppen definiert.
 Eine Gruppe $(H, \circ)$ ist eine Untergruppe einer Gruppe $(G, \circ)$, wenn $H \subseteq G$ gilt. Dann wird auch $(H, \circ) \leqslant (G, \circ)$ geschrieben. 
 \end{definition}
 
-Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. Nicht jede Teilmenge $H \subseteq G$ muss auch eine Gruppe sein.
+Das Symbol $\leqslant$ ist zu lesen als \textit{ist Untergruppe von}. Nicht jede Teilmenge $H \subseteq G$ muss Trägermenge einer Gruppe sein.
 
 Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, wird $(G, \circ)$ auch Obergruppe von $(H, \circ)$ genannt.
 Jede Gruppe $(G, \circ)$ mit neutralem Element $N$ hat die beiden trivialen Untergruppen $(H_N, \circ)$ mit ${H_N = \{N\}}$ und $(H_G, \circ)$ mit $H_G=G$.
@@ -890,11 +892,11 @@ $\pi$ kann auch als eindeutige Zuordnung der Form $i \mapsto j$ (für $\pi(i)=j$
 \begin{align*}
 1 \mapsto 5 \ \ \ \ \ \ \ \ \ \  2\mapsto 1 \ \ \ \ \ \ \ \ \ \ 3\mapsto 4 \ \ \ \ \ \ \ \ \ \ 4\mapsto 3 \ \ \ \ \ \ \ \ \ \ 5\mapsto 2 
 \end{align*}
-Das kann auch in der Zykelschreibweise geschrieben werden:
+Das kann folgendermaßen in der Zykelschreibweise geschrieben werden:
 \begin{align*}
 \pi = (1 \ 5 \ 2)\ (3 \ 4)
 \end{align*}
-Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. $\pi$ besteht somit aus zwei Zykeln: ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel sind auch in Abbildung \ref{Abbildung_ZykelVonf} dargestellt.
+Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. $\pi$ besteht somit aus zwei Zykeln: ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel sind in Abbildung \ref{Abbildung_ZykelVonf} dargestellt.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Zykel_152.png}
@@ -1128,7 +1130,7 @@ Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_Stein
 \end{figure}
 Jeder Steinposition wird ein einzigartiger Name zugeordnet, um sich darauf zu beziehen. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinpositionen werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, r, l, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, right, left, front, back}. \\
 Somit heißt die Steinposition oben links beispielsweise \textit{ulf} (für \textit{up}, \textit{left} und \textit{front}). 
-Jeder Stein bekommt auch einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
+Jeder Stein bekommt zu dem einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
 
 Nun wird zur Veranschaulichung die Permutation $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn definiert. Grundlagen zu Permutationen und der Zykelschreibeweise wurden in Abschnitt \ref{Abschnitt_PermutationZykel} erklärt.
 Hier wird $\sigma_U$ hergeleitet, ausführlich beschrieben und verschiedene Schreibweisen angegeben. Die Herleitung der weiteren Drehungen funktioniert analog. 
@@ -1280,7 +1282,7 @@ Die anderen Funktionen für die Veränderung des Vektors $x$ werden ebenfalls du
 
 
 
-Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ sind analog. Da diese Funktionen in Hinblick auf Ein- und Aufgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags aus $x$ nach dem Zug $R$ aus.
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ arbeiten analog. Da diese Funktionen in Hinblick auf Ein- und Aufgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags aus $x$ nach dem Zug $R$ aus.
 \\
 
 \begin{minipage}{0.35\textwidth}
@@ -1640,7 +1642,7 @@ Beim Betrachten der Rotationen und der dazugehörigen Funktionen fällt auf, das
 & X_r && \Leftrightarrow && B^{-1} F  \\
 & N_R && \Leftrightarrow && N 
 \end{alignat*}
-Jede Rotation kann also durch Ebenendrehungen von zwei gegenüberliegenden Würfelseiten erreicht werden.
+Jede Rotation kann also durch die Ebenendrehungen von zwei gegenüberliegenden Würfelseiten dargestellt werden.
 
 
 
@@ -1900,7 +1902,7 @@ Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo,
 
 \begin{description}
 \item [Abgeschlossenheit] \ \\
-$\forall Z_1,Z_2 \in \Gtwo .  (Z_1 \circ Z_2) \in \Gtwo $ 
+$\forall \ Z_1,Z_2 \in \Gtwo \  . \   (Z_1 \circ Z_2) \in \Gtwo $ 
 
 
 Seien $Z_1$ und $Z_2$ Züge und somit Elemente aus $\Gtwo$. Dann ist auch $Z_1 \circ Z_2$ ein Element aus $\Gtwo$. Die Menge $\Gtwo$ enthält Äquivalenzklassen. Diese wurden in Abschnitt \ref{Abschnitt_ÄquivalenzklassenDerZüge} mit den Elementen aus der unendlichen Menge aller Züge $A_Z$ definiert. Es sind somit alle Elemente der Menge $A_Z$ Repräsentanten der Äquivalenzklassen in $\Gtwo$. Eine Verknüpfung zweier Züge ist auch ein Zug aus $A_Z$. Somit ist $Z_1 \circ Z_2$ ebenfalls Repräsentant einer Äquivalenzklasse in $\Gtwo$. Die Gruppe $(\Gtwo, \circ)$ ist folglich unter dem Operator $\circ$ abgeschlossen.
@@ -1909,7 +1911,7 @@ Mit den Ergebnissen aus Abschnitt \ref{Abschnitt_MächtigkeitVonG} kann die Abge
 
 
 \item [Assoziativität] \ \\
-$\forall Z_1,Z_2,Z_3 \in \Gtwo.(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ 
+$\forall \ Z_1,Z_2,Z_3 \in \Gtwo \ . \ (Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ 
 
 
 Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird hier $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, r, l, f, b$. 
@@ -1933,7 +1935,7 @@ Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt we
 Somit ist $(\Gtwo, \circ)$ assoziativ.
 
 \item [Existenz eines neutralen Elements $N$] \ \\
-$\exists N \in \Gtwo. \forall Z \in \Gtwo .N \circ Z = Z \circ N = Z$ 
+$\exists \ N \in \Gtwo \  \forall Z \in \Gtwo \ . \ N \circ Z = Z \circ N = Z$ 
 
 
 Das neutrale Element $N$ muss eine Äquivalenzklasse aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: $N \circ Z = Z \circ N = Z$. Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
@@ -1949,7 +1951,7 @@ Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist somit die Äquivalenzklasse de
 
 
 \item [Existenz eines inversen Elements $Z^{-1}$] \ \\
-$\forall \  Z \in \Gtwo.\ \exists \  Z^{-1} \in \Gtwo.  \ \ Z \circ Z^{-1} = Z^{-1} \circ Z = N$  
+$\forall \  Z \in \Gtwo \ \exists \  Z^{-1} \in \Gtwo \ .  \ Z \circ Z^{-1} = Z^{-1} \circ Z = N$  
 
 
 Jeder Zug $Z$ überführt eine Würfelkonfiguration in eine Folgekonfiguration. 
