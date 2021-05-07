@@ -3017,6 +3017,7 @@ Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, d
 %
 %
 \subsection{Kommutatoren}
+\label{Abschnitt_Kommutatoren8}
 
 Kommutatoren wurden in Abschnitt Abschnitt \ref{Abschnitt_Kommutator} erklärt. Der Kommutator von zwei Zügen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist demnach definiert als:
 \begin{align*}
@@ -3460,12 +3461,12 @@ In Abbildung \ref{Abbildung_GelösteObereEbene} ist die obere Ebene des Würfels
 \end{figure}
 
 
-Ein Mensch dreht den Würfel zum Lösen der zweiten Ebene meistens um. Der Anschaulichkeit halber wird das hier auch gemacht.
+Ein Mensch dreht den Würfel zum Lösen der zweiten Ebene meistens um, damit die entsprechenden Steine sichtbar sind. Der Anschaulichkeit halber wird das hier auch gemacht.
 
-Zuerst werden nun alle Steine richtig ausgerichtet, so dass die obere Seite des Würfels ausschließlich gelbe Farbflächen zeigt. Der Vektor $x$ ist dann $0$. Dann werden die Steine getauscht, bis sie richtig angeordnet sind. Dann ist die Permutationsfunktion $\sigma$ 1.
+Zuerst werden nun alle Steine der zweiten Ebene richtig ausgerichtet, so dass die obere Seite des Würfels ausschließlich gelbe Farbflächen zeigt. Der Vektor $x$ ist dann $0$. Danach werden die Steine getauscht, bis sie richtig angeordnet sind. Dann ist die Permutationsfunktion $\sigma = 1$.
 
-Da es auch nach Lösung der ersten Ebene noch viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite ausschließlich gelbe Farbflächen zeigt.
-Viele dieser Algorithmen enthalten $(R U R^{-1} U^{-1})$, was der Kommutator $[ R,U ]$ ist.
+Da es viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite ausschließlich gelbe Farbflächen zeigt.
+Viele dieser Algorithmen enthalten $(R U R^{-1} U^{-1})$, was hier als Kommutator $[ R,U ]$ geschrieben wird. Kommutatoren der Würfelzüge wurden in Abschnitt \ref{Abschnitt_Kommutatoren8} behandelt.
 
 \begin{center}
 \begin{tabular}{m{4cm} m{6cm}}
@@ -3474,9 +3475,6 @@ Ausgangsposition & Algorithmus  \\
 \midrule
 \includegraphics[scale=0.08]{TOPVIEW1.png} & $F \ [ R,U ] \  [ R,U ] \  [ R,U ] \ F^{-1}$ \\
 \includegraphics[scale=0.08]{TOPVIEW2.png} & $F \ [ R,U ] \  [ R,U ] \ F^{-1}$ \\
-\includegraphics[scale=0.08]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
-\includegraphics[scale=0.08]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
-\includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -3486,6 +3484,10 @@ Ausgangsposition & Algorithmus  \\
 \toprule
 Ausgangsposition & Algorithmus  \\
 \midrule
+
+\includegraphics[scale=0.08]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
+\includegraphics[scale=0.08]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
+\includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
 \includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
 \includegraphics[scale=0.08]{TOPVIEW6.png} & $F^{-1} \ [ R,U ]\ L^{-1} \ U \ L$ \\
 \bottomrule
@@ -3493,9 +3495,9 @@ Ausgangsposition & Algorithmus  \\
 \end{center}
 
 
-Die obere Seite des Würfels zeigt nach dem Ausführen der Algorithmen ausschließlich gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann bereits richtig zueinander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
+Die obere Seite des Würfels zeigt nach dem Ausführen dieser Algorithmen auf die entsprechenden Ausgangspositionen ausschließlich gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann bereits richtig zueinander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
 
-Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es auch wieder verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Liste aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
+Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Liste aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
 
 \begin{center}
 \begin{tabular}{m{4cm} m{8cm}}
@@ -3504,21 +3506,24 @@ Steinpermutation & Algorithmus  \\
 \midrule
 \includegraphics[scale=0.08]{corners1.png}  & $F \ R \ U^{-1} \ [R^{-1}, U^{-1}] \ R^{-1} \ F^{-1}  \ [R, U]   [R^{-1}, F]$ \\
 \includegraphics[scale=0.08]{corners2.png}   & $[R,U] \  R^{-1} \ F \ RR \   U^{-1} \ [R^{-1}, U^{-1}] \ R^{-1} \  F^{-1})$ \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{m{4cm} m{8cm}}
-\toprule
-Steinpermutation & Algorithmus  \\
-\midrule
 \includegraphics[scale=0.08]{corners3.png}   & $R \ B^{-1} \ R \ FF \ R^{-1} \ B \ R \ FF \ RR $ \\
 \bottomrule
 \end{tabular}
 \end{center}
+%
+%\begin{center}
+%\begin{tabular}{m{4cm} m{8cm}}
+%\toprule
+%Steinpermutation & Algorithmus  \\
+%\midrule
+%
+%\bottomrule
+%\end{tabular}
+%\end{center}
 
-Nach Wahl der passenden Algorithmen sind beide Ebenen gelöst sein. Eventuell müssen die beiden Ebenen noch durch $U$, $U^{-1}$ oder $UU$ richtig zueinander ausgerichtet werden. Dann befindet sich der Würfel im gelösten Zustand und die Würfelkonfiguration ist somit $(1,0)$.
+Nach dem Ausführen der passenden Algorithmen sind beide Ebenen gelöst. Eventuell müssen die beiden Ebenen noch durch $U$, $U^{-1}$ oder $UU$ richtig zueinander ausgerichtet werden. Dann befindet sich der Würfel im gelösten Zustand und die Würfelkonfiguration ist somit $(1,0)$.
+
+Mit den Algorithmen aus dieser Anleitung kann jede valide Konfiguration eines \Ttwo Würfels in die Startkonfiguration $(1,0)$ überführt werden. Der beschriebene Ansatz ist die Fridrich-Methode.
 
 %
 %
