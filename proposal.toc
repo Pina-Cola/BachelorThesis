@@ -93,7 +93,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.7}Algorithmen für die erste Ebene}{71}{subsection.8.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{73}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.8}Algorithmen für die zweite Ebene}{72}{subsection.8.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9}Minimale Gruppe}{77}{section.9}%
 \defcounter {refsection}{0}\relax 
