@@ -209,7 +209,7 @@
 
 Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem ungarischen Professor Er\~{n}o Rubik erfunden wurde. Er wollte damit seinen Studenten helfen, dreidimensionale Probleme zu verstehen. Er\~{n}o Rubik selbst brauchte über einen Monat, um den \Tthree Würfel zum ersten Mal zu lösen.
 Der sogenannte \textit{Rubik's Cube} wurde ab 1980 weltweit verkauft und 1982 fand in Budapest sogar die erste Weltmeisterschaft statt. Der Gewinner war Minh Thai aus den USA, der den Würfel in $22,95$ Sekunden löste. \cite{RC} Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $3,47$ Sekunden und stellte damit einen neuen Rekord auf. \cite{rekord}
-Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Um diesen Würfel geht es in dieser Arbeit.
+Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Dieser Würfel ist Gegenstand dieser Arbeit.
 
 Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
 
@@ -227,12 +227,11 @@ Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung 
 
 
 
-Der \Tthree Würfel wurde mathematisch schon viel untersucht. 
+Der \Tthree Würfel wurde bereits in zahlreichen Arbeiten untersucht \cite{JC, TD, DJ, TR, RMG, DDJT}. 
 Die \textit{God's Number} -- das ist die maximal mögliche Anzahl der nötigen Drehungen zur Lösung -- wurde oft berechnet und durch neue Algorithmen verbessert. 
 Die Berechnung der \textit{God's Number} des \Tthree Würfels ist wesentlich anspruchsvoller und dadurch auch interessanter als die des \Ttwo Würfels. 
 
-Auch als Gruppe wurde der \Tthree Würfel schon mehrfach dargestellt, während der \Ttwo Würfel
-noch nicht umfangreich als Gruppe untersucht wurde. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel auch weniger komplex. Dafür kann der \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotiert werden und so kann die Oberseite beliebig geändert werden. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mit der Gruppentheorie dargestellt.
+Der \Tthree Würfel wurde schon mehrfach als Gruppe dargestellt und untersucht \cite{JC, TD, DJ}, während dies beim \Ttwo Würfel noch nicht der Fall ist. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel auch weniger komplex. Dafür kann der \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotiert werden und so kann die Oberseite beliebig geändert werden. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mithilfe der Gruppentheorie dargestellt.
 
 Wer die Lösungsalgorithmen des \Ttwo Zauberwürfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
 
@@ -1742,7 +1741,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 
 Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
-Daraus ergibt sich folgende Definition mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die \textit{leere} Rotation dar -- das entspricht keiner Rotation des Würfels. 
+Daraus ergibt sich folgende Definition mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
 \begin{align*}
 Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
@@ -1937,7 +1936,7 @@ Somit ist $(\Gtwo, \circ)$ assoziativ.
 $\exists N \in \Gtwo. \forall Z \in \Gtwo .N \circ Z = Z \circ N = Z$ 
 
 
-Das neutrale Element $N$ muss eine Äquivalenzklasse aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: $N \circ Z = Z \circ N = Z$. Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der \textit{leere} Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
+Das neutrale Element $N$ muss eine Äquivalenzklasse aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: $N \circ Z = Z \circ N = Z$. Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
 
 Wenn das auf das mathematischen Modell des Würfels übertragen wird, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Vektor wird dabei unverändert zurückgegeben.
 
@@ -3023,7 +3022,7 @@ Kommutatoren wurden in Abschnitt Abschnitt \ref{Abschnitt_Kommutator} erklärt. 
 \begin{align*}
 [Y,Z]=YZY^{-1}Z^{-1}
 \end{align*}
-Kommutierende Elemente sind Elemente, die als Kommutator das neutrale Element einer Gruppe ergeben. Das neutrale Element ist hier der \textit{leere} Zug $N$.
+Kommutierende Elemente sind Elemente, die als Kommutator das neutrale Element einer Gruppe ergeben. Das neutrale Element ist hier der leere Zug $N$.
 \begin{align*}
 [Y,Z]= N\ \Rightarrow \textit{ $Y$ und $Z$ sind kommutierende Elemente}
 \end{align*}
