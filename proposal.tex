@@ -3841,13 +3841,13 @@ Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und 
 
 \label{Abschnitt_MinLösung}
 
-In diesem Kapitel wird ein Konzept zum Finden des optimalen Lösungsweges von jeder beliebigen Würfelkonfiguration ausgehend entworfen. Dazu werden verschiedene Bäume modelliert und verglichen. Die \textit{God's Number} des Würfels sagt aus, wie viele Züge zum Lösen des Würfels maximal gebraucht werden.
+In diesem Kapitel wird ein Konzept zum Finden des optimalen Lösungsweges von jeder beliebigen Würfelkonfiguration ausgehend entworfen. Dazu werden verschiedene Bäume modelliert und verglichen. Um die maximale Größe dieser Bäume zu berechnen, wird die \textit{God's Number} benutzt. 
 
-Auf die \textit{God's Number} des \Ttwo Würfels wurde am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} bereits eingegangen. Bei der \textit{Quarter-Turn} Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14. Bei der \textit{Half-Turn} Metrik werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11.
+Die \textit{God's Number} des Würfels sagt aus, wie viele Züge zum Lösen des Würfels maximal gebraucht werden. Sie wurde am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} bereits beschrieben. Bei der \textit{Quarter-Turn} Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14 \cite{DJ}. Bei der \textit{Half-Turn} Metrik werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11 \cite{RMG}.
 
 Die Suche nach dem optimalen Lösungsweg, ausgehend von einer Konfiguration $C$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier lediglich das Konzept entworfen und die Größe der jeweiligen Bäume berechnet und verglichen. 
 
-Ein solcher Baum enthält eine Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenerotationen im Index' $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
+Ein Baum zum Berechnung der optimalen Lösung enthält eine Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenerotationen im Index $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
 
 Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für einen Baum drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
@@ -3864,7 +3864,7 @@ Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 
 Jeder der Baumknoten hat demnach 6 Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. $|i|$ entspricht dabei der Tiefe des Baums. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
 
-Für einen Baum mit minimaler Kantenzahl fallen die Kanten $F^{-1}, R^{-1}$ und $U^{-1}$ weg. Diese Züge können durch $FFF, RRR$ und $UUU$ dargestellt werden. Jeder Knoten hat dann nur noch drei Kinder. 
+Für einen Baum mit minimaler Kinderanzahl fallen die Kanten $F^{-1}, R^{-1}$ und $U^{-1}$ weg. Diese Züge können durch $FFF, RRR$ und $UUU$ dargestellt werden. Jeder Knoten hat dann nur noch drei Kinder. 
 
 \begin{figure}[H]
 \centering
@@ -3875,7 +3875,7 @@ Für einen Baum mit minimaler Kantenzahl fallen die Kanten $F^{-1}, R^{-1}$ und 
 
 Allerdings werden die Züge $F^{-1}, R^{-1}$ und $U^{-1}$ durch jeweils drei Kanten dargestellt. Dadurch ergibt sich eine maximale Tiefe von $|i| = 14 \cdot 3 = 42$. Die maximale Größe des Baums ist somit $3^{42} = 109\ 418\ 989\ 131\ 512\ 359\ 209$. 
 
-Dementsprechend ist der Baum mit minimaler Kantenanzahl wesentlich größer als der oben beschriebene Baum der \textit{Quarter-Turn} Metrik. Zur Berechnung des optimalen Lösungsweges ist der Baum der \textit{Quarter-Turn} Metrik besser geeignet, da er durch seine geringere Knotenanzahl effizienter berechnet werden kann.
+Dementsprechend ist der Baum mit minimaler Kinderanzahl wesentlich größer als der oben beschriebene Baum der \textit{Quarter-Turn} Metrik. Zur Berechnung des optimalen Lösungsweges ist der Baum der \textit{Quarter-Turn} Metrik besser geeignet, da er durch seine geringere Knotenanzahl effizienter berechnet werden kann.
 
 
 

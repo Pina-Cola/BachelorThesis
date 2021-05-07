@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  7 MAY 2021 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  7 MAY 2021 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1948,13 +1948,13 @@ st[]anndige
  []
 
 [80]
-<Baum_1.jpg, id=1098, 209.7998pt x 68.8733pt>
+<Baum_1.jpg, id=1100, 209.7998pt x 68.8733pt>
 File: Baum_1.jpg Graphic file (type jpg)
 <use Baum_1.jpg>
 Package pdftex.def Info: Baum_1.jpg  used on input line 3860.
 (pdftex.def)             Requested size: 314.69893pt x 103.30971pt.
  [81]
-<Baum_2.jpg, id=1103, 388.3308pt x 229.5777pt>
+<Baum_2.jpg, id=1105, 388.3308pt x 229.5777pt>
 File: Baum_2.jpg Graphic file (type jpg)
 <use Baum_2.jpg>
 Package pdftex.def Info: Baum_2.jpg  used on input line 3871.
@@ -2059,22 +2059,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4067.
 
-<Rhoch1.jpg, id=1201, 2034.75676pt x 943.58154pt>
+<Rhoch1.jpg, id=1203, 2034.75676pt x 943.58154pt>
 File: Rhoch1.jpg Graphic file (type jpg)
 <use Rhoch1.jpg>
 Package pdftex.def Info: Rhoch1.jpg  used on input line 4082.
 (pdftex.def)             Requested size: 305.20035pt x 141.53111pt.
-<Rhoch2.jpg, id=1202, 2034.75676pt x 943.58154pt>
+<Rhoch2.jpg, id=1204, 2034.75676pt x 943.58154pt>
 File: Rhoch2.jpg Graphic file (type jpg)
 <use Rhoch2.jpg>
 Package pdftex.def Info: Rhoch2.jpg  used on input line 4088.
 (pdftex.def)             Requested size: 305.20035pt x 141.53111pt.
-<Rhoch3.jpg, id=1203, 2034.75676pt x 943.58154pt>
+<Rhoch3.jpg, id=1205, 2034.75676pt x 943.58154pt>
 File: Rhoch3.jpg Graphic file (type jpg)
 <use Rhoch3.jpg>
 Package pdftex.def Info: Rhoch3.jpg  used on input line 4093.
 (pdftex.def)             Requested size: 305.20035pt x 141.53111pt.
-<Rhoch4.jpg, id=1204, 2034.75676pt x 943.58154pt>
+<Rhoch4.jpg, id=1206, 2034.75676pt x 943.58154pt>
 File: Rhoch4.jpg Graphic file (type jpg)
 <use Rhoch4.jpg>
 Package pdftex.def Info: Rhoch4.jpg  used on input line 4098.
@@ -2095,7 +2095,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 4182--4192
  []
 
 [91]
-<AlleRotationen.png, id=1224, 6500.285pt x 7889.475pt>
+<AlleRotationen.png, id=1226, 6500.285pt x 7889.475pt>
 File: AlleRotationen.png Graphic file (type png)
 <use AlleRotationen.png>
 Package pdftex.def Info: AlleRotationen.png  used on input line 4235.
@@ -2111,7 +2111,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4248--4313
  []
 
 [92 <./AlleRotationen.png>]
-<Eidesstattliche_Versicherung.pdf, id=1230, 597.23125pt x 844.15375pt>
+<Eidesstattliche_Versicherung.pdf, id=1232, 597.23125pt x 844.15375pt>
 File: Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
 <use Eidesstattliche_Versicherung.pdf>
 Package pdftex.def Info: Eidesstattliche_Versicherung.pdf  used on input line 4
@@ -2139,20 +2139,17 @@ Package rerunfilecheck Info: File `proposal.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4371.
  ) 
 Here is how much of TeX's memory you used:
- 32289 strings out of 483016
- 589077 string characters out of 5961286
+ 32287 strings out of 483016
+ 589059 string characters out of 5961286
  1411395 words of memory out of 5000000
  46237 multiletter control sequences out of 15000+600000
- 561988 words of font info for 199 fonts, out of 8000000 for 9000
+ 561879 words of font info for 198 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,16n,77p,1039b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pina/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600p
@@ -2182,10 +2179,10 @@ nts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on proposal.pdf (97 pages, 7437535 bytes).
+Output written on proposal.pdf (97 pages, 7437853 bytes).
 PDF statistics:
- 1406 PDF objects out of 1440 (max. 8388607)
- 1130 compressed objects within 12 object streams
+ 1408 PDF objects out of 1440 (max. 8388607)
+ 1132 compressed objects within 12 object streams
  273 named destinations out of 1000 (max. 500000)
  27475 words of extra memory for PDF output out of 29859 (max. 10000000)
 
