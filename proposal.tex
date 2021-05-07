@@ -1682,7 +1682,7 @@ T^{\hspace*{0.1em}0}=N_R
 Jede einelementige Rotation ist durch die Funktionen $\delta$ und $\beta$ definiert. Jede dieser Funktionen $\delta$ besteht in der Zykelschreibweise aus zwei 4-Zykeln. Diese Zykel befinden sich nach vier Ausführungen wieder in ihrem Ausgangszustand. Darauf wird in Abschnitt \ref{Abschnitt_OrdnungPermutationen} weiter eingegangen. Außerdem wird bei jeder Rotation der Vektor $x$ durch eine Funktion $\beta$ verändert. Der Vektor bleibt nach vierfachem Ausführen von $\beta$ unverändert.
 Da alle vierfachen der einelementigen Rotationen (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R$) keine Veränderung hervorrufen, kann der Exponent der Rotationen modulo 4 gerechnet werden: 
 \begin{align*}
-\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.3em} \mod 4}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
 
 Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung nähern kann. Es gibt für die Roationen also eine maximale Tiefe, jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
@@ -1959,7 +1959,7 @@ Das passiert durch eine Permutationsfunktion $\sigma$ und eine Übergangsfunktio
 Betrachtet man den physischen Würfel, so wird auffallen, dass man die einzelnen Ebenen auch gegen den Uhrzeigersinn drehen kann und somit eine Ebenendrehung invertiert. Eine Ebenendrehung um $90^\circ$ gegen den Uhrzeigersinn entspricht einer Ebenendrehung um $270^\circ$ im Uhrzeigersinn. Die Funktionen $\sigma$ und $\gamma$ sind dabei gleich.
 Die Inversen der einzelnen Ebenendrehungen werden somit folgendermaßen definiert:
 \begin{align*}
-\forall Z \in \{U, D, F, B, L, R\} \ . \ Z^{-1} = ZZZ
+\forall \ Z \in \{U, D, F, B, L, R\} \ . \ Z^{-1} = ZZZ
 \end{align*}
 Soll ein Zug invertiert werden, der aus mehreren Grundzügen besteht, so muss das hintere Element zuerst invertiert werden. Bei einem Zug $Z$ der Länge $n$ wird zuerst der $n$-te Grundzug $Z_n$ invertiert, indem er in $Z_nZ_nZ_n$ überführt wird. Daraufhin werden die weiteren Elemente des kompletten Zuges von hinten invertiert.
 
@@ -2047,11 +2047,11 @@ Es wurde demnach mit Konfiguration $C$ gestartet und der Zug $Z_1 \circ Z_2$ wur
 
 In den Abschnitten \ref{Abschnitt_GleichheitVonZügen} und \ref{Abschnitt_MaxAnzahlRotationen} wurde folgendes gezeigt:
 \begin{align*}
-\forall \ Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ C \cdot Z^n=C \cdot Z^{n \hspace*{-0.3em} \mod 4} 
+\forall \ Z \in \{ U, D, F, B, L, R \}, n \in \mathbb{N} \ . \ C \cdot Z^n=C \cdot Z^{n \hspace*{-0.5em} \mod 4} 
 \end{align*}
 \vspace*{-3em}
 \begin{align*}
-\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.3em} \mod 4}
+\forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
 Das bedeutet, dass alle Steine des Würfels wieder in ihre vorherige Position gelangen, wenn eine einelementige Ebenen oder Würfelrotation viermal hintereinander ausgeführt wird. Deshalb werden die Grundzüge $U, D, F, B, L, R$ und die Rotationen $X_r, X_l, Y_r, Y_l, Z_L, Z_r$ als Permutationen der Ordnung 4 bezeichnet. 
 
@@ -2886,7 +2886,7 @@ Somit muss die Summe $s$ der Vektoreinträge immer 0 sein, wenn modulo 3 gerechn
 \end{align*}
 Und somit gilt auch:
 \begin{align*}
-(\sum_{i= 1}^{8} \ x_i') \mod 3 = (\sum_{i= 1}^{8} \  x_i) \mod 3 = 0.
+(\sum_{i= 1}^{8} \ x_i') \hspace*{-0.5em} \mod 3 = (\sum_{i= 1}^{8} \  x_i) \hspace*{-0.5em} \mod 3 = 0.
 \end{align*}
 
 Da in Abschnitt \ref{Abschnitt_RotationDesWürfels} gezeigt wurde, dass die Rotationen auch als Kombination von Zügen definiert werden können, gilt die Aussage auch für jede Rotation des Würfels.
