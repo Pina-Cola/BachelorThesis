@@ -3140,7 +3140,7 @@ Eine gängige Lösungsmethode für die zweite Ebene sieht vor, dass zuerst alle 
 
 Dieses ebenenweise Vorgehen wird üblicherweise bei dem \Tthree Würfel angewandt und wurde hier auf den \Ttwo Würfel übertragen: Beim \Tthree Würfel wird zuerst die obere Ebene gelöst, dann die Mittlere, gefolgt von der Unteren. Wird dieses Vorgehen auf den \Ttwo Würfel übertragen, können sämtliche Lösungsschritte, die die Kanten beeinflussen, ignorieren, da der \Ttwo Würfel keine Kantsteine hat. Außerdem gibt es keine mittlere Ebene und die entsprechenden Lösungsschritte des \Tthree Würfels werden ebenfalls nicht auf den \Ttwo Würfel übertragen.
 
-Dieser Lösungsansatz wird auch \textit{CFOP-Methode}\footnote{Die Abkürzung \textit{CFOP} bezieht sich auf das Lösen des \Tthree Würfels und steht für: \textit{Cross}, \textit{First two layers}, \textit{Orient last layer} und \textit{Permute last layer}. Das beschreibt das Vorgehen dieser Methode. \cite{DDJT}} oder \textit{Fridrichs-Methode}\footnote{Nach Jessica Fridrich benannt, die diese Methode erfunden hat.} genannt \cite{DDJT}.
+Dieser Lösungsansatz wird auch \textit{CFOP-Methode}\footnote{Die Abkürzung \textit{CFOP} bezieht sich auf das Lösen des \Tthree Würfels und steht für: \textit{Cross}, \textit{First two layers}, \textit{Orient last layer} und \textit{Permute last layer}. Das beschreibt das Vorgehen dieser Methode. \cite{DDJT}} oder \textit{Fridrich-Methode}\footnote{Nach Jessica Fridrich benannt, die diese Methode erfunden hat.} genannt \cite{DDJT}.
 
 wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schrittweise ausgeführt und erklärt. Außerdem werden die Algorithmen für die beiden Ebenen in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. Dies kann als eine Anleitung zum Lösen des Würfels dienen.
 
@@ -3377,9 +3377,13 @@ Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters un
 \subsection{Algorithmen für die erste Ebene}
 \label{Abschnitt_AlgorithmenErsteEbene}
 
+In diesem Abschnitt werden Algorithmen zum Lösen der ersten Ebene mit der Fridrich-Methode beschrieben. Bei dieser Methode werden im ersten Schritt die vier Steine der oberen Ebene richtig ausgerichtet und richtig zueinander angeordet. Die Vorgehensweise dieser Methode wurde bereits in Abschnitt \ref{Abschnitt_Lösungsansätze} beschrieben. 
+
+Die Fridrich-Methode ist ein Lösungsansatz für den \Tthree Würfel, der auf den \Ttwo übertragen werden kann.
 Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel lediglich rotiert werden muss, um eine weiße Farbfläche zu finden.
 In diesen Beschreibungen wird sich an die Konvention gehalten, mit der weißen Seite zu beginnen. Es kann aber ebenso mit jeder anderen Seite des Würfels begonnen werden.
-Der \Tthree \textit{Cube} muss entsprechend der Mittelsteine ausgerichtet werden und so ist vorbestimmt, welche Seite die weiße Seite wird, je nach Ausrichtung der Mittelsteine. Bei dem \Ttwo \textit{Cube} kann mit jeder beliebigen Seite begonnen werden. Wenn unbedingt mit einer bestimmten Seite als Oberseite begonnen werden soll, die noch keine weiße Farbfläche hat, so kann die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite gebracht werden.
+Der \Tthree \textit{Cube} muss entsprechend der Mittelsteine ausgerichtet werden und so ist vorbestimmt, welche Seite die weiße Seite wird. Die weiße Seite muss den weißen Mittelstein enthalten. 
+Bei dem \Ttwo \textit{Cube} kann mit jeder beliebigen Seite begonnen werden. Wenn mit einer bestimmten Seite als Oberseite begonnen werden soll, die noch keine weiße Farbfläche hat, so kann die Farbfläche durch maximal zwei Ebenendrehungen an diese Seite gebracht werden.
 
 In Abbildung \ref{Abbildung_ErsterEckstein} wird der erste Eckstein der oberen Ebene positioniert. Das kann dort entweder durch den Zug $R$ oder einer Rotation um die $y$-Achse passieren.
 
@@ -3391,9 +3395,8 @@ In Abbildung \ref{Abbildung_ErsterEckstein} wird der erste Eckstein der oberen E
 \label{Abbildung_ErsterEckstein}
 \end{figure}
 
-Der zweite Stein kann dann hinzugefügt werden. Es gibt für den \Ttwo Würfel Lösungsmethoden, bei denen zuerst alle weißen Farbflächen ausgerichtet und dann die Steinposition anpasst werden.
-Da hier aber Algorithmen des \Tthree Würfels übertragen werden, und bei diesem die Steine der oberen Ebene üblicherweise direkt richtig ausrichtet und positioniert werden, wird hier auch so vorgegangen.
-Die Farbfläche des zweiten Steins muss sich für diesen Algorithmus seitlich an der unteren Ebene befinden. Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.
+Der zweite Stein kann dann hinzugefügt werden.
+Für diesen Algorithmus muss sich die weiße Farbfläche des zweiten Steins seitlich an der unteren Ebene befinden. Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.
 Ansonsten wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition befindet und er wird mit $L, R, F$ oder $R$ neben den bereits vorhandenen ersten Eckstein gedreht. Das ist auch in Abbildung \ref{Abbildung_ZweiterEckstein} zu sehen.
 
 \begin{figure}[H]
@@ -3418,8 +3421,8 @@ Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann s
 \label{Abbildung_ZweiterEckstein2}
 \end{figure}
 
-Die anderen zwei Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst. Die Vektoreinträge $x_{1-4}$ sind dann $(0,0,0,0)$.
-Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hälfte des Würfels.
+Dieletzten beide Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst. Die Vektoreinträge $x_{1-4}$ sind dann $(0,0,0,0)$.
+Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hälfte des Würfels. Die Algorithmen für die zweite Ebene sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} zu finden.
 
 
 
