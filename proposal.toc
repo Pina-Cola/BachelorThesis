@@ -105,7 +105,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.4}Äquivalenz der Gruppen}{78}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.5}Minimaler Lösungsweg}{81}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.5}Minimaler Lösungsweg}{80}{subsection.9.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10}Fazit}{83}{section.10}%
 \defcounter {refsection}{0}\relax 
