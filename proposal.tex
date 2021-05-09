@@ -1961,14 +1961,21 @@ Die Inversen der einzelnen Ebenendrehungen werden somit folgendermaßen definier
 \begin{align*}
 \forall \ Z \in \{U, D, F, B, L, R\} \ . \ Z^{-1} = ZZZ = Z^3
 \end{align*}
-Soll ein Zug invertiert werden, der aus mehreren Grundzügen besteht, so muss das hintere Element zuerst invertiert werden. Bei einem Zug $Y$ der Länge $n$ wird zuerst der $n$-te Grundzug $Z_n$ invertiert, indem er in $Z_nZ_nZ_n$ überführt wird. Daraufhin werden die weiteren Elemente des kompletten Zuges von hinten invertiert. Im Folgenden ist das inverse Element jedes Zuges mathematisch definiert. Dabei gilt $n \in \mathbb{N}$ und $Z_i$ repräsentiert alle Teilzüge $Z_1$ - $Z_n$, aus denen sich der Zug $Y$ zusammensetzt.
+Soll ein Zug invertiert werden, der aus mehreren Grundzügen besteht, so muss das hintere Element zuerst invertiert werden. Bei einem Zug $Y$ der Länge $n$ wird zuerst der $n$-te Grundzug $Z_n$ invertiert, indem er in $Z_nZ_nZ_n$ überführt wird. Daraufhin werden die weiteren Elemente des kompletten Zuges von hinten invertiert. Im Folgenden ist das inverse Element jedes Zuges definiert. Dabei ist $n \in \mathbb{N}$ und $Z_i$ repräsentiert alle Teilzüge $Z_1$ - $Z_n$, aus denen sich der Zug $Y$ zusammensetzt.
 \begin{align*}
 \forall \ Y \in \Gtwo, Y & = (Z_1 \circ Z_2 \circ ... \circ Z_n), Z_{i} \in \{U, D, F, B, L, R\} \ . \  \\
 Y^{-1} & = {Z_n}^{-1} \circ {Z_{n-1}}^{-1} \circ ... \circ {Z_1}^{-1} 
 \end{align*}
-%& = {Z_n}^3 \circ {Z_{n-1}}^3 \circ ... \circ {Z_1}^3 \\
-%& = Z_nZ_nZ_n \circ Z_{n-1}Z_{n-1}Z_{n-1} \circ ... \circ Z_1Z_1Z_1 \\
-%& = Z_nZ_nZ_n Z_{n-1}Z_{n-1}Z_{n-1}  ...  Z_1Z_1Z_1 \\
+Das kann mit der oben beschriebenen Definition von $Z^{-1}$ (mit $Z \in \{U, D, F, B, L, R\} $) folgendermaßen umgeformt werden:
+\begin{align*}
+Y^{-1} & = {Z_n}^{-1} \circ {Z_{n-1}}^{-1} \circ ... \circ {Z_1}^{-1} \\
+& = Z_nZ_nZ_n \circ Z_{n-1}Z_{n-1}Z_{n-1} \circ ... \circ Z_1Z_1Z_1 \\
+& = {Z_n}^3 \circ {Z_{n-1}}^3 \circ ... \circ {Z_1}^3 \\
+& = {Z_n}^3{Z_{n-1}}^3 ...  {Z_1}^3 \\
+\end{align*}
+Mit diesen Ausdrücken sind die inversen Elemente für jeden Zug aus $\Gtwo$ definiert.
+
+
 
 \end{description}
 Somit ist $(\Gtwo, \circ)$ eine Gruppe, da die vier Gruppenaxiome erfüllt sind. 
