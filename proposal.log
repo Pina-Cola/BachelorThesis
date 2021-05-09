@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  9 MAY 2021 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  9 MAY 2021 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1893,47 +1893,47 @@ Package pdftex.def Info: TOPVIEW2.png  used on input line 3492.
 <TOPVIEW3_1.png, id=1047, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_1.png Graphic file (type png)
 <use TOPVIEW3_1.png>
-Package pdftex.def Info: TOPVIEW3_1.png  used on input line 3503.
+Package pdftex.def Info: TOPVIEW3_1.png  used on input line 3493.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW3_2.png, id=1048, 1043.9pt x 1034.86626pt>
 File: TOPVIEW3_2.png Graphic file (type png)
 <use TOPVIEW3_2.png>
-Package pdftex.def Info: TOPVIEW3_2.png  used on input line 3504.
+Package pdftex.def Info: TOPVIEW3_2.png  used on input line 3494.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW4.png, id=1049, 1043.9pt x 1034.86626pt>
 File: TOPVIEW4.png Graphic file (type png)
 <use TOPVIEW4.png>
-Package pdftex.def Info: TOPVIEW4.png  used on input line 3505.
+Package pdftex.def Info: TOPVIEW4.png  used on input line 3495.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW5.png, id=1050, 1043.9pt x 1034.86626pt>
 File: TOPVIEW5.png Graphic file (type png)
 <use TOPVIEW5.png>
-Package pdftex.def Info: TOPVIEW5.png  used on input line 3506.
+Package pdftex.def Info: TOPVIEW5.png  used on input line 3496.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW6.png, id=1051, 1043.9pt x 1034.86626pt>
 File: TOPVIEW6.png Graphic file (type png)
 <use TOPVIEW6.png>
 Package pdftex.def Info: TOPVIEW6.png  used on input line 3507.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
- [74 <./TOPVIEW1.png> <./TOPVIEW2.png>] [75 <./TOPVIEW3_1.png> <./TOPVIEW3_2.pn
-g> <./TOPVIEW4.png> <./TOPVIEW5.png> <./TOPVIEW6.png>]
-<corners1.png, id=1067, 1043.9pt x 1034.86626pt>
+ [74 <./TOPVIEW1.png> <./TOPVIEW2.png> <./TOPVIEW3_1.png> <./TOPVIEW3_2.png> <.
+/TOPVIEW4.png> <./TOPVIEW5.png>]
+<corners1.png, id=1062, 1043.9pt x 1034.86626pt>
 File: corners1.png Graphic file (type png)
 <use corners1.png>
 Package pdftex.def Info: corners1.png  used on input line 3522.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners2.png, id=1068, 1043.9pt x 1034.86626pt>
+<corners2.png, id=1063, 1043.9pt x 1034.86626pt>
 File: corners2.png Graphic file (type png)
 <use corners2.png>
 Package pdftex.def Info: corners2.png  used on input line 3523.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners3.png, id=1069, 1043.9pt x 1034.86626pt>
+<corners3.png, id=1064, 1043.9pt x 1034.86626pt>
 File: corners3.png Graphic file (type png)
 <use corners3.png>
 Package pdftex.def Info: corners3.png  used on input line 3524.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-
-[76 <./corners1.png> <./corners2.png> <./corners3.png>] [77]
+ [75 <./TOPVIEW6.png> <./corners1.png> <./corners2.png> <./corners3.png>] [76] 
+[77]
 <DLB.png, id=1087, 1043.9pt x 1201.48875pt>
 File: DLB.png Graphic file (type png)
 <use DLB.png>
@@ -2202,7 +2202,7 @@ nts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on proposal.pdf (98 pages, 7440414 bytes).
+Output written on proposal.pdf (98 pages, 7440272 bytes).
 PDF statistics:
  1422 PDF objects out of 1440 (max. 8388607)
  1145 compressed objects within 12 object streams
