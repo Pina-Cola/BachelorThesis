@@ -73,7 +73,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1}Anzahl der validen Würfelkonfigurationen}{57}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Mächtigkeit von G$_{2\times 2\times 2}$}{57}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Mächtigkeit von \textit {G}$_{2\times 2\times 2}$}{57}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3}Ausrichtung der Steine (modulo 3)}{58}{subsection.7.3}%
 \defcounter {refsection}{0}\relax 
