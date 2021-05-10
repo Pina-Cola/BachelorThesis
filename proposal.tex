@@ -1179,7 +1179,10 @@ Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden:
 
 Die Indizes an den Funktionen $\sigma$ stehen für die verschiedenen Grundzüge des Würfels. Diese wurden in Abschnitt \ref{Abschnitt_GrundzügeWürfel} erklärt.
 
-Die Identitätspermutation wird als $\sigma=1$ geschrieben.
+Die Identitätspermutation wird als $\sigma=1$ geschrieben. Somit wird der leere Zug folgendermaßen definiert:
+\begin{align*}
+\sigma_N = 1
+\end{align*}
 
 %
 %
@@ -1338,13 +1341,18 @@ Analog dazu gibt es für jeden der sechs Grundzüge eine Funktion $\gamma$, die 
 & =  \left( x_1, g(x_4), x_3, h(x_8), x_5, h(x_2), x_7, g(x_6) \right) \\ 
 \\
 & \gamma_L \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
-& =  \left( (h(x_5), x_2, g(x_1), x_4, g(x_7), x_6, h(x_3), x_8) \right) \\ 
+& =   (h(x_5), x_2, g(x_1), x_4, g(x_7), x_6, h(x_3), x_8) \\ 
 \\
 & \gamma_F \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( x_1, x_2, h(x_7), g(x_3), x_5, x_6, g(x_8), h(x_4) \right) \\
 \\
 & \gamma_B \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( g(x_2), h(x_6), x_3, x_4, h(x_1), g(x_5), x_7, x_8 \right)
+\end{align*}
+Bei dem leeren Zug bleibt der Vektor undverändert. Die folgende Funktion ergibt sich:
+\begin{align*}
+& \gamma_N \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\ 
+& =  \left( x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8 \right)
 \end{align*}
 
 Das oben genannte Beispiel des Zuges $R$ (s. Abbildung \ref{Abbildung_XnachZugR}) wird nun schrittweise mithilfe von $\gamma_R$ berechnet. Dafür befindet sich der Würfel zu Beginn in der Startkonfiguration ($x = (0, 0, 0, 0, 0, 0, 0, 0)$). Die Steinposition wird hier nicht berücksichtigt. Wenn der Zug $R$ ausgeführt wird, wird $\gamma_R( (0, 0, 0, 0, 0, 0, 0, 0) )$ berechnet:
@@ -1618,23 +1626,29 @@ g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mo
 
 Die Überführungsfunktionen des Vektors $x$ werden im Folgenden $\beta$ genannt. Für jede der Rotationen gibt es eine Funktion $\beta$, die den Vektor in seinen Folgezustand überführt. Die Identitätsfunktion $i$ muss nicht mit aufgeführt werden. Die Funktionen $\beta$ für die Rotationen sind im Folgenden definiert:
 \begin{align*}
- & \beta_{Z_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & = (x_3, x_1, x_4, x_2, x_7, x_5, x_8, x_6) \\
+\beta_{Z_r}  & \left( (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \right)  \\
+=  & \ (x_3, x_1, x_4, x_2, x_7, x_5, x_8, x_6) \\
 \\
- & \beta_{Z_l}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & = (x_2, x_4, x_1, x_3, x_6, x_8, x_5, x_7) \\
+\beta_{Z_l}  &   \left( (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \right)  \\
+=  &  \ (x_2, x_4, x_1, x_3, x_6, x_8, x_5, x_7) \\
 \\
- & \beta_{Y_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & = (h(x_3), g(x_4), g(x_7), h(x_8), g(x_1), h(x_2), h(x_5), g(x_6)) \\
+\beta_{Y_r}  &  \left( (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8)  \right) \\
+=  & \ (h(x_3), g(x_4), g(x_7), h(x_8), g(x_1), h(x_2), h(x_5), g(x_6)) \\
 \\
- & \beta_{Y_l}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & = (h(x_5), g(x_6), g(x_1), h(x_2),g(x_7),h(x_8),h(x_3),g(x_4)) \\
+\beta_{Y_l}  &   \left( (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \right)  \\
+=  & \ (h(x_5), g(x_6), g(x_1), h(x_2),g(x_7),h(x_8),h(x_3),g(x_4)) \\
 \\
- & \beta_{X_r}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & = (g(x_5), h(x_1), h(x_7), g(x_3), h(x_6), g(x_2), g(x_8),h(x_4)) \\
+\beta_{X_r}  &  \left( (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8)  \right) \\
+=  & \ (g(x_5), h(x_1), h(x_7), g(x_3), h(x_6), g(x_2), g(x_8),h(x_4)) \\
 \\
- & \beta_{X_l}(x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \\
- & = (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
+\beta_{X_l}  &  \left( (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \right)  \\
+=  & \ (g(x_2), h(x_6), h(x_4),g(x_8), h(x_1), g(x_5), g(x_3), h(x_7)) 
+\end{align*}
+
+Wenn der Würfel nicht rotiert wird, bleibt der Vektor $x$ unverändert. Die Funktion $\beta$ für die leere Rotation $N_R$ ist im Folgenden definiert:
+\begin{align*}
+\beta_{N_R}  &  \left( (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8) \right) \\
+=  & \ (x_1, x_2, x_3, x_4, x_5,x_6,x_7,x_8)
 \end{align*}
 
 Es können auch mehrere Rotationen nacheinander ausgeführt werden. Die Funktionen $\delta$ und $\beta$ werden dann jeweils verschachtelt. Das erfolgt analog zu dem mehrfachen Ausführen von Zügen (s. Abschnitt \ref{Abschnitt_ZuegeAusfuehren}).
