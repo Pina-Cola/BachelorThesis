@@ -1782,22 +1782,48 @@ Z_1 \sim Z_2 & \Rightarrow Z_2 \sim Z_1 \\
 mit \ Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot  Z_1 = C \cdot  WZ_2 \\
 \Leftrightarrow C \cdot  Z_1 = C \cdot  W_1 Z_2 & \Rightarrow C \cdot  Z_2 = C \cdot  W_2 Z_1
 \end{align*}
-Das gilt, wenn $W_2$ das Inverse von $W_1$ ist. Das Inverse einer Rotation ist die Rotation um die gleiche Achse, aber in die andere Richtung. 
-Das Inverse von $W$ wird als $W^{-1}$ geschrieben.
-Das sind alle Rotationen mit ihren dazugehörigen Inversen:
+$Z_2 \sim Z_1$ muss gelten, wenn $Z_1 \sim Z_2$ gilt. Da $Z_1 \sim Z_2$ gilt, sind die Züge $Z_1$ und $Z_2$ mit optionaler Rotation gleich. 
+\begin{description}
+
+\item[Fall 1:] 
+Die optionale Rotation $W$ entspricht der leeren Rotation $N_R$. Dann führen die Züge $Z_1$ und $Z_2$ zu derselben Folgekonfiguration des Würfels und werden als gleich angesehen:
+\begin{alignat*}{2}
+& Z_1 \sim Z_2 && \Rightarrow Z_2 \sim Z_1 \textit{ mit }  W = N_R \\ 
+\Leftrightarrow \  & C \cdot  Z_1 = C \cdot  N_R Z_2 \ && \Rightarrow C \cdot  Z_2 = C \cdot  N_R Z_1 \\
+\Leftrightarrow \  & C \cdot  Z_1 = C \cdot  Z_2 && \Rightarrow C \cdot  Z_2 = C \cdot  Z_1 
+\end{alignat*}
+Folglich gilt die Symmetrie für $W = N_R$.
+
+\item[Fall 2:]
+Die optionale Rotation besteht aus einem oder mehreren Elementen aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$.
+Die Symmetrie gilt, wenn $W_2$ das Inverse von $W_1$ ist. Das Inverse einer Rotation ist die Rotation um die gleiche Achse, aber in die andere Richtung. 
+Das Inverse von $W$ wird als $W^{-1}$ geschrieben. 
+Da es sich bei den Rotationen (so wie bei den Ebenendrehungen) um $90^\circ$-Drehungen handelt, entspricht das inverse Element einer Rotation der dreifachen Ausführung dieser. 
+Es gilt dann:
+\begin{align*}
+\forall  \ W \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\} \ . \ W^{-1} = WWW = W^3
+\end{align*}
+Da die Rotationen zur besseren Übersichtlichkeit nicht minimal definiert wurden, sind in der folgenden Tabelle alle Rotationen uns die dazugehörigen Inversen abgebildet:
 
 \begin{center}
-\begin{tabular}{lccccccc}
-Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$ & $N_R$ \\
+\begin{tabular}{lcccccc}
+Rotation $W$ & ${Z_r}$ & ${Z_l}$ &  ${Y_r}$ & ${Y_l}$ & ${X_r}$ & ${X_l}$  \\
 \hline
-Inverses \hspace*{0.1em} $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$ & $N_R$ \\
+Inverses \hspace*{0.1em} $W^{-1}$ & ${Z_l}$ & ${Z_r}$ &  ${Y_l}$ & ${Y_r}$ & ${X_l}$ & ${X_r}$  \\
 \end{tabular} 
 \end{center}
+
+
+Wenn sich eine Rotation aus mehreren Elementen aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$ zusammensetzt, muss das hintere Element zuerst invertiert werden. Die Definition ist analog zu der Definition des inversen Elements der Züge aus $\Gtwo.$ Diese Definition findet sich in Abschnitt \ref{Abschnitt_WürfelAlsGruppe}.
+ 
 Es gilt: 
 \begin{align*}
 C \cdot  Z_1 = C \cdot  W Z_2 & \Rightarrow C \cdot  Z_2 = C \cdot  W^{-1} Z_1
 \end{align*}
 Das gilt, da durch $W^{-1}$ der Würfel in die entgegengesetzte Richtung rotiert wird und die Züge somit wieder die gleiche Würfelkonfiguration ergeben.
+
+\end{description}
+
 Folglich gilt die Symmetrie für $\sim$.
 
 
@@ -2047,6 +2073,8 @@ Es wurde demnach mit Konfiguration $C$ gestartet und die Züge $Z_1$ und $Z_2$ w
 \end{align*}
 Die neue Konfiguration kann demnach auch als $C \cdot (Z_1 \circ Z_2)$ geschrieben werden und somit gilt $(C \cdot Z_1) \cdot Z_2 = C \cdot (Z_1 \circ Z_2)$. 
 \end{description}
+
+Da beide Eigenschaften gelten, handelt es sich um eine Rechtsoperation. Die Züge der Gruppenträgermenge operieren von rechts auf der Menge aller Würfelkonfigurationen.
 
 %
 %
