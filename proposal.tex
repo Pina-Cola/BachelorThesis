@@ -1833,13 +1833,16 @@ Es muss gelten: Aus $Z_1 \sim Z_2$ und $Z_2 \sim Z_3$ folgt $Z_1 \sim Z_3$.
 & Z_1 \sim Z_2 && \wedge Z_2 \sim Z_3 && \Rightarrow Z_1 \sim Z_3 \\
 \Leftrightarrow \ & C \cdot  Z_1 = C \cdot  W_1Z_2 \ && \wedge C \cdot  Z_2 = C \cdot  W_2Z_3 \ && \Rightarrow C \cdot  Z_1 = C \cdot  W_3Z_3
 \end{alignat*}
-Das gilt für $W_3=W_1W_2$.
+Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfiguration ergeben, und die Züge $Z_2$ und $Z_3$ nach der Rotation $W_2$ auch die gleiche Würfelkonfiguration ergeben, gilt das auch für die beiden Züge $Z_1$ und $Z_3$ nach der Rotation $W_3=W_1W_2$, da dann alle nötigen Rotationen durchgeführt wurden:
 \begin{alignat*}{3}
-\Leftrightarrow \ & C \cdot  Z_1 = C \cdot  W_1Z_2 \ && \wedge C \cdot  Z_2 = C \cdot W_2Z_3 \ && \Rightarrow C \cdot  Z_1 = C \cdot W_1W_2Z_3 
+C \cdot  Z_1 = C \cdot  W_1Z_2 \ && \wedge C \cdot  Z_2 = C \cdot W_2Z_3 \ && \Rightarrow C \cdot  Z_1 = C \cdot W_1W_2Z_3 
 \end{alignat*}
-Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfiguration ergeben, und die Züge $Z_2$ und $Z_3$ nach der Rotation $W_2$ auch die gleiche Würfelkonfiguration ergeben, gilt das auch für die beiden Züge $Z_1$ und $Z_3$ nach der Rotation $W_3=W_1W_2$, da dann alle nötigen Rotationen durchgeführt wurden.
+
+Die Transitivität gilt somit für die Relation $\sim$.
 
 \end{description}
+
+Da die Eigenschaften der Reflexivität, Symmetrie und Transitivität für die Relation $\sim$ gelten, handelt es sich um eine Äquvalenzrelation.
 
 
 
