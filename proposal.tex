@@ -933,17 +933,24 @@ Sei die Permutation $\pi = (1 \ 2 \ 3)$. Die Ordnung von $\pi$ ist 3, da $\pi$ a
 
 \begin{bsp}[Ordnung von Permutationen]
 
-Sei die Permutation $\pi = (1 \ 5 \ 2)\ (3 \ 4)$. Das k\textit{leinste gemeinsame Vielfache} von $3$ und $2$ ist 6. Somit hat $\pi$ die Ordnung 6.
+Sei die Permutation $\pi = (1 \ 5 \ 2)\ (3 \ 4)$. Das \textit{kleinste gemeinsame Vielfache} von $3$ und $2$ ist 6. Somit hat $\pi$ die Ordnung 6.
 
 \end{bsp}
 
 \begin{definition}[Komposition von Permutationen]
 Seien $\pi$ und $\tau$ zwei $n$-stellige Permutationen mit $n \in \mathbb{N}$. Die Hintereinanderausführung dieser Permutationen wird als $\tau \diamond \pi$ geschrieben. Dabei wird zuerst $\pi$ ausgeführt und das Ergebnis auf $\tau$ angewendet.
 \end{definition}
+Üblicherweise wird die Komposition von Permutationen mit dem $\circ$-Operator geschrieben. Dieser dient in dieser Arbeit bereits als Verknüpfungsoperator der Gruppe des \Ttwo Würfels. Deshalb wird die Komposition von Permutationan im Verlauf dieser Arbeit mit dem $\diamond$-Operator geschrieben.
 
 \begin{bsp}[Komposition von Permutationen]
-Seien $\pi$ und $\tau$ Permutationen mit $\pi = (1 \ 2) \ (3 \ 5) \ (4)$ und $\tau = (1 \ 4\ 3) \ (2 \ 5)$. Die Komposition der Zykel $\tau \diamond \pi$ ist dann $(1 \ 5) \ (2 \ 4 \ 3)$. 
-Der Zykel $(1 \ 5)$ ergibt sich folgendermaßen: In der Permutation $\pi$ geht die 1 auf die 2, in der Permutation $\tau$ geht die 2 dann auf die 5. Daraus ergibt sich dann $(1 \ 5 ...)$. In der Permutation $\pi$ geht die 5 auf die 3 und die 3 in $\tau$ auf die 1. Somit ergibt sich dann der Zykel $(1 \ 5)$ für die Komposition der beiden Permutationen. Die Komposition von $\pi$ und $\tau$ wird im Folgenden durch Pfeile verdeutlicht:
+Seien $\pi$ und $\tau$ Permutationen mit $\pi = (1 \ 2) \ (3 \ 5) \ (4)$ und $\tau = (1 \ 4\ 3) \ (2 \ 5)$. Die Komposition der Zykel $\tau \diamond \pi$ ergibt Folgendes:
+\begin{align*}
+(1 \ 4\ 3) \ (2 \ 5) \diamond  (1 \ 2) \ (3 \ 5) \ (4) = (1 \ 5) \ (2 \ 4 \ 3)
+\end{align*}
+Die Komposition der Permutationen wird im Folgenden schrittweise erklärt.
+Der Zykel $(1 \ 5)$ ergibt sich folgendermaßen: In der Permutation $\pi$ geht die 1 auf die 2, in der Permutation $\tau$ geht die 2 dann auf die 5. Daraus ergibt sich dann der Zykelbeginn $(1 \ 5 \ ...)$. In der Permutation $\pi$ geht die 5 auf die 3 und die 3 in $\tau$ auf die 1. Somit ergibt sich dann der Zykel $(1 \ 5)$ für die Komposition der beiden Permutationen. 
+Für den Zykel $(2 \ 4 \ 3)$ wird die 2 in $\pi$ betrachtet. Da sie sich in dem Zykel $(1 \ 2)$ befindet, geht die 2 auf die 1. In $\tau$ geht die 1 in dem Zykel $(1 \ 4 \ 3)$ auf die 4. Somit ergibt sich $(2 \ 4 \ ...)$. Die 4 geht in der Permutation $\pi$ auf sich selbst, da es sich um einen einelementigen Zykel handelt. Die 4 in $\tau$ geht auf die 3 und es ergibt sich der Zykel $(2 \ 4 \ 3 \ ...)$. Die 3 bildet in der Permutation $\pi$ auf die 5 ab und die 5 in $\tau$ auf die 2. Somit ergibt sich der Zykel $(2 \ 4 \ 3)$.
+Die Komposition von $\pi$ und $\tau$ wird im Folgenden durch Pfeile verdeutlicht:
 
 \begin{align*}
 \pi \begin{cases}
