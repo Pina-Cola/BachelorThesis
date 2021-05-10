@@ -1379,10 +1379,13 @@ Der Vektor $x$ lautet nach dem Zug $R$ von der Startkonfiguration ausgehend: $(0
 
 \label{Abschnitt_ZuegeAusfuehren}
 
-Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Ausführen eines Zuges verändert. Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
+Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Ausführen eines Zuges verändert.
+Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Die Grundzüge wurden in Kapitel \ref{Abschnitt_GrundzügeWürfel} beschrieben.
 
-Die Startkonfiguration $C=(1,0)$ wird im folgenden Beispiel durch das dreifache Ausführen des Zuges $LLFF$ ($LLFF^3 = LLFFLLFFLLFF$) schrittweise verändert.
-Die Position der Steine -- dargestellt durch $\sigma$ -- verändert sich nach dem ersten Ausführen von $LLFF$ wie folgt:
+Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
+
+Im Folgenden wird der Zug $(LLFF)^3$ beispielhaft auf die Startkonfiguration angewandt. Die Startkonfiguration ist $C=(1,0)$. Sie wird durch das dreifache Ausführen des Zuges $LLFF$ ($LLFF^3 = LLFFLLFFLLFF$) schrittweise verändert.
+Die Position der Steine -- dargestellt durch $\sigma$ -- verändert sich nach dem ersten Ausführen von $LLFF$ folgendermaßen:
 
 \begin{center}
 \begin{tabular}{ccccccccc}
@@ -1432,7 +1435,7 @@ Das dritte Ausführen von $LLFF$ bringt den Würfel wieder in die Ausgangskonfig
 \begin{align*}
 C''' = (1,0).
 \end{align*}
-Daraus folgt, dass der Zug $LLFF$ den Würfel nach dreifacher Ausführung wieder in den Ausgangszustand bringt. Darauf wird genauer in Abschnitt \ref{Abschnitt_OrdnungPermutationen} eingegangen.
+Daraus folgt, dass der Zug $LLFF$ den Würfel nach dreifacher Ausführung wieder in den Ausgangszustand bringt. Das wird als \textit{Ordnung von Zügen} in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
 
 %
 %
