@@ -1766,7 +1766,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 
 Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
-Daraus ergibt sich folgende Definition mit $C$ als Würfelkonfiguration und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
+Daraus ergibt sich folgende Definition für alle Würfelkonfigurationen $C$ und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
 \begin{align*}
 Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
@@ -4266,6 +4266,11 @@ Somit gilt:
 \begin{align*}
 \forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma, x)
 \end{align*}
+Damit gilt auch das Folgende:
+\begin{align*}
+\forall \ Z \in \{U, D, R, L, F, B\}, n \in \mathbb{N}, n \hspace*{-0.5em} \mod 4 = 0 \ . \ (\sigma, x) \cdot Z^n = (\sigma, x)
+\end{align*}
+Demnach ist der Zug $Z^4$ bzw. $Z^n$ ein Repräsentant der Äquivalenzklasse des leeren Zuges.
 
 Das gilt analog dazu auch für die Rotationen des Würfels. In Abschnitt \ref{Abschnitt_RotationDesWürfels} wurden die Würfelrotationen durch jeweils zwei Ebendrehungen definiert. Dabei handelt es sich um gegenüberliegende Ebenen, die nicht dieselben Steine beeinflussen. Die vierfachen Rotationen des Würfels sind im Folgenden als Ebenendrehungen definiert:
 \begin{alignat*}{4}
