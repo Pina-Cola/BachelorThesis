@@ -117,7 +117,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Literatur}{91}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Übergangsfunktionen - Vektor $\pmb {x}$}{92}{appendix.A}%
+\contentsline {section}{\numberline {A}Übergangsfunktionen des Ausrichtungsvektors $\pmb {x}$}{92}{appendix.A}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B}Alle Rotationen des Würfels}{96}{appendix.B}%
 \defcounter {refsection}{0}\relax 

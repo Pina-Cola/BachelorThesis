@@ -2297,7 +2297,7 @@ Aus diesen Erkenntnissen ergibt sich folgender Algorithmus zur Bestimmung der Or
   
   \textit{list} $\leftarrow$ \textit{zykel\_length} hinzufügen \;
   
-  \textit{z} $\leftarrow$ \textit{ z-1} \;
+  \textit{z} $\leftarrow$ \textit{ z}$-1$ \;
  }
   \textit{kgVList} $\leftarrow$ \textit{kgV} von Elementen aus \textit{list} berechnen \;
 
@@ -3333,12 +3333,12 @@ Daher wird dieser Würfel nun noch zweimal um die $x$-Achse gedreht und befindet
 Der Mensch folgt beim Lösen des \textit{Cubes} bestimmten Kombinationen, die in verschiedenen Situtionen angewandt werden können.  
 In diesem Fall hat der Mensch $13$ Ebenendrehungen durchgeführt, während das Verdrehen lediglich $5$ Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
 Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
-Es stellt sich die Frage, wie viele Ebenendrehungen der \Ttwo Würfel maximal von der Lösung entfernt sein kann. Diese Zahl wird auch \textit{God's Number} genannt. 
+Es stellt sich die Frage, wie viele Ebenendrehungen für den optimalen Lösungsweg maximal erforderlich sein können. Diese Zahl wird auch \textit{God's Number} genannt. 
 
 \subsubsection*{God's Number}
 Im Folgenden werden die \textit{God's Number}, \textit{Quarter-Turn} Metrik und \textit{Half-Turn} Metrik kurz beschrieben.
 Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn} Metrik genannt. Es gibt noch andere Metriken, wie z. B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene sowohl um $90^\circ$ als auch um $180^\circ$ als eine Drehung gezählt wird \cite{TR}.
-Wenn in der \textit{Quarter-Turn} Metrik gerechnet wird, ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}. In der \textit{Half-Turn} Metrik ist sie $11$ \cite{RMG}.
+Nach der \textit{Quarter-Turn} Metrik gerechnet ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}. In der \textit{Half-Turn} Metrik ist sie $11$ \cite{RMG}.
 Ein Konzept zum Finden der optimalen Lösung mithilfe der \textit{Quarter-Turn} Metrik wird in Abschnitt \ref{Abschnitt_MinLösung} beschrieben.
 
 
@@ -4139,13 +4139,13 @@ Ein weiterer interessanter Aspekt ist das Finden eines Algorithmus, der die Glei
 
 
 
-\section{Übergangsfunktionen - Vektor $\pmb{x}$}
+\section{Übergangsfunktionen des Ausrichtungsvektors $\pmb{x}$}
 
 \label{Anhang_Ausrichtungsfunktionen}
 
-Im Folgenden wird gezeigt, dass sich der Vektor $x$ nach dem vierfachen Ausführen einer der Grundzüge wieder in seinem Ausgangszustand befindet. 
+Im Folgenden wird gezeigt, dass sich der Vektor $x$ nach dem vierfachen Ausführen einer der Grundzüge wieder in seinem Ausgangszustand befindet. Dabei ist $(\sigma, x)$ eine beliebige Würfelkonfiguration. In diesem Abschnitt wird lediglich der Ausrichtungsvektor $x$ betrachtet. Die entsprechende Begründung zu $\sigma$ findet sich in Abschnitt \ref{Abschnitt_GleichheitVonZügen}.
 \begin{align*}
-\forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma', x)
+\forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma, x)
 \end{align*}
 
 Die Veränderung des Vektors erfolgt durch die Funktion $\gamma$. Diese Funktion wurde für jeden der Grundzüge in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert.
@@ -4264,7 +4264,7 @@ Da $g(h(x))=x$ und $h(g(x))=x$ gelten, gilt auch das Folgende:
 
 Somit gilt:
 \begin{align*}
-\forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma', x)
+\forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma, x)
 \end{align*}
 
 Das gilt analog dazu auch für die Rotationen des Würfels. In Abschnitt \ref{Abschnitt_RotationDesWürfels} wurden die Würfelrotationen durch jeweils zwei Ebendrehungen definiert. Dabei handelt es sich um gegenüberliegende Ebenen, die nicht dieselben Steine beeinflussen. Die vierfachen Rotationen des Würfels sind im Folgenden als Ebenendrehungen definiert:
@@ -4278,7 +4278,7 @@ Das gilt analog dazu auch für die Rotationen des Würfels. In Abschnitt \ref{Ab
 \end{alignat*}
 Da alle vierfachen Rotationen demnach aus zwei vierfachen Ebenendrehungen bestehen, können die oben ausgeführten Umformungen auf die Rotationen übertragen werden. Der Vektor $x$ bleibt somit auch bei vierfachem Ausführen der gleichen Funktion $\beta$ unverändert. Somit gilt auch:
 \begin{align*}
-\forall \ W \in \{X_l, X_r, Y_l, Y_r, Z_l, Z_r\} \ . \ (\sigma, x) \cdot W^4 = (\sigma', x)
+\forall \ W \in \{X_l, X_r, Y_l, Y_r, Z_l, Z_r\} \ . \ (\sigma, x) \cdot W^4 = (\sigma, x)
 \end{align*}
 
 
