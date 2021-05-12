@@ -293,21 +293,21 @@
     \endentry
     \entry{patent}{patent}{}
       \name{author}{1}{}{%
-        {{hash=1501862d556e48a872fe129ffc069b54}{%
+        {{hash=12403603b2bdc5cf3b7cb882ae0be964}{%
            family={Rubik},
            familyi={R\bibinitperiod},
-           given={Erño},
+           given={Ernő},
            giveni={E\bibinitperiod}}}%
       }
       \list{organization}{1}{%
         {Rubik}%
       }
-      \strng{namehash}{1501862d556e48a872fe129ffc069b54}
-      \strng{fullhash}{1501862d556e48a872fe129ffc069b54}
-      \strng{bibnamehash}{1501862d556e48a872fe129ffc069b54}
-      \strng{authorbibnamehash}{1501862d556e48a872fe129ffc069b54}
-      \strng{authornamehash}{1501862d556e48a872fe129ffc069b54}
-      \strng{authorfullhash}{1501862d556e48a872fe129ffc069b54}
+      \strng{namehash}{12403603b2bdc5cf3b7cb882ae0be964}
+      \strng{fullhash}{12403603b2bdc5cf3b7cb882ae0be964}
+      \strng{bibnamehash}{12403603b2bdc5cf3b7cb882ae0be964}
+      \strng{authorbibnamehash}{12403603b2bdc5cf3b7cb882ae0be964}
+      \strng{authornamehash}{12403603b2bdc5cf3b7cb882ae0be964}
+      \strng{authorfullhash}{12403603b2bdc5cf3b7cb882ae0be964}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
       \field{labelnamesource}{author}
