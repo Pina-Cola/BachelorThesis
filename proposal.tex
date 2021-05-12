@@ -1755,7 +1755,7 @@ Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine eindeutige Ausrichtu
 Damit eine Relation eine Äquivalenzrelationen ist, müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Abschnitt \ref{Abschnitt_Äquivalenrelationen} finden sich Definition und Erklärung.
 
 In dem Fall des \Ttwo Würfels handelt es sich um eine Relation $\sim$ von zwei Zügen $Z_1, Z_2$ aus der Menge aller Züge $A_Z$ (ohne Rotationen). Dann ist die Relation $\sim$ eine Teilmenge von $A_Z \times A_Z$. 
-Die Relation ist im Folgenden definiert: 
+Die Relation ist im Folgenden für alle Züge $Z_1$ und $Z_2$ aus $A_Z$ definiert: 
 
 \begin{center}
 \begin{tabular}{l l}
@@ -1766,7 +1766,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 
 Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
 
-Daraus ergibt sich folgende Definition für alle Würfelkonfigurationen $C$ und $W$ als Element (oder Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
+Daraus ergibt sich folgende Definition für alle Würfelkonfigurationen $C$ und $W$ als Element (oder beliebige Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
 \begin{align*}
 Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
@@ -1786,7 +1786,7 @@ Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und 
 
 
 \item [Reflexivität] \ \\
-Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. Jeder Zug muss dafür zu sich selbst in Relation stehen.
+Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. Jeder Zug muss dafür zu sich selbst in Relation stehen. Die folgenden Ausdrücke gelten für alle $Z$ aus $A_Z$ und jede beliebige Würfelkonfiguration $C$.
 \begin{align*}
 Z_1 \sim_R Z_2 : & \Leftrightarrow C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
@@ -1799,7 +1799,7 @@ Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot Z_1 = C \cdot WZ_2 \\
 Bei $Z_1 \sim Z_2$ mit $W=N_R$ sind die Züge $Z_1$ und $Z_2$ immer äquivalent, da sie bei gleicher Startkonfiguration die gleiche Folgekonfiguration des Würfels erzeugen. Es gilt somit die Reflexivität für die Relation $\sim$.
 
 \item [Symmetrie] \ \\
-Für die Symmetrie muss folgendes gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.
+Für die Symmetrie muss folgendes für alle $Z_1$ und $Z_2$ aus $A_Z$ gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.  Im Folgenden ist $C$ eine beliebige Würfelkonfiguration.
 \begin{align*}
 Z_1 \sim Z_2 & \Rightarrow Z_2 \sim Z_1 \\
 mit \ Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot  Z_1 = C \cdot  WZ_2 \\
@@ -1851,15 +1851,20 @@ Folglich gilt die Symmetrie für $\sim$.
 
 
 \item [Transitivität] \ \\
-Es muss gelten: Aus $Z_1 \sim Z_2$ und $Z_2 \sim Z_3$ folgt $Z_1 \sim Z_3$.
+Es muss für alle Züge $Z_1, Z_2$ und $Z_3$ aus $A_Z$ gelten: Aus $Z_1 \sim Z_2$ und $Z_2 \sim Z_3$ folgt $Z_1 \sim Z_3$. Im Folgenden ist $C$ eine beliebige Würfelkonfiguration.
 \begin{alignat*}{3}
 & Z_1 \sim Z_2 && \wedge Z_2 \sim Z_3 && \Rightarrow Z_1 \sim Z_3 \\
 \Leftrightarrow \ & C \cdot  Z_1 = C \cdot  W_1Z_2 \ && \wedge C \cdot  Z_2 = C \cdot  W_2Z_3 \ && \Rightarrow C \cdot  Z_1 = C \cdot  W_3Z_3
 \end{alignat*}
-Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfiguration ergeben, und die Züge $Z_2$ und $Z_3$ nach der Rotation $W_2$ auch die gleiche Würfelkonfiguration ergeben, gilt das auch für die beiden Züge $Z_1$ und $Z_3$ nach der Rotation $W_3=W_1W_2$, da dann alle nötigen Rotationen durchgeführt wurden:
-\begin{alignat*}{3}
-C \cdot  Z_1 = C \cdot  W_1Z_2 \ && \wedge C \cdot  Z_2 = C \cdot W_2Z_3 \ && \Rightarrow C \cdot  Z_1 = C \cdot W_1W_2Z_3 
-\end{alignat*}
+
+Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfiguration ergeben, und die Züge $Z_2$ und $Z_3$ nach der Rotation $W_2$ auch die gleiche Würfelkonfiguration ergeben, gilt $\sim$ das auch für die beiden Züge $Z_1$ und $Z_3$.
+
+Da die Äquivalenzrelation mithilfe der Gleichheit definiert wurde, gilt die Transitivität. Die Relation der Gleichheit erfüllt die Bedingung der Transitivität.
+
+% nach der Rotation $W_3=W_1W_2$, da dann alle nötigen Rotationen durchgeführt wurden:
+%\begin{alignat*}{3}
+%C \cdot  Z_1 = C \cdot  W_1Z_2 \ && \wedge C \cdot  Z_2 = C \cdot W_2Z_3 \ && \Rightarrow C \cdot  Z_1 = C \cdot W_1W_2Z_3 
+%\end{alignat*}
 
 Die Transitivität gilt somit für die Relation $\sim$.
 
