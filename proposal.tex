@@ -1151,14 +1151,14 @@ Die Drehung der oberen Ebene ist in Abbildung \ref{Abbildung_SteinpositionnamenN
 
 In Abbildung \ref{Abbildung_SteinpositionnamenNachU} ist zu sehen, dass die Steine der unteren Ebene nicht bewegt wurden. Die Positionen der oberen Ebene haben sich um einen Stein im Uhrzeigersinn verschoben. Daraus ergeben sich folgende Funktionen $\sigma_U$:
 \begin{alignat*}{4}
-& \sigma_U(\textit{ulf})=\textit{ulb} \ \ \ \ \ \ \ & \sigma_U(\textit{ulb})=\textit{urb} \ \ \ \ \ \ \ & \sigma_U(\textit{urb})=\textit{urf} \ \ \ \ \ \ \ & \sigma_U(\textit{urf})=\textit{ulf} \\
-& \sigma_U(\textit{dlf})=\textit{dlf} \ \ \ \ \ \ \ & \sigma_U(\textit{dlb})=\textit{dlb} \ \ \ \ \ \ \ & \sigma_U(\textit{drb})=\textit{drb} \ \ \ \ \ \ \ & \sigma_U(\textit{drf})=\textit{drf} 
+& \sigma_U(\textit{ulf})=\textit{ulb} \ \ \ \ \ \ \ && \sigma_U(\textit{ulb})=\textit{urb} \ \ \ \ \ \ \ && \sigma_U(\textit{urb})=\textit{urf} \ \ \ \ \ \ \ && \sigma_U(\textit{urf})=\textit{ulf} \\
+& \sigma_U(\textit{dlf})=\textit{dlf} \ \ \ \ \ \ \ && \sigma_U(\textit{dlb})=\textit{dlb} \ \ \ \ \ \ \ && \sigma_U(\textit{drb})=\textit{drb} \ \ \ \ \ \ \ && \sigma_U(\textit{drf})=\textit{drf} 
 \end{alignat*}
 
 Üblich ist auch die Notation der Form $i \mapsto j$: 
 \begin{alignat*}{4}
-& \textit{ulf} \mapsto \textit{ulb} \ \ \ \ \ \ \ \ & \textit{ulb} \mapsto \textit{urb} \ \ \ \ \ \ \ \ & \textit{urb} \mapsto \textit{urf} \ \ \ \ \ \ \ \ & \textit{urf} \mapsto \textit{ulf} \\
-& \textit{dlf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ & \textit{dlb} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ & \textit{drb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ & \textit{drf} \mapsto \textit{drf} 
+& \textit{ulf} \mapsto \textit{ulb} \ \ \ \ \ \ \ \ && \textit{ulb} \mapsto \textit{urb} \ \ \ \ \ \ \ \ && \textit{urb} \mapsto \textit{urf} \ \ \ \ \ \ \ \ && \textit{urf} \mapsto \textit{ulf} \\
+& \textit{dlf} \mapsto \textit{dlf} \ \ \ \ \ \ \ \ && \textit{dlb} \mapsto \textit{dlb} \ \ \ \ \ \ \ \ \ && \textit{drb} \mapsto \textit{drb} \ \ \ \ \ \ \ \ && \textit{drf} \mapsto \textit{drf} 
 \end{alignat*}
 
 Daraus entstehen folgende Zykel: $\sigma_U = \ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} )\ ( \textit{dlf} )\ ( \textit{dlb} )\ ( \textit{drb} )\ ( \textit{drf} )$
@@ -1613,13 +1613,13 @@ In der Zykel-Schreibweise entspricht die Funktion $\delta_{Z_r}$ für die Rotati
 
 Die übrigen Rotationen können ebenfalls durch Funktionen $\delta$ in der Zykelschreibweise abgebildet werden. Die leere Rotation ist dabei die Identitätspermutation 1. Im Folgenden sind die Funktionen $\delta$ für alle Rotationen aufgelistet:
 \begin{alignat*}{2}
-& \delta_{Z_r} & = ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf})\ (\textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} )\\
-& \delta_{Z_l} & = ( \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb})\ (\textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} )\\
-& \delta_{Y_r} & = ( \textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf})\ ( \textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf} )\\
-& \delta_{Y_l} & = ( \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb})\ ( \textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb} )\\
-& \delta_{X_r} & = ( \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf})\ ( \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} )\\
-& \delta_{X_l} & = ( \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf})\ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} )\\
-& \delta_{N_R} & = \ 1 \hspace*{14.1em}
+& \delta_{Z_r} && = ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf})\ (\textit{dlf} \ \textit{dlb} \ \textit{drb} \ \textit{drf} )\\
+& \delta_{Z_l} && = ( \textit{ulf} \ \textit{urf} \ \textit{urb} \ \textit{ulb})\ (\textit{dlf} \ \textit{drf} \ \textit{drb} \ \textit{dlb} )\\
+& \delta_{Y_r} && = ( \textit{ulf} \ \textit{ulb} \ \textit{dlb} \ \textit{dlf})\ ( \textit{urf} \ \textit{urb} \ \textit{drb} \ \textit{drf} )\\
+& \delta_{Y_l} && = ( \textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{ulb})\ ( \textit{urf} \ \textit{drf} \ \textit{drb} \ \textit{urb} )\\
+& \delta_{X_r} && = ( \textit{ulf} \ \textit{urf} \ \textit{drf} \ \textit{dlf})\ ( \textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} )\\
+& \delta_{X_l} && = ( \textit{ulf} \ \textit{dlf} \ \textit{drf} \ \textit{urf})\ (\textit{urb} \ \textit{ulb} \ \textit{dlb} \ \textit{drb} )\\
+& \delta_{N_R} && = \ 1 \hspace*{14.1em}
 \end{alignat*}
 
 Da die Rotationen die Würfelkonfiguration in eine andere, äquivalente Würfelkonfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Die Vektoreinträge der Steinausrichtungen werden dort mit den Funktionen $g, h$ und $i$ verändert.
