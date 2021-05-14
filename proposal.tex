@@ -2769,8 +2769,11 @@ Der Cayleygraph der Erzeuger $FF$ und $RR$ ist wesentlich komplexer, als der Gra
 
 \label{Kapitel_ValideKonfigurationen}
 
-In diesem Kapitel wird die Anzahl der validen Würfelkonfigurationen berechnet -- sowohl anhand des physischen Würfels als auch mithilfe der Gruppe $(\Gtwo,\circ)$. Dazu wird die Mächtigkeit der Gruppe berechnet. Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. \\
-Außerdem wird gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
+In diesem Kapitel wird die Anzahl der validen Würfelkonfigurationen mit zwei verschiedenen Ansätzen berechnet. In Abschnitt \ref{Abschnitt_AnzahlKonfigurationen} wird die Anzahl anhand des physischen Würfels berechnet. Im Gegensatz dazu wird in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} mithilfe der Gruppe $(\Gtwo,\circ)$ gerechnet. Dazu wird die Mächtigkeit der Gruppe bzw. der Trägermenge berechnet. Außerdem wird geründet, warum die Anzahl der Elemente in $\Gtwo$ der Anzahl der validen Würfelkonfigurationen entspricht.
+Die Definition der Mächtigkeit und Beispiele sind in Abschnitt \ref{Abschnitt_MächtigkeitGruppe} zu finden. 
+
+
+Außerdem wird in diesem Kapitel gezeigt, dass für die Ausrichtung $x$ der Steine $( \sum_{i= 1}^{8} \ x_i ) \mod 3 = 0$ gilt.
 
 %
 %
@@ -2838,15 +2841,33 @@ Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist die Anzahl der Elemente von $\Gt
 
 Da die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ der Anzahl der validen Würfelkonfigurationen entspricht, setzt sie sich aus dem Produkt der Konfigurationsparameter $\sigma$ und $x$ zusammen. Außerdem müssen die Äquivalenzen bezüglich der Rotationen berücksichtigt werden.
 
-$\sigma$ ist die Menge der bijektiven Funktionen für jede Ebenenrotation. Es sind die Übergänge der acht Würfelsteine als Permutationen enthalten. Da es $8$ Permutationsobjekte gibt, ist die Anzahl der Permutationsmöglichkeiten $8! = 40320$.
+$\sigma$ ist die Menge der bijektiven Funktionen für jede Ebenenrotation. Es sind die Übergänge der acht Würfelsteine als Permutationen enthalten. Da es $8$ Permutationsobjekte gibt, berechnet sich die Anzahl der Permutationsmöglichkeiten folgendermaßen:
+\begin{align*}
+8! = 40 \, 320
+\end{align*}
+Die Definition zur Berechnung der Permutationsmöglichkeiten findet sich in Abschnitt \ref{Abschnitt_PermutationZykel}.
 
-Der andere Parameter der Würfelkonfiguration ist der 8-dimensionale Vektor $x$. Jeder der Werte in $x$ ist aus der Menge $\{0,1,2\}$. Somit gibt es drei Möglichkeiten für jeden Wert im Vektor. Das ergibt dann $3^8 = 6561$ mögliche Konfigurationen des Vektors.
 
-Ohne Berücksichtigung der Rotationen wird ein Wert von $40320 \cdot 6561 = 264 \, 539 \, 520$ möglichen Konfigurationen erreicht. 
-Da durch die Rotationen eine der Steinausrichtungen in $x$ als richtig angenommen werden kann, wird $264 \, 539 \, 520$ durch drei geteilt und ergibt dann $88 \, 179 \, 840$. 
-Außerdem gibt es $6 \cdot 4 = 24$ Rotationsmöglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Alle 24 Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} abgebildet. Somit muss $88 \, 179 \, 840$ durch $24$ geteilt werden, um die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ zu berechnen. $|\Gtwo|$ ist dann $88 \, 179 \, 840 \div 24 = 3\, 674\, 160$.
+Der andere Parameter der Würfelkonfiguration ist der 8-dimensionale Vektor $x$. Jeder der Werte in $x$ ist aus der Menge $\{0,1,2\}$. Somit gibt es drei Möglichkeiten für jeden Wert im Vektor. Die Anzahl der möglichen Konfigurationen des Vektors wird im Folgenden berechnet:
+\begin{align*}
+3^8 = 6 \, 561
+\end{align*}
 
-Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ entspricht der Anzahl der validen Würfelkonfigurationen: $3\, 674\, 160$.
+Ohne Berücksichtigung der Rotationen würde ein Wert von $40 \, 320 \cdot 6561 = 264 \, 539 \, 520$ möglichen Konfigurationen erreicht. 
+Da durch die Rotationen eine der Steinausrichtungen in $x$ als richtig angenommen werden kann, wird  statt $3^8$ für 8 mögliche Ausrichtungen $3^7$ gerechnet:
+\begin{align*}
+3^7 = 2 \, 187
+\end{align*}
+Außerdem gibt es $6 \cdot 4 = 24$ Rotationsmöglichkeiten, die in den Äquivalenzklassen berücksichtigt werden. Alle 24 Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} abgebildet.  Somit muss die Anzahl der Würfelkonfigurationen durch 24 geteilt werden. Es ergibt sich folgende Rechnung, um die Anzahl der validen Würfelkonfigurationen zu berechnen:
+\begin{align*}
+& 8! \cdot 3^7 \div 24 \\
+= \ & 40 \, 320 \cdot 2 \, 187 \div 24 \\
+= \ & 88 \, 179 \, 840 \div 24 \\
+= \ & 3\, 674\, 160
+\end{align*}
+
+$|\Gtwo|$ beträgt demnach $3\, 674\, 160$.
+Das entspricht der Anzahl der validen Würfelkonfigurationen: $3\, 674\, 160$.
 
 
 
