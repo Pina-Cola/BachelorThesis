@@ -1993,17 +1993,29 @@ Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt we
 Somit ist $(\Gtwo, \circ)$ assoziativ.
 
 \item [Existenz eines neutralen Elements $\boldsymbol{N}$] \ \\
-$\exists \ N \in \Gtwo \  \forall Z \in \Gtwo \ . \ N \circ Z = Z \circ N = Z$ 
+$\exists \ N \in \Gtwo \  \forall \ Z \in \Gtwo \ . \ N \circ Z = Z \circ N = Z$ 
 
 
-Das neutrale Element $N$ muss eine Äquivalenzklasse aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: $N \circ Z = Z \circ N = Z$. Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und anschließend der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
+Das neutrale Element $N$ muss eine Element aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: 
+\begin{align*}
+N \circ Z = Z \circ N = Z
+\end{align*}
+Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und anschließend der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
 
-Wenn das auf das mathematischen Modell des Würfels übertragen wird, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Vektor wird dabei unverändert zurückgegeben.
+Wenn das auf das mathematischen Modell des Würfels übertragen wird, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}.
 
+Für das neutrale Element muss folgendes für jede Würfelkonfiguration $C$ gelten:
+\begin{align*}
+C \cdot N = C
+\end{align*}
 
-Wird beispielsweise eine einzelne Ebene viermal am Stück gedreht, befindet sich der Würfel wieder in der Ausgangskonfiguration. Somit gilt beispielsweise $RRRR=R^4=N$. Das gilt analog für alle einelementigen Züge des Würfels.
-Die vierfachen Ausführungen der Grundzüge sind alle als Repräsentanten des leeren Zuges in der Äquivalenzklasse von $N$ enthalten.
-Für jeden beliebigen Zug $Z$ aus $\Gtwo$ gilt somit auch $Z^0=N$, da die Würfelkonfiguration bei nullfacher Ausführung eines Zuges unverändert bleibt.
+Das gilt beispielsweise für das vierfache Drehen einer einzelnen Ebene. Die Konfiguration $C$ befindet sich dann wieder in der Ausgangskonfiguration. Die folgende Aussage wurde in Anhang \ref{Anhang_Ausrichtungsfunktionen} bewiesen.
+\begin{align*}
+\forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma, x)
+\end{align*}
+
+Demnach sind die vierfachen Ausführungen der Grundzüge als Repräsentanten des leeren Zuges in der Äquivalenzklasse von $N$ enthalten.
+Für jeden beliebigen Zug $Z$ aus $\Gtwo$ gilt auch $Z^0=N$, da die Würfelkonfiguration bei nullfacher Ausführung eines Zuges unverändert bleibt.
 
 Das neutrale Element $N$ von $(\Gtwo, \circ)$ ist somit die Äquivalenzklasse des leeren Zuges.
 
