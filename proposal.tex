@@ -709,7 +709,7 @@ Dann operiert $G$ von rechts auf $M$.
 Als Beispiel werden die Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ und die Menge $\mathbb{Z}$ mit der Verknüpfung $-$ betrachtet. Die folgenden Eigenschaften gelten, da $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ eine Rechtsoperation auf $\mathbb{Z}$ ist, mit $z \in  \mathbb{Z}$ und $g,h \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$.
 \begin{itemize}
 \item Die Eigenschaft $z - 0 = z$ ist erfüllt. $0$ ist das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$.
-\item Da sich $z-(g+h)$ zu $z-g-h$ umformen lässt, gilt $z-(g+h) = (z-g)-h$
+\item Da sich $z-(g+h)$ aufgrund der Klammerregel zu $z-g-h$ umformen lässt, gilt $z-(g+h) = (z-g)-h$.
 \end{itemize}
 Demnach operiert $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit $-$ von rechts auf $\mathbb{Z}$.
 
@@ -1178,7 +1178,8 @@ Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden:
 
 Die Indizes an den Funktionen $\sigma$ stehen für die verschiedenen Grundzüge des Würfels. Diese wurden in Abschnitt \ref{Abschnitt_GrundzügeWürfel} erklärt.
 
-Die Identitätspermutation wird als $\sigma=1$ geschrieben. Somit wird der leere Zug folgendermaßen definiert:
+Die Identitätspermutation wird als $\sigma=1$ geschrieben. Das entspricht der Permutation des leeren Zuges, der sich aus anderen Grundzügen bilden lässt. Eine Erklärung und Beispiele finden sich in \ref{Abschnitt_GleichheitVonZügen}..
+Somit wird die Permutation des leeren Zuges folgendermaßen definiert:
 \begin{align*}
 \sigma_N = 1
 \end{align*}
@@ -1348,7 +1349,7 @@ Analog dazu gibt es für jeden der sechs Grundzüge eine Funktion $\gamma$, die 
 & \gamma_B \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \\ 
 & =  \left( g(x_2), h(x_6), x_3, x_4, h(x_1), g(x_5), x_7, x_8 \right)
 \end{align*}
-Bei dem leeren Zug bleibt der Vektor undverändert. Die folgende Funktion ergibt sich:
+Bei dem leeren Zug bleibt der Vektor unverändert. Die Funktion $\gamma_N$ des leeren Zuges kann aus den anderen Funktionen gebildet werden. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}. Die folgende Funktion ergibt sich:
 \begin{align*}
 & \gamma_N \left( (x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  ) \right) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\ 
 & =  \left( x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8 \right)
@@ -1416,7 +1417,7 @@ Der neue Vektor $x$ wird nach dem Teilzug $LLFF$ durch $\gamma_F(\gamma_F(\gamma
 = \ & (0,0,0,0,0,0,0,0)
 \end{align*}
 
-Aus dieser Rechnung geht hervor, dass der Vektor nach Ausführen der Drehung $L$ zu $(1,0,2,0,2,0,1,0)$ wird. Wird $L$ dann nochmal ausgeführt, so ist der Vektor wieder $(0,0,0,0,0,0,0,0)$. Der Würfel ist dann aber nicht gelöst, da die Position der Steine ($\sigma$) verändert ist.
+Aus dieser Rechnung geht hervor, dass der Vektor nach Ausführen der Drehung $L$ zu $(1,0,2,0,2,0,1,0)$ wird. Wird $L$ anschließend nochmal ausgeführt, so ist der Vektor wieder $(0,0,0,0,0,0,0,0)$. Der Würfel ist dann aber nicht gelöst, da die Position der Steine ($\sigma$) verändert ist.
 Wird nun die Drehung $F$ zweimal ausgeführt, geht der Vektor über $(0,0,1,2,0,0,2,1)$ wieder in  $(0,0,0,0,0,0,0,0)$ über. 
 
 Die Konfiguration $C'$ nach dem ersten Ausführen des Teilzuges $LLFF$ ist somit 
@@ -1459,7 +1460,7 @@ Daraus folgt, dass der Zug $LLFF$ den Würfel nach dreifacher Ausführung wieder
 
 In diesem Kapitel wird die Gruppe des \Ttwo Würfels definiert. Zuerst wird dazu die Rotation des Würfels und die Gleichheit zweier Züge durch Äquivalenz\-relationen und Äquivalenzklassen realisiert. Das ist notwendig, damit gleiche Züge in der Trägermenge der Gruppe nicht doppelt vorkommen. Gleiche Züge werden dann durch eine Äquivalenzklasse repräsentiert. 
 
-Dann wird die Gruppe des \Tthree \textit{Cubes} \cite{JC} auf den \Ttwo \textit{Cube} übertragen. 
+Anschließend wird die Gruppe des \Tthree \textit{Cubes} \cite{JC} auf den \Ttwo \textit{Cube} übertragen. 
 Dafür wird die Gruppe des \Ttwo Würfels auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht. Außerdem wird geprüft, ob es sich um eine Abelsche Gruppe handelt und dafür die Kommutativität untersucht. Auf der Gruppe des \Ttwo Würfels wird dann eine Gruppenoperation für das Ausführen von Zügen definiert. Es werden auch die Ordnung von Permutationen und Zügen und die Äquivalenz von Zügen berechnet.
 
 
@@ -1952,7 +1953,7 @@ Grundlagen und Definition der Gruppe wurden in Abschnitt \ref{Abschnitt_Gruppe} 
 Die Trägermenge $\Gtwo$ der Gruppe wurde in Abschnitt \ref{Abschnitt_ÄquivalenzklassenDerZüge} definiert. Sie besteht aus den Äquivalenzklassen aller möglichen Zügen des Würfels. Äquivalente Züge sind dabei Repräsentanten der gleichen Äquivalenzklasse.
 
 
-Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Seien $Z_1$ und $Z_2$ zwei Züge in $\Gtwo$. Dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und dann $Z_2$ ausgeführt wird. $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
+Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Seien $Z_1$ und $Z_2$ zwei Züge in $\Gtwo$. Dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und anschließend $Z_2$ ausgeführt wird. $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
 
 Im Folgenden wird gezeigt, dass $(\Gtwo, \circ)$ eine Gruppe ist, indem $(\Gtwo, \circ)$ bezüglich der Gruppenkriterien untersucht wird:
 
@@ -1973,7 +1974,7 @@ $\forall \ Z_1,Z_2,Z_3 \in \Gtwo \ . \ (Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_
 
 Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird hier $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, r, l, f, b$. 
 
-Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und dann $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein $s$ zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Folglich gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
+Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und anschließend $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein $s$ zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Folglich gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
 
 
 Nun muss noch $(Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ gezeigt werden. Dafür wird gezeigt, dass sich $(Z_1 \circ Z_2) \circ Z_3$ und $Z_1 \circ (Z_2 \circ Z_3)$ beide zu $Z_3(Z_2(Z_1(s))$ umformen lassen: 
@@ -1995,7 +1996,7 @@ Somit ist $(\Gtwo, \circ)$ assoziativ.
 $\exists \ N \in \Gtwo \  \forall Z \in \Gtwo \ . \ N \circ Z = Z \circ N = Z$ 
 
 
-Das neutrale Element $N$ muss eine Äquivalenzklasse aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: $N \circ Z = Z \circ N = Z$. Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und dann der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
+Das neutrale Element $N$ muss eine Äquivalenzklasse aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: $N \circ Z = Z \circ N = Z$. Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und anschließend der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
 
 Wenn das auf das mathematischen Modell des Würfels übertragen wird, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Vektor wird dabei unverändert zurückgegeben.
 
@@ -2430,7 +2431,7 @@ Der Algorithmus braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eing
 
 \vspace*{1em}
 
-In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Dann wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{Count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
+In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{Count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
 Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zum Start ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
 Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das \textit{kleinste gemeinsame Vielfache} von diesen beiden Werten (Zeile 8).
@@ -3006,7 +3007,7 @@ Die übliche, händische Methode zum Lösen eines Zauberwürfels erfolgt durch d
 Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 In diesem Kapitel wird die Anzahl der $2$-Zykel der Züge untersucht und Kommutatoren erklärt.
-Dann wird beispielhaft ein Lösungsvorgang eines Menschens schrittweise beschrieben und erklärt.
+Anschließend wird beispielhaft ein Lösungsvorgang eines Menschens schrittweise beschrieben und erklärt.
 Außerdem werden Muster des Würfels algorithmisch beschrieben und grafisch dargestellt.
 Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen.
 
@@ -4168,6 +4169,7 @@ Im Folgenden wird gezeigt, dass sich der Vektor $x$ nach dem vierfachen Ausführ
 \forall \ Z \in \{U, D, R, L, F, B\} \ . \ (\sigma, x) \cdot Z^4 = (\sigma, x)
 \end{align*}
 
+
 Die Veränderung des Vektors erfolgt durch die Funktion $\gamma$. Diese Funktion wurde für jeden der Grundzüge in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert.
 
 Zuerst wird die Veränderung des Vektors $x$ anhand des Zuges $R$ beispielhaft betrachtet. In den folgenden Abbildungen sind die Übergangsfunktionen der Vektoreinträge im Würfel dargestellt:
@@ -4290,7 +4292,7 @@ Damit gilt auch das Folgende:
 \begin{align*}
 \forall \ Z \in \{U, D, R, L, F, B\}, n \in \mathbb{N}, n \hspace*{-0.5em} \mod 4 = 0 \ . \ (\sigma, x) \cdot Z^n = (\sigma, x)
 \end{align*}
-Demnach ist der Zug $Z^4$ bzw. $Z^n$ ein Repräsentant der Äquivalenzklasse des leeren Zuges.
+Demnach ist der Zug $Z^4$ bzw. $Z^n$ (mit $n \hspace*{-0.5em} \mod 4$ und einelementigen Zügen $Z$) ein Repräsentant der Äquivalenzklasse des leeren Zuges und ist somit auch eine Möglichkeit das neutrale Element $N$ der Gruppe $(\Gtwo, \circ)$ zu bilden.
 
 Das gilt analog dazu auch für die Rotationen des Würfels. In Abschnitt \ref{Abschnitt_RotationDesWürfels} wurden die Würfelrotationen durch jeweils zwei Ebendrehungen definiert. Dabei handelt es sich um gegenüberliegende Ebenen, die nicht dieselben Steine beeinflussen. Die vierfachen Rotationen des Würfels sind im Folgenden als Ebenendrehungen definiert:
 \begin{alignat*}{4}
@@ -4354,7 +4356,7 @@ Abbildung \ref{AbbildungWürfelRotationAlleSeiten} zeigt alle Rotationsmöglichk
 
 
 
-In der folgenden Verknüpfungstafel sind alle Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen. 
+In der folgenden Verknüpfungstafel sind die Verknüpfungen aller Rotationsmöglichkeiten des Würfels abgebildet. Dafür wurde eine Tabelle von Tom Davis aus \textit{Group Theory via Rubik's Cube} \cite{TD} auf die Syntax der Rotationen dieser Arbeit übertragen. 
 
 \vspace*{1em}
 
@@ -4423,6 +4425,8 @@ $X_lY_lZ_r$ & $X_lY_lZ_r$ & $X_lY_l$ & $Z_rZ_r$ & $Y_rX_r$ & $X_rY_l$ & $X_rX_r$
 \end{adjustbox}
 \\
 \\
+
+%Es handelt sich um eine vollständige Abbildung aller Rotationsmöglichkeiten des Würfels (s. Abbildung \ref{AbbildungWürfelRotationAlleSeiten}) und der Verknüpfungen dieser Möglichkeiten.
 
 %
 %
