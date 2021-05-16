@@ -379,9 +379,9 @@ Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei Ebenen
 
 \end{description}
 
-Beim \Ttwo \textit{Cube} gibt es keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Würfelkonfiguration einer vermeintlich anderen Konfiguration entspricht, bei der jedoch eine andere Seite nach oben gehalten wird.
+Beim \Ttwo \textit{Cube} gibt es im Gegensatz zum \Tthree \textit{Cube} keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Würfelkonfiguration einer vermeintlich anderen Konfiguration entspricht, bei der jedoch eine andere Seite nach oben gehalten wird.
 Die Ausrichtung des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann.  
-Dieser Sachverhalt ist entscheident bei der Übertragung der Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel. Es wird sich dabei vorallem an \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
+Dieser Sachverhalt ist entscheident bei der Übertragung der Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel. Es wird sich dabei vorallem an den Gruppen des \Tthree Würfels aus \textit{Group Theory an the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
 
 %
 %
@@ -412,6 +412,8 @@ In Abbildung \ref{Abbildung_Ebene} ist die obere Ebene markiert.
 \label{Abbildung_Ebene}
 \end{figure}
 
+In der folgenden Tabelle sind die Grundzüge des Würfels beschrieben.
+
 \begin{center}
 \begin{tabular}{cl}
 \toprule
@@ -431,9 +433,10 @@ Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}.
 Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf diese Ebene geschaut wird. Dementsprechend wirkt es so, als würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn von oben auf den Würfel geschaut wird. So ergibt sich die Menge der Grundzüge: $\{U, D, R, L, F, B\}$.
 
 
-Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel aber immer lediglich zwei statt drei nebeneinanderliegende Ebenen hat, entspricht eine Drehung der oberen Ebene nach rechts, einer Drehung der unteren Ebene nach links. 
-Auf die Rotationsmöglichkeiten des kompletten Würfels wird in Abschnitt \ref{Abschnitt_RotationDesWürfels} genauer eingegangen. Trotzdem werden die Drehungen für jede Ebene definiert. Das ist zwar nicht minimal, dient aber der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen.
-Eine Drehung der oberen Ebene im Uhrzeigersinn ($U$) beispielsweise entspricht einer Drehung der unteren Ebene im Uhrziegersinn ($D$) mit anschließender Rotation des kompletten Würfels. Es ist aber übersichtlicher, jede Ebenendrehung als einzelnen Zug darzustellen. 
+Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel aber immer nur zwei statt drei nebeneinanderliegende Ebenen hat, entspricht beispielsweise eine Drehung der linken Ebene ($L$), einer Drehung der rechten Ebene ($R$). Danach ist der Würfel allerdings anders ausgerichtet. 
+Auf die Rotationsmöglichkeiten des kompletten Würfels wird in Abschnitt \ref{Abschnitt_RotationDesWürfels} genauer eingegangen. 
+Obwohl die oben beschriebenen Drehungen folglich nicht minimal sind, wird für jede Ebene ein Grundzug definiert. Dies dient der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen des \Tthree Würfels.
+
 
 Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$. Die minimale Abbildung des Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} behandelt.
 
