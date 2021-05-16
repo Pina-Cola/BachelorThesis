@@ -210,7 +210,7 @@
 Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem ungarischen Professor Ern\H{o} Rubik erfunden wurde. Er wollte damit seinen Studierenden helfen, dreidimensionale Probleme zu verstehen. Ern\H{o} Rubik selbst brauchte über einen Monat, um den \Tthree Würfel zum ersten Mal zu lösen.
 Der sogenannte \textit{Rubik's Cube} wurde ab 1980 weltweit verkauft. Die Begeisterung für den Würfel war so groß, dass bereits 1982 die erste Weltmeisterschaft in Budapest stattfand. Der Gewinner war Minh Thai aus den USA, der den Würfel in $22,95$ Sekunden löste. \cite{RC} Die Zeiten zum Lösen des \Tthree Würfels wurden immer wieder unterboten.
 Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $3,47$ Sekunden und stellte damit einen neuen Weltrekord auf, der bis heute nicht gebrochen wurde \cite{rekord}.
-Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Dieser Würfel ist Gegenstand dieser Arbeit.
+Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Dieser Würfel ist Gegenstand dieser Arbeit. Mittlerweile gibt es die Zauberwürfel in vielen verschiedenen Größen: Im Jahr 2017 baute Grégoire Pfennig einen funktionsfähigen Würfel der Größe $33 \times 33 \times 33$ und stellte damit einen neuen Weltrekord auf \cite{HugeCube}.
 
 Bis heute sind Kinder und Erwachsene gleichermaßen von den Zauberwürfeln begeistert.
 Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
@@ -229,12 +229,12 @@ Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung 
 
 
 
-Der \Tthree Würfel ist Gegenstand zahlreicher Arbeiten \cite{JC, TD, DJ, TR, RMG, DDJT} und
+Der \Tthree Würfel ist Gegenstand zahlreicher Arbeiten und
 %Die \textit{God's Number} -- das ist die maximal erforderliche Anzahl der nötigen Drehungen des optimalen Lösungswegs -- ist Gegenstand vieler Arbeiten und wurde oft berechnet und durch neue Algorithmen verbessert. 
 %Die Berechnung der \textit{God's Number} des \Tthree Würfels ist wesentlich anspruchsvoller und dadurch auch interessanter als die des \Ttwo Würfels. 
-wurde zudem schon mehrfach als Gruppe dargestellt und untersucht \cite{JC, TD, DJ}. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel weniger komplex. Dafür kann der \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotiert werden und so kann die Oberseite beliebig geändert werden. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mithilfe der Gruppentheorie dargestellt. Anhand dieser Gruppe können dann Erkenntnisse über den Würfel gewonnen werden. Dazu zählen unter anderem die Berechnung der Anzahl der möglichen Würfelkonfigurationen und die Erstellung eines Konzeptes zum Finden des optimalen Lösungswegs.
+wurde zudem schon mehrfach als Gruppe dargestellt und untersucht  \cite{JC, TD, DJ, TR, RMG, DDJT}. Ziel dieser Arbeit ist es, das Wissen des \Tthree Würfels auf den \Ttwo Würfel zu übertragen. Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel insgesamt weniger Steine und keine Kantsteine -- dadurch ist der kleinere Würfel weniger komplex. Dafür kann der \Ttwo Würfel aber aufgrund der fehlenden Mittelsteine rotiert werden und so kann die Oberseite beliebig geändert werden. In dieser Arbeit wird das Wissen der Gruppe des \Tthree Würfels übertragen und angepasst und somit der \Ttwo Würfel mithilfe der Gruppentheorie dargestellt. Anhand dieser Gruppe können dann Erkenntnisse über den Würfel gewonnen werden. Dazu zählen unter anderem die Berechnung der Anzahl der möglichen Würfelkonfigurationen und die Erstellung eines Konzeptes zum Finden des optimalen Lösungswegs.
 
-Wer die Lösungsalgorithmen des \Ttwo Zauberwürfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
+%Wer die Lösungsalgorithmen des \Ttwo Zauberwürfels selber herleiten möchte, sollte dies vor dem Lesen dieser Arbeit tun, da diese hier teilweise erklärt und genutzt werden.
 
 %
 %
@@ -264,7 +264,7 @@ Diese Arbeit setzt sich aus 10 Kapiteln zusammen. Im Folgenden werden die Inhalt
 
 \item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen und die Mächtigkeit der Trägermenge der Gruppe des \Ttwo Würfels berechnet und verglichen.
 
-\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird anhand eines Beispiels schrittweise erklärt und es findet sich eine allgemeine Anleitung, mit der der \Ttwo Würfel immer gelöst werden kann.
+\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen erklärt. Die Lösung des Wüfels durch einen Menschen wird anhand eines Beispiels schrittweise erklärt und es findet sich eine allgemeine Anleitung, mit der der \Ttwo Würfel gelöst werden kann.
 
 \item[\textbf{\ref{Kapitel_MinUntergruppe}}] Hier wird die Untergruppe mit minimalen Grundzügen beschrieben, die den Würfel vollständig abbildet. Außerdem wird ein Konzept eingeführt, um den optimalen Lösungsweg des Würfels zu berechnen.  
 

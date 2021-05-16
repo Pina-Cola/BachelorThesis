@@ -258,6 +258,27 @@
       \field{title}{Finding God's Number for the Rubik's Cube Using Computational Analysis}
       \field{year}{2016}
     \endentry
+    \entry{HugeCube}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=44ccdab9ded33ce044946e8616290ecd}{%
+           family={Records},
+           familyi={R\bibinitperiod},
+           given={Guiness\bibnamedelima World},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{44ccdab9ded33ce044946e8616290ecd}
+      \strng{fullhash}{44ccdab9ded33ce044946e8616290ecd}
+      \strng{bibnamehash}{44ccdab9ded33ce044946e8616290ecd}
+      \strng{authorbibnamehash}{44ccdab9ded33ce044946e8616290ecd}
+      \strng{authornamehash}{44ccdab9ded33ce044946e8616290ecd}
+      \strng{authorfullhash}{44ccdab9ded33ce044946e8616290ecd}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Weltrekord. Online erhätlich unter \url{https://www.guinnessworldrecords.com/world-records/largest-order-rubiks-magic-cube}; abgerufen am 16.05.2021.}
+      \field{title}{Largest order Rubiks / magic cube}
+    \endentry
     \entry{TR}{article}{}
       \name{author}{1}{}{%
         {{hash=f76321ccd6d13fea50f79f499eae3630}{%
