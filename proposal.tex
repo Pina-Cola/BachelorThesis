@@ -1589,8 +1589,8 @@ Da die Anzahl der möglichen Züge ($|A_Z|$) im Gegensatz zur Anzahl der validen
 
 Der \Ttwo Würfel hat im Gegensatz zum \Tthree Würfel keine Mittelsteine, die fest darüber entscheiden, wie der Würfel ausgerichtet ist. 
 Der \Ttwo Würfel kann daher im gelösten Zustand sein, ohne dass die obere Seite weiß ist. Deshalb muss es möglich sein, den Würfel ganz zu rotieren.
-Das soll im nächsten Abschnitt als Äquivalenzrelation umgesetzt werden. Dazu werden in diesem Abschnitt die Rotationsmöglichkeiten des Würfels definiert.
-Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ definiert. Das ist in Abbildung \ref{Abbildung_Rotationsachsen} zu sehen. Die vetikale Achse wird $z$ genannt. Die $x$-Achse verläuft von vorne nach hinten durch den Würfel und die $y$-Achse von rechts nach links.
+Das soll in Abschnitt \ref{Abschnitt_ÄquivalenzrelationDerZüge} als Äquivalenzrelation umgesetzt werden. Dazu werden in diesem Abschnitt die Rotationsmöglichkeiten des Würfels definiert.
+Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ definiert. Das ist in Abbildung \ref{Abbildung_Rotationsachsen} zu sehen. Die vertikale Achse wird $z$ genannt. Die $x$-Achse verläuft von vorne nach hinten durch den Würfel und die $y$-Achse von rechts nach links.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Pfeile.png}
@@ -1666,7 +1666,7 @@ Die übrigen Rotationen können ebenfalls durch Funktionen $\delta$ in der Zykel
 & \delta_{N_R} && = \ 1 \hspace*{14.1em}
 \end{alignat*}
 
-Da die Rotationen die Würfelkonfiguration in eine andere, äquivalente Würfelkonfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Die Vektoreinträge der Steinausrichtungen werden dort mit den Funktionen $g, h$ und $i$ verändert.
+Da die Rotationen eine beliebige Würfelkonfiguration in eine andere, äquivalente Würfelkonfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Die Vektoreinträge der Steinausrichtungen werden dort mit den Funktionen $g, h$ und $i$ verändert.
 \begin{align*}
 g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 \ \ \ \ \ i(x)=x
 \end{align*}
