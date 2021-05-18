@@ -1809,7 +1809,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 \end{tabular} 
 \end{center}
 
-Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels.
+Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels. Die beiden Züge gelten unter der Relation $\sim$ als gleich, wenn sie bei der gleichen Ausgangskonfiguration die gleiche Folgekonfiguration mit optionaler Rotation ergeben.
 
 Daraus ergibt sich folgende Definition für alle Würfelkonfigurationen $C$ und $W$ als Element (oder beliebige Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
 \begin{align*}
@@ -1817,11 +1817,11 @@ Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene eine äquivalente Würfelkonfiguration ergeben. Der Würfel ist dann lediglich verschieden ausgerichtet. 
-In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der Würfel nach dem Zug $F$ und rechts der Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in der äquivalenten Konfigurationen, aber anders gedreht.
+In Abbildung \ref{Abbildung_GelöstnachFnachZL} ist dieses Beispiel grafisch dargestellt: Links befindet sich der gelöste Würfel, in der Mitte der Würfel nach dem Zug $F$ und rechts der Würfel nach dem Zug $Z_rL$. Die beiden rechten Würfel sind in äquivalenten Konfigurationen, aber anders gedreht.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.15]{3_wuerfel.png}
-\caption[Würfel gelöst, nach Zug $F$ und nach $Z_rL$]{Würfel gelöst (links), nach Zug $F$ (Mitte) und nach $Z_rL$(rechts)}
+\caption[Würfel gelöst, nach Zug $F$ und nach $Z_rL$]{Würfel gelöst (links), nach Zug $F$ (Mitte) und nach $Z_rL$ (rechts)}
 \label{Abbildung_GelöstnachFnachZL}
 \end{figure}
 
@@ -1833,15 +1833,15 @@ Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und 
 \item [Reflexivität] \ \\
 Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. Jeder Zug muss dafür zu sich selbst in Relation stehen. Die folgenden Ausdrücke gelten für alle $Z$ aus $A_Z$ und jede beliebige Würfelkonfiguration $C$.
 \begin{align*}
-Z_1 \sim_R Z_2 : & \Leftrightarrow C \cdot Z_1 = C \cdot WZ_2
+Z \sim_R Z : & \Leftrightarrow C \cdot Z = C \cdot WZ
 \end{align*}
-Um zu zeigen, dass $Z_1$ und $Z_2$ äquivalent sind, wird die Rotation $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
+Um zu zeigen, dass $Z$ zu sich selbst äquivalent ist, wird die Rotation $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
 \begin{align*}
-Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot Z_1 = C \cdot WZ_2 \\
-\ & \Leftrightarrow C \cdot Z_1=C \cdot N_R Z_2 \\
-\ & \Leftrightarrow C \cdot Z_1 = C \cdot Z_2
+Z \sim Z : & \Leftrightarrow  C \cdot Z = C \cdot WZ \\
+\ & \Leftrightarrow C \cdot Z=C \cdot N_R Z \\
+\ & \Leftrightarrow C \cdot Z = C \cdot Z
 \end{align*}
-Bei $Z_1 \sim Z_2$ mit $W=N_R$ sind die Züge $Z_1$ und $Z_2$ immer äquivalent, da sie bei gleicher Startkonfiguration die gleiche Folgekonfiguration des Würfels erzeugen. Es gilt somit die Reflexivität für die Relation $\sim$.
+Bei $Z \sim Z$ mit $W=N_R$ ist der Zug $Z$ immer äquivalent zu sich selbst, da bei gleicher Startkonfiguration die gleiche Folgekonfiguration des Würfels erzeugt wird. Es gilt somit die Reflexivität für die Relation $\sim$.
 
 \item [Symmetrie] \ \\
 Für die Symmetrie muss folgendes für alle $Z_1$ und $Z_2$ aus $A_Z$ gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.  Im Folgenden ist $C$ eine beliebige Würfelkonfiguration.
