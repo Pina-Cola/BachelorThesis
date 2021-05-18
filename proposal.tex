@@ -1423,8 +1423,8 @@ Der Vektor $x$ lautet nach dem Zug $R$ von der Startkonfiguration ausgehend: $(0
 
 \label{Abschnitt_ZuegeAusfuehren}
 
-Eine beliebige Würfelkonfiguration $C=(\sigma, x)$ wird durch das Ausführen eines Zuges verändert. Ein Zug ist eine beliebige Kombination von Grundzügen, die in Abschnitt \ref{Abschnitt_GrundzügeWürfel} definiert wurden.
-Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine Aneinanderreihung von Grundzügen sein. Die Grundzüge wurden in Kapitel \ref{Abschnitt_GrundzügeWürfel} beschrieben.
+Eine Würfelkonfiguration $C=(\sigma, x)$ wird durch das Ausführen eines Zuges verändert.
+Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Würfel und der Vektor $x$ die Ausrichtung der Steine. Ein Zug $Z$ kann dabei einer der Grundzüge ($U,D,R,L,F,B$) oder eine beliebige Aneinanderreihung von Grundzügen sein. Die Grundzüge wurden in Kapitel \ref{Abschnitt_GrundzügeWürfel} beschrieben.
 
 Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
 
@@ -1479,7 +1479,7 @@ Das dritte Ausführen von $LLFF$ bringt den Würfel wieder in die Ausgangskonfig
 \begin{align*}
 C''' = (1,0).
 \end{align*}
-Daraus folgt, dass der Zug $LLFF$ den Würfel nach dreifacher Ausführung wieder in den Ausgangszustand bringt. Das wird als \textit{Ordnung von Zügen} in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
+Daraus folgt, dass der Zug $LLFF$ den Würfel nach dreifacher Ausführung wieder in den Ausgangszustand bringt. Das wird ausfürhlich als \textit{Ordnung von Zügen} in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
 
 %
 %
@@ -1538,20 +1538,20 @@ Für den weiteren Verlauf der Arbeit wird $A_Z$ als die unendliche Menge aller Z
 Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
 Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben. Die Exponentenschreibweise kann für alle Züge angewendet werden, auch wenn sie mehr als eine Ebene rotieren. Der Zug $(LLFF)^2$ beispielsweise entspricht dann $LLFFLLFF$. 
 
-Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird eine Ebene viermal hintereinander gedreht, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
+Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird eine Ebene viermal hintereinander gedreht, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer beliebigen Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
 \begin{align*}
 \forall \ Z \in \{ U, D, R, L, F, B\} \ . \ C \cdot Z^4 = C  
 \end{align*}
 Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ die gleiche Konfiguration wie der Zug $Z_1Z_3$ hervorruft.
 Der Exponent kann in diesem Fall modulo 4 gerechnet werden, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
-Es gilt folglich:
+Es gilt folglich für alle Konfigurationen $C$ des Würfels:
 \begin{align*}
 \forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ C \cdot Z^n= C \cdot Z^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
-Das gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert ist. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird in Anhang \ref{Anhang_Ausrichtungsfunktionen} für alle Grundzüge des Würfels gezeigt.
+Das gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert ist. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer als \textit{Ordnung einer Permutation} in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird in Anhang \ref{Anhang_Ausrichtungsfunktionen} für alle Grundzüge des Würfels gezeigt.
 
 
-Für alle $n$, die Vielfache von vier sind, gilt dann:
+Für eine beliebige Würfelkonfiguration $C$ und alle $n$, die Vielfache von vier sind, gilt dann:
 \begin{align*}
 \forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N}, n \hspace*{-0.6em} \mod 4 = 0 \ . \ 
 C \cdot Z^n  
