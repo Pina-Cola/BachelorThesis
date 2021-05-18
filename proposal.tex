@@ -488,10 +488,10 @@ Die Definition einer Gruppe $(G, \circ)$ ist Grundlage für die folgenden Kapite
 Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ wird Gruppe genannt, wenn folgende Bedingungen gelten: 
 \vspace*{-0.5em}
 \begin{itemize}
-\item Abgeschlossenheit: $\forall a,b \in G.(a \circ b) \in G $
-\item Assoziativität: $\forall a,b,c \in G.(a \circ b) \circ c = a \circ (b \circ c)$
-\item Existenz eines neutralen Elements $n$: $\exists n \in G. \forall a \in G.n \circ a = a \circ n = a$ 
-\item Existenz eines inversen Elements $a^{-1}$: $\forall a \in G. \exists a^{-1} \in G. a \circ a^{-1} = a^{-1} \circ a = n$ 
+\item Abgeschlossenheit: $\forall \, a,b \in G \, . \, (a \circ b) \in G $
+\item Assoziativität: $\forall \, a,b,c \in G \, . \, (a \circ b) \circ c = a \circ (b \circ c)$
+\item Existenz eines neutralen Elements $n$: $\exists \, n \in G \ \forall \,  a \in G \, . \, n \circ a = a \circ n = a$ 
+\item Existenz eines inversen Elements $a^{-1}$: $\forall \, a \in G \ \exists \, a^{-1} \in G \, . \, a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
 \end{definition}
 
@@ -501,7 +501,7 @@ Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\foo
 Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
 \vspace*{-0.5em}
 \begin{itemize}
-\item Kommutativität: $\forall a,b \in G.(a \circ b) = (b \circ a) $
+\item Kommutativität: $\forall \, a,b \in G \, . \, (a \circ b) = (b \circ a) $
 \end{itemize}
 \end{definition}
 \vspace*{0.1cm}
@@ -509,12 +509,12 @@ Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
 
 \begin{bsp}[Gruppe]
 
-Zur Veranschaulichung der Gruppendefinition werden hier die natürlichen Zahlen $\mathbb{N}$ und die ganzen Zahlen $\mathbb{Z}$ mit dem Operator $+$ auf die Gruppenaxiome untersucht.
+Zur Veranschaulichung der Gruppendefinition werden hier die natürlichen Zahlen $\mathbb{N}$ und die ganzen Zahlen $\mathbb{Z}$ jeweils mit dem Operator $+$ auf die Gruppenaxiome untersucht.
 \begin{itemize}
-\item Die Abgeschlossenheit gilt sowohl für $(\mathbb{N},+)$ als auch für $(\mathbb{Z},+)$, da zwei natürliche Zahlen addiert immer eine natürliche Zahl ergeben. Zwei ganze Zahlen addiert ergeben immer eine ganze Zahl. \\
+\item Die Abgeschlossenheit gilt sowohl für $(\mathbb{N},+)$ als auch für $(\mathbb{Z},+)$. Die Summe zwei natürlicher Zahlen ist immer ein Element der natürlichen Zahlen. Zwei ganze Zahlen addiert ergeben immer eine ganze Zahl. \\
 Beispielsweise sind $1+2=3$ und es gilt $1,2,3 \in \mathbb{N}$.
 \item Die Verknüpfung ist assoziativ, aufgrund der Definition des Pluszeichens.
-\item Das neutrale Element von $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ ist $0$. Es gilt also $\forall n \in N. \ n + 0 = 0 + n = n$ (und mit $\mathbb{Z}$ analog). \\
+\item Das neutrale Element von $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ ist $0$. Es gilt also $\forall \, n \in \mathbb{N} \, . \, n + 0 = 0 + n = n$ (und mit $\mathbb{Z}$ analog). \\
 Ein Beispiel zur Veranschaulichung: $3+0=0+3=3$
 \item Die letzte erforderliche Eigenschaft einer Gruppe ist die Existenz eines inversen Elements. Für die Gruppe $(\mathbb{Z},+)$ ist $-z$ das inverse Element für jedes $z \in \mathbb{Z}$. Für $(\mathbb{N},+)$ gibt es kein inverses Element.
 \end{itemize}
@@ -530,7 +530,7 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 
 Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}_{\hspace*{-0.3em}\mod n}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind dann alle ganzen Zahlen modulo 6, also $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}=\{0,1,2,3,4,5\}$
 \begin{itemize}
-\item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von$\mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
+\item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\hspace*{-0.5em} \mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
 \item Das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $0$.
 \item Das Inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es demnach 5, für 2 ist es 4 und für 3 ist das inverse Element die 3.
@@ -544,7 +544,7 @@ $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist eine endliche Gruppe, da die vier
 
 \label{Abschnitt_MächtigkeitGruppe}
 
-Die Mächtigkeit einer Gruppe $(G, \circ)$ wird auch Gruppenordnung genannt und sagt aus, wie viele Elemente die Menge $G$ der Gruppe enthält.
+Die Mächtigkeit einer Gruppe $(G, \circ)$ wird auch Gruppenordnung genannt und sagt aus, wie viele Elemente die Trägermenge $G$ der Gruppe enthält.
 
 \begin{definition}[Mächtigkeit einer Gruppe]
 Die Mächtigkeit einer Gruppe $(G, \circ)$ ist der Betrag der Menge $G$, also $|G|$. 
@@ -593,12 +593,12 @@ Jede Gruppe $(G, \circ)$ mit neutralem Element $N$ hat die beiden trivialen Unte
 
 \begin{bsp}[keine Untergruppe]
 
-Bei dem oben genannten Beispiel mit $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellt sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
+Bei dem oben genannten Beispielen der Gruppen $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellte sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
 
 \end{bsp}
 \begin{bsp}[Untergruppe]
 
-Es gilt $\mathbb{Z}_{\hspace*{-0.3em}\mod 6} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ Gruppen sind, ist $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ eine Untergruppe von $(\mathbb{Z},+)$. $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ und $(\mathbb{Z},+)$ wurden im Abschnitt über Gruppen auf die Gruppeneigenschaften untersucht.
+Es gilt $\mathbb{Z}_{\hspace*{-0.3em}\mod 6} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ Gruppen sind, ist $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ eine Untergruppe von $(\mathbb{Z},+)$. $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ und $(\mathbb{Z},+)$ wurden in Abschnitt \ref{Abschnitt_Gruppe} auf die Gruppeneigenschaften untersucht.
 
 \end{bsp}
 
