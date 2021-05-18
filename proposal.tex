@@ -1251,30 +1251,31 @@ Somit wird die Permutation des leeren Zuges folgendermaßen definiert:
 \subsection{Ausrichtung der Steine} 
  \label{Abschnitt_AusrichtungDerSteine}
 Der \Ttwo Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. 
-Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche eine Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw.
+Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche eine Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw. Das ist links in Abbildung \ref{Abbildung_MarkierungenFuerX} dargestellt.
 
-Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. 
+Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. Das ist rechts in Abbildung \ref{Abbildung_MarkierungenFuerX} dargestellt.
 In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.13]{foldedout_numbers.png}
+\includegraphics[scale=0.13]{foldedout_numbers.png} \hspace*{2em}
 \includegraphics[scale=0.13]{foldedout_012.png}
 \caption[Markierungen $x_i$ (links), Farbflächennummern (rechts)]{Ausgeklappter Würfel mit Markierungen für $x_i$ (links) und Farbflächennummerierungen (rechts) }
+\label{Abbildung_MarkierungenFuerX}
 \end{figure}
 
 
-Im Folgenden wird der Zug $R$ ausgeführt (s. Abbildung \ref{Abbildung_XnachZugR}) und die Veränderung der Farbflächennummerierung zur Veranschaulichung dargestellt. $R$ ist eine Drehung der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
+Im Folgenden wird beispielhaft der Zug $R$ ausgeführt und die Veränderung der Farbflächennummerierung zur Veranschaulichung dargestellt (s. Abbildung \ref{Abbildung_XnachZugR}). $R$ ist eine Drehung der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
 Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position. Die Nummerierungen  der Farbflächen ändern sich mit Drehung der Ebene und ermöglichen so eine Zuordnung der Ecksteinausrichtung. 
 Die linke Seite des Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0, da sie der der linken Hälfte des Würfels zugeordnet sind.
 Die anderen Positionen von $x$ zeigen nun aber andere Farbflächen: 
 \begin{align*}
 x_2 = 2 \ \ \ \ \ \ x_4 = 1 \ \ \ \ \ \ x_6 = 1 \ \ \ \ \ \ x_8 = 2  
 \end{align*}
-Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Zug $R$. Das ist auch anhand von Abbildung \ref{Abbildung_XnachZugR} zu erkennen. Links sind dort die Positionen der Vektoreinträge von $x$ abgebildet und rechts sieht man den Würfel mit den Farbflächennummerierungen, nachdem der Zug $R$ ausgeführt wurde.
+Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Ausführen von $R$. Das ist auch anhand von Abbildung \ref{Abbildung_XnachZugR} zu erkennen. Links sind dort die Positionen der Vektoreinträge von $x$ abgebildet und rechts sieht man den Würfel mit den Farbflächennummerierungen, nachdem der Zug $R$ ausgeführt wurde.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.13]{foldedout_012_white.png}
+\includegraphics[scale=0.13]{foldedout_012_white.png} \hspace*{2em}
 \includegraphics[scale=0.13]{foldedout_012_spin.png}
 \caption[Links: $x_1$ bis $x_8$, rechts: Veränderung nach dem Zug $R$]{Links: Positionen $x_1$ bis $x_8$, rechts: Veränderung der nummerierten Ecksteine nach dem Zug $R$}
 \label{Abbildung_XnachZugR}
@@ -1287,7 +1288,7 @@ Anhand des Beispielzuges $R$ kann für jeden Vektoreintrag eine Funktion $\Gamma
 & \Gamma_{R_5}(\textcolor{gray}{(x_1, x_2, x_3, x_4, \textcolor{black}{x_5}, x_6, x_7, x_8  )})=\textcolor{gray}{(x_1, x_2, x_3, x_4, \textcolor{black}{x_5}, x_6, x_7, x_8  )}\\
 & \Gamma_{R_7}(\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6,\textcolor{black}{x_7}, x_8  )})=\textcolor{gray}{(x_1, x_2, x_3, x_4, x_5, x_6, \textcolor{black}{x_7}, x_8  )} 
 \end{align*}
-Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit der vorherigen Steinausrichtungen verändert. Es ergeben sich folgende Funktionen für die Positionen $x_2, x_4, x_6$ und $x_8$ nach dem Zug $R$: 
+Die Flächen an den Positionen $x_2, x_4, x_6$ und $x_8$ werden in Abhängigkeit der vorherigen Steinausrichtungen verändert. Es ergibt sich folgende Funktion für die Positionen $x_2$ nach dem Zug $R$: 
 
 
 \begin{align*}
