@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1656,14 +1656,7 @@ Overfull \hbox (1.91095pt too wide) in paragraph at lines 2618--2619
 ung im-mer vier und die Tr[]agermenge
  []
 
-[55]
-Overfull \hbox (27.42674pt too wide) in paragraph at lines 2675--2677
-\OT1/cmr/m/n/12 (-20) Zyklische Grup-pen k[]onnen un-end-lich sein. Die Grup-pe
- $(\OML/cmm/m/it/12 G[]; \OMS/cmsy/m/n/12 ^^N\OT1/cmr/m/n/12 (-20) )$ ist auf-g
-rund der []Aquivalenzklassen
- []
-
-[56] [57]
+[55] [56] [57]
 Overfull \hbox (19.07925pt too wide) in paragraph at lines 2746--2748
 \OT1/cmr/m/n/12 (-20) Die In-ver-sen von $\OML/cmm/m/it/12 FF$ \OT1/cmr/m/n/12 
 (-20) und $\OML/cmm/m/it/12 RR$ \OT1/cmr/m/n/12 (-20) sind dem-nach $\OML/cmm/m
@@ -2141,11 +2134,11 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4633.
  ) 
 Here is how much of TeX's memory you used:
- 32305 strings out of 483016
- 589353 string characters out of 5961286
- 1411785 words of memory out of 5000000
+ 32307 strings out of 483016
+ 589371 string characters out of 5961286
+ 1412785 words of memory out of 5000000
  46248 multiletter control sequences out of 15000+600000
- 561661 words of font info for 196 fonts, out of 8000000 for 9000
+ 561770 words of font info for 197 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  60i,16n,77p,1048b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pina/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600p
@@ -2175,7 +2168,7 @@ nts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on proposal.pdf (103 pages, 5689320 bytes).
+Output written on proposal.pdf (103 pages, 5689306 bytes).
 PDF statistics:
  1518 PDF objects out of 1728 (max. 8388607)
  1228 compressed objects within 13 object streams
