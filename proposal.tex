@@ -319,8 +319,8 @@ Im Folgenden wird die Terminologie und der Aufbau des Würfels erklärt.
 \item[\Ttwo Würfel] (auch Zauberwürfel oder \textit{Cube}) 
 
 Der Würfel setzt sich aus acht kleineren Würfeln zusammen.
-In Abbildung \ref{Abbildung_WürfelUngelöstGelöst} ist er links verdreht und rechts im gelösten Zustand zu sehen. Der gelöste Zustand wird als Startkonfiguration bezeichnet.
-Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite 4 Farbflächen derselben Farbe. 
+In Abbildung \ref{Abbildung_WürfelUngelöstGelöst} ist er links im verdrehten und rechts im gelösten Zustand zu sehen. Der gelöste Zustand wird als Startkonfiguration bezeichnet.
+Bei der Startkonfiguration (auch Grundposition, Grundstellung) des \Ttwo Würfels hat jede Seite vier Farbflächen derselben Farbe. 
 Bei dem verdrehten Würfel können sich die Steine des Würfels an anderen Positionen befinden und anders ausgerichtet sein.
 \begin{figure}[h]
 \centering
@@ -345,7 +345,7 @@ Ein \Ttwo Würfel besteht aus acht Ecksteinen (links in Abbildung \ref{Abbildung
 \newpage
 
 \item[Seite] \ \\
-Sowohl der \Ttwo \ als auch der \Tthree Würfel haben sechs Seiten (bestehend aus jeweils vier Farbflächen) und somit sechs Farben. Die weiße Seite wird üblicherweise als obere Seite bezeichnet. Für den Mechanismus ist die Ausrichtung des Würfels aber nicht relevant.
+Sowohl der \Ttwo \ als auch der \Tthree Würfel haben sechs Seiten (bestehend aus jeweils vier bzw. neun Farbflächen) und somit sechs Farben. Die weiße Seite wird üblicherweise als obere Seite bezeichnet. Für den Mechanismus ist die Ausrichtung des Würfels aber nicht relevant.
 
 \begin{figure}[h]
 \centering
@@ -429,8 +429,9 @@ $B$ & Drehung der \textbf{hinteren} Ebene im Uhrzeigersinn \\
 \end{tabular} 
 \end{center}
 
-Die Kürzel stehen für \textit{Up, Down, Right, Left, Front, Back}. 
-Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht, wenn auf diese Ebene geschaut wird. Dementsprechend wirkt es so, als würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn von oben auf den Würfel geschaut wird. So ergibt sich die Menge der Grundzüge: $\{U, D, R, L, F, B\}$.
+Die Kürzel stehen für \textit{Up, Down, Right, Left, Front} und \textit{Back}. 
+Die entsprechende Ebene wird um $90^\circ$ im Uhrzeigersinn gedreht -- der Uhrzeigersinn definiert sich durch die Draufsicht auf die jeweilige Ebene.
+Dementsprechend wirkt es so, als würde die untere Ebene gegen den Uhrzeigersinn gedreht werden, wenn der Würfel von oben betrachtet wird. So ergibt sich die Menge der Grundzüge: $\{U, D, R, L, F, B\}$.
 
 
 Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel aber immer nur zwei statt drei nebeneinanderliegende Ebenen hat, entspricht beispielsweise eine Drehung der linken Ebene ($L$), einer Drehung der rechten Ebene ($R$). Danach ist der Würfel allerdings anders ausgerichtet. 
@@ -491,11 +492,11 @@ Eine Menge $G$ (auch Trägermenge) mit einer Verknüpfung $\circ$ wird Gruppe ge
 \item Abgeschlossenheit: $\forall \, a,b \in G \, . \, (a \circ b) \in G $
 \item Assoziativität: $\forall \, a,b,c \in G \, . \, (a \circ b) \circ c = a \circ (b \circ c)$
 \item Existenz eines neutralen Elements $n$: $\exists \, n \in G \ \forall \,  a \in G \, . \, n \circ a = a \circ n = a$ 
-\item Existenz eines inversen Elements $a^{-1}$: $\forall \, a \in G \ \exists \, a^{-1} \in G \, . \, a \circ a^{-1} = a^{-1} \circ a = n$ 
+\item Existenz der inversen Elemente: $\forall \, a \in G \ \exists \, a^{-1} \in G \, . \, a \circ a^{-1} = a^{-1} \circ a = n$ 
 \end{itemize}
 \end{definition}
 
-Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\footnote{\glqq Zu Ehren von Niels Henrik \textsc{Abel} (1802-1829); norwegischer Mathematiker und einer der Begründer der Gruppentheorie. Starb leider verarmt und deprimiert im Alter von 26 Jahren an Tuberkulose, kurz bevor er als Anerkennung für seine genialen Arbeiten  eine Dozentenstelle in Berlin angeboten bekam.\grqq \  \cite[S.21, Z.23]{Buch}}) handelt, muss zusätzlich noch die Eigenschaft der Kommutativität gelten: 
+Wenn es sich bei der Gruppe um eine kommutative Gruppe (auch abelsche Gruppe\footnote{\glqq Zu Ehren von Niels Henrik \textsc{Abel} (1802-1829); norwegischer Mathematiker und einer der Begründer der Gruppentheorie. Starb leider verarmt und deprimiert im Alter von 26 Jahren an Tuberkulose, kurz bevor er als Anerkennung für seine genialen Arbeiten  eine Dozentenstelle in Berlin angeboten bekam.\grqq \  \cite[S.21, Z.23]{Buch}}) handelt, gilt zusätzlich noch die Eigenschaft der Kommutativität: 
 
 \begin{definition}[Kommutative Gruppe]
 Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
@@ -528,9 +529,9 @@ Da der Plus-Operator als kommutativ definiert ist, ist $(\mathbb{Z},+)$ eine abe
 
 \begin{bsp}[Gruppe]
 
-Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}_{\hspace*{-0.3em}\mod n}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind dann alle ganzen Zahlen modulo 6, also $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}=\{0,1,2,3,4,5\}$
+Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}_{\hspace*{-0.3em}\mod n}$. Hier wird die Menge für $n=6$ mit dem Additionsoperator auf die Gruppeneigenschaften untersucht. Die Elemente der Menge sind somit alle ganzen Zahlen modulo 6. Es gilt demnach $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}=\{0,1,2,3,4,5\}$
 \begin{itemize}
-\item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\hspace*{-0.5em} \mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
+\item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\hspace*{-0.6em} \mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
 \item Das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $0$.
 \item Das Inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es demnach 5, für 2 ist es 4 und für 3 ist das inverse Element die 3.

@@ -21,7 +21,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Erzeuger und zyklische Gruppe}{10}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Cayleygraph}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}Cayleygraph}{11}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5}Gruppenoperation}{11}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
