@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 20:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1932,10 +1932,10 @@ File: Cayleygraph_URF.png Graphic file (type png)
 Package pdftex.def Info: Cayleygraph_URF.png  used on input line 3897.
 (pdftex.def)             Requested size: 299.41183pt x 223.52902pt.
 [82 <./Cayleygraph_URF.png>] [83]
-Overfull \hbox (8.81883pt too wide) in paragraph at lines 3986--3987
+Overfull \hbox (2.42168pt too wide) in paragraph at lines 3986--3987
 []\OT1/cmr/m/n/12 (-20) Somit enth[]alt auch $\OML/cmm/m/it/12 G[]$ \OT1/cmr/m/
 n/12 (-20) die []Aquivalenzklassen al-ler m[]oglichen Z[]uge und ist ei-ne voll
-st[]anndige
+st[]andige
  []
 
 [84]
@@ -2136,7 +2136,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4633.
 Here is how much of TeX's memory you used:
  32307 strings out of 483016
  589371 string characters out of 5961286
- 1412785 words of memory out of 5000000
+ 1411785 words of memory out of 5000000
  46248 multiletter control sequences out of 15000+600000
  561770 words of font info for 197 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191

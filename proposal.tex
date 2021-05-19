@@ -3158,7 +3158,7 @@ Beispielsweise hat der Zug $LF$ eine gerade Anzahl an $2$-Zykeln:
 
 Die Zykel treffen ausschließlich eine Aussage über die Position der Steine im Würfel. Die Rotation wird durch den Vektor $x$ dargestellt und hier nicht berücksichtigt. 
 
-Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Ein Zug, der genau zwei Steine tauscht, wird durch \textit{einen} $2$-Zykel dargestellt -- das wäre eine ungerade Anzahl an $2$-Zykeln. Im Gegensatz zum \Tthree Würfel kann die Anzahl der $2$-Zykel des \Ttwo Würfels ungerade sein und somit es gibt für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
+Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, deshalb gibt es keinen Zug, der genau zwei Steine im Würfel tauscht \cite{TD}. Ein Zug, der genau zwei Steine tauscht, wird durch \textit{einen} $2$-Zykel dargestellt -- das wäre eine ungerade Anzahl an $2$-Zykeln. Im Gegensatz zum \Tthree Würfel kann die Anzahl der $2$-Zykel des \Ttwo Würfels ungerade sein und somit gibt es für diesen Würfel Algorithmen, die die Position von genau zwei Steinen tauschen. Diese Algorithmen sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. 
 
 %
 %
@@ -3311,7 +3311,7 @@ Er wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schr
 
 \subsubsection*{Steine ausrichten und dann positionieren}
 
-Bei diesem Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite, die aus vier weißen Farbflächen besteht. Die Position der Steine ist dabei jedoch nicht relevant. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Es gibt dann eine weiße und eine gelbe Seite, die anderen vier Seiten sind allerdings nicht gelöst, da die Steinposition noch nicht berücksichtig wurde.
+Bei diesem Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite, die aus vier weißen Farbflächen besteht. Die Position der Steine ist dabei jedoch nicht relevant. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Es gibt dann eine weiße und eine gelbe Seite, die anderen vier Seiten sind allerdings nicht gelöst, da die Steinposition noch nicht berücksichtigt wurde.
 Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie untereinander getauscht und der Würfel somit gelöst. Dieses Vorgehen wird \textit{Ortega-Methode} genannt \cite{RF2}.
 
 
@@ -3422,8 +3422,8 @@ Dann führt der Lösende den Zug $RUR^{-1}U^{-1} \ R^{-1}FRF^{-1}$ aus \cite{RF2
 Die Würfelkonfiguration ist $ C^{VI} = (( \textit{ulb} \ \textit{drb} ) \ ( \textit{urb} \ \textit{dlb} ) \ ( \textit{ulf} \ \textit{drf} ) \ ( \textit{urf} \ \textit{dlf} ), (0,0,0,0,0,0,0,0))$. Diese Konfiguration ist äquivalent zu der Konfiguration $(1,0)$.
 Daher wird dieser Würfel nun noch zweimal um die $x$-Achse gedreht und befindet sich dann in der Konfiguration $C^{VII} =(1,0)$.
 
-Der Mensch folgt beim Lösen des \textit{Cubes} bestimmten Kombinationen, die in verschiedenen Situtionen angewandt werden können.  
-In diesem Fall hat der Mensch $13$ Ebenendrehungen durchgeführt, während das Verdrehen lediglich $5$ Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfiguratonen anpassen und verwenden kann. 
+Der Mensch folgt beim Lösen des \textit{Cubes} bestimmten Kombinationen, die in verschiedenen Situationen angewandt werden können.  
+In diesem Fall hat der Mensch $13$ Ebenendrehungen durchgeführt, während das Verdrehen lediglich fünf Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfigurationen anpassen und verwenden kann. 
 Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 Es stellt sich die Frage, wie viele Ebenendrehungen für den optimalen Lösungsweg maximal erforderlich sein können. Diese Zahl wird auch \textit{God's Number} genannt. 
 
@@ -3458,7 +3458,7 @@ Ein Konzept zum Finden der optimalen Lösung mithilfe der \textit{Quarter-Turn} 
 
 Dieser Abschnitt wurde von dem Abschnitt \textit{Pretty Patterns} in Tom Davis' \textit{Group Theory via Rubik's Cube} inspiriert \cite{TD}.
 Dort werden acht \textit{hübsche} Muster des \Tthree Würfels gezeigt. In diesem Abschnitt werden vier Muster des \Ttwo Würfels gezeigt und die dazugehörigen Algorithmen von der Startkonfiguration ausgehend beschrieben. Diese vier Muster sind in Abbildung \ref{Abbildung_Muster} dargestellt.
-Außerdem wird die Konfiguration der Würfels angegeben.
+Außerdem wird die Konfiguration des Würfels angegeben.
 
 \begin{figure}[h]
 \centering
@@ -3766,7 +3766,7 @@ Bei den Permutationen dieser drei Grundzüge handelt es sich um die Permutations
 
 In diesem Absatz wird die Ausrichtung der Steine minimal beschrieben. Das erfolgt über einen 8-dimensionalen Vektor $x$, der die Ober- und die Unterseite des Würfels und die sich dort befindenden Farbflächen der Steine abbildet. Die Definition des Vektors $x$ der Gruppe $(\Gtwo, \circ)$ findet sich in Abschnitt \ref{Abschnitt_AusrichtungDerSteine}.
 
-Da der Stein an der Position \textit{dlb} bei der minimale Untergruppe $(G_{min}, \circ)$ immer als fest angenommen wird, ist der fünfte Vektoreintrag immer 0. 
+Da der Stein an der Position \textit{dlb} bei der minimalen Untergruppe $(G_{min}, \circ)$ immer als fest angenommen wird, ist der fünfte Vektoreintrag immer 0. 
 Die Veränderung der Vektoreinträge kann durch die drei folgenden Funktionen vollständig abgedeckt werden.
 
 \begin{align*}
@@ -3945,7 +3945,7 @@ $G_{min}$ & $U$ & $U$ & $R$  & $R$  & $F$  & $F$  \\
 \end{tabular}
 \end{center}
 
-So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug $ULF$ bei der Gruppe $(\Gtwo, \circ)$ eine äquivalente Würfelkonfiguration hervor, wie der Zug $URU$ bei der Untergruppe $(G_{min}, \circ)$. Dadurch, dass er Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
+So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug $ULF$ bei der Gruppe $(\Gtwo, \circ)$ eine äquivalente Würfelkonfiguration hervor, wie der Zug \textit{URU} bei der Untergruppe $(G_{min}, \circ)$. Dadurch, dass er Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
 
 Wird also beispielweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, um der minimalen Abbildung zu entsprechen, so müssen die folgenden Züge entsprechend verändert werden. Bei dem Zug $L$ werden die Folgezüge wie folgt verändert:
 \begin{align*}
@@ -3983,7 +3983,7 @@ Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Z
 
 Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist also mindestens so groß wie die von $\Gtwo$. Sie kann aber nicht größer sein, da $\Gtwo$ aufgrund der Äquivalenzklassen genau die Anzahl der möglichen Züge, die nicht gleich sind enthält. Da $(G_{min}, \circ)$ eine Untergruppe von $(\Gtwo, \circ)$ ist, kann $G_{min}$ maximal so viele Elemente wie $\Gtwo$ enthalten.
 
-Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und ist eine vollstänndige Abbildung des \Ttwo Würfels.
+Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und ist eine vollständige Abbildung des \Ttwo Würfels.
 
 %
 %
@@ -4014,7 +4014,7 @@ Die \textit{God's Number} des Würfels sagt aus, wie viele Züge zum Lösen des 
 
 Die Suche nach dem optimalen Lösungsweg, ausgehend von einer beliebigen Konfiguration $C$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier lediglich das Konzept entworfen und die Größe der jeweiligen Bäume berechnet und verglichen. 
 
-Ein Baum zum Berechnung der optimalen Lösung enthält eine beliebige Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante eines Zuges $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenerotationen im Index $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
+Ein Baum zur Berechnung der optimalen Lösung enthält eine beliebige Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante eines Zuges $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenenrotationen im Index $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
 
 Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für die Kanten eines Baums drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
@@ -4029,7 +4029,7 @@ Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 \label{Abbildung_BaumQTM}
 \end{figure}
 
-Jeder der Baumknoten hat demnach 6 Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. $|i|$ entspricht dabei der Tiefe des Baums. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
+Jeder der Baumknoten hat demnach sechs Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. $|i|$ entspricht dabei der Tiefe des Baums. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
 
 Für einen Baum mit minimaler Kinderanzahl fallen die Kanten $F^{-1}, R^{-1}$ und $U^{-1}$ weg. Diese Züge können durch $FFF, RRR$ und $UUU$ dargestellt werden. Jeder Knoten hat dann nur noch drei Kinder. 
 
@@ -4122,13 +4122,13 @@ Dementsprechend ist der Baum mit minimaler Kinderanzahl wesentlich größer als 
 In dieser Arbeit wurde die Gruppentheorie des \Tthree Würfels auf den \Ttwo Würfel übertragen. Der \Ttwo Würfel hebt sich vor allem durch die Rotationsmöglichkeiten aufgrund der fehlenden Mittelsteine von dem \Tthree Würfel ab. Dadurch hat der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Oberseite und zudem keine Kantsteine.
 
 Die Gruppe $(\Gtwo, \circ)$ des \Ttwo Würfels besteht aus der Menge der Züge ($\Gtwo$) und dem Operator $\circ$, der zwei Züge verbindet. Die Menge $\Gtwo$ enthält die Äquivalenzklassen aller Züge und somit werden äquivalente Züge von nur einem Element repräsentiert. Das beinhaltet auch die Rotationsmöglichkeiten des Würfels.
-Da jede der Würfelkonfigurationen durch einen anderen Zug erreichbar ist und die Menge $\Gtwo$ äquivalente Züge gemeinsam in einer Äquivalenzklasse enthält, entspricht die Mächtigkeit von $\Gtwo$ der Anzahl der validen Würfelkonfugurationen. Das sind $|\Gtwo| = 3 \, 674 \, 160$ Würfelkonfigurationen. 
+Da jede der Würfelkonfigurationen durch einen anderen Zug erreichbar ist und die Menge $\Gtwo$ äquivalente Züge gemeinsam in einer Äquivalenzklasse enthält, entspricht die Mächtigkeit von $\Gtwo$ der Anzahl der validen Würfelkonfigurationen. Das sind $|\Gtwo| = 3 \, 674 \, 160$ Würfelkonfigurationen. 
 
 In Kapitel \ref{Kapitel_MinUntergruppe} wurde die minimale Untergruppe $(G_{min}, \circ)$ von  $(\Gtwo, \circ)$ erzeugt, die den Würfel vollständig abbildet. Diese Untergruppe ist weniger komplex als $(\Gtwo, \circ)$, da sie auf drei Grundzüge beschränkt ist. Dadurch gibt es einen \textit{festen} Stein, mit dem die Ausrichtung des Würfels bestimmt werden kann und die Rotationen müssen nicht mehr berücksichtigt werden.
 
 Außerdem wurden verschiedene Ansätze zum Lösen des Würfels beschrieben und auf die \textit{God's Number} eingegangen. Diese ist beim \Ttwo Würfel $14$. Daraufhin wurde ein Baumkonzept zum Finden eines optimalen Lösungsweges entworfen. Dieses Baumkonzept basiert auf der minimalen, gruppentheoretischen Abbildung des Würfels $(G_{min}, \circ)$.
 
-Die Gruppe des \Ttwo Würfels veranschaulicht die Gruppentheorie an einem komplexen aber greifbaren Beispiel. Es wurden verschiedene Konzepte angewandt, wie Untergruppen, Erzeuger, zyklische Gruppen, Cayleygraphen, Gruppenoperationen, Kommutatoren, Äquivalenzrelationen, Mächtigkeit einer Gruppe, Ordnung von Gruppenelementen, Permutationen und Zykelschreibweise. 
+Die Gruppe des \Ttwo Würfels veranschaulicht die Gruppentheorie an einem komplexen, aber greifbaren Beispiel. Es wurden verschiedene Konzepte angewandt, wie Untergruppen, Erzeuger, zyklische Gruppen, Cayleygraphen, Gruppenoperationen, Kommutatoren, Äquivalenzrelationen, Mächtigkeit einer Gruppe, Ordnung von Gruppenelementen, Permutationen und Zykelschreibweise. 
 
 %
 %
@@ -4159,7 +4159,7 @@ Auf der Grundlage des gruppentheoretischen Modells des \Ttwo Würfels könnte ei
 Die Definition der Gleichheit von zwei Zügen und die Äquivalenzklassen der Züge führen zu der Frage, die Gleichheit von zwei konkreten aber beliebigen Zügen zu berechnen.
 Das könnte mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden und wäre für die Generierung des Cayleygraphen der Untergruppe $(G_{min}, \circ)$ notwendig.
 
-Außerdem wurden in dieser Arbeit Kommutatoren behandelt. Um aussagekräftige Ergebnisse zu der Kommutativität von Zugpaare zu bekommen, müsste eine größere Menge der Kommutatoren berechnet und verglichen werden. Die Berechnung und Auswertung der Kommutatoren sollte maschinell erfolgen.
+Außerdem wurden in dieser Arbeit Kommutatoren behandelt. Um aussagekräftige Ergebnisse zu der Kommutativität von Zugpaaren zu bekommen, müsste eine größere Menge der Kommutatoren berechnet und verglichen werden. Die Berechnung und Auswertung der Kommutatoren sollte maschinell erfolgen.
 
 
 
