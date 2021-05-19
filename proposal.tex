@@ -2407,13 +2407,13 @@ Außerdem wird ein Algorithmus zu Berechnung der Ordnung von Zügen beschrieben.
 
 \subsubsection*{Beweis}
 
-Der folgende Beweis orientiert sich an dem Beweis aus \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD}.
+Der folgende Beweis orientiert sich an einem Beweis aus \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD}.
 
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet und ausgerichtet. 
 Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelkonfiguration wiederholt werden, wenn ein Zug oft genug durchführt wird.
 Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich ($3 \, 674 \, 160$). Demnach muss eine Konfiguration wiederholt werden, wenn der Zug häufiger ausgeführt, als es mögliche Würfelkonfigurationen gibt. Die Anzahl der validen Würfelkonfigurationen wird in Kapitel \ref{Kapitel_ValideKonfigurationen} berechnet.
 
-Übertragen auf das mathematische Modell des Würfels bedeutet das folgendes: Bei einem beliebigen Zug $Z \in \Gtwo$, der auf eine Konfiguration $C$ angewandt wird, wird nach wiederholtem Ausführen eine Würfelkonfiguration wiederholt. Wenn die wiederholte Konfiguration $C'$ zuerst nach $n \in \mathbb{N}$ Wiederholungen des Zuges $Z$ auftritt und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen, gilt: 
+Übertragen auf das mathematische Modell des Würfels bedeutet das folgendes: Bei einem beliebigen Zug $Z \in \Gtwo$, der auf eine beliebige Konfiguration $C$ angewandt wird, wird nach wiederholtem Ausführen eine Würfelkonfiguration wiederholt. Wenn die wiederholte Konfiguration $C'$ zuerst nach $n \in \mathbb{N}$ Wiederholungen des Zuges $Z$ auftritt und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen, gilt: 
 \begin{align*}
 C' = C \cdot Z^n& = C \cdot Z^m \textit{ mit } 0<n<m 
 \end{align*}
@@ -2454,7 +2454,7 @@ Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel angewendet wird, kommen 
 
 Es wurde bereits gezeigt, dass sich eine Würfelkonfiguration wiederholt, wenn ein beliebiger Zug wiederholt angewandt wird. Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird. Dazu wird der Algorithmus \ref{Algorithmus_OrdnungPermutation} zur Berechnung der Ordnung einer Permutation benötigt.
 
-Der Algorithmus braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Den Zug $Z$ und die Ausgangskonfiguration $C$ des Würfels. Die Ausgabe ist die Ordnung eines Zuges.
+Der Algorithmus braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Einen beliebigen Zug $Z$ aus $\Gtwo$ und eine beliebige Ausgangskonfiguration $C$ des Würfels. Die Ausgabe ist die Ordnung eines Zuges.
 
 
 \begin{minipage}[H]{0.15\textwidth}
@@ -2490,10 +2490,12 @@ Der Algorithmus braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eing
 
 \vspace*{1em}
 
-In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{Count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
+In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{Count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
 Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zum Start ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
 Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das \textit{kleinste gemeinsame Vielfache} von diesen beiden Werten (Zeile 8).
+
+Dieser Algorithmus berechnet somit die Ordnung eines beliebigen Zuges aus $\Gtwo$ anhand einer beliebigen Würfelkonfiguration.
 
 
 
