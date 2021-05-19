@@ -900,7 +900,7 @@ Daraus ergibt sich die folgende Zykelschreibweise:
 \begin{align*}
 \pi = (1 \ 5 \ 2)\ (3 \ 4)
 \end{align*}
-Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. $\pi$ besteht somit aus zwei Zykeln: Ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel sind in Abbildung \ref{Abbildung_ZykelVonf} dargestellt.
+Das wird so gelesen: Die 1 geht auf die 5, die 5 geht auf die 2, die 2 geht wieder auf die 1. Damit ist der erste Zykel geschlossen. Beim zweiten Zykel geht die 3 auf die 4 und die 4 auf die 3. $\pi$ besteht somit aus zwei Zykeln: Ein Zykel hat die Länge drei und der andere die Länge zwei. Die Zykel sind in Abbildung \ref{Abbildung_ZykelVonf} grafisch dargestellt.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Zykel_152.png}
@@ -917,17 +917,17 @@ Für $n$ verschiedene Objekte ist die Anzahl der Permutationsmöglichkeiten $n!$
 \end{definition}
 
 \begin{bsp}[Anzahl der Permutationsmöglichkeiten]
-Sei $M = \{ 1, 2,3  \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten der Platzeinnahme: $1$, $2$ oder $3$. Für das zweite Objekt bleiben dann noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach gibt es nur noch eine Option. Es gibt dann also $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
+Sei $M = \{ 1, 2,3  \}$ eine Menge mit drei Elementen. Für das erste Objekt der Permutation gibt es $3$ Möglichkeiten der Platzeinnahme: $1$, $2$ oder $3$. Für das zweite Objekt bleiben dann noch $2$ Möglichkeiten (da eine ja bereits im ersten Schritt eliminiert wurde) und danach gibt es nur noch eine Option. Es gibt folglich $3 \cdot 2 \cdot 1 = 3! = 6$ Permutationsmöglichkeiten.
 
 \end{bsp}
 
 \begin{definition}[Ordnung von Permutationen]
 
-Die Ordnung einer Permutation ist das kleinste gemeinsame Vielfache der Zykellängen (kurz: kgV).
+Die Ordnung einer Permutation ist das kleinste gemeinsame Vielfache (kurz: kgV) der Zykellängen.
 
 \end{definition}
 
-Die Ordnung einer Permutation ist die kleinste Zahl $n \in \mathbb{N}$, so dass sich nach $n$-facher Ausführung der Permutation die identische Permutation ergibt. Man kann die Ordnung einer Permutation $\pi$ als \textit{ord}$(\pi)$ schreiben.
+Die Ordnung einer Permutation ist die kleinste Zahl $n \in \mathbb{N}$, so dass sich nach $n$-facher Ausführung der Permutation die identische Permutation ergibt. Die Ordnung einer Permutation $\pi$ kann als \textit{ord}$(\pi)$ geschrieben werden.
 
 \begin{bsp}[Ordnung von Permutationen]
 
@@ -1127,9 +1127,9 @@ Außerdem wird die Veränderung der Würfelkonfiguration an einem Beispielzug sc
 
 \label{Abschnitt_PositionenDerSteineImWürfel}
 
-Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) enthält Funktionen, die die Übergänge der Würfelsteine darstellen. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. Die Funktion $\sigma$ bildet jede der Würfelpositionen auf die neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
+Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) enthält Funktionen, die die Übergänge der Würfelsteine darstellen. Die Übergänge beschreiben die Positionsänderung der Steine bei einem Zug. Die Funktion $\sigma$ bildet jede Würfelposition auf eine neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
 
-Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} abgebildet. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die ihre Position mit \textit{up, down, right, left, front und back} beschreiben.
+Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} dargestellt. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die ihre Position mit \textit{up, down, right, left, front} und \textit{back} beschreiben.
 
 \begin{minipage}[b][][b]{0.04\textwidth}$\ $ 
 \end{minipage}\begin{minipage}[b][][b]{0.43\textwidth}
@@ -1155,9 +1155,9 @@ Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_Stein
 
 %In Abbildung \ref{Abbildung_SteinpositionNamen} sind die Namen der Steinpositionen auf dem Würfel abgebildet. In Abbildung \ref{Abbildung_SteinpositionNamenFoldetOut} ist der Würfel in ausgeklappter Form zu sehen. Während der Würfel links alle Steinnamen und die 
 
-Jeder Steinposition wird ein einzigartiger Name zugeordnet, um sich darauf zu beziehen. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinpositionen werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, r, l, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, right, left, front, back}. \\
+Jeder Steinposition wird ein einzigartiger Name zugeordnet, um sie zu identifizieren. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinpositionen werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, r, l, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, right, left, front, back}. \\
 Somit heißt die Steinposition oben links beispielsweise \textit{ulf} (für \textit{up}, \textit{left} und \textit{front}). 
-Jeder Stein bekommt zu dem einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
+Jeder Stein bekommt zudem einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
 
 Nun wird zur Veranschaulichung die Permutation $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn definiert. Grundlagen zu Permutationen und der Zykelschreibeweise wurden in Abschnitt \ref{Abschnitt_PermutationZykel} erklärt.
 Hier wird $\sigma_U$ hergeleitet, ausführlich beschrieben und verschiedene Schreibweisen angegeben. Die Herleitung der weiteren Drehungen funktioniert analog. 
@@ -1194,7 +1194,7 @@ Die Drehung der oberen Ebene ist in den Abbildungen \ref{Abbildung_Steinposition
 \end{minipage}\begin{minipage}[b][][b]{0.04\textwidth}$\ $ \end{minipage}
 \end{figure}
 
-In Abbildung \ref{Abbildung_SteinpositionnamenNachU1} ist zu sehen, dass die Steine der unteren Ebene nicht bewegt wurden. Die Positionen der oberen Ebene haben sich um einen Stein im Uhrzeigersinn verschoben. Daraus ergeben sich folgende Funktionen $\sigma_U$:
+In Abbildung \ref{Abbildung_SteinpositionnamenNachU1} ist zu sehen, dass die Steine der unteren Ebene nicht bewegt wurden. Die Positionen der oberen Ebene haben sich um einen Stein im Uhrzeigersinn verschoben. Daraus ergibt sich die folgende Funktion $\sigma_U$:
 \begin{alignat*}{4}
 & \sigma_U(\textit{ulf})=\textit{ulb} \ \ \ \ \ \ \ && \sigma_U(\textit{ulb})=\textit{urb} \ \ \ \ \ \ \ && \sigma_U(\textit{urb})=\textit{urf} \ \ \ \ \ \ \ && \sigma_U(\textit{urf})=\textit{ulf} \\
 & \sigma_U(\textit{dlf})=\textit{dlf} \ \ \ \ \ \ \ && \sigma_U(\textit{dlb})=\textit{dlb} \ \ \ \ \ \ \ && \sigma_U(\textit{drb})=\textit{drb} \ \ \ \ \ \ \ && \sigma_U(\textit{drf})=\textit{drf} 
@@ -1223,7 +1223,7 @@ Die Drehungen aller Ebenen können durch folgende Zykel beschrieben werden:
 
 Die Indizes an den Funktionen $\sigma$ stehen für die verschiedenen Grundzüge des Würfels. Diese wurden in Abschnitt \ref{Abschnitt_GrundzügeWürfel} erklärt.
 
-Die Identitätspermutation wird als $\sigma=1$ geschrieben. Das entspricht der Permutation des leeren Zuges, der sich aus anderen Grundzügen bilden lässt. Eine Erklärung und Beispiele finden sich in \ref{Abschnitt_GleichheitVonZügen}..
+Die Identitätspermutation wird als $\sigma=1$ geschrieben. Das entspricht der Permutation des leeren Zuges, der sich aus anderen Grundzügen bilden lässt. Eine Erklärung und Beispiele finden sich in Abschnitt \ref{Abschnitt_GleichheitVonZügen}.
 Somit wird die Permutation des leeren Zuges folgendermaßen definiert:
 \begin{align*}
 \sigma_N = 1
@@ -1252,10 +1252,10 @@ Somit wird die Permutation des leeren Zuges folgendermaßen definiert:
 %
 \subsection{Ausrichtung der Steine} 
  \label{Abschnitt_AusrichtungDerSteine}
-Der \Ttwo Würfel besteht aus 8 Ecksteinen, die jeweils 3 Farbflächen haben. Somit hat jeder Stein 3 mögliche Ausrichtungen. 
-Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche eine Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen - mit $x_1$ als Position 1, $x_2$ als Position 2, usw. Das ist links in Abbildung \ref{Abbildung_MarkierungenFuerX} dargestellt.
+Der \Ttwo Würfel besteht aus acht Ecksteinen, die jeweils drei Farbflächen haben. Somit hat jeder Stein drei mögliche Ausrichtungen. 
+Um die Ausrichtung der Steine zu erkennen, bekommen die Würfelpositionen an einer Farbfläche eine Nummer zugeordnet. Dafür werden die weißen und die gelben Seiten markiert und nummeriert. Auf diese Nummern wird sich als $x_i$ mit $i \in \lbrace 1, 2, 3, 4, 5, 6, 7, 8 \rbrace$ bezogen. Dabei entspricht $x_1$ Position 1, $x_2$ Position 2, usw. Das ist links in Abbildung \ref{Abbildung_MarkierungenFuerX} dargestellt.
 
-Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein 3 Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. Das ist rechts in Abbildung \ref{Abbildung_MarkierungenFuerX} dargestellt.
+Außerdem bekommt jeder Stein an jeder Farbfläche eine Zahlenzuordnung. Da jeder Stein drei Ausrichtungen haben kann, werden die Farbflächen mit 0, 1 und 2 nummeriert. Die Nummerierung beginnt mit der weißen bzw. gelben Fläche bei 0 und zählt dann im Uhrzeigersinn die Flächen. Das ist rechts in Abbildung \ref{Abbildung_MarkierungenFuerX} dargestellt.
 In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0, 0, 0, 0, 0, 0)$. Das wird kurz als $x=0$ geschrieben.
 
 \begin{figure}[H]
@@ -1274,7 +1274,7 @@ Die anderen Positionen von $x$ zeigen nun aber andere Farbflächen:
 \begin{align*}
 x_2 = 2 \ \ \ \ \ \ x_4 = 1 \ \ \ \ \ \ x_6 = 1 \ \ \ \ \ \ x_8 = 2  
 \end{align*}
-Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nach dem Ausführen von $R$. Das ist auch anhand von Abbildung \ref{Abbildung_XnachZugR} zu erkennen. Links sind dort die Positionen der Vektoreinträge von $x$ abgebildet und rechts sieht man den Würfel mit den Farbflächennummerierungen, nachdem der Zug $R$ ausgeführt wurde.
+Daher gilt $x = (0, 2, 0, 1, 0, 1, 0, 2)$ nachdem der Zug $R$ ausgeführt wurde. Dies ist auch anhand von Abbildung \ref{Abbildung_XnachZugR} zu erkennen. Links sind die Positionen der Vektoreinträge von $x$ abgebildet und rechts ist der Würfel mit den Farbflächennummerierungen zu sehen, nachdem der Zug $R$ ausgeführt wurde.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{foldedout_012_white.png} \hspace*{2em}
@@ -1338,7 +1338,7 @@ Die anderen Funktionen für die Veränderung des Vektors $x$ werden ebenfalls du
 
 
 
-Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ arbeiten analog. Da diese Funktionen in Hinblick auf Ein- und Aufgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags aus $x$ nach dem Zug $R$ aus.
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ arbeiten analog. Da diese Funktionen in Hinblick auf Ein- und Aufgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags nach dem Zug $R$ aus.
 \\
 
 \begin{minipage}{0.35\textwidth}
@@ -1463,8 +1463,8 @@ Der neue Vektor $x$ wird nach dem Teilzug $LLFF$ durch $\gamma_F(\gamma_F(\gamma
 = \ & (0,0,0,0,0,0,0,0)
 \end{align*}
 
-Aus dieser Rechnung geht hervor, dass der Vektor nach Ausführen der Drehung $L$ zu $(1,0,2,0,2,0,1,0)$ wird. Wird $L$ anschließend nochmal ausgeführt, so ist der Vektor wieder $(0,0,0,0,0,0,0,0)$. Der Würfel ist dann aber nicht gelöst, da die Position der Steine ($\sigma$) verändert ist.
-Wird nun die Drehung $F$ zweimal ausgeführt, geht der Vektor über $(0,0,1,2,0,0,2,1)$ wieder in  $(0,0,0,0,0,0,0,0)$ über. 
+Aus dieser Rechnung geht hervor, dass der Vektor nach Ausführen der Drehung $L$ zu $(1,0,2,0,2,0,1,0)$ wird. Wird $L$ anschließend noch einmal ausgeführt, so ist der Vektor wieder $(0,0,0,0,0,0,0,0)$. Der Würfel ist dann jedoch nicht gelöst, da die Position der Steine ($\sigma$) verändert ist.
+Wird nun die Drehung $F$ zweimal ausgeführt, verändert sich der Vektor über $(0,0,1,2,0,0,2,1)$ wieder zu $(0,0,0,0,0,0,0,0)$. 
 
 Die Konfiguration $C'$ nach dem ersten Ausführen des Teilzuges $LLFF$ ist somit 
 \begin{align*}
@@ -1472,12 +1472,12 @@ C' = ((\textit{ulb} \ \textit{urf} \ \textit{dlf} )\ ( \textit{dlb} \ \textit{dr
 \end{align*} 
 oder kurz $C' = ((\textit{ulb} \ \textit{urf} \ \textit{dlf} ) \ (\textit{dlb} \ \textit{drf} \ \textit{ulf} ),0)$.
 
-Wenn der Zug $LLFF$ nun erneut ausgeführt wird, verändert der Vektor $x$ sich wieder auf die gleiche Weise und wird wieder $(0,0,0,0,0,0,0,0)$. Die Permutation $\sigma$ der Position ergibt nach dem zweiten Ausführen von $LLFF$: $( \textit{urf} \ \textit{dlf} \ \textit{ulb} ) \ ( \textit{drf} \ \textit{ulf} \ \textit{dlb} )$. Die Folgekonfiguration nach dem zweiten Ausführen von $LLFF$ ist somit Folgende:
+Wenn der Zug $LLFF$ erneut ausgeführt wird, verändert der Vektor $x$ sich wieder auf die gleiche Weise und wird somit wieder $(0,0,0,0,0,0,0,0)$. Die Permutation $\sigma$ der Position ergibt nach dem zweiten Ausführen von $LLFF$: $( \textit{urf} \ \textit{dlf} \ \textit{ulb} ) \ ( \textit{drf} \ \textit{ulf} \ \textit{dlb} )$. Die Folgekonfiguration nach dem zweiten Ausführen von $LLFF$ ist somit:
 \begin{align*}
 C'' = (( \textit{dlf} \ \textit{urf} \ \textit{ulb} \ )  \ ( \textit{ulf} \ \textit{drf} \ \textit{dlb} ),(0,0,0,0,0,0,0,0))
 \end{align*} 
 
-Das dritte Ausführen von $LLFF$ bringt den Würfel wieder in die Ausgangskonfiguration. Die Permutationsfunktion ist dann $1$ (die Identität) und der Vektor $x$ ist wieder $(0,0,0,0,0,0,0,0)$. Die Konfiguration ist dann
+Das dritte Ausführen von $LLFF$ bringt den Würfel wieder in die Ausgangskonfiguration. Die Permutationsfunktion ist demnach $1$ (die Identität) und der Vektor $x$ ist wieder $(0,0,0,0,0,0,0,0)$. Die Konfiguration ist dann:
 \begin{align*}
 C''' = (1,0).
 \end{align*}
