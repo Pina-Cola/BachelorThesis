@@ -637,7 +637,7 @@ Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ wird zyklische Gruppe genannt, wenn e
 
 \begin{bsp}[Erzeuger und zyklische Gruppe]
 
-Ein Beispiel für Erzeuger findet sich anhand der Gruppe der ganzen Zahlen $(\mathbb{Z},+)$ und der Addition als Verknüpfung, die bereits als Beispiel der Gruppe beschrieben wurde.
+Ein Beispiel für Erzeuger findet sich anhand der Gruppe der ganzen Zahlen und der Addition als Verknüpfung. Die Gruppe $(\mathbb{Z},+)$ wurde bereits als Beispielgruppe in Abschnitt \ref{Abschnitt_Gruppe} beschrieben.
 
 Die Operationen sind hier die Addition und der Übergang von einer Zahl $z$ zu der negativen Zahl $-z$.
 
@@ -660,12 +660,12 @@ Ein Cayleygraph ist ein Graph, der die Struktur einer Gruppe beschreibt. Er hän
 Es handelt sich dabei um einen Graphen mit Knoten, die die verschiedenen Gruppenelemente darstellen. Pfeile zeigen von einem Element zum nächsten, wenn dies durch einen der Erzeuger erreicht werden kann. \cite{AT}
 
 \textbf{Beispiel} (Cayleygraph) \\
-In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit dem Erzeuger $1$ dargestellt.
+In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit dem Erzeuger $1$ dargestellt. Jedes der sechs Elemente aus $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ wird durch einen Knoten repräsentiert.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{Cayleygraph3.png}
-\caption{Cayleygraph von $(\mathbb{Z}/6\mathbb{Z}, +)$ mit Erzeuger $1$}
+\caption{Cayleygraph von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit Erzeuger $1$}
 \label{Abbildung_Cayleygraph}
 \end{figure}
 
@@ -1428,7 +1428,7 @@ Die Permutation $\sigma$ repräsentiert dann die neue Position der Steine im Wü
 
 Wird ein Zug $Z$ auf einer Würfelkonfiguration $C$ ausgeführt, wird das als $C \cdot Z$ geschrieben. Das Ergebnis von $C \cdot Z$ ist dann eine neue Folgekonfiguration $C'$.
 
-Im Folgenden wird der Zug $(LLFF)^3$ beispielhaft auf die Startkonfiguration angewandt. Die Startkonfiguration ist $C=(1,0)$. Sie wird durch das dreifache Ausführen des Zuges $LLFF$ ($LLFF^3 = LLFFLLFFLLFF$) schrittweise verändert.
+Im Folgenden wird der Zug $LLFF$ beispielhaft dreimal auf die Startkonfiguration angewandt. Die Startkonfiguration ist $C=(1,0)$. Sie wird durch das dreifache Ausführen des Zuges $LLFF$ schrittweise verändert.
 Die Position der Steine -- dargestellt durch $\sigma$ -- verändert sich nach dem ersten Ausführen von $LLFF$ folgendermaßen:
 
 \begin{center}
