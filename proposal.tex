@@ -1507,7 +1507,7 @@ Daraus folgt, dass der Zug $LLFF$ den Würfel nach dreifacher Ausführung wieder
 In diesem Kapitel wird die Gruppe des \Ttwo Würfels definiert. Zuerst wird dazu die Rotation des Würfels und die Gleichheit zweier Züge durch Äquivalenz\-relationen und Äquivalenzklassen realisiert. Das ist notwendig, damit gleiche Züge in der Trägermenge der Gruppe nicht doppelt vorkommen. Gleiche Züge werden dann durch eine Äquivalenzklasse repräsentiert. 
 
 Anschließend wird die Gruppe des \Tthree \textit{Cubes} \cite{JC} auf den \Ttwo \textit{Cube} übertragen. 
-Dafür wird die Gruppe des \Ttwo Würfels auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht. Außerdem wird geprüft, ob es sich um eine Abelsche Gruppe handelt und dafür die Kommutativität untersucht. Auf der Gruppe des \Ttwo Würfels wird dann eine Gruppenoperation für das Ausführen von Zügen definiert. Es werden auch die Ordnung von Permutationen und Zügen und die Äquivalenz von Zügen berechnet.
+Dafür wird die Gruppe des \Ttwo Würfels auf die vier Gruppenaxiome (Abgeschlossenheit, Assoziativität, Existenz eines neutralen Elements und Existenz eines inversen Elements) untersucht. Außerdem wird geprüft, ob es sich um eine abelsche Gruppe handelt und dafür die Kommutativität untersucht. Auf der Gruppe des \Ttwo Würfels wird dann eine Gruppenoperation für das Ausführen von Zügen definiert. Es werden auch die Ordnung von Permutationen und Zügen und die Äquivalenz von Zügen berechnet.
 
 
 
@@ -1540,7 +1540,7 @@ Für den weiteren Verlauf der Arbeit wird $A_Z$ als die unendliche Menge aller Z
 Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, R, L, F, B$).
 Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben. Die Exponentenschreibweise kann für alle Züge angewendet werden, auch wenn sie mehr als eine Ebene rotieren. Der Zug $(LLFF)^2$ beispielsweise entspricht dann $LLFFLLFF$. 
 
-Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird eine Ebene viermal hintereinander gedreht, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer beliebigen Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
+Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird eine Ebene viermal hintereinander gedreht, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer beliebigen Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ ausgeführt wird, ist die Folgekonfiguration wieder $C$:
 \begin{align*}
 \forall \ Z \in \{ U, D, R, L, F, B\} \ . \ C \cdot Z^4 = C  
 \end{align*}
@@ -1570,7 +1570,7 @@ $Z^0$ repräsentiert einen leeren Zug. Das entspricht keiner Veränderung der Fo
 
 
 
-Da die Anzahl der möglichen Züge ($|A_Z|$) im Gegensatz zur Anzahl der validen Würfel\-konfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es unendlich viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten. Dies wird im weiteren Verlauf dieser Arbeit durch Äquivalenzklassen realisiert. Die Berechnung aller gleichen Züge überschreitet den Rahmen dieser Arbeit -- eine Realisierungsmöglichkeit dafür wären Termersetzungssysteme (\textit{Rewriting}).
+Da die Anzahl der möglichen Züge ($|A_Z|$) im Gegensatz zur Anzahl der validen Würfel\-konfigurationen (s. Kapitel \ref{Kapitel_ValideKonfigurationen}) unendlich ist, gibt es unendlich viele Fälle, in denen zwei Züge die gleiche Folgekonfiguration hervorrufen und somit als gleich gelten. Dies wird im weiteren Verlauf dieser Arbeit durch Äquivalenzklassen realisiert. Die Berechnung aller gleichen Züge überschreitet den Rahmen dieser Arbeit -- eine Realisierungsmöglichkeit dafür wären Termersetzungssysteme (\textit{Rewriting}) \cite{RB}.
 
 
 %
@@ -1639,7 +1639,7 @@ Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z
 \caption{Würfel nach Rotation um $z$-Achse}
 \label{Abbildung_WürfelNachRotationUmZAchse}
 \end{figure}
-Die Permutationsfunktion der Rotationen wird im Folgenden $\delta$ genannt. Da bei den Rotationen alle Steine die Position wechseln, muss es für jede Rotation 8 Funktionen $\delta$ geben, für jeden Eckstein eine Funktion:
+Die Permutationsfunktion der Rotationen wird im Folgenden $\delta$ genannt. Da bei den Rotationen alle Steine die Position wechseln, muss es für jede Rotation acht Funktionen $\delta$ geben, für jeden Eckstein eine Funktion:
 \begin{alignat*}{4}
 & \delta_{Z_r}(\textit{urf}) = \textit{ulf} \ \ \ \ \ \ && \delta_{Z_r}(\textit{ulf}) = \textit{ulb} \ \ \ \ \ \ && \delta_{Z_r}(\textit{ulb}) = \textit{urb} \ \ \ \ \ \ && \delta_{Z_r}(\textit{urb}) = \textit{urf} \\
 & \delta_{Z_r}(\textit{drf}) = \textit{dlf} \ \ \ \ \ \ && \delta_{Z_r}(\textit{dlf}) = \textit{dlb} \ \ \ \ \ \ \ && \delta_{Z_r}(\textit{dlb}) = \textit{drb} \ \ \ \ \ \ && \delta_{Z_r}(\textit{drb}) = \textit{drf}
@@ -1668,7 +1668,7 @@ Die übrigen Rotationen können ebenfalls durch Funktionen $\delta$ in der Zykel
 & \delta_{N_R} && = \ 1 \hspace*{14.1em}
 \end{alignat*}
 
-Da die Rotationen eine beliebige Würfel\-konfiguration in eine andere, äquivalente Würfel\-konfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Die Vektoreinträge der Steinausrichtungen werden dort mit den Funktionen $g, h$ und $i$ verändert.
+Da die Rotationen eine beliebige Würfel\-konfiguration in eine andere, äquivalente Würfel\-konfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Zur Erinnerung: Die Vektoreinträge der Steinausrichtungen wurden dort mit den Funktionen $g, h$ und $i$ verändert.
 \begin{align*}
 g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 \ \ \ \ \ i(x)=x
 \end{align*}
@@ -1755,10 +1755,10 @@ Da alle vierfachen der einelementigen Rotationen (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {
 \forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
 
-Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung nähern kann. Es gibt für die Roationen also eine maximale Tiefe, jede weitere Rotation bringt den Würfel wieder näher zu seiner Ausgangsrotation.
+Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung annähern kann. Es gibt für die Roationen also eine maximale Tiefe, wobei jede weitere Rotation den Würfel wieder näher zu seiner Ausgangsrotation bringt.
 In diesem Abschnitt wird angegeben, wie oft der Würfel maximal um 90$^\circ$ rotiert werden muss, um zurück in die Ausgangsposition zu gelangen.
 
-Da der Würfel 6 Seiten hat, die jeweils 4 verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel. In Abbildung \ref{AbbildungWürfelRotationWeisseSeite} sind die vier verschiedenen Ausrichtungen des Würfels zu sehen, wenn die weiße Seite als obere Seite angenommen wird. In den Abbildungen wird von einem gelösten Würfel ausgegangen. Für die anderen fünf Seiten gibt es ebenfalls vier Möglichkeiten der Ausrichtung. Alle Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} in Abbildung \ref{AbbildungWürfelRotationAlleSeiten} dargestellt.
+Da der Würfel sechs Seiten hat, die jeweils vier verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel. In Abbildung \ref{AbbildungWürfelRotationWeisseSeite} sind die vier verschiedenen Ausrichtungen des Würfels zu sehen, wenn die weiße Seite als obere Seite angenommen wird. In den Abbildungen wird von einem gelösten Würfel ausgegangen. Für die anderen fünf Seiten gibt es ebenfalls vier Möglichkeiten der Ausrichtung. Alle Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} in Abbildung \ref{AbbildungWürfelRotationAlleSeiten} dargestellt.
 
 \begin{figure}[H]
 \centering
@@ -1815,7 +1815,7 @@ Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berück
 
 Daraus ergibt sich folgende Definition für alle Würfelkonfigurationen $C$ und $W$ als Element (oder beliebige Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
 \begin{align*}
-Z_1 \sim Z_2 :\Leftrightarrow \ C \cdot Z_1 = C \cdot WZ_2
+Z_1 \sim Z_2 := \ C \cdot Z_1 = C \cdot WZ_2
 \end{align*}
 
 Somit ergibt sich beispielsweise $F \sim L \Leftrightarrow C \cdot F = C \cdot Z_rL$, da eine Drehung der vorderen Ebene und eine Drehung des Würfels nach links mit einer Drehung der linken Ebene eine äquivalente Würfelkonfiguration ergeben. Der Würfel ist dann lediglich verschieden ausgerichtet. 
@@ -1835,11 +1835,11 @@ Damit $\sim$ eine Äquivalenzrelation ist, müssen Reflexivität, Symmetrie und 
 \item [Reflexivität] \ \\
 Für die Reflexivität muss $Z \sim Z$ für alle Züge gelten. Jeder Zug muss dafür zu sich selbst in Relation stehen. Die folgenden Ausdrücke gelten für alle $Z$ aus $A_Z$ und jede beliebige Würfelkonfiguration $C$.
 \begin{align*}
-Z \sim_R Z : & \Leftrightarrow C \cdot Z = C \cdot WZ
+Z \sim_R Z & := C \cdot Z = C \cdot WZ
 \end{align*}
 Um zu zeigen, dass $Z$ zu sich selbst äquivalent ist, wird die Rotation $W$ als $N_R$ gewählt, so dass keine Rotation ausgeführt wird.
 \begin{align*}
-Z \sim Z : & \Leftrightarrow  C \cdot Z = C \cdot WZ \\
+Z \sim Z  & := C \cdot Z = C \cdot WZ \\
 \ & \Leftrightarrow C \cdot Z=C \cdot N_R Z \\
 \ & \Leftrightarrow C \cdot Z = C \cdot Z
 \end{align*}
@@ -1849,7 +1849,7 @@ Bei $Z \sim Z$ mit $W=N_R$ ist der Zug $Z$ immer äquivalent zu sich selbst, da 
 Für die Symmetrie muss folgendes für alle $Z_1$ und $Z_2$ aus $A_Z$ gelten: Aus $Z_1 \sim Z_2$ folgt $Z_2 \sim Z_1$.  Im Folgenden ist $C$ eine beliebige Würfelkonfiguration.
 \begin{align*}
 Z_1 \sim Z_2 & \Rightarrow Z_2 \sim Z_1 \\
-mit \ Z_1 \sim Z_2 : & \Leftrightarrow  C \cdot  Z_1 = C \cdot  WZ_2 \\
+mit \ Z_1 \sim Z_2  & :=  C \cdot  Z_1 = C \cdot  WZ_2 \\
 \Leftrightarrow C \cdot  Z_1 = C \cdot  W_1 Z_2 & \Rightarrow C \cdot  Z_2 = C \cdot  W_2 Z_1
 \end{align*}
 $Z_2 \sim Z_1$ muss gelten, wenn $Z_1 \sim Z_2$ gilt. Da $Z_1 \sim Z_2$ gilt, sind die Züge $Z_1$ und $Z_2$ mit optionaler Rotation gleich. 
@@ -1869,11 +1869,11 @@ Die optionale Rotation besteht aus einem oder mehreren Elementen aus $\{{Z_r}, {
 Die Symmetrie gilt, wenn $W_2$ das Inverse von $W_1$ ist. Das Inverse einer Rotation ist die Rotation um die gleiche Achse, aber in die andere Richtung. 
 Das Inverse von $W$ wird als $W^{-1}$ geschrieben. 
 Da es sich bei den Rotationen (so wie bei den Ebenendrehungen) um $90^\circ$-Drehungen handelt, entspricht das inverse Element einer Rotation der dreifachen Ausführung dieser. 
-Es gilt dann:
+Es gilt:
 \begin{align*}
 \forall  \ W \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\} \ . \ W^{-1} = WWW = W^3
 \end{align*}
-Da die Rotationen zur besseren Übersichtlichkeit nicht minimal definiert wurden, sind in der folgenden Tabelle alle Rotationen uns die dazugehörigen Inversen abgebildet:
+Da die Rotationen zur besseren Übersichtlichkeit nicht minimal definiert wurden, sind in der folgenden Tabelle alle Rotationen und die dazugehörigen Inversen abgebildet:
 
 \begin{center}
 \begin{tabular}{lcccccc}
@@ -1901,10 +1901,10 @@ Folglich gilt die Symmetrie für $\sim$.
 Es muss für alle Züge $Z_1, Z_2$ und $Z_3$ aus $A_Z$ gelten: Aus $Z_1 \sim Z_2$ und $Z_2 \sim Z_3$ folgt $Z_1 \sim Z_3$. Im Folgenden ist $C$ eine beliebige Würfelkonfiguration.
 \begin{alignat*}{3}
 & Z_1 \sim Z_2 && \wedge Z_2 \sim Z_3 && \Rightarrow Z_1 \sim Z_3 \\
-\Leftrightarrow \ & C \cdot  Z_1 = C \cdot  W_1Z_2 \ && \wedge C \cdot  Z_2 = C \cdot  W_2Z_3 \ && \Rightarrow C \cdot  Z_1 = C \cdot  W_3Z_3
+\Leftrightarrow \ & (C \cdot  Z_1 = C \cdot  W_1Z_2) \ && \wedge (C \cdot  Z_2 = C \cdot  W_2Z_3) \ && \Rightarrow (C \cdot  Z_1 = C \cdot  W_3Z_3)
 \end{alignat*}
 
-Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfiguration ergeben, und die Züge $Z_2$ und $Z_3$ nach der Rotation $W_2$ auch die gleiche Würfelkonfiguration ergeben, gilt $\sim$ das auch für die beiden Züge $Z_1$ und $Z_3$.
+Da die Züge $Z_1$ und $Z_2$ mit der Rotation $W_1$ die gleiche Würfelkonfiguration ergeben, und die Züge $Z_2$ und $Z_3$ nach der Rotation $W_2$ auch die gleiche Würfelkonfiguration ergeben, gilt die Relation $\sim$ das auch für die beiden Züge $Z_1$ und $Z_3$.
 
 Da die Äquivalenzrelation mithilfe der Gleichheit definiert wurde, gilt die Transitivität. Die Relation der Gleichheit erfüllt die Bedingung der Transitivität.
 
@@ -1953,7 +1953,7 @@ Da die Eigenschaften der Reflexivität, Symmetrie und Transitivität für die Re
 \begin{align*}
 [Z] := \{ Y \in A_Z \mid Y \sim Z \} \subseteq A_Z
 \end{align*}
-Demnach enthält jede Äquivalenzklasse $[Z]$ alle Züge der Menge $A_Z$, die mit der Äquivalenzrelation $\sim$ äquivalent zu dem Zug $Z$ sind. Dabei ist $[Z]$ eine Teilmenge von $A_Z$.  Alle äquivalenten Elemente einer Äquivalenzklasse $[Z]$ werden als Repräsentanten dieser Äquivalenzklasse bezeichnet. So sind die Züge $R$ und $RRRRR$ beispielsweise Repräsentanten der Äquivalenzklasse $[R]$, da die Züge $R$ und $RRRRR$ mit der Äquivalenzrelation $\sim$ äquivalent zu $R$ sind.
+Demnach enthält jede Äquivalenzklasse $[Z]$ alle Züge der Menge $A_Z$, die mit der Äquivalenz\-relation $\sim$ äquivalent zu dem Zug $Z$ sind. Dabei ist $[Z]$ eine Teilmenge von $A_Z$.  Alle äquivalenten Elemente einer Äquivalenzklasse $[Z]$ werden als Repräsentanten dieser Äquivalenzklasse bezeichnet. So sind die Züge $R$ und $RRRRR$ beispielsweise Repräsentanten der Äquivalenzklasse $[R]$, da die Züge $R$ und $RRRRR$ mit der Äquivalenz\-relation $\sim$ äquivalent zu $R$ sind.
 
 Die Gleichheit zweier Züge wurde durch die Äquivalenzrelation $\sim$ definiert. Dabei gelten zwei Züge als äquivalent, wenn sie bei derselben Startkonfiguration mit optionaler Rotation des Würfels zur gleichen Folgekonfiguration führen. Daher sind zwei gleiche Züge $Z_1, Z_2 \in A_Z$ immer Repräsentanten der gleichen Äquivalenzklasse. Umgekehrt sind zwei Züge $Z_1, Z_2 \in A_Z$, die nicht zur gleichen Folgekonfiguration führen, Repräsentanten unterschiedlicher Äquivalenzklassen.
 Daraus resultiert, dass zwei verschiedene Äquivalenzklassen keine äquivalenten Züge enthalten, da alle äquivalenten Züge in genau einer Äquivalenzklasse sind. 
@@ -2011,14 +2011,14 @@ $\forall \ Z_1,Z_2 \in \Gtwo \  . \   (Z_1 \circ Z_2) \in \Gtwo $
 
 Seien $Z_1$ und $Z_2$ Züge und somit Elemente aus $\Gtwo$. Dann ist auch $Z_1 \circ Z_2$ ein Element aus $\Gtwo$. Die Menge $\Gtwo$ enthält Äquivalenzklassen. Diese wurden in Abschnitt \ref{Abschnitt_ÄquivalenzklassenDerZüge} mit den Elementen aus der unendlichen Menge aller Züge $A_Z$ definiert. Es sind somit alle Elemente der Menge $A_Z$ Repräsentanten der Äquivalenzklassen in $\Gtwo$. Eine Verknüpfung zweier Züge ist auch ein Zug aus $A_Z$. Somit ist $Z_1 \circ Z_2$ ebenfalls Repräsentant einer Äquivalenzklasse in $\Gtwo$. Die Gruppe $(\Gtwo, \circ)$ ist folglich unter dem Operator $\circ$ abgeschlossen.
  
-Mit den Ergebnissen aus Abschnitt \ref{Abschnitt_MächtigkeitVonG} kann die Abgeschlossenheit von $(\Gtwo, \circ)$ auch anders begründet werden: In $\Gtwo$ findet sich zu jeder validen Würfelkonfiguration ein Zug, mit dem diese erreicht werden kann und jede Verknüpfung von zwei validen Zügen führt zu einer validen Würfelkonfiguration. Daher gilt die Abgeschlossenheit bei der Gruppe $(\Gtwo, \circ)$.
+Mit den Ergebnissen aus Abschnitt \ref{Abschnitt_MächtigkeitVonG} kann die Abgeschlossenheit von $(\Gtwo, \circ)$ auch anders begründet werden: In $\Gtwo$ findet sich zu jeder validen Würfel\-konfiguration ein Zug, mit dem diese erreicht werden kann und jede Verknüpfung von zwei validen Zügen führt zu einer validen Würfelkonfiguration. Daher gilt die Abgeschlossenheit bei der Gruppe $(\Gtwo, \circ)$.
 
 
 \item [Assoziativität] \ \\
 $\forall \ Z_1,Z_2,Z_3 \in \Gtwo \ . \ (Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ 
 
 
-Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger, fester Stein im Würfel wird hier $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, r, l, f, b$. 
+Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger aber fester Stein im Würfel wird hier $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, r, l, f, b$. 
 
 Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und anschließend $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein $s$ zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Folglich gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
 

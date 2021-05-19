@@ -63,6 +63,31 @@
       \field{title}{Our heritage}
       \field{year}{2020 aktualisiert}
     \endentry
+    \entry{RB}{book}{}
+      \name{author}{1}{}{%
+        {{hash=382115cb509b1cfb93fa1e72cb37bfa8}{%
+           family={Bündgen},
+           familyi={B\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{382115cb509b1cfb93fa1e72cb37bfa8}
+      \strng{fullhash}{382115cb509b1cfb93fa1e72cb37bfa8}
+      \strng{bibnamehash}{382115cb509b1cfb93fa1e72cb37bfa8}
+      \strng{authorbibnamehash}{382115cb509b1cfb93fa1e72cb37bfa8}
+      \strng{authornamehash}{382115cb509b1cfb93fa1e72cb37bfa8}
+      \strng{authorfullhash}{382115cb509b1cfb93fa1e72cb37bfa8}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Termersetzungssysteme}
+      \field{title}{Termersetzungssysteme}
+      \field{year}{1998}
+    \endentry
     \entry{JC}{misc}{}
       \name{author}{1}{}{%
         {{hash=5595fc46ec4ea38c645aba54de1bf598}{%
