@@ -1799,7 +1799,7 @@ Neben den Abbildungen aller Rotationsmöglichkeiten des Würfels, befindet sich 
 \label{Abschnitt_ÄquivalenzrelationDerZüge}
 
 Da der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine eindeutige Ausrichtung hat, werden in diesem Abschnitt Äquivalenzrelationen eingeführt, um die Rotationen des Würfels umzusetzen.
-Damit eine Relation eine Äquivalenzrelationen ist, müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Abschnitt \ref{Abschnitt_Äquivalenrelationen} finden sich Definition, Erklärung und Beispiele.
+Damit eine Relation eine Äquivalenzrelation ist, müssen die drei folgenden Eigenschaften gelten: Reflexivität, Symmetrie, Transitivität. In Abschnitt \ref{Abschnitt_Äquivalenrelationen} finden sich Definition, Erklärung und Beispiele.
 
 In dem Fall des \Ttwo Würfels handelt es sich um eine Relation $\sim$ von zwei Zügen $Z_1, Z_2$ aus der Menge aller Züge $A_Z$ (ohne Rotationen). Dann ist die Relation $\sim$ eine Teilmenge von $A_Z \times A_Z$. 
 Die Relation ist im Folgenden für alle Züge $Z_1$ und $Z_2$ aus $A_Z$ definiert: 
@@ -1811,7 +1811,7 @@ $Z_1 \sim Z_2 := \ $  & $Z_1$ \textit{und} $Z_2$ \textit{ergeben (mit optionaler
 \end{tabular} 
 \end{center}
 
-Die Relation $\sim$ prüft zwei Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels. Die beiden Züge gelten unter der Relation $\sim$ als gleich, wenn sie bei der gleichen Ausgangskonfiguration die gleiche Folgekonfiguration mit optionaler Rotation ergeben.
+Die Relation $\sim$ prüft zwei beliebige Züge $Z_1$ und $Z_2$ auf Gleichheit und berücksichtigt dabei gleichzeitig die Rotation des Würfels. Die beiden Züge gelten unter der Relation $\sim$ als gleich, wenn sie bei der gleichen Ausgangskonfiguration die gleiche Folgekonfiguration mit optionaler Rotation ergeben.
 
 Daraus ergibt sich folgende Definition für alle Würfelkonfigurationen $C$ und $W$ als Element (oder beliebige Kombination von Elementen) aus $\{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R\}$. Dabei stellt $N_R$ die leere Rotation dar -- das entspricht keiner Rotation des Würfels. 
 \begin{align*}
@@ -1996,7 +1996,7 @@ Im Folgenden wird die Definition der Gruppe des \Tthree Würfels aus \textit{Gro
 Grundlagen und Definition der Gruppe wurden in Abschnitt \ref{Abschnitt_Gruppe} erklärt.
 
 
-Die Trägermenge $\Gtwo$ der Gruppe wurde in Abschnitt \ref{Abschnitt_ÄquivalenzklassenDerZüge} definiert. Sie besteht aus den Äquivalenzklassen aller möglichen Zügen des Würfels. Äquivalente Züge sind dabei Repräsentanten der gleichen Äquivalenzklasse.
+Die Trägermenge $\Gtwo$ der Gruppe wurde in Abschnitt \ref{Abschnitt_ÄquivalenzklassenDerZüge} definiert. Sie besteht aus den Äquivalenzklassen aller möglichen Züge des Würfels. Äquivalente Züge sind dabei Repräsentanten der gleichen Äquivalenzklasse.
 
 
 Der Operator $\circ$ ist als Konkatenation zweier Züge definiert. Seien $Z_1$ und $Z_2$ zwei Züge in $\Gtwo$. Dann bedeutet $Z_1 \circ Z_2$, dass zuerst $Z_1$ und anschließend $Z_2$ ausgeführt wird. $Z_1 \circ Z_2$ kann auch als $Z_1Z_2$ geschrieben werden.
@@ -2042,13 +2042,13 @@ Somit ist $(\Gtwo, \circ)$ assoziativ.
 $\exists \ N \in \Gtwo \  \forall \ Z \in \Gtwo \ . \ N \circ Z = Z \circ N = Z$ 
 
 
-Das neutrale Element $N$ muss eine Element aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: 
+Das neutrale Element $N$ muss ein Element aus der Menge der Züge $\Gtwo$ sein. Für alle Züge $Z \in \Gtwo$ muss gelten: 
 \begin{align*}
 N \circ Z = Z \circ N = Z
 \end{align*}
-Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausführt wird und anschließend der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ auszuführen}. 
+Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausgeführt wird und anschließend der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ ausführen}. 
 
-Wenn das auf das mathematischen Modell des Würfels übertragen wird, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}.
+Wenn das auf das mathematische Modell des Würfels übertragen wird, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}.
 
 Für das neutrale Element muss folgendes für jede Würfelkonfiguration $C$ gelten:
 \begin{align*}
@@ -2197,7 +2197,7 @@ Das bedeutet, dass alle Steine des Würfels wieder in ihre vorherige Position ge
 Nicht nur die Züge $U, D, R, L, F, B$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Dazu sind je nach Zug verschieden viele Wiederholungen nötig. 
 
 
-Es ist aber zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permutationen behandelt. Überträgt man dies auf die Würfelkonfiguration, so wird nur die Steinposition $\sigma$ beachtet. Die Ordnung der Permutationen ist daher die Anzahl der Durchführungen, die benötigt werden, damit alle Steine wieder an der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Die Ordnung im Bezug auf die komplette Würfelkonfiguration wird in Abschnitt \ref{Abschnitt_OrdnungZüge} als \textit{Ordnung der Züge} beschrieben. In diesem Abschnitt wird die Ordnung der Permutation definiert und anhand eines Beispiels beschrieben. Außerdem wird die Zykelstruktur grafisch dargestellt und anschließend ein Algorithmus zur Berechnung der Permutationsordnung eingeführt.
+Es ist aber zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permutationen behandelt. Überträgt man dies auf die Würfelkonfiguration, so wird nur die Steinposition $\sigma$ beachtet. Die Ordnung der Permutationen ist daher die Anzahl der Durchführungen, die benötigt werden, damit alle Steine wieder in der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Die Ordnung im Bezug auf die komplette Würfelkonfiguration wird in Abschnitt \ref{Abschnitt_OrdnungZüge} als \textit{Ordnung der Züge} beschrieben. In diesem Abschnitt wird die Ordnung der Permutation definiert und anhand eines Beispiels beschrieben. Außerdem wird die Zykelstruktur grafisch dargestellt und anschließend ein Algorithmus zur Berechnung der Permutationsordnung eingeführt.
 
 
 %Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
@@ -2413,7 +2413,7 @@ Der folgende Beweis orientiert sich an einem Beweis aus \textit{Group Theory via
 
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet und ausgerichtet. 
 Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelkonfiguration wiederholt werden, wenn ein Zug oft genug durchführt wird.
-Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich ($3 \, 674 \, 160$). Demnach muss eine Konfiguration wiederholt werden, wenn der Zug häufiger ausgeführt, als es mögliche Würfelkonfigurationen gibt. Die Anzahl der validen Würfelkonfigurationen wird in Kapitel \ref{Kapitel_ValideKonfigurationen} berechnet.
+Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich ($3 \, 674 \, 160$). Demnach muss eine Konfiguration wiederholt werden, wenn der Zug häufiger ausgeführt wird, als es mögliche Würfelkonfigurationen gibt. Die Anzahl der validen Würfelkonfigurationen wird in Kapitel \ref{Kapitel_ValideKonfigurationen} berechnet.
 
 Übertragen auf das mathematische Modell des Würfels bedeutet das folgendes: Bei einem beliebigen Zug $Z \in \Gtwo$, der auf eine beliebige Konfiguration $C$ angewandt wird, wird nach wiederholtem Ausführen eine Würfelkonfiguration wiederholt. Wenn die wiederholte Konfiguration $C'$ zuerst nach $n \in \mathbb{N}$ Wiederholungen des Zuges $Z$ auftritt und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen, gilt: 
 \begin{align*}
@@ -2494,7 +2494,7 @@ Der Algorithmus braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eing
 
 In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{Count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
-Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zum Start ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
+Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zu Beginn ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
 Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das \textit{kleinste gemeinsame Vielfache} von diesen beiden Werten (Zeile 8).
 
 Dieser Algorithmus berechnet somit die Ordnung eines beliebigen Zuges aus $\Gtwo$ anhand einer beliebigen Würfelkonfiguration.
@@ -2566,7 +2566,7 @@ Dieser Algorithmus berechnet somit die Ordnung eines beliebigen Zuges aus $\Gtwo
 \label{Kapitel_Untergruppen}
 
 Dieses Kapitel behandelt einige der Untergruppen der Gruppe $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen, zudem werden noch weitere Untergruppen beschrieben.
-Die Definition und Erklärung der Untergruppe und des Erzeugers findet sich in Abschnitt \ref{Abschnitt_Untergruppe}.
+Die Definition und Erklärung der Untergruppe und des Erzeugers finden sich in Abschnitt \ref{Abschnitt_Untergruppe}.
 Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt. Die Cayleygraphen dienen der Veranschaulichung von Gruppenstrukturen. Die Untergruppe, die den \Ttwo Würfel minimal aber komplett abbildet, findet sich in Kapitel \ref{Kapitel_MinUntergruppe}.
 
 %
@@ -2613,7 +2613,7 @@ Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werd
 
 Jede Ebenendrehung ($U, D, R, L, F$ oder $B$) ist durch eine Permutationsfunktion $\sigma$ definiert. Dabei besteht $\sigma$ für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Die Ordnung der Permutation ist im Fall einer einzelnen Ebenendrehung immer vier. Die Ordnung einer Permutation wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
 
-Die Ordnung eines Zuges wurde in Abschnitt \ref{Abschnitt_OrdnungZüge} definiert. Bei der Ordnung eines Zuges wird zusätzlich zu den Permutationen die Funktion $\gamma$ berücksichtig, die die Ausrichtung der Steine darstellt. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert. Jede dieser Funktionen $\gamma$ gibt die Eingabe unverändert zurück, wenn sie viermal direkt nacheinander ausgeführt wird. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}. 
+Die Ordnung eines Zuges wurde in Abschnitt \ref{Abschnitt_OrdnungZüge} definiert. Bei der Ordnung eines Zuges wird zusätzlich zu den Permutationen die Funktion $\gamma$ berücksichtigt, die die Ausrichtung der Steine darstellt. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert. Jede dieser Funktionen $\gamma$ gibt die Eingabe unverändert zurück, wenn sie viermal direkt nacheinander ausgeführt wird. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}. 
 
 Somit ist die Ordnung einer einzelnen Ebenendrehung immer vier und die Trägermenge $H_{E1}$ enthält genau vier Züge. Durch diese vier Züge können genau vier verschiedene Würfelkonfigurationen erreicht werden. 
 
