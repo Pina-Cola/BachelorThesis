@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1538,13 +1538,7 @@ File: auf_ulf.png Graphic file (type png)
 <use auf_ulf.png>
 Package pdftex.def Info: auf_ulf.png  used on input line 1636.
 (pdftex.def)             Requested size: 130.49208pt x 148.239pt.
- [31 <./auf_ulf.png>]
-Overfull \hbox (44.21931pt too wide) in paragraph at lines 1669--1670
-[]\OT1/cmr/m/n/12 (-20) Da die Ro-ta-tio-nen ei-ne be-lie-bi-ge W[]urfelkonfigu
-ration in ei-ne an-de-re, []aquivalente W[]urfelkonfiguration
- []
-
-[32]
+ [31 <./auf_ulf.png>] [32]
 Overfull \hbox (13.81587pt too wide) in paragraph at lines 1712--1714
 \OT1/cmr/m/n/12 (-20) Jede Ro-ta-ti-on kann al-so durch die Ebe-nen-dre-hun-gen
  von zwei ge-gen[]uberliegenden W[]urfelseiten
@@ -2170,7 +2164,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4631.
 Here is how much of TeX's memory you used:
  32304 strings out of 483016
  589287 string characters out of 5961286
- 1412743 words of memory out of 5000000
+ 1411743 words of memory out of 5000000
  46246 multiletter control sequences out of 15000+600000
  561712 words of font info for 197 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
@@ -2202,7 +2196,7 @@ nts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on proposal.pdf (103 pages, 5689143 bytes).
+Output written on proposal.pdf (103 pages, 5689052 bytes).
 PDF statistics:
  1515 PDF objects out of 1728 (max. 8388607)
  1225 compressed objects within 13 object streams

@@ -1666,7 +1666,7 @@ Die übrigen Rotationen können ebenfalls durch Funktionen $\delta$ in der Zykel
 & \delta_{N_R} && = \ 1 \hspace*{14.1em}
 \end{alignat*}
 
-Da die Rotationen eine beliebige Würfelkonfiguration in eine andere, äquivalente Würfelkonfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Die Vektoreinträge der Steinausrichtungen werden dort mit den Funktionen $g, h$ und $i$ verändert.
+Da die Rotationen eine beliebige Würfel\-konfiguration in eine andere, äquivalente Würfel\-konfiguration überführen, muss es neben der Permutationsfunktionen für die Veränderung der Steinposition auch Übergangsfunktionen für den Vektor $x$ geben, der die Ausrichtung der Steine darstellt. Die Funktionen $\gamma$ wurden für jeden Zug des Würfels ($U, D, R, L, F, B$) bereits in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert und beschrieben. Die Vektoreinträge der Steinausrichtungen werden dort mit den Funktionen $g, h$ und $i$ verändert.
 \begin{align*}
 g(x)=(x + 2) \hspace*{-0.5em} \mod 3 \ \ \ \ \ h(x) = (x+1) \hspace*{-0.5em} \mod 3 \ \ \ \ \ i(x)=x
 \end{align*}
@@ -3507,7 +3507,7 @@ Diese Muster sind in den meisten Fällen zwar keine üblichen Lösungsalgorithme
 \subsection{Schraubendrehermethode}
 
 Die Methode, die oft als simpelste Methode zum Lösen von Zauberwürfeln beschrieben wird, ist die Schraubendrehermethode.
-Bei den üblichen \Ttwo Würfel ist auf einer oder mehreren Seiten in der Mitte zwischen den Steinen eine Schraube zu sehen (s. links in Abbildung \ref{Abbildung_Schraubendrehermethode}).
+Bei den üblichen \Ttwo Würfeln ist auf einer oder mehreren Seiten in der Mitte zwischen den Steinen eine Schraube zu sehen (s. links in Abbildung \ref{Abbildung_Schraubendrehermethode}).
 Um den Würfel auseinander zu bauen, muss diese Schraube gelockert werden. Daraufhin kännen die Steine ohne Probleme abgenommen werden. 
 Dann werden die Steine neu arrangiert und der Würfel kann in der gelösten Konfiguration wieder zusammen gebaut werden.
 
@@ -3587,7 +3587,7 @@ Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann s
 \label{Abbildung_ZweiterEckstein2}
 \end{figure}
 
-Dieletzten beide Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst. Die Vektoreinträge $x_{1-4}$ sind dann $(0,0,0,0)$.
+Die letzten beide Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst. Die Vektoreinträge $x_{1-4}$ sind dann $(0,0,0,0)$.
 Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hälfte des Würfels. Die Algorithmen für die zweite Ebene sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} zu finden.
 
 
@@ -3688,7 +3688,7 @@ Steinpermutation & Algorithmus  \\
 
 Nach dem Ausführen der passenden Algorithmen sind beide Ebenen gelöst. Eventuell müssen die beiden Ebenen noch durch $U$, $U^{-1}$ oder $UU$ richtig zueinander ausgerichtet werden. Dann befindet sich der Würfel im gelösten Zustand und die Würfelkonfiguration ist somit $(1,0)$.
 
-Mit den Algorithmen aus dieser Anleitung kann jede valide Konfiguration eines \Ttwo Würfels in die Startkonfiguration $(1,0)$ überführt werden. Der beschriebene Ansatz ist die Fridrich-Methode.
+Mit den Algorithmen aus dieser Anleitung kann jede valide Konfiguration eines \Ttwo Würfels in die Startkonfiguration $(1,0)$ überführt werden.
 
 %
 %
