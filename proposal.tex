@@ -534,7 +534,7 @@ Beispiele für endliche Gruppen sind die zyklischen Gruppen der Form $\mathbb{Z}
 \item Die Abgeschlossenheit gilt für $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$, da alle Elemente aus $\mathbb{Z}$ nach der Anwendung von $\hspace*{-0.6em} \mod 6$ in der Menge $\{0,1,2,3,4,5\}$ liegen.
 \item Die Verknüpfung ist assoziativ, da das Pluszeichen so definiert ist.
 \item Das neutrale Element von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist $0$.
-\item Das Inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es demnach 5, für 2 ist es 4 und für 3 ist das inverse Element die 3.
+\item Das inverse Element für alle $z \in \mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ ist definiert als $(6-z)$. Für 1 ist es demnach 5, für 2 ist es 4 und für 3 ist das inverse Element die 3.
 \end{itemize}
 
 $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ ist eine endliche Gruppe, da die vier Gruppeneigenschaften erfüllt sind und die Trägermenge $\mathbb{Z}_{\hspace*{-0.3em}\mod 6}$ endlich ist.
@@ -592,14 +592,14 @@ Wenn $(H, \circ)$ eine Untergruppe der Gruppe $(G, \circ)$ ist, wird $(G, \circ)
 Jede Gruppe $(G, \circ)$ mit neutralem Element $N$ hat die beiden trivialen Untergruppen $(H_N, \circ)$ mit ${H_N = \{N\}}$ und $(H_G, \circ)$ mit $H_G=G$.
 
 
-\begin{bsp}[keine Untergruppe]
+\begin{bsp}[Keine Untergruppe]
 
-Bei dem oben genannten Beispielen der Gruppen $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellte sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt sind.
+Bei dem oben genannten Beispielen der Gruppen $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ stellte sich heraus, dass $(\mathbb{Z},+)$ eine Gruppe ist und $(\mathbb{N},+)$ nicht. Obwohl $\mathbb{N \subseteq \mathbb{Z}}$, ist $(\mathbb{N},+)$ \textit{keine} Untergruppe von $(\mathbb{Z},+)$, da die Gruppeneigenschaft \textit{Existenz eines inversen Elements} nicht erfüllt ist.
 
 \end{bsp}
 \begin{bsp}[Untergruppe]
 
-Es gilt $\mathbb{Z}_{\hspace*{-0.3em}\mod 6} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$, als auch $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ Gruppen sind, ist $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ eine Untergruppe von $(\mathbb{Z},+)$. $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ und $(\mathbb{Z},+)$ wurden in Abschnitt \ref{Abschnitt_Gruppe} auf die Gruppeneigenschaften untersucht.
+Es gilt $\mathbb{Z}_{\hspace*{-0.3em}\mod 6} \subseteq \mathbb{Z}$. Da sowohl $(\mathbb{Z},+)$ als auch $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ Gruppen sind, ist $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ eine Untergruppe von $(\mathbb{Z},+)$. $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ und $(\mathbb{Z},+)$ wurden in Abschnitt \ref{Abschnitt_Gruppe} auf die Gruppeneigenschaften untersucht.
 
 \end{bsp}
 
@@ -688,7 +688,7 @@ In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathb
 
 
 
-Es gibt Links- und Rechtsoperationen auf Gruppen. Da in dieser Arbeit ausschließlich Rechtsoperationen genutzt werden, beschränkt sich die Definition darauf.
+Es gibt Links- und Rechtsoperationen auf Gruppen. Da in dieser Arbeit ausschließlich Rechtsoperationen genutzt werden, wird die Definition auf diese beschränkt.
 
 
 \begin{definition}[Rechtsoperation]
@@ -735,12 +735,13 @@ Demnach operiert $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit $-$ von rechts a
 
 \subsection{Kommutator} 
  \label{Abschnitt_Kommutator}
-Die Komplexität eines Kommutators sagt etwas darüber aus, wie stark zwei Elemente einer Gruppe das Kommutativgesetz verletzen. Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe \cite{TD}. Man sagt dann, dass die beiden Elemente kommutieren. 
-
-
+ 
+ 
 \begin{definition}[Kommutator]
 Als Kommutator von zwei Elementen $a, b$ einer Gruppe $(G, \circ)$  bezeichnet man $[a,b] = aba^{-1}b^{-1}$.
-\end{definition}
+\end{definition} 
+ 
+Die Komplexität eines Kommutators sagt etwas darüber aus, wie stark zwei Elemente einer Gruppe das Kommutativgesetz verletzen. Bei kommutativen Gruppen ist der Kommutator zweier Elemente das neutrale Element der Gruppe \cite{TD}. Man sagt dann, dass die beiden Elemente kommutieren. 
 
 
 \begin{bsp}[Kommutator]
@@ -793,7 +794,7 @@ Aus $(x \sim y)$ und $(y \sim z)$ folgt $(x \sim z)$. & (Transitivität) \\
 
 Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ wird die Relation $ x < y$ betrachtet:
 
-Bei der Relation $< $ handelt es sich nicht um eine Äquivalenrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Auch die Symmetrie gilt nicht.
+Bei der Relation $< $ handelt es sich nicht um eine Äquivalenrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Die Eigenschaft der Symmetrie wird ebenfalls verletzt.
 
 
 \end{bsp}
