@@ -210,7 +210,7 @@
 Der \Tthree Zauberwürfel ist ein mathematisches Drehpuzzle, das 1974 von dem ungarischen Professor Ern\H{o} Rubik erfunden wurde. Er wollte damit seinen Studierenden helfen, dreidimensionale Probleme zu verstehen. Ern\H{o} Rubik selbst brauchte über einen Monat, um den \Tthree Würfel zum ersten Mal zu lösen.
 Der sogenannte \textit{Rubik's Cube} wurde ab 1980 weltweit verkauft. Die Begeisterung für den Würfel war so groß, dass bereits 1982 die erste Weltmeisterschaft in Budapest stattfand. Der Gewinner war Minh Thai aus den USA, der den Würfel in $22,95$ Sekunden löste. \cite{RC} Die Zeiten zum Lösen des \Tthree Würfels wurden immer wieder unterboten.
 Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $3,47$ Sekunden und stellte damit einen neuen Weltrekord auf, der bis heute nicht gebrochen wurde \cite{rekord}.
-Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Dieser Würfel ist Gegenstand dieser Arbeit. Mittlerweile gibt es die Zauberwürfel in vielen verschiedenen Größen: Im Jahr 2017 baute Grégoire Pfennig einen funktionsfähigen Würfel der Größe $33 \times 33 \times 33$ und stellte damit einen neuen Weltrekord auf \cite{HugeCube}.
+Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Dieser Würfel ist Gegenstand dieser Arbeit. Mittlerweile gibt es die Zauberwürfel in vielen verschiedenen Größen: Im Jahr 2017 baute Grégoire Pfennig einen funktionsfähigen Würfel der Größe 33$\times$33$\times$33 und stellte damit einen neuen Weltrekord auf \cite{HugeCube}.
 
 Bis heute sind Kinder und Erwachsene gleichermaßen von den Zauberwürfeln begeistert.
 Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
@@ -264,7 +264,7 @@ Diese Arbeit setzt sich aus 10 Kapiteln zusammen. Im Folgenden werden die Inhalt
 
 \item[\textbf{\ref{Kapitel_ValideKonfigurationen}}] Hier wird die Anzahl der möglichen Würfelkonfigurationen und die Mächtigkeit der Trägermenge der Gruppe des \Ttwo Würfels berechnet und verglichen.
 
-\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen beschrieben. Die Lösung des Wüfels durch einen Menschen wird anhand eines Beispiels schrittweise erklärt und es findet sich eine allgemeine Anleitung, mit der der \Ttwo Würfel gelöst werden kann.
+\item[\textbf{\ref{Kapitel_Lösung}}] In diesem Kapitel werden verschiedene Lösungsansätze und Algorithmen beschrieben. Die Lösung des Würfels durch einen Menschen wird anhand eines Beispiels schrittweise erklärt und es findet sich eine allgemeine Anleitung, mit der der \Ttwo Würfel gelöst werden kann.
 
 \item[\textbf{\ref{Kapitel_MinUntergruppe}}] Hier wird die Untergruppe mit minimalen Grundzügen beschrieben, die den Würfel vollständig abbildet. Außerdem wird ein Konzept eingeführt, um den optimalen Lösungsweg des Würfels zu berechnen.  
 
@@ -381,7 +381,7 @@ Das Besondere an den Mittelsteinen des \Tthree Würfels ist, dass sie bei Ebenen
 
 Beim \Ttwo Würfel gibt es im Gegensatz zum \Tthree Würfel keine eindeutige Oberseite. Es ist dementsprechend möglich, dass die aktuelle Würfelkonfiguration einer vermeintlich anderen Konfiguration entspricht, bei der jedoch eine andere Seite nach oben gehalten wird.
 Die Ausrichtung des gesamten Würfels ist bei dem \Tthree Würfel also eindeutig vorgegeben, während sie beim \Ttwo Würfel gedreht werden kann.  
-Dieser Sachverhalt ist entscheident bei der Übertragung der Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel. Es wird sich dabei vorallem an den Gruppen des \Tthree Würfels aus \textit{Group Theory and the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
+Dieser Sachverhalt ist entscheidend bei der Übertragung der Gruppentheorie des \Tthree \textit{Cubes} auf den \Ttwo Würfel. Es wird sich dabei vor allem an den Gruppen des \Tthree Würfels aus \textit{Group Theory and the Rubik's Cube} von Janet Chen \cite{JC} und \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD} orientiert.
 
 %
 %
@@ -512,7 +512,7 @@ Eine Gruppe $(G, \circ)$ ist eine kommutative Gruppe, wenn gilt:
 
 Zur Veranschaulichung der Gruppendefinition werden hier die natürlichen Zahlen $\mathbb{N}$ und die ganzen Zahlen $\mathbb{Z}$ jeweils mit dem Operator $+$ auf die Gruppenaxiome untersucht.
 \begin{itemize}
-\item Die Abgeschlossenheit gilt sowohl für $(\mathbb{N},+)$ als auch für $(\mathbb{Z},+)$. Die Summe zwei natürlicher Zahlen ist immer ein Element der natürlichen Zahlen. Zwei ganze Zahlen addiert ergeben immer eine ganze Zahl. \\
+\item Die Abgeschlossenheit gilt sowohl für $(\mathbb{N},+)$ als auch für $(\mathbb{Z},+)$. Die Summe zweier natürlicher Zahlen ist immer ein Element der natürlichen Zahlen. Zwei ganze Zahlen addiert ergeben immer eine ganze Zahl. \\
 Beispielsweise sind $1+2=3$ und es gilt $1,2,3 \in \mathbb{N}$.
 \item Die Verknüpfung ist assoziativ, aufgrund der Definition des Pluszeichens.
 \item Das neutrale Element von $(\mathbb{N},+)$ und $(\mathbb{Z},+)$ ist $0$. Es gilt also $\forall \, n \in \mathbb{N} \, . \, n + 0 = 0 + n = n$ (und mit $\mathbb{Z}$ analog). \\
@@ -625,7 +625,7 @@ Dann wird die Untergruppe $(M, \circ)$ von $M$ erzeugt und ist die kleinste Unte
 $(M, \circ)$ wird dann Erzeugnis von $M$ genannt und die Elemente aus $M$ sind die Erzeuger der Untergruppe $(M, \circ)$.
 \end{definition}
 
-Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht ausschließlich aus Potenzen dieses Elementes
+Eine zyklische Gruppe ist eine Gruppe, die von nur einem Element erzeugt wird. Sie besteht ausschließlich aus Potenzen dieses Elementes.
 
 \begin{definition}[Zyklische Gruppe]
 Sei $(G, \circ)$ eine Gruppe. $(G, \circ)$ wird zyklische Gruppe genannt, wenn es ein Element $a \in G$ gibt, das jedes Element in $G$ erzeugt. Dann schreibt man auch:
@@ -688,7 +688,7 @@ In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathb
 
 
 
-Es gibt Links- und Rechtsoperationen auf Gruppen. Da in dieser Arbeit ausschließlich Rechtsoperationen genutzt werden, wird die Definition auf diese beschränkt.
+Es gibt Links- und Rechtsoperationen für Gruppen. Da in dieser Arbeit ausschließlich Rechtsoperationen genutzt werden, wird die Definition auf diese beschränkt.
 
 
 \begin{definition}[Rechtsoperation]
@@ -4119,7 +4119,7 @@ Dementsprechend ist der Baum mit minimaler Kinderanzahl wesentlich größer als 
 %
 \subsection{Zusammenfassung und Ergebnis}
 
-In dieser Arbeit wurde die Gruppentheorie des \Tthree Würfels auf den \Ttwo Würfel übertragen. Der \Ttwo Würfel hebt sich vorallem durch die Rotationsmöglichkeiten aufgrund der fehlenden Mittelsteine von dem \Tthree Würfel ab. Dadurch hat der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Oberseite und zudem keine Kantsteine.
+In dieser Arbeit wurde die Gruppentheorie des \Tthree Würfels auf den \Ttwo Würfel übertragen. Der \Ttwo Würfel hebt sich vor allem durch die Rotationsmöglichkeiten aufgrund der fehlenden Mittelsteine von dem \Tthree Würfel ab. Dadurch hat der \Ttwo Würfel im Gegensatz zum \Tthree Würfel keine feste Oberseite und zudem keine Kantsteine.
 
 Die Gruppe $(\Gtwo, \circ)$ des \Ttwo Würfels besteht aus der Menge der Züge ($\Gtwo$) und dem Operator $\circ$, der zwei Züge verbindet. Die Menge $\Gtwo$ enthält die Äquivalenzklassen aller Züge und somit werden äquivalente Züge von nur einem Element repräsentiert. Das beinhaltet auch die Rotationsmöglichkeiten des Würfels.
 Da jede der Würfelkonfigurationen durch einen anderen Zug erreichbar ist und die Menge $\Gtwo$ äquivalente Züge gemeinsam in einer Äquivalenzklasse enthält, entspricht die Mächtigkeit von $\Gtwo$ der Anzahl der validen Würfelkonfugurationen. Das sind $|\Gtwo| = 3 \, 674 \, 160$ Würfelkonfigurationen. 
