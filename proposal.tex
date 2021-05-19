@@ -2703,7 +2703,7 @@ Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente, da mit dem Z
 
 Das Beispiel der durch $\{ FF, RR \}$ erzeugten Untergruppe hat Tom Davis in \textit{Group Theory via Rubik's Cube} \cite{TD} ebenfalls beschrieben und hier wird es von dem \Tthree \ auf den \Ttwo Würfel übertragen.
 Da die beiden Züge $FF$ und $RR$ als Einheiten gesehen werden, muss jede der Ebenendrehungen eine halbe Drehung sein.
-Es wurde in Abschnitt \ref{Abschnitt_GleichheitVonZügen} bereits gezeigt, dass $(FF)^2 = N$ und $(RR)^2$ Repräsentanten der Äquivalenzklasse von $N$ sind, da der Würfel dann wieder in der Ausgangskonfiguration ist.
+Es wurde in Abschnitt \ref{Abschnitt_GleichheitVonZügen} bereits gezeigt, dass $(FF)^2$ und $(RR)^2$ Repräsentanten der Äquivalenzklasse von $N$ sind, da der Würfel dann wieder in der Ausgangskonfiguration ist. Es gilt also für eine beliebige Konfiguration $C$:
 \begin{align*}
 C \cdot (FF)^2 = C \textit{ und } C \cdot (RR)^2 = C
 \end{align*}
@@ -2729,7 +2729,7 @@ Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2 RR$ gemacht.
 \begin{align*}
 (RRFF)^2 RR = RRFFRRFFRR
 \end{align*}
-Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach $(RRFF)^3$ wieder in der Ausgangskonfiguration.
+Da $RRFF$ die Ordnung 3 hat, befindet sich der Würfel nach dem Ausführen von $(RRFF)^3$ auf einer beliebigen Würfelkonfiguration $C$ wieder in der Ausgangskonfiguration.
 \begin{align*}
 C \cdot (RRFF)^3 = C \cdot RRFFRRFFRRFF = C
 \end{align*}
@@ -2742,7 +2742,7 @@ Da das Inverse eines Zuges $Z$ als $ZZZ$ definiert ist, gilt für die Züge $FF$
 (FF)^{-1} = F^{-1}F^{-1} = FFFFFF = FF \\
 (RR)^{-1} = R^{-1}R^{-1} = RRRRRR = RR
 \end{align*}
-Die Inversen von $FF$ und $RR$ sind demnach $FF$ und $RR$. Deshalb ist der Zug $RRFFRRFFRR$ äquivalent zu dem Zug $FF$, da dieser äquivalent zu $(FF)^{-1}$ ist.
+Die Inversen von $FF$ und $RR$ sind demnach $FF$ und $RR$. Deshalb ist der Zug $RRFFRRFFRR$ äquivalent zu dem Zug $FF$, da dieser äquivalent zu $(FF)^{-1}$ ist. Es gilt somit für eine beliebige Würfelkonfiguration $C$:
 \begin{align*}
 C \cdot RRFFRRFFRR = C \cdot FF
 \end{align*}
