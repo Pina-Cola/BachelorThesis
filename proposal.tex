@@ -3118,7 +3118,7 @@ Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf de
 
 Die Position der Würfelsteine wird durch die Permutationsfunktionen $\sigma$ beschrieben.  $\sigma$ besteht aus verschiedenen Zykeln in Abhängigkeit von der Position der Steine. Das wurde in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert und beschrieben. Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
 
-Jede Würfelkonfiguration kann durch eine Kombination der Ebenendrehungen $U, D, F, B, L, R$ (und der Rotationen des Würfels) erreicht werden. 
+Jede Würfelkonfiguration kann durch eine Kombination der Ebenendrehungen $U, D, R, L, F, B$ (und der Rotationen des Würfels) erreicht werden. 
 Die Zykel der einzelnen Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$-Zykeln geschrieben:
 \begin{alignat*}{2}
 \sigma_U &  = \ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) &&  = \ ( \textit{ulf} \ \textit{ulb} )   \ 
@@ -3198,7 +3198,7 @@ Zu dieser Aussage folgt ein Beweis. Zur besseren Übersichtlichkeit wird dabei $
 \begin{align*}
 \forall \ Z \in \Gtwo\ . \ [Z, Z] = N
 \end{align*}
-Auf eine Konfiguration $C$ angewandt, ist der Kommutator zweier gleicher Elemente im Folgenden definiert:
+Auf eine beliebige Konfiguration $C$ angewandt, ist der Kommutator zweier gleicher Elemente im Folgenden definiert:
 \begin{align*}
 \forall \ Z \in \Gtwo\ . \ C \cdot [Z, Z] = C
 \end{align*}
@@ -3214,7 +3214,7 @@ C \cdot [Z, Z] & = C \cdot ZZZ^{-1}Z^{-1} \\
 Somit kommutieren alle Zugpaare aus $\Gtwo$, die aus zwei gleichen Zügen bestehen.
 
 
-Es kommutieren nicht ausschließlich gleiche Zugpaare, sondern auch Züge, die gegenüberliegende Ebenen beeinflussen. Somit bewegen sie nicht dieselben Steine. Diese sogenannten \textit{elementfremden Zykel} kommutieren \cite{OS}. Auch bei dem Vektor $x$ werden dann keine gemeinsamen Einträge beeinflusst.
+Es kommutieren nicht ausschließlich gleiche Zugpaare, sondern auch Züge, die gegenüberliegende Ebenen beeinflussen, da sie nicht dieselben Steine bewegen. Diese sogenannten \textit{elementfremden Zykel} kommutieren \cite{OS}. Auch bei dem Vektor $x$ werden dann keine gemeinsamen Einträge beeinflusst.
 Das sind dann die folgenden Kommutatoren, mit $n, m \in \mathbb{N}$:
 \begin{align*}
 [U^n, D^m] \ \ \ \  \ \ \ [F^n, B^m] \ \ \ \ \ \ \ [L^n, R^m] \\

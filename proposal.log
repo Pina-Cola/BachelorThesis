@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  19 MAY 2021 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1760,7 +1760,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3012--3036
 [62] [63]
 Overfull \hbox (11.32135pt too wide) in paragraph at lines 3121--3123
 []\OT1/cmr/m/n/12 (-20) Jede W[]urfelkonfiguration kann durch ei-ne Kom-bi-na-t
-i-on der Ebe-nen-dre-hun-gen $\OML/cmm/m/it/12 U; D; F; B; L; R$
+i-on der Ebe-nen-dre-hun-gen $\OML/cmm/m/it/12 U; D; R; L; F; B$
  []
 
 [64] [65]
