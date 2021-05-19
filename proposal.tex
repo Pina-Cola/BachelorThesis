@@ -1535,7 +1535,7 @@ Dafür wird die Gruppe des \Ttwo Würfels auf die vier Gruppenaxiome (Abgeschlos
 \label{Abschnitt_GleichheitVonZügen}
 
 Für den weiteren Verlauf der Arbeit wird $A_Z$ als die unendliche Menge aller Züge des Würfels definiert. Zwei Züge $Z_1$ und $Z_2 \in A_Z$ gelten als gleich, wenn sie mit gleicher Ausgangskonfiguration des Würfels die gleiche Zielkonfiguration hervorrufen. 
-Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, F, B, L, R$).
+Ein Zug besteht aus einem oder mehreren Grundzügen ($U, D, R, L, F, B$).
 Das mehrfache Ausführen von Zügen kann mit der Exponentenschreibweise dargestellt werden. So wird beispielsweise $RR$ (zwei Drehungen der rechten Ebene im Uhrzeigersinn) auch als $R^2$ geschrieben. Die Exponentenschreibweise kann für alle Züge angewendet werden, auch wenn sie mehr als eine Ebene rotieren. Der Zug $(LLFF)^2$ beispielsweise entspricht dann $LLFFLLFF$. 
 
 Ein Beispiel für die Gleichheit von Zügen wird nun genauer betrachtet: Wird eine Ebene viermal hintereinander gedreht, ist der Würfel wieder in der vorherigen Position. Wenn der Würfel in einer beliebigen Konfiguration $C = (\sigma, x)$ ist und ein Zug $Z \in \{ U^4, D^4, R^4, L^4, F^4, B^4\}$ ausgeführt wird, ist die Folgekonfiguration wieder $C$.
@@ -1546,14 +1546,14 @@ Das bedeutet, dass jeder Zug $Z = Z_1Z_2Z_3$ mit $Z_2 \in \{ U^4, D^4, R^4, L^4,
 Der Exponent kann in diesem Fall modulo 4 gerechnet werden, da vier Drehungen einer Ebene nacheinander wieder zum Startzustand führen. 
 Es gilt folglich für alle Konfigurationen $C$ des Würfels:
 \begin{align*}
-\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N} \ . \ C \cdot Z^n= C \cdot Z^{n \hspace*{-0.5em} \mod 4}
+\forall \  Z \in \{U, D, R, L, F, B\}, n \in \mathbb{N} \ . \ C \cdot Z^n= C \cdot Z^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
 Das gilt, da jede Ebenendrehung ($U, D, R, L, F$ oder $B$) durch eine Permutationsfunktion $\sigma$ definiert ist. $\sigma$ besteht für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Nach vier Ausführungen eines vierelementigen Zykel befindet sich dieser wieder im Ausgangszustand. Das wird genauer als \textit{Ordnung einer Permutation} in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben. Außerdem muss der Vektor $x$ für die Ausrichtung der Steine brücksichtigt werden. Dieser Vektor wird durch eine Funktion $\gamma$ verändert. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} für jeden Grundzug definiert. Der Vektor $x$ befindet sich immer wieder in seinem Ausgangszustand, wenn die gleiche Funktion $\gamma$ viermal hintereinander ausgeführt wird. Das wird in Anhang \ref{Anhang_Ausrichtungsfunktionen} für alle Grundzüge des Würfels gezeigt.
 
 
 Für eine beliebige Würfelkonfiguration $C$ und alle $n$, die Vielfache von vier sind, gilt dann:
 \begin{align*}
-\forall \  Z \in \{U, D, F, B, L, R\}, n \in \mathbb{N}, n \hspace*{-0.6em} \mod 4 = 0 \ . \ 
+\forall \  Z \in \{U, D, R, L, F, B\}, n \in \mathbb{N}, n \hspace*{-0.6em} \mod 4 = 0 \ . \ 
 C \cdot Z^n  
 = C
 \end{align*}
@@ -2073,14 +2073,14 @@ Das passiert durch eine Permutationsfunktion $\sigma$ und eine Übergangsfunktio
 Betrachtet man den physischen Würfel, so wird auffallen, dass man die einzelnen Ebenen auch gegen den Uhrzeigersinn drehen kann und somit eine Ebenendrehung invertiert. Eine Ebenendrehung um $90^\circ$ gegen den Uhrzeigersinn entspricht einer Ebenendrehung um $270^\circ$ im Uhrzeigersinn. Die Funktionen $\sigma$ und $\gamma$ sind dabei gleich.
 Die Inversen der einzelnen Ebenendrehungen werden somit folgendermaßen definiert:
 \begin{align*}
-\forall \ Z \in \{U, D, F, B, L, R\} \ . \ Z^{-1} = ZZZ = Z^3
+\forall \ Z \in \{U, D, R, L, F, B\} \ . \ Z^{-1} = ZZZ = Z^3
 \end{align*}
 Soll ein Zug invertiert werden, der aus mehreren Grundzügen besteht, so muss das hintere Element zuerst invertiert werden. Bei einem Zug $Y$ der Länge $n$ wird zuerst der $n$-te Grundzug $Z_n$ invertiert, indem er in $Z_nZ_nZ_n$ überführt wird. Daraufhin werden die weiteren Elemente des kompletten Zuges von hinten invertiert. Im Folgenden ist das inverse Element jedes Zuges definiert. Dabei ist $n \in \mathbb{N}$ und $Z_i$ repräsentiert alle Teilzüge $Z_1$ - $Z_n$, aus denen sich der Zug $Y$ zusammensetzt.
 \begin{align*}
-\forall \ Y \in \Gtwo, Y & = (Z_1 \circ Z_2 \circ ... \circ Z_n), Z_{i} \in \{U, D, F, B, L, R\} \ . \  \\
+\forall \ Y \in \Gtwo, Y & = (Z_1 \circ Z_2 \circ ... \circ Z_n), Z_{i} \in \{U, D, R, L, F, B\} \ . \  \\
 Y^{-1} & = {Z_n}^{-1} \circ {Z_{n-1}}^{-1} \circ ... \circ {Z_1}^{-1} 
 \end{align*}
-Das kann mit der oben beschriebenen Definition von $Z^{-1}$ (mit $Z \in \{U, D, F, B, L, R\} $) folgendermaßen umgeformt werden:
+Das kann mit der oben beschriebenen Definition von $Z^{-1}$ (mit $Z \in \{U, D, R, L, F, B\} $) folgendermaßen umgeformt werden:
 \begin{align*}
 Y^{-1} & = {Z_n}^{-1} \circ {Z_{n-1}}^{-1} \circ ... \circ {Z_1}^{-1} \\
 & = Z_nZ_nZ_n \circ Z_{n-1}Z_{n-1}Z_{n-1} \circ ... \circ Z_1Z_1Z_1 \\
