@@ -2097,7 +2097,7 @@ Mit diesen Ausdrücken sind die inversen Elemente für jeden Zug aus $\Gtwo$ def
 Somit ist $(\Gtwo, \circ)$ eine Gruppe, da die vier Gruppenaxiome erfüllt sind. 
 
 
-$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge ein anderes Ergebnis haben. Dieses Beispiel ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann händisch an einem Würfel ausprobiert werden.
+$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge unterschiedliche Ergebnisse haben. Dieses Beispiel ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann händisch an einem Würfel ausprobiert werden.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{RF.png}
@@ -2870,7 +2870,7 @@ Außerdem können die Ecksteine gedreht sein, es können also verschiedene Farbf
 
 Da es keine Mittelsteine im Würfel gibt, reduziert die Rotation des Würfels die Möglichkeiten um den Faktor 24, denn es gibt $6$ Seiten, die jeweils $4$ Ausrichtungen haben können. Das sind dann $6 \cdot 4 = 24$. Alle $24$ Ausrichtungsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} abgebildet.
 
-Somit ergibt es $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Konfigurationen für den Würfel. Das sind $3\, 674\, 160$ Konfigurationen.
+Somit ergeben sich $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Konfigurationen für den Würfel. Das sind $3\, 674\, 160$ Konfigurationen.
 
 %Die Anzahl der Würfelkonfigurationen ohne Berücksichtigung der Rotationen des Würfels liegt bei $8! \cdot 3^8 = 264 \, 539 \, 520$ \cite{MMFAA}. Unter der Berücksichtigung der Rotationen liegt die Anzahl bei $3\, 674\, 160$ Möglichkeiten.
 
@@ -3036,7 +3036,7 @@ $B$ & $(x_2 +2) \hspace*{-0.6em} \mod 3, (x_6 + 1)  \hspace*{-0.6em} \mod 3, x_3
 \end{adjustbox}
 \ \\
 
-Jede valide Würfelkonfiguration $C$ kann ausschließlich durch Züge erreicht werden. Züge bestehen aus Elementen der Menge $\{U, D, R, L, F, B\}$. In der Startkonfiguration ist der Summe der Vektoreinträge $0$. Der Vektor $x$ ist dabei $(0,0,0,0,0,0,0,0)$ und die Summe der Einträge ist somit 0. Es gilt:
+Jede valide Würfelkonfiguration $C$ kann ausschließlich durch Züge erreicht werden. Züge bestehen aus Elementen der Menge $\{U, D, R, L, F, B\}$. In der Startkonfiguration ist die Summe der Vektoreinträge $0$. Der Vektor $x$ ist dabei $(0,0,0,0,0,0,0,0)$ und die Summe der Einträge ist somit 0. Es gilt:
 \begin{align*}
 (\sum_{i= 1}^{8} \ (0,0,0,0,0,0,0,0)) \hspace*{-0.5em} \mod 3 = 0
 \end{align*}
@@ -3184,7 +3184,7 @@ Bei dem \Tthree Würfel ist die Anzahl der $2$-Zykel jeder Permutation gerade, d
 \subsection{Kommutatoren}
 \label{Abschnitt_Kommutatoren8}
 
-Kommutatoren wurden in Abschnitt Abschnitt \ref{Abschnitt_Kommutator} erklärt. Der Kommutator von zwei Zügen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist demnach definiert als:
+Kommutatoren wurden in Abschnitt \ref{Abschnitt_Kommutator} erklärt. Der Kommutator von zwei Zügen $Y, Z$ der Gruppe $(\Gtwo, \circ)$ ist demnach definiert als:
 \begin{align*}
 [Y,Z]=YZY^{-1}Z^{-1}
 \end{align*}
@@ -3307,7 +3307,7 @@ Die Lösungsmethode für die zweite Ebene sieht vor, dass zuerst alle Steine der
 Dieses ebenenweise Vorgehen wird üblicherweise bei dem \Tthree Würfel angewandt und wurde hier auf den \Ttwo Würfel übertragen: Beim \Tthree Würfel wird zuerst die obere Ebene gelöst, dann die Mittlere, gefolgt von der Unteren. Wird dieses Vorgehen auf den \Ttwo Würfel übertragen, können sämtliche Lösungsschritte, die die Kanten beeinflussen, ignoriert werden, da der \Ttwo Würfel keine Kantsteine hat. Außerdem gibt es keine mittlere Ebene und die entsprechenden Lösungsschritte des \Tthree Würfels werden ebenfalls nicht auf den \Ttwo Würfel übertragen.
 
 Dieser Lösungsansatz wird auch \textit{CFOP-Methode}\footnote{Die Abkürzung \textit{CFOP} bezieht sich auf das Lösen des \Tthree Würfels und steht für: \textit{Cross}, \textit{First two layers}, \textit{Orient last layer} und \textit{Permute last layer}. Das beschreibt das Vorgehen dieser Methode. \cite{DDJT}} oder \textit{Fridrich-Methode}\footnote{Nach Jessica Fridrich benannt, die diese Methode erfunden hat. $[$Jessica Fridrich, persönliche Korrenpondenz per E-Mail, s. Anhang \ref{Anhang_JessicaFridirch}$]$} genannt \cite{DDJT}.
-Er wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schrittweise ausgeführt und erklärt. Außerdem werden die Algorithmen für die beiden Ebenen in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. Dies kann als eine Anleitung zum Lösen des Würfels dienen.
+Diese Methode wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schrittweise ausgeführt und erklärt. Außerdem werden die Algorithmen für die beiden Ebenen in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. Dies kann als eine Anleitung zum Lösen des Würfels dienen.
 
 \subsubsection*{Steine ausrichten und dann positionieren}
 
@@ -3391,7 +3391,7 @@ Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. 
 \label{Abbildung_LösungMensch2}
 \end{figure}
 
-Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere Ebene ist nun gelöst und alle Steine mit weißen Farbflächen sind wie in der Startkonfiguration zueinander ausgerichtet. (s. Abbildung \ref{Abbildung_LösungMensch3}).
+Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere Ebene ist nun gelöst und alle Steine mit weißen Farbflächen sind wie in der Startkonfiguration zueinander ausgerichtet (s. Abbildung \ref{Abbildung_LösungMensch3}).
 Die Würfelkonfiguration ist $C^{IV}=(( \textit{ulb} \ \textit{urf} ) \ ( \textit{urb} \ \textit{ulf} ) \ ( \textit{drb} \ \textit{drf} \ \textit{dlf} ),(0,0,0,0,2,0,1,0))$.
 
 \begin{figure}[H]
@@ -3423,7 +3423,7 @@ Die Würfelkonfiguration ist $ C^{VI} = (( \textit{ulb} \ \textit{drb} ) \ ( \te
 Daher wird dieser Würfel nun noch zweimal um die $x$-Achse gedreht und befindet sich dann in der Konfiguration $C^{VII} =(1,0)$.
 
 Der Mensch folgt beim Lösen des \textit{Cubes} bestimmten Kombinationen, die in verschiedenen Situationen angewandt werden können.  
-In diesem Fall hat der Mensch $13$ Ebenendrehungen durchgeführt, während das Verdrehen lediglich fünf Ebenenrotationen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfigurationen anpassen und verwenden kann. 
+In diesem Fall hat der Mensch $13$ Ebenendrehungen durchgeführt, während das Verdrehen lediglich fünf Ebenendrehungen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfigurationen anpassen und verwenden kann. 
 Wenn die Verdrehung des Würfels invertiert wird ($(FUBRF^{-1})^{-1}$), ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 Es stellt sich die Frage, wie viele Ebenendrehungen für den optimalen Lösungsweg maximal erforderlich sein können. Diese Zahl wird auch \textit{God's Number} genannt. 
 
@@ -3510,7 +3510,7 @@ Diese Muster sind in den meisten Fällen zwar keine üblichen Lösungsalgorithme
 
 Die Methode, die oft als simpelste Methode zum Lösen von Zauberwürfeln beschrieben wird, ist die Schraubendrehermethode.
 Bei den üblichen \Ttwo Würfeln ist auf einer oder mehreren Seiten in der Mitte zwischen den Steinen eine Schraube zu sehen (s. links in Abbildung \ref{Abbildung_Schraubendrehermethode}).
-Um den Würfel auseinander zu bauen, muss diese Schraube gelockert werden. Daraufhin kännen die Steine ohne Probleme abgenommen werden. 
+Um den Würfel auseinander zu bauen, muss diese Schraube gelockert werden. Daraufhin können die Steine ohne Probleme abgenommen werden. 
 Dann werden die Steine neu arrangiert und der Würfel kann in der gelösten Konfiguration wieder zusammen gebaut werden.
 
 \begin{figure}[H]
@@ -3664,7 +3664,7 @@ Ausgangsposition & Algorithmus  \\
 
 Die obere Seite des Würfels zeigt nach dem Ausführen dieser Algorithmen auf die entsprechenden Ausgangspositionen ausschließlich gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann bereits richtig zueinander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
 
-Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Liste aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
+Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Tabelle aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
 
 \begin{center}
 \begin{tabular}{m{4cm} m{8cm}}
@@ -3811,7 +3811,7 @@ Der Würfel muss demnach nicht rotiert werden, da er anhand des Steines \textit{
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.15]{DLB.png}
-\caption{Würfel von hinten, farbig ist \textit{fester} Stein \textit{dlb}}
+\caption{Würfel von hinten, farbig markiert ist \textit{fester} Stein \textit{dlb}}
 \label{Abbildung_DLB}
 \end{figure}
 
@@ -3935,7 +3935,7 @@ Am Knoten $FFF$ kann man sehen, dass der Pfeil beim Hinzufügen eines weiteren $
 In diesem Abschnitt wird bewiesen, dass die Mengen $\Gtwo$ und $G_{min}$ gleichmächtig sind und somit beide eine vollständige Abbildung des \Ttwo Würfels sind. 
 
 Dazu wird zuerst gezeigt, dass die Züge der minimalen Untergruppe $(G_{min}, \circ)$ ausreichen, um alle Züge des Würfels zu repräsentieren. Bei den Elementen der Mengen $\Gtwo$ und $G_{min}$ handelt es sich um die Äquivalenzklassen der Züge. Die Elemente der Menge $\Gtwo$ können aus den Grundzügen $U, D, R, L, F$ und $B$ bestehen. Die Rotationen des Würfels werden hier nicht als Züge berücksichtigt, da die Äquivalenzklassen die Gleichheit von zwei Würfelkonfigurationen mit Rotation berücksichtigen.
-Jeder der Grundzüge $U, D, R, L, F$ und $B$ der Gruppe $(\Gtwo, \circ)$ kann durch einen der Grundzüge der minimalen Gruppe $(G_{min}, \circ)$ dargestellt werden. Der Würfel kann dann verschieden rotiert sein, das wird aber durch die Äquivalenzklassen abgefangen, die die Gleichheit von zwei Zügen mit optionaler Rotation realisieren. In der folgenden Tabelle sind die Züge der Gruppe $(\Gtwo, \circ)$ und die dazugehörigen, minimalen Repräsentanten der Untergruppe $(G_{min}, \circ)$ dargestellt:
+Jeder der Grundzüge $U, D, R, L, F$ und $B$ der Gruppe $(\Gtwo, \circ)$ kann durch einen der Grundzüge der minimalen Gruppe $(G_{min}, \circ)$ dargestellt werden. Der Würfel kann dann verschieden rotiert sein, das wird aber durch die Äquivalenzklassen abgefangen, sie die Gleichheit von zwei Zügen mit optionaler Rotation realisieren. In der folgenden Tabelle sind die Züge der Gruppe $(\Gtwo, \circ)$ und die dazugehörigen, minimalen Repräsentanten der Untergruppe $(G_{min}, \circ)$ dargestellt:
 
 \begin{center}
 \begin{tabular}{c c c c c c c }
@@ -3945,7 +3945,7 @@ $G_{min}$ & $U$ & $U$ & $R$  & $R$  & $F$  & $F$  \\
 \end{tabular}
 \end{center}
 
-So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug $ULF$ bei der Gruppe $(\Gtwo, \circ)$ eine äquivalente Würfelkonfiguration hervor, wie der Zug \textit{URU} bei der Untergruppe $(G_{min}, \circ)$. Dadurch, dass er Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
+So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug $ULF$ bei der Gruppe $(\Gtwo, \circ)$ eine äquivalente Würfelkonfiguration hervor, wie der Zug \textit{URU} bei der Untergruppe $(G_{min}, \circ)$. Dadurch, dass der Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
 
 Wird also beispielweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, um der minimalen Abbildung zu entsprechen, so müssen die folgenden Züge entsprechend verändert werden. Bei dem Zug $L$ werden die Folgezüge wie folgt verändert:
 \begin{align*}
@@ -3959,7 +3959,7 @@ Bei den Zügen $U, R, F$ bleiben die Folgezüge unverändert, da diese Züge in 
 U \ L \ F \Rightarrow U \ R \ \rho_L(F) \Rightarrow U \ R \ U
 \end{align*}
 
-Die Überführungsfunktionen alle Grundzüge sind im Folgenden definiert:
+Die Überführungsfunktionen aller Grundzüge sind im Folgenden definiert:
 \begin{alignat*}{3}
  & \rho_D(U) = U \qquad \qquad  && \rho_D(D) = D  \qquad \qquad && \rho_D(R) = F  \\
  & \rho_D(L) = B    && \rho_D(F) = L    && \rho_D(B) =  R \\
@@ -4307,7 +4307,7 @@ Die anderen Grundzüge verändern den Vektor bei vierfacher Ausführung folgende
 & =  \left( g(h(g(h(x_1)))), h(g(h(g(x_2)))), x_3, x_4, h(g(h(g(x_5)))), g(h(g(h(x_6)))), x_7, x_8 \right)
 \end{align*}
 
-Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleichen Zuges immer aus den Funktionsverschachtelungen $g(h(g(h(x))))$ und $h(g(h(g(x))))$ bestehen. Daher: muss folgendes gezeigt werden:
+Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleichen Zuges immer aus den Funktionsverschachtelungen $g(h(g(h(x))))$ und $h(g(h(g(x))))$ bestehen. Daher muss folgendes gezeigt werden:
 
 \begin{minipage}[H]{0.5\textwidth}
 	\begin{align*}
