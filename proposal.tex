@@ -794,7 +794,7 @@ Aus $(x \sim y)$ und $(y \sim z)$ folgt $(x \sim z)$. & (Transitivität) \\
 
 Für die Menge $A=\{ 1, 2, 3, 4, 5 \}$ wird die Relation $ x < y$ betrachtet:
 
-Bei der Relation $< $ handelt es sich nicht um eine Äquivalenrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Die Eigenschaft der Symmetrie wird ebenfalls verletzt.
+Bei der Relation $< $ handelt es sich nicht um eine Äquivalenzrelation, da die Eigenschaft der Reflexivität nicht gilt: $1 \nless 1$. Die Eigenschaft der Symmetrie wird ebenfalls verletzt.
 
 
 \end{bsp}
@@ -944,7 +944,7 @@ Sei die Permutation $\pi = (1 \ 5 \ 2)\ (3 \ 4)$. Das \textit{kleinste gemeinsam
 \begin{definition}[Komposition von Permutationen]
 Seien $\pi$ und $\tau$ zwei $n$-stellige Permutationen mit $n \in \mathbb{N}$. Die Hintereinanderausführung dieser Permutationen wird als $\tau \diamond \pi$ geschrieben. Dabei wird zuerst $\pi$ ausgeführt und das Ergebnis auf $\tau$ angewendet.
 \end{definition}
-Üblicherweise wird die Komposition von Permutationen mit dem $\circ$-Operator geschrieben. Dieser dient in dieser Arbeit bereits als Verknüpfungsoperator der Gruppe des \Ttwo Würfels. Deshalb wird die Komposition von Permutationan im Verlauf dieser Arbeit mit dem $\diamond$-Operator geschrieben.
+Üblicherweise wird die Komposition von Permutationen mit dem $\circ$-Operator geschrieben. Dieser dient in dieser Arbeit bereits als Verknüpfungsoperator der Gruppe des \Ttwo Würfels. Deshalb wird die Komposition von Permutationen im Verlauf dieser Arbeit mit dem $\diamond$-Operator geschrieben.
 
 \begin{bsp}[Komposition von Permutationen]
 Seien $\pi$ und $\tau$ Permutationen mit $\pi = (1 \ 2) \ (3 \ 5) \ (4)$ und $\tau = (1 \ 4\ 3) \ (2 \ 5)$. Die Komposition der Zykel $\tau \diamond \pi$ ergibt Folgendes:
@@ -1127,7 +1127,7 @@ Außerdem wird die Veränderung der Würfelkonfiguration an einem Beispielzug sc
 
 \label{Abschnitt_PositionenDerSteineImWürfel}
 
-Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) enthält Funktionen, die die Übergänge der Würfelsteine darstellen. Die Übergänge beschreiben die Positions\-änderung der Steine bei einem Zug. Die Funktion $\sigma$ bildet jede Würfelposition auf eine neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschitt \ref{Abschnitt_PermutationZykel} erklärt. 
+Die Menge der bijektiven Funktionen $\sigma$ (für jede Ebenenrotation) enthält Funktionen, die die Übergänge der Würfelsteine darstellen. Die Übergänge beschreiben die Positions\-änderung der Steine bei einem Zug. Die Funktion $\sigma$ bildet jede Würfelposition auf eine neue Position ab. Es handelt sich dabei um eine Permutation. Permutationen wurden in Abschnitt \ref{Abschnitt_PermutationZykel} erklärt. 
 
 Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_SteinpositionNamen} und \ref{Abbildung_SteinpositionNamenFoldetOut} dargestellt. Die einzelnen Steinpositionen werden mit den Kürzeln benannt, die ihre Position mit \textit{up, down, right, left, front} und \textit{back} beschreiben.
 
@@ -1755,7 +1755,7 @@ Da alle Vierfachen der einelementigen Rotationen (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {
 \forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
 
-Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung annähern kann. Es gibt für die Roationen also eine maximale Tiefe, wobei jede weitere Rotation den Würfel wieder näher zu seiner Ausgangsrotation bringt.
+Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung annähern kann. Es gibt für die Rotationen also eine maximale Tiefe, wobei jede weitere Rotation den Würfel wieder näher zu seiner Ausgangsrotation bringt.
 In diesem Abschnitt wird angegeben, wie oft der Würfel maximal um 90$^\circ$ rotiert werden muss, um zurück in die Ausgangsrotation zu gelangen. Bei der Ausgangsrotation ist die weiße Seite oben.
 
 Da der Würfel sechs Seiten hat, die jeweils vier verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel. In Abbildung \ref{AbbildungWürfelRotationWeisseSeite} sind die vier verschiedenen Ausrichtungen des Würfels zu sehen, wenn die weiße Seite als obere Seite angenommen wird. In den Abbildungen wird von einem gelösten Würfel ausgegangen. Für die anderen fünf Seiten gibt es ebenfalls vier Möglichkeiten der Ausrichtung. Alle Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} in Abbildung \ref{AbbildungWürfelRotationAlleSeiten} dargestellt.
@@ -1917,7 +1917,7 @@ Die Transitivität gilt somit für die Relation $\sim$.
 
 \end{description}
 
-Da die Eigenschaften der Reflexivität, Symmetrie und Transitivität für die Relation $\sim$ gelten, handelt es sich um eine Äquvalenzrelation.
+Da die Eigenschaften der Reflexivität, Symmetrie und Transitivität für die Relation $\sim$ gelten, handelt es sich um eine Äquivalenzrelation.
 
 
 
@@ -2454,9 +2454,9 @@ Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel angewendet wird, kommen 
 
 \subsubsection*{Algorithmus}
 
-Es wurde bereits gezeigt, dass sich eine Würfelkonfiguration wiederholt, wenn ein beliebiger Zug wiederholt angewandt wird. Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird. Dazu wird der Algorithmus \ref{Algorithmus_OrdnungPermutation} zur Berechnung der Ordnung einer Permutation benötigt.
+Es wurde bereits gezeigt, dass sich eine Würfelkonfiguration wiederholt, wenn ein beliebiger Zug wiederholt angewandt wird. Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechnung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird. Dazu wird der Algorithmus \ref{Algorithmus_OrdnungPermutation} zur Berechnung der Ordnung einer Permutation benötigt.
 
-Der Algorithmus braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Einen beliebigen Zug $Z$ aus $\Gtwo$ und eine beliebige Ausgangskonfiguration $C$ des Würfels. Die Ausgabe ist die Ordnung eines Zuges.
+Der Algorithmus braucht für die Berechnung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Einen beliebigen Zug $Z$ aus $\Gtwo$ und eine beliebige Ausgangskonfiguration $C$ des Würfels. Die Ausgabe ist die Ordnung eines Zuges.
 
 
 \begin{minipage}[H]{0.15\textwidth}
@@ -2492,7 +2492,7 @@ Der Algorithmus braucht für die Berechung der Ordnung eines Zuges $Z$ zwei Eing
 
 \vspace*{1em}
 
-In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ intialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{Count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
+In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ initialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{Count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
 Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zu Beginn ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
 Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das \textit{kleinste gemeinsame Vielfache} von diesen beiden Werten (Zeile 8).
@@ -2594,7 +2594,7 @@ Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt
 
 \label{Abschnitt_UntergruppenBeispiele}
 
-Wie bereits in Abschnitt \ref{Abschnitt_Untergruppe} erklärt, hat jede Gruppe zwei triviale Untergruppen. Die beiden trvialen Untergruppen von $(\Gtwo, \circ)$ werden hier $(H_N, \circ)$ und $(H_G, \circ)$ genannt: 
+Wie bereits in Abschnitt \ref{Abschnitt_Untergruppe} erklärt, hat jede Gruppe zwei triviale Untergruppen. Die beiden trivialen Untergruppen von $(\Gtwo, \circ)$ werden hier $(H_N, \circ)$ und $(H_G, \circ)$ genannt: 
 \begin{align*}
 (H_N, \circ) \leqslant (\Gtwo, \circ)\textit{ und }(H_G, \circ) \leqslant (\Gtwo, \circ)
 \end{align*} 
@@ -2602,10 +2602,10 @@ Die Untergruppe $(H_N, \circ)$ enthält in der Trägermenge $H_N$ ausschließlic
 \begin{align*}
 (H_N, \circ) = (\{N\}, \circ)\textit{ und }  (H_G, \circ) = (\Gtwo, \circ)
 \end{align*}
-Im Rahmen dieser Arbeit kann nur auf einen Teil der Unterguppen von $(\Gtwo, \circ)$ eingegangen werden. 
-Der folgende Abschnitt beschreibt zwei anschauliche Untergruppen des Würfels. Diese Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den 3x3x3-Würfel genannt. Hier werden zwei seiner Untergruppen auf den 2x2x2 übertragen: 
+Im Rahmen dieser Arbeit kann nur auf einen Teil der Untergruppen von $(\Gtwo, \circ)$ eingegangen werden. 
+Der folgende Abschnitt beschreibt zwei anschauliche Untergruppen des Würfels. Diese Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den \Tthree Würfel genannt. Hier werden zwei seiner Untergruppen auf den \Ttwo Würfel übertragen: 
 \begin{itemize}
-\item Die Untergruppe $(H_{E1}, \circ)$ lässt nur die Rotation einer Ebene zu. Die Züge der Trägermenge erreichen lediglich vier Würfelkonfigurationen (sowohl beim 2x2x2- als auch beim 3x3x3-Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
+\item Die Untergruppe $(H_{E1}, \circ)$ lässt nur die Rotation einer Ebene zu. Die Züge der Trägermenge erreichen lediglich vier Würfelkonfigurationen (sowohl beim \Ttwo als auch beim \Tthree Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
 
 Da die Trägermenge $H_{E1}$ die Äquivalenzklassen aller möglichen Züge der Untergruppe beinhaltet, sind hier genau vier Elemente enthalten. Jeder Zug, der durch die Drehung einer Ebene ausgeführt wird, ist ein Repräsentant dieser vier Züge.
 
@@ -2900,7 +2900,7 @@ Somit ergeben sich $(3^7 \cdot 8!) \cdot \frac{1}{24}$ mögliche Konfigurationen
 
 \label{Abschnitt_MächtigkeitVonG}
 
-Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist die Anzahl der Elemente von $\Gtwo$. Das wird auch als $|\Gtwo|$ bezeichnet. Die Mächtigkeit der Gruppe entspricht der Anzahl der validen Würfelkonfigurationen, da $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt jedes Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enhalten. Außerdem wurden die Äquivalenzklassen mit der Menge aller Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ entspricht der Anzahl der validen Würfelkonfigurationen.
+Die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ ist die Anzahl der Elemente von $\Gtwo$. Das wird auch als $|\Gtwo|$ bezeichnet. Die Mächtigkeit der Gruppe entspricht der Anzahl der validen Würfelkonfigurationen, da $\Gtwo$ die Äquivalenzklassen aller möglichen Züge enthält. Wenn zwei Züge mit gleicher Ausgangskonfiguration die gleiche Folgekonfiguration des Würfels hervorrufen, sind sie Repräsentanten der gleichen Äquivalenzklasse in $\Gtwo$. Somit bringt jedes Element von $\Gtwo$ den Würfel in eine andere Würfelkonfiguration und es sind keine äquivalenten Züge doppelt enthalten. Außerdem wurden die Äquivalenzklassen mit der Menge aller Züge des Würfels gebildet. Somit ist jeder mögliche Zug enthalten und $|\Gtwo|$ entspricht der Anzahl der validen Würfelkonfigurationen.
 
 Da die Mächtigkeit der Gruppe $(\Gtwo,\circ)$ der Anzahl der validen Würfelkonfigurationen entspricht, setzt sie sich aus dem Produkt der Konfigurationsparameter $\sigma$ und $x$ zusammen. Außerdem müssen die Äquivalenzen bezüglich der Rotationen berücksichtigt werden.
 
@@ -3091,7 +3091,7 @@ Die übliche, händische Methode zum Lösen eines Zauberwürfels erfolgt durch d
 Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 In diesem Kapitel wird die Anzahl der $2$-Zykel der Züge untersucht und Kommutatoren erklärt.
-Anschließend wird beispielhaft ein Lösungsvorgang eines Menschens schrittweise beschrieben und erklärt.
+Anschließend wird beispielhaft ein Lösungsvorgang eines Menschen schrittweise beschrieben und erklärt.
 Außerdem werden Muster des Würfels algorithmisch beschrieben und grafisch dargestellt.
 Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen.
 
@@ -3306,7 +3306,7 @@ Die Lösungsmethode für die zweite Ebene sieht vor, dass zuerst alle Steine der
 
 Dieses ebenenweise Vorgehen wird üblicherweise bei dem \Tthree Würfel angewandt und wurde hier auf den \Ttwo Würfel übertragen: Beim \Tthree Würfel wird zuerst die obere Ebene gelöst, dann die Mittlere, gefolgt von der Unteren. Wird dieses Vorgehen auf den \Ttwo Würfel übertragen, können sämtliche Lösungsschritte, die die Kanten beeinflussen, ignoriert werden, da der \Ttwo Würfel keine Kantsteine hat. Außerdem gibt es keine mittlere Ebene und die entsprechenden Lösungsschritte des \Tthree Würfels werden ebenfalls nicht auf den \Ttwo Würfel übertragen.
 
-Dieser Lösungsansatz wird auch \textit{CFOP-Methode}\footnote{Die Abkürzung \textit{CFOP} bezieht sich auf das Lösen des \Tthree Würfels und steht für: \textit{Cross}, \textit{First two layers}, \textit{Orient last layer} und \textit{Permute last layer}. Das beschreibt das Vorgehen dieser Methode. \cite{DDJT}} oder \textit{Fridrich-Methode}\footnote{Nach Jessica Fridrich benannt, die diese Methode erfunden hat. $[$Jessica Fridrich, persönliche Korrenpondenz per E-Mail, s. Anhang \ref{Anhang_JessicaFridirch}$]$} genannt \cite{DDJT}.
+Dieser Lösungsansatz wird auch \textit{CFOP-Methode}\footnote{Die Abkürzung \textit{CFOP} bezieht sich auf das Lösen des \Tthree Würfels und steht für: \textit{Cross}, \textit{First two layers}, \textit{Orient last layer} und \textit{Permute last layer}. Das beschreibt das Vorgehen dieser Methode. \cite{DDJT}} oder \textit{Fridrich-Methode}\footnote{Nach Jessica Fridrich benannt, die diese Methode erfunden hat. $[$Jessica Fridrich, persönliche Korrespondenz per E-Mail, s. Anhang \ref{Anhang_JessicaFridirch}$]$} genannt \cite{DDJT}.
 Diese Methode wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schrittweise ausgeführt und erklärt. Außerdem werden die Algorithmen für die beiden Ebenen in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. Dies kann als eine Anleitung zum Lösen des Würfels dienen.
 
 \subsubsection*{Steine ausrichten und dann positionieren}
@@ -3545,7 +3545,7 @@ Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters un
 \subsection{Algorithmen für die erste Ebene}
 \label{Abschnitt_AlgorithmenErsteEbene}
 
-In diesem Abschnitt werden Algorithmen zum Lösen der ersten Ebene mit der Fridrich-Methode beschrieben. Bei dieser Methode werden im ersten Schritt die vier Steine der oberen Ebene richtig ausgerichtet und richtig zueinander angeordet. Die Vorgehensweise dieser Methode wurde bereits in Abschnitt \ref{Abschnitt_Lösungsansätze} beschrieben. 
+In diesem Abschnitt werden Algorithmen zum Lösen der ersten Ebene mit der Fridrich-Methode beschrieben. Bei dieser Methode werden im ersten Schritt die vier Steine der oberen Ebene richtig ausgerichtet und richtig zueinander angeordnet. Die Vorgehensweise dieser Methode wurde bereits in Abschnitt \ref{Abschnitt_Lösungsansätze} beschrieben. 
 
 Die Fridrich-Methode ist ein Lösungsansatz für den \Tthree Würfel, der auf den \Ttwo übertragen werden kann.
 Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel lediglich rotiert werden muss, um eine weiße Farbfläche zu finden.
@@ -3719,7 +3719,7 @@ Mit den Algorithmen aus dieser Anleitung kann jede valide Konfiguration eines \T
 \label{Kapitel_MinUntergruppe}
 
 In diesem Kapitel wird die Gruppe des \Ttwo Würfels mit minimalen Zügen realisiert. Die Gruppe des $(\Gtwo, \circ)$ ist eine vollständige Abbildung des \Ttwo Würfels -- sie ist aber nicht minimal. Solch eine minimale Abbildung wird in diesem Kapitel definiert. Diese minimale Abbildung ist eine Untergruppe von $(\Gtwo, \circ)$.
-Die Untergruppe der minimalen Abbildung des \Ttwo Würfels wird $(G_{min}, \circ)$ genannt. Die Menge $G_{min}$ enthält die Äquivalenzklassen der minmalen Züge des Würfels.
+Die Untergruppe der minimalen Abbildung des \Ttwo Würfels wird $(G_{min}, \circ)$ genannt. Die Menge $G_{min}$ enthält die Äquivalenzklassen der minimalen Züge des Würfels.
 Die Menge der minimalen Grundzüge erzeugt die Untergruppe $(G_{min}, \circ)$.
 
 %
@@ -3947,7 +3947,7 @@ $G_{min}$ & $U$ & $U$ & $R$  & $R$  & $F$  & $F$  \\
 
 So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug \textit{ULF} bei der Gruppe $(\Gtwo, \circ)$ eine äquivalente Würfelkonfiguration hervor, wie der Zug \textit{URU} bei der Untergruppe $(G_{min}, \circ)$. Dadurch, dass der Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
 
-Wird also beispielweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, um der minimalen Abbildung zu entsprechen, so müssen die folgenden Züge entsprechend verändert werden. Bei dem Zug $L$ werden die Folgezüge wie folgt verändert:
+Wird also beispielsweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, um der minimalen Abbildung zu entsprechen, so müssen die folgenden Züge entsprechend verändert werden. Bei dem Zug $L$ werden die Folgezüge wie folgt verändert:
 \begin{align*}
 \rho_L(U) = B \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \rho_L(D) = F \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \   \rho_L(R) = R \\
 \rho_L(L) = L \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \rho_L(F) = U \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \rho_L(B) = D 
@@ -4280,7 +4280,7 @@ Zuerst wird die Veränderung des Vektors $x$ anhand des Zuges $R$ beispielhaft b
 \caption{Vektor $x$ nach $\gamma_R ( \gamma_R ( \gamma_R (\gamma_R(x))))$}
 \end{figure}
 
-Im Folgenden ist die Veränderung des Vektors $x$ durch den Zug $R^4$ zu sehen. Die Funktionen $g$ und $h$ werden bei einer Verschachtelung von $\gamma_R$ ebenfalls verschachtelt.
+Im Folgenden ist die Veränderung des Vektors $x$ durch den Zug $R^4$ zu sehen. Die Funktionen $g$ und $h$ werden bei einer Verschachtlung von $\gamma_R$ ebenfalls verschachtelt.
 \begin{align*}
 & \gamma_R (\gamma_R (\gamma_R (\gamma_R ((x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )))) \\
 = \ & (x_1, \ g(h(g(h(x_2)))), \ x_3, \ h(g(h(g(x_4)))), \ x_5, \ h(g(h(g(x_6)))), \ x_7, \ g(h(g(h(x_8)))) )
@@ -4307,7 +4307,7 @@ Die anderen Grundzüge verändern den Vektor bei vierfacher Ausführung folgende
 & =  \left( g(h(g(h(x_1)))), h(g(h(g(x_2)))), x_3, x_4, h(g(h(g(x_5)))), g(h(g(h(x_6)))), x_7, x_8 \right)
 \end{align*}
 
-Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleichen Zuges immer aus den Funktionsverschachtelungen $g(h(g(h(x))))$ und $h(g(h(g(x))))$ bestehen. Daher muss folgendes gezeigt werden:
+Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleichen Zuges immer aus den Funktionsverschachtlungen $g(h(g(h(x))))$ und $h(g(h(g(x))))$ bestehen. Daher muss folgendes gezeigt werden:
 
 \begin{minipage}[H]{0.5\textwidth}
 	\begin{align*}
