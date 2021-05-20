@@ -1408,7 +1408,7 @@ Das oben genannte Beispiel des Zuges $R$ (s. Abbildung \ref{Abbildung_XnachZugR}
 & = (0, 2, 0, 1, 0, 1, 0, 2)
 \end{align*}
 
-Der Vektor $x$ lautet nach dem Zug $R$ von der Startkonfiguration ausgehend: $(0, 2, 0, 1, 0, 1, 0, 2)$. 
+Der Vektor $x$ lautet nach dem Zug $R$ von der Startkonfiguration ausgehend somit $(0, 2, 0, 1, 0, 1, 0, 2)$. 
 
 %
 %
@@ -1712,7 +1712,7 @@ Beim Betrachten der Rotationen und der dazugehörigen Funktionen fällt auf, das
 & X_r && \Leftrightarrow && B^{-1} F  \\
 & N_R && \Leftrightarrow && N 
 \end{alignat*}
-Jede Rotation kann also durch die Ebenendrehungen von zwei gegenüberliegenden Würfelseiten dargestellt werden.
+Jede Rotation kann also durch die Ebenendrehungen von zwei gegenüberliegenden Würfel\-seiten dargestellt werden.
 
 
 
@@ -2744,7 +2744,7 @@ Da das Inverse eines Zuges $Z$ als $ZZZ$ definiert ist, gilt für die Züge $FF$
 (FF)^{-1} = F^{-1}F^{-1} = FFFFFF = FF \\
 (RR)^{-1} = R^{-1}R^{-1} = RRRRRR = RR
 \end{align*}
-Die Inversen von $FF$ und $RR$ sind demnach $FF$ und $RR$. Deshalb ist der Zug $RRFFRRFFRR$ äquivalent zu dem Zug $FF$, da dieser äquivalent zu $(FF)^{-1}$ ist. Es gilt somit für eine beliebige Würfelkonfiguration $C$:
+Die Inversen der Züge $FF$ und $RR$ sind demnach $FF$ und $RR$. Deshalb ist der Zug $RRFFRRFFRR$ äquivalent zu dem Zug $FF$, da dieser äquivalent zu $(FF)^{-1}$ ist. Es gilt somit für eine beliebige Würfelkonfiguration $C$:
 \begin{align*}
 C \cdot RRFFRRFFRR = C \cdot FF
 \end{align*}
@@ -3120,7 +3120,7 @@ Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf de
 
 Die Position der Würfelsteine wird durch die Permutationsfunktionen $\sigma$ beschrieben.  $\sigma$ besteht aus verschiedenen Zykeln in Abhängigkeit von der Position der Steine. Das wurde in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert und beschrieben. Jeder $n$-Zykel kann als Produkt von $2$-Zykeln geschrieben werden. Wenn $n$ dabei gerade ist, hat das dazugehörige $2$-Zykel-Produkt eine ungerade Anzahl an $2$-Zykeln und anders herum. \cite{TD}
 
-Jede Würfelkonfiguration kann durch eine Kombination der Ebenendrehungen $U, D, R, L, F, B$ (und der Rotationen des Würfels) erreicht werden. 
+Jede Würfelkonfiguration kann durch eine Kombination der Ebenendrehungen \textit{U}, \textit{D}, \textit{R}, \textit{L}, \textit{F}, \textit{B} (und der Rotationen des Würfels) erreicht werden. 
 Die Zykel der einzelnen Ebenendrehungen des Würfels sind im Folgenden als Produkt von $2$-Zykeln geschrieben:
 \begin{alignat*}{2}
 \sigma_U &  = \ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) &&  = \ ( \textit{ulf} \ \textit{ulb} )   \ 
@@ -3216,7 +3216,7 @@ C \cdot [Z, Z] & = C \cdot ZZZ^{-1}Z^{-1} \\
 Somit kommutieren alle Zugpaare aus $\Gtwo$, die aus zwei gleichen Zügen bestehen.
 
 
-Es kommutieren nicht ausschließlich gleiche Zugpaare, sondern auch Züge, die gegenüberliegende Ebenen beeinflussen, da sie nicht dieselben Steine bewegen. Diese sogenannten \textit{elementfremden Zykel} kommutieren \cite{OS}. Auch bei dem Vektor $x$ werden dann keine gemeinsamen Einträge beeinflusst.
+Es kommutieren nicht ausschließlich gleiche Zugpaare, sondern auch Züge, die gegen\-über\-liegende Ebenen beeinflussen, da sie nicht dieselben Steine bewegen. Diese sogenannten \textit{elementfremden Zykel} kommutieren \cite{OS}. Auch bei dem Vektor $x$ werden dann keine gemeinsamen Einträge beeinflusst.
 Das sind dann die folgenden Kommutatoren, mit $n, m \in \mathbb{N}$:
 \begin{align*}
 [U^n, D^m] \ \ \ \  \ \ \ [F^n, B^m] \ \ \ \ \ \ \ [L^n, R^m] \\
@@ -3378,7 +3378,7 @@ Nun ist $x_{1-4}''=(0,2,0,1)$. Der Würfel ist in Abbildung \ref{Abbildung_Lösu
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{0201.png}
-\caption[Lösung von Mensch: Schritt 1]{Lösung von Mensch: Schritt 1}
+\caption{Lösung durch einen Menschen: Schritt 1}
 \label{Abbildung_LösungMensch1}
 \end{figure}
 
@@ -3387,7 +3387,7 @@ Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt2.png}
-\caption[Lösung von Mensch: Schritt 2]{Lösung von Mensch: Schritt 2}
+\caption{Lösung durch einen Menschen: Schritt 2}
 \label{Abbildung_LösungMensch2}
 \end{figure}
 
@@ -3397,7 +3397,7 @@ Die Würfelkonfiguration ist $C^{IV}=(( \textit{ulb} \ \textit{urf} ) \ ( \texti
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt3.png}
-\caption[Lösung von Mensch: Schritt 3]{Lösung von Mensch: Schritt 3}
+\caption{Lösung durch einen Menschen: Schritt 3}
 \label{Abbildung_LösungMensch3}
 \end{figure} 
 
@@ -3406,7 +3406,7 @@ Für den nächsten Schritt rotiert der Mensch den Würfel, hier zweimal um die $
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt4.png}
-\caption[Lösung von Mensch: Schritt 4]{Lösung von Mensch: Schritt 4}
+\caption{Lösung durch einen Menschen: Schritt 4}
 \label{Abbildung_LösungMensch4}
 \end{figure} 
 
@@ -3415,7 +3415,7 @@ Dann führt der Lösende den Zug $\textit{RUR}^{-1}U^{-1} R^{-1}\textit{FRF}^{-1
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.12]{menschSchritt5.png}
-\caption[Lösung von Mensch: Schritt 5]{Gelöster \textit{Cube} mit weißer Seite unten}
+\caption[Lösung durch einen Menschen: Schritt 5]{Gelöster \textit{Cube} mit weißer Seite unten}
 \label{Abbildung_LösungMensch5}
 \end{figure} 
 
@@ -3888,7 +3888,7 @@ Somit ist bei der minimalen Abbildung des \Ttwo Würfels keine Rotation des Wür
 \subsection{Erzeuger und Cayleygraph von $G_{min}$}
 \label{Abschnitt_CayleygraphMIN}
 
-Die Untergruppe $(G_{min}, \circ)$ wird durch $\{U, R, F\}$ erzeugt. Der vollständige Cayleygraph dieser Untergruppe hat  $3 \ 647 \ 160$ Mitglieder. Das ist die Anzahl der validen Würfelkonfigurationen. %Jede Äquivalenzklasse aus $G_{min}$ steht für die Züge, durch die man eine bestimmte Würfelkonfiguration erreichen kann.
+Die Untergruppe $(G_{min}, \circ)$ wird durch $\{U, R, F\}$ erzeugt. Der vollständige Cayleygraph dieser Untergruppe hat  $3 \ 647 \ 160$ Mitglieder. Das ist die Anzahl der validen Würfel\-konfigurationen. %Jede Äquivalenzklasse aus $G_{min}$ steht für die Züge, durch die man eine bestimmte Würfelkonfiguration erreichen kann.
 Da die Generierung des vollständigen Cayleygraphen zu umfangreich für den Rahmen dieser Arbeit ist, 
 zeigt Abbildung \ref{Abbildung_Cayleygraph_min} lediglich einen Ausschnitt dieses Graphen. Die roten Pfeile repräsentieren den Zug $F$. $R$ wird durch blau repräsentiert und $U$ durch grün. 
 
@@ -4187,7 +4187,7 @@ Außerdem wurden in dieser Arbeit Kommutatoren behandelt. Um aussagekräftige Er
 \newpage
 
 
-\begin{spacing}{1.0}
+\begin{spacing}{0.9}
 \listoffigures
 \end{spacing}
 
