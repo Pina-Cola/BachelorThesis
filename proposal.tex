@@ -1269,7 +1269,7 @@ In der Startkonfiguration sind alle $x_i = 0$, der Vektor $x$ ist dann $(0, 0, 0
 
 Im Folgenden wird beispielhaft der Zug $R$ ausgeführt und die Veränderung der Farbflächennummerierung zur Veranschaulichung dargestellt (s. Abbildung \ref{Abbildung_XnachZugR}). $R$ ist eine Drehung der rechten Ebene um 90$^\circ$ im Uhrzeigersinn. 
 Die Kennzeichnungen $x_{1-8}$ bleiben an der gleichen Position. Die Nummerierungen  der Farbflächen ändern sich mit Drehung der Ebene und ermöglichen so eine Zuordnung der Ecksteinausrichtung. 
-Die linke Seite des Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0, da sie der der linken Hälfte des Würfels zugeordnet sind.
+Die linke Seite des Würfels wird dabei nicht beeinflusst. Deshalb sind die Flächen an den Positionen $x_1, x_3, x_5, x_7$ alle 0, da sie der linken Hälfte des Würfels zugeordnet sind.
 Die anderen Positionen von $x$ zeigen nun aber andere Farbflächen: 
 \begin{align*}
 x_2 = 2 \ \ \ \ \ \ x_4 = 1 \ \ \ \ \ \ x_6 = 1 \ \ \ \ \ \ x_8 = 2  
@@ -1338,7 +1338,7 @@ Die anderen Funktionen für die Veränderung des Vektors $x$ werden ebenfalls du
 
 
 
-Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ arbeiten analog. Da diese Funktionen in Hinblick auf Ein- und Aufgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags nach dem Zug $R$ aus.
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ arbeiten analog. Da diese Funktionen in Hinblick auf Ein- und Ausgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags nach dem Zug $R$ aus.
 \\
 
 \begin{minipage}{0.35\textwidth}
@@ -1596,7 +1596,7 @@ Um die Drehungen zu benennen, werden die Achsen des Würfels als $x, y$ und $z$ 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.13]{Pfeile.png}
-\caption[Würfel mit $x, y$ und $z$-Achsen]{Würfel mit $x, y$ und $z$-Achsen}
+\caption[Würfel mit $x, y$ und $z$-Achsen]{Würfel mit $x$-, $y$- und $z$-Achse}
 \label{Abbildung_Rotationsachsen}
 \end{figure} 
 
@@ -1639,7 +1639,7 @@ Anhand der Rotation $Z_r$, also einer Rotation des kompletten Würfels um die $z
 \caption{Würfel nach Rotation um $z$-Achse}
 \label{Abbildung_WürfelNachRotationUmZAchse}
 \end{figure}
-Die Permutationsfunktion der Rotationen wird im Folgenden $\delta$ genannt. Da bei den Rotationen alle Steine die Position wechseln, muss es für jede Rotation acht Funktionen $\delta$ geben, für jeden Eckstein eine Funktion:
+Die Permutationsfunktion der Rotationen wird im Folgenden $\delta$ genannt. Da bei den Rotationen alle Steine die Position wechseln, muss es für jede Rotation eine Funktion $\delta$ geben, die jeden der acht Ecksteine auf einen anderen abbildet:
 \begin{alignat*}{4}
 & \delta_{Z_r}(\textit{urf}) = \textit{ulf} \ \ \ \ \ \ && \delta_{Z_r}(\textit{ulf}) = \textit{ulb} \ \ \ \ \ \ && \delta_{Z_r}(\textit{ulb}) = \textit{urb} \ \ \ \ \ \ && \delta_{Z_r}(\textit{urb}) = \textit{urf} \\
 & \delta_{Z_r}(\textit{drf}) = \textit{dlf} \ \ \ \ \ \ && \delta_{Z_r}(\textit{dlf}) = \textit{dlb} \ \ \ \ \ \ \ && \delta_{Z_r}(\textit{dlb}) = \textit{drb} \ \ \ \ \ \ && \delta_{Z_r}(\textit{drb}) = \textit{drf}
@@ -1750,13 +1750,13 @@ Dabei ist $N_R$ die leere Rotation und $T$ ist eine beliebige Rotation des Würf
 T^{\hspace*{0.1em}0}=N_R
 \end{align*}
 Jede einelementige Rotation ist durch die Funktionen $\delta$ und $\beta$ definiert. Jede dieser Funktionen $\delta$ besteht in der Zykelschreibweise aus zwei 4-Zykeln. Diese Zykel befinden sich nach vier Ausführungen wieder in ihrem Ausgangszustand. Darauf wird in Abschnitt \ref{Abschnitt_OrdnungPermutationen} weiter eingegangen. Außerdem wird bei jeder Rotation der Vektor $x$ durch eine Funk\-tion $\beta$ verändert. Der Vektor bleibt nach vierfachem Ausführen von $\beta$ unverändert. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}.
-Da alle vierfachen der einelementigen Rotationen (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R$) keine Veränderung hervorrufen, kann der Exponent der Rotationen modulo 4 gerechnet werden. Dabei ist $C$ eine beliebige Würfelkonfiguration:
+Da alle Vierfachen der einelementigen Rotationen (${Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l} , N_R$) keine Veränderung hervorrufen, kann der Exponent der Rotationen modulo 4 gerechnet werden. Dabei ist $C$ eine beliebige Würfelkonfiguration:
 \begin{align*}
 \forall \ T \in \{{Z_r}, {Z_l}, {Y_r}, {Y_l}, {X_r}, {X_l}, N_R \}, n \in \mathbb{N} \ . \ C \cdot T^n=C \cdot T^{n \hspace*{-0.5em} \mod 4}
 \end{align*}
 
 Anhand dieser Aussage ist ersichtlich, dass der Würfel sich nach mehreren Rotationen wieder seiner Ausgangsausrichtung annähern kann. Es gibt für die Roationen also eine maximale Tiefe, wobei jede weitere Rotation den Würfel wieder näher zu seiner Ausgangsrotation bringt.
-In diesem Abschnitt wird angegeben, wie oft der Würfel maximal um 90$^\circ$ rotiert werden muss, um zurück in die Ausgangsposition zu gelangen.
+In diesem Abschnitt wird angegeben, wie oft der Würfel maximal um 90$^\circ$ rotiert werden muss, um zurück in die Ausgangsrotation zu gelangen. Bei der Ausgangsrotation ist die weiße Seite oben.
 
 Da der Würfel sechs Seiten hat, die jeweils vier verschiedene Ausrichtungen haben können, gibt es $4 \cdot 6 = 24$ verschiedene Rotationsmöglichkeiten für den Würfel. In Abbildung \ref{AbbildungWürfelRotationWeisseSeite} sind die vier verschiedenen Ausrichtungen des Würfels zu sehen, wenn die weiße Seite als obere Seite angenommen wird. In den Abbildungen wird von einem gelösten Würfel ausgegangen. Für die anderen fünf Seiten gibt es ebenfalls vier Möglichkeiten der Ausrichtung. Alle Rotationsmöglichkeiten sind in Anhang \ref{Anhang_RotationenDesWürfels} in Abbildung \ref{AbbildungWürfelRotationAlleSeiten} dargestellt.
 
@@ -2018,7 +2018,7 @@ Mit den Ergebnissen aus Abschnitt \ref{Abschnitt_MächtigkeitVonG} kann die Abge
 $\forall \ Z_1,Z_2,Z_3 \in \Gtwo \ . \ (Z_1 \circ Z_2) \circ Z_3 = Z_1 \circ (Z_2 \circ Z_3)$ 
 
 
-Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger aber fester Stein im Würfel wird hier $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind (wie oben beschrieben) 3-Buchstaben-Kürzel, bestehend aus $u, d, r, l, f, b$. 
+Um die Assoziativität zu zeigen, wird eine Schreibweise für das Ausführen der Züge eingeführt. Ein beliebiger aber fester Stein im Würfel wird hier $s$ genannt. Beim Ausführen eines Zuges $Z$ wird nun $Z(s)$ geschrieben, um die neue Position des Steines zu erhalten. Die Positionen sind 3-Buchstaben-Kürzel, bestehend aus $u, d, r, l, f, b$. Das wurde in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} beschrieben.
 
 Bei der Betrachtung von $Z_1 \circ Z_2 $, wird zuerst $Z_1$ und anschließend $Z_2$ ausgeführt. $Z_1(s)$ bewegt den Stein $s$ zu der Position $Z_1(s)$. Der Zug $Z_2$ bewegt den Stein dann zu der Position $Z_2(Z_1(s))$. Folglich gilt $Z_1 \circ Z_2 = Z_2(Z_1(s))$. 
 
