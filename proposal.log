@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  21 MAY 2021 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  21 MAY 2021 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1840,7 +1840,7 @@ Package pdftex.def Info: TOPVIEW4.png  used on input line 3647.
 <TOPVIEW5.png, id=1091, 1043.9pt x 1034.86626pt>
 File: TOPVIEW5.png Graphic file (type png)
 <use TOPVIEW5.png>
-Package pdftex.def Info: TOPVIEW5.png  used on input line 3648.
+Package pdftex.def Info: TOPVIEW5.png  used on input line 3658.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
 <TOPVIEW6.png, id=1092, 1043.9pt x 1034.86626pt>
 File: TOPVIEW6.png Graphic file (type png)
@@ -1848,24 +1848,24 @@ File: TOPVIEW6.png Graphic file (type png)
 Package pdftex.def Info: TOPVIEW6.png  used on input line 3659.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
  [77 <./TOPVIEW1.png> <./TOPVIEW2.png> <./TOPVIEW3_1.png> <./TOPVIEW3_2.png> <.
-/TOPVIEW4.png> <./TOPVIEW5.png>]
-<corners1.png, id=1103, 1043.9pt x 1034.86626pt>
+/TOPVIEW4.png>]
+<corners1.png, id=1102, 1043.9pt x 1034.86626pt>
 File: corners1.png Graphic file (type png)
 <use corners1.png>
 Package pdftex.def Info: corners1.png  used on input line 3674.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners2.png, id=1104, 1043.9pt x 1034.86626pt>
+<corners2.png, id=1103, 1043.9pt x 1034.86626pt>
 File: corners2.png Graphic file (type png)
 <use corners2.png>
 Package pdftex.def Info: corners2.png  used on input line 3675.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
-<corners3.png, id=1105, 1043.9pt x 1034.86626pt>
+<corners3.png, id=1104, 1043.9pt x 1034.86626pt>
 File: corners3.png Graphic file (type png)
 <use corners3.png>
-Package pdftex.def Info: corners3.png  used on input line 3676.
+Package pdftex.def Info: corners3.png  used on input line 3685.
 (pdftex.def)             Requested size: 83.5137pt x 82.79099pt.
- [78 <./TOPVIEW6.png> <./corners1.png> <./corners2.png> <./corners3.png>] [79] 
-[80]
+ [78 <./TOPVIEW5.png> <./TOPVIEW6.png> <./corners1.png> <./corners2.png>] [79 <
+./corners3.png>] [80]
 <DLB.png, id=1127, 1043.9pt x 1201.48875pt>
 File: DLB.png Graphic file (type png)
 <use DLB.png>
@@ -2126,7 +2126,7 @@ nts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on proposal.pdf (103 pages, 5689662 bytes).
+Output written on proposal.pdf (103 pages, 5690068 bytes).
 PDF statistics:
  1521 PDF objects out of 1728 (max. 8388607)
  1231 compressed objects within 13 object streams

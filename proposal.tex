@@ -3295,23 +3295,23 @@ Um aussagekräftigere Ergebnisse zu der Kommutativität der Zugpaare zu bekommen
 Es gibt verschiedene Vorgehensweisen, um den Würfel zu lösen. Üblicherweise werden die Ebenen des Würfels nacheinander gelöst. 
 Für die Lösungsalgorithmen ist die Farbe der ersten Seite nicht relevant. Es wird aber häufig mit weiß begonnen, da die Anordnung der Farben so leichter zu merken ist. Dann kann schneller gesehen werden, in welche Ebene ein Stein gehört. \cite{RF} Deshalb wird im weiteren Verlauf dieser Arbeit bei der Lösung mit der weißen Seite begonnen.
 
-Die beiden unten beschriebenen Lösungsansätze zeigen nicht den kürzesten Lösungsweg. Mehr zu der optimalen Lösung findet sich am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} und in Abschnitt \ref{Abschnitt_MinLösung}. Außerdem ist zu beachten, dass es eine Vielzahl weiterer Lösungsansätze gibt.
+Die beiden unten beschriebenen Lösungsansätze zeigen nicht den kürzesten Lösungsweg. Mehr zu der optimalen Lösung findet sich am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} und in Abschnitt \ref{Abschnitt_MinLösung}. Es ist zu beachten, dass es eine Vielzahl weiterer Lösungsansätze gibt, die hier nicht besprochen werden.
 
 
 \subsubsection*{Ebenen nacheinander vollständig lösen}
 
 Bei diesem Lösungsansatz werden die beiden Ebenen des Würfels nacheinander gelöst. Dazu wird zuerst die erste Ebene und danach die zweite Ebene vollständig gelöst. Das bedeutet, dass sowohl Ausrichtung, als auch Position der Steine korrekt sein müssen. Die erste Ebene kann durch simplere Züge gelöst werden als die zweite Ebene. Grund dafür ist, dass die Anordnung der Steine der zweiten Ebene beim Lösen der ersten Ebene noch nicht relevant ist. Beim Lösen der zweiten Ebene müssen komplexere Züge genutzt werden, um den gelösten Zustand der ersten Ebene beizubehalten. 
 
-Die Lösungsmethode für die zweite Ebene sieht vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist dann $(1,0)$ und der Würfel gelöst.
+Die Lösungsmethode für die zweite Ebene sieht vor, dass zuerst alle Steine der Ebene richtig ausgerichtet werden. Dann sind alle $x_i=0$. Danach werden die Positionen noch getauscht. Die Würfelkonfiguration ist schließlich $(1,0)$ und der Würfel gelöst.
 
 Dieses ebenenweise Vorgehen wird üblicherweise bei dem \Tthree Würfel angewandt und wurde hier auf den \Ttwo Würfel übertragen: Beim \Tthree Würfel wird zuerst die obere Ebene gelöst, dann die Mittlere, gefolgt von der Unteren. Wird dieses Vorgehen auf den \Ttwo Würfel übertragen, können sämtliche Lösungsschritte, die die Kanten beeinflussen, ignoriert werden, da der \Ttwo Würfel keine Kantsteine hat. Außerdem gibt es keine mittlere Ebene und die entsprechenden Lösungsschritte des \Tthree Würfels werden ebenfalls nicht auf den \Ttwo Würfel übertragen.
 
-Dieser Lösungsansatz wird auch \textit{CFOP-Methode}\footnote{Die Abkürzung \textit{CFOP} bezieht sich auf das Lösen des \Tthree Würfels und steht für: \textit{Cross}, \textit{First two layers}, \textit{Orient last layer} und \textit{Permute last layer}. Das beschreibt das Vorgehen dieser Methode. \cite{DDJT}} oder \textit{Fridrich-Methode}\footnote{Nach Jessica Fridrich benannt, die diese Methode erfunden hat. $[$Jessica Fridrich, persönliche Korrespondenz per E-Mail, s. Anhang \ref{Anhang_JessicaFridirch}$]$} genannt \cite{DDJT}.
-Diese Methode wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schrittweise ausgeführt und erklärt. Außerdem werden die Algorithmen für die beiden Ebenen in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. Dies kann als eine Anleitung zum Lösen des Würfels dienen.
+Dieser Lösungsansatz wird auch \textit{Fridrich-Methode}\footnote{Nach Jessica Fridrich benannt, die diese Methode erfunden hat. $[$Jessica Fridrich, persönliche Korrespondenz per E-Mail, s. Anhang \ref{Anhang_JessicaFridirch}$]$} oder \textit{CFOP-Methode}\footnote{Die Abkürzung \textit{CFOP} bezieht sich auf das Lösen des \Tthree Würfels und steht für: \textit{Cross}, \textit{First two layers}, \textit{Orient last layer} und \textit{Permute last layer}. Das beschreibt das Vorgehen dieser Methode. \cite{DDJT}} genannt \cite{DDJT}.
+Diese Methode wird in Abschnitt \ref{Abschnitt_LösungBeispiel} anhand eines Beispiels schrittweise ausgeführt und erklärt. Außerdem werden die Algorithmen für die beiden Ebenen in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene} beschrieben. Dies kann als Anleitung zum Lösen des Würfels dienen.
 
 \subsubsection*{Steine ausrichten und dann positionieren}
 
-Bei diesem Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite, die aus vier weißen Farbflächen besteht. Die Position der Steine ist dabei jedoch nicht relevant. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Es gibt dann eine weiße und eine gelbe Seite, die anderen vier Seiten sind allerdings nicht gelöst, da die Steinposition noch nicht berücksichtigt wurde.
+Bei diesem Lösungsansatz werden zuerst alle Steine der ersten Ebene richtig ausgerichtet. Es gibt dann eine weiße Seite, die aus vier weißen Farbflächen besteht. Die Position der Steine ist dabei jedoch nicht relevant. Danach werden alle Steine der zweiten Ebene ausgerichtet. Auch hier ist die Position nicht relevant. Es gibt dann eine weiße und eine gelbe Seite. Die anderen vier Seiten sind allerdings nicht gelöst, da die Steinpositionen noch nicht berücksichtigt wurden.
 Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie untereinander getauscht und der Würfel somit gelöst. Dieses Vorgehen wird \textit{Ortega-Methode} genannt \cite{RF2}.
 
 
@@ -3354,12 +3354,12 @@ Wenn alle Steine korrekt ausgerichtet sind und der Vektor $x=0$ ist, werden sie 
 \label{Abschnitt_LösungBeispiel}
 
 
-In diesem Abschnitt wird der Würfel schrittweise anhand eines Beispiels gelöst. Dazu wird die CFOP - bzw. Fridrich-Methode des \Tthree Würfels auf den \Ttwo Würfel übertragen. Das Vorgehen dieser Lösungsmethode wurde in Abschnitt \ref{Abschnitt_Lösungsansätze} beschrieben. Die Beschreibungen der Algorithmen dieser Lösungsmethode finden sich in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene}.
+In diesem Abschnitt wird der Würfel schrittweise anhand eines Beispiels gelöst. Dazu wird die CFOP- bzw. Fridrich-Methode des \Tthree Würfels auf den \Ttwo Würfel übertragen. Das Vorgehen dieser Lösungsmethode wurde in Abschnitt \ref{Abschnitt_Lösungsansätze} beschrieben. Die Beschreibungen der Algorithmen dieser Lösungsmethode finden sich in den Abschnitten \ref{Abschnitt_AlgorithmenErsteEbene} und \ref{Abschnitt_AlgorithmenZweiteEbene}.
 
 Für die Lösung des Würfels sind Züge nützlich, die lediglich wenige Steine beeinflussen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. Um einzelne Steine gezielt zu beeinflussen, sind komplexere Algorithmen notwendig. Deshalb werden die Algorithmen in diesem Beispiel länger, wenn der Würfel sich dem gelösten Zustand nähert. 
 
-In diesem Beispiel wird der Würfel mit dem Zug $\textit{FUBR}F^{-1}$ verdreht (s. Abbildung \ref{Abbildung_LösungMensch0}). Nun wird schrittweise beschrieben, wie ein Mensch den Würfel nach der CFOP - bzw. Fridrich-Methode lösen würde. Der Würfel befindet sich zu Beginn in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{urf}),(2,2,0,0,2,2,1,0))$.
-In den Abbildungen wurde der Würfel noch um $90^\circ$ um die $z$-Achse rotiert. Es gibt somit eine andere, zu $C$ äquivalente Würfelkonfiguration $C'=(( \textit{ulb} \ \textit{urb} \ \textit{urf}) \ ( \textit{ulf} \ \textit{dlb} ) \ (\textit{drb} \ \textit{drf} \ \textit{dlf}),$ $(0,2,0,2,1,2,0,2))$.
+In diesem Beispiel wird der Würfel mit dem Zug $\textit{FUBR}F^{-1}$ verdreht (s. Abbildung \ref{Abbildung_LösungMensch0}). Nun wird schrittweise beschrieben, wie ein Mensch den Würfel nach der CFOP- bzw. Fridrich-Methode lösen würde. Der Würfel befindet sich zu Beginn in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{urf}),(2,2,0,0,2,2,1,0))$.
+In den folgenden Abbildungen wurde der Würfel noch um $90^\circ$ um die $z$-Achse rotiert. Die Konfiguration ist somit eine andere, zu $C$ äquivalente Würfelkonfiguration $C'=(( \textit{ulb} \ \textit{urb} \ \textit{urf}) \ ( \textit{ulf} \ \textit{dlb} ) \ (\textit{drb} \ \textit{drf} \ \textit{dlf}),$ $(0,2,0,2,1,2,0,2))$.
 
 \begin{figure}[H]
 \centering
@@ -3371,9 +3371,9 @@ In den Abbildungen wurde der Würfel noch um $90^\circ$ um die $z$-Achse rotiert
 Im ersten Schritt des menschlichen Ansatzes zum Lösen des Würfels sollen die Steine der oberen Ebene so angeordnet werden, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
 Für die Lösung der oberen Ebene muss $x_{1-4} = (0,0,0,0)$ gelten und die Steine der Ebene müssen an der richtigen Position zueinander sein.
 
-Dafür sucht der Lösende Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position \textit{urf}. 
-Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene, mit der weißen Farbfläche oben. 
-Nun ist $x_{1-4}''=(0,2,0,1)$. Der Würfel ist in Abbildung \ref{Abbildung_LösungMensch1} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene richtig ausgerichtet an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein. Die neue Würfelkonfiguration ist dann $C'' $ $= C' \cdot F^{-1} $ $= ((\textit{ulb} \ \textit{urb} \ \textit{ulf} \ \textit{dlb} \ \textit{dlf} \ \textit{drb} \ \textit{urb}),$ $(0,2,0,1,1,2,2,1))$.
+Dafür sucht die lösende Person Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position \textit{urf}. 
+Mit dem Zug $F^{-1}$ findet der Stein seinen Platz in der oberen Ebene mit der weißen Farbfläche oben. 
+Nun ist $x_{1-4}''=(0,2,0,1)$. Der Würfel ist in Abbildung \ref{Abbildung_LösungMensch1} dargestellt: Es befinden sich nun zwei Steine der oberen Ebene richtig ausgerichtet an der richtigen Position -- der weiß-orange-blaue Stein und der weiß-rot-blaue Stein. Die neue Würfelkonfiguration ist folglich $C'' $ $= C' \cdot F^{-1} $ $= ((\textit{ulb} \ \textit{urb} \ \textit{ulf} \ \textit{dlb} \ \textit{dlf} \ \textit{drb} \ \textit{urb}),$ $(0,2,0,1,1,2,2,1))$.
 
 \begin{figure}[H]
 \centering
@@ -3391,7 +3391,7 @@ Der nächste Stein, der angeordnet wird, ist hier der weiß-grün-orange Stein. 
 \label{Abbildung_LösungMensch2}
 \end{figure}
 
-Der letzte Stein mit weißer Farbfläche wird dann durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere Ebene ist nun gelöst und alle Steine mit weißen Farbflächen sind wie in der Startkonfiguration zueinander ausgerichtet (s. Abbildung \ref{Abbildung_LösungMensch3}).
+Der letzte Stein mit weißer Farbfläche wird schließlich durch den Zug $RD^{-1}R^{-1}$ positioniert. Die obere Ebene ist damit gelöst und alle Steine mit weißen Farbflächen sind wie in der Startkonfiguration zueinander ausgerichtet (s. Abbildung \ref{Abbildung_LösungMensch3}).
 Die Würfelkonfiguration ist $C^{IV}=(( \textit{ulb} \ \textit{urf} ) \ ( \textit{urb} \ \textit{ulf} ) \ ( \textit{drb} \ \textit{drf} \ \textit{dlf} ),(0,0,0,0,2,0,1,0))$.
 
 \begin{figure}[H]
@@ -3401,7 +3401,7 @@ Die Würfelkonfiguration ist $C^{IV}=(( \textit{ulb} \ \textit{urf} ) \ ( \texti
 \label{Abbildung_LösungMensch3}
 \end{figure} 
 
-Für den nächsten Schritt rotiert der Mensch den Würfel, hier zweimal um die $y$-Achse (s. Abbildung \ref{Abbildung_LösungMensch4}). Die weiße Seite ist nun unten und zwei der vier gelben Farbflächen sind nach oben ausgerichtet. Dann ist die Würfelkonfiguration $C^V $ $= (( \textit{ulb} \ \textit{drb} \ \textit{urb} \ \textit{dlb} \ \textit{ulf} \ \textit{drf} ) \ ( \textit{urf} \ \textit{dlf} ),$ $(1,0,2,0,0,0,0,0))$. $C^V$ ist zu $C^{VI}$ äquivalent, da der Würfel nur rotiert wurde.
+Für den nächsten Schritt rotiert der Mensch den Würfel, hier zweimal um die $y$-Achse (s. Abbildung \ref{Abbildung_LösungMensch4}). Die weiße Seite ist nun unten und zwei der vier gelben Farbflächen sind nach oben ausgerichtet. Dann ist die Würfelkonfiguration $C^V $ $= (( \textit{ulb} \ \textit{drb} \ \textit{urb} \ \textit{dlb} \ \textit{ulf} \ \textit{drf} ) \ ( \textit{urf} \ \textit{dlf} ),$ $(1,0,2,0,0,0,0,0))$. $C^V$ ist zu $C^{VI}$ äquivalent, da der Würfel lediglich rotiert wurde.
 
 \begin{figure}[H]
 \centering
@@ -3420,18 +3420,18 @@ Dann führt der Lösende den Zug $\textit{RUR}^{-1}U^{-1} R^{-1}\textit{FRF}^{-1
 \end{figure} 
 
 Die Würfelkonfiguration ist $ C^{VI} = (( \textit{ulb} \ \textit{drb} ) \ ( \textit{urb} \ \textit{dlb} ) \ ( \textit{ulf} \ \textit{drf} ) \ ( \textit{urf} \ \textit{dlf} ), (0,0,0,0,0,0,0,0))$. Diese Konfiguration ist äquivalent zu der Konfiguration $(1,0)$.
-Daher wird dieser Würfel nun noch zweimal um die $x$-Achse gedreht und befindet sich dann in der Konfiguration $C^{VII} =(1,0)$.
+Daher wird dieser Würfel nun noch zweimal um die $x$-Achse gedreht und befindet sich abschließend in der Konfiguration $C^{VII} =(1,0)$.
 
 Der Mensch folgt beim Lösen des \textit{Cubes} bestimmten Kombinationen, die in verschiedenen Situationen angewandt werden können.  
-In diesem Fall hat der Mensch $13$ Ebenendrehungen durchgeführt, während das Verdrehen lediglich fünf Ebenendrehungen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, den er bei verschiedenen Würfelkonfigurationen anpassen und verwenden kann. 
+In diesem Fall hat der Mensch $13$ Ebenendrehungen durchgeführt, während das Verdrehen lediglich fünf Ebenendrehungen benötigte. Der Mensch hat folglich nicht den kürzesten Weg gewählt, aber dafür einen Weg, der bei verschiedenen Würfelkonfigurationen angepasst verwendet werden kann. 
 Wenn die Verdrehung des Würfels invertiert wird ($(\textit{FUBRF}^{-1})^{-1}$), ergibt das die Kombination $FR^{-1}B^{-1}U^{-1}F^{-1}$, um den Würfel zu lösen.
 Es stellt sich die Frage, wie viele Ebenendrehungen für den optimalen Lösungsweg maximal erforderlich sein können. Diese Zahl wird auch \textit{God's Number} genannt. 
 
 \subsubsection*{God's Number}
-Im Folgenden werden die \textit{God's Number}, \textit{Quarter-Turn} Metrik und \textit{Half-Turn} Metrik kurz beschrieben.
-Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn} Metrik genannt. Es gibt noch andere Metriken, wie z. B. die \textit{Half-Turn} Metrik, bei der eine Drehung der Ebene sowohl um $90^\circ$ als auch um $180^\circ$ als eine Drehung gezählt wird \cite{TR}.
-Nach der \textit{Quarter-Turn} Metrik gerechnet ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}. In der \textit{Half-Turn} Metrik ist sie $11$ \cite{RMG}.
-Ein Konzept zum Finden der optimalen Lösung mithilfe der \textit{Quarter-Turn} Metrik wird in Abschnitt \ref{Abschnitt_MinLösung} beschrieben.
+Im Folgenden werden die \textit{God's Number}, \textit{Quarter-Turn}-Metrik und \textit{Half-Turn}-Metrik kurz beschrieben.
+Bei einer Ebenendrehung werden die Ebenen um $90^\circ$ gedreht. Eine Ebenendrehung um $180^\circ$ wird als zwei Vierteldrehungen gewertet. Das wird \textit{Quarter-Turn}-Metrik genannt. Es gibt noch andere Metriken, wie z. B. die \textit{Half-Turn}-Metrik, bei der eine Drehung der Ebene sowohl um $90^\circ$ als auch um $180^\circ$ als eine Drehung gezählt wird \cite{TR}.
+Nach der \textit{Quarter-Turn}-Metrik gerechnet ist die \textit{God's Number} des \Ttwo Würfels $14$ \cite{DJ}. In der \textit{Half-Turn}-Metrik ist sie $11$ \cite{RMG}.
+Ein Konzept zum Finden der optimalen Lösung mithilfe der \textit{Quarter-Turn}-Metrik wird in Abschnitt \ref{Abschnitt_MinLösung} beschrieben.
 
 
 %
@@ -3477,11 +3477,11 @@ $UU \, FF \, RR \ UU$ &  $U \, FF \, UU \, RR \ U$ \\
 
 Muster 1 lässt die weiße und gelbe Seite unverändert und bildet ein Karomuster auf den anderen vier Seiten. Dabei werden die Farbpaare rot-orange und grün-blau zusammen im  Karomuster angeordnet. Die Konfiguration des Würfels ist dann $C = ((\textit{ulb} \ \textit{urf} ) \ ( \textit{drb} \ \textit{dlf} ),(0,0,0,0,0,0,0,0))$.
 
-Muster 2 hat einen \textit{Würfel im Würfel}. Dabei werden zwei Steine getauscht, die keine gemeinsame Farbfläche haben. Der Würfel befindet sich dann in der Konfiguration $C = (( \textit{ulb} \ \textit{drf} ) \ ( \textit{ulf} \ \textit{dlf} ) \ ( \textit{drb} \ \textit{urb} ),(0,0,0,0,0,0,0,0))$
+Muster 2 hat einen \textit{Würfel im Würfel}. Dabei werden zwei Steine getauscht, die keine gemeinsame Farbfläche haben. Der Würfel befindet sich dann in der Konfiguration $C = (( \textit{ulb} \ \textit{drf} ) \ ( \textit{ulf} \ \textit{dlf} ) \ ( \textit{drb} \ \textit{urb} ),(0,0,0,0,0,0,0,0))$.
 
-Muster 3 zeigt abwechselnd Quer- und Längsstreifen auf den verschiedenen Seiten. Die Konfiguration des Würfels ist dann $C = (( \textit{ulb} \ \textit{dlf} \ \textit{drb} ) \ ( \textit{urb} \ \textit{ulf} \ \textit{drf} )),(0,0,0,0,0,0,0,0))$.
+Muster 3 zeigt abwechselnd Quer- und Längsstreifen auf den verschiedenen Seiten. Die Konfiguration des Würfels ist damit $C = (( \textit{ulb} \ \textit{dlf} \ \textit{drb} ) \ ( \textit{urb} \ \textit{ulf} \ \textit{drf} )),(0,0,0,0,0,0,0,0))$.
 
-Muster 4 ordnet die Farben wie vier Säulen an. Die weiße und die gelbe Seite sind dabei kariert, die anderen Seiten gestreift. Die Konfiguration des Würfels ist dann $C = ( (\textit{urb} \ \textit{dlf} ) \ ( \textit{ulf} \ \textit{drb}  ) ),(0,0,0,0,0,0,0,0))$.
+Muster 4 ordnet die Farben wie vier Säulen an. Die weiße und die gelbe Seite sind dabei kariert, die anderen Seiten gestreift. Die Konfiguration des Würfels ist $C = ( (\textit{urb} \ \textit{dlf} ) \ ( \textit{ulf} \ \textit{drb}  ) ),(0,0,0,0,0,0,0,0))$.
 
 
 Diese Muster sind in den meisten Fällen zwar keine üblichen Lösungsalgorithmen, sollten aber in dieser Arbeit auch nicht unerwähnt bleiben.
@@ -3545,7 +3545,7 @@ Ob das wirklich die simpelste Methode ist, liegt wohl im Auge des Betrachters un
 \subsection{Algorithmen für die erste Ebene}
 \label{Abschnitt_AlgorithmenErsteEbene}
 
-In diesem Abschnitt werden Algorithmen zum Lösen der ersten Ebene mit der Fridrich-Methode beschrieben. Bei dieser Methode werden im ersten Schritt die vier Steine der oberen Ebene richtig ausgerichtet und richtig zueinander angeordnet. Die Vorgehensweise dieser Methode wurde bereits in Abschnitt \ref{Abschnitt_Lösungsansätze} beschrieben. 
+In diesem Abschnitt werden Algorithmen zum Lösen der ersten Ebene mit der Fridrich-Methode beschrieben. Bei dieser Methode werden im ersten Schritt die vier Steine der oberen Ebene korrekt ausgerichtet und richtig zueinander angeordnet. Die Vorgehensweise dieser Methode wurde bereits in Abschnitt \ref{Abschnitt_Lösungsansätze} beschrieben. 
 
 Die Fridrich-Methode ist ein Lösungsansatz für den \Tthree Würfel, der auf den \Ttwo übertragen werden kann.
 Da der \Ttwo im Gegensatz zum \Tthree Würfel keine Mittelsteine hat, kann ein Eckstein als richtig angenommen werden, da der Würfel lediglich rotiert werden muss, um eine weiße Farbfläche zu finden.
@@ -3565,7 +3565,7 @@ In Abbildung \ref{Abbildung_ErsterEckstein} wird der erste Eckstein der oberen E
 
 Der zweite Stein kann dann hinzugefügt werden.
 Für diesen Algorithmus muss sich die weiße Farbfläche des zweiten Steins seitlich an der unteren Ebene befinden. Optimalerweise befindet sich der Stein schon zufällig an der gewünschten, korrekten Position.
-Ansonsten wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition befindet und er wird mit $L, R, F$ oder $R$ neben den bereits vorhandenen ersten Eckstein gedreht. Das ist auch in Abbildung \ref{Abbildung_ZweiterEckstein} zu sehen.
+Ansonsten wird der Zug $D$ ausgeführt, bis der Stein sich unter seiner Zielposition befindet. Dort wird er mit $L, R, F$ oder $R$ neben den bereits vorhandenen ersten Eckstein gedreht. Das ist auch in Abbildung \ref{Abbildung_ZweiterEckstein} zu sehen.
 
 \begin{figure}[H]
 \centering
@@ -3577,7 +3577,7 @@ Ansonsten wird $D$ ausgeführt, bis der Stein sich unter seiner Zielposition bef
 
 Dort sind auch orange und grüne Farbflächen abgebildet. Das gilt analog für die anderen benachbarten Farbflächen. Zu beachten ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
 
-Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann sie falsch herum ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich die weiße Farbfläche in der oberen Ebene, aber falsch herum ausgerichtet. Wenn das der Fall ist, kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist auch in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Danach wird er mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
+Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann sie gekippt ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich der Stein mit der weißen Farbfläche in der oberen Ebene aber die weiße Farbfläche ist nicht nach oben ausgerichtet. In diesem Fall kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Danach wird der Stein mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
 
 \begin{figure}[H]
 \centering
@@ -3589,7 +3589,7 @@ Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann s
 \label{Abbildung_ZweiterEckstein2}
 \end{figure}
 
-Die letzten beide Steine der ersten Ebene lassen sich mit der oben genannten Technik ebenfalls positionieren. Die obere Ebene ist dann gelöst. Die Vektoreinträge $x_{1-4}$ sind dann $(0,0,0,0)$.
+Die letzten beide Steine der ersten Ebene lassen sich ebenfalls mit der oben genannten Technik positionieren. Die obere Ebene ist daraufhin gelöst. Die Vektoreinträge $x_{1-4}$ sind dann $(0,0,0,0)$.
 Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hälfte des Würfels. Die Algorithmen für die zweite Ebene sind in Abschnitt \ref{Abschnitt_AlgorithmenZweiteEbene} zu finden.
 
 
@@ -3617,7 +3617,7 @@ Bei dem \Ttwo Würfel entspricht das Lösen der oberen Ebene sogar schon der Hä
 \subsection{Algorithmen für die zweite Ebene}
 \label{Abschnitt_AlgorithmenZweiteEbene}
 
-Beim Lösen der zweiten Ebene muss beachtet werden, die erste Ebene nicht wieder zu verdrehen. Deshalb sind die Algorithmen hier länger, um spezifische Steine zu bewegen.
+Beim Lösen der zweiten Ebene muss beachtet werden, dass die erste Ebene nicht wieder verdreht wird. Deshalb sind die Algorithmen an dieser Stelle länger, um spezifische Steine zu bewegen.
 In Abbildung \ref{Abbildung_GelösteObereEbene} ist die obere Ebene des Würfels gelöst. 
 
 \begin{figure}[H]
@@ -3628,9 +3628,9 @@ In Abbildung \ref{Abbildung_GelösteObereEbene} ist die obere Ebene des Würfels
 \end{figure}
 
 
-Ein Mensch dreht den Würfel zum Lösen der zweiten Ebene meistens um, damit die entsprechenden Steine sichtbar sind. Der Anschaulichkeit halber wird das hier auch gemacht.
+Ein Mensch dreht den Würfel zum Lösen der zweiten Ebene meistens um, damit die entsprechenden Steine sichtbar sind. Zur besseren Anschaulichkeit wird das in den Abbildungen auch dementsprechend dargestellt.
 
-Zuerst werden nun alle Steine der zweiten Ebene richtig ausgerichtet, so dass die obere Seite des Würfels ausschließlich gelbe Farbflächen zeigt. Der Vektor $x$ ist dann $0$. Danach werden die Steine getauscht, bis sie richtig angeordnet sind. Dann ist die Permutationsfunktion $\sigma = 1$.
+Zuerst werden alle Steine der zweiten Ebene richtig ausgerichtet, so dass die obere Seite des Würfels ausschließlich gelbe Farbflächen zeigt. Der Vektor $x$ ist dann $0$. Danach werden die Steine getauscht, bis sie richtig angeordnet sind. Für die Permutationsfunktion gilt $\sigma = 1$.
 
 Da es viele mögliche Würfelkonfigurationen und Algorithmen zur Lösung dieser gibt, werden die möglichen Steinpositionen und Algorithmen in einer Tabelle aufgeführt. Die Algorithmen führen alle zu einer Würfelkonfiguration, bei der die untere (bereits gelöste) Ebene unverändert bleibt und die obere Seite ausschließlich gelbe Farbflächen zeigt.
 Viele dieser Algorithmen enthalten $(\textit{R U R}^{-1} U^{-1})$, was hier als Kommutator $[ R,U ]$ geschrieben wird. Kommutatoren der Würfelzüge wurden in Abschnitt \ref{Abschnitt_Kommutatoren8} behandelt.
@@ -3645,7 +3645,7 @@ Ausgangsposition & Algorithmus  \\
 \includegraphics[scale=0.08]{TOPVIEW3_1.png} & $R \ U \ R^{-1} \ U \ R \ UU \ R^{-1}$ \\
 \includegraphics[scale=0.08]{TOPVIEW3_2.png} & $L^{-1} \ U^{-1} L \ U^{-1} \ L^{-1} \ UU \ L$ \\
 \includegraphics[scale=0.08]{TOPVIEW4.png} & $F \ [ R,U ] \ F^{-1}$ \\
-\includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
+
 \bottomrule
 \end{tabular}
 \end{center}
@@ -3655,7 +3655,7 @@ Ausgangsposition & Algorithmus  \\
 \toprule
 Ausgangsposition & Algorithmus  \\
 \midrule
-
+\includegraphics[scale=0.08]{TOPVIEW5.png} & $[ R,U ] \ [R^{-1}, F]$ \\
 \includegraphics[scale=0.08]{TOPVIEW6.png} & $F^{-1} \ [ R,U ]\ L^{-1} \ U \ L$ \\
 \bottomrule
 \end{tabular}
@@ -3664,7 +3664,7 @@ Ausgangsposition & Algorithmus  \\
 
 Die obere Seite des Würfels zeigt nach dem Ausführen dieser Algorithmen auf die entsprechenden Ausgangspositionen ausschließlich gelbe Farbflächen. Die Ausrichtung der Steine ist dann bereits richtig und der Vektor $x$ somit $(0,0,0,0,0,0,0,0)$. Wenn alle Steine der zweiten Ebene dann bereits richtig zueinander angeordnet sind, muss die Ebene eventuell mit $U$, $U^{-1}$ oder $UU$ richtig zur ersten Ebene ausgerichtet werden.  Ansonsten werden die Steinpositionen getauscht, bis sie richtig angeordnet sind.
 
-Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es verschiedene Algorithmen. Diese Algorithmen werden im Folgenden in einer Tabelle aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
+Zum Vertauschen der Steine untereinander, ohne die Ausrichtung zu verändern, gibt es verschiedene Algorithmen. Diese Algorithmen werden in der folgenden Tabelle aufgeführt. Die Pfeile zeigen an, welche Steine beim Ausführen der Algorithmen an welche Würfelposition gelangen.
 
 \begin{center}
 \begin{tabular}{m{4cm} m{8cm}}
@@ -3673,22 +3673,22 @@ Steinpermutation & Algorithmus  \\
 \midrule
 \includegraphics[scale=0.08]{corners1.png}  & $F \ R \ U^{-1} \ [R^{-1}, U^{-1}] \ R^{-1} \ F^{-1}  \ [R, U]   [R^{-1}, F]$ \\
 \includegraphics[scale=0.08]{corners2.png}   & $[R,U] \  R^{-1} \ F \ RR \   U^{-1} \ [R^{-1}, U^{-1}] \ R^{-1} \  F^{-1})$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{m{4cm} m{8cm}}
+\toprule
+Steinpermutation & Algorithmus  \\
+\midrule
 \includegraphics[scale=0.08]{corners3.png}   & $R \ B^{-1} \ R \ FF \ R^{-1} \ B \ R \ FF \ RR $ \\
 \bottomrule
 \end{tabular}
 \end{center}
-%
-%\begin{center}
-%\begin{tabular}{m{4cm} m{8cm}}
-%\toprule
-%Steinpermutation & Algorithmus  \\
-%\midrule
-%
-%\bottomrule
-%\end{tabular}
-%\end{center}
 
-Nach dem Ausführen der passenden Algorithmen sind beide Ebenen gelöst. Eventuell müssen die beiden Ebenen noch durch $U$, $U^{-1}$ oder $UU$ richtig zueinander ausgerichtet werden. Dann befindet sich der Würfel im gelösten Zustand und die Würfelkonfiguration ist somit $(1,0)$.
+
+Nach dem Ausführen der passenden Algorithmen sind beide Ebenen gelöst. Eventuell müssen die beiden Ebenen noch durch $U$, $U^{-1}$ oder $UU$ richtig zueinander ausgerichtet werden. Schließlich befindet sich der Würfel im gelösten Zustand und die Würfelkonfiguration ist somit $(1,0)$.
 
 Mit den Algorithmen aus dieser Anleitung kann jede valide Konfiguration eines \Ttwo Würfels in die Startkonfiguration $(1,0)$ überführt werden.
 
@@ -4010,7 +4010,7 @@ Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und 
 
 In diesem Kapitel wird ein Konzept zum Finden des optimalen Lösungsweges von jeder beliebigen Würfelkonfiguration ausgehend entworfen. Dazu werden verschiedene Bäume modelliert und verglichen. Um die maximale Größe dieser Bäume zu berechnen, wird die \textit{God's Number} benutzt. 
 
-Die \textit{God's Number} des Würfels sagt aus, wie viele Züge zum Lösen des Würfels maximal gebraucht werden. Sie wurde am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} bereits beschrieben. Bei der \textit{Quarter-Turn} Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14 \cite{DJ}. Bei der \textit{Half-Turn} Metrik werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11 \cite{RMG}.
+Die \textit{God's Number} des Würfels sagt aus, wie viele Züge zum Lösen des Würfels maximal gebraucht werden. Sie wurde am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} bereits beschrieben. Bei der \textit{Quarter-Turn}-Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14 \cite{DJ}. Bei der \textit{Half-Turn}-Metrik werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11 \cite{RMG}.
 
 Die Suche nach dem optimalen Lösungsweg, ausgehend von einer beliebigen Konfiguration $C$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier lediglich das Konzept entworfen und die Größe der jeweiligen Bäume berechnet und verglichen. 
 
@@ -4018,18 +4018,18 @@ Ein Baum zur Berechnung der optimalen Lösung enthält eine beliebige Konfigurat
 
 Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für die Kanten eines Baums drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
-Wenn man jeden möglichen Zug für die \textit{Quarter-Turn} Metrik betrachtet, erhält man sechs Züge, da jede Ebene in zwei Richtungen gedreht werden kann. Es handelt sich dabei um die Züge $F, F^{-1}, R, R^{-1}, U$ und $U^{-1}$.
+Wenn man jeden möglichen Zug für die \textit{Quarter-Turn}-Metrik betrachtet, erhält man sechs Züge, da jede Ebene in zwei Richtungen gedreht werden kann. Es handelt sich dabei um die Züge $F, F^{-1}, R, R^{-1}, U$ und $U^{-1}$.
 
 Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.5]{Baum_1.jpg}
-\caption{Lösungsbaum: \textit{Quarter-Turn} Metrik}
+\caption{Lösungsbaum: \textit{Quarter-Turn}-Metrik}
 \label{Abbildung_BaumQTM}
 \end{figure}
 
-Jeder der Baumknoten hat demnach sechs Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn} Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. $|i|$ entspricht dabei der Tiefe des Baums. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
+Jeder der Baumknoten hat demnach sechs Kinder. Da die \textit{God's Number} in der \textit{Quarter-Turn}-Metrik 14 ist, ist der Würfel nach spätestens 14 Vierteldrehungen gelöst. Die Würfelkonfiguration ist dann $C_i = (1, 0)$ mit $|i| \leq 14$. $|i|$ entspricht dabei der Tiefe des Baums. Demnach hat der Baum eine maximale Größe von $6^{14} = 78 \ 364 \ 164 \ 096$ Knoten.
 
 Für einen Baum mit minimaler Kinderanzahl fallen die Kanten $F^{-1}, R^{-1}$ und $U^{-1}$ weg. Diese Züge können durch $FFF, RRR$ und $UUU$ dargestellt werden. Jeder Knoten hat dann nur noch drei Kinder. 
 
@@ -4042,7 +4042,7 @@ Für einen Baum mit minimaler Kinderanzahl fallen die Kanten $F^{-1}, R^{-1}$ un
 
 Allerdings werden die Züge $F^{-1}, R^{-1}$ und $U^{-1}$ durch jeweils drei Kanten dargestellt. Dadurch ergibt sich eine maximale Tiefe von $|i| = 14 \cdot 3 = 42$. Die maximale Größe des Baums ist somit $3^{42} = 109\ 418\ 989\ 131\ 512\ 359\ 209$. 
 
-Dementsprechend ist der Baum mit minimaler Kinderanzahl wesentlich größer als der oben beschriebene Baum der \textit{Quarter-Turn} Metrik. Zur Berechnung des optimalen Lösungsweges ist der Baum der \textit{Quarter-Turn} Metrik besser geeignet, da er durch seine geringere Knotenanzahl effizienter berechnet werden kann.
+Dementsprechend ist der Baum mit minimaler Kinderanzahl wesentlich größer als der oben beschriebene Baum der \textit{Quarter-Turn}-Metrik. Zur Berechnung des optimalen Lösungsweges ist der Baum der \textit{Quarter-Turn}-Metrik besser geeignet, da er durch seine geringere Knotenanzahl effizienter berechnet werden kann.
 
 
 
