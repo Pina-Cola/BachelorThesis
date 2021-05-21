@@ -3747,12 +3747,12 @@ Die Menge der minimalen Grundzüge erzeugt die Untergruppe $(G_{min}, \circ)$.
 \label{Abschnitt_MinimalePermutationen}
 \label{Abschnitt_MinimaleGrundzüge}
 
-Wie bereits in Abschnitt \ref{Abschnitt_GrundzügeWürfel} beschrieben, sind die Züge $U$, $D$, $R$, $L$, $F$ und $B$ des \Ttwo Würfels nicht minimal. Die Züge $U$ und $D$ beispielsweise sind äquivalent, aber mit einer Rotation des kompletten Würfels. 
+Wie bereits in Abschnitt \ref{Abschnitt_GrundzügeWürfel} beschrieben, sind die Züge $U$, $D$, $R$, $L$, $F$ und $B$ des \Ttwo Würfels nicht minimal. Die Züge $U$ und $D$ beispielsweise sind mit einer Rotation des kompletten Würfels äquivalent. 
 Die Menge der minimalen Züge ist $\{ U, R, F\}$. Keiner dieser drei Grundzüge lässt sich durch einen anderen Zug oder eine Kombination anderer Züge darstellen. Der Stein \textit{dlb} (unten, links, hinten) wird durch keinen dieser minimalen Züge bewegt. Das wird bei der Definition der minimalen Rotation des Würfels (Abschnitt \ref{Abschnitt_minimaleRotation}) genauer beschrieben.
 
 \subsubsection*{Minimale Permutationen}
 
-Bei den Permutationen dieser drei Grundzüge handelt es sich um die Permutationsfunktionen $\sigma$, die in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} bereits definiert wurden. Es gibt jedoch nur drei statt sechs Funktionen für die Permutationen, da es auch nur drei Grundzüge gibt.
+Bei den Permutationen dieser drei Grundzüge handelt es sich um die Permutationsfunktionen $\sigma$, die in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} bereits definiert wurden. Hier gibt jedoch nur drei statt sechs Funktionen für die Permutationen, da es auch nur drei Grundzüge gibt.
 \begin{align*}
 \sigma_U & =\ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) \\
 \sigma_R & =\ ( \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} ) \\
@@ -3899,7 +3899,7 @@ zeigt Abbildung \ref{Abbildung_Cayleygraph_min} lediglich einen Ausschnitt diese
 \label{Abbildung_Cayleygraph_min}
 \end{figure}
 
-Am Knoten $FFF$ kann man sehen, dass der Pfeil beim Hinzufügen eines weiteren $F$ zurück zu $N$ führt. Das liegt daran, dass $FFFF$ und $N$ aus der gleichen Äquivalenzklasse sind und den gleichen Zug repräsentieren. Bei einer Generierung des vollständigen Graphen, würde dieses zyklische Verhalten der Züge häufiger zu sehen sein.
+Am Knoten $FFF$ ist zu erkennen, dass der Pfeil beim Hinzufügen eines weiteren $F$ zurück zu $N$ führt. Das liegt daran, dass $FFFF$ und $N$ aus der gleichen Äquivalenzklasse sind und den gleichen Zug repräsentieren. Bei einer Generierung des vollständigen Graphen, würde dieses zyklische Verhalten der Züge häufiger zu sehen sein.
  
 
 
@@ -3935,7 +3935,7 @@ Am Knoten $FFF$ kann man sehen, dass der Pfeil beim Hinzufügen eines weiteren $
 In diesem Abschnitt wird bewiesen, dass die Mengen $\Gtwo$ und $G_{min}$ gleichmächtig sind und somit beide eine vollständige Abbildung des \Ttwo Würfels sind. 
 
 Dazu wird zuerst gezeigt, dass die Züge der minimalen Untergruppe $(G_{min}, \circ)$ ausreichen, um alle Züge des Würfels zu repräsentieren. Bei den Elementen der Mengen $\Gtwo$ und $G_{min}$ handelt es sich um die Äquivalenzklassen der Züge. Die Elemente der Menge $\Gtwo$ können aus den Grundzügen $U, D, R, L, F$ und $B$ bestehen. Die Rotationen des Würfels werden hier nicht als Züge berücksichtigt, da die Äquivalenzklassen die Gleichheit von zwei Würfelkonfigurationen mit Rotation berücksichtigen.
-Jeder der Grundzüge $U, D, R, L, F$ und $B$ der Gruppe $(\Gtwo, \circ)$ kann durch einen der Grundzüge der minimalen Gruppe $(G_{min}, \circ)$ dargestellt werden. Der Würfel kann dann verschieden rotiert sein, das wird aber durch die Äquivalenzklassen abgefangen, sie die Gleichheit von zwei Zügen mit optionaler Rotation realisieren. In der folgenden Tabelle sind die Züge der Gruppe $(\Gtwo, \circ)$ und die dazugehörigen, minimalen Repräsentanten der Untergruppe $(G_{min}, \circ)$ dargestellt:
+Jeder der Grundzüge $U, D, R, L, F$ und $B$ der Gruppe $(\Gtwo, \circ)$ kann durch einen der Grundzüge der minimalen Gruppe $(G_{min}, \circ)$ dargestellt werden. Der Würfel kann dann unterschiedlich rotiert sein, das wird aber durch die Äquivalenzklassen abgefangen, da sie die Gleichheit von zwei Zügen mit optionaler Rotation realisieren. In der folgenden Tabelle sind die Züge der Gruppe $(\Gtwo, \circ)$ und die dazugehörigen, minimalen Repräsentanten der Untergruppe $(G_{min}, \circ)$ dargestellt:
 
 \begin{center}
 \begin{tabular}{c c c c c c c }
@@ -3945,7 +3945,7 @@ $G_{min}$ & $U$ & $U$ & $R$  & $R$  & $F$  & $F$  \\
 \end{tabular}
 \end{center}
 
-So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels aber beachtet werden. Beispielsweise ruft der Zug \textit{ULF} bei der Gruppe $(\Gtwo, \circ)$ eine äquivalente Würfelkonfiguration hervor, wie der Zug \textit{URU} bei der Untergruppe $(G_{min}, \circ)$. Dadurch, dass der Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
+So kann jeder Zug aus $\Gtwo$ mit den Zügen aus $G_{min}$ dargestellt werden. Dabei muss die Ausrichtung des Würfels jedoch beachtet werden. Beispielsweise ruft der Zug \textit{ULF} bei der Gruppe $(\Gtwo, \circ)$ eine äquivalente Würfelkonfiguration hervor, wie der Zug \textit{URU} bei der Untergruppe $(G_{min}, \circ)$. Dadurch, dass der Zug nach Ausführen des Zuges $L$ bzw. $R$ unterschiedlich rotiert ist, verändert sich der Folgezug.
 
 Wird also beispielsweise der Zug $L$ ausgeführt und in den Zug $R$ überführt, um der minimalen Abbildung zu entsprechen, so müssen die folgenden Züge entsprechend verändert werden. Bei dem Zug $L$ werden die Folgezüge wie folgt verändert:
 \begin{align*}
@@ -3954,7 +3954,7 @@ Wird also beispielsweise der Zug $L$ ausgeführt und in den Zug $R$ überführt,
 \end{align*}
 
 
-Bei den Zügen $U, R, F$ bleiben die Folgezüge unverändert, da diese Züge in beiden Gruppen identisch sind. Bei den Zügen $D, L, B$ werden die Folgezüge aufgrund der Würfelausrichtung verändert. Daraus ergibt sich die Überführung des Zuges \textit{ULF} der Gruppe $(\Gtwo, \circ)$ zum Zug \textit{URU} bei der minimalen Untergruppe $(G_{min}, \circ)$:
+Bei den Zügen $U, R, F$ bleiben die Folgezüge unverändert, da diese Züge in beiden Gruppen identisch sind. Bei den Zügen $D, L, B$ werden die Folgezüge aufgrund der Würfelausrichtung verändert. Daraus ergibt sich die Überführung des Zuges \textit{ULF} der Gruppe $(\Gtwo, \circ)$ in den Zug \textit{URU} der minimalen Untergruppe $(G_{min}, \circ)$:
 \begin{align*}
 U \ L \ F \Rightarrow U \ R \ \rho_L(F) \Rightarrow U \ R \ U
 \end{align*}
@@ -3971,7 +3971,7 @@ Die Überführungsfunktionen aller Grundzüge sind im Folgenden definiert:
  & \rho_B(L) = U  && \rho_B(F) =  F && \rho_B(B) = B  \\
 \end{alignat*}
 
-Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Züge der minimalen Gruppe $(G_{min}, \circ)$ überführen. Die Funktionen $\rho$ werden auf alle Elemente angewendet, die hinter dem entsprechendem Zug ausgeführt werden sollen. Die Funktion kann auch verschachtelt werden. Zur besseren Anschaulichkeit folgt noch ein Beispiel:
+Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Züge der minimalen Gruppe $(G_{min}, \circ)$ überführen. Die Funktionen $\rho$ werden auf alle Elemente angewandt, die hinter dem entsprechendem Zug ausgeführt werden sollen. Sie können auch verschachtelt werden. Zur besseren Anschaulichkeit folgt ein Beispiel:
 \begin{align*}
 & U \ R \ F \ \textbf{\textit{B}} \ R \ L \ F  \\ 
 \Rightarrow \ & U \ R \ F \ F \ \rho_B(R) \ \rho_B(L) \ \rho_B(F) \\
@@ -3981,9 +3981,9 @@ Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Z
 \Rightarrow \ & U \ R \ F \ F \ U \ U \ R
 \end{align*}
 
-Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist also mindestens so groß wie die von $\Gtwo$. Sie kann aber nicht größer sein, da $\Gtwo$ aufgrund der Äquivalenzklassen genau die Anzahl der möglichen Züge, die nicht gleich sind enthält. Da $(G_{min}, \circ)$ eine Untergruppe von $(\Gtwo, \circ)$ ist, kann $G_{min}$ maximal so viele Elemente wie $\Gtwo$ enthalten.
+Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist somit mindestens so groß wie die von $\Gtwo$. Sie kann aber nicht größer sein, da $\Gtwo$ aufgrund der Äquivalenzklassen genau die Anzahl der möglichen Züge, die nicht gleich sind enthält. Da $(G_{min}, \circ)$ eine Untergruppe von $(\Gtwo, \circ)$ ist, kann $G_{min}$ maximal so viele Elemente wie $\Gtwo$ enthalten.
 
-Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und ist eine vollständige Abbildung des \Ttwo Würfels.
+Folglich enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und ist eine vollständige Abbildung des \Ttwo Würfels.
 
 %
 %
@@ -4008,19 +4008,19 @@ Somit enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und 
 
 \label{Abschnitt_MinLösung}
 
-In diesem Kapitel wird ein Konzept zum Finden des optimalen Lösungsweges von jeder beliebigen Würfelkonfiguration ausgehend entworfen. Dazu werden verschiedene Bäume modelliert und verglichen. Um die maximale Größe dieser Bäume zu berechnen, wird die \textit{God's Number} benutzt. 
+In diesem Abschnitt wird ein Konzept zum Finden des optimalen Lösungsweges von jeder beliebigen Würfelkonfiguration ausgehend entworfen. Dazu werden verschiedene Bäume modelliert und verglichen. Um die maximale Größe dieser Bäume zu berechnen, wird die \textit{God's Number} benutzt. 
 
 Die \textit{God's Number} des Würfels sagt aus, wie viele Züge zum Lösen des Würfels maximal gebraucht werden. Sie wurde am Ende von Abschnitt \ref{Abschnitt_LösungBeispiel} bereits beschrieben. Bei der \textit{Quarter-Turn}-Metrik werden ausschließlich Vierteldrehungen der Ebenen als eine Ebenendrehung gezählt und die \textit{God's Number} ist dann 14 \cite{DJ}. Bei der \textit{Half-Turn}-Metrik werden auch halbe Drehungen einer Ebene als eine Ebenendrehung gewertet und somit ist die \textit{God's Number} dann nur 11 \cite{RMG}.
 
 Die Suche nach dem optimalen Lösungsweg, ausgehend von einer beliebigen Konfiguration $C$, kann durch einen Baum realisiert werden. Um dies effizient zu gestalten, sollte der Baum möglichst klein sein. Im Folgenden werden verschiedene Ansätze für die Umsetzung eines solchen Baumes beschrieben. Die Implementierung dafür überschreitet den Umfang dieser Arbeit. Deshalb wird hier lediglich das Konzept entworfen und die Größe der jeweiligen Bäume berechnet und verglichen. 
 
-Ein Baum zur Berechnung der optimalen Lösung enthält eine beliebige Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt dann auf jeden Knoten $C_i$ über eine Kante eines Zuges $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenenrotationen im Index $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
+Ein Baum zur Berechnung der optimalen Lösung enthält eine beliebige Konfiguration $C$ als Wurzel. Von diesem Startknoten ausgehend gibt es eine Kante für jeden möglichen Zug des Würfels. Diese Kanten führen jeweils zu einer Folgekonfiguration $C_i$, wobei der Index $i$ die bisherigen Züge des Pfades im Baum enthält. So folgt auf jeden Knoten $C_i$ über eine Kante eines Zuges $Z$ ein Knoten $C_{iZ}$ in der nächsten Ebene. Zu einem Knoten mit der Konfiguration $C_i=(1,0)$ führt der Pfad $i$ im Baum, der einen Lösungsweg repräsentiert. Um die Länge eines Pfades zu bestimmen, muss die Anzahl der Ebenenrotationen im Index $i$ bestimmt werden. Diese Anzahl wird im Folgenden als $|i|$ bezeichnet. Eine Konfiguration $C_i$ wird nach $|i|$ Zügen erreicht. So lässt sich die Länge des optimalen Lösungswegs auslesen.
 
 Die Gruppe $(\Gtwo, \circ)$ wird durch die Züge $U, D, R, L, F$ und $B$ erzeugt. Da diese Züge allerdings nicht minimal sind, reichen für die Kanten eines Baums drei dieser Züge aus: $U, R$ und $F$. Diese drei Züge erzeugen die Untergruppe $(G_{min}, \circ)$. Somit kann der minimale Baum von dieser Untergruppe ausgehend gebildet werden, da sie (genau wie $(\Gtwo, \circ)$) den kompletten Würfel abbildet.
 
 Wenn man jeden möglichen Zug für die \textit{Quarter-Turn}-Metrik betrachtet, erhält man sechs Züge, da jede Ebene in zwei Richtungen gedreht werden kann. Es handelt sich dabei um die Züge $F, F^{-1}, R, R^{-1}, U$ und $U^{-1}$.
 
-Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus:
+Von jeder Konfiguration $C_i$ ausgehend sieht der Baum dann so aus: \nopagebreak
 
 \begin{figure}[H]
 \centering
@@ -4124,9 +4124,9 @@ In dieser Arbeit wurde die Gruppentheorie des \Tthree Würfels auf den \Ttwo Wü
 Die Gruppe $(\Gtwo, \circ)$ des \Ttwo Würfels besteht aus der Menge der Züge ($\Gtwo$) und dem Operator $\circ$, der zwei Züge verbindet. Die Menge $\Gtwo$ enthält die Äquivalenzklassen aller Züge und somit werden äquivalente Züge von nur einem Element repräsentiert. Das beinhaltet auch die Rotationsmöglichkeiten des Würfels.
 Da jede der Würfelkonfigurationen durch einen anderen Zug erreichbar ist und die Menge $\Gtwo$ äquivalente Züge gemeinsam in einer Äquivalenzklasse enthält, entspricht die Mächtigkeit von $\Gtwo$ der Anzahl der validen Würfelkonfigurationen. Das sind $|\Gtwo| = 3 \, 674 \, 160$ Würfelkonfigurationen. 
 
-In Kapitel \ref{Kapitel_MinUntergruppe} wurde die minimale Untergruppe $(G_{min}, \circ)$ von  $(\Gtwo, \circ)$ erzeugt, die den Würfel vollständig abbildet. Diese Untergruppe ist weniger komplex als $(\Gtwo, \circ)$, da sie auf drei Grundzüge beschränkt ist. Dadurch gibt es einen \textit{festen} Stein, mit dem die Ausrichtung des Würfels bestimmt werden kann und die Rotationen müssen nicht mehr berücksichtigt werden.
+Zusätzlich wurde die minimale Untergruppe $(G_{min}, \circ)$ von  $(\Gtwo, \circ)$ erzeugt, die den Würfel vollständig abbildet. Diese Untergruppe ist weniger komplex als $(\Gtwo, \circ)$, da sie auf drei Grundzüge beschränkt ist. Dadurch gibt es einen \textit{festen} Stein, mit dem die Ausrichtung des Würfels bestimmt werden kann und die Rotationen müssen nicht mehr berücksichtigt werden.
 
-Außerdem wurden verschiedene Ansätze zum Lösen des Würfels beschrieben und auf die \textit{God's Number} eingegangen. Diese ist beim \Ttwo Würfel $14$. Daraufhin wurde ein Baumkonzept zum Finden eines optimalen Lösungsweges entworfen. Dieses Baumkonzept basiert auf der minimalen, gruppentheoretischen Abbildung des Würfels $(G_{min}, \circ)$.
+Weiterhin wurden verschiedene Ansätze zum Lösen des Würfels beschrieben und auf die \textit{God's Number} eingegangen. Diese beschreibt die maximale Anzahl an Zügen zur optimalen Lösung des Würfels und ist beim \Ttwo Würfel $14$. Daraufhin wurde ein Baumkonzept zum Finden eines optimalen Lösungsweges entworfen. Dieses Baumkonzept basiert auf der minimalen, gruppentheoretischen Abbildung des Würfels $(G_{min}, \circ)$.
 
 Die Gruppe des \Ttwo Würfels veranschaulicht die Gruppentheorie an einem komplexen, aber greifbaren Beispiel. Es wurden verschiedene Konzepte angewandt, wie Untergruppen, Erzeuger, zyklische Gruppen, Cayleygraphen, Gruppenoperationen, Kommutatoren, Äquivalenzrelationen, Mächtigkeit einer Gruppe, Ordnung von Gruppenelementen, Permutationen und Zykelschreibweise. 
 
@@ -4156,10 +4156,10 @@ In dieser Arbeit wurden unter anderem Erzeuger und deren Cayleygraphen beschrieb
  
 Auf der Grundlage des gruppentheoretischen Modells des \Ttwo Würfels könnte eine \textit{GUI} (\textit{Graphical User Interface}) zum Lösen des Würfels implementiert werden. Damit ließen sich durch Experimente effiziente Algorithmen finden und verschiedene Lösungswege des Würfels könnten verglichen und optimiert werden. Der optimale Lösungsweg könnte mit dem Baumkonzept realisiert werden, dass in dieser Arbeit beschrieben wird.
 
-Die Definition der Gleichheit von zwei Zügen und die Äquivalenzklassen der Züge führen zu der Frage, die Gleichheit von zwei konkreten aber beliebigen Zügen zu berechnen.
+Die Definition der Gleichheit von zwei Zügen und die Äquivalenzklassen der Züge führen zu der Problematik, die Gleichheit von zwei konkreten aber beliebigen Zügen zu berechnen.
 Das könnte mit einem Termersetzungssystem (\textit{Rewriting}) umgesetzt werden und wäre für die Generierung des Cayleygraphen der Untergruppe $(G_{min}, \circ)$ notwendig.
 
-Außerdem wurden in dieser Arbeit Kommutatoren behandelt. Um aussagekräftige Ergebnisse zu der Kommutativität von Zugpaaren zu bekommen, müsste eine größere Menge der Kommutatoren berechnet und verglichen werden. Die Berechnung und Auswertung der Kommutatoren sollte maschinell erfolgen.
+Außerdem wurden in dieser Arbeit Kommutatoren behandelt. Um aussagekräftige Ergebnisse zu der Kommutativität von Zugpaaren zu erhalten, müsste eine größere Menge der Kommutatoren berechnet und verglichen werden. Die Berechnung und Auswertung der Kommutatoren könnte maschinell umgesetzt werden.
 
 
 
@@ -4282,7 +4282,7 @@ Zuerst wird die Veränderung des Vektors $x$ anhand des Zuges $R$ beispielhaft b
 Im Folgenden ist die Veränderung des Vektors $x$ durch den Zug $R^4$ zu sehen. Die Funktionen $g$ und $h$ werden bei einer Verschachtlung von $\gamma_R$ ebenfalls verschachtelt.
 \begin{align*}
 & \gamma_R (\gamma_R (\gamma_R (\gamma_R ((x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )))) \\
-= \ & (x_1, \ g(h(g(h(x_2)))), \ x_3, \ h(g(h(g(x_4)))), \ x_5, \ h(g(h(g(x_6)))), \ x_7, \ g(h(g(h(x_8)))) )
+& =  (x_1, \ g(h(g(h(x_2)))), \ x_3, \ h(g(h(g(x_4)))), \ x_5, \ h(g(h(g(x_6)))), \ x_7, \ g(h(g(h(x_8)))) )
 \end{align*}
 
 Die anderen Grundzüge verändern den Vektor bei vierfacher Ausführung folgendermaßen:
@@ -4386,7 +4386,7 @@ Das gilt analog dazu auch für die Rotationen des Würfels. In Abschnitt \ref{Ab
 & X_lX_lX_lX_L && \Leftrightarrow && BBBB &&  F^{-1}F^{-1}F^{-1}F^{-1} \\
 & X_rX_rX_rX_r && \Leftrightarrow && FFFF  && B^{-1}B^{-1}B^{-1}B^{-1}   \\
 \end{alignat*}
-Da alle vierfachen Rotationen demnach aus zwei vierfachen Ebenendrehungen bestehen, können die oben ausgeführten Umformungen auf die Rotationen übertragen werden. Der Vektor $x$ bleibt somit auch bei vierfachem Ausführen der gleichen Funktion $\beta$ unverändert. Somit gilt für eine beliebige Würfelkonfiguration $(\sigma, x)$ auch:
+Da alle vierfachen Rotationen demnach aus zwei vierfachen Ebenendrehungen bestehen, können die oben ausgeführten Umformungen auf die Rotationen übertragen werden. Der Vektor $x$ bleibt somit auch bei vierfacher Ausführung der gleichen Funktion $\beta$ unverändert. Somit gilt für eine beliebige Würfelkonfiguration $(\sigma, x)$ auch:
 \begin{align*}
 \forall \ W \in \{X_l, X_r, Y_l, Y_r, Z_l, Z_r\} \ . \ (\sigma, x) \cdot W^4 = (\sigma, x)
 \end{align*}
@@ -4537,7 +4537,7 @@ Diese Tabelle liest sich so, dass zuerst die Rotation, die über der Spalte steh
 \section{Persönliche Korrespondenz mit Jessica Fridrich}
 \label{Anhang_JessicaFridirch}
 
-Da aus den verfügbaren Quellen nicht eindeutig hervorgeht, dass Jessica Fridrich die \textit{CFOP-Methode} bzw. \textit{Fridrich-Methode} erfunden hat, wurde sie persönlich per E-Mail gefragt. Im Folgenden ist ihre Antwort eingebunden.
+Da aus den verfügbaren Quellen nicht eindeutig hervorging, dass Jessica Fridrich die \textit{CFOP-Methode} bzw. \textit{Fridrich-Methode} erfunden hat, wurde sie persönlich per E-Mail gefragt. Im Folgenden ist ihre Antwort eingebunden.
 
 
 
@@ -4549,6 +4549,8 @@ Da aus den verfügbaren Quellen nicht eindeutig hervorgeht, dass Jessica Fridric
 \item[Datum: ] Fr, 07.05.2021, 18:34
 \item[An:] pina.kolling@tu-dortmund.de
 \end{description}
+
+\vspace*{1em}
 
 Hi Pina,
 
