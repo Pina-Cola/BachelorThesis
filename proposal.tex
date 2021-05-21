@@ -2437,7 +2437,7 @@ Beim Anwenden von $Z^{-1}$ auf die Konfiguration $C'$ wird die letzte Ausführun
 \begin{align*} 
 (C \cdot Z^n) \cdot Z^{-1}=C \cdot (Z^n \circ Z^{-1})=C \cdot Z^{n-1}
 \end{align*}
-Demnach gilt dann :
+Es gilt weiter:
 \begin{alignat*}{2}
  & (C \cdot Z^n) \cdot Z^{-1} && = (C \cdot Z^m) \cdot Z^{-1}  \\
 \Leftrightarrow \ &  C \cdot Z^{n-1} && = C \cdot Z^{m-1}
@@ -2454,9 +2454,9 @@ Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel angewendet wird, kommen 
 
 \subsubsection*{Algorithmus}
 
-Es wurde bereits gezeigt, dass sich eine Würfelkonfiguration wiederholt, wenn ein beliebiger Zug wiederholt angewandt wird. Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechnung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird. Dazu wird der Algorithmus \ref{Algorithmus_OrdnungPermutation} zur Berechnung der Ordnung einer Permutation benötigt.
+Es wurde bereits gezeigt, dass sich eine Würfelkonfiguration wiederholt, wenn ein beliebiger Zug wiederholt angewandt wird. Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechnung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird. Dazu wird der Algorithmus \ref{Algorithmus_OrdnungPermutation} zur Berechnung der Ordnung einer Permutation verwendet.
 
-Der Algorithmus braucht für die Berechnung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Einen beliebigen Zug $Z$ aus $\Gtwo$ und eine beliebige Ausgangskonfiguration $C$ des Würfels. Die Ausgabe ist die Ordnung eines Zuges.
+Der Algorithmus benötigt für die Berechnung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Einen beliebigen Zug $Z$ aus $\Gtwo$ und eine beliebige Ausgangskonfiguration $C$ des Würfels. Die Ausgabe ist die Ordnung eines Zuges.
 
 
 \begin{minipage}[H]{0.15\textwidth}
@@ -2492,7 +2492,7 @@ Der Algorithmus braucht für die Berechnung der Ordnung eines Zuges $Z$ zwei Ein
 
 \vspace*{1em}
 
-In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ initialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert -- sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{Count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
+In Zeile 1 wird die Variable \textit{ord} mit der Ordnung der Permutationen von $Z$ initialisiert. Die Berechnung der Permutationsordnung wurde in Abschnitt \ref{Abschnitt_Zykelstruktur} in Algorithmus \ref{Algorithmus_OrdnungPermutation} beschrieben. Anschließend wird der Startwert des Vektors \textit{x} in der Variablen \textit{x'} gespeichert, um in der weiteren Berechnung Vergleiche damit durchzuführen (Zeile 2). Außerdem wird in Zeile 3 die Variable \textit{count} mit 1 initialisiert. Sie zählt die nötigen Ausführungen des Zuges $Z$, bis der Vektor wieder in der Ausgangskonfiguration ist. \textit{Count} wird mit 1 initialisiert, da vor der \textit{while}-Schleife in Zeile 4 bereits eine Anwendung von $Z$ durchgeführt wird. Die Anzahl der Ausführung von $Z$ ist dabei immer \textit{ord}, da die Ordnung des Zuges die Ausrichtung der Steine und die Steinposition berücksichtigt. Die Steine sind ausschließlich nach Vielfachen von \textit{ord} Zügen an der richtigen Position.
 
 Die \textit{while}-Schleife in Zeile 5 wird ausgeführt, bis \textit{x} wieder in der gleichen Konfiguration wie zu Beginn ist. Bei jeder Ausführung wird $Z^\textit{ord}$ ausgeführt (Zeile 6) und \textit{count} inkrementiert (Zeile 7).
 Die Ordnung des Zuges $Z$ setzt sich zusammen aus der Ordnung der Permutation von $Z$ und der Anzahl der Durchführungen von $Z^\textit{ord}$, bis die Ausrichtung der Steine wieder in der Anfangskonfiguration ist. Daher ist die Ordnung eines Zuges das \textit{kleinste gemeinsame Vielfache} von diesen beiden Werten (Zeile 8).
