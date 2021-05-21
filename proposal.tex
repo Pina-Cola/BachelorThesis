@@ -3089,7 +3089,7 @@ Da in Abschnitt \ref{Abschnitt_RotationDesWürfels} gezeigt wurde, dass die Rota
 \label{Kapitel_Lösung}
 
 Die übliche, händische Methode zum Lösen eines Zauberwürfels erfolgt durch das Kombinieren verschiedener Ebenendrehungen. Diese werden als eine Einheit angewendet und verändern die Konfiguration des Würfels dann spezifisch. 
-Es gibt beispielsweise eine Kombination, die 3 der 4 Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
+Es gibt beispielsweise eine Kombination, die drei der vier Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 In diesem Kapitel wird die Anzahl der $2$-Zykel der Züge untersucht und Kommutatoren erklärt.
 Anschließend wird beispielhaft ein Lösungsvorgang eines Menschen schrittweise beschrieben und erklärt.
@@ -3150,7 +3150,7 @@ Die Zykel der einzelnen Ebenendrehungen des Würfels sind im Folgenden als Produ
 \end{alignat*}
 Anhand der Funktionen der Grundzüge ist ersichtlich, dass jeder Grundzug durch einen $4$-Zykel definiert ist.
 Jeder $4$-Zykel kann als Produkt aus drei $2$-Zykeln geschrieben werden. 
-Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht ist demnach gerade.
+Die Anzahl der $2$-Zykel einer einzelnen Ebenendrehung ist demnach ungerade. Die Anzahl der $2$-Zykel eines Zuges, der aus zwei Ebenendrehungen besteht, ist demnach gerade.
 Beispielsweise hat der Zug $LF$ eine gerade Anzahl an $2$-Zykeln:
 \begin{align*}
 \sigma_{LF} & = (\textit{ulb} \ \textit{urf} \ \textit{drf} \ \textit{dlf} \ \textit{dlb}) \\
@@ -3193,7 +3193,7 @@ Kommutierende Elemente sind Elemente, die als Kommutator das neutrale Element ei
 \begin{align*}
 [Y,Z]= N\ \Rightarrow \textit{ $Y$ und $Z$ sind kommutierende Elemente}
 \end{align*}
-Zwei gleiche Züge $Y, Z$ der Gruppe $(\Gtwo, \circ)$ kommutieren:
+Zwei gleiche Züge $Y, Z$ der Gruppe $(\Gtwo, \circ)$ kommutieren. Dann ist der Kommutator $[X,Y]$ ein Repräsentant der Äquivalenzklasse des leeren Zuges $N$:
 \begin{align*}
 \forall \ Y, Z \in \Gtwo, Y = Z \ . \ [Y, Z] = N
 \end{align*}
@@ -3217,7 +3217,7 @@ C \cdot [Z, Z] & = C \cdot ZZZ^{-1}Z^{-1} \\
 Somit kommutieren alle Zugpaare aus $\Gtwo$, die aus zwei gleichen Zügen bestehen.
 
 
-Es kommutieren nicht ausschließlich gleiche Zugpaare, sondern auch Züge, die gegen\-über\-liegende Ebenen beeinflussen, da sie nicht dieselben Steine bewegen. Diese sogenannten \textit{elementfremden Zykel} kommutieren \cite{OS}. Auch bei dem Vektor $x$ werden dann keine gemeinsamen Einträge beeinflusst.
+Es kommutieren nicht ausschließlich gleiche Zugpaare, sondern auch Züge, die gegen\-über\-liegende Ebenen beeinflussen, da sie nicht dieselben Steine bewegen. Diese sogenannten \textit{elementfremden Zykel} kommutieren \cite{OS}. Bei dem Vektor $x$ werden ebenfalls keine gemeinsamen Einträge beeinflusst.
 Das sind dann die folgenden Kommutatoren, mit $n, m \in \mathbb{N}$:
 \begin{align*}
 [U^n, D^m] \ \ \ \  \ \ \ [F^n, B^m] \ \ \ \ \ \ \ [L^n, R^m] \\
@@ -3228,7 +3228,7 @@ Da die Zugpaare nicht dieselben Steine beeinflussen, ist es nicht relevant, dass
 
 
 Wenn zwei Züge $Y, Z \in \Gtwo$ nicht kommutieren, kann anhand der Komplexität des Kommutators bis zu einem gewissen Grad eine Aussage darüber getroffen werden, wie groß die Veränderung der Würfelkonfiguration nach dem Ausführen von $[Y, Z]$ ist. 
-Zur Veranschaulichung folgt nun ein Beispiel mit den Zügen $L$ und $F$ und der Startkonfiguration $C = (1,0)$:
+Zur Veranschaulichung folgt ein Beispiel mit den Zügen $L$ und $F$ und der Startkonfiguration $C = (1,0)$:
 \begin{align*}
 C \cdot  [L, F] = C \cdot LFL^{-1}F^{-1}
 \end{align*}
@@ -3258,7 +3258,6 @@ Dabei verändern vier der acht Steine im Würfel ihre Position und Ausrichtung. 
 %\hspace*{1.5cm } $\textit{ulb} \mapsto \textit{ulf}$ \hspace*{1.5cm }$\textit{ulf}  \mapsto \textit{ulb}$ \hspace*{1.5cm } $\textit{dlf} \mapsto \textit{drf}$ \hspace*{1.5cm } $\textit{drf} \mapsto \textit{dlf}$
 %\\
 %\\
-
 Die Folgekonfiguration ist im Folgenden zu sehen, mit $C=(1,0)$:
 \begin{align*}
 C \cdot [L, F] = (( \textit{ulb} \ \textit{ulf} ) \ (\textit{dlf} \ \textit{drf} ), (0,0,2,0,0,0,0,1) )
