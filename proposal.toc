@@ -113,9 +113,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.2}Ausblick}{87}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Abbildungsverzeichnis}{89}{subsection.10.2}%
+\contentsline {section}{Abbildungsverzeichnis}{89}{section*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatur}{92}{subsection.10.2}%
+\contentsline {section}{Literatur}{91}{section*.44}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Übergangsfunktionen des Ausrichtungsvektors $\pmb {x}$}{93}{appendix.A}%
 \defcounter {refsection}{0}\relax 
