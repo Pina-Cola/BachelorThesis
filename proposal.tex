@@ -2565,7 +2565,7 @@ Dieser Algorithmus berechnet somit die Ordnung eines beliebigen Zuges aus $\Gtwo
 
 \label{Kapitel_Untergruppen}
 
-Dieses Kapitel behandelt einige der Untergruppen der Gruppe $(\Gtwo, \circ)$. Im ersten Teil wird auf die trivialen Untergruppen eingegangen, zudem werden noch weitere Untergruppen beschrieben.
+Dieses Kapitel behandelt einige der Untergruppen der Gruppe $(\Gtwo, \circ)$. Im ersten Teil wird unter anderem auf die trivialen Untergruppen eingegangen.
 Die Definition und Erklärung der Untergruppe und des Erzeugers finden sich in Abschnitt \ref{Abschnitt_Untergruppe}.
 Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt. Die Cayleygraphen dienen der Veranschaulichung von Gruppenstrukturen. Die Untergruppe, die den \Ttwo Würfel minimal aber komplett abbildet, findet sich in Kapitel \ref{Kapitel_MinUntergruppe}.
 
@@ -2594,7 +2594,7 @@ Außerdem werden die Cayleygraphen zu zwei Untergruppen dargestellt und erklärt
 
 \label{Abschnitt_UntergruppenBeispiele}
 
-Wie bereits in Abschnitt \ref{Abschnitt_Untergruppe} erklärt, hat jede Gruppe zwei triviale Untergruppen. Die beiden trivialen Untergruppen von $(\Gtwo, \circ)$ werden hier $(H_N, \circ)$ und $(H_G, \circ)$ genannt: 
+Jede Gruppe hat zwei triviale Untergruppen (s. Abschnitt \ref{Abschnitt_Untergruppe}). Die beiden trivialen Untergruppen von $(\Gtwo, \circ)$ werden hier $(H_N, \circ)$ und $(H_G, \circ)$ genannt: 
 \begin{align*}
 (H_N, \circ) \leqslant (\Gtwo, \circ)\textit{ und }(H_G, \circ) \leqslant (\Gtwo, \circ)
 \end{align*} 
@@ -2603,7 +2603,7 @@ Die Untergruppe $(H_N, \circ)$ enthält in der Trägermenge $H_N$ ausschließlic
 (H_N, \circ) = (\{N\}, \circ)\textit{ und }  (H_G, \circ) = (\Gtwo, \circ)
 \end{align*}
 Im Rahmen dieser Arbeit kann nur auf einen Teil der Untergruppen von $(\Gtwo, \circ)$ eingegangen werden. 
-Der folgende Abschnitt beschreibt zwei anschauliche Untergruppen des Würfels. Diese Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den \Tthree Würfel genannt. Hier werden zwei seiner Untergruppen auf den \Ttwo Würfel übertragen: 
+Der folgende Abschnitt beschreibt zwei anschauliche Untergruppen des Würfels. Diese Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den \Tthree Würfel genannt. Hier werden zwei dieser Untergruppen auf den \Ttwo Würfel übertragen: 
 \begin{itemize}
 \item Die Untergruppe $(H_{E1}, \circ)$ lässt nur die Rotation einer Ebene zu. Die Züge der Trägermenge erreichen lediglich vier Würfelkonfigurationen (sowohl beim \Ttwo als auch beim \Tthree Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
 
@@ -2611,7 +2611,7 @@ Da die Trägermenge $H_{E1}$ die Äquivalenzklassen aller möglichen Züge der U
 
 Auch anhand des mathematischen Modells des \Ttwo Würfels kann festgestellt werden, dass die Züge der Untergruppe $(H_{E1}, \circ)$ genau vier Würfelkonfigurationen erreichen.
 
-Jede Ebenendrehung ($U, D, R, L, F$ oder $B$) ist durch eine Permutationsfunktion $\sigma$ definiert. Dabei besteht $\sigma$ für jeden dieser Grundzüge aus nur einem vierelementigen Zykel. Diese Zykel wurden in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} definiert. Die Ordnung der Permutation ist im Fall einer einzelnen Ebenendrehung immer vier. Die Ordnung einer Permutation wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
+Jede Ebenendrehung ($U, D, R, L, F$ oder $B$) ist durch eine Permutationsfunktion $\sigma$ definiert. Dabei besteht $\sigma$ für jeden dieser Grundzüge aus nur einem vierelementigen Zykel (s. Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel}). Die Ordnung der Permutation ist im Fall einer einzelnen Ebenendrehung immer 4 (s. Abschnitt \ref{Abschnitt_OrdnungPermutationen}).
 
 Die Ordnung eines Zuges wurde in Abschnitt \ref{Abschnitt_OrdnungZüge} definiert. Bei der Ordnung eines Zuges wird zusätzlich zu den Permutationen die Funktion $\gamma$ berücksichtigt, die die Ausrichtung der Steine darstellt. $\gamma$ wurde in Abschnitt \ref{Abschnitt_AusrichtungDerSteine} definiert. Jede dieser Funktionen $\gamma$ gibt die Eingabe unverändert zurück, wenn sie viermal direkt nacheinander ausgeführt wird. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}. 
 
@@ -2671,13 +2671,13 @@ $(G_F, \circ)$ wird erzeugt durch:
 \end{align*}
 Das bedeutet, dass die Trägermenge $G_F$ die Äquivalenzklassen der folgenden Elemente enthält: 
 \begin{align*}
-\{N, F^1, F^2, F^3, F^4, ...\}
+\{..., F^{-2}, F^{-1}, F^0, F^1, F^2, ...\}
 \end{align*}
 Zyklische Gruppen können unendlich sein. Die Gruppe $(G_F,  \circ)$ ist aufgrund der Äquivalenz\-klassen aber endlich. Die Gleichheit der einelementigen Züge wurde bereits in Abschnitt \ref{Abschnitt_GleichheitVonZügen} beschrieben.
 
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
-Die Ordnung des Zuges $FR$ beispielsweise ist 15 -- wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. 
+Die Ordnung des Zuges $FR$ beispielsweise ist 15: Wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. 
 Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente, da mit dem Zug 15 Würfelkonfigurationen erreichbar sind. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ 105 \cite{TD}.
 %
 %
@@ -2705,7 +2705,7 @@ Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente, da mit dem Z
 
 Das Beispiel der durch $\{ FF, RR \}$ erzeugten Untergruppe hat Tom Davis in \textit{Group Theory via Rubik's Cube} \cite{TD} ebenfalls beschrieben und hier wird es von dem \Tthree \ auf den \Ttwo Würfel übertragen.
 Da die beiden Züge $FF$ und $RR$ als Einheiten gesehen werden, muss jede der Ebenendrehungen eine halbe Drehung sein.
-Es wurde in Abschnitt \ref{Abschnitt_GleichheitVonZügen} bereits gezeigt, dass $(FF)^2$ und $(RR)^2$ Repräsentanten der Äquivalenzklasse von $N$ sind, da der Würfel dann wieder in der Ausgangskonfiguration ist. Es gilt also für eine beliebige Konfiguration $C$:
+Es wurde in Abschnitt \ref{Abschnitt_GleichheitVonZügen} bereits gezeigt, dass $(FF)^2$ und $(RR)^2$ Repräsentanten der Äquivalenzklasse von $N$ sind, da sich der Würfel nach dem Ausführen dieser Züge wieder in der Ausgangs\-konfiguration befindet. Es gilt also für eine beliebige Konfiguration $C$:
 \begin{align*}
 C \cdot (FF)^2 = C \textit{ und } C \cdot (RR)^2 = C
 \end{align*}
@@ -2727,7 +2727,7 @@ Zum Vergleich: Tom Davis erhält bei dem  \Tthree Würfel zwölf Elemente in der
 %Wenn diese Doppelungen aussortiert werden, verbleiben folgende sieben Gruppenelemente:
 
 Die äquivalenten Züge können auch mathematisch erkannt werden, ohne die Züge an einem Würfel auszuprobieren.
-Das wird im Folgenden beispielhaft mit dem Zug $(RRFF)^2 RR$ gemacht.
+Das wird im Folgenden beispielhaft anhand des Zuges $(RRFF)^2 RR$ beschrieben.
 \begin{align*}
 (RRFF)^2 RR = RRFFRRFFRR
 \end{align*}
@@ -2750,7 +2750,7 @@ C \cdot RRFFRRFFRR = C \cdot FF
 \end{align*}
 
 Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppe mit lediglich sieben bzw. zwölf Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
-Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $5! \cdot 3^5$ auf lediglich $29 \, 160$ Mitglieder, aber auch das ist deutlich größer als sieben.
+Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $5! \cdot 3^5$ auf lediglich $29 \, 160$ Mitglieder.
 
 %
 %
@@ -2804,7 +2804,7 @@ Anhand dieses Cayleygraphen kann beispielsweise abgelesen werden, dass die Züge
 \label{Abbildung_CayleygraphFFRR}
 \end{figure}
 
-Der Cayleygraph der Erzeuger $FF$ und $RR$ ist wesentlich komplexer, als der Graph der Untergruppe $(G_F, \circ)$ (Abbildung \ref{Abbildung_CayleygraphF}). Trotzdem stellt er eine sehr kleine erzeugte Untergruppe dar, im Vergleich zu der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden. In Kapitel \ref{Kapitel_MinUntergruppe} wird die Untergruppe der minimalen, vollständigen Abbildung des Würfels definiert. Der Cayleygraph dieser Untergruppe wird in Abschnitt \ref{Abschnitt_CayleygraphMIN} beschrieben und enthält $3 \ 647 \ 160$ Knoten.
+Der Cayleygraph der Erzeuger $FF$ und $RR$ ist wesentlich komplexer, als der Graph der Untergruppe $(G_F, \circ)$ (Abbildung \ref{Abbildung_CayleygraphF}). Trotzdem stellt er, im Vergleich zu der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$, eine sehr kleine erzeugte Untergruppe dar. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden. In Kapitel \ref{Kapitel_MinUntergruppe} wird die Untergruppe der minimalen, vollständigen Abbildung des Würfels definiert. Der Cayleygraph dieser Untergruppe wird in Abschnitt \ref{Abschnitt_CayleygraphMIN} beschrieben und enthält $3 \ 647 \ 160$ Knoten.
 
 
 
