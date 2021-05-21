@@ -2071,7 +2071,7 @@ $\forall \  Z \in \Gtwo \ \exists \  Z^{-1} \in \Gtwo \ .  \ Z \circ Z^{-1} = Z^
 
 
 Jeder Zug $Z$ überführt eine Würfelkonfiguration in eine Folgekonfiguration. 
-Das passiert durch eine Permutationsfunktion $\sigma$ und eine Übergangsfunktion $\gamma$ für den Vektor $x$. 
+Das wird durch eine Permutationsfunktion $\sigma$ und eine Übergangsfunktion $\gamma$ für den Vektor $x$ realisiert. 
 Betrachtet man den physischen Würfel, so wird auffallen, dass man die einzelnen Ebenen auch gegen den Uhrzeigersinn drehen kann und somit eine Ebenendrehung invertiert. Eine Ebenendrehung um $90^\circ$ gegen den Uhrzeigersinn entspricht einer Ebenendrehung um $270^\circ$ im Uhrzeigersinn. Die Funktionen $\sigma$ und $\gamma$ sind dabei gleich.
 Die Inversen der einzelnen Ebenendrehungen werden somit folgendermaßen definiert:
 \begin{align*}
@@ -2082,7 +2082,7 @@ Soll ein Zug invertiert werden, der aus mehreren Grundzügen besteht, so muss da
 \forall \ Y \in \Gtwo, Y & = (Z_1 \circ Z_2 \circ ... \circ Z_n), Z_{i} \in \{U, D, R, L, F, B\} \ . \  \\
 Y^{-1} & = {Z_n}^{-1} \circ {Z_{n-1}}^{-1} \circ ... \circ {Z_1}^{-1} 
 \end{align*}
-Das kann mit der oben beschriebenen Definition von $Z^{-1}$ (mit $Z \in \{U, D, R, L, F, B\} $) folgendermaßen umgeformt werden:
+Das kann mit der oben beschriebenen Definition von $Z^{-1}$ mit $Z \in \{U, D, R, L, F, B\} $ folgendermaßen umgeformt werden:
 \begin{align*}
 Y^{-1} & = {Z_n}^{-1} \circ {Z_{n-1}}^{-1} \circ ... \circ {Z_1}^{-1} \\
 & = Z_nZ_nZ_n \circ Z_{n-1}Z_{n-1}Z_{n-1} \circ ... \circ Z_1Z_1Z_1 \\
@@ -2097,7 +2097,7 @@ Mit diesen Ausdrücken sind die inversen Elemente für jeden Zug aus $\Gtwo$ def
 Somit ist $(\Gtwo, \circ)$ eine Gruppe, da die vier Gruppenaxiome erfüllt sind. 
 
 
-$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge unterschiedliche Ergebnisse haben. Dieses Beispiel ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt oder kann händisch an einem Würfel ausprobiert werden.
+$(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation der rechten Ebene im Uhrzeigersinn ($R$) und eine Rotation der vorderen Ebene im Uhrzeigersinn ($F$) in umgekehrter Reihenfolge unterschiedliche Ergebnisse haben. Dieses Beispiel ist in Abbildung \ref{Abbildung_WürfelNachFRundRF} grafisch dargestellt.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{RF.png}
@@ -2131,7 +2131,7 @@ $(\Gtwo, \circ)$ ist keine kommutative Gruppe, da beispielsweise eine Rotation d
 %
 \subsection{Züge als Gruppenoperation}
 
-Im Folgenden wird eine Gruppenoperation beschrieben, die eine Würfelkonfiguration durch das Ausführen eines Zuges auf eine neue Würfelkonfiguration abbildet. Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. Es handelt sich um eine Rechtsoperation, da die Elemente der Gruppe von rechts auf den Elementen der Menge operieren. Die Rechtsoperation wurde in Abschnitt \ref{Abschnitt_Gruppenoperation} definiert.
+In diesem Abschnitt wird eine Gruppenoperation beschrieben, die eine Würfelkonfiguration durch das Ausführen eines Zuges auf eine neue Würfelkonfiguration abbildet. Bei Gruppenoperationen beeinflussen die Elemente einer Gruppe eine Menge. In diesem Fall beeinflussen die Züge des Würfels die Konfiguration des Würfels. Es handelt sich um eine Rechtsoperation, da die Elemente der Gruppe von rechts auf den Elementen der Menge operieren. Die Rechtsoperation wurde in Abschnitt \ref{Abschnitt_Gruppenoperation} definiert.
 
 Bei $\Gtwo$ handelt es sich um die Trägermenge der Gruppe $(\Gtwo, \circ)$ und $M_C$ ist die Menge aller Konfigurationen. Der Punktoperator der Gruppenoperation ist im Folgenden definiert:
 \begin{align*}
@@ -2197,7 +2197,7 @@ Das bedeutet, dass alle Steine des Würfels wieder in ihre vorherige Position ge
 Nicht nur die Züge $U, D, R, L, F, B$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Dazu sind je nach Zug verschieden viele Wiederholungen nötig. 
 
 
-Es ist aber zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permutationen behandelt. Überträgt man dies auf die Würfelkonfiguration, so wird nur die Steinposition $\sigma$ beachtet. Die Ordnung der Permutationen ist daher die Anzahl der Durchführungen, die benötigt werden, damit alle Steine wieder in der Ausgangsposition sind. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Die Ordnung im Bezug auf die komplette Würfelkonfiguration wird in Abschnitt \ref{Abschnitt_OrdnungZüge} als \textit{Ordnung der Züge} beschrieben. In diesem Abschnitt wird die Ordnung der Permutation definiert und anhand eines Beispiels beschrieben. Außerdem wird die Zykelstruktur grafisch dargestellt und anschließend ein Algorithmus zur Berechnung der Permutationsordnung eingeführt.
+Es ist zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permutationen behandelt. Überträgt man dies auf die Würfelkonfiguration, so wird nur die Steinposition $\sigma$ beachtet. Die Ordnung der Permutationen ist daher die Anzahl der Durchführungen, die benötigt werden, damit sich alle Steine wieder in der Ausgangsposition befinden. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Die Ordnung im Bezug auf die komplette Würfelkonfiguration wird in Abschnitt \ref{Abschnitt_OrdnungZüge} als \textit{Ordnung der Züge} beschrieben. In diesem Abschnitt wird die Ordnung der Permutation definiert und anhand eines Beispiels beschrieben. Außerdem wird die Zykelstruktur grafisch dargestellt und anschließend ein Algorithmus zur Berechnung der Permutationsordnung eingeführt.
 
 
 %Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
@@ -2209,7 +2209,7 @@ Es ist aber zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permuta
 
 \subsubsection*{Beispiel: Ordnung der Permutation}
 
-Der Zug $LF$ hat beispielsweise die Ordnung $15$, die Permutation der Steine hat aber die Ordnung $5$. Nach $5$ Wiederholungen von $LF$ befinden sich alle Steine wieder an ihrer Ausgangsposition (links in Abbildung \ref{Abbildung_LF_5_15}, von der Startkonfiguration ausgehend). Nach $15$ Wiederholungen befindet sich der Würfel wieder in der gleichen Konfiguration, wie vor dem Zug (rechts in Abbildung \ref{Abbildung_LF_5_15}).
+Der Zug $LF$ hat beispielsweise die Ordnung $15$, die Permutation der Steine hat aber die Ordnung $5$. Nach fünf Wiederholungen von $LF$ befinden sich alle Steine wieder an ihrer Ausgangsposition (links in Abbildung \ref{Abbildung_LF_5_15}, von der Startkonfiguration ausgehend). Nach $15$ Wiederholungen befindet sich der Würfel wieder in der gleichen Konfiguration, wie vor dem Zug (rechts in Abbildung \ref{Abbildung_LF_5_15}).
 
 \begin{figure}[H]
 \centering
@@ -2234,7 +2234,7 @@ Das gilt dann auch für jede andere Konfiguration $(\sigma, x)$ nach Ausführen 
 
 \subsubsection*{Definition: Ordnung einer Permutation}
 
-Die Ordnung einer Permutation ist im Folgenden mathematisch definiert. Dabei ist $(\sigma, x)$ eine beliebige Würfelkonfiguration.
+Die Ordnung einer Permutation ist im Folgenden definiert. Dabei ist $(\sigma, x)$ eine beliebige Würfelkonfiguration.
 \begin{align*}
 \forall \ Z \in \Gtwo \ \exists \ n \in \mathbb{N} \ . \ (\sigma, x) \cdot Z^n = (\sigma, x')
 \end{align*}
@@ -2269,7 +2269,7 @@ Wird der Zug $U$ viermal ausgeführt, befinden sich die Würfelsteine wieder in 
 \end{tabular}
 \end{center}
 
-Die vierte Zeile der Tabelle hat dieselbe Anordnung der Steine wie die oberste Zeile (vor Ausführung von $U$). 
+Die vierte Zeile der Tabelle hat dieselbe Anordnung der Steine wie die Kopfzeile (vor Ausführung von $U$). 
 Somit hat die Permutation der beschriebenen Ebenenrotation $U$ die Ordnung 4, da $\sigma_U$ nach vier Wiederholungen wieder zur Ausgangspermutation führt. Das gilt auch für die anderen einelementigen Züge ($D, F, B, L, R$).
 Bei jeder Permutation eines Zuges $Z$, die aus lediglich einem $n$-elementigen Zykel besteht, ist die Ordnung der Permutation $n$. Dabei ist $(\sigma, x)$ eine beliebige Würfelkonfiguration:
 \begin{align*}
@@ -2283,7 +2283,7 @@ Es gilt folglich auch:
 Auch bei komplexeren Permutationen von Zügen, die aus mehr als einem Zykel bestehen, kann anhand der Zykelstruktur die Ordnung bestimmt werden. Dazu muss das \textit{kleinste gemeinsame Vielfache} aller Zykelgrößen bestimmt werden. \cite{TD}
 
  
-Der besseren Übersichtlichkeit halber sind die Zykel aller Züge in Abbildung \ref{Abbildung_GraphAllerPermutationen} grafisch dargestellt.
+Zur besseren Übersichtlichkeit sind die Zykel aller Züge in Abbildung \ref{Abbildung_GraphAllerPermutationen} grafisch dargestellt.
 Dieser Graph vereinfacht das Ablesen der Zykel, wenn bei einem Zug mehrere Ebenenrotationen kombiniert werden.
 
 \begin{figure}[H]
@@ -2352,7 +2352,7 @@ Aus diesen Erkenntnissen ergibt sich folgender Algorithmus zur Bestimmung der Or
 \BlankLine
  \textit{perm} $\leftarrow$ Permutationsfunktion von Zug $Z$\;
 
-  \textit{list} $\leftarrow$ leere Liste initialisieren\;
+  \textit{list} $\leftarrow$ leere Liste \;
   
   \textit{kgVList} $\leftarrow$ 0 \;
 
@@ -2360,9 +2360,9 @@ Aus diesen Erkenntnissen ergibt sich folgender Algorithmus zur Bestimmung der Or
 
  \While{\textit{z} $> 0$}{
  
-  \textit{zykel\_length} $\leftarrow$ Zykellänge von Zykel $z$ \;
+  \textit{zykelLength} $\leftarrow$ Zykellänge von Zykel $z$ \;
   
-  \textit{list} $\leftarrow$ \textit{zykel\_length} hinzufügen \;
+  \textit{list} $\leftarrow$ \textit{zykelLength} hinzufügen \;
   
   \textit{z} $\leftarrow$ \textit{ z}$-1$ \;
  }
@@ -2380,7 +2380,7 @@ Aus diesen Erkenntnissen ergibt sich folgender Algorithmus zur Bestimmung der Or
 
 \vspace*{1em}
 
-In Zeile 1 wird die Permutationsfunktion des Zuges der Variablen \textit{perm} zugewiesen und in Zeile 2 wird eine leere Liste initialisiert, um darin die Längen der einzelnen Zykel zu speichern. Danach wird in Zeile 3 die Variable \textit{kgVList} mit 0 initialisiert und in Zeile 4 wird die Anzahl der Zykel ausgelesen und in der Variablen $z$ gespeichert. Daraufhin wird eine \textit{while}-Schleife $z$-mal ausgeführt. In jedem Durchlauf wird die Länge von einem der $z$ Zykel ausgelesen und in die Liste hinzugefügt. Außerdem wird $z$ dekrementiert. Nachdem alle Zykellängen in \textit{list} gespeichert sind, wird in Zeile 9 das \textit{kleinste gemeinsame Vielfache} der Listenelemente berechnet und der Variablen \textit{kgVList} zugewiesen. Dabei handelt es sich um die Ordnung der Permutation und deshalb wird \textit{kgVList} in Zeile 10 zurückgegeben.
+In Zeile 1 wird die Permutationsfunktion des Zuges der Variablen \textit{perm} zugewiesen und in Zeile 2 wird eine leere Liste initialisiert, um darin die Längen der einzelnen Zykel zu speichern. Danach wird in Zeile 3 die Variable \textit{kgVList} mit 0 initialisiert. In Zeile 4 wird die Anzahl der Zykel ausgelesen und in der Variablen $z$ gespeichert. Daraufhin wird eine \textit{while}-Schleife $z$-mal ausgeführt. In jedem Durchlauf wird die Länge von einem der $z$ Zykel ausgelesen und in die Liste hinzugefügt (Zeile 6 -7). Außerdem wird $z$ dekrementiert (Zeile 8). Nachdem alle Zykellängen in \textit{list} gespeichert sind, wird in Zeile 9 das \textit{kleinste gemeinsame Vielfache} der Listenelemente berechnet und der Variablen \textit{kgVList} zugewiesen. Dabei handelt es sich um die Ordnung der Permutation und deshalb wird \textit{kgVList} in Zeile 10 zurückgegeben.
 
 Die Ordnung der Permutation wird zur Berechnung der Ordnung von Zügen benötigt. Diese wird im folgenden Abschnitt beschrieben und es wird ein Algorithmus zur Berechnung eingeführt.
 
@@ -2405,7 +2405,7 @@ In diesem Abschnitt wird gezeigt, dass der Würfel wieder in die Ausgangspositio
 \begin{align*}
 \forall \ Z \in \Gtwo \ \exists \ n \in \mathbb{N} \ . \ C \cdot Z^n = C
 \end{align*}
-Außerdem wird ein Algorithmus zu Berechnung der Ordnung von Zügen beschrieben.
+Weiterhin wird ein Algorithmus zu Berechnung der Ordnung von Zügen beschrieben.
 
 \subsubsection*{Beweis}
 
