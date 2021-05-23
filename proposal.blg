@@ -1,22 +1,22 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'proposal.blg'
-[123] biber:322> INFO - === So Mai 23, 2021, 10:30:00
-[142] Biber.pm:415> INFO - Reading 'proposal.bcf'
-[232] Biber.pm:943> INFO - Found 17 citekeys in bib section 0
-[252] Biber.pm:4256> INFO - Processing section 0
-[252] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[252] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[266] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[268] bibtex.pm:1653> INFO - LaTeX decoding ...
-[296] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[331] Utils.pm:293> WARN - year field '2020 aktualisiert' in entry 'RC' is not an integer - this will probably not sort properly.
-[363] Utils.pm:293> WARN - year field '16. Oktober 2019' in entry 'robothand' is not an integer - this will probably not sort properly.
-[405] Utils.pm:293> WARN - year field 'Publiziert am 11.12.2017' in entry 'RF' is not an integer - this will probably not sort properly.
-[409] Utils.pm:293> WARN - year field 'Publiziert am 19.04.2018' in entry 'RF2' is not an integer - this will probably not sort properly.
-[455] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[455] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[455] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[455] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
-[474] bbl.pm:652> INFO - Writing 'proposal.bbl' with encoding 'UTF-8'
-[495] bbl.pm:755> INFO - Output to proposal.bbl
-[496] Biber.pm:128> INFO - WARNINGS: 4
+[93] biber:322> INFO - === So Mai 23, 2021, 11:27:18
+[110] Biber.pm:415> INFO - Reading 'proposal.bcf'
+[206] Biber.pm:943> INFO - Found 17 citekeys in bib section 0
+[227] Biber.pm:4256> INFO - Processing section 0
+[228] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[229] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[252] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[253] bibtex.pm:1653> INFO - LaTeX decoding ...
+[277] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[304] Utils.pm:293> WARN - year field '2020 aktualisiert' in entry 'RC' is not an integer - this will probably not sort properly.
+[335] Utils.pm:293> WARN - year field '16. Oktober 2019' in entry 'robothand' is not an integer - this will probably not sort properly.
+[391] Utils.pm:293> WARN - year field 'Publiziert am 11.12.2017' in entry 'RF' is not an integer - this will probably not sort properly.
+[395] Utils.pm:293> WARN - year field 'Publiziert am 19.04.2018' in entry 'RF2' is not an integer - this will probably not sort properly.
+[453] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[453] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[453] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[453] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[471] bbl.pm:652> INFO - Writing 'proposal.bbl' with encoding 'UTF-8'
+[480] bbl.pm:755> INFO - Output to proposal.bbl
+[480] Biber.pm:128> INFO - WARNINGS: 4
