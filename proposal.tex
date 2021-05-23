@@ -82,7 +82,7 @@
 
 \pagestyle{plain}
 
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, maxbibnames=99]{biblatex}
 
 \addbibresource{references.bib}
 
@@ -213,7 +213,7 @@ Im Jahr 2018 löste der Chinese Yusheng Du den Würfel bei einem Wettbewerb in $
 Das Patent für den kleineren \Ttwo Würfel hat \textit{Rubik} im Jahr 1981 angemeldet \cite{patent}. Dieser Würfel ist Gegenstand dieser Arbeit. Mittlerweile gibt es die Zauberwürfel in vielen verschiedenen Größen: Im Jahr 2017 baute Grégoire Pfennig einen funktionsfähigen Würfel der Größe 33$\times$33$\times$33 und stellte damit einen neuen Weltrekord auf \cite{HugeCube}.
 
 Bis heute sind Kinder und Erwachsene gleichermaßen von den Zauberwürfeln begeistert.
-Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
+Doch die Zauberwürfel sind nicht nur interessante Puzzle zur manuellen Lösung -- sie bieten beispielsweise auch die Möglichkeit, sie maschinell mit Bild- und Farberkennung zu lösen \cite{robothand}. Außerdem können die Würfel als algebraische Strukturen dargestellt werden.
 
 %
 %
@@ -345,7 +345,7 @@ Ein \Ttwo Würfel besteht aus acht Ecksteinen (s. links in Abbildung \ref{Abbild
 \newpage
 
 \item[Seite] \ \\
-Sowohl der \Ttwo \ als auch der \Tthree Würfel haben sechs Seiten, bestehend aus jeweils vier bzw. neun Farbflächen und somit sechs Farben. Die weiße Seite wird üblicherweise als obere Seite bezeichnet. Für den Mechanismus ist die Ausrichtung des Würfels aber nicht relevant.
+Sowohl der \Ttwo \ als auch der \Tthree Würfel haben sechs Seiten, bestehend aus jeweils vier bzw. neun Farbflächen und damit sechs Farben. Die weiße Seite wird üblicherweise als obere Seite bezeichnet. Für den Mechanismus ist die Ausrichtung des Würfels aber nicht relevant.
 
 \begin{figure}[h]
 \centering
@@ -439,7 +439,8 @@ Auf die Rotationsmöglichkeiten des kompletten Würfels wird in Abschnitt \ref{A
 Obwohl die oben beschriebenen Drehungen folglich nicht minimal sind, wird für jede Ebene ein Grundzug definiert. Dies dient der besseren Anschaulichkeit und Übertragbarkeit der Algorithmen des \Tthree Würfels.
 
 
-Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$. Die minimale Abbildung des Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} behandelt.
+Eine minimale Menge der Grundzüge, die nicht voneinander ableitbar sind, ist $\{U, R, F\}$\footnote{Alle minimalen Kombinationsmöglichkeiten der sechs oben definierten Grundzüge sind: $\{U, R, F\},\{U, L, F\},\{U, R, B\},\{U, L, B\},\{D, R, F\},\{D, L, F\},\{D, R, B\}$ und $\{D, L, B\}$.  }.
+Die minimale Abbildung des Würfels wird in Kapitel \ref{Kapitel_MinUntergruppe} behandelt.
 
 
 
@@ -1096,7 +1097,7 @@ Deshalb wird in diesem Kapitel die Konfiguration des Würfels definiert, bevor d
 Die Konfiguration des Würfels kann als 2-Tupel geschrieben werden: $(\sigma, x)$.
 In diesem Kapitel wird die Position der Ecksteine als Menge bijektiver Funktionen $\sigma$ und die Ausrichtung der Ecksteine als Vektor $x$ definiert.
 
-Die Definition der Würfelkonfiguration wurde aus Janet Chen's \textit{Group Theory and the Rubik's Cube} \cite{JC} von dem \Tthree \ auf den \Ttwo \ Würfel übertragen. Der \Ttwo Würfel benötigt im Gegensatz zum \Tthree Würfel aber nur zwei statt vier Konfigurationsparameter, da er keine Kantsteine hat. Somit muss die Position und Ausrichtung der Kantsteine nicht berücksichtigt werden.
+Die Definition der Würfelkonfiguration wurde aus Janet Chen's \textit{Group Theory and the Rubik's Cube} \cite{JC} von dem \Tthree \ auf den \Ttwo \ Würfel übertragen. Der \Ttwo Würfel benötigt im Gegensatz zum \Tthree Würfel lediglich zwei statt vier Konfigurationsparameter, da er keine Kantsteine hat. Somit muss die Position und Ausrichtung der Kantsteine nicht berücksichtigt werden.
 
 
 Außerdem wird die Veränderung der Würfelkonfiguration an einem Beispielzug schrittweise erklärt.
@@ -1156,7 +1157,7 @@ Die Einteilung der Würfelpositionen ist in den Abbildungen \ref{Abbildung_Stein
 %In Abbildung \ref{Abbildung_SteinpositionNamen} sind die Namen der Steinpositionen auf dem Würfel abgebildet. In Abbildung \ref{Abbildung_SteinpositionNamenFoldetOut} ist der Würfel in ausgeklappter Form zu sehen. Während der Würfel links alle Steinnamen und die 
 
 Jeder Steinposition wird ein eindeutiger Name zugeordnet, um sie zu identifizieren. Dabei wird davon ausgegangen, dass die weiße Seite in der Startkonfiguration oben ist und die rote Seite vorne. Die Steinpositionen werden mit 3 Buchstaben beschrieben, die aus den Kürzeln \textit{u, d, r, l, f, b} bestehen. Diese Kürzel stehen für \textit{up, down, right, left, front, back}. \\
-Somit heißt die Steinposition oben links beispielsweise \textit{ulf} (für \textit{up}, \textit{left} und \textit{front}). 
+Somit heißt die Steinposition oben links vorne beispielsweise \textit{ulf} (für \textit{up}, \textit{left} und \textit{front}). 
 Jeder Stein bekommt zudem einen eindeutigen Namen, der seiner Steinposition im gelösten Zustand entspricht. Beispielsweise liegt der Stein \textit{ulf} im gelösten Zustand an der Steinposition \textit{ulf}.
 
 Nun wird zur Veranschaulichung die Permutation $\sigma_U$ für eine Drehung der oberen Ebene um 90$^\circ$ im Uhrzeigersinn definiert. Grundlagen zu Permutationen und der Zykelschreibweise wurden in Abschnitt \ref{Abschnitt_PermutationZykel} erklärt.
@@ -2433,7 +2434,7 @@ Wird auf diese Folgekonfiguration $C'$ dann der Zug $Z^{-1}$ angewandt, ist die 
 \end{alignat*}
 
 
-Beim Anwenden von $Z^{-1}$ auf die Konfiguration $C'$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht, da $Z^{-1}$ das Inverse des Zuges $Z$ ist. Wenn der Zug $Z$ $n$-mal ausgeführt wird und danach $Z^{-1}$ ausgeführt wird, ist es das gleiche wie $n-1$-mal $Z$ auszuführen. Folglich gilt:
+Beim Anwenden von $Z^{-1}$ auf die Konfiguration $C'$ wird die letzte Ausführung von $Z$ wieder rückgängig gemacht, da $Z^{-1}$ das Inverse des Zuges $Z$ ist. Wenn der Zug $Z$ $n$-mal ausgeführt wird und danach $Z^{-1}$ ausgeführt wird, ist es das Gleiche wie $n-1$-mal $Z$ auszuführen. Folglich gilt:
 \begin{align*} 
 (C \cdot Z^n) \cdot Z^{-1}=C \cdot (Z^n \circ Z^{-1})=C \cdot Z^{n-1}
 \end{align*}
@@ -2677,7 +2678,7 @@ Zyklische Gruppen können unendlich sein. Die Gruppe $(G_F,  \circ)$ ist aufgrun
 
 
 Da die Gruppe $(\Gtwo, \circ)$ endlich ist, erzeugt jedes Element der Gruppe eine endliche zyklische Untergruppe \cite{TD}. Die Größe dieser Untergruppe hängt von der Ordnung des Zuges ab. Die Ordnung wurde in Abschnitt \ref{Abschnitt_OrdnungPermutationen} beschrieben.
-Die Ordnung des Zuges $FR$ beispielsweise ist 15: Wenn $FR$ 15-mal auf dem \Ttwo Würfel ausführt wird, ist er wieder in der Ausgangsposition. 
+Die Ordnung des Zuges $FR$ beispielsweise ist 15: Wenn $FR$ 15-mal auf dem \Ttwo Würfel ausgeführt wird, ist er wieder in der Ausgangsposition. 
 Die Gruppe, die durch $\{FR\}$ erzeugt wird, hat somit 15 Elemente, da mit dem Zug 15 Würfelkonfigurationen erreichbar sind. Bei dem \Tthree Würfel ist die Ordnung des Zuges $FR$ 105 \cite{TD}.
 %
 %
@@ -4163,58 +4164,6 @@ Außerdem wurden in dieser Arbeit Kommutatoren behandelt. Um aussagekräftige Er
 
 
 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-
-\newpage \phantomsection
-\begin{spacing}{0.9}
-\listoffigures
-\end{spacing}
-
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%=======================================================================================================
-%
-%
-%
-%
-%
-%
-%
-%
-%
-
-\newpage
-\phantomsection
-\addcontentsline{toc}{section}{\bibname}
-\begin{spacing}{1.3}
-\printbibliography
-\end{spacing}
 
 
 
@@ -4572,6 +4521,58 @@ Jessica
 
 
 
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+
+\newpage \phantomsection
+\begin{spacing}{0.9}
+\listoffigures
+\end{spacing}
+
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%=======================================================================================================
+%
+%
+%
+%
+%
+%
+%
+%
+%
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{\bibname}
+\begin{spacing}{1.3}
+\printbibliography
+\end{spacing}
 
 
 

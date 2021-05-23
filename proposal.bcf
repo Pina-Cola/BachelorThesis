@@ -91,7 +91,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -99,7 +99,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -2186,25 +2186,25 @@
     <bcf:citekey order="2">rekord</bcf:citekey>
     <bcf:citekey order="3">patent</bcf:citekey>
     <bcf:citekey order="4">HugeCube</bcf:citekey>
-    <bcf:citekey order="5">JC</bcf:citekey>
-    <bcf:citekey order="5">TD</bcf:citekey>
-    <bcf:citekey order="5">DDJT</bcf:citekey>
-    <bcf:citekey order="5">DJ</bcf:citekey>
-    <bcf:citekey order="5">RMG</bcf:citekey>
-    <bcf:citekey order="5">TR</bcf:citekey>
+    <bcf:citekey order="5">robothand</bcf:citekey>
     <bcf:citekey order="6">JC</bcf:citekey>
-    <bcf:citekey order="7">TD</bcf:citekey>
-    <bcf:citekey order="8">Buch</bcf:citekey>
+    <bcf:citekey order="6">TD</bcf:citekey>
+    <bcf:citekey order="6">DDJT</bcf:citekey>
+    <bcf:citekey order="6">DJ</bcf:citekey>
+    <bcf:citekey order="6">RMG</bcf:citekey>
+    <bcf:citekey order="6">TR</bcf:citekey>
+    <bcf:citekey order="7">JC</bcf:citekey>
+    <bcf:citekey order="8">TD</bcf:citekey>
     <bcf:citekey order="9">Buch</bcf:citekey>
-    <bcf:citekey order="10">AT</bcf:citekey>
-    <bcf:citekey order="11">TD</bcf:citekey>
-    <bcf:citekey order="12">Buch</bcf:citekey>
-    <bcf:citekey order="13">JC</bcf:citekey>
+    <bcf:citekey order="10">Buch</bcf:citekey>
+    <bcf:citekey order="11">AT</bcf:citekey>
+    <bcf:citekey order="12">TD</bcf:citekey>
+    <bcf:citekey order="13">Buch</bcf:citekey>
     <bcf:citekey order="14">JC</bcf:citekey>
     <bcf:citekey order="15">JC</bcf:citekey>
-    <bcf:citekey order="16">RB</bcf:citekey>
-    <bcf:citekey order="17">JC</bcf:citekey>
-    <bcf:citekey order="18">TD</bcf:citekey>
+    <bcf:citekey order="16">JC</bcf:citekey>
+    <bcf:citekey order="17">RB</bcf:citekey>
+    <bcf:citekey order="18">JC</bcf:citekey>
     <bcf:citekey order="19">TD</bcf:citekey>
     <bcf:citekey order="20">TD</bcf:citekey>
     <bcf:citekey order="21">TD</bcf:citekey>
@@ -2218,20 +2218,21 @@
     <bcf:citekey order="29">TD</bcf:citekey>
     <bcf:citekey order="30">TD</bcf:citekey>
     <bcf:citekey order="31">TD</bcf:citekey>
-    <bcf:citekey order="32">OS</bcf:citekey>
-    <bcf:citekey order="33">RF</bcf:citekey>
-    <bcf:citekey order="34">DDJT</bcf:citekey>
+    <bcf:citekey order="32">TD</bcf:citekey>
+    <bcf:citekey order="33">OS</bcf:citekey>
+    <bcf:citekey order="34">RF</bcf:citekey>
     <bcf:citekey order="35">DDJT</bcf:citekey>
-    <bcf:citekey order="36">RF2</bcf:citekey>
+    <bcf:citekey order="36">DDJT</bcf:citekey>
     <bcf:citekey order="37">RF2</bcf:citekey>
-    <bcf:citekey order="38">TR</bcf:citekey>
-    <bcf:citekey order="39">DJ</bcf:citekey>
-    <bcf:citekey order="40">RMG</bcf:citekey>
-    <bcf:citekey order="41">TD</bcf:citekey>
-    <bcf:citekey order="42">rekord</bcf:citekey>
-    <bcf:citekey order="43">DJ</bcf:citekey>
-    <bcf:citekey order="44">RMG</bcf:citekey>
-    <bcf:citekey order="45">TD</bcf:citekey>
+    <bcf:citekey order="38">RF2</bcf:citekey>
+    <bcf:citekey order="39">TR</bcf:citekey>
+    <bcf:citekey order="40">DJ</bcf:citekey>
+    <bcf:citekey order="41">RMG</bcf:citekey>
+    <bcf:citekey order="42">TD</bcf:citekey>
+    <bcf:citekey order="43">rekord</bcf:citekey>
+    <bcf:citekey order="44">DJ</bcf:citekey>
+    <bcf:citekey order="45">RMG</bcf:citekey>
+    <bcf:citekey order="46">TD</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
