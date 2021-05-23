@@ -2159,7 +2159,7 @@ Es wurde demnach mit Konfiguration $C$ gestartet und die Züge $Z_1$ und $Z_2$ w
 \end{align*}
 Die neue Konfiguration kann demnach auch als $C \cdot (Z_1 \circ Z_2)$ geschrieben werden und somit gilt $(C \cdot Z_1) \cdot Z_2 = C \cdot (Z_1 \circ Z_2)$. 
 \end{description}
-
+\nopagebreak
 Da beide Eigenschaften gelten, handelt es sich um eine Rechtsoperation. Die Züge der Gruppenträgermenge operieren von rechts auf der Menge aller Würfelkonfigurationen.
 
 %
@@ -2374,7 +2374,7 @@ Aus diesen Erkenntnissen ergibt sich folgender Algorithmus zur Bestimmung der Or
       $\ $
 \end{minipage}
 
-\vspace*{1em}
+
 
 In Zeile 1 wird die Permutationsfunktion des Zuges der Variablen \textit{perm} zugewiesen und in Zeile 2 wird eine leere Liste initialisiert, um darin die Längen der einzelnen Zykel zu speichern. Danach wird in Zeile 3 die Variable \textit{kgVList} mit 0 initialisiert. In Zeile 4 wird die Anzahl der Zykel ausgelesen und in der Variablen $z$ gespeichert. Daraufhin wird eine \textit{while}-Schleife $z$-mal ausgeführt. In jedem Durchlauf wird die Länge von einem der $z$ Zykel ausgelesen und der Liste hinzugefügt (Zeile 6 -7). Außerdem wird $z$ dekrementiert (Zeile 8). Nachdem alle Zykellängen in \textit{list} gespeichert sind, wird in Zeile 9 das \textit{kleinste gemeinsame Vielfache} der Listenelemente berechnet und der Variablen \textit{kgVList} zugewiesen. Dabei handelt es sich um die Ordnung der Permutation und deshalb wird \textit{kgVList} in Zeile 10 zurückgegeben.
 
@@ -2400,8 +2400,7 @@ Die Ordnung der Permutation wird zur Berechnung der Ordnung von Zügen benötigt
 In diesem Abschnitt wird gezeigt, dass der Würfel wieder in die Ausgangsposition gelangt, wenn ein beliebiger Zug $Z \in \Gtwo$ wiederholt auf den Würfel angewendet wird. Das wird in der folgenden Formel dargestellt, dabei ist $C$ eine beliebige Würfelkonfiguration.
 \begin{align*}
 \forall \ Z \in \Gtwo \ \exists \ n \in \mathbb{N} \ . \ C \cdot Z^n = C
-\end{align*}
-Weiterhin wird ein Algorithmus zur Berechnung der Ordnung von Zügen beschrieben.
+\end{align*} \nopagebreak Weiterhin wird ein Algorithmus zur Berechnung der Ordnung von Zügen beschrieben.
 
 \subsubsection*{Beweis}
 
@@ -3459,7 +3458,7 @@ Dieser Abschnitt wurde von dem Abschnitt \textit{Pretty Patterns} in Tom Davis' 
 Dort werden acht \textit{hübsche} Muster des \Tthree Würfels gezeigt. In diesem Abschnitt werden vier Muster des \Ttwo Würfels gezeigt und die dazugehörigen Algorithmen von der Startkonfiguration ausgehend beschrieben. Diese vier Muster sind in Abbildung \ref{Abbildung_Muster} dargestellt.
 Außerdem wird die Konfiguration des Würfels angegeben.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tabular}{cc}
 \includegraphics[scale=0.1]{RRFFRRUU.png} &  \includegraphics[scale=0.1]{CubeInCube.png} \\
