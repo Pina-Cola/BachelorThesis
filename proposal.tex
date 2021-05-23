@@ -666,12 +666,10 @@ In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathb
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{Cayleygraph3.png}
+\includegraphics[scale=0.69]{Cayleygraph3.png}
 \caption{Cayleygraph von $(\mathbb{Z}_{\hspace*{-0.3em}\mod 6}, +)$ mit Erzeuger $1$}
 \label{Abbildung_Cayleygraph}
 \end{figure}
-
-
 %
 %
 %
@@ -687,8 +685,6 @@ In Abbildung \ref{Abbildung_Cayleygraph} ist der Cayleygraph der Gruppe $(\mathb
 \subsection{Gruppenoperation}
  \label{Abschnitt_Gruppenoperation}
 
-
-
 Es gibt Links- und Rechtsoperationen für Gruppen. Da in dieser Arbeit ausschließlich Rechtsoperationen genutzt werden, wird die Definition auf diese beschränkt.
 
 
@@ -703,8 +699,7 @@ Die folgenden beiden Eigenschaften gelten:
 \begin{align*}
 m \cdot e & = m \\
 m \cdot (g \circ h) & = (m \cdot g) \cdot h
-\end{align*}
-Dann operiert $G$ von rechts auf $M$.
+\end{align*} \nopagebreak Dann operiert $G$ von rechts auf $M$.
 
 \end{definition}
 
@@ -779,7 +774,7 @@ Eine Relation $\sim \ \subseteq A \times A$ heißt Äquivalenzrelation auf $A$, 
 \end{definition}
 
 
-Hier wird $x \sim y$ als \textit{x ist äquivalent zu y} gelesen. Im Folgenden werden Reflexivität, Symmetrie und Transitivität aufgelistet:
+Hier wird $x \sim y$ als \textit{x ist äquivalent zu y} gelesen. Im Folgenden werden Reflexivität, Symmetrie und Transitivität aufgelistet.
 
 \begin{center}
 \begin{tabular}{ll}
@@ -1451,7 +1446,7 @@ F & urf & \textcolor{gray}{urb} & \textcolor{gray}{dlb} & dlf & drf & \textcolor
 \end{tabular}
 \end{center}
 
-Der neue Vektor $x$ wird nach dem Teilzug $LLFF$ durch $\gamma_F(\gamma_F(\gamma_L(\gamma_L(x))))$ berechnet. 
+Der neue Vektor $x$ wird nach dem Teilzug $LLFF$ durch $\gamma_F(\gamma_F(\gamma_L(\gamma_L(x))))$ berechnet.  
 \begin{align*}
  \gamma_F(\gamma_F(\gamma_L(\gamma_L(x)))) \Rightarrow \ & \gamma_F(\gamma_F(\gamma_L(\gamma_L((0,0,0,0,0,0,0,0))))) \\
 = \ & \gamma_F(\gamma_F(\gamma_L((h(0),0,g(0),0,g(0),0,h(0),0)))) \\
@@ -2413,7 +2408,7 @@ Weiterhin wird ein Algorithmus zur Berechnung der Ordnung von Zügen beschrieben
 Der folgende Beweis orientiert sich an einem Beweis aus \textit{Group Theory via Rubik's Cube} von Tom Davis \cite{TD}.
 
 Jedes Mal wenn ein Zug wiederholt wird, werden die Steine im Würfel neu angeordnet und ausgerichtet. 
-Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelkonfiguration wiederholt werden, wenn ein Zug oft genug durchführt wird.
+Da es eine endliche Anzahl an Würfelkonfigurationen gibt, muss eine Würfelkonfiguration wiederholt werden, wenn ein Zug oft genug durchgeführt wird.
 Die Zahl der validen Würfelkonfigurationen ist zwar sehr groß, aber endlich ($3 \, 674 \, 160$). Demnach muss eine Konfiguration wiederholt werden, wenn der Zug häufiger ausgeführt wird, als es mögliche Würfelkonfigurationen gibt. Die Anzahl der validen Würfelkonfigurationen wird in Kapitel \ref{Kapitel_ValideKonfigurationen} berechnet.
 
 Übertragen auf das mathematische Modell des Würfels bedeutet das folgendes: Bei einem beliebigen Zug $Z \in \Gtwo$, der auf eine beliebige Konfiguration $C$ angewandt wird, wird nach wiederholtem Ausführen eine Würfelkonfiguration wiederholt. Wenn die wiederholte Konfiguration $C'$ zuerst nach $n \in \mathbb{N}$ Wiederholungen des Zuges $Z$ auftritt und das zweite Mal nach $m \in \mathbb{N}$ Wiederholungen, gilt: 
@@ -2443,7 +2438,7 @@ Es gilt weiter:
  & (C \cdot Z^n) \cdot Z^{-1} && = (C \cdot Z^m) \cdot Z^{-1}  \\
 \Leftrightarrow \ &  C \cdot Z^{n-1} && = C \cdot Z^{m-1}
 \end{alignat*}
-Das widerspricht dann aber der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Konfiguration ist. In diesem Fall ist $n-1$ bzw. $m-1$ die kleinste Anzahl an Ausführungen für eine wiederholende Konfiguration:
+Das widerspricht dann jedoch der Annahme, dass $m$ der kleinste Wert für eine Wiederholung der Konfiguration ist. In diesem Fall ist $n-1$ bzw. $m-1$ die kleinste Anzahl an Ausführungen für eine wiederholende Konfiguration:
 \begin{alignat*}{2}
  & (C \cdot Z^n) \cdot Z^{-1} && = (C \cdot Z^m) \cdot Z^{-1} \\
 \Leftrightarrow \ & C \cdot Z^{n-1} && = C \cdot Z^{m-1} \\
@@ -2455,7 +2450,7 @@ Daraus folgt: Wenn ein Zug wiederholt auf einen Würfel angewendet wird, kommen 
 
 \subsubsection*{Algorithmus}
 
-Es wurde bereits gezeigt, dass sich eine Würfelkonfiguration wiederholt, wenn ein beliebiger Zug wiederholt angewandt wird. Die Anzahl der Wiederholungen eine Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechnung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird. Dazu wird der Algorithmus \ref{Algorithmus_OrdnungPermutation} zur Berechnung der Ordnung einer Permutation verwendet.
+Es wurde bereits gezeigt, dass sich eine Würfelkonfiguration wiederholt, wenn ein beliebiger Zug wiederholt angewandt wird. Die Anzahl der Wiederholungen eines Zuges, bis der Würfel wieder in der Ausgangskonfiguration ist, nennt man Ordnung eines Zuges. Für die Berechnung dieser wird nun ein Algorithmus entworfen, der als Pseudocode dargestellt wird. Dazu wird der Algorithmus \ref{Algorithmus_OrdnungPermutation} zur Berechnung der Ordnung einer Permutation verwendet.
 
 Der Algorithmus benötigt für die Berechnung der Ordnung eines Zuges $Z$ zwei Eingabeparameter: Einen beliebigen Zug $Z$ aus $\Gtwo$ und eine beliebige Ausgangskonfiguration $C$ des Würfels. Die Ausgabe ist die Ordnung eines Zuges.
 
@@ -2603,7 +2598,7 @@ Die Untergruppe $(H_N, \circ)$ enthält in der Trägermenge $H_N$ ausschließlic
 \begin{align*}
 (H_N, \circ) = (\{N\}, \circ)\textit{ und }  (H_G, \circ) = (\Gtwo, \circ)
 \end{align*}
-Im Rahmen dieser Arbeit kann nur auf einen Teil der Untergruppen von $(\Gtwo, \circ)$ eingegangen werden. 
+Im Rahmen dieser Arbeit wird nur auf einen Teil der Untergruppen von $(\Gtwo, \circ)$ eingegangen. 
 Der folgende Abschnitt beschreibt zwei anschauliche Untergruppen des Würfels. Diese Untergruppen hat Tom Davis (in  \textit{Group Theory via Rubik's Cube}) \cite{TD} für den \Tthree Würfel genannt. Hier werden zwei dieser Untergruppen auf den \Ttwo Würfel übertragen: 
 \begin{itemize}
 \item Die Untergruppe $(H_{E1}, \circ)$ lässt nur die Rotation einer Ebene zu. Die Züge der Trägermenge erreichen lediglich vier Würfelkonfigurationen (sowohl beim \Ttwo als auch beim \Tthree Würfel). Das kann auch gut an einem \textit{Cube} nachvollzogen werden, da durch das Drehen von nur einer Ebene auch nur vier verschiedene Ergebnisse erzielt werden können.
@@ -2750,7 +2745,7 @@ Die Inversen der Züge $FF$ und $RR$ sind demnach $FF$ und $RR$. Deshalb ist der
 C \cdot RRFFRRFFRR = C \cdot FF
 \end{align*}
 
-Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppe mit lediglich sieben bzw. zwölf Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist besonders überraschend, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
+Die Tatsache, dass $\{ FF, RR \}$ eine Untergruppe mit lediglich sieben bzw. zwölf Elementen bei dem \Ttwo \  bzw. dem \Tthree Würfel erzeugt, ist erwähnenswert, da $\{ F, R \}$ bei dem  \Tthree Würfel eine Untergruppe der Größe $73\, 483\, 200$ erzeugt \cite{TD}. 
 Bei dem \Ttwo \textit{Cube} kommt die Untergruppe mit $5! \cdot 3^5$ auf lediglich $29 \, 160$ Mitglieder.
 
 %
@@ -2805,7 +2800,7 @@ Anhand dieses Cayleygraphen kann beispielsweise abgelesen werden, dass die Züge
 \label{Abbildung_CayleygraphFFRR}
 \end{figure}
 
-Der Cayleygraph der Erzeuger $FF$ und $RR$ ist wesentlich komplexer, als der Graph der Untergruppe $(G_F, \circ)$ (Abbildung \ref{Abbildung_CayleygraphF}). Trotzdem stellt er, im Vergleich zu der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$, eine sehr kleine erzeugte Untergruppe dar. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden. In Kapitel \ref{Kapitel_MinUntergruppe} wird die Untergruppe der minimalen, vollständigen Abbildung des Würfels definiert. Der Cayleygraph dieser Untergruppe wird in Abschnitt \ref{Abschnitt_CayleygraphMIN} beschrieben und enthält $3 \ 647 \ 160$ Knoten.
+Der Cayleygraph der Erzeuger $FF$ und $RR$ ist komplexer als der Graph der Untergruppe $(G_F, \circ)$ (Abbildung \ref{Abbildung_CayleygraphF}). Trotzdem stellt er, im Vergleich zu der Größe der anderen erzeugbaren Untergruppen von $(\Gtwo, \circ)$, eine sehr kleine erzeugte Untergruppe dar. Die Untergruppen und Cayleygraphen können bei der Gruppe des \Ttwo Würfels (und des \Tthree Würfels) sehr groß werden. In Kapitel \ref{Kapitel_MinUntergruppe} wird die Untergruppe der minimalen, vollständigen Abbildung des Würfels definiert. Der Cayleygraph dieser Untergruppe wird in Abschnitt \ref{Abschnitt_CayleygraphMIN} beschrieben und enthält $3 \ 647 \ 160$ Knoten.
 
 
 
@@ -3269,7 +3264,7 @@ C \cdot [L, F] = (( \textit{ulb} \ \textit{ulf} ) \ (\textit{dlf} \ \textit{drf}
 %Daraus ergibt sich $C \cdot \lbrack L, F \rbrack  = (( \ \textit{ulb} \ \textit{ulf} \ )(\ \textit{dlf} \ \textit{drf} \ ), (0,0,2,0,0,0,0,1) )$ in der Zykelschreibweise. 
 Es haben demnach zwei Steinpaare ihre Position getauscht und ihre Ausrichtung verändert. Im Vergleich dazu werden beispielsweise bei dem Kommutator von $\lbrack L, R \rbrack$ keine Steinpositionen verändert, da $L$ und $R$ keine gemeinsamen Steine beeinflussen.
 
-Um aussagekräftigere Ergebnisse zu der Kommutativität der Zugpaare zu bekommen, müsste eine größere Menge der Kommutatoren berechnet und verglichen werden. Das ist allerdings zu umfangreich für den Rahmen dieser Arbeit. Die Berechnung und Auswertung der Kommutatoren sollte maschinell erfolgen.
+Um aussagekräftigere Ergebnisse zu der Kommutativität der Zugpaare zu bekommen, müsste eine größere Menge der Kommutatoren berechnet und verglichen werden. Das überschreitet aufgrund des Berechnungsumfangs den Rahmen dieser Arbeit. Die Berechnung und Auswertung der Kommutatoren sollte maschinell erfolgen.
 
 %
 %
@@ -3362,7 +3357,7 @@ In diesem Abschnitt wird der Würfel schrittweise anhand eines Beispiels gelöst
 
 Für die Lösung des Würfels sind Züge nützlich, die lediglich wenige Steine beeinflussen. So können dann gezielt bestimmte Steine gedreht oder getauscht werden. Um einzelne Steine gezielt zu beeinflussen, sind komplexere Algorithmen notwendig. Deshalb werden die Algorithmen in diesem Beispiel länger, wenn der Würfel sich dem gelösten Zustand nähert. 
 
-In diesem Beispiel wird der Würfel mit dem Zug $\textit{FUBR}F^{-1}$ verdreht (s. Abbildung \ref{Abbildung_LösungMensch0}). Nun wird schrittweise beschrieben, wie ein Mensch den Würfel nach der CFOP- bzw. Fridrich-Methode lösen würde. Der Würfel befindet sich zu Beginn in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{urf}),(2,2,0,0,2,2,1,0))$.
+In diesem Beispiel wird der Würfel mit dem Zug $\textit{FUBR}F^{-1}$ verdreht (s. Abbildung \ref{Abbildung_LösungMensch0}). Nun wird schrittweise beschrieben, wie ein Mensch den Würfel händisch nach der CFOP- bzw. Fridrich-Methode lösen würde. Der Würfel befindet sich zu Beginn in der Konfiguration $C = ((\textit{ulf} \ \textit{dlf} \ \textit{dlb} \ \textit{urf}),(2,2,0,0,2,2,1,0))$.
 In den folgenden Abbildungen wurde der Würfel noch um $90^\circ$ um die $z$-Achse rotiert. Die Konfiguration ist somit eine andere, zu $C$ äquivalente Würfelkonfiguration $C'=(( \textit{ulb} \ \textit{urb} \ \textit{urf}) \ ( \textit{ulf} \ \textit{dlb} ) \ (\textit{drb} \ \textit{drf} \ \textit{dlf}),$ $(0,2,0,2,1,2,0,2))$.
 
 \begin{figure}[H]
@@ -3372,7 +3367,7 @@ In den folgenden Abbildungen wurde der Würfel noch um $90^\circ$ um die $z$-Ach
 \label{Abbildung_LösungMensch0}
 \end{figure}
 
-Im ersten Schritt des menschlichen Ansatzes zum Lösen des Würfels sollen die Steine der oberen Ebene so angeordnet werden, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
+Im ersten Schritt diese Ansatzes zum Lösen des Würfels sollen die Steine der oberen Ebene so angeordnet werden, dass die Farbflächen dort alle weiß sind und die vier oberen Steine in der richtigen Position zueinander sind. 
 Für die Lösung der oberen Ebene muss $x_{1-4} = (0,0,0,0)$ gelten und die Steine der Ebene müssen an der richtigen Position zueinander sein.
 
 Dafür sucht die lösende Person Steine mit weißen Farbflächen und findet den weiß-orange-blauen Stein an der Position \textit{urf}. 
@@ -3756,7 +3751,7 @@ Die Menge der minimalen Züge ist $\{ U, R, F\}$. Keiner dieser drei Grundzüge 
 
 \subsubsection*{Minimale Permutationen}
 
-Bei den Permutationen dieser drei Grundzüge handelt es sich um die Permutationsfunktionen $\sigma$, die in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} bereits definiert wurden. Hier gibt jedoch nur drei statt sechs Funktionen für die Permutationen, da es auch nur drei Grundzüge gibt.
+Bei den Permutationen dieser drei Grundzüge handelt es sich um die Permutationsfunktionen $\sigma$, die in Abschnitt \ref{Abschnitt_PositionenDerSteineImWürfel} bereits definiert wurden. Hier gibt es jedoch nur drei statt sechs Funktionen für die Permutationen, da es auch nur drei Grundzüge gibt.
 \begin{align*}
 \sigma_U & =\ ( \textit{ulf} \ \textit{ulb} \ \textit{urb} \ \textit{urf} ) \\
 \sigma_R & =\ ( \textit{urb} \ \textit{drb} \ \textit{drf} \ \textit{urf} ) \\
