@@ -19,75 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{robothand}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=1a2177a207bf8581bc044590f1e55602}{%
-           family={Akkaya},
-           familyi={A\bibinitperiod},
-           given={Ilge},
-           giveni={I\bibinitperiod}}}%
-        {{hash=0d8b72cabbd1b548097b4a7b81a0f335}{%
-           family={Andrychowicz},
-           familyi={A\bibinitperiod},
-           given={Marcin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=db785ba8e6356e7dd7e0f860f4f2f473}{%
-           family={Chociej},
-           familyi={C\bibinitperiod},
-           given={Maciek},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e5aa3a709cbe706efba113bec9789364}{%
-           family={Litwin},
-           familyi={L\bibinitperiod},
-           given={Mateusz},
-           giveni={M\bibinitperiod}}}%
-        {{hash=6da1a977c02cecc78ec16c61217dcc42}{%
-           family={McGrew},
-           familyi={M\bibinitperiod},
-           given={Bob},
-           giveni={B\bibinitperiod}}}%
-        {{hash=0d79ff0263ade6eee20336810b23e5d8}{%
-           family={Petron},
-           familyi={P\bibinitperiod},
-           given={Arthur},
-           giveni={A\bibinitperiod}}}%
-        {{hash=445e6e3c370e31dfc6fa4557bab7bbcb}{%
-           family={Paino},
-           familyi={P\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod}}}%
-        {{hash=599240d5bfe42aeb65a0c26dae77cd31}{%
-           family={Plappert},
-           familyi={P\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod}}}%
-        {{hash=34d0d7625e65761eaef54be0603bbf12}{%
-           family={Powell},
-           familyi={P\bibinitperiod},
-           given={Glenn},
-           giveni={G\bibinitperiod}}}%
-        {{hash=4e91ce42053256b8eeeb6ba57772fe8b}{%
-           family={Ribas},
-           familyi={R\bibinitperiod},
-           given={Raphael},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{533f3556269067a46ef37d2709b545c0}
-      \strng{fullhash}{fc41487c7180ed33fefe71c2cf83e3b6}
-      \strng{bibnamehash}{fc41487c7180ed33fefe71c2cf83e3b6}
-      \strng{authorbibnamehash}{fc41487c7180ed33fefe71c2cf83e3b6}
-      \strng{authornamehash}{533f3556269067a46ef37d2709b545c0}
-      \strng{authorfullhash}{fc41487c7180ed33fefe71c2cf83e3b6}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1910.07113}
-      \field{title}{Solving Rubik's Cube with a Robot Hand}
-      \field{year}{16. Oktober 2019}
-    \endentry
     \entry{rekord}{misc}{}
       \name{author}{1}{}{%
         {{hash=8705871643b2f11b3883531d3a286d13}{%
@@ -351,6 +282,117 @@
       \field{labeltitlesource}{title}
       \field{title}{Finding God's Number for the Rubik's Cube Using Computational Analysis}
       \field{year}{2016}
+    \endentry
+    \entry{robothand}{article}{}
+      \name{author}{19}{}{%
+        {{hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={OpenAI},
+           familyi={O\bibinitperiod}}}%
+        {{hash=1a2177a207bf8581bc044590f1e55602}{%
+           family={Akkaya},
+           familyi={A\bibinitperiod},
+           given={Ilge},
+           giveni={I\bibinitperiod}}}%
+        {{hash=0d8b72cabbd1b548097b4a7b81a0f335}{%
+           family={Andrychowicz},
+           familyi={A\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db785ba8e6356e7dd7e0f860f4f2f473}{%
+           family={Chociej},
+           familyi={C\bibinitperiod},
+           given={Maciek},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e5aa3a709cbe706efba113bec9789364}{%
+           family={Litwin},
+           familyi={L\bibinitperiod},
+           given={Mateusz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6da1a977c02cecc78ec16c61217dcc42}{%
+           family={McGrew},
+           familyi={M\bibinitperiod},
+           given={Bob},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0d79ff0263ade6eee20336810b23e5d8}{%
+           family={Petron},
+           familyi={P\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=445e6e3c370e31dfc6fa4557bab7bbcb}{%
+           family={Paino},
+           familyi={P\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=599240d5bfe42aeb65a0c26dae77cd31}{%
+           family={Plappert},
+           familyi={P\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=34d0d7625e65761eaef54be0603bbf12}{%
+           family={Powell},
+           familyi={P\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4e91ce42053256b8eeeb6ba57772fe8b}{%
+           family={Ribas},
+           familyi={R\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5167ef9d0b77bf68557730648baac9b7}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dab05157b89bd0192cb59f4386f74eda}{%
+           family={Tezak},
+           familyi={T\bibinitperiod},
+           given={Nikolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=98cbd7022a1c31a6293aa1c8b62bdebf}{%
+           family={Tworek},
+           familyi={T\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=462853f8544f0acfb7014fe747f84922}{%
+           family={Welinder},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=49d03d499031db786a0e61119024cf5a}{%
+           family={Weng},
+           familyi={W\bibinitperiod},
+           given={Lilian},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a0082b934c2454295be3f0a3b138f21d}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Qiming},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=e9fec85bbce1b087a6ebefe26e73f7bf}{%
+           family={Zaremba},
+           familyi={Z\bibinitperiod},
+           given={Wojciech},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f4a4cbf770add19c206827116c68732e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{388e7feddf6d4d7336d2c895e55fa4b6}
+      \strng{fullhash}{533c7f798be0a787c8260607a2dd279a}
+      \strng{bibnamehash}{533c7f798be0a787c8260607a2dd279a}
+      \strng{authorbibnamehash}{533c7f798be0a787c8260607a2dd279a}
+      \strng{authornamehash}{388e7feddf6d4d7336d2c895e55fa4b6}
+      \strng{authorfullhash}{533c7f798be0a787c8260607a2dd279a}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{month}{10}
+      \field{title}{Solving Rubik's Cube with a Robot Hand}
+      \field{year}{2019}
     \endentry
     \entry{HugeCube}{misc}{}
       \name{author}{1}{}{%
