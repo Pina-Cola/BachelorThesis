@@ -1339,7 +1339,7 @@ Die anderen Funktionen für die Veränderung des Vektors $x$ werden ebenfalls du
 
 
 
-Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ arbeiten analog. Da diese Funktionen in Hinblick auf Ein- und Ausgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags nach dem Zug $R$ aus.
+Es gibt für den Zug $R$ acht Funktionen $\Gamma_R$ -- eine für jeden Vektoreintrag. Die Funktionen $\Gamma_{R_2}$ und $\Gamma_{R_8}$ verändern verschiedene Vektoreinträge auf die gleiche Weise, die Funktionen $\Gamma_{R_4}$ und $\Gamma_{R_6}$ ebenfalls. Auch die Funktionen $\Gamma_{R_1}, \Gamma_{R_3}, \Gamma_{R_5}$ und $\Gamma_{R_7}$ arbeiten analog. Da diese Funktionen im Hinblick auf Ein- und Ausgabe gleich aufgebaut sind, reichen drei verschiedene Funktionen für die Veränderung jedes Vektoreintrags nach dem Zug $R$ aus.
 \\
 
 \begin{minipage}{0.35\textwidth}
@@ -2047,7 +2047,7 @@ Das neutrale Element $N$ muss ein Element aus der Menge der Züge $\Gtwo$ sein. 
 \begin{align*}
 N \circ Z = Z \circ N = Z
 \end{align*}
-Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es werden dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausgeführt wird und anschließend der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ ausführen}. 
+Wird der Zug $Z$ mit dem neutralen Element $N$ verknüpft, so bleibt er unverändert. Betrachtet man den physischen Würfel, so ist das neutrale Element der Gruppe $(\Gtwo, \circ)$ der leere Zug. Es wird dabei keine der Ebenen des Würfels gedreht. Wenn ein Zug $Z$ ausgeführt wird und anschließend der Zug $N$, bedeutet das \textit{erst $Z$ ausführen und dann nichts}, was das gleiche ist wie \textit{$Z$ ausführen}. 
 
 Wird dies auf das mathematische Modell des Würfels übertragen, ändert sich die Würfelkonfiguration durch das Ausführen von $N$ nicht. Die Permutationsfunktion für das  neutrale Element ist dann $\sigma_N=1$ und die Übergangsfunktion $\gamma_N$ des Vektors $x$ ist $\gamma_N(x)=x$. Der Beweis dazu findet sich in Anhang \ref{Anhang_Ausrichtungsfunktionen}.
 
@@ -2198,7 +2198,7 @@ Das bedeutet, dass alle Steine des Würfels wieder in ihre vorherige Position ge
 Nicht nur die Züge $U, D, R, L, F, B$ kommen nach dem Wiederholen in den Ausgangszustand. Auch alle anderen Züge bringen den Würfel bei wiederholtem Ausführen wieder in die Ausgangsposition, die der Würfel vor Ausführung des Zuges hatte \cite{TD}. Dazu sind je nach Zug verschieden viele Wiederholungen nötig. 
 
 
-Es ist zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permutationen behandelt. Überträgt man dies auf die Würfelkonfiguration, so wird nur die Steinposition $\sigma$ beachtet. Die Ordnung der Permutationen ist daher die Anzahl der Durchführungen, die benötigt werden, damit sich alle Steine wieder in der Ausgangsposition befinden. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Die Ordnung im Bezug auf die komplette Würfelkonfiguration wird in Abschnitt \ref{Abschnitt_OrdnungZüge} als \textit{Ordnung der Züge} beschrieben. In diesem Abschnitt wird die Ordnung der Permutation definiert und anhand eines Beispiels beschrieben. Außerdem wird die Zykelstruktur grafisch dargestellt und anschließend ein Algorithmus zur Berechnung der Permutationsordnung eingeführt.
+Es ist zu beachten, dass dieser Abschnitt lediglich die Ordnung der Permutationen behandelt. Überträgt man dies auf die Würfelkonfiguration, so wird nur die Steinposition $\sigma$ beachtet. Die Ordnung der Permutationen ist daher die Anzahl der Durchführungen, die benötigt werden, damit sich alle Steine wieder in der Ausgangsposition befinden. Die Ausrichtung der Steine wird hier aber nicht berücksichtigt. Die Ordnung in Bezug auf die komplette Würfelkonfiguration wird in Abschnitt \ref{Abschnitt_OrdnungZüge} als \textit{Ordnung der Züge} beschrieben. In diesem Abschnitt wird die Ordnung der Permutation definiert und anhand eines Beispiels beschrieben. Außerdem wird die Zykelstruktur grafisch dargestellt und anschließend ein Algorithmus zur Berechnung der Permutationsordnung eingeführt.
 
 
 %Die Permutation des Zuges $(LLFF)$ hat beispielsweise die Ordnung 3, da der Würfel sich nach dreifacher Wiederholung von $(LLFF)$ wieder in der Ausgangsposition befindet. Es gilt dann $(LLFF)^3 = N$.
@@ -2333,7 +2333,7 @@ Die Permutation des Zuges $LLFF$ hat also die Ordnung $3$.
 Außerdem kann abgelesen werden, dass sechs der acht Steine bei dem Zug $LLFF$ bewegt werden. Die anderen beiden (\textit{urb} und \textit{drb}) bleiben unverändert. Das kann beispielsweise an der grafischen Abbildung der Zykel (Abbildung \ref{Abbildung_ZykelVonLLFF}) gesehen werden.
 
 
-Bei dem Beispielzug $LLFF$ ist nach dreifacher Ausführung des Zuges nicht ausschließlich die Position der Steine korrekt sondern auch die Ausrichtung. Somit ist die \textit{Ordnung des Zuges} auch 3. Darauf wird genauer in Abschnitt \ref{Abschnitt_OrdnungZüge} eingegangen.
+Bei dem Beispielzug $LLFF$ ist nach dreifacher Ausführung des Zuges nicht ausschließlich die Position der Steine korrekt, sondern auch die Ausrichtung. Somit ist die \textit{Ordnung des Zuges} auch 3. Darauf wird genauer in Abschnitt \ref{Abschnitt_OrdnungZüge} eingegangen.
 
 \subsubsection*{Algorithmus}
 
@@ -2381,7 +2381,7 @@ Aus diesen Erkenntnissen ergibt sich folgender Algorithmus zur Bestimmung der Or
 
 \vspace*{1em}
 
-In Zeile 1 wird die Permutationsfunktion des Zuges der Variablen \textit{perm} zugewiesen und in Zeile 2 wird eine leere Liste initialisiert, um darin die Längen der einzelnen Zykel zu speichern. Danach wird in Zeile 3 die Variable \textit{kgVList} mit 0 initialisiert. In Zeile 4 wird die Anzahl der Zykel ausgelesen und in der Variablen $z$ gespeichert. Daraufhin wird eine \textit{while}-Schleife $z$-mal ausgeführt. In jedem Durchlauf wird die Länge von einem der $z$ Zykel ausgelesen und in die Liste hinzugefügt (Zeile 6 -7). Außerdem wird $z$ dekrementiert (Zeile 8). Nachdem alle Zykellängen in \textit{list} gespeichert sind, wird in Zeile 9 das \textit{kleinste gemeinsame Vielfache} der Listenelemente berechnet und der Variablen \textit{kgVList} zugewiesen. Dabei handelt es sich um die Ordnung der Permutation und deshalb wird \textit{kgVList} in Zeile 10 zurückgegeben.
+In Zeile 1 wird die Permutationsfunktion des Zuges der Variablen \textit{perm} zugewiesen und in Zeile 2 wird eine leere Liste initialisiert, um darin die Längen der einzelnen Zykel zu speichern. Danach wird in Zeile 3 die Variable \textit{kgVList} mit 0 initialisiert. In Zeile 4 wird die Anzahl der Zykel ausgelesen und in der Variablen $z$ gespeichert. Daraufhin wird eine \textit{while}-Schleife $z$-mal ausgeführt. In jedem Durchlauf wird die Länge von einem der $z$ Zykel ausgelesen und der Liste hinzugefügt (Zeile 6 -7). Außerdem wird $z$ dekrementiert (Zeile 8). Nachdem alle Zykellängen in \textit{list} gespeichert sind, wird in Zeile 9 das \textit{kleinste gemeinsame Vielfache} der Listenelemente berechnet und der Variablen \textit{kgVList} zugewiesen. Dabei handelt es sich um die Ordnung der Permutation und deshalb wird \textit{kgVList} in Zeile 10 zurückgegeben.
 
 Die Ordnung der Permutation wird zur Berechnung der Ordnung von Zügen benötigt. Diese wird im folgenden Abschnitt beschrieben und es wird ein Algorithmus zur Berechnung eingeführt.
 
@@ -2406,7 +2406,7 @@ In diesem Abschnitt wird gezeigt, dass der Würfel wieder in die Ausgangspositio
 \begin{align*}
 \forall \ Z \in \Gtwo \ \exists \ n \in \mathbb{N} \ . \ C \cdot Z^n = C
 \end{align*}
-Weiterhin wird ein Algorithmus zu Berechnung der Ordnung von Zügen beschrieben.
+Weiterhin wird ein Algorithmus zur Berechnung der Ordnung von Zügen beschrieben.
 
 \subsubsection*{Beweis}
 
@@ -2862,7 +2862,7 @@ Außerdem wird in diesem Kapitel gezeigt, dass für die Ausrichtung $x$ der Stei
 \subsection{Anzahl der validen Würfelkonfigurationen}
 \label{Abschnitt_AnzahlKonfigurationen}
 
-Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen anhand des Würfels brechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. 
+Im Folgenden wird die Anzahl der möglichen Würfelkonfigurationen anhand des Würfels berechnet. Nicht jede der theoretisch möglichen Würfelkonfigurationen kann auch wirklich durch Ebenendrehungen erreicht werden. Wie viele Möglichkeiten es im \Ttwo Würfel gibt und welche davon wirklich erreichbar sind, wird nun schrittweise anhand des Würfelaufbaus berechnet. 
 
 Dazu wird zuerst die Anzahl der möglichen Steinpositionen berechnet:
 Die Ecksteine können sich in jeder der acht Ecken befinden. Deshalb gibt es pro Eckstein 8 mögliche Positionen im Würfel. Da es acht Ecksteine gibt, gibt es somit $8! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 = 40\, 320$ mögliche Positionen für die Ecksteine. 
@@ -3093,7 +3093,7 @@ Die übliche, händische Methode zum Lösen eines Zauberwürfels erfolgt durch d
 Es gibt beispielsweise eine Kombination, die drei der vier Ecken der oberen Ebene untereinander im Uhrzeigersinn tauscht und deren Ausrichtung dabei nicht verändert. 
 
 In diesem Kapitel wird die Anzahl der $2$-Zykel der Züge untersucht und Kommutatoren erklärt.
-Anschließend wird beispielhaft ein Lösungsvorgang eines Menschen schrittweise beschrieben und erklärt.
+Anschließend wird beispielhaft die Lösung des Würfels durch einen Menschen schrittweise beschrieben und erklärt.
 Außerdem werden Muster des Würfels algorithmisch beschrieben und grafisch dargestellt.
 Danach werden verschiedene Lösungsalgorithmen des \Tthree \textit{Cubes} auf den \Ttwo Würfel übertragen.
 
@@ -3578,7 +3578,7 @@ Ansonsten wird der Zug $D$ ausgeführt, bis der Stein sich unter seiner Zielposi
 
 Dort sind auch orange und grüne Farbflächen abgebildet. Das gilt analog für die anderen benachbarten Farbflächen. Zu beachten ist, dass die beiden Farbflächen einer Seite auch die gleiche Farbe haben.
 
-Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann sie gekippt ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich der Stein mit der weißen Farbfläche in der oberen Ebene aber die weiße Farbfläche ist nicht nach oben ausgerichtet. In diesem Fall kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Danach wird der Stein mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
+Sollte sich die weiße Farbfläche der Ecke unten am Würfel befinden, so kann sie gekippt ausgerichtet mit der Technik aus Abbildung \ref{Abbildung_ZweiterEckstein} an die Position gesetzt werden. Dann befindet sich der Stein mit der weißen Farbfläche in der oberen Ebene, aber die weiße Farbfläche ist nicht nach oben ausgerichtet. In diesem Fall kann der Stein mit einem der Züge $L, R, F$ oder $B$ herausgedreht werden und mit $U$ in die untere Ebene geschoben werden. Dieser Vorgang ist in Abbildung \ref{Abbildung_ZweiterEckstein2} zu sehen. Danach wird der Stein mit der oben beschriebenen Technik richtig ausgerichtet und positioniert eingefügt (s. Abbildung \ref{Abbildung_ZweiterEckstein}). 
 
 \begin{figure}[H]
 \centering
@@ -3982,7 +3982,7 @@ Anhand dieser Funktionen lassen sich alle Züge der Gruppe $(\Gtwo, \circ)$ in Z
 \Rightarrow \ & U \ R \ F \ F \ U \ U \ R
 \end{align*}
 
-Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist somit mindestens so groß wie die von $\Gtwo$. Sie kann aber nicht größer sein, da $\Gtwo$ aufgrund der Äquivalenzklassen genau die Anzahl der möglichen Züge, die nicht gleich sind enthält. Da $(G_{min}, \circ)$ eine Untergruppe von $(\Gtwo, \circ)$ ist, kann $G_{min}$ maximal so viele Elemente wie $\Gtwo$ enthalten.
+Somit kann jeder Zug der Gruppe $(\Gtwo, \circ)$ durch die minimalen Züge der Untergruppe  $(G_{min}, \circ)$ dargestellt werden. Die Mächtigkeit von $G_{min}$ ist somit mindestens so groß wie die von $\Gtwo$. Sie kann aber nicht größer sein, da $\Gtwo$ aufgrund der Äquivalenzklassen genau die Anzahl der möglichen Züge enthält, die nicht gleich sind. Da $(G_{min}, \circ)$ eine Untergruppe von $(\Gtwo, \circ)$ ist, kann $G_{min}$ maximal so viele Elemente wie $\Gtwo$ enthalten.
 
 Folglich enthält auch $G_{min}$ die Äquivalenzklassen aller möglichen Züge und ist eine vollständige Abbildung des \Ttwo Würfels.
 
@@ -4228,7 +4228,7 @@ Zuerst wird die Veränderung des Vektors $x$ anhand des Zuges $R$ beispielhaft b
 \caption{Vektor $x$ nach $\gamma_R ( \gamma_R ( \gamma_R (\gamma_R(x))))$}
 \end{figure}
 
-Im Folgenden ist die Veränderung des Vektors $x$ durch den Zug $R^4$ zu sehen. Die Funktionen $g$ und $h$ werden bei einer Verschachtlung von $\gamma_R$ ebenfalls verschachtelt.
+Im Folgenden ist die Veränderung des Vektors $x$ durch den Zug $R^4$ zu sehen. Die Funktionen $g$ und $h$ werden bei einer Verschachtelung von $\gamma_R$ ebenfalls verschachtelt.
 \begin{align*}
 & \gamma_R (\gamma_R (\gamma_R (\gamma_R ((x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8  )))) \\
 & =  (x_1, \ g(h(g(h(x_2)))), \ x_3, \ h(g(h(g(x_4)))), \ x_5, \ h(g(h(g(x_6)))), \ x_7, \ g(h(g(h(x_8)))) )
@@ -4255,7 +4255,7 @@ Die anderen Grundzüge verändern den Vektor bei vierfacher Ausführung folgende
 & =  \left( g(h(g(h(x_1)))), h(g(h(g(x_2)))), x_3, x_4, h(g(h(g(x_5)))), g(h(g(h(x_6)))), x_7, x_8 \right)
 \end{align*}
 
-Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleichen Zuges immer aus den Funktionsverschachtlungen $g(h(g(h(x))))$ und $h(g(h(g(x))))$ bestehen. Daher muss folgendes gezeigt werden:
+Es ist ersichtlich, dass die Veränderungen bei vierfacher Ausführung des gleichen Zuges immer aus den Funktionsverschachtelungen $g(h(g(h(x))))$ und $h(g(h(g(x))))$ bestehen. Daher muss folgendes gezeigt werden:
 
 \begin{minipage}[H]{0.5\textwidth}
 	\begin{align*}
