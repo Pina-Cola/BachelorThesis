@@ -1,5 +1,0 @@
-[2] Config.pm:304> INFO - This is Biber 2.14 (beta)
-[2] Config.pm:307> INFO - Logfile is 'proposal..blg'
-[371] biber:322> INFO - === Do Feb 11, 2021, 11:54:08
-[588] Utils.pm:309> ERROR - Cannot find 'proposal..bcf'!
-[590] Biber.pm:132> INFO - ERRORS: 1
